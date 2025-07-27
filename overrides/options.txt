@@ -150,7 +150,7 @@ key_key.levelup2.gui:38
 key_bqtweaker.key.pageback:14
 key_key.sethorse.desc:72
 key_key.callhorse.desc:71
-key_key.carry.desc:42
+key_key.carry.desc:56
 key_key.chattweaks.switch_chat_view:55
 key_key.elenaidodge.dodge:56
 key_key.reelIn:203
