@@ -1,2 +1,2 @@
 *.zip
-/overrides/config/fantasticlib/reference
+**/overrides/config/fantasticlib/reference
