@@ -4,14 +4,14 @@ mouseSensitivity:0.40140846
 fov:1.0
 gamma:1.0
 saturation:0.0
-renderDistance:15
+renderDistance:12
 guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:2
+difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:false
@@ -178,7 +178,7 @@ key_key.toolbelt.cycle.right:0
 key_Open Skill GUI:21
 key_key.switchbow.switchup:0
 key_key.switchbow.switchdown:0
-soundCategory_master:0.16887417
+soundCategory_master:0.19536424
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
