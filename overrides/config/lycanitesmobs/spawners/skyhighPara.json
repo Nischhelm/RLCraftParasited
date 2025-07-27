@@ -1,0 +1,58 @@
+{
+  "name": "skyhighPara",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": false,
+  "mobCountMin": 4,
+  "ignoreBiomes": false,
+  "ignoreLightLevel": true,
+  "ignoreForgeCanSpawnEvent": true,
+  "forceNoDespawn": false,
+  "triggers": [
+    {
+      "type": "world",
+      "chance": 0.5,
+      "tickRate": 1200
+    }
+  ],
+  "conditions": [
+	{
+		"type": "world",
+		"dimensionIds": [
+			0,
+			111
+		],
+		"dimensionListType": "whitelist"
+	}
+  ],
+  "locations": [
+    {
+      "type": "random",
+      "rangeMin": [
+        12,
+        0,
+        12
+      ],
+      "rangeMax": [
+        20,
+        20,
+        20
+      ],
+      "yMin": 180,
+      "sorting": "random",
+      "limit": 32,
+      "underground": true,
+      "solidGround": false
+    }
+  ],
+  "mobSpawns": [
+	{
+      "mobId": "srparasites:overseer",
+      "weight": 8
+    },
+	{
+      "mobId": "srparasites:ada_yelloweye",
+      "weight": 8
+    }
+  ]
+}

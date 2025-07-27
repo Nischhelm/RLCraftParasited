@@ -1,0 +1,23 @@
+[
+	{
+		"mob": "srparasites:hijacked_skeleton_stray",
+		"biometype": ["COLD", "HILLS"],
+		"result": "default"
+	},
+	{
+		"mob": ["srparasites:sim_ocelot", "srparasites:sim_ocelot_head"],
+		"biometype": "JUNGLE",
+		"result": "default"
+	},
+	{
+		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_vindicator_head"],
+		"biometype": "SPOOKY",
+		"result": "default"
+	},
+	{
+		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_ocelot", "srparasites:hijacked_skeleton_stray", "srparasites:sim_vindicator_head", "srparasites:sim_ocelot_head"],
+		"maxphase": 8,
+		"result": "deny"
+	}
+]
+

@@ -1,0 +1,15 @@
+{
+  "name": "voiding",
+  "loadDefault": true,
+  "debuffDurationMultiplier": 3,
+  "buffs": [
+    "lycanitesmobs:leech"
+  ],
+  "debuffs": [
+    "lycanitestweaks:voided"
+  ],
+  "components": [
+    "order",
+    "chaos"
+  ]
+}

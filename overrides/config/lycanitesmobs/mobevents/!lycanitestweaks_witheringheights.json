@@ -1,0 +1,31 @@
+{
+  "name": "lycanitestweaks_witheringheights",
+  "type": "event",
+  "enabled": true,
+  "loadDefault": true,
+  "channel": "boss",
+  "duration": 600,
+  "conditions": [
+    {
+      "type": "world",
+      "dimensionIds": [
+        -1
+      ],
+      "dimensionListType": "whitelist"
+    }
+  ],
+  "levelBoostMax": 0,
+  "triggers": [
+    {
+      "type": "altar",
+      "altarName": "lycanitestweaks:witheringheights"
+    }
+  ],
+  "effects": [
+    {
+      "type": "structure",
+      "structureBuilderName": "lycanitestweaks_witheringheights",
+      "eventTicksMax": 600
+    }
+  ]
+}

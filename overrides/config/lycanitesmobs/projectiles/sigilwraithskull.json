@@ -1,0 +1,63 @@
+{
+  "name": "sigilwraithskull",
+  "loadDefault": true,
+  "noChargeItem": true,
+  "width": 2.0,
+  "height": 2.0,
+  "scale": 2.0,
+  "damage": 4,
+  "pierce": 1,
+  "knockbackChance": 0.5,
+  "effectDuration": 5,
+  "effectAmplifier": 1,
+  "velocity": 2.0,
+  "weight": 0,
+  "lifetime": 100,
+  "elements": [
+    "nether",
+    "void",
+    "voiding"
+  ],
+  "behaviours": [
+    {
+      "type": "lycanitestweaks:advancedFireProjectiles",
+      "projectileName": "hellfireball",
+      "tickRate": 10,
+      "impactCount": 1,
+      "sizeScale": 2.0,
+      "velocity": 0.8,
+      "aimType": "target"
+    },
+    {
+      "type": "lycanitestweaks:advancedFireProjectiles",
+      "projectileName": "doomfireball",
+      "tickRate": 5,
+      "impactCount": 0,
+      "sizeScale": 1.5,
+      "velocity": 0.8,
+      "aimType": "random"
+    },
+    {
+      "type": "explosion",
+      "radius": 3
+    },
+    {
+      "type": "placeBlocks",
+      "block": "lycanitesmobs:hellfire",
+      "radius": 4,
+      "height": 1
+    }
+  ],
+  "waterproof": false,
+  "lavaproof": false,
+  "cutGrass": false,
+  "impactSound": true,
+  "ripper": false,
+  "pierceBlocks": false,
+  "glow": true,
+  "rollSpeed": 1234,
+  "particleCount": 1,
+  "particleType": "flame",
+  "waterParticleType": "bubble",
+  "animationFrames": 8
+}

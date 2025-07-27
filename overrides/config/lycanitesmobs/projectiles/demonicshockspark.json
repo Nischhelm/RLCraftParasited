@@ -1,0 +1,53 @@
+{
+  "name": "demonicshockspark",
+  "loadDefault": true,
+  "noChargeItem": true,
+  "width": 2.0,
+  "height": 2.0,
+  "scale": 1.0,
+  "damage": 2,
+  "pierce": 1,
+  "knockbackChance": 0.125,
+  "effectDuration": 5,
+  "effectAmplifier": 1,
+  "velocity": 1.1,
+  "weight": 0,
+  "lifetime": 40,
+  "elements": [
+    "lightning",
+    "nether",
+    "void",
+    "voiding"
+  ],
+  "behaviours": [
+    {
+      "type": "lycanitestweaks:advancedFireProjectiles",
+      "projectileName": "devilstar",
+      "tickRate": 10,
+      "persistentCount": 1,
+      "impactCount": 0,
+      "sizeScale": 1.5,
+      "velocity": 0.9,
+      "aimType": "target"
+    },
+    {
+      "type": "lycanitestweaks:advancedFireProjectiles",
+      "projectileName": "demonicspark",
+      "tickRate": -1,
+      "impactCount": 1,
+      "sizeScale": 1.0,
+      "velocity": 0.5,
+      "impactOnly": true,
+      "aimType": "target"
+    }
+  ],
+  "waterproof": true,
+  "lavaproof": true,
+  "cutGrass": true,
+  "impactSound": false,
+  "ripper": true,
+  "pierceBlocks": false,
+  "glow": true,
+  "rollSpeed": 4,
+  "animationFrames": 4
+}

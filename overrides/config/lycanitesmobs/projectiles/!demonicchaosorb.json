@@ -1,0 +1,43 @@
+{
+  "name": "demonicchaosorb",
+  "loadDefault": true,
+  "noChargeItem": true,
+  "width": 2.0,
+  "height": 2.0,
+  "scale": 2.5,
+  "damage": 4,
+  "pierce": 1,
+  "knockbackChance": 1,
+  "effectDuration": 5,
+  "effectAmplifier": 1,
+  "velocity": 0.8,
+  "weight": 0,
+  "lifetime": 200,
+  "elements": [
+    "chaos",
+    "nether",
+    "void",
+    "voiding"
+  ],
+  "behaviours": [
+    {
+      "type": "fireProjectiles",
+      "projectileName": "demonicchaoslaser",
+      "tickRate": 1,
+      "persistentCount": 5,
+      "impactCount": 0
+    }
+  ],
+  "waterproof": true,
+  "lavaproof": true,
+  "cutGrass": false,
+  "impactSound": true,
+  "ripper": true,
+  "pierceBlocks": true,
+  "glow": true,
+  "rollSpeed": 4,
+  "particleCount": 1,
+  "particleType": "happyVillager",
+  "waterParticleType": "bubble",
+  "animationFrames": 4
+}

@@ -1,0 +1,52 @@
+{
+  "name": "lycanitestweaks_copperandlightning",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": true,
+  "mobCountMin": 1,
+  "ignoreBiomes": true,
+  "ignoreLightLevel": true,
+  "conditions": [
+    {
+      "type": "world",
+      "weather": "rainstorm"
+    }
+  ],
+  "triggers": [
+    {
+      "type": "world",
+      "chance": 0.01,
+      "tickRate": 6400
+    }
+  ],
+  "locations": [
+    {
+      "type": "random",
+      "rangeMin": [
+        96,
+        32,
+        96
+      ],
+      "rangeMax": [
+        128,
+        0,
+        128
+      ],
+      "yMin": 48,
+      "yMax": 128,
+      "sorting": "random",
+      "listType": "whitelist",
+      "limit": 4,
+      "solidGround": false,
+      "underground": false
+    }
+  ],
+  "mobSpawns": [
+    {
+      "mobId": "iceandfire:lightningdragon",
+      "lycanitestweaks:setNBT": "{Items:[\r\n{Slot:0b,id:\"iceandfire:dragonarmor_copper\",Count:1b,Damage:0s},\r\n{Slot:1b,id:\"iceandfire:dragonarmor_copper\",Count:1b,Damage:1s},\r\n{Slot:2b,id:\"iceandfire:dragonarmor_copper\",Count:1b,Damage:2s},\r\n{Slot:3b,id:\"iceandfire:dragonarmor_copper\",Count:1b,Damage:3s}],\r\nArmorNeck:5,ArmorBody:5,ArmorHead:5,ArmorTail:5,AgeTicks:3000000,AgingDisabled:1b,Hovering:1b}",
+      "lycanitestweaks:doInitialSpawn": true,
+      "weight": 8
+    }
+  ]
+}

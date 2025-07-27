@@ -1,0 +1,13 @@
+## From config/DLDungeonsJBG/nbt.cfg
+# Needs "Localizator"
+item.dldungeons.SLICE=§a§oClean Slicer
+item.dldungeons.EEGG5=§a§oFortuna Major
+item.dldungeons.EGGLORE0=§5§oBelieve it or not, this comes from
+item.dldungeons.EGGLORE1=§5§oan ancient Vanilla World.
+item.dldungeons.AP5=§a§oGalactic Hiking Boots
+item.dldungeons.APLORE0=§5§oCarefully forged on an anvil
+item.dldungeons.FV4=§a§oAxe of Iron Truth
+item.dldungeons.FVLORE0=§5§oFor dynamically cutting trees
+item.dldungeons.LC5=§a§oThe Wolfman's First Wand
+item.dldungeons.LCLORE0=§5§oPerhaps the world's greatest summoner
+item.dldungeons.LCLORE1=§5§owas of the Lycan race.

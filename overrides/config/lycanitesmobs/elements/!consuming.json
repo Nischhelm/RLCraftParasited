@@ -1,0 +1,15 @@
+{
+  "name": "consuming",
+  "loadDefault": true,
+  "debuffDurationMultiplier": 3,
+  "buffs": [
+    "lycanitesmobs:leech"
+  ],
+  "debuffs": [
+    "lycanitestweaks:consumed"
+  ],
+  "components": [
+    "order",
+    "chaos"
+  ]
+}
