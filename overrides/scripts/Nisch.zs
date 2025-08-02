@@ -7,3 +7,8 @@ brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "minecraft:aw
 mods.inspirations.Cauldron.removeBrewingRecipe("oe:turtle_master");
 mods.inspirations.Cauldron.removeBrewingRecipe("oe:turtle_master_long");
 mods.inspirations.Cauldron.removeBrewingRecipe("oe:turtle_master_strong");
+
+recipes.addShaped("nodecompass",<srparasites:nodecompass>,
+ [[null,<srparasites:lurecomponent6>,null],
+  [<srparasites:lurecomponent6>,<contenttweaker:sentient_core>,<srparasites:lurecomponent6>],
+  [null,<srparasites:lurecomponent6>,null]]);
