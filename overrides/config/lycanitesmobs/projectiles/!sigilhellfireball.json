@@ -24,6 +24,9 @@
       "block": "lycanitesmobs:hellfire",
       "radius": 4,
       "height": 1
+    },
+    {
+      "type": "lycanitestweaks:tryToDamageMinion"
     }
   ],
   "waterproof": false,
