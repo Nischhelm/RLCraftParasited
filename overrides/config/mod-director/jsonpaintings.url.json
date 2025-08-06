@@ -1,0 +1,13 @@
+{
+	"url": "https://cdn.modrinth.com/data/L55Wy0Fz/versions/iA5iBBLV/JSON-Paintings-v1.4.0-mc1.12.2.jar",
+	"fileName": "JSON-Paintings-v1.4.0-mc1.12.2.jar",
+	"metadata": {
+		"hash": {
+			"SHA-256": "6228c1681b81b34d5ebece8533f1189b824c7f542d41f43b320a1970cf7a5c41",
+			"MD5": "c26735cd401c6e8f63445ca5b7ee7e23"
+		}
+	},
+	"installationPolicy": {
+		"description": "Required: Downloads and installs JSONPaintings from Modrinth"
+	}
+}
