@@ -113,6 +113,36 @@
       "textures": [
         "antiqueatlas:textures/gui/markers/wizardtower.png"
       ]
-    }
+    },
+	"antiqueatlas:dragon_purple": {
+	  "textures": [
+		"antiqueatlas:textures/gui/markers/dragon_purple.png"
+	  ]
+	},
+	"antiqueatlas:lycanites": {
+	  "textures": [
+		"antiqueatlas:textures/gui/markers/lycanites.png"
+	  ]
+	},
+	"antiqueatlas:megatower": {
+	  "textures": [
+		"antiqueatlas:textures/gui/markers/megatower.png"
+	  ]
+	},
+	"antiqueatlas:monsterspawner": {
+	  "textures": [
+		"antiqueatlas:textures/gui/markers/monsterspawner.png"
+	  ]
+	},
+	"antiqueatlas:parasite": {
+	  "textures": [
+		"antiqueatlas:textures/gui/markers/parasite.png"
+	  ]
+	},
+	"antiqueatlas:quadtower": {
+	  "textures": [
+		"antiqueatlas:textures/gui/markers/quadtower.png"
+	  ]
+	}
   }
 }
