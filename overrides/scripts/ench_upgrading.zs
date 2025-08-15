@@ -40,6 +40,6 @@ UpgradeEnchantments.setUpgradeTokenForRecipe(<enchantment:somanyenchantments:adv
 UpgradeEnchantments.setUpgradeTokenForRecipe(<enchantment:somanyenchantments:advancedflame>,<enchantment:somanyenchantments:supremeflame>,supremeTierUpgrade);
 
 //Special
-UpgradeEnchantments.setUpgradeTokenForRecipe(<enchantment:minecraft:mending>,<enchantment:somanyenchantments:advancedmending>,<defiledlands:book_wyrm_scale_golden>*2);
+UpgradeEnchantments.setUpgradeTokenForRecipe(<enchantment:minecraft:mending>,<enchantment:somanyenchantments:advancedmending>,<defiledlands:book_wyrm_scale_golden>);
 UpgradeEnchantments.setUpgradeTokenForRecipe(<enchantment:minecraft:protection>,<enchantment:somanyenchantments:advancedprotection>,supremeTierUpgrade);
 UpgradeEnchantments.setUpgradeTokenForRecipe(<enchantment:somanyenchantments:advancedprotection>,<enchantment:somanyenchantments:supremeprotection>,<minecraft:dragon_egg>*2);
