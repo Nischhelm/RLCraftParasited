@@ -56,6 +56,11 @@
         "antiqueatlas:textures/gui/markers/dragon_green.png"
       ]
     },
+    "antiqueatlas:dragon_purple": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/dragon_purple.png"
+      ]
+    },
     "antiqueatlas:dragon_red": {
       "textures": [
         "antiqueatlas:textures/gui/markers/dragon_red.png"
@@ -74,8 +79,33 @@
       ]
     },
     "antiqueatlas:google": {},
+    "antiqueatlas:lycanites": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/lycanites.png"
+      ]
+    },
+    "antiqueatlas:megatower": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/megatower.png"
+      ]
+    },
+    "antiqueatlas:monsterspawner": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/monsterspawner.png"
+      ]
+    },
     "antiqueatlas:nether_portal": {},
+    "antiqueatlas:parasite": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/parasite.png"
+      ]
+    },
     "antiqueatlas:pickaxe": {},
+    "antiqueatlas:quadtower": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/quadtower.png"
+      ]
+    },
     "antiqueatlas:red_x_large": {},
     "antiqueatlas:red_x_small": {},
     "antiqueatlas:ruins": {
@@ -113,36 +143,6 @@
       "textures": [
         "antiqueatlas:textures/gui/markers/wizardtower.png"
       ]
-    },
-	"antiqueatlas:dragon_purple": {
-	  "textures": [
-		"antiqueatlas:textures/gui/markers/dragon_purple.png"
-	  ]
-	},
-	"antiqueatlas:lycanites": {
-	  "textures": [
-		"antiqueatlas:textures/gui/markers/lycanites.png"
-	  ]
-	},
-	"antiqueatlas:megatower": {
-	  "textures": [
-		"antiqueatlas:textures/gui/markers/megatower.png"
-	  ]
-	},
-	"antiqueatlas:monsterspawner": {
-	  "textures": [
-		"antiqueatlas:textures/gui/markers/monsterspawner.png"
-	  ]
-	},
-	"antiqueatlas:parasite": {
-	  "textures": [
-		"antiqueatlas:textures/gui/markers/parasite.png"
-	  ]
-	},
-	"antiqueatlas:quadtower": {
-	  "textures": [
-		"antiqueatlas:textures/gui/markers/quadtower.png"
-	  ]
-	}
+    }
   }
 }
