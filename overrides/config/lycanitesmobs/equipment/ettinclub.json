@@ -46,7 +46,7 @@
       "levelMax": 1,
       "damageAmount": 4,
       "damageKnockback": 2,
-      "damageCooldown": 2,
+      "damageCooldown": 4,
       "damageRange": 1,
       "damageSweep": 360
     },
@@ -65,7 +65,7 @@
       "levelMin": 3,
       "damageAmount": 8,
       "damageKnockback": 4,
-      "damageCooldown": 4,
+      "damageCooldown": 2,
       "damageRange": 1,
       "damageSweep": 360
     }
