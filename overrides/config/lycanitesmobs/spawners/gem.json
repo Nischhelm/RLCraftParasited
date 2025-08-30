@@ -18,20 +18,17 @@
       "onHarvest": false,
       "chance": 0.02,
       "blocks": [
-        "biomesoplenty:gem_ore",
-        "iceandfire:amethyst_ore",
-        "defiledlands:scarlite_ore",
         "minecraft:quartz_ore",
         "minecraft:diamond_ore",
         "minecraft:lapis_ore",
         "minecraft:redstone_ore",
-        "biomesoplenty:crystal",
-        "scalinghealth:crystalore",
-        "quark:biotite_ore",
         "minecraft:emerald_ore",
+        "quark:biotite_ore",
+        "scalinghealth:crystalore",
+        "iceandfire:amethyst_ore",
         "iceandfire:sapphire_ore",
-        "defiledlands:hephaestite_ore",
-        "biomesoplenty:gem_ore"
+        "defiledlands:scarlite_ore",
+        "defiledlands:hephaestite_ore"
       ]
     }
   ],
