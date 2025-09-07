@@ -72,7 +72,7 @@
     "minecraft:taiga_cold_hills": "SNOW_PINES_HILLS",
     "minecraft:taiga_hills": "PINES_HILLS",
     "minecraft:void": "END_VOID",
-    "srparasites:biome_parasite": "PLAINS",
+    "srparasites:biome_parasite": "PARASITE_BIOME",
     "traverse:arid_highland": "MOUNTAINS_NAKED",
     "traverse:autumnal_wooded_hills": "T_AUTUMN_HILLS",
     "traverse:autumnal_woods": "T_AUTUMN",

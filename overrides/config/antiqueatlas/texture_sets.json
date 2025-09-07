@@ -1,6 +1,10 @@
 {
   "version": 1,
   "data": {
+    "BLOODY_RIVER": [
+      "antiqueatlas:textures/gui/tiles/bloody_river.png",
+      "antiqueatlas:textures/gui/tiles/bloody_river2.png"
+    ],
     "DL_DESERT": [
       "antiqueatlas:textures/gui/tiles/dl_sand.png",
       "antiqueatlas:textures/gui/tiles/dl_sand2.png",
@@ -41,6 +45,14 @@
       "antiqueatlas:textures/gui/tiles/dl_forest.png",
       "antiqueatlas:textures/gui/tiles/dl_forest2.png",
       "antiqueatlas:textures/gui/tiles/dl_forest3.png"
+    ],
+    "PARASITE_BIOME": [
+      "antiqueatlas:textures/gui/tiles/parasite_empty.png",
+      "antiqueatlas:textures/gui/tiles/parasite_mound.png",
+      "antiqueatlas:textures/gui/tiles/parasite_forest.png",
+      "antiqueatlas:textures/gui/tiles/parasite_forest.png",
+      "antiqueatlas:textures/gui/tiles/parasite_flowers.png",
+      "antiqueatlas:textures/gui/tiles/parasite_flowers.png"
     ],
     "TEST": [
       "antiqueatlas:textures/gui/tiles/test.png",
