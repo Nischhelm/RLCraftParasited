@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "name": "pool for contenttweaker:blood_tear",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.3,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "contenttweaker:blood_tear"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "pool for srparasites:lurecomponent5",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.7,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:lurecomponent5"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

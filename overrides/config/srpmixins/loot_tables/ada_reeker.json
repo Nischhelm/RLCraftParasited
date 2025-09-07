@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "name": "pool for srparasites:bone",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.2,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:bone"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "drop only one of these",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.6,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:ada_reeker_drop"
+        },
+        {
+          "conditions": [
+            {
+              "chance": 0.8,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:lurecomponent4"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

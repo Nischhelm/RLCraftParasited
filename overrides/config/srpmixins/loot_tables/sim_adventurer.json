@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "name": "pool for srparasites:lurecomponent2",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.05,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:lurecomponent2"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "pool for srparasites:assimilated_flesh",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.4,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:assimilated_flesh"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

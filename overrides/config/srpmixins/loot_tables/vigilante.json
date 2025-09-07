@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "name": "pool for srparasites:lurecomponent5",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.8,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:lurecomponent5"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

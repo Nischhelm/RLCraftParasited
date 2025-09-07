@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "name": "pool for srparasites:lurecomponent3",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.1,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:lurecomponent3"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "pool for srparasites:bone",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.1,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:bone"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "pool for srparasites:assimilated_flesh",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 0.8,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:assimilated_flesh"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "name": "pool for srparasites:dispatcher_drop",
+      "entries": [
+        {
+          "conditions": [
+            {
+              "chance": 1.0,
+              "looting_multiplier": 0.0,
+              "condition": "minecraft:random_chance_with_looting"
+            }
+          ],
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 70.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": 0.0,
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "srparasites:dispatcher_drop"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
