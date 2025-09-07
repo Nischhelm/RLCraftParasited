@@ -6,7 +6,8 @@
         "id": "forge-14.23.5.2860",
         "primary": true
       }
-    ]
+    ],
+    "recommendedRam": 8192
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
@@ -92,6 +93,16 @@
     {
       "projectID": 734347,
       "fileID": 6518808,
+      "required": true
+    },
+    {
+      "projectID": 1119777,
+      "fileID": 6972593,
+      "required": true
+    },
+    {
+      "projectID": 1195708,
+      "fileID": 6855853,
       "required": true
     },
     {
@@ -395,16 +406,6 @@
       "required": true
     },
     {
-      "projectID": 1119777,
-      "fileID": 6918177,
-      "required": true
-    },
-    {
-      "projectID": 1195708,
-      "fileID": 6855853,
-      "required": true
-    },
-    {
       "projectID": 309318,
       "fileID": 2820653,
       "required": true
@@ -435,11 +436,6 @@
       "required": true
     },
     {
-      "projectID": 711730,
-      "fileID": 6849057,
-      "required": true
-    },
-    {
       "projectID": 258587,
       "fileID": 3487676,
       "required": true
@@ -452,6 +448,11 @@
     {
       "projectID": 289347,
       "fileID": 2644656,
+      "required": true
+    },
+    {
+      "projectID": 711730,
+      "fileID": 6849057,
       "required": true
     },
     {
@@ -622,11 +623,6 @@
     {
       "projectID": 403617,
       "fileID": 6503321,
-      "required": true
-    },
-    {
-      "projectID": 1303863,
-      "fileID": 6933398,
       "required": true
     },
     {
@@ -957,6 +953,11 @@
     {
       "projectID": 243298,
       "fileID": 3116493,
+      "required": true
+    },
+    {
+      "projectID": 1303863,
+      "fileID": 6945437,
       "required": true
     },
     {

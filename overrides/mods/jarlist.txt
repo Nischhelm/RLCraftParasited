@@ -79,7 +79,7 @@ FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.070
 fermiumasm-5.28
-FermiumMixins-1.0.5
+FermiumMixins-1.0.6
 firstaid-1.6.22
 FishingMadeBetter-1.12.2-2.2.7
 foamfix-0.10.15-1.12.2
@@ -195,7 +195,7 @@ SpawnerControl-1.6.3b
 SRParasites-1.12.2v1.9.21
 SRPDeepSeaDanger-1.1.2
 SRPExtra-0.5.1
-SRPMixins-2.8.9
+SRPMixins-2.9.0
 StandardExpansion-3.4.173
 Surge-1.12.2-2.0.79
 switchbow-1.6.8
