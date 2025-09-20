@@ -42,7 +42,15 @@
     {
       "mobId": "lycanitesmobs:reaper",
       "weight": 8,
-      "mobNameTag": "Satan Claws"
+      "mobNameTag": "Satan Claws",
+		"mobDrops": [
+			{
+				"item": "lycanitestweaks:eventsoulstaff",
+				"amountMultiplier": false,
+				"bonusAmount": false,
+				"chance": 0.05
+			}
+		]
     }
   ]
 }

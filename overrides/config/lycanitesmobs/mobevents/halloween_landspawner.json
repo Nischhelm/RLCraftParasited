@@ -41,7 +41,15 @@
     {
       "mobId": "lycanitesmobs:ent",
       "weight": 8,
-      "mobNameTag": "Twisted Ent"
+      "mobNameTag": "Twisted Ent",
+      "mobDrops": [
+        {
+          "item": "lycanitestweaks:eventsoulstaff",
+          "amountMultiplier": false,
+          "bonusAmount": false,
+          "chance": 0.05
+        }
+      ]
     },
     {
       "mobId": "lycanitesmobs:treant",
