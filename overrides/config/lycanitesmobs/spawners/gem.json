@@ -14,22 +14,16 @@
   "conditions": [],
   "triggers": [
     {
-      "type": "block",
+      "type": "ore",
       "onHarvest": false,
+      "ores": false,
+      "gems": true,
       "chance": 0.02,
       "blocks": [
-        "minecraft:quartz_ore",
-        "minecraft:diamond_ore",
-        "minecraft:lapis_ore",
-        "minecraft:redstone_ore",
-        "minecraft:emerald_ore",
-        "quark:biotite_ore",
-        "scalinghealth:crystalore",
-        "iceandfire:amethyst_ore",
-        "iceandfire:sapphire_ore",
-        "defiledlands:scarlite_ore",
-        "defiledlands:hephaestite_ore"
-      ]
+        "srparasites:gore"
+      ],
+      "blocksListType": "blacklist",
+      "blockMaterialsListType": "blacklist"
     }
   ],
   "locations": [
