@@ -49,7 +49,15 @@
     {
       "mobId": "lycanitesmobs:wildkin",
       "weight": 8,
-      "mobNameTag": "Gooderness"
+      "mobNameTag": "Gooderness",
+      "mobDrops": [
+        {
+          "item": "lycanitestweaks:eventsoulstaff",
+          "amountMultiplier": false,
+          "bonusAmount": false,
+          "chance": 0.05
+        }
+      ]
     }
   ]
 }
