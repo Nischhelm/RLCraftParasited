@@ -38,16 +38,15 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
     var itemsToKeep as IEntityItem[] = [];
     for  item in event.drops {
         val dropName = item.item.definition.name;
-        print(event.entity.definition.name + " " + dropName);
         if(lurecomponents has dropName) itemsToKeep += item; //keep lures
         else if(craftingingredients has dropName || (bloodtear == dropName && !isOverworld)){
             if(rng.nextFloat() < craftingIngredientChance) {
                 itemsToKeep += item; //keep
-            } else print("removing");
+            }
         }
         else if(bloodtear != dropName) {
             itemsToKeep += item; //remove blood tears entirely in overworld, keep anything else
-        } else print("removing");
+        }
     }
     event.drops = itemsToKeep;
 });
