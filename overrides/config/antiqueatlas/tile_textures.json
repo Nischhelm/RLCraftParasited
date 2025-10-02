@@ -1,6 +1,7 @@
 {
   "version": 1,
   "data": {
+    "CAVE_WALLS": "CAVE_WALLS",
     "bloodyRiver": "BLOODY_RIVER",
     "bridge_coveredxTile": "bridge_coveredx",
     "bridge_coveredxoccludedTile": "bridge_coveredxoccluded",

@@ -3,7 +3,7 @@
   "data": {
     "defiledlands:desert_defiled": "DL_DESERT",
     "defiledlands:forest_tenebra": "DL_TENEBRA",
-    "defiledlands:forest_vilespine": "DL_VILESPINE",
+    "defiledlands:forest_vilespine": "DL_TENEBRA",
     "defiledlands:hills_defiled": "DL_HILLS",
     "defiledlands:ice_plains_defiled": "DL_ICE",
     "defiledlands:plains_defiled": "DL_PLAINS",
@@ -23,7 +23,7 @@
     "minecraft:forest_hills": "FOREST_HILLS",
     "minecraft:frozen_ocean": "ICE",
     "minecraft:frozen_river": "ICE",
-    "minecraft:hell": "CAVE_WALLS",
+    "minecraft:hell": "CUSTOM_HELL",
     "minecraft:ice_flats": "SNOW",
     "minecraft:ice_mountains": "SNOW_HILLS",
     "minecraft:jungle": "JUNGLE",
