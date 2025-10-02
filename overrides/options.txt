@@ -15,8 +15,8 @@ difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["RLHats.zip","LycanitesMobs32X.zip","Lum.1.12.2.zip","AnimEmis_InF_SW_Blue.zip","AnimEmis_defiledlands.zip","AnimEmis_srparasites.zip","Emis_Rlcraft.zip","RLTooltips.zip","RL SRP Better Visuals V0.1.zip","redux_nisch_edit.zip","TotallyNormalVindicators.zip","boom.mp3.zip","BetterBetterNetherV2.zip","AnimEmis_ForgottenItems.zip","DLD_Textures.zip","FMB_Textures.zip","IceAndFire_SoundFixes.zip","RLD_Textures.zip","japparesourcesbackport-1.0-mc1.12.zip","RLEnchantedBooks.zip"]
-incompatibleResourcePacks:["TotallyNormalVindicators.zip","boom.mp3.zip","BetterBetterNetherV2.zip"]
+resourcePacks:["RLHats.zip","LycanitesMobs32X.zip","Lum.1.12.2.zip","AnimEmis_InF_SW_Blue.zip","AnimEmis_defiledlands.zip","AnimEmis_srparasites.zip","Emis_Rlcraft.zip","RL SRP Better Visuals V0.1.zip","TotallyNormalVindicators.zip","boom.mp3.zip","AnimEmis_ForgottenItems.zip","DLD_Textures.zip","FMB_Textures.zip","IceAndFire_SoundFixes.zip","RLD_Textures.zip","RLEnchantedBooks.zip","RLDTooltips.zip","Lycanites Redux 1.12.2-v8.2.zip","jappabp-1.2-mc1.12.zip","JAPPA_RLCraftAdd-on_Nether.zip"]
+incompatibleResourcePacks:["TotallyNormalVindicators.zip","boom.mp3.zip","JAPPA_RLCraftAdd-on_Nether.zip"]
 lastServer:public.rlcraft.host
 lang:en_us
 chatVisibility:0
