@@ -193,8 +193,8 @@ SpartanShields-1.12.2-1.5.5
 SpartanWeaponry-1.12.2-1.6.1
 SpawnerControl-1.6.3b
 SRParasites-1.12.2v1.9.21
-SRPExtra-0.5.1
 SRPDeepSeaDanger-1.1.4
+SRPExtra-0.6.2
 SRPMixins-2.9.1.1
 StandardExpansion-3.4.173
 Surge-1.12.2-2.0.79
