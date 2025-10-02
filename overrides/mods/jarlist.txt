@@ -122,7 +122,7 @@ LoginHPFix-1.12.2.002
 LootTweaker-0.3.1+MC1.12.2
 lostcities-1.12-2.0.22
 lycanitesmobs-1.12.2-2.0.8.10
-LycanitesTweaks-1.0.11
+LycanitesTweaks-1.0.12
 MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
