@@ -5,17 +5,17 @@
 		"result": "default"
 	},
 	{
-		"mob": ["srparasites:sim_ocelot", "srparasites:sim_ocelot_head", "srparasites:fer_ocelot"],
+		"mob": ["srparasites:sim_ocelot", "srparasites:sim_ocelothead", "srparasites:fer_ocelot"],
 		"biometype": "JUNGLE",
 		"result": "default"
 	},
 	{
-		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_vindicator_head"],
+		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_vindicatorhead"],
 		"biometype": "SPOOKY",
 		"result": "default"
 	},
 	{
-		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_ocelot", "srparasites:fer_ocelot", "srparasites:hi_stray", "srparasites:sim_vindicator_head", "srparasites:sim_ocelot_head"],
+		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_ocelot", "srparasites:fer_ocelot", "srparasites:hi_stray", "srparasites:sim_vindicatorhead", "srparasites:sim_ocelothead"],
 		"maxphase": 8,
 		"result": "deny"
 	}
