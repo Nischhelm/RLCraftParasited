@@ -79,7 +79,7 @@ FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.070
 fermiumasm-5.28
-FermiumMixins-1.0.6
+FermiumMixins-1.0.9
 firstaid-1.6.22
 FishingMadeBetter-1.12.2-2.2.7
 foamfix-0.10.15-1.12.2
@@ -138,7 +138,7 @@ NBTManipulator-1.12.2.006
 Neat 1.4-17
 NoiseThreader-1.1.1
 notreepunching-2.0.21
-OceanicExpanse-1.2.1
+OceanicExpanse-1.2.2
 OptifineCITPatch-1.0.4
 OptiFine_1.12.2_HD_U_G5
 OreLib-1.12.2-3.6.0.1
