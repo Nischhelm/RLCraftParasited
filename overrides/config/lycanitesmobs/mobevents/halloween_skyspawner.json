@@ -46,7 +46,15 @@
     {
       "mobId": "lycanitesmobs:banshee",
       "weight": 4,
-      "mobNameTag": "Maniacal Ghost"
+      "mobNameTag": "Maniacal Ghost",
+		"mobDrops": [
+			{
+				"item": "lycanitestweaks:eventsoulstaff",
+				"amountMultiplier": false,
+				"bonusAmount": false,
+				"chance": 0.05
+			}
+		]
     },
     {
       "mobId": "lycanitesmobs:cacodemon",
@@ -59,12 +67,28 @@
     {
       "mobId": "lycanitesmobs:grue",
       "weight": 8,
-      "mobNameTag": "Shadow Clown"
+      "mobNameTag": "Shadow Clown",
+		"mobDrops": [
+			{
+				"item": "lycanitestweaks:eventsoulstaff",
+				"amountMultiplier": false,
+				"bonusAmount": false,
+				"chance": 0.05
+			}
+		]
     },
     {
       "mobId": "lycanitesmobs:epion",
       "weight": 4,
-      "mobNameTag": "Vampire Bat"
+      "mobNameTag": "Vampire Bat",
+		"mobDrops": [
+			{
+				"item": "lycanitestweaks:eventsoulstaff",
+				"amountMultiplier": false,
+				"bonusAmount": false,
+				"chance": 0.05
+			}
+		]
     }
   ]
 }
