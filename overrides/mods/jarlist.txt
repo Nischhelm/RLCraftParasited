@@ -116,7 +116,7 @@ Level Up! 2-1.1.23-1.12
 librarianlib-1.12.2-4.22
 llibrary-1.7.20-1.12.2
 LoadingScreens-1.12.2-0.3.1
-Localizator-1.12.2-1.0.13
+Localizator-1.12.2-1.0.14
 Locks-1.12.2-3.0.0
 LoginHPFix-1.12.2.002
 LootTweaker-0.3.1+MC1.12.2
