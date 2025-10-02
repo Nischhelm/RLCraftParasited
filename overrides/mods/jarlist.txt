@@ -5,7 +5,7 @@ AdHooks-1.12.2-3.3.1.0-build.0626
 Advanced-Fishing-1.12.2-1.3.3
 AIReducer-1.12.2-0.3.0
 alcatrazcore-1.0.4
-Amphithere Mod-1.0.2
+Amphithere Mod-1.0.4
 antiqueatlas-1.12.2-4.6.3
 AntiqueAtlasAutoMarker-1.4.2.2
 antiquecities-1.2.1
