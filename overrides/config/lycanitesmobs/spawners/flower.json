@@ -43,11 +43,6 @@
     {
       "mobId": "lycanitesmobs:nymph",
       "weight": 8
-    },
-    {
-      "mobId": "lycanitesmobs:nymph",
-      "lycanitestweaks:setNBT": "{TransformIntoBoss:1b}",
-      "weight": 1
     }
   ]
 }

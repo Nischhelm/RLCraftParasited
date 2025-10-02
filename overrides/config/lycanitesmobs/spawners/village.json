@@ -38,12 +38,6 @@
       "mobId": "lycanitesmobs:aegis",
       "weight": 8,
       "home": 32
-    },
-    {
-      "mobId": "lycanitesmobs:aegis",
-      "lycanitestweaks:setNBT": "{TransformIntoBoss:1b}",
-      "weight": 1,
-      "home": 32
     }
   ]
 }
