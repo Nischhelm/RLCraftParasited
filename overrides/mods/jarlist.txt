@@ -167,7 +167,7 @@ RLCombat-1.12.2-2.2.4
 RLCraftLuckified-1.1.1
 RLDragonsteel-1.0.0
 RLFoliage-MC1.12-2.4.2
-RLMixins-1.4.4
+RLMixins-1.4.6
 RLTweaker-1.12.2-0.7.5
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.6
 roughTweaks0.2.4-1.12.2
