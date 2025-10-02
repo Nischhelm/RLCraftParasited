@@ -1,7 +1,8 @@
 {
   "version": 1,
   "data": {
-	"bloodyRiver": -55,
+    "CAVE_WALLS": -56,
+    "bloodyRiver": -55,
     "bridge_coveredxTile": -45,
     "bridge_coveredzTile": -43,
     "bridge_openxTile": -46,
