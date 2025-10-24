@@ -10,6 +10,8 @@ recipes.remove(<minecraft:lapis_ore>);
 recipes.removeByRecipeName("minecraft:stone_brick_slab");
 recipes.removeByRecipeName("minecraft:stone_brick_stairs");
 
+recipes.removeByRecipeName("quark:purple_shulker_box");
+
 recipes.remove(<variedcommodities:diamond_gun>);
 recipes.remove(<variedcommodities:emerald_gun>);
 recipes.remove(<variedcommodities:iron_gun>);
