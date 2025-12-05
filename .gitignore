@@ -1,6 +1,8 @@
-**/overrides/config/fantasticlib/reference
-**/overrides/config/splash.properties
-**/overrides/config/jei/worldSettings.cfg
-**/overrides/config/spark/activity.json
-**/overrides/config/teamreborn/configData.nbt
-.idea
+.idea/*
+*.jar
+overrides/config/fantasticlib/reference/
+overrides/config/jei/worldSettings.cfg
+overrides/mods/memory_repo/
+build/*/
+zips/*
+.gradle/*
