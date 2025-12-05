@@ -1,0 +1,24 @@
+apply plugin: 'base'
+
+tasks.register('buildPack', Zip) {
+    doFirst {
+        def zipFile = project.file("/${modpack_name} - ${modpack_version}.zip")
+        if (zipFile.exists()) {
+            zipFile.delete()
+        }
+    }
+
+    from('export') {
+        include '**/*'
+
+        exclude "overrides/mods/printjars.py"
+        //exclude "overrides/**" //if you want to exclude whole folders
+    }
+
+    // Output zip name
+    archiveFileName = "${modpack_name} - ${modpack_version}.zip"
+
+    // Output directory
+    destinationDirectory = project.file("/")
+}
+
