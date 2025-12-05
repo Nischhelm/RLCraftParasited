@@ -1,6 +1,7 @@
 {
   "version": 1,
   "data": {
+    "BE_ICE_STARFIELD_VOID": "BE_ICE_STARFIELD_VOID",
     "CAVE_WALLS": "CAVE_WALLS",
     "bloodyRiver": "BLOODY_RIVER",
     "bridge_coveredxTile": "bridge_coveredx",
