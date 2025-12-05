@@ -1,6 +1,7 @@
 {
   "version": 1,
   "data": {
+    "BE_ICE_STARFIELD_VOID": -57,
     "CAVE_WALLS": -56,
     "bloodyRiver": -55,
     "bridge_coveredxTile": -45,

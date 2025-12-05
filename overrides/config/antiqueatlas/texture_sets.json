@@ -1,6 +1,10 @@
 {
   "version": 1,
   "data": {
+    "BE_ICE_STARFIELD_VOID": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/ice_starfield_void.png",
+      "antiqueatlas:textures/gui/tiles/end_void.png"
+    ],
     "BLOODY_RIVER": [
       "antiqueatlas:textures/gui/tiles/bloody_river.png",
       "antiqueatlas:textures/gui/tiles/bloody_river2.png"
