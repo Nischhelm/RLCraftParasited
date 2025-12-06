@@ -203,7 +203,7 @@ Surge-1.12.2-2.0.79
 switchbow-1.6.8
 tnt_utilities-mc1.12-1.2.3
 Toast Control-1.12.2-1.8.1
-ToggleSneakSprint-1.1.1
+ToggleSneakSprint-1.1.2
 ToolBelt-1.12.2-1.9.14
 Traverse-1.12.2-1.6.0-69
 Trinkets and Baubles-0.32.5
