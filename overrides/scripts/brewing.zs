@@ -370,34 +370,30 @@ mods.inspirations.Cauldron.addFluidTransform(<liquid:carrot_juice>, <minecraft:c
 mods.inspirations.Cauldron.addFillRecipe(<foodexpansion:itemcarrotseedsoup>, <liquid:carrot_juice>, 1, <minecraft:bowl>);
 mods.inspirations.Cauldron.addFluidRecipe(<foodexpansion:itemcarrotseedsoup>, <minecraft:bowl>, <liquid:carrot_juice>);
 
-//Default Canteen
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:canteen>.withTag({Doses: 1, CanteenType: 3}), <simpledifficulty:canteen>.withTag({Doses: 0, CanteenType: 0}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:canteen>.withTag({Doses: 1, CanteenType: 3}), <simpledifficulty:canteen>.withTag({Doses: 0, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:canteen>.withTag({Doses: 2, CanteenType: 3}), <simpledifficulty:canteen>.withTag({Doses: 1, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:canteen>.withTag({Doses: 3, CanteenType: 3}), <simpledifficulty:canteen>.withTag({Doses: 2, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:canteen>.withTag({Doses: 3, CanteenType: 3}), <simpledifficulty:canteen>.withTag({Doses: 3, CanteenType: 3}), <liquid:water>, 0, true);
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:purified_water_bottle>, <liquid:water>, 1, <minecraft:glass_bottle>);
 
-//Iron Canteen Purified
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 1, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 0, CanteenType: 0}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 1, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 0, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 2, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 1, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 3, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 2, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 4, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 3, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 5, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 4, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 5, CanteenType: 3}), <liquid:water>, 1, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 3}), <simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 3}), <liquid:water>, 0, true);
+//Default Canteen Dirty
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:canteen>.withTag({Doses: 1, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:canteen>.withTag({Doses: 0, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:canteen>.withTag({Doses: 2, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:canteen>.withTag({Doses: 1, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:canteen>.withTag({Doses: 3, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:canteen>.withTag({Doses: 2, CanteenType: 0}));
 
 //Iron Canteen Dirty
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <simpledifficulty:iron_canteen>, <liquid:water>, 0, null);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <simpledifficulty:iron_canteen>.withTag({Doses: 1, CanteenType: 0}), <liquid:water>, 0, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <simpledifficulty:iron_canteen>.withTag({Doses: 2, CanteenType: 0}), <liquid:water>, 0, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <simpledifficulty:iron_canteen>.withTag({Doses: 3, CanteenType: 0}), <liquid:water>, 0, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <simpledifficulty:iron_canteen>.withTag({Doses: 4, CanteenType: 0}), <liquid:water>, 0, true);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <simpledifficulty:iron_canteen>.withTag({Doses: 5, CanteenType: 0}), <liquid:water>, 0, true);
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 1, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:iron_canteen>.withTag({Doses: 0, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 2, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:iron_canteen>.withTag({Doses: 1, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 3, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:iron_canteen>.withTag({Doses: 2, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 4, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:iron_canteen>.withTag({Doses: 3, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 5, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:iron_canteen>.withTag({Doses: 4, CanteenType: 0}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:iron_canteen>.withTag({Doses: 6, CanteenType: 0}), <liquid:water>, 1, <simpledifficulty:iron_canteen>.withTag({Doses: 5, CanteenType: 0}));
 
 //Dragon Canteen
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 8, CanteenType: 3}), <simpledifficulty:dragon_canteen>, <liquid:water>, 1, false);
-//mods.inspirations.Cauldron.addFluidRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 8, CanteenType: 3}), <simpledifficulty:dragon_canteen>, <liquid:water>, 1, true);
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 1, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 0, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 2, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 1, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 3, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 2, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 4, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 3, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 5, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 4, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 6, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 5, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 7, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 6, CanteenType: 3}));
+mods.inspirations.Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 8, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 7, CanteenType: 3}));
 
 //Milk Kek
 //mods.inspirations.Cauldron.addBrewingRecipe("mujmajnkraftsbettersurvival:milk", "minecraft:thick", <minecraft:milk_bucket>);
