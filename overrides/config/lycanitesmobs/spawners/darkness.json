@@ -17,7 +17,8 @@
     {
       "type": "world",
       "dimensionIds": [
-        111
+        111,
+        44
       ],
       "dimensionListType": "blacklist"
     }
