@@ -10,7 +10,15 @@
   "ignoreLightLevel": true,
   "ignoreGroupLimit": true,
   "ignoreForgeCanSpawnEvent": true,
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "world",
+      "dimensionIds": [
+        44
+      ],
+      "dimensionListType": "blacklist"
+    }
+  ],
   "triggers": [
     {
       "type": "sleep",
