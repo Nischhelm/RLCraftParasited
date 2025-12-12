@@ -93,7 +93,7 @@ forgottenitems-1.12.2-1.3.1.4
 framevoidpatch-1.0.0
 FriendlyEndermite_v1.0.1_mc1.12.2
 FrozenOcean-1.12.2-1.0.0-rc1
-FurnaceXPStorage-1.1.4
+FurnaceXPStorage-1.2.0
 fxcontrol-1.12-0.1.15
 GlobalGameRules-1.12.2-2.2.7
 GooglyEyes-1.12.2-7.1.1
@@ -128,7 +128,7 @@ MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
 mcw-bridges-1.0.6b-mc1.12.2
-MindPalaces-1.0.4
+MindPalaces-1.1.0
 MmmMmmMmmMmm-1.12-2.0.5
 MoBends_1.12.2-1.2.1-19.12.21
 modtweaker-4.0.20.11
