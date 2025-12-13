@@ -1,5 +1,6 @@
 import crafttweaker.entity.IEntityItem;
-import crafttweaker.player.IPlayer;
+import crafttweaker.event.EntityLivingDeathDropsEvent;
+import crafttweaker.event.LivingExperienceDropEvent;
 
 val lurecomponents = [
     "item.srparasites.lurecomponent1",
@@ -27,8 +28,9 @@ val craftingingredients = [
 
 val bloodtear = "item.contenttweaker.blood_tear";
 
-events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivingDeathDropsEvent) {
-    if(event.entity instanceof IPlayer) return;
+events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
+	if(isNull(event.entity)) return;
+	if(isNull(event.entity.definition)) return;
     if(!(event.entity.definition.name has "srparasites.")) return; //only parasite drops
     val dimId = event.entity.dimension;
     if(dimId == 111) return; //no change in LC
@@ -51,4 +53,16 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
         }
     }
     event.drops = itemsToKeep;
+});
+
+events.onLivingExperienceDrop(function(event as LivingExperienceDropEvent) {
+	if(isNull(event.entity)) return;
+	if(isNull(event.entity.definition)) return;
+    if(!(event.entity.definition.name has "srparasites.")) return; //only parasite xp
+    val dimId = event.entity.dimension;
+    if(dimId == 111) return; //no change in LC
+    val isOverworld = dimId == 0;
+
+    val xpMulti = isOverworld ? 0.3 : 0.7;
+    event.droppedExperience = xpMulti * event.droppedExperience;
 });
