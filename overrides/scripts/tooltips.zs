@@ -160,4 +160,30 @@ print("Script starting!");
 //<mujmajnkraftsbettersurvival:itemjunglechitinhammer:*>.addTooltip(format.green("Secondary Attack, Stun And Knockback"));
 //<mujmajnkraftsbettersurvival:itemdesertchitinhammer:*>.addTooltip(format.green("Secondary Attack, Stun And Knockback"));
 
+<srparasites:evolutionlure:*>.addTooltip(game.localize("tooltip.srparasites:evolutionlure","en_us")); //all of them
+<srparasites:evolutionlure:0>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.1","en_us"));
+<srparasites:evolutionlure:1>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.2","en_us"));
+<srparasites:evolutionlure:2>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.3","en_us"));
+<srparasites:evolutionlure:3>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.4","en_us"));
+<srparasites:evolutionlure:4>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.5","en_us"));
+<srparasites:evolutionlure:5>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.6","en_us"));
+<srparasites:evolutionlure:6>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.7","en_us"));
+<srparasites:evolutionlure:7>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.8","en_us"));
+<srparasites:evolutionlure:8>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.9","en_us"));
+<srparasites:evolutionlure:9>.addTooltip(game.localize("tooltip.srparasites:evolutionlure.10","en_us"));
+
+<srparasites:lurecomponent1>.addTooltip(game.localize("tooltip.srparasites:lurecomponent","en_us"));
+<srparasites:lurecomponent2>.addTooltip(game.localize("tooltip.srparasites:lurecomponent","en_us"));
+<srparasites:lurecomponent3>.addTooltip(game.localize("tooltip.srparasites:lurecomponent","en_us"));
+<srparasites:lurecomponent4>.addTooltip(game.localize("tooltip.srparasites:lurecomponent","en_us"));
+<srparasites:lurecomponent5>.addTooltip(game.localize("tooltip.srparasites:lurecomponent","en_us"));
+<srparasites:lurecomponent6>.addTooltip(game.localize("tooltip.srparasites:lurecomponent","en_us"));
+
+<srparasites:lurecomponent1>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.1","en_us"));
+<srparasites:lurecomponent2>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.2","en_us"));
+<srparasites:lurecomponent3>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.3","en_us"));
+<srparasites:lurecomponent4>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.4","en_us"));
+<srparasites:lurecomponent5>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.5","en_us"));
+<srparasites:lurecomponent6>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.6","en_us"));
+
 print("Script ending!");
