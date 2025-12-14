@@ -1,0 +1,72 @@
+##################################################################
+# tooltips.zs
+##################################################################
+## Item Names ===========================================================
+item.fishingRod.name=Ancient Fishing Rod
+item.advanced-fishing.blazing_fishing_pole.name=Ancient Lava Fishing Rod
+item.iceandfire.fishing_spear.name=Ancient Fishing Spear
+tile.simpledifficulty:heater.name=Heating Coil
+tile.simpledifficulty:chiller.name=Cooling Coil
+item.simpledifficulty:wool_helmet.name=Wool Hood
+item.simpledifficulty:wool_chestplate.name=Wool Coat
+item.simpledifficulty:wool_leggings.name=Wool Leggings
+item.simpledifficulty:wool_boots.name=Wool Boots
+item.notreepunching:rock.basalt.name=Basalt Rock
+tile.notreepunching:cobblestone.basalt.name=Basalt Cobblestone
+tile.bone_block.name=Smooth Bone Block
+tile.bountifulbaubles.reforger.name=Baubles Reforging Station
+item.bountifulbaubles.ringIron.name=Holy Ring
+item.heart.name=Demonic Heart
+item.skull.name=Corrupted Skull
+item.saddle.name=Basic Saddle
+item.fish.cod.raw.name=River Fish
+item.fish.salmon.raw.name=Mountain Fish
+item.fish.clownfish.raw.name=Tropical Fish
+item.fish.pufferfish.raw.name=Ocean Fish
+item.fish.cod.cooked.name=Cooked River Fish
+item.fish.salmon.cooked.name=Cooked Mountain Fish
+
+tooltip.scripts.onlycrafting=§4Only used for crafting!
+tooltip.scripts.ozzyliner.destroys=§4Destroyed upon removal!
+tooltip.quark:ancient_tome=§6Use in off-hand to apply to matching enchanted item
+tooltip.rlmixins:cleansing_talisman=§6Craft with any enchanted book to convert the book's enchantment to Curse Break
+tooltip.bountifulbaubles:amuletsinwrath=§5A trophy lost to time, reminiscent of another world.
+tooltip.variedcommodities:heart=§aOne of many hearts dropped by Rahovart, still beating with demonic energy.
+tooltip.variedcommodities:skull=§aOne of many skulls dropped by Asmodeus, the lost souls inside can still be heard screaming.
+
+item.scarlite_helmet.name=§4§kScarlite§r§4 Helmet
+item.scarlite_chestplate.name=§4§kScarlite§r§4 Chestplate
+item.scarlite_leggings.name=§4§kScarlite§r§4 Leggings
+item.scarlite_boots.name=§4§kScarlite§r§4 Boots
+
+tooltip.simpledifficulty:wool_helmet=§4+2 Warmth
+tooltip.simpledifficulty:wool_chestplate=§4+2 Warmth
+tooltip.simpledifficulty:wool_leggings=§4+2 Warmth
+tooltip.simpledifficulty:wool_boots=§4+2 Warmth
+tooltip.simpledifficulty:ice_helmet=§3+2 Cooling
+tooltip.simpledifficulty:ice_chestplate=§3+2 Cooling
+tooltip.simpledifficulty:ice_leggings=§3+2 Cooling
+tooltip.simpledifficulty:ice_boots=§3+2 Cooling
+tooltip.scripts.weapon.steelbonus=§6+2 damage against Nether mobs and Fire elementals
+tooltip.sereneseasons:greenhouse_glass=§aAllows crops up to 7 blocks directly beneath to grow in any season
+
+tooltip.srparasites:evolutionlure=§7A 7x7 cross using 5 same Lures creates a Carcass!
+tooltip.srparasites:evolutionlure.1=§eUsable from Phase 1 onwards
+tooltip.srparasites:evolutionlure.2=§eUsable from Phase 2 onwards
+tooltip.srparasites:evolutionlure.3=§eUsable from Phase 3 onwards
+tooltip.srparasites:evolutionlure.4=§eUsable from Phase 4 onwards
+tooltip.srparasites:evolutionlure.5=§eUsable from Phase 5 onwards
+tooltip.srparasites:evolutionlure.6=§eUsable from Phase 6 onwards
+tooltip.srparasites:evolutionlure.7=§eUsable from Phase 7 onwards - Creative Only
+tooltip.srparasites:evolutionlure.8=§eUsable from Phase 8 onwards - Creative Only
+tooltip.srparasites:evolutionlure.9=§eUsable from Phase 9 onwards - Creative Only
+tooltip.srparasites:evolutionlure.10=§eUsable in Phase 10 - Creative Only
+
+tooltip.srparasites:lurecomponent=§7Used to craft Lures!
+tooltip.srparasites:lurecomponent.1=§eLvl 1 - Rupter
+tooltip.srparasites:lurecomponent.2=§eLvl 2 - Assimilated
+tooltip.srparasites:lurecomponent.3=§eLvl 3 - Primitive
+tooltip.srparasites:lurecomponent.4=§eLvl 4 - Adapted
+tooltip.srparasites:lurecomponent.5=§eLvl 5 - Pure
+tooltip.srparasites:lurecomponent.6=§eLvl 6 - Biome
+
