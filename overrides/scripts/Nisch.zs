@@ -15,3 +15,11 @@ recipes.addShaped("nodecompass",<srparasites:nodecompass>,
   [null,<srparasites:lurecomponent6>,null]]);
 
 knifeRecipes.add(<minecraft:book>,<minecraft:paper>*2);
+
+events.onBlockHarvestDrops(function(event as crafttweaker.event.BlockHarvestDropsEvent){
+    if(event.isPlayer) return;
+    if(event.drops.length != 1) return;
+    val itemId = event.drops[0].stack.definition.id as string;
+    if(itemId != "oe:kelp" && itemId != "coralreef:coral") return;
+    event.drops = [] as crafttweaker.item.WeightedItemStack[];
+});
