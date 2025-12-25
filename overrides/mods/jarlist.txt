@@ -93,7 +93,7 @@ Forgelin-1.8.4
 forgottenitems-1.12.2-1.3.1.4
 framevoidpatch-1.0.0
 FriendlyEndermite_v1.0.1_mc1.12.2
-FrozenOcean-1.12.2-1.0.0-rc1
+FrozenOcean-1.12.2-1.0.0
 FurnaceXPStorage-1.2.0
 fxcontrol-1.12-0.1.15
 GlobalGameRules-1.12.2-2.2.7
