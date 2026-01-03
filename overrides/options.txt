@@ -15,7 +15,7 @@ difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["RLHats.zip","LycanitesMobs32X.zip","Lum.1.12.2.zip","AnimEmis_InF_SW_Blue.zip","AnimEmis_defiledlands.zip","AnimEmis_srparasites.zip","Emis_Rlcraft.zip","RL SRP Better Visuals V0.1.zip","TotallyNormalVindicators.zip","boom.mp3.zip","AnimEmis_ForgottenItems.zip","DLD_Textures.zip","FMB_Textures.zip","IceAndFire_SoundFixes.zip","RLD_Textures.zip","RLEnchantedBooks.zip","RLDTooltips.zip","Lycanites Redux 1.12.2-v8.2.zip","jappabp-1.2-mc1.12.zip","JAPPA_RLCraftAdd-on_Nether.zip"]
+resourcePacks:["RLHats.zip","LycanitesMobs32X.zip","Lum.1.12.2.zip","AnimEmis_InF_SW_Blue.zip","AnimEmis_defiledlands.zip","AnimEmis_srparasites.zip","Emis_Rlcraft.zip","RL SRP Better Visuals V0.1.zip","TotallyNormalVindicators.zip","boom.mp3.zip","AnimEmis_ForgottenItems.zip","DLD_Textures.zip","FMB_Textures.zip","IceAndFire_SoundFixes.zip","RLD_Textures.zip","RLEnchantedBooks.zip","jappabp-1.2-mc1.12.zip","JAPPA_RLCraftAdd-on_Nether.zip","Anthrax101\u0027s Remastered Bedrock.zip","RLTooltips.zip","Lycanites Redux 1.12.2-v8.2.1.zip"]
 incompatibleResourcePacks:["TotallyNormalVindicators.zip","boom.mp3.zip","JAPPA_RLCraftAdd-on_Nether.zip"]
 lastServer:public.rlcraft.host
 lang:en_us
@@ -69,7 +69,7 @@ key_key.pickItem:-98
 key_key.command:53
 key_key.screenshot:60
 key_key.togglePerspective:63
-key_key.smoothCamera:78
+key_key.smoothCamera:0
 key_key.fullscreen:87
 key_key.spectatorOutlines:0
 key_key.swapHands:33
@@ -100,7 +100,7 @@ key_key.summoning:0
 key_key.minions:44
 key_key.wearablebackpacks.open:0
 key_key.fbp.open_menu:25
-key_key.fbp.toggle_freeze:19
+key_key.fbp.toggle_freeze:0
 key_key.fbp.enable_disable:0
 key_key.fbp.kill_particles:0
 key_key.fbp.blacklist_block:0
@@ -151,7 +151,6 @@ key_bqtweaker.key.pageback:14
 key_key.sethorse.desc:72
 key_key.callhorse.desc:71
 key_key.carry.desc:42
-key_key.chattweaks.switch_chat_view:55
 key_key.elenaidodge.dodge:56
 key_key.reelIn:203
 key_key.reelOut:205
