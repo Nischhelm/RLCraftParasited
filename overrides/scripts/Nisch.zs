@@ -1,5 +1,6 @@
 import mods.inspirations.Cauldron as cauldronRecipes;
 import mods.notreepunching.Knife as knifeRecipes;
+import srpmixins.SRPSaveData;
 
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <oe:turtle_helmet>);
 brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}), <oe:turtle_helmet>);
@@ -22,4 +23,12 @@ events.onBlockHarvestDrops(function(event as crafttweaker.event.BlockHarvestDrop
     val itemId = event.drops[0].stack.definition.id as string;
     if(itemId != "oe:kelp" && itemId != "coralreef:coral") return;
     event.drops = [] as crafttweaker.item.WeightedItemStack[];
+});
+
+events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
+    if(event.to != 111) return;
+    val data as SRPSaveData = SRPSaveData.getForPlayer(event.player);
+    if(data.phase == 7 && data.cooldown > 120){
+        data.cooldown = 120
+    }
 });
