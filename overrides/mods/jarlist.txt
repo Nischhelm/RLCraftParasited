@@ -84,7 +84,6 @@ fermiumasm-5.28
 FermiumMixins-1.0.11
 firstaid-1.6.22
 FishingMadeBetter-1.12.2-2.2.7
-Fluidlogged-API-v3.1.2-mc1.12.2
 foamfix-0.10.15-1.12.2
 FoodExpansion1.3.3-1.12.2
 FoodFix-1.12.2.001
