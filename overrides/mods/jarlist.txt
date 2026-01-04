@@ -63,7 +63,7 @@ CreativeCore_v1.10.71_mc1.12.2
 CustomMainMenu-MC1.12.2-2.0.9.1
 defiledlands-1.12.2-1.4.3
 disenchanter[1.12]1.8
-distinctdamagedescriptions-1.9.4
+distinctdamagedescriptions-1.9.5
 dldungeonsjbg-1.14.14-MC1.12.2
 DramaticTrees-1.12.2-0.13.4
 Dynamic-Raw-Ores-1.12.2-1.0.4a
