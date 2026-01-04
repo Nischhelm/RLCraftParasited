@@ -28,7 +28,6 @@ events.onBlockHarvestDrops(function(event as crafttweaker.event.BlockHarvestDrop
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
     if(event.to != 111) return;
     val data as SRPSaveData = SRPSaveData.getForPlayer(event.player);
-    if(data.phase == 7 && data.cooldown > 120){
-        data.cooldown = 120
-    }
+    if(data.phase == 7 && data.cooldown > 120)
+        data.cooldown = 120;
 });
