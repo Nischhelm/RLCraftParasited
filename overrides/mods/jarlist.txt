@@ -196,7 +196,7 @@ SpawnerControl-1.6.3b
 SRParasites-1.12.2v1.9.21
 SRPDeepSeaDanger-1.1.4
 SRPExtra-0.6.2
-SRPMixins-2.9.4
+SRPMixins-2.9.4.1
 StandardExpansion-3.4.173
 Surge-1.12.2-2.0.79
 switchbow-1.6.8
