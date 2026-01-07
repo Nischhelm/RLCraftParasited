@@ -82,5 +82,15 @@
       "blockId": "lycanitesmobs:ooze",
       "weight": 8
     }
+  ],
+  "lycanitestweaks:bossExitBlocks": [
+    {
+      "blockId": "lycanitesmobs:aberrantstonebrick_fence",
+      "weight": 8
+    },
+    {
+      "blockId": "lycanitesmobs:aberrantstonebrick_wall",
+      "weight": 2
+    }
   ]
 }

@@ -90,5 +90,15 @@
       "blockId": "minecraft:magma",
       "weight": 8
     }
+  ],
+  "lycanitestweaks:bossExitBlocks": [
+    {
+      "blockId": "lycanitesmobs:ashenstonebrick_fence",
+      "weight": 8
+    },
+    {
+      "blockId": "lycanitesmobs:ashenstonebrick_wall",
+      "weight": 2
+    }
   ]
 }

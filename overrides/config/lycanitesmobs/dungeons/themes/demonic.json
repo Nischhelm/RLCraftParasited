@@ -82,5 +82,15 @@
       "blockId": "minecraft:lava",
       "weight": 8
     }
+  ],
+  "lycanitestweaks:bossExitBlocks": [
+    {
+      "blockId": "lycanitesmobs:demonstonebrick_fence",
+      "weight": 8
+    },
+    {
+      "blockId": "lycanitesmobs:demonstonebrick_wall",
+      "weight": 2
+    }
   ]
 }
