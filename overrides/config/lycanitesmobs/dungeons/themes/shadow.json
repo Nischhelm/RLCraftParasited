@@ -82,5 +82,15 @@
       "blockId": "lycanitesmobs:poison",
       "weight": 8
     }
+  ],
+  "lycanitestweaks:bossExitBlocks": [
+    {
+      "blockId": "lycanitesmobs:shadowstonebrick_fence",
+      "weight": 8
+    },
+    {
+      "blockId": "lycanitesmobs:shadowstonebrick_wall",
+      "weight": 2
+    }
   ]
 }

@@ -82,5 +82,15 @@
       "blockId": "lycanitesmobs:ooze",
       "weight": 8
     }
+  ],
+  "lycanitestweaks:bossExitBlocks": [
+    {
+      "blockId": "lycanitesmobs:desertstonebrick_fence",
+      "weight": 8
+    },
+    {
+      "blockId": "lycanitesmobs:desertstonebrick_wall",
+      "weight": 2
+    }
   ]
 }
