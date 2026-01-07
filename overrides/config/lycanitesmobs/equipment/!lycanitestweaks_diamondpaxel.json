@@ -1,0 +1,55 @@
+{
+  "itemName": "diamondpaxel",
+  "loadDefault": true,
+  "slotType": "blade",
+  "dropMobId": "",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 1,
+  "features": [
+    {
+      "featureType": "harvest",
+      "harvestType": "pickaxe",
+      "harvestSpeed": 10,
+      "harvestLevel": 4
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "axe",
+      "harvestSpeed": 10,
+      "harvestLevel": 4
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "shovel",
+      "harvestSpeed": 10,
+      "harvestLevel": 4
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "hoe",
+      "harvestSpeed": 10,
+      "harvestLevel": 4
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "sword",
+      "harvestSpeed": 10,
+      "harvestLevel": 4
+    },
+    {
+      "featureType": "harvest",
+      "harvestType": "shears",
+      "harvestSpeed": 10,
+      "harvestLevel": 4
+    },
+    {
+      "featureType": "damage",
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 0.5,
+      "damageRange": 1,
+      "damageSweep": 90
+    }
+  ]
+}
