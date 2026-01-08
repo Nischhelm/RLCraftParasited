@@ -1,0 +1,118 @@
+{
+  "name": "lycanitestweaks_bloodmoon_skyhighfixate",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": true,
+  "triggersRequired": 3,
+  "multipleLocations": "combine",
+  "mobCountMin": 1,
+  "ignoreDimensions": true,
+  "ignoreBiomes": true,
+  "ignoreCollision": true,
+  "ignoreLightLevel": true,
+  "ignoreGroupLimit": true,
+  "ignoreForgeCanSpawnEvent": true,
+  "conditions": [
+    {
+      "type": "lycanitestweaks:bloodmoon"
+    }
+  ],
+  "triggers": [
+    {
+      "type": "player",
+      "count": 1,
+      "chance": 1,
+      "tickRate": 100,
+      "conditions": [
+        {
+          "type": "lycanitestweaks:player",
+          "blockLightLevelMax": 0,
+          "surface": true,
+          "yMin": 97
+        },
+        {
+          "type": "lycanitestweaks:bloodmoon"
+        }
+      ]
+    },
+    {
+      "type": "player",
+      "count": 0,
+      "chance": 1,
+      "tickRate": 100,
+      "conditions": [
+        {
+          "type": "lycanitestweaks:player",
+          "blockLightLevelMin": 1
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "type": "random",
+      "rangeMin": [
+        0,
+        0,
+        0
+      ],
+      "rangeMax": [
+        2,
+        2,
+        2
+      ],
+      "sorting": "random",
+      "limit": 1,
+      "blocks": [
+        "minecraft:air",
+        "minecraft:tall_grass",
+        "minecraft:water"
+      ],
+      "listType": "whitelist",
+      "solidGround": false,
+      "underground": false
+    }
+  ],
+  "mobSpawns": [
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "lycanitestweaks:setNBT": "{IsMinion:1b}",
+      "mobId": "lycanitesmobs:grue",
+      "mobNameTag": "Blood Phantom",
+      "temporary": 400,
+      "fixate": true,
+      "variant": 3,
+      "mobSizeScale": 2,
+      "weight": 8
+    },
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "lycanitestweaks:setNBT": "{IsMinion:1b}",
+      "mobId": "lycanitesmobs:epion",
+      "mobNameTag": "Blood Phantom",
+      "temporary": 400,
+      "fixate": true,
+      "variant": 3,
+      "mobSizeScale": 1,
+      "weight": 8
+    }
+  ],
+  "triggerCountMessages": [
+    {
+      "count": 0,
+      "message": "spawner.bloodmoon_skyhighfixate.level1.back"
+    },
+    {
+      "count": 1,
+      "message": "spawner.bloodmoon_skyhighfixate.level1"
+    },
+    {
+      "count": 2,
+      "message": "spawner.bloodmoon_skyhighfixate.level2"
+    },
+    {
+      "count": 3,
+      "message": "spawner.bloodmoon_skyhighfixate.level3"
+    }
+  ]
+}

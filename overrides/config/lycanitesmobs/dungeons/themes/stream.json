@@ -64,5 +64,15 @@
       "blockId": "lycanitesmobs:streamstonetile_stairs",
       "weight": 8
     }
+  ],
+  "lycanitestweaks:bossExitBlocks": [
+    {
+      "blockId": "lycanitesmobs:streamstonebrick_fence",
+      "weight": 8
+    },
+    {
+      "blockId": "lycanitesmobs:streamstonebrick_wall",
+      "weight": 2
+    }
   ]
 }
