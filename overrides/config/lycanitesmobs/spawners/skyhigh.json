@@ -12,6 +12,11 @@
       "type": "world",
       "chance": 0.3,
       "tickRate": 1600
+    },
+    {
+      "type": "lycanitestweaks:bloodmoon",
+      "chance": 1.0,
+      "tickRate": 1300
     }
   ],
   "locations": [

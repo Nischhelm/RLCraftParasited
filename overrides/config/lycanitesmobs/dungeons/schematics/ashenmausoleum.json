@@ -109,9 +109,9 @@
       "weight": 1,
       "variant": 0,
       "mobNameTag": "Mantle Gorger",
-      "mobSizeScale": 3,
+      "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 20,
+      "mobLevel": 4,
       "spawnAsBoss": true,
       "dungeonLevelMin": 0,
       "dungeonLevelMax": 2,
@@ -135,7 +135,7 @@
       "mobNameTag": "Molten Titan",
       "mobSizeScale": 3,
       "naturalDespawn": "false",
-      "mobLevel": 40,
+      "mobLevel": 8,
       "spawnAsBoss": true,
       "dungeonLevelMin": 3,
       "dungeonLevelMax": 4,
@@ -160,7 +160,7 @@
       "mobNameTag": "Prime Lava Soul",
       "mobSizeScale": 3.5,
       "naturalDespawn": "false",
-      "mobLevel": 40,
+      "mobLevel": 8,
       "spawnAsBoss": true,
       "dungeonLevelMin": 3,
       "dungeonLevelMax": 4,
@@ -190,7 +190,7 @@
       "mobSizeScale": 1.1,
       "mobNameTag": "The Tyrant Dragon",
       "naturalDespawn": "false",
-      "mobLevel": 50,
+      "mobLevel": 10,
       "spawnAsBoss": true,
       "dungeonLevelMin": 5,
       "dungeonBoss": true,
@@ -214,7 +214,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{\r\nMultiplierHealth:0.2d}}"
     }
   ]
 }
