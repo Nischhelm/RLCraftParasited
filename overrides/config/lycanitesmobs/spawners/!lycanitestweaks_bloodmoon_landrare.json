@@ -1,9 +1,10 @@
 {
-  "name": "lycanitestweaks_bloodmoon_landrare",
+  "name": "bloodmoon_landrare",
   "type": "spawner",
   "enabled": true,
   "loadDefault": true,
   "mobCountMin": 1,
+  "mobCountPlayerRange": 128,
   "ignoreDimensions": true,
   "ignoreBiomes": true,
   "ignoreCollision": true,
@@ -15,8 +16,9 @@
   "triggers": [
     {
       "type": "lycanitestweaks:bloodmoon",
-      "chance": 0.75,
-      "tickRate": 4000
+      "chance": 0.25,
+      "tickRate": 3000,
+      "oneSuccess": true
     }
   ],
   "locations": [
@@ -43,6 +45,7 @@
       "lycanitestweaks:bloodmoon": true,
       "mobId": "lycanitesmobs:lobber",
       "temporary": 6000,
+      "naturalDespawn": "true",
       "variant": 3,
       "mobSizeScale": 2,
       "weight": 8
@@ -51,6 +54,7 @@
       "lycanitestweaks:bloodmoon": true,
       "mobId": "lycanitesmobs:chupacabra",
       "temporary": 6000,
+      "naturalDespawn": "true",
       "variant": 3,
       "mobSizeScale": 2,
       "weight": 8
@@ -58,6 +62,7 @@
     {
       "lycanitestweaks:bloodmoon": true,
       "mobId": "lycanitesmobs:archvile",
+      "naturalDespawn": "true",
       "temporary": 6000,
       "variant": 3,
       "mobSizeScale": 2,

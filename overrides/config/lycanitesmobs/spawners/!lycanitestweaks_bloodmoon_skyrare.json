@@ -1,0 +1,81 @@
+{
+  "name": "bloodmoon_skyrare",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": true,
+  "mobCountMin": 1,
+  "mobCountPlayerRange": 128,
+  "ignoreDimensions": true,
+  "ignoreBiomes": true,
+  "ignoreCollision": true,
+  "conditions": [
+    {
+      "type": "lycanitestweaks:bloodmoon"
+    }
+  ],
+  "triggers": [
+    {
+      "type": "lycanitestweaks:bloodmoon",
+      "chance": 0.25,
+      "tickRate": 3000,
+      "oneSuccess": true
+    }
+  ],
+  "locations": [
+    {
+      "type": "random",
+      "rangeMin": [
+        42,
+        0,
+        42
+      ],
+      "rangeMax": [
+        32,
+        48,
+        32
+      ],
+      "sorting": "random",
+      "limit": 32,
+      "solidGround": false,
+      "underground": false
+    }
+  ],
+  "mobSpawns": [
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "mobId": "lycanitesmobs:grue",
+      "temporary": 6000,
+      "naturalDespawn": "true",
+      "variant": 3,
+      "mobSizeScale": 2,
+      "weight": 8
+    },
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "mobId": "lycanitesmobs:geonach",
+      "temporary": 6000,
+      "naturalDespawn": "true",
+      "variant": 3,
+      "mobSizeScale": 2,
+      "weight": 8
+    },
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "mobId": "lycanitesmobs:epion",
+      "temporary": 6000,
+      "naturalDespawn": "true",
+      "variant": 3,
+      "mobSizeScale": 1,
+      "weight": 8
+    },
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "mobId": "lycanitesmobs:cacodemon",
+      "temporary": 6000,
+      "naturalDespawn": "true",
+      "variant": 3,
+      "mobSizeScale": 2,
+      "weight": 8
+    }
+  ]
+}
