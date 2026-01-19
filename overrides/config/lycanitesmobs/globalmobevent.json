@@ -1,5 +1,5 @@
 {
-  "loadDefault": true,
+  "loadDefault": false,
   "conditions": [
     {
       "type": "world",
