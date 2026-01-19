@@ -1,4 +1,13 @@
 {
   "loadDefault": true,
-  "conditions": []
+  "conditions": [
+    {
+      "type": "world",
+      "dimensionIds": [
+        111,
+        44
+      ],
+      "dimensionListType": "blacklist"
+    }
+  ]
 }
