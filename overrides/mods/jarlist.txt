@@ -210,7 +210,7 @@ trumpetskeleton-1.12-1.0.2.1
 tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
 VariedCommodities_1.12.2-(31Mar23)
-VCFix-1.0.1
+VCFix-1.0.2
 voicechat-forge-1.12.2-2.6.10
 Waystones_1.12.2-4.1.0
 WearableBackpacks-RLCraft-1.12.2-3.2.6
