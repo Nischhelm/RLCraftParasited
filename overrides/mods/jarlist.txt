@@ -8,7 +8,7 @@ AIReducer-1.12.2-0.3.0
 alcatrazcore-1.0.4
 Amphithere Mod-1.0.9
 antiqueatlas-1.12.2-4.6.3
-AntiqueAtlasAutoMarker-1.4.3
+AntiqueAtlasAutoMarker-1.5.3
 antiquecities-1.2.1
 anvilpatch-1.1.1
 Aquaculture-1.12.2-1.6.8
@@ -123,13 +123,13 @@ LoginHPFix-1.12.2.002
 LootTweaker-0.3.1+MC1.12.2
 lostcities-1.12-2.0.22
 lycanitesmobs-1.12.2-2.0.8.10
-LycanitesTweaks-1.0.13
+LycanitesTweaks-1.0.14
 MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
 mcw-bridges-1.0.6b-mc1.12.2
 MindPalaces-1.1.0
-MmmMmmMmmMmm-1.12-2.0.5
+MmmMmmMmmMmm-1.12-2.0.6
 MoBends_1.12.2-1.2.1-19.12.21
 modtweaker-4.0.20.11
 MouseTweaks-2.10.1-mc1.12.2
@@ -137,7 +137,7 @@ MTLib-3.0.7
 MultiMine-1.12.2
 Neat 1.4-17
 Nether-API-v1.4.2-mc1.12.2
-NoiseThreader-1.1.2
+NoiseThreader-1.1.3
 notreepunching-2.0.21
 OceanicExpanse-1.2.2
 OptifineCITPatch-1.0.5
@@ -166,7 +166,7 @@ RLArtifacts-1.1.2
 RLCombat-1.12.2-2.2.4
 RLCraftLuckified-1.1.2
 RLDragonsteel-1.1.0
-RLFoliage-MC1.12-2.4.2
+RLFoliage-MC1.12-2.5.0
 RLMixins-1.4.6
 RLTweaker-1.12.2-0.7.5
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.6
@@ -178,7 +178,7 @@ savemystronghold-1.12.2-1.0.0
 ScalingHealth-1.12.2-1.3.42+147
 SereneSeasons-1.12.2-1.2.18-universal
 SetBonus-1.12.2.040
-ShieldBreak-1.2.1
+ShieldBreak-1.2.3
 SilentLib-1.12.2-3.0.14+168
 SimpleDifficulty-1.12.2-0.3.9
 sit-1.12.2-v1.3
@@ -211,13 +211,14 @@ tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
 VariedCommodities_1.12.2-(31Mar23)
 VCFix-1.0.2
-voicechat-forge-1.12.2-2.6.10
+voicechat-forge-1.12.2-2.6.12
 Waystones_1.12.2-4.1.0
 WearableBackpacks-RLCraft-1.12.2-3.2.6
 WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed
 WornHorseshoes-1.0.1
+Xp Cost-1.0.1
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-zenutils-1.26.11
+zenutils-1.26.15
 `FermiumBooter-1.4.1
