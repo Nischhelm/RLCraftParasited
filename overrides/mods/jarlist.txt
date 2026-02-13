@@ -8,7 +8,7 @@ AIReducer-1.12.2-0.3.0
 alcatrazcore-1.0.4
 Amphithere Mod-1.0.9
 antiqueatlas-1.12.2-4.6.3
-AntiqueAtlasAutoMarker-1.5.3
+AntiqueAtlasAutoMarker-1.5.2
 antiquecities-1.2.1
 anvilpatch-1.1.1
 Aquaculture-1.12.2-1.6.8
@@ -99,7 +99,7 @@ GlobalGameRules-1.12.2-2.2.7
 GooglyEyes-1.12.2-7.1.1
 grapplemod-1.12.2-v12.3
 HelpFixer-1.12.1-1.5.18
-Ice and Fire-2.1.11
+Ice and Fire-2.2.3
 iChunUtil-1.12.2-7.2.2
 incontrol-1.12-3.9.18
 InfernalMobs-1.12.2
