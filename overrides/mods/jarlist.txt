@@ -128,7 +128,7 @@ MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
 mcw-bridges-1.0.6b-mc1.12.2
-MindPalaces-1.1.0
+MindPalaces-1.1.1
 MmmMmmMmmMmm-1.12-2.0.6
 MoBends_1.12.2-1.2.1-19.12.21
 modtweaker-4.0.20.11
