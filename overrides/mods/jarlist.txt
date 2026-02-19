@@ -63,7 +63,7 @@ CreativeCore_v1.10.71_mc1.12.2
 CustomMainMenu-MC1.12.2-2.0.9.1
 defiledlands-1.12.2-1.4.3
 disenchanter[1.12]1.8
-distinctdamagedescriptions-1.9.5
+distinctdamagedescriptions-1.9.6
 dldungeonsjbg-1.14.14-MC1.12.2
 DramaticTrees-1.12.2-0.13.4
 Dynamic-Raw-Ores-1.12.2-1.0.4a
@@ -81,7 +81,7 @@ FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.070
 fermiumasm-5.28
-FermiumMixins-1.0.11
+FermiumMixins-1.0.12
 firstaid-1.6.22
 FishingMadeBetter-1.12.2-2.2.7
 foamfix-0.10.15-1.12.2
@@ -99,7 +99,7 @@ GlobalGameRules-1.12.2-2.2.7
 GooglyEyes-1.12.2-7.1.1
 grapplemod-1.12.2-v12.3
 HelpFixer-1.12.1-1.5.18
-Ice and Fire-2.2.3
+Ice and Fire-2.2.4
 iChunUtil-1.12.2-7.2.2
 incontrol-1.12-3.9.18
 InfernalMobs-1.12.2
@@ -123,7 +123,7 @@ LoginHPFix-1.12.2.002
 LootTweaker-0.3.1+MC1.12.2
 lostcities-1.12-2.0.22
 lycanitesmobs-1.12.2-2.0.8.10
-LycanitesTweaks-1.0.14
+LycanitesTweaks-1.0.15
 MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
@@ -166,7 +166,7 @@ RLArtifacts-1.1.2
 RLCombat-1.12.2-2.2.4
 RLCraftLuckified-1.1.2
 RLDragonsteel-1.1.0
-RLFoliage-MC1.12-2.5.0
+RLFoliage-MC1.12-2.5.3
 RLMixins-1.4.6
 RLTweaker-1.12.2-0.7.5
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.6
@@ -196,7 +196,7 @@ SpawnerControl-1.6.3b
 SRParasites-1.12.2v1.9.21
 SRPDeepSeaDanger-1.1.4
 SRPExtra-0.6.2
-SRPMixins-2.9.4.1
+SRPMixins-2.9.4.2
 StandardExpansion-3.4.173
 Surge-1.12.2-2.0.79
 switchbow-1.6.8
