@@ -47,6 +47,7 @@ carrotslib-mc1.12.2-1.0.0b1
 carryon-1.12.2-1.12.7.23
 champions-1.12.2-1.0.11.10
 Charm-1.12.2-1.4.1
+Cherry_on-1.12.2-1.3.34
 ChunkAnimator-1.12.2-1.2.1
 classyhats-1.6.0
 CollisionDamage-1.2.2
