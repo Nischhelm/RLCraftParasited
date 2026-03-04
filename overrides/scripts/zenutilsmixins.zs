@@ -29,3 +29,16 @@ zenClass ModBiomesMixin {
         RTGID = false; #dont add RTG compat for wrong RTG version
     }
 }
+
+#mixin {targets: "suike.suikecherry.data.TreasureData"}
+zenClass TreasureDataMixin {
+    #mixin Static
+    #mixin WrapWithCondition
+    #{
+    #   method: "createTreasureList",
+    #   at: {value: "INVOKE", target: "Ljava/util/Collections;addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z"}
+    #}
+    function disableDefaultLoot(obj1 as native.java.util.Collection, obj2 as native.java.lang.Object[]) as bool {
+        return false; #dont add default loot, done via cfg file instead
+    }
+}
