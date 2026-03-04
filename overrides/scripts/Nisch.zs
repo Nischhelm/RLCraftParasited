@@ -32,23 +32,17 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         data.cooldown = 120;
 });
 
-val distinctDiscChance = 0.05;
 events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivingDeathDropsEvent) {
-    if(isNull(event.entity) || isNull(event.entity.definition)) return;
-    if(event.entity.definition.id != "minecraft:skeleton") return; //only skeleton drops
+    val entity = event.entity; if(isNull(entity)) return;
+    val loc = entity.definition; if(isNull(loc)) return;
+    if(loc.id != "minecraft:skeleton") return; //only skeleton drops
 
-    val rng = event.entity.world.random;
+    val source = event.damageSource; if(isNull(source)) return;
+    val attacker = source.trueSource; if(isNull(attacker)) return;
+    val attLoc = attacker.definition; if(isNull(attLoc)) return;
+    if(attLoc.id != "minecraft:creeper") return; //only when killed by creeper
 
-    var itemsToKeep as crafttweaker.entity.IEntityItem[] = [];
-    for item in event.drops {
-        val dropName = item.item.definition.id;
-        if(dropName != "distinctdamagedescriptions:recorddistinction")
-            itemsToKeep += item; //keep
-        else if(rng.nextFloat() < distinctDiscChance)
-            itemsToKeep += item; //keep
-        
-    }
-    event.drops = itemsToKeep;
+    event.addItem(<distinctdamagedescription:recorddistinction>);
 });
 
 events.onPlayerRightClickBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
