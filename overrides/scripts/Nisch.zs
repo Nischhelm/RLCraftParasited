@@ -31,3 +31,22 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
     if(data.phase == 7 && data.cooldown > 120)
         data.cooldown = 120;
 });
+
+val distinctDiscChance = 0.05;
+events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivingDeathDropsEvent) {
+    if(isNull(event.entity) || isNull(event.entity.definition)) return;
+    if(event.entity.definition.id != "minecraft:skeleton") return; //only skeleton drops
+
+    val rng = event.entity.world.random;
+
+    var itemsToKeep as crafttweaker.entity.IEntityItem[] = [];
+    for item in event.drops {
+        val dropName = item.item.definition.id;
+        if(dropName != "distinctdamagedescriptions:recorddistinction")
+            itemsToKeep += item; //keep
+        else if(rng.nextFloat() < distinctDiscChance)
+            itemsToKeep += item; //keep
+        
+    }
+    event.drops = itemsToKeep;
+});
