@@ -50,3 +50,18 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
     }
     event.drops = itemsToKeep;
 });
+
+events.onPlayerRightClickBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+    if(isNull(event.player)) return;
+    val player = event.player;
+    if(player.world.remote) return; # serverside only
+    if(player.world.dimension != 1) return; # only End
+
+    if(event.block.definition.id != "srparasites:evolutionlure") return; # only lures
+
+    val data as SRPSaveData = SRPSaveData.getForPlayer(player);
+    if(data.phase <= 3) {# disable if phase <= 3
+        player.sendStatusMessage("This area is too infected!")
+        event.cancel();
+    }
+});
