@@ -100,7 +100,7 @@ GlobalGameRules-1.12.2-2.2.7
 GooglyEyes-1.12.2-7.1.1
 grapplemod-1.12.2-v12.3
 HelpFixer-1.12.1-1.5.18
-Ice and Fire-2.2.5
+Ice and Fire-2.2.6-MyrmexAiFix
 iChunUtil-1.12.2-7.2.2
 incontrol-1.12-3.9.18
 InfernalMobs-1.12.2
@@ -216,10 +216,10 @@ voicechat-forge-1.12.2-2.6.12
 Waystones_1.12.2-4.1.0
 WearableBackpacks-RLCraft-1.12.2-3.2.6
 WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed
-WornHorseshoes-1.0.1
+WornHorseshoes-1.0.2
 Xp Cost-1.0.1
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-zenutils-1.26.15
+zenutils-1.26.16
 `FermiumBooter-1.4.1
