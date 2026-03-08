@@ -6,18 +6,18 @@ import loottweaker.vanilla.loot.Functions;
  
  
 //==== Create new tables ====
-val lostCityHighRiseTable = LootTweaker.newTable("loottweaker:lostcityhighrise");
-val lostCityGroundTable = LootTweaker.newTable("loottweaker:lostcityground");
-val lostCityBasementTable = LootTweaker.newTable("loottweaker:lostcitybasement");
-val lostCitySubwayTable = LootTweaker.newTable("loottweaker:lostcitysubway");
-val lostCityRareTable = LootTweaker.newTable("loottweaker:lostcityrare");
-val lostCityUncommonTable = LootTweaker.newTable("loottweaker:lostcityuncommon");
-val lostCityCommonTable = LootTweaker.newTable("loottweaker:lostcitycommon");
+val lostCityHighRiseTable = LootTweaker.newTable("rlcraft:lostcityhighrise");
+val lostCityGroundTable = LootTweaker.newTable("rlcraft:lostcityground");
+val lostCityBasementTable = LootTweaker.newTable("rlcraft:lostcitybasement");
+val lostCitySubwayTable = LootTweaker.newTable("rlcraft:lostcitysubway");
+val lostCityRareTable = LootTweaker.newTable("rlcraft:lostcityrare");
+val lostCityUncommonTable = LootTweaker.newTable("rlcraft:lostcityuncommon");
+val lostCityCommonTable = LootTweaker.newTable("rlcraft:lostcitycommon");
 
-val lowTable = LootTweaker.newTable("loottweaker:lowtable");
-val medTable = LootTweaker.newTable("loottweaker:medtable");
-val highTable = LootTweaker.newTable("loottweaker:hightable");
-val builderTable = LootTweaker.newTable("loottweaker:buildertable");
+val lowTable = LootTweaker.newTable("rlcraft:lowtable");
+val medTable = LootTweaker.newTable("rlcraft:medtable");
+val highTable = LootTweaker.newTable("rlcraft:hightable");
+val builderTable = LootTweaker.newTable("rlcraft:buildertable");
 
 
 //Pool Key - "name", minRolls, maxRolls, minLuckRolls, maxLuckRolls
@@ -105,7 +105,7 @@ builderPool.addItemEntry(<minecraft:stained_glass>, 15, 1, [Functions.setCount(0
 //==== High Rise Loot (fairy) ====
 lostCityHighRisePool.addItemEntry(<xat:fairy_ring>, 1, 1, [Functions.setCount(0, 1)], [], "fairy_ring");
 lostCityHighRisePool.addLootTableEntry("minecraft:chests/stronghold_library", 25);
-lostCityHighRisePool.addLootTableEntry("loottweaker:hightable", 25);
+lostCityHighRisePool.addLootTableEntry("rlcraft:hightable", 25);
 
 
 //==== Ground Loot (elf) ====
@@ -113,7 +113,7 @@ lostCityGroundPool.addItemEntry(<xat:elf_ring>, 1, 1, [Functions.setCount(0, 1)]
 lostCityGroundPool.addLootTableEntry("minecraft:chests/woodland_mansion", 10);
 lostCityGroundPool.addLootTableEntry("minecraft:chests/igloo_chest", 15);
 lostCityGroundPool.addLootTableEntry("charm:village/farmer", 5);
-lostCityGroundPool.addLootTableEntry("loottweaker:medtable", 20);
+lostCityGroundPool.addLootTableEntry("rlcraft:medtable", 20);
 
 
 //==== Basement Loot (dwarf) ====
@@ -134,14 +134,14 @@ lostCitySubwayPool.addLootTableEntry("charm:treasure/common_potions", 10);
 lostCityRarePool.addItemEntry(<xat:dragon_ring>, 1, 1, [Functions.setCount(0, 1)], [], "dragon_ring");
 lostCityRarePool.addLootTableEntry("minecraft:chests/nether_bridge", 10);
 lostCityRarePool.addLootTableEntry("minecraft:chests/stronghold_corridor", 20);
-lostCityRarePool.addLootTableEntry("loottweaker:lowtable", 20);
+lostCityRarePool.addLootTableEntry("rlcraft:lowtable", 20);
 
 
 //==== Uncommon Loot (titan) ====
 lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, 1, [Functions.setCount(0, 1)], [], "titan_ring");
 lostCityUncommonPool.addLootTableEntry("minecraft:chests/simple_dungeon", 15);
 lostCityUncommonPool.addLootTableEntry("charm:village/butcher", 10);
-lostCityUncommonPool.addLootTableEntry("loottweaker:buildertable", 25);
+lostCityUncommonPool.addLootTableEntry("rlcraft:buildertable", 25);
 
 
 //==== Common Loot (faelis) ====
