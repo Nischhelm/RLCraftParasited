@@ -55,7 +55,7 @@ events.onPlayerRightClickBlock(function(event as crafttweaker.event.PlayerIntera
 
     val data as SRPSaveData = SRPSaveData.getForPlayer(player);
     if(data.phase <= 3) {# disable if phase <= 3
-        player.sendStatusMessage("This area is too infected!")
+        player.sendStatusMessage("This area is too infected!");
         event.cancel();
     }
 });
