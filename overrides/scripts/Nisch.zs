@@ -42,7 +42,7 @@ events.onEntityLivingDeathDrops(function(event as crafttweaker.event.EntityLivin
     val attLoc = attacker.definition; if(isNull(attLoc)) return;
     if(attLoc.id != "minecraft:creeper") return; //only when killed by creeper
 
-    event.addItem(<distinctdamagedescription:recorddistinction>);
+    event.addItem(<distinctdamagedescriptions:recorddistinction>);
 });
 
 events.onPlayerRightClickBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
