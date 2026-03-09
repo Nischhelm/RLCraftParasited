@@ -16,7 +16,7 @@ print("Script starting!");
 <simpledifficulty:heater>.displayName = game.localize("tile.simpledifficulty:heater.name","en_us");
 <simpledifficulty:chiller>.displayName = game.localize("tile.simpledifficulty:chiller.name","en_us");
 <simpledifficulty:wool_helmet:*>.displayName = game.localize("item.simpledifficulty:wool_helmet.name","en_us");
-<simpledifficulty:wool_chestplate:*>.displayName = game.localize("item.simpledifficulty:wool_chestplate","en_us");
+<simpledifficulty:wool_chestplate:*>.displayName = game.localize("item.simpledifficulty:wool_chestplate.name","en_us");
 <simpledifficulty:wool_leggings:*>.displayName = game.localize("item.simpledifficulty:wool_leggings.name","en_us");
 <simpledifficulty:wool_boots:*>.displayName = game.localize("item.simpledifficulty:wool_boots.name","en_us");
 
