@@ -72,12 +72,14 @@ DynamicSurroundings-1.12.2-3.6.2.1
 DynamicSurroundingsHuds-1.12.2-3.6.0.0
 dynamictreesdefiledlands-1.12.2-1.0.0
 DynamicTreesTraverse-1.12.2-2.1
+EagleMixins-1.2.4-indev
 easiervillagertrading-1.12-forge14.21.1.2387-1.3
 EditableEdibles-1.3.3
 ElenaiDodge-1.12.2-2.1
 EnchantmentDescriptions-1.12.2-1.1.20
 EnhancedVisuals_v1.4.4_mc1.12.2
 EntityCulling-1.12.2-6.5.0
+Everything Nunchaku-1.0.2
 FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.070
@@ -96,10 +98,12 @@ FriendlyEndermite_v1.0.1_mc1.12.2
 FrozenOcean-1.12.2-1.0.0
 FurnaceXPStorage-1.3.1
 fxcontrol-1.12-0.1.15
+Gibbed-1.0.1
 GlobalGameRules-1.12.2-2.2.7
 GooglyEyes-1.12.2-7.1.1
 grapplemod-1.12.2-v12.3
 HelpFixer-1.12.1-1.5.18
+I Hate Ghost Blocks-1.0.0
 Ice and Fire-2.2.6-MyrmexAiFix
 iChunUtil-1.12.2-7.2.2
 incontrol-1.12-3.9.18
