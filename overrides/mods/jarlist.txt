@@ -83,7 +83,7 @@ Everything Nunchaku-1.0.2
 FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.070
-fermiumasm-5.28
+fermiumasm-5.31
 FermiumMixins-1.0.12
 firstaid-1.6.22
 FishingMadeBetter-1.12.2-2.2.7
