@@ -173,7 +173,7 @@ RLCraftLuckified-1.1.2
 RLDragonsteel-1.1.0
 RLFoliage-MC1.12-2.5.3
 RLMixins-1.4.6
-RLTweaker-1.12.2-0.7.5
+RLTweaker-1.12.2-0.7.5-indev
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.6
 roughTweaks0.2.4-1.12.2
 RTG-1.12.2-6.1.0.0-snapshot.1
