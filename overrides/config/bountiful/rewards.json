@@ -231,6 +231,15 @@
     }
   },
   {
+    "content": "rlmixins:antimagic_talisman",
+    "unitWorth": 750,
+    "weight": 50,
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
     "content": "bountifulbaubles:modifierbook",
     "unitWorth": 900,
     "weight": 10,
