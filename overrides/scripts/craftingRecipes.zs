@@ -562,7 +562,7 @@ recipes.addShaped("lolarecipe25b",<xat:sea_stone>,
 //  [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>]]);
   
 recipes.addShaped("lolarecipe27",<bountifulbaubles:crowngold>,
- [[null,<defiledlands:scarlite>,null],
+ [[null,<iceandfire:ruby_gem>,null],
   [<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>],
   [<minecraft:gold_ingot>,null,<minecraft:gold_ingot>]]);
   
@@ -691,14 +691,14 @@ recipes.addShaped("lolarecipe40frick",<aquaculture:loot:1>,
 recipes.addShapeless("lolarecipe40frack",<contenttweaker:neptunium_nugget> * 9,[<aquaculture:loot:1>]);
 
 recipes.addShaped("lolarecipe46",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:speed"}),
- [[<iceandfire:amethyst_gem>, <minecraft:sugar>, null],
+ [[<iceandfire:amethyst_block>, <minecraft:sugar>, null],
   [<minecraft:sugar>, <potionfingers:ring>, <minecraft:sugar>],
   [null, <minecraft:sugar>, null]]);
   
 recipes.addShaped("lolarecipe47",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:jump_boost"}),
- [[<minecraft:slime>, <minecraft:rabbit_foot>, null],
-  [<minecraft:rabbit_foot>, <potionfingers:ring>, <minecraft:rabbit_foot>],
-  [null, <minecraft:rabbit_foot>, null]]);
+ [[<minecraft:rabbit_foot>, <minecraft:slime_ball>, null],
+  [<minecraft:slime_ball>, <potionfingers:ring>, <minecraft:slime_ball>],
+  [null, <minecraft:slime_ball>, null]]);
 
 recipes.addShaped("lolarecipe48",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:haste"}),
  [[<minecraft:prismarine:0>, <minecraft:prismarine_crystals>, null],
@@ -706,7 +706,7 @@ recipes.addShaped("lolarecipe48",<potionfingers:ring:1>.withTag({Quality: {}, ef
   [null, <minecraft:prismarine_crystals>, null]]);
 
 recipes.addShaped("lolarecipe49",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:strength"}),
- [[<iceandfire:cyclops_eye>, <minecraft:blaze_powder>, null],
+ [[<minecraft:magma>, <minecraft:blaze_powder>, null],
   [<minecraft:blaze_powder>, <potionfingers:ring>, <minecraft:blaze_powder>],
   [null, <minecraft:blaze_powder>, null]]);
 
@@ -1070,9 +1070,9 @@ recipes.addShaped("lolarecipe106",<minecraft:coal:1>,
   [<iceandfire:ash>,<iceandfire:ash>,<iceandfire:ash>]]);
 
 recipes.addShaped("lolatreat1",<lycanitesmobs:dragontreat>*4,
- [[null,<defiledlands:scarlite>,<iceandfire:sapphire_gem>],
-  [<minecraft:bone>,<minecraft:bone>,<defiledlands:scarlite>],
-  [null,<defiledlands:scarlite>,<iceandfire:sapphire_gem>]]);
+ [[null,<iceandfire:ruby_gem>,<iceandfire:sapphire_gem>],
+  [<minecraft:bone>,<minecraft:bone>,<iceandfire:amethyst_gem>],
+  [null,<iceandfire:ruby_gem>,<iceandfire:sapphire_gem>]]);
 
 recipes.addShaped("lolatreat2",<lycanitesmobs:aviantreat>*4,
  [[null,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>],
@@ -1203,9 +1203,9 @@ recipes.addShaped("lolarecipe130",<xat:titan_spirit>,
   [<xat:mana_crystal>,<lycanitesmobs:bucketmoglava>,<xat:mana_crystal>]]);
 
 recipes.addShaped("lolarecipe131",<xat:dragon_gem>,
- [[<xat:mana_crystal>,<defiledlands:scarlite>,<xat:mana_crystal>],
-  [<minecraft:dragon_breath>,<xat:dragon_ring>,<minecraft:dragon_breath>],
-  [<xat:mana_crystal>,<iceandfire:sapphire_gem>,<xat:mana_crystal>]]);
+ [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
+  [<iceandfire:ruby_gem>,<xat:dragon_ring>,<iceandfire:sapphire_gem>],
+  [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
 
 recipes.addShaped("lolasaddle1",<lycanitesmobs:saddle_beast>,
  [[<lycanitesmobs:wendigoantler:*>,null,null],
@@ -1273,21 +1273,6 @@ recipes.addShaped("lolarecipe135",<classyhats:phantom_thread>,
 
 recipes.addShaped("lolarecipe136",<betternether:nether_brick_tile_slab_half>*6,
  [[<betternether:nether_brick_tile_small>,<betternether:nether_brick_tile_small>,<betternether:nether_brick_tile_small>]]);
-
-recipes.addShaped("bruhfirespear",<mujmajnkraftsbettersurvival:itemfiredragonbonespear>*8,
- [[<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>],
-  [<mujmajnkraftsbettersurvival:itemdragonbonespear>,<iceandfire:fire_dragon_blood>,<mujmajnkraftsbettersurvival:itemdragonbonespear>],
-  [<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>]]);
-
-recipes.addShaped("bruhicespear",<mujmajnkraftsbettersurvival:itemicedragonbonespear>*8,
- [[<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>],
-  [<mujmajnkraftsbettersurvival:itemdragonbonespear>,<iceandfire:ice_dragon_blood>,<mujmajnkraftsbettersurvival:itemdragonbonespear>],
-  [<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>]]);
-
-recipes.addShaped("bruhlightningspear",<mujmajnkraftsbettersurvival:itemlightningdragonbonespear>*8,
- [[<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>],
-  [<mujmajnkraftsbettersurvival:itemdragonbonespear>,<iceandfire:lightning_dragon_blood>,<mujmajnkraftsbettersurvival:itemdragonbonespear>],
-  [<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>,<mujmajnkraftsbettersurvival:itemdragonbonespear>]]);
 
 recipes.addShaped("SUSSOUP1",<charm:suspicious_soup:0>,
  [[<inspirations:edibles>,<inspirations:edibles>,<inspirations:edibles>],
