@@ -1,0 +1,272 @@
+[
+	{
+		"motive": "rlcraft_logo1",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 4,
+		"height": 1
+	},
+	{
+		"motive": "rlcraft_logo2",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 4,
+		"height": 1
+	},
+	{
+		"motive": "dragon_eye",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "epic_drawing",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "vento_doodle",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "chillin",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "shiv_rune",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "shadowman",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "wraither",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "minimal_mesa",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "found_city",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "sea_serpent_battle",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "sea_serpent",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 2
+	},
+	{
+		"motive": "beautiful_day",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "wraamon_watches_you",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "defiled_lands",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 2
+	},
+	{
+		"motive": "fireandicedragons",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "seapent",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "nymph1",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "nymph2",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "oops_all_headshots",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 2
+	},
+	{
+		"motive": "crown",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 4
+	},
+	{
+		"motive": "sea_serpent_ocean",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 4
+	},
+	{
+		"motive": "banshee",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 3
+	},
+	{
+		"motive": "dragonborn",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 4
+	},
+	{
+		"motive": "rlcraft_legacies",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 4
+	},
+	{
+		"motive": "krill",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	}
+]
