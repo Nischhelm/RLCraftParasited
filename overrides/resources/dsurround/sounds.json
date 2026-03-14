@@ -1,0 +1,14 @@
+{
+  "rlambience": {
+    "category": "rlambience",
+		"sounds": [
+			"dsurround:ambient/cave/cave_ambience"
+		]
+  },
+  "rlsilence": {
+    "category": "rlsilence",
+		"sounds": [
+			"dsurround:ambient/cave/silence"
+		]
+  }
+}
