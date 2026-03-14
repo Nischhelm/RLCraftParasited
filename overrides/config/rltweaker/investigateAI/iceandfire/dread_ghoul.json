@@ -3,10 +3,10 @@
   "entries": [
     {
       "executeOnAttacked": true,
-      "executeOnCalled": false,
-      "healthThreshold": 0.9,
+      "executeOnCalled": true,
+      "healthThreshold": 1.0,
       "executionChance": 0.33,
-      "movementSpeed": 2.0,
+      "movementSpeed": 1.0,
       "verticalOffsetBase": 0.0,
       "verticalOffsetScale": 0.0,
       "verticalOffsetMax": 0.0,

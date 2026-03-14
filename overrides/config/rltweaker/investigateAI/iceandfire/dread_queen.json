@@ -3,7 +3,7 @@
   "entries": [
     {
       "executeOnAttacked": true,
-      "executeOnCalled": true,
+      "executeOnCalled": false,
       "healthThreshold": 1.0,
       "executionChance": 1.0,
       "movementSpeed": 1.0,
@@ -19,7 +19,8 @@
             "iceandfire:dread_beast",
             "iceandfire:dread_ghoul",
             "iceandfire:dread_thrall",
-            "iceandfire:dread_knight"
+            "iceandfire:dread_knight",
+			"iceandfire:dread_lich"
           ],
           "verticalRange": 8.0,
           "horizontalRange": 16.0,
