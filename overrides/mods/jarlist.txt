@@ -61,6 +61,7 @@ corpsecomplex-1.12.2-1.0.12.0
 craftablechainmail-1.0
 CraftTweaker2-1.12-4.1.20.711
 CreativeCore_v1.10.71_mc1.12.2
+creeperconfetti-1.4.2
 CustomMainMenu-MC1.12.2-2.0.9.1
 defiledlands-1.12.2-1.4.3
 disenchanter[1.12]1.8
