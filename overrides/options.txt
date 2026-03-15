@@ -126,7 +126,13 @@ key_dshuds.keybind.SelectionBox:68
 key_dshuds.keybind.LightLevel:65
 key_dshuds.keybind.ChunkBorders:67
 key_key.pickup.item:0
+key_key.openatlas.desc:0
 key_key.unhook:45
+key_gui.antiqueatlas.addMarker:30
+key_gui.antiqueatlas.delMarker:32
+key_gui.antiqueatlas.hideMarkers:17
+key_gui.antiqueatlas.followPlayer:33:CONTROL
+key_gui.antiqueatlas.copymarker:0
 key_key.aaam.librarian:22
 key_key.astikorcarts.desc:36
 key_key.jei.toggleOverlay:24:CONTROL
@@ -172,6 +178,17 @@ key_togglesneak.key.toggle.sprint:51
 key_key.toolbelt.open:19
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
+key_key.push_to_talk:0
+key_key.whisper:0
+key_key.mute_microphone:0
+key_key.disable_voice_chat:0
+key_key.hide_icons:0
+key_key.voice_chat:12
+key_key.voice_chat_settings:0
+key_key.voice_chat_group:0
+key_key.voice_chat_toggle_recording:0
+key_key.voice_chat_adjust_volumes:0
+key_key.xp_cost.show_enchants:56
 key_Open Skill GUI:21
 key_key.switchbow.switchup:0
 key_key.switchbow.switchdown:0
