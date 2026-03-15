@@ -156,6 +156,7 @@ Placebo-1.12.2-1.6.1
 playerbosses-1.12.2-1.1.0
 PortalDupeBegone-1.0.0
 PotionCore-1.9_for_1.12.2
+potiondescriptions-1.12.2-1.2.4
 PotionFingers-r1.0-8
 QualityTools-1.0.7_for_1.12.2
 Quark-r1.6-179
