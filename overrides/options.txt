@@ -59,8 +59,8 @@ key_key.left:30
 key_key.back:31
 key_key.right:32
 key_key.jump:57
-key_key.sneak:42
-key_key.sprint:29
+key_key.sneak:0
+key_key.sprint:0
 key_key.drop:16
 key_key.inventory:18
 key_key.chat:20
@@ -105,14 +105,12 @@ key_key.fbp.enable_disable:0
 key_key.fbp.kill_particles:0
 key_key.fbp.blacklist_block:0
 key_keybinds.show_wounds:35
-key_key.mount_change_view.lycanitestweaks:63:SHIFT
 key_key.spawn_keybound_pet.lycanitestweaks:48:SHIFT
 key_key.teleport_keybound_pet.lycanitestweaks:-99:CONTROL
 key_key.toggle_soulgazer_auto.lycanitestweaks:34:CONTROL
 key_key.toggle_soulgazer_manual.lycanitestweaks:35:CONTROL
 key_neat.keybind.toggle:0
 key_key.switchhud:51
-key_key.betterfoliage.gui:66
 key_key.scalinghealth.difficulty_meter:49
 key_key.scalinghealth.show_always:49:CONTROL
 key_key.xat.trinket_gui.desc:0
