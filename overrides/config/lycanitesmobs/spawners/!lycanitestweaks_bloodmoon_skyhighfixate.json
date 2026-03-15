@@ -28,7 +28,9 @@
           "type": "lycanitestweaks:player",
           "blockLightLevelMax": 0,
           "surface": true,
-          "yMin": 97
+          "creatureTypeToCheck": "monster",
+          "creatureTypeMobCap": 5,
+          "creatureTypeCheckRange": 48
         },
         {
           "type": "lycanitestweaks:bloodmoon"
@@ -80,23 +82,35 @@
       "mobId": "lycanitesmobs:grue",
       "mobNameTag": "Blood Phantom",
       "temporary": 200,
-      "naturalDespawn": "true",
       "fixate": true,
-      "variant": 3,
-      "mobSizeScale": 2,
       "weight": 8
     },
     {
       "lycanitestweaks:bloodmoon": true,
       "lycanitestweaks:setNBT": "{IsMinion:1b}",
-      "mobId": "lycanitesmobs:epion",
+      "mobId": "lycanitesmobs:darkling",
       "mobNameTag": "Blood Phantom",
       "temporary": 200,
-      "naturalDespawn": "true",
       "fixate": true,
-      "variant": 3,
-      "mobSizeScale": 1,
-      "weight": 8
+      "weight": 2
+    },
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "lycanitestweaks:setNBT": "{IsMinion:1b,DetonateTimer:20}",
+      "mobId": "lycanitesmobs:wraith",
+      "mobNameTag": "Blood Phantom",
+      "temporary": 200,
+      "fixate": true,
+      "weight": 1
+    },
+    {
+      "lycanitestweaks:bloodmoon": true,
+      "lycanitestweaks:setNBT": "{IsMinion:1b,SpawnEventType:\"sharknado\"}",
+      "mobId": "lycanitesmobs:roa",
+      "mobNameTag": "Blood Phantom",
+      "temporary": 200,
+      "fixate": true,
+      "weight": 1
     }
   ],
   "triggerCountMessages": [
