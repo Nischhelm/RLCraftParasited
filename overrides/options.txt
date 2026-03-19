@@ -59,8 +59,8 @@ key_key.left:30
 key_key.back:31
 key_key.right:32
 key_key.jump:57
-key_key.sneak:0
-key_key.sprint:0
+key_key.sneak:42
+key_key.sprint:29
 key_key.drop:16
 key_key.inventory:18
 key_key.chat:20
@@ -173,8 +173,8 @@ key_key.slide.desc:42
 key_invtweaks.key.sort:0
 key_key.mobends.menu:34
 key_key.mobends.refresh_animations:68
-key_togglesneak.key.toggle.sneak:37
-key_togglesneak.key.toggle.sprint:51
+key_togglesneak.key.toggle.sneak:0
+key_togglesneak.key.toggle.sprint:0
 key_key.toolbelt.open:19
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
