@@ -68,7 +68,6 @@ disenchanter[1.12]1.8
 distinctdamagedescriptions-1.9.8
 dldungeonsjbg-1.14.14-MC1.12.2
 DramaticTrees-1.12.2-0.13.4
-Dynamic-Raw-Ores-1.12.2-1.0.4a
 DynamicSurroundings-1.12.2-3.6.2.1
 DynamicSurroundingsHuds-1.12.2-3.6.0.0
 dynamictreesdefiledlands-1.12.2-1.0.0

@@ -10,17 +10,6 @@ furnace.remove(<variedcommodities:ingot_steel>);
 furnace.remove(<iceandfire:silver_ingot>);
 furnace.remove(<iceandfire:sapphire_gem>);
 
-furnace.remove(<minecraft:gold_ingot>, <dynaores:raw_gold>);
-furnace.remove(<iceandfire:copper_ingot>, <dynaores:raw_copper>);
-furnace.remove(<defiledlands:umbrium_ingot>, <dynaores:raw_umbrium>);
-furnace.remove(<minecraft:iron_ingot>, <dynaores:raw_iron>);
-
-furnace.addRecipe(<iceandfire:silver_ingot> * 1, <dynaores:raw_silver>, 1);
-furnace.addRecipe(<minecraft:gold_ingot> * 1, <dynaores:raw_gold>, 1);
-furnace.addRecipe(<iceandfire:copper_ingot> * 1, <dynaores:raw_copper>, 0.7);
-furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <dynaores:raw_umbrium>, 0.7);
-furnace.addRecipe(<minecraft:iron_ingot> * 1, <dynaores:raw_iron>, 0.7);
-
 furnace.remove(<minecraft:hardened_clay>);
 furnace.addRecipe(<minecraft:hardened_clay>, <minecraft:clay>, 0.35);
 
