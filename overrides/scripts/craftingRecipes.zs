@@ -423,18 +423,6 @@ recipes.removeByRecipeName("variedcommodities:demonic_legs_0");
 recipes.removeByRecipeName("variedcommodities:mithril_boots_0");
 recipes.removeByRecipeName("variedcommodities:demonic_boots_0");
 
-recipes.remove(<dynaores:raw_copper_block>);
-recipes.remove(<dynaores:raw_iron_block>);
-recipes.remove(<dynaores:raw_silver_block>);
-recipes.remove(<dynaores:raw_umbrium_block>);
-recipes.remove(<dynaores:raw_gold_block>);
-recipes.removeByRecipeName("dynaores:raw_copper");
-recipes.removeByRecipeName("dynaores:raw_iron");
-recipes.removeByRecipeName("dynaores:raw_silver");
-recipes.removeByRecipeName("dynaores:raw_umbrium");
-recipes.removeByRecipeName("dynaores:raw_gold");
-
-
 recipes.addShapeless("lolarecipe1",<antiqueatlas:empty_antique_atlas>,[<minecraft:writable_book>,<minecraft:compass>]);
 
 recipes.addShapeless("lolarecipe2",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:red_flower:*>,<minecraft:yellow_flower>]);
