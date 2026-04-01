@@ -149,6 +149,7 @@ OptifineCITPatch-1.0.5
 OreLib-1.12.2-3.6.0.1
 OverLast-Lite-1.12.2-0.05(for SRPV1920)
 particleculling-1.12.2-v1.4.3
+Phantoms-1.12.2-1.0.0
 phosphor-1.12.2-0.2.6+build50-universal
 PhosphorCrashFix-1.12.2-1.0.0
 pigstep-1.12
