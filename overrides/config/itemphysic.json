@@ -169,7 +169,7 @@
         "{ore:\"string\",id:\"ore\",count:1}",
         "{ore:\"book\",id:\"ore\",count:1}",
         "{material:\"minecraft:glass\",id:\"material\",count:1}",
-        "{name:\"potion\",id:\"name\",countb:1}",
+        "{name:\"potion\",id:\"name\",count:1}",
         "{name:\"fluid_bottle\",id:\"name\",count:1}",
         "{name:\"juice\",id:\"name\",count:1}",
         "{ore:\"itemEmptyBottle\",id:\"ore\",count:1}"
