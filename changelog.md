@@ -37,6 +37,7 @@ update aaam, end void doesn't crop out with tile edges anymore, automark rogueli
 
 fix cherryon chest boat dupe by disabling those the feature entirely
 disable eaglemixins auto dismount on lightning dmg or more than 6 dmg
+fix anim emis inf blue not being enabled by default
 
 --- Mar 15 2026 ---
 
