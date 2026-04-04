@@ -14,6 +14,7 @@ anvilpatch-1.1.1
 Aquaculture-1.12.2-1.6.8
 armorunder-mc1.12.2-1.0.0
 astikorcarts-1.12.2-0.1.2.8
+Atlas-Lib-1.12.2-1.1.10
 AttributeFix-Forge-1.12.2-1.0.12
 AutoRegLib-1.3-32
 base-1.12.2-3.14.0
