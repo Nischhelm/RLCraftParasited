@@ -8,7 +8,7 @@ AIReducer-1.12.2-0.3.0
 alcatrazcore-1.0.4
 Amphithere Mod-1.10
 antiqueatlas-1.12.2-4.6.3
-AntiqueAtlasAutoMarker-1.5.3.4
+AntiqueAtlasAutoMarker-1.5.4
 antiquecities-1.2.1
 anvilpatch-1.1.1
 Aquaculture-1.12.2-1.6.8
@@ -205,11 +205,11 @@ SpawnerControl-1.6.3b
 SRParasites-1.12.2v1.9.21
 SRPDeepSeaDanger-1.1.4
 SRPExtra-0.6.2
-SRPMixins-2.9.4.2
+SRPMixins-2.9.5
 StandardExpansion-3.4.173
 Surge-1.12.2-2.0.79
 switchbow-1.6.8
-tnt_utilities-mc1.12-1.2.4
+tnt_utilities-mc1.12.2-1.2.4
 Toast Control-1.12.2-1.8.1
 ToggleSneakSprint-1.1.3
 ToolBelt-1.12.2-1.9.14
@@ -220,14 +220,14 @@ tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
 VariedCommodities_1.12.2-(31Mar23)
 VCFix-1.0.3.2
-voicechat-forge-1.12.2-2.6.12
+voicechat-forge-1.12.2-2.6.14
 Waystones_1.12.2-4.1.0
 WearableBackpacks-RLCraft-1.12.2-3.2.6
 WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed
-WornHorseshoes-1.0.2
+WornHorseshoes-1.1.1.1
 Xp Cost-1.0.1
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-zenutils-1.26.17
+zenutils-1.26.19
 `FermiumBooter-1.4.1
