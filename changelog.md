@@ -24,7 +24,7 @@ added enchantmentcontrol
     add JEI info cards to enchantments
     preview enchantment clue in etable
 
-added creeperconfetti, 1% chance
+added creeperconfetti, 2% chance
 add phantoms trollface emoji
 
 removed dynamic raw ores, 2.10 ditched it
