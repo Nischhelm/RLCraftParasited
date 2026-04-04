@@ -19,130 +19,48 @@
       "centerX": "[Default: 0.5] The point in the image that should be at the location of the marker (0-1)",
       "centerY": "[Default: 0.5] The point in the image that should be at the location of the marker (0-1)"
     },
-    "antiqueatlas:anvil": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/anvil.png"
-      ]
-    },
+    "antiqueatlas:anvil": {},
     "antiqueatlas:bed": {},
-    "antiqueatlas:book": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/book.png"
-      ]
-    },
-    "antiqueatlas:cave": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/cave.png"
-      ]
-    },
-    "antiqueatlas:defiled": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/defiled.png"
-      ]
-    },
+    "antiqueatlas:book": {},
+    "antiqueatlas:cave": {},
+    "antiqueatlas:defiled": {},
     "antiqueatlas:diamond": {},
-    "antiqueatlas:dragon_blue": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/dragon_blue.png"
-      ]
-    },
-    "antiqueatlas:dragon_gold": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/dragon_gold.png"
-      ]
-    },
-    "antiqueatlas:dragon_green": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/dragon_green.png"
-      ]
-    },
-    "antiqueatlas:dragon_purple": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/dragon_purple.png"
-      ]
-    },
-    "antiqueatlas:dragon_red": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/dragon_red.png"
-      ]
-    },
-    "antiqueatlas:dungeon": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/dungeon.png"
-      ]
-    },
+    "antiqueatlas:dragon_blue": {},
+    "antiqueatlas:dragon_gold": {},
+    "antiqueatlas:dragon_green": {},
+    "antiqueatlas:dragon_purple": {},
+    "antiqueatlas:dragon_red": {},
+    "antiqueatlas:dungeon": {},
     "antiqueatlas:end_city": {},
     "antiqueatlas:end_city_far": {},
-    "antiqueatlas:farm": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/farm.png"
-      ]
-    },
+    "antiqueatlas:end_city_mipped_16": {},
+    "antiqueatlas:end_city_mipped_32": {},
+    "antiqueatlas:farm": {},
     "antiqueatlas:google": {},
-    "antiqueatlas:lycanites": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/lycanites.png"
-      ]
-    },
-    "antiqueatlas:megatower": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/megatower.png"
-      ]
-    },
-    "antiqueatlas:monsterspawner": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/monsterspawner.png"
-      ]
-    },
+    "antiqueatlas:lycanites": {},
+    "antiqueatlas:megatower": {},
+    "antiqueatlas:monsterspawner": {},
     "antiqueatlas:nether_portal": {},
-    "antiqueatlas:parasite": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/parasite.png"
-      ]
-    },
+    "antiqueatlas:parasite": {},
     "antiqueatlas:pickaxe": {},
-    "antiqueatlas:quadtower": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/quadtower.png"
-      ]
-    },
+    "antiqueatlas:quadtower": {},
     "antiqueatlas:red_x_large": {},
     "antiqueatlas:red_x_small": {},
-    "antiqueatlas:ruins": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/ruins.png"
-      ]
-    },
+    "antiqueatlas:ruins": {},
     "antiqueatlas:scroll": {},
-    "antiqueatlas:ship": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/ship.png"
-      ]
-    },
+    "antiqueatlas:ship": {},
     "antiqueatlas:skull": {},
     "antiqueatlas:sword": {},
     "antiqueatlas:tomb": {},
     "antiqueatlas:tower": {},
-    "antiqueatlas:tracks": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/tracks.png"
-      ]
-    },
+    "antiqueatlas:tracks": {},
     "antiqueatlas:unknown_marker": {
       "textures": [
         "antiqueatlas:textures/gui/markers/unknown_marker.png"
       ]
     },
     "antiqueatlas:village": {},
-    "antiqueatlas:waystone": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/waystone.png"
-      ]
-    },
-    "antiqueatlas:wizardtower": {
-      "textures": [
-        "antiqueatlas:textures/gui/markers/wizardtower.png"
-      ]
-    }
+    "antiqueatlas:waystone": {},
+    "antiqueatlas:wizardtower": {}
   }
 }
