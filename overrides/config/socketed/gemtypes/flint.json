@@ -1,0 +1,21 @@
+{
+  "Display Name": "socketed.tooltip.default.flint",
+  "Gem Tier": 1,
+  "Text Color": "GRAY",
+  "Effects": [
+    {
+      "Enchantment Name": "minecraft:power",
+      "Amount": 1,
+      "Effect Type": "Enchantment",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:flint",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Display Name": "socketed.tooltip.default.tropicalfish",
+  "Gem Tier": 2,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Attribute Name": "forge.swimSpeed",
+      "Modifier Amount": 0.3,
+      "Modifier Operation": 1,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:fish",
+      "Item Metadata": 2,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

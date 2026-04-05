@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.glowstone",
+  "Gem Tier": 1,
+  "Text Color": "YELLOW",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:glowing",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Block Range": 4,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.glowstone.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "dustGlowstone",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

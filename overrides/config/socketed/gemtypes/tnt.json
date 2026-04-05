@@ -1,0 +1,36 @@
+{
+  "Display Name": "socketed.tooltip.default.tnt",
+  "Gem Tier": 2,
+  "Text Color": "RED",
+  "Effects": [
+    {
+      "Strength": 2.0,
+      "Damages Terrain": true,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.tnt.desc",
+      "Effect Type": "Explosion",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:tnt",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

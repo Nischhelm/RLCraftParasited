@@ -1,0 +1,34 @@
+{
+  "Display Name": "socketed.tooltip.default.coal",
+  "Gem Tier": 0,
+  "Text Color": "DARK_GRAY",
+  "Effects": [
+    {
+      "Duration": 3,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.coal.desc",
+      "Effect Type": "Ignite",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "blockCoal",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Display Name": "Sapphire Gem",
+  "Gem Tier": 1,
+  "Text Color": "BLUE",
+  "Effects": [
+    {
+      "Amount": 2.0,
+      "Damage Type": "ddd_cold",
+      "Directly Activated": true,
+      "Effect Type": "DDD Damage",
+      "Equipment Slot Type": "HAND"
+    },
+	{
+      "Amount": 0.2,
+      "Damage Type": "ddd_cold",
+      "Directly Activated": true,
+      "Effect Type": "DDD Resistance",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "contenttweaker:sapphire_gem_rare",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

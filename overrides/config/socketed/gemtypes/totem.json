@@ -1,0 +1,58 @@
+{
+  "Display Name": "socketed.tooltip.default.totem",
+  "Gem Tier": 3,
+  "Text Color": "YELLOW",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Effect Type": "Undying Totem",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Effect Type": "Cancel Event",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Activator Type": "Death Totem Check",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.totem.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "OFFHAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:totem_of_undying",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

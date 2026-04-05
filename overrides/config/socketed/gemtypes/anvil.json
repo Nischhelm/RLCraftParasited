@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.anvil",
+  "Gem Tier": 2,
+  "Text Color": "GRAY",
+  "Effects": [
+    {
+      "Strength": 4.0,
+      "Inverted": false,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.anvil.desc",
+      "Effect Type": "Knockback",
+      "Equipment Slot Type": "CHEST"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:anvil",
+      "Item Metadata": 0,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

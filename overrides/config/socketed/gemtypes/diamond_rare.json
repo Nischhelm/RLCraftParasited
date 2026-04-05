@@ -1,0 +1,29 @@
+{
+  "Display Name": "Diamond Gem",
+  "Gem Tier": 1,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Attribute Name": "generic.attackDamage",
+      "Modifier Amount": 2.0,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "HAND"
+    },
+    {
+      "Attribute Name": "generic.armorToughness",
+      "Modifier Amount": 2.0,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "contenttweaker:diamond_gem_rare",
+      "Item Metadata": 0,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

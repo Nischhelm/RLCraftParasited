@@ -1,0 +1,50 @@
+{
+  "Display Name": "socketed.tooltip.default.gold_carrot",
+  "Gem Tier": 1,
+  "Text Color": "YELLOW",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:night_vision",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 40,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Y Level": 60,
+              "Comparison Type": "LESS_EQUAL",
+              "Check For Player": true,
+              "Condition Type": "Elevation"
+            },
+            {
+              "Light Level": 7,
+              "Comparison Type": "LESS",
+              "Check For Player": true,
+              "Condition Type": "Light Level"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.gold_carrot.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:golden_carrot",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

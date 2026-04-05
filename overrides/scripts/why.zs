@@ -56,3 +56,53 @@ LeBloodTear.register();
 
 var TRACERCORE = VanillaFactory.createItem("sentient_core");
 TRACERCORE.register();
+
+var DiamondRare = VanillaFactory.createItem("diamond_gem_rare");
+DiamondRare.glowing = true;
+DiamondRare.rarity = "RARE";
+DiamondRare.register();
+
+var DiamondEpic = VanillaFactory.createItem("diamond_gem_epic");
+DiamondEpic.glowing = true;
+DiamondEpic.rarity = "EPIC";
+DiamondEpic.register();
+
+var EmeraldRare = VanillaFactory.createItem("emerald_gem_rare");
+EmeraldRare.glowing = true;
+EmeraldRare.rarity = "RARE";
+EmeraldRare.register();
+
+var EmeraldEpic = VanillaFactory.createItem("emerald_gem_epic");
+EmeraldEpic.glowing = true;
+EmeraldEpic.rarity = "EPIC";
+EmeraldEpic.register();
+
+var RubyRare = VanillaFactory.createItem("ruby_gem_rare");
+RubyRare.glowing = true;
+RubyRare.rarity = "RARE";
+RubyRare.register();
+
+var RubyEpic = VanillaFactory.createItem("ruby_gem_epic");
+RubyEpic.glowing = true;
+RubyEpic.rarity = "EPIC";
+RubyEpic.register();
+
+var AmethystRare = VanillaFactory.createItem("amethyst_gem_rare");
+AmethystRare.glowing = true;
+AmethystRare.rarity = "RARE";
+AmethystRare.register();
+
+var AmeythstEpic = VanillaFactory.createItem("amethyst_gem_epic");
+AmeythstEpic.glowing = true;
+AmeythstEpic.rarity = "EPIC";
+AmeythstEpic.register();
+
+var SapphireRare = VanillaFactory.createItem("sapphire_gem_rare");
+SapphireRare.glowing = true;
+SapphireRare.rarity = "RARE";
+SapphireRare.register();
+
+var SapphireEpic = VanillaFactory.createItem("sapphire_gem_epic");
+SapphireEpic.glowing = true;
+SapphireEpic.rarity = "EPIC";
+SapphireEpic.register();

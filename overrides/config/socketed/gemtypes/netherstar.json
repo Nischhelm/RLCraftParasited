@@ -1,0 +1,44 @@
+{
+  "Display Name": "socketed.tooltip.default.netherstar",
+  "Gem Tier": 3,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:wither",
+      "Amplifier": 0,
+      "Duration": 200,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        },
+        {
+          "Block Range": 3,
+          "Target Type": "Other AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.netherstar.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "BODY"
+    },
+    {
+      "Attribute Name": "generic.attackDamage",
+      "Modifier Amount": 5.0,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:nether_star",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

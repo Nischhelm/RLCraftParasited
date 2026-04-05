@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.skullcreeper",
+  "Gem Tier": 3,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Activator": {
+        "Activator Type": "Targeted",
+        "Condition": {
+          "Entity": "minecraft:creeper",
+          "Condition Type": "Entity"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.skullcreeper.desc",
+      "Effect Type": "Lose Target",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:skull",
+      "Item Metadata": 4,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

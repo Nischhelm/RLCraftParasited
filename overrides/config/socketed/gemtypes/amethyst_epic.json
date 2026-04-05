@@ -1,0 +1,29 @@
+{
+  "Display Name": "Amethyst Gem",
+  "Gem Tier": 2,
+  "Text Color": "LIGHT_PURPLE",
+  "Effects": [
+    {
+      "Amount": 3.0,
+      "Damage Type": "ddd_lightning",
+      "Directly Activated": true,
+      "Effect Type": "DDD Damage",
+      "Equipment Slot Type": "HAND"
+    },
+	{
+      "Amount": 0.3,
+      "Damage Type": "ddd_lightning",
+      "Directly Activated": true,
+      "Effect Type": "DDD Resistance",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "contenttweaker:amethyst_gem_epic",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

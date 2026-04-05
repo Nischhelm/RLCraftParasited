@@ -1,0 +1,22 @@
+{
+  "Display Name": "socketed.tooltip.default.dead_bush",
+  "Gem Tier": 0,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Attribute Name": "generic.attackDamage",
+      "Modifier Amount": 0.5,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:deadbush",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

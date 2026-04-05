@@ -1,0 +1,22 @@
+{
+  "Display Name": "dsd.tooltip.default.fire_resistance",
+  "Gem Tier": 3,
+  "Text Color": "RED",
+  "Effects": [
+    {
+      "Amount": 0.5,
+      "Damage Type": "ddd_fire",
+      "Directly Activated": true,
+      "Effect Type": "DDD Resistance",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:magma",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

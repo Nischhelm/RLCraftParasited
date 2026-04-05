@@ -1,0 +1,38 @@
+{
+  "Display Name": "socketed.tooltip.default.cobweb",
+  "Gem Tier": 1,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:slowness",
+      "Amplifier": 0,
+      "Duration": 80,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Block Range": 6,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.cobweb.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "LEGS"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:web",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

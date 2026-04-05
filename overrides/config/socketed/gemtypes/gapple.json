@@ -1,0 +1,36 @@
+{
+  "Display Name": "socketed.tooltip.default.gapple",
+  "Gem Tier": 2,
+  "Text Color": "YELLOW",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:absorption",
+      "Amplifier": 0,
+      "Duration": 200,
+      "Activator": {
+        "Activation Rate": 200,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.gapple.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "ALL"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:golden_apple",
+      "Item Metadata": 0,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

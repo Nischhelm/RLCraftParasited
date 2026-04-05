@@ -1,0 +1,55 @@
+{
+  "Display Name": "socketed.tooltip.default.godapple",
+  "Gem Tier": 3,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:absorption",
+      "Amplifier": 1,
+      "Duration": 200,
+      "Activator": {
+        "Activation Rate": 400,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.godapple.desc.1",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "ALL"
+    },
+    {
+      "Potion Name": "minecraft:fire_resistance",
+      "Amplifier": 0,
+      "Duration": 400,
+      "Activator": {
+        "Activation Rate": 400,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Health Percent": 0.25,
+          "Comparison Type": "LESS_EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Health Percent"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.godapple.desc.2",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "ALL"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:golden_apple",
+      "Item Metadata": 1,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

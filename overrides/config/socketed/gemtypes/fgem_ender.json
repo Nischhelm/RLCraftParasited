@@ -1,0 +1,32 @@
+{
+  "Display Name": "Ender Gem",
+  "Gem Tier": 2,
+  "Text Color": "DARK_RED",
+  "Effects": [
+    {
+      "Potion Name": "potioncore:teleport",
+      "Amplifier": 0,
+      "Duration": 1,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Block Range": 4,
+          "Target Type": "Self AOE"
+        }
+      ],
+	  "Tooltip Key": "Warps enemies around you upon dodging",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "forgottenitems:ender_gem",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

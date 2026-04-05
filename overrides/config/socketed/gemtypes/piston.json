@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.piston",
+  "Gem Tier": 1,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Strength": 2.0,
+      "Inverted": false,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.piston.desc",
+      "Effect Type": "Knockback",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:piston",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

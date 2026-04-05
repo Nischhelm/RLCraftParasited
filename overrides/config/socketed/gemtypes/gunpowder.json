@@ -1,0 +1,35 @@
+{
+  "Display Name": "socketed.tooltip.default.gunpowder",
+  "Gem Tier": 0,
+  "Text Color": "RED",
+  "Effects": [
+    {
+      "Strength": 1.0,
+      "Damages Terrain": false,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 0.1,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.gunpowder.desc",
+      "Effect Type": "Explosion",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "gunpowder",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

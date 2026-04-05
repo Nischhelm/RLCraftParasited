@@ -1,0 +1,40 @@
+{
+  "Display Name": "socketed.tooltip.default.pufferfish",
+  "Gem Tier": 2,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:poison",
+      "Amplifier": 0,
+      "Duration": 100,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Health Percent": 0.5,
+          "Comparison Type": "LESS_EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Health Percent"
+        }
+      },
+      "Targets": [
+        {
+          "Block Range": 4,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.pufferfish.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:fish",
+      "Item Metadata": 3,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

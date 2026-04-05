@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.skullzombie",
+  "Gem Tier": 3,
+  "Text Color": "DARK_GREEN",
+  "Effects": [
+    {
+      "Activator": {
+        "Activator Type": "Targeted",
+        "Condition": {
+          "Entity": "minecraft:zombie",
+          "Condition Type": "Entity"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.skullzombie.desc",
+      "Effect Type": "Lose Target",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:skull",
+      "Item Metadata": 2,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

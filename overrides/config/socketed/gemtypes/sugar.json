@@ -1,0 +1,30 @@
+{
+  "Display Name": "rlsocketed.tooltip.default.sugar",
+  "Gem Tier": 0,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:speed",
+      "Amplifier": 2,
+      "Duration": 200,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:sugar",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}
