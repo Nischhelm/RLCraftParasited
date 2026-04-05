@@ -1,0 +1,45 @@
+{
+  "Display Name": "Shock Gem",
+  "Gem Tier": 1,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Strength": 1.0,
+      "Damages Terrain": true,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "Explode upon dodging",
+      "Effect Type": "Explosion",
+      "Equipment Slot Type": "FEET"
+    },
+	{
+      "Strength": 3.0,
+      "Damages Terrain": false,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "",
+	  "Effect Type": "Explosion",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "forgottenitems:shock_gem",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "Display Name": "socketed.tooltip.default.combination0",
+  "Text Color": "DARK_GREEN",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": true,
+  "Gem Types": [
+    "poison_potato",
+    "spider_eye",
+    "slimeball",
+    "sugar"
+  ],
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Potion Name": "minecraft:poison",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 4,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:weakness",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 4,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:slowness",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 4,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:speed",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.combination0.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "ALL"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Display Name": "Emerald Gem",
+  "Gem Tier": 2,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Amount": 3.0,
+      "Damage Type": "ddd_poison",
+      "Directly Activated": true,
+      "Effect Type": "DDD Damage",
+      "Equipment Slot Type": "HAND"
+    },
+	{
+      "Amount": 0.3,
+      "Damage Type": "ddd_poison",
+      "Directly Activated": true,
+      "Effect Type": "DDD Resistance",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "contenttweaker:emerald_gem_epic",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

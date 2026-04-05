@@ -1,0 +1,22 @@
+{
+  "Display Name": "Water Gem",
+  "Gem Tier": 0,
+  "Text Color": "BLUE",
+  "Effects": [
+    {
+      "Attribute Name": "forge.swimSpeed",
+      "Modifier Amount": 1.0,
+      "Modifier Operation": 1,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "LEGS"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "forgottenitems:water_gem",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

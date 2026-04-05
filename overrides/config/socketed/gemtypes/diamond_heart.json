@@ -1,0 +1,22 @@
+{
+  "Display Name": "Reinforced",
+  "Gem Tier": 2,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Attribute Name": "socketed.durability",
+      "Modifier Amount": 0.1,
+      "Modifier Operation": 1,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "quark:diamond_heart",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

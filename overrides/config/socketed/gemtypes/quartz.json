@@ -1,0 +1,21 @@
+{
+  "Display Name": "socketed.tooltip.default.quartz",
+  "Gem Tier": 2,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Attribute Name": "socketed.experience",
+      "Modifier Amount": 0.1,
+      "Modifier Operation": 1,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "gemQuartz",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

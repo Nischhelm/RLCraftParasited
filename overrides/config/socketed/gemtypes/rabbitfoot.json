@@ -1,0 +1,39 @@
+{
+  "Display Name": "socketed.tooltip.default.rabbitfoot",
+  "Gem Tier": 2,
+  "Text Color": "YELLOW",
+  "Effects": [
+    {
+      "Attribute Name": "generic.luck",
+      "Modifier Amount": 1.0,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "FEET"
+    },
+    {
+      "Potion Name": "minecraft:jump_boost",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.rabbitfoot.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:rabbit_foot",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

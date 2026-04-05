@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.sticky_piston",
+  "Gem Tier": 1,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Strength": 2.0,
+      "Inverted": true,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.sticky_piston.desc",
+      "Effect Type": "Knockback",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:sticky_piston",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "Display Name": "socketed.tooltip.default.combination2",
+  "Text Color": "GREEN",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": true,
+  "Gem Types": [
+    "sealantern",
+    "witherskull",
+    "pufferfish"
+  ],
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Potion Name": "minecraft:poison",
+          "Amplifier": 1,
+          "Duration": 200,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 4,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:wither",
+          "Amplifier": 1,
+          "Duration": 200,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 4,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:blindness",
+          "Amplifier": 0,
+          "Duration": 200,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 4,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Health Percent": 0.75,
+          "Comparison Type": "LESS_EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Health Percent"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.combination2.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "BODY"
+    }
+  ]
+}

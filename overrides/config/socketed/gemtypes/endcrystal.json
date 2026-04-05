@@ -1,0 +1,72 @@
+{
+  "Display Name": "socketed.tooltip.default.endcrystal",
+  "Gem Tier": 3,
+  "Text Color": "LIGHT_PURPLE",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Other"
+            }
+          ],
+          "Effect Type": "Undying Totem",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Other"
+            }
+          ],
+          "Effect Type": "Cancel Event",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "ATTACK",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Chance": 0.05,
+              "Condition Type": "Chance"
+            },
+            {
+              "Condition": {
+                "Condition Type": "Is Boss"
+              },
+              "Condition Type": "Inverted"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.endcrystal.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:end_crystal",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

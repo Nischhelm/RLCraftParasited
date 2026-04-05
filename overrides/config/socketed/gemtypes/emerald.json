@@ -1,0 +1,28 @@
+{
+  "Display Name": "Emerald Gem",
+  "Gem Tier": 0,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Amount": 1.0,
+      "Damage Type": "ddd_poison",
+      "Directly Activated": true,
+      "Effect Type": "DDD Damage",
+      "Equipment Slot Type": "HAND"
+    },
+	{
+      "Amount": 0.1,
+      "Damage Type": "ddd_poison",
+      "Directly Activated": true,
+      "Effect Type": "DDD Resistance",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "gemEmerald",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

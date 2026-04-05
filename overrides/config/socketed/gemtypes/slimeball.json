@@ -1,0 +1,35 @@
+{
+  "Display Name": "socketed.tooltip.default.slimeball",
+  "Gem Tier": 0,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:slowness",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        },
+        {
+          "Block Range": 4,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.slimeball.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "LEGS"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "slimeball",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

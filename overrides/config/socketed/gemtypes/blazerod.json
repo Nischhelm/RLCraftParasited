@@ -1,0 +1,35 @@
+{
+  "Display Name": "socketed.tooltip.default.blazerod",
+  "Gem Tier": 1,
+  "Text Color": "DARK_RED",
+  "Effects": [
+    {
+      "Duration": 6,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 0.5,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.blazerod.desc",
+      "Effect Type": "Ignite",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:blaze_rod",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

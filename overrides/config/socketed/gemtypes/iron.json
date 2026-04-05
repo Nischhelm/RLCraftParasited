@@ -1,0 +1,28 @@
+{
+  "Display Name": "socketed.tooltip.default.iron",
+  "Gem Tier": 0,
+  "Text Color": "GRAY",
+  "Effects": [
+    {
+      "Attribute Name": "generic.attackDamage",
+      "Modifier Amount": 1.0,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "HAND"
+    },
+    {
+      "Attribute Name": "generic.armor",
+      "Modifier Amount": 1.0,
+      "Modifier Operation": 0,
+      "Effect Type": "Attribute",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "blockIron",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "Display Name": "socketed.tooltip.default.witherskull",
+  "Gem Tier": 2,
+  "Text Color": "DARK_GRAY",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:wither",
+      "Amplifier": 0,
+      "Duration": 100,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Health Percent": 0.5,
+          "Comparison Type": "LESS_EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Health Percent"
+        }
+      },
+      "Targets": [
+        {
+          "Block Range": 4,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.witherskull.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:skull",
+      "Item Metadata": 1,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

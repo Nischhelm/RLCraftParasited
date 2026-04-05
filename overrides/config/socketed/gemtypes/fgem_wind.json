@@ -1,0 +1,79 @@
+{
+  "Display Name": "Wind Gem",
+  "Gem Tier": 1,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Force Multiplier": 4,
+	  "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+	  "Tooltip Key": "Greatly increased dodging power",
+      "Effect Type": "Dodge Force",
+      "Equipment Slot Type": "FEET"
+    },
+	{
+      "Potion Name": "potioncore:slow_fall",
+      "Amplifier": 0,
+      "Duration": 60,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+	  "Tooltip Key": "Grants Slowfall upon dodging",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    },
+	{
+      "Strength": 4.0,
+      "Inverted": false,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "Throws targets on hit",
+      "Effect Type": "Knockback",
+      "Equipment Slot Type": "HAND"
+    },
+	{
+      "Potion Name": "minecraft:levitation",
+      "Amplifier": 0,
+      "Duration": 10,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "forgottenitems:wind_gem",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "Display Name": "Heat Gem",
+  "Gem Tier": 0,
+  "Text Color": "DARK_RED",
+  "Effects": [
+    {
+      "Duration": 6,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 1.0,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+		},
+		{
+		  "Block Range": 2,
+		  "Target Type": "Other AOE"
+        }
+      ],
+      "Tooltip Key": "Sets targets ablaze",
+      "Effect Type": "Ignite",
+      "Equipment Slot Type": "HAND"
+    },
+	{
+      "Duration": 3,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Block Range": 4,
+		  "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "",
+      "Effect Type": "Ignite",
+      "Equipment Slot Type": "FEET"
+    },
+	{
+      "Potion Name": "rustic:blazing_trail",
+      "Amplifier": 0,
+      "Duration": 60,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Block Range": 4,
+		  "Target Type": "Self AOE"
+        }
+      ],
+	  "Tooltip Key": "Dodging causes nearby targets to burst into flame",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "forgottenitems:heat_gem",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

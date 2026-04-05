@@ -1388,6 +1388,11 @@ recipes.addShapeless("lolarecipe151",<contenttweaker:glacier_cream>,[<minecraft:
 
 recipes.addShapeless("lesalad152",<lycanitesmobs:paleo_salad>,[<lycanitesmobs:cooked_arisaur_meat>,<minecraft:carrot>,<quark:variant_leaves:1>]);
 
+recipes.addShaped("lolarecipe153",<socketed:socket_bench>,
+ [[null,<iceandfire:ruby_gem>,null],
+  [<iceandfire:amethyst_gem>,<ore:plankWood>,<iceandfire:sapphire_gem>],
+  [<ore:plankWood>,null,<ore:plankWood>]]);
+
 recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 

@@ -1,0 +1,94 @@
+{
+  "Display Name": "socketed.tooltip.default.beacon",
+  "Gem Tier": 3,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Potion Name": "minecraft:invisibility",
+          "Amplifier": 0,
+          "Duration": 10,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 32,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:glowing",
+          "Amplifier": 0,
+          "Duration": 10,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Block Range": 32,
+              "Target Type": "Self AOE"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Activation Rate": 9,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Light Level": 15,
+          "Comparison Type": "EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Light Level"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.beacon.desc.1",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "HEAD"
+    },
+    {
+      "Potion Name": "minecraft:invisibility",
+      "Amplifier": 0,
+      "Duration": 10,
+      "Activator": {
+        "Activation Rate": 9,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Light Level": 7,
+          "Comparison Type": "LESS_EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Light Level"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.beacon.desc.2",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:beacon",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

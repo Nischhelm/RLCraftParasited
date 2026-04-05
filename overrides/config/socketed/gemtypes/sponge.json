@@ -1,0 +1,32 @@
+{
+  "Display Name": "socketed.tooltip.default.sponge",
+  "Gem Tier": 2,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:water_breathing",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.sponge.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:sponge",
+      "Item Metadata": 0,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ]
+}

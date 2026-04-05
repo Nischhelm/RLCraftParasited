@@ -1,0 +1,44 @@
+{
+  "Display Name": "rlsocketed.tooltip.default.blaze_powder",
+  "Gem Tier": 0,
+  "Text Color": "RED",
+  "Effects": [
+    {
+      "Potion Name": "potioncore:explode",
+      "Amplifier": 0,
+      "Duration": 1,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Block Range": 3,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    },
+    {
+      "Force Multiplier": 1.5,
+      "Activator": {
+        "Activator Type": "Dodge"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Effect Type": "Dodge Force",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "blaze_powder",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}

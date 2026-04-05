@@ -1,0 +1,36 @@
+{
+  "Display Name": "socketed.tooltip.default.spider_eye",
+  "Gem Tier": 0,
+  "Text Color": "DARK_RED",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:weakness",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        },
+        {
+          "Block Range": 4,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.spider_eye.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "CHEST"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:spider_eye",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ]
+}
