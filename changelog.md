@@ -7,6 +7,8 @@ enabled unbreakable extended roguelike novelties + spawn johnny
 nerf luckified (lucky loot / max roll loot, enchant focus per luck), to be in parity with RLCraft 2.10
 disable wandering cyclops
 fixed minor editableedibles + ddd config issues
+disabled spawn light check for parasites in end
+fixed enchantmentcontrol disabling SWORD enchants woops
 
 --- April 4 2026 ---
 
