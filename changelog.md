@@ -1,3 +1,13 @@
+--- April 5 2026 ---
+
+copypasted socketed stuff from RLCraft 2.10 v2
+enabled re-enchanting system (once for pre-enchanted loot, 15% to allow to enchant again)
+replaced SME with indev version (compat with enchantmentcontrol, also cap purging blade multi)
+enabled unbreakable extended roguelike novelties + spawn johnny
+nerf luckified (lucky loot / max roll loot, enchant focus per luck), to be in parity with RLCraft 2.10
+disable wandering cyclops
+fixed minor editableedibles + ddd config issues
+
 --- April 4 2026 ---
 
 added enchantmentcontrol
