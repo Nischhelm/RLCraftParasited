@@ -46,3 +46,18 @@ zenClass BloodmoonHandlerMixin {
         if(phase <= 2) ci.cancel(); # no bloodmoon before phase 3
     }
 }
+
+#mixin {targets: "com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase"}
+zenClass EntityParasiteBaseMixin {
+    #mixin ModifyExpressionValue
+    #{
+    #   method: "func_70601_bi",
+    #   at: {value: "INVOKE", target: "Lcom/dhanantry/scapeandrunparasites/entity/ai/misc/EntityParasiteBase;isValidLightLevelOne()Z"}
+    #}
+    function skipLightCheck(original as bool) as bool {
+        if(original) return original;
+        val dim = this0.world.provider.getDimension();
+        if(dim == 1) return true;
+        return original;
+    }
+}
