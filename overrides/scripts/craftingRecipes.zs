@@ -1212,7 +1212,7 @@ recipes.addShaped("lolarecipe131.3",<xat:dragon_gem:3>.withTag({"Elements": {"pr
   [<iceandfire:amethyst_gem>, <xat:dragon_ring:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}), <iceandfire:amethyst_gem>],
   [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe132",<xat:taurus_tea>,
+recipes.addShaped("lolarecipe131.4",<xat:taurus_tea>,
  [[<xat:mana_crystal>,<iceandfire:seaserpent_skull>,<xat:mana_crystal>],
   [<iceandfire:hydra_fang>,<xat:taurus_ring>,<iceandfire:cyclops_eye>],
   [<xat:mana_crystal>,<iceandfire:dragonbone>,<xat:mana_crystal>]]);
