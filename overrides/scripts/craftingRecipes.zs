@@ -1192,25 +1192,25 @@ recipes.addShaped("lolarecipe130",<xat:titan_spirit>,
   [<variedcommodities:ingot_bronze>,<xat:titan_ring>,<variedcommodities:ingot_bronze>],
   [<xat:mana_crystal>,<lycanitesmobs:bucketmoglava>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131",<xat:dragon_gem:0>.withTag({Elements: {primary: "xat:neutral"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:neutral"}}}),
+recipes.addShaped("lolarecipe131",<xat:dragon_gem:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}),
  [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
-  [<iceandfire:ruby_gem>,<xat:dragon_ring:0>.withTag({Elements: {primary: "xat:neutral"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:neutral"}}}) ,<iceandfire:sapphire_gem>],
+  [<iceandfire:ruby_gem>,<xat:dragon_ring:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}) ,<iceandfire:sapphire_gem>],
   [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.1",<xat:dragon_gem:1>.withTag({Elements: {primary: "xat:fire"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:fire"}}}),
-[[<xat:mana_crystal>, <iceandfire:ruby_gem>, <xat:mana_crystal>],
-[<iceandfire:ruby_gem>, <xat:dragon_ring:1>.withTag({Elements: {primary: "xat:fire"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:fire"}}}), <iceandfire:ruby_gem>],
-[<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+recipes.addShaped("lolarecipe131.1",<xat:dragon_gem:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}),
+ [[<xat:mana_crystal>, <iceandfire:ruby_gem>, <xat:mana_crystal>],
+  [<iceandfire:ruby_gem>, <xat:dragon_ring:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}), <iceandfire:ruby_gem>],
+  [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.2",<xat:dragon_gem:2>.withTag({Elements: {primary: "xat:ice"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:ice"}}}), 
-[[<xat:mana_crystal>, <iceandfire:sapphire_gem>, <xat:mana_crystal>],
-[<iceandfire:sapphire_gem>, <xat:dragon_ring:2>.withTag({Elements: {primary: "xat:ice"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:ice"}}}), <iceandfire:sapphire_gem>], 
-[<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+recipes.addShaped("lolarecipe131.2",<xat:dragon_gem:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}),
+ [[<xat:mana_crystal>, <iceandfire:sapphire_gem>, <xat:mana_crystal>],
+  [<iceandfire:sapphire_gem>, <xat:dragon_ring:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}), <iceandfire:sapphire_gem>],
+  [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.3",<xat:dragon_gem:3>.withTag({Elements: {primary: "xat:lightning"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:lightning"}}}), 
-[[<xat:mana_crystal>, <iceandfire:amethyst_gem>, <xat:mana_crystal>],
-[<iceandfire:amethyst_gem>, <xat:dragon_ring:3>.withTag({Elements: {primary: "xat:lightning"}}).withCapNBT({"Parent":{"Elements":{primary: "xat:lightning"}}}), <iceandfire:amethyst_gem>], 
-[<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+recipes.addShaped("lolarecipe131.3",<xat:dragon_gem:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}),
+ [[<xat:mana_crystal>, <iceandfire:amethyst_gem>, <xat:mana_crystal>],
+  [<iceandfire:amethyst_gem>, <xat:dragon_ring:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}), <iceandfire:amethyst_gem>],
+  [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
 recipes.addShaped("lolasaddle1",<lycanitesmobs:saddle_beast>,
  [[<lycanitesmobs:wendigoantler:*>,null,null],
