@@ -2,8 +2,13 @@ import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Conditions;
-import loottweaker.vanilla.loot.Functions;
+import loottweaker.Functions;
+import mods.daomephsta_loot_shared.CustomLootFunction;
+import mods.daomephsta_loot_shared.LootContext;
+import crafttweaker.util.IRandom;
+import crafttweaker.item.IItemStack;
  
+val qual = 1; //weight per luck for transformation rings
  
 //==== Create new tables ====
 val lostCityHighRiseTable = LootTweaker.newTable("rlcraft:lostcityhighrise");
@@ -103,13 +108,13 @@ builderPool.addItemEntry(<minecraft:stained_hardened_clay>, 20, 1, [Functions.se
 builderPool.addItemEntry(<minecraft:stained_glass>, 15, 1, [Functions.setCount(0, 16), Functions.setMetadata(0, 15)], [], "10");
 
 //==== High Rise Loot (fairy) ====
-lostCityHighRisePool.addItemEntry(<xat:fairy_ring>, 1, 1, [Functions.setCount(0, 1)], [], "fairy_ring");
+lostCityHighRisePool.addItemEntry(<xat:fairy_ring>, 1, qual, [Functions.setCount(0, 1)], [], "fairy_ring");
 lostCityHighRisePool.addLootTableEntry("minecraft:chests/stronghold_library", 25);
 lostCityHighRisePool.addLootTableEntry("rlcraft:hightable", 25);
 
 
 //==== Ground Loot (elf) ====
-lostCityGroundPool.addItemEntry(<xat:elf_ring>, 1, 1, [Functions.setCount(0, 1)], [], "elf_ring");
+lostCityGroundPool.addItemEntry(<xat:elf_ring>, 1, qual, [Functions.setCount(0, 1)], [], "elf_ring");
 lostCityGroundPool.addLootTableEntry("minecraft:chests/woodland_mansion", 10);
 lostCityGroundPool.addLootTableEntry("minecraft:chests/igloo_chest", 15);
 lostCityGroundPool.addLootTableEntry("charm:village/farmer", 5);
@@ -117,14 +122,14 @@ lostCityGroundPool.addLootTableEntry("rlcraft:medtable", 20);
 
 
 //==== Basement Loot (dwarf) ====
-lostCityBasementPool.addItemEntry(<xat:dwarf_ring>, 1, 1, [Functions.setCount(0, 1)], [], "dwarf_ring");
+lostCityBasementPool.addItemEntry(<xat:dwarf_ring>, 1, qual, [Functions.setCount(0, 1)], [], "dwarf_ring");
 lostCityBasementPool.addLootTableEntry("minecraft:chests/end_city_treasure", 15);
 lostCityBasementPool.addLootTableEntry("iceandfire:ice_dragon_cave", 15);
 lostCityBasementPool.addLootTableEntry("charm:village/smith", 20);
 
 
 //==== Subway Loot (goblin) ====
-lostCitySubwayPool.addItemEntry(<xat:goblin_ring>, 1, 1, [Functions.setCount(0, 1)], [], "goblin_ring");
+lostCitySubwayPool.addItemEntry(<xat:goblin_ring>, 1, qual, [Functions.setCount(0, 1)], [], "goblin_ring");
 lostCitySubwayPool.addLootTableEntry("minecraft:chests/abandoned_mineshaft", 10);
 lostCitySubwayPool.addLootTableEntry("iceandfire:fire_dragon_cave", 10);
 lostCitySubwayPool.addLootTableEntry("charm:treasure/common_potions", 10);
@@ -132,13 +137,25 @@ lostCitySubwayPool.addLootTableEntry("charm:treasure/common_potions", 10);
 
 //==== Rare Loot (dragon) ====
 val dragonRingTable = LootTweaker.newTable("rlcraft:dragon_rings");
-val dragonRingPool = dragonRingTable.addPool("rings", 1, 1);
-dragonRingPool.addItemEntry(<minecraft:air>, 3);
-dragonRingPool.addItemEntry(<xat:dragon_ring:1>, 1);
-dragonRingPool.addItemEntry(<xat:dragon_ring:2>, 1);
-dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1);
+val dragonRingPool = dragonRingTable.addPool("rings", 0, 1, 0, 0);
 
-lostCityRarePool.addLootTableEntry("rlcraft:dragon_rings", 1, 1);
+dragonRingPool.addItemEntry(<xat:dragon_ring:1>, 1, 0, [
+    Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
+        return input.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent":{"Elements":{"primary": "xat:fire"}}});
+    })
+], []);
+dragonRingPool.addItemEntry(<xat:dragon_ring:2>, 1, 0, [
+    Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
+        return input.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent":{"Elements":{"primary": "xat:ice"}}});
+    })
+], []);
+dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1, 0, [
+    Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
+        return input.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent":{"Elements":{"primary": "xat:lightning"}}});
+    })
+], []);
+
+lostCityRarePool.addLootTableEntry("rlcraft:dragon_rings", 1, qual);
 lostCityRarePool.addLootTableEntry("minecraft:chests/nether_bridge", 10);
 lostCityRarePool.addLootTableEntry("minecraft:chests/stronghold_corridor", 20);
 lostCityRarePool.addLootTableEntry("rlcraft:lowtable", 20);
@@ -153,12 +170,11 @@ lostCityUncommonPool.addLootTableEntry("rlcraft:buildertable", 25);
 
 //==== Common Loot (faelis) ====
 val faelisRingTable = LootTweaker.newTable("rlcraft:faelis_rings");
-val faelisRingPool = faelisRingTable.addPool("rings", 1, 1);
-faelisRingPool.addItemEntry(<minecraft:air>, 2);
-faelisRingPool.addItemEntry(<xat:faelis_ring>, 1);
-faelisRingPool.addItemEntry(<xat:taurus_ring>, 1);
+val faelisRingPool = faelisRingTable.addPool("rings", 0, 1, 0, 0);
+faelisRingPool.addItemEntry(<xat:faelis_ring>, 1, 0);
+faelisRingPool.addItemEntry(<xat:taurus_ring>, 1, 0);
 
-lostCityCommonPool.addLootTableEntry("rlcraft:faelis_rings", 1, 1);
+lostCityCommonPool.addLootTableEntry("rlcraft:faelis_rings", 1, qual);
 lostCityCommonPool.addLootTableEntry("minecraft:chests/spawn_bonus_chest", 1);
 lostCityCommonPool.addLootTableEntry("charm:village/fisherman", 10);
 lostCityCommonPool.addLootTableEntry("charm:village/shepherd", 10);
