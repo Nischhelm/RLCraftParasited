@@ -1,3 +1,10 @@
+--- April 6 2026 ---
+
+Updated Trinkets & Baubles
+    added taurus race (ring in dragon ring chests)
+    split dragon race in fire/ice/lightning dragon races with respective rings+gems
+    lightning dragon now paralysis immune
+
 --- April 5 2026 ---
 
 copypasted socketed stuff from RLCraft 2.10 v2

@@ -156,7 +156,7 @@ dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1, 0, [
 ], []);
 
 lostCityRarePool.addLootTableEntry("rlcraft:dragon_rings", 1, qual);
-lostCityUncommonPool.addItemEntry(<xat:taurus_ring>, 1, qual, [Functions.setCount(0, 1)], [], "taurus_ring");
+lostCityRarePool.addItemEntry(<xat:taurus_ring>, 1, qual, [Functions.setCount(0, 1)], [], "taurus_ring");
 lostCityRarePool.addLootTableEntry("minecraft:chests/nether_bridge", 10);
 lostCityRarePool.addLootTableEntry("minecraft:chests/stronghold_corridor", 20);
 lostCityRarePool.addLootTableEntry("rlcraft:lowtable", 20);
