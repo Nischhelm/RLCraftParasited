@@ -156,25 +156,21 @@ dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1, 0, [
 ], []);
 
 lostCityRarePool.addLootTableEntry("rlcraft:dragon_rings", 1, qual);
+lostCityUncommonPool.addItemEntry(<xat:taurus_ring>, 1, qual, [Functions.setCount(0, 1)], [], "taurus_ring");
 lostCityRarePool.addLootTableEntry("minecraft:chests/nether_bridge", 10);
 lostCityRarePool.addLootTableEntry("minecraft:chests/stronghold_corridor", 20);
 lostCityRarePool.addLootTableEntry("rlcraft:lowtable", 20);
 
 
 //==== Uncommon Loot (titan) ====
-lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, 1, [Functions.setCount(0, 1)], [], "titan_ring");
+lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, qual, [Functions.setCount(0, 1)], [], "titan_ring");
 lostCityUncommonPool.addLootTableEntry("minecraft:chests/simple_dungeon", 15);
 lostCityUncommonPool.addLootTableEntry("charm:village/butcher", 10);
 lostCityUncommonPool.addLootTableEntry("rlcraft:buildertable", 25);
 
 
 //==== Common Loot (faelis) ====
-val faelisRingTable = LootTweaker.newTable("rlcraft:faelis_rings");
-val faelisRingPool = faelisRingTable.addPool("rings", 0, 1, 0, 0);
-faelisRingPool.addItemEntry(<xat:faelis_ring>, 1, 0);
-faelisRingPool.addItemEntry(<xat:taurus_ring>, 1, 0);
-
-lostCityCommonPool.addLootTableEntry("rlcraft:faelis_rings", 1, qual);
+lostCityUncommonPool.addItemEntry(<xat:faelis_ring>, 1, qual, [Functions.setCount(0, 1)], [], "faelis_ring");
 lostCityCommonPool.addLootTableEntry("minecraft:chests/spawn_bonus_chest", 1);
 lostCityCommonPool.addLootTableEntry("charm:village/fisherman", 10);
 lostCityCommonPool.addLootTableEntry("charm:village/shepherd", 10);
