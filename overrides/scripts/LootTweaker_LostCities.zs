@@ -141,17 +141,17 @@ val dragonRingPool = dragonRingTable.addPool("rings", 0, 1, 0, 0);
 
 dragonRingPool.addItemEntry(<xat:dragon_ring:1>, 1, 0, [
     Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
-        return input.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent":{"Elements":{"primary": "xat:fire"}}});
+        return input.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}});
     })
 ], []);
 dragonRingPool.addItemEntry(<xat:dragon_ring:2>, 1, 0, [
     Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
-        return input.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent":{"Elements":{"primary": "xat:ice"}}});
+        return input.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}});
     })
 ], []);
 dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1, 0, [
     Functions.zenscript(function(input as IItemStack, rng as IRandom, context as LootContext) as IItemStack {
-        return input.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent":{"Elements":{"primary": "xat:lightning"}}});
+        return input.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}});
     })
 ], []);
 
