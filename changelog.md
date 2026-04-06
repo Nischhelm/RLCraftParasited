@@ -4,6 +4,9 @@ Updated Trinkets & Baubles
     added taurus race (ring in dragon ring chests)
     split dragon race in fire/ice/lightning dragon races with respective rings+gems
     lightning dragon now paralysis immune
+Fixed two issues i couldnt fully get behind but didnt happen anymore after turning them off:
+    - trueshot compat of lycatweaks spamming my log to 200mb
+    - rltweaker chunk cache path finding fix stopped my server from doing anything when loading some reccomplex structs
 
 --- April 5 2026 ---
 
