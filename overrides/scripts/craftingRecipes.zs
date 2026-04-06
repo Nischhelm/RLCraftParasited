@@ -160,14 +160,16 @@ recipes.remove(<xat:titan_ring>);
 recipes.remove(<xat:goblin_ring>);
 recipes.remove(<xat:elf_ring>);
 recipes.remove(<xat:faelis_ring>);
-recipes.remove(<xat:dragon_ring>);
+recipes.remove(<xat:dragon_ring:*>);
+recipes.remove(<xat:taurus_ring>);
 recipes.remove(<xat:fairy_dew>);
 recipes.remove(<xat:dwarf_stout>);
 recipes.remove(<xat:titan_spirit>);
 recipes.remove(<xat:goblin_soup>);
 recipes.remove(<xat:elf_sap>);
 recipes.remove(<xat:faelis_food>);
-recipes.remove(<xat:dragon_gem>);
+recipes.remove(<xat:dragon_gem:*>);
+recipes.remove(<xat:taurus_tea>);
 recipes.remove(<xat:inertia_null_stone>);
 recipes.remove(<xat:greater_inertia_stone>);
 recipes.remove(<xat:damage_shield>);
@@ -1190,9 +1192,24 @@ recipes.addShaped("lolarecipe130",<xat:titan_spirit>,
   [<variedcommodities:ingot_bronze>,<xat:titan_ring>,<variedcommodities:ingot_bronze>],
   [<xat:mana_crystal>,<lycanitesmobs:bucketmoglava>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131",<xat:dragon_gem>,
+recipes.addShaped("lolarecipe131",<xat:dragon_gem:0>,
  [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
-  [<iceandfire:ruby_gem>,<xat:dragon_ring>,<iceandfire:sapphire_gem>],
+  [<iceandfire:ruby_gem>,<xat:dragon_ring:0>,<iceandfire:sapphire_gem>],
+  [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
+
+recipes.addShaped("lolarecipe131.1",<xat:dragon_gem:1>,
+ [[<xat:mana_crystal>,<iceandfire:ruby_gem>,<xat:mana_crystal>],
+  [<iceandfire:ruby_gem>,<xat:dragon_ring:1>,<iceandfire:ruby_gem>],
+  [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
+
+recipes.addShaped("lolarecipe131.2",<xat:dragon_gem:2>,
+ [[<xat:mana_crystal>,<iceandfire:sapphire_gem>,<xat:mana_crystal>],
+  [<iceandfire:sapphire_gem>,<xat:dragon_ring:2>,<iceandfire:sapphire_gem>],
+  [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
+
+recipes.addShaped("lolarecipe131.3",<xat:dragon_gem:3>,
+ [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
+  [<iceandfire:amethyst_gem>,<xat:dragon_ring:3>,<iceandfire:amethyst_gem>],
   [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
 
 recipes.addShaped("lolasaddle1",<lycanitesmobs:saddle_beast>,
