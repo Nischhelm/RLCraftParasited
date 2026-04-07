@@ -1,6 +1,27 @@
 --- April 7 2026 ---
 
 Added Electroblobs Wizardry
+with the following modifications:
+    disabled discovery mode for spells (will directly see which one on book/scroll)
+    disabled wand progression (TODO: remove tooltip "Progression: 0/0")
+    multiplied player spell dmg globally by 2
+    enabled ebwiz DDD compat idk what its gonna do
+    disallow multiple of the same spell on a wand
+    reduce wand spell slot count to 3 (from 5)
+    removed pocket workbench/furnace (mainly bc losing items)
+    removed flesh buffs
+    removed 3 protection enchantments
+    removed all baubles except for 6
+    removed all 10 million types of wizard armor
+    removed all 4 bombs
+    removed antique atlas (marking ebwiz structs) compat
+    blacklisted lyca end bosses from being mind controlled. this list prob needs more entries
+    made all ebwiz structs about 1.5x more rare
+    made ebwiz loot more rare by removing it from most vanilla loot pools. TODO: master spells in LC chests, rn only wizard traders, maybe remove from there
+    modified wizard trades to only be spells + wands, nothing else
+    modified wizard trade token to be any of ruby/sapphire/amethyst/diamond/emerald
+    TODO: remove all scrolls? bit of an item bloat for questionable benefit
+    TODO: well... the spells...
 
 --- April 6 2026 ---
 
