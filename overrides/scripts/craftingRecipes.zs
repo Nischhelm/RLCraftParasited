@@ -1415,6 +1415,16 @@ recipes.addShaped("lolarecipe153",<socketed:socket_bench>,
   [<iceandfire:amethyst_gem>,<ore:plankWood>,<iceandfire:sapphire_gem>],
   [<ore:plankWood>,null,<ore:plankWood>]]);
 
+recipes.remove(<ebwizardry:wizard_boots>);
+recipes.remove(<ebwizardry:wizard_leggings>);
+recipes.remove(<ebwizardry:wizard_robe>);
+recipes.remove(<ebwizardry:wizard_hat>);
+recipes.remove(<ebwizardry:magic_silk>);
+recipes.remove(<ebwizardry:spark_bomb>);
+recipes.remove(<ebwizardry:smoke_bomb>);
+recipes.remove(<ebwizardry:poison_bomb>);
+recipes.remove(<ebwizardry:firebomb>);
+
 recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 
