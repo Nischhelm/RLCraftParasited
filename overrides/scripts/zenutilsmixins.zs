@@ -11,7 +11,7 @@ zenClass ModBiomesMixin {
     #   method: "<clinit>",
     #   at: {value: "TAIL"}
     #}
-    function disableRTGCompat(ci as mixin.CallbackInfo) as void {
+    function zenutils_disableRTGCompat(ci as mixin.CallbackInfo) as void {
         RTGID = false; #dont add RTG compat for wrong RTG version
     }
 }
@@ -24,7 +24,7 @@ zenClass TreasureDataMixin {
     #   method: "createTreasureList",
     #   at: {value: "INVOKE", target: "Ljava/util/Collections;addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z"}
     #}
-    function disableDefaultLoot(obj1 as native.java.util.Collection, obj2 as native.java.lang.Object[]) as bool {
+    function zenutils_disableDefaultLoot(obj1 as native.java.util.Collection, obj2 as native.java.lang.Object[]) as bool {
         return false; #dont add default loot, done via cfg file instead
     }
 }
@@ -37,7 +37,7 @@ zenClass BloodmoonHandlerMixin {
     #   at: {value: "INVOKE", target: "Llumien/bloodmoon/server/BloodmoonHandler;setBloodmoon(Z)V", ordinal = 1},
     #   cancellable: true
     #}
-    function disableBloodmoon(event as native.net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent, ci as mixin.CallbackInfo) as void {
+    function zenutils_disableBloodmoon(event as native.net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent, ci as mixin.CallbackInfo) as void {
         val world as native.net.minecraft.world.World = event.world;
         val players as [native.net.minecraft.entity.player.EntityPlayer] = world.playerEntities;
         if(players.length != 1) return; #only works if this world has only one player
@@ -54,7 +54,7 @@ zenClass EntityParasiteBaseMixin {
     #   method: "func_70601_bi",
     #   at: {value: "INVOKE", target: "Lcom/dhanantry/scapeandrunparasites/entity/ai/misc/EntityParasiteBase;isValidLightLevelOne()Z"}
     #}
-    function skipLightCheck(original as bool) as bool {
+    function zenutils_skipLightCheck(original as bool) as bool {
         if(original) return original;
         val dim = this0.world.provider.getDimension();
         if(dim == 1) return true;
@@ -70,7 +70,46 @@ zenClass TrinketsHelperMixin {
     #   method: "getEntityRace",
     #   at: {value: "INVOKE", target: "Lxzeroair/trinkets/capabilities/race/EntityProperties;getCurrentRace()Lxzeroair/trinkets/races/EntityRace;"}
     #}
-    function fixCompat(entityProp as native.xzeroair.trinkets.capabilities.race.EntityProperties) as native.xzeroair.trinkets.races.EntityRace {
+    function zenutils_fixCompat(entityProp as native.xzeroair.trinkets.capabilities.race.EntityProperties) as native.xzeroair.trinkets.races.EntityRace {
         return entityProp.getCurrentRace().getRace();
+    }
+}
+
+#mixin {targets: "electroblob.wizardry.entity.living.EntityWizard"}
+zenClass EntityWizardMixin {
+    #mixin ModifyArg
+    #{
+    #   method: "getRandomItemOfTier",
+    #   at: {value: "INVOKE", target: "Ljava/util/Random;nextInt(I)I", ordinal = 6}
+    #}
+    function zenutils_removeWizardTrade_apprentice(origMaxRoll as int) as int {
+        return 6; //from 10, to skip the weight 2 of armor trades and 2 weight arcane tome
+    }
+
+    #mixin ModifyArg
+    #{
+    #   method: "getRandomItemOfTier",
+    #   at: {value: "INVOKE", target: "Ljava/util/Random;nextInt(I)I", ordinal = 15}
+    #}
+    function zenutils_removeWizardTrade_advanced(origMaxRoll as int) as int {
+        return 6; //from 12, to skip the weight 4 wand upgrades and the weight 2 arcane tome
+    }
+
+    #mixin ModifyArg
+    #{
+    #   method: "getRandomItemOfTier",
+    #   at: {value: "INVOKE", target: "Ljava/util/Random;nextInt(I)I", ordinal = 22}
+    #}
+    function zenutils_removeWizardTrade_master1(origMaxRoll as int) as int {
+        return 6; //from 8, to skip the weight 2 arcane tome
+    }
+
+    #mixin ModifyArg
+    #{
+    #   method: "getRandomItemOfTier",
+    #   at: {value: "INVOKE", target: "Ljava/util/Random;nextInt(I)I", ordinal = 23}
+    #}
+    function zenutils_removeWizardTrade_master2(origMaxRoll as int) as int {
+        return 1; //from 3, to skip the weight 2 arcane tome. elementless master wizard trades will always be a neutral master wand
     }
 }
