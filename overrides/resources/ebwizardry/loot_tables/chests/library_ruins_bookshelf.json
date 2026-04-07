@@ -56,11 +56,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:identification_scroll",
-                    "weight": 2
                 }
             ]
         }
