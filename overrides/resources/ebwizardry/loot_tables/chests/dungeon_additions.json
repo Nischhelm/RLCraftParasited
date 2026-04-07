@@ -72,31 +72,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "ebwizardry:identification_scroll",
-                    "weight": 6
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:firebomb",
-                    "weight": 8
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:poison_bomb",
-                    "weight": 8
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:smoke_bomb",
-                    "weight": 8
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:spark_bomb",
-                    "weight": 8
-                },
-                {
-                    "type": "item",
                     "name": "ebwizardry:astral_diamond",
                     "weight": 2
                 },
