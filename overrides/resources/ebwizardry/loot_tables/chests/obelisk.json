@@ -18,11 +18,6 @@
                     "weight": 2
                 },
                 {
-                    "type": "loot_table",
-                    "name": "ebwizardry:subsets/armour_upgrades",
-                    "weight": 1
-                },
-                {
                     "type": "item",
                     "name": "ebwizardry:spell_book",
                     "weight": 20,
@@ -60,11 +55,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:identification_scroll",
-                    "weight": 3
                 },
                 {
                     "type": "item",
@@ -117,26 +107,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:firebomb",
-                    "weight": 4
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:poison_bomb",
-                    "weight": 4
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:smoke_bomb",
-                    "weight": 4
-                },
-                {
-                    "type": "item",
-                    "name": "ebwizardry:spark_bomb",
-                    "weight": 4
                 },
                 {
                     "type": "item",
