@@ -3,7 +3,7 @@
 Added Electroblobs Wizardry
 with the following modifications:
     disabled discovery mode for spells (will directly see which one on book/scroll)
-    disabled wand progression (TODO: remove tooltip "Progression: 0/0")
+    disabled wand progression, now only through arcana tomes (TODO: remove tooltip "Progression: 0/0")
     multiplied player spell dmg globally by 2
     enabled ebwiz DDD compat idk what its gonna do
     disallow multiple of the same spell on a wand
@@ -15,7 +15,7 @@ with the following modifications:
     removed all 10 million types of wizard armor
     removed all 4 bombs
     removed antique atlas (marking ebwiz structs) compat
-    blacklisted lyca end bosses from being mind controlled. this list prob needs more entries
+    blacklisted lyca end bosses from being mind controlled. TODO: this list prob needs more entries
     made all ebwiz structs about 1.5x more rare
     made ebwiz loot more rare by removing it from most vanilla loot pools. TODO: master spells in LC chests, rn only wizard traders, maybe remove from there
     modified wizard trades to only be spells + wands, nothing else
