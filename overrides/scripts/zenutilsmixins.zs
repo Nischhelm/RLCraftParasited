@@ -29,6 +29,20 @@ zenClass TreasureDataMixin {
     }
 }
 
+#mixin {targets: "suike.suikecherry.recipe.CraftRecipe"}
+zenClass CraftRecipeMixin {
+    #mixin Static
+    #mixin Inject
+    #{
+    #   method: "register",
+    #   at: {value: "HEAD"},
+    #   cancellable: true
+    #}
+    function zenutils_dontModifyWoodRecipes(ci as mixin.CallbackInfo) {
+        ci.cancel();
+    }
+}
+
 #mixin {targets: "lumien.bloodmoon.server.BloodmoonHandler"}
 zenClass BloodmoonHandlerMixin {
     #mixin Inject
