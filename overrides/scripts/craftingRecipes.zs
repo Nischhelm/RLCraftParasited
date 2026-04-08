@@ -1424,6 +1424,7 @@ recipes.remove(<ebwizardry:spark_bomb>);
 recipes.remove(<ebwizardry:smoke_bomb>);
 recipes.remove(<ebwizardry:poison_bomb>);
 recipes.remove(<ebwizardry:firebomb>);
+recipes.remove(<ebwizardry:blank_scroll>);
 
 recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
