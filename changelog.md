@@ -1,4 +1,4 @@
---- April 7 2026 ---
+--- April 8 2026 ---
 
 Added Electroblobs Wizardry
 with the following modifications:
@@ -12,8 +12,9 @@ with the following modifications:
     removed flesh buffs
     removed 3 protection enchantments
     removed all baubles except for 6
-    removed all 10 million types of wizard armor
+    removed all 10 million types of wizard armor and their upgrades
     removed all 4 bombs
+    removed blank scrolls
     removed antique atlas (marking ebwiz structs) compat
     blacklisted lyca end bosses from being mind controlled. TODO: this list prob needs more entries
     made all ebwiz structs about 1.5x more rare
