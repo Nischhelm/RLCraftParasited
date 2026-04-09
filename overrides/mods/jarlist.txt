@@ -215,7 +215,7 @@ Toast Control-1.12.2-1.8.1
 ToggleSneakSprint-1.1.3
 ToolBelt-1.12.2-1.9.14
 Traverse-1.12.2-1.6.0-69
-Trinkets and Baubles-Forge-1.12.2-0.33
+Trinkets and Baubles-Forge-1.12.2-0.33.1
 trumpetskeleton-1.12-1.0.2.1
 tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
