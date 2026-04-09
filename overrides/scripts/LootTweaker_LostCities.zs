@@ -24,6 +24,8 @@ val medTable = LootTweaker.newTable("loottweaker:medtable");
 val highTable = LootTweaker.newTable("loottweaker:hightable");
 val builderTable = LootTweaker.newTable("loottweaker:buildertable");
 
+val masterSpellTable = LootTweaker.newTable("loottweaker:masterspells");
+
 
 //Pool Key - "name", minRolls, maxRolls, minLuckRolls, maxLuckRolls
 
@@ -42,9 +44,18 @@ val medPool = medTable.addPool("medium", 3, 9, 0, 1);
 val highPool = highTable.addPool("high", 3, 9, 0, 1);
 val builderPool = builderTable.addPool("builder", 3, 9, 0, 1);
 
+val masterSpellPool = masterSpellTable.addPool("masterSpell", 1, 1, 0, 0);
+
 
 //Loot Key - <item:item>, weight, quality, functions, conditions, "name"
 
+masterSpellPool.addItemEntry(<ebwizardry:spell_book>, 1, 0, [Functions.parse({
+                            "function": "ebwizardry:random_spell",
+                            "tiers": [
+                                "master"
+                            ],
+                            "undiscovered_bias": 0.3
+                        })], []);
 
 //==== Low Loot ====
 lowPool.addItemEntry(<simpledifficulty:frost_rod>, 10, 1, [Functions.setCount(0, 4)], [], "1");
@@ -109,12 +120,14 @@ builderPool.addItemEntry(<minecraft:stained_glass>, 15, 1, [Functions.setCount(0
 
 //==== High Rise Loot (fairy) ====
 lostCityHighRisePool.addItemEntry(<xat:fairy_ring>, 1, qual, [Functions.setCount(0, 1)], [], "fairy_ring");
+lostCityHighRisePool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityHighRisePool.addLootTableEntry("minecraft:chests/stronghold_library", 25);
 lostCityHighRisePool.addLootTableEntry("loottweaker:hightable", 25);
 
 
 //==== Ground Loot (elf) ====
 lostCityGroundPool.addItemEntry(<xat:elf_ring>, 1, qual, [Functions.setCount(0, 1)], [], "elf_ring");
+lostCityGroundPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityGroundPool.addLootTableEntry("minecraft:chests/woodland_mansion", 10);
 lostCityGroundPool.addLootTableEntry("minecraft:chests/igloo_chest", 15);
 lostCityGroundPool.addLootTableEntry("charm:village/farmer", 5);
@@ -123,6 +136,7 @@ lostCityGroundPool.addLootTableEntry("loottweaker:medtable", 20);
 
 //==== Basement Loot (dwarf) ====
 lostCityBasementPool.addItemEntry(<xat:dwarf_ring>, 1, qual, [Functions.setCount(0, 1)], [], "dwarf_ring");
+lostCityBasementPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityBasementPool.addLootTableEntry("minecraft:chests/end_city_treasure", 15);
 lostCityBasementPool.addLootTableEntry("iceandfire:ice_dragon_cave", 15);
 lostCityBasementPool.addLootTableEntry("charm:village/smith", 20);
@@ -130,6 +144,7 @@ lostCityBasementPool.addLootTableEntry("charm:village/smith", 20);
 
 //==== Subway Loot (goblin) ====
 lostCitySubwayPool.addItemEntry(<xat:goblin_ring>, 1, qual, [Functions.setCount(0, 1)], [], "goblin_ring");
+lostCitySubwayPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCitySubwayPool.addLootTableEntry("minecraft:chests/abandoned_mineshaft", 10);
 lostCitySubwayPool.addLootTableEntry("iceandfire:fire_dragon_cave", 10);
 lostCitySubwayPool.addLootTableEntry("charm:treasure/common_potions", 10);
@@ -159,6 +174,7 @@ dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1, 0, [
 ], []);
 
 lostCityRarePool.addLootTableEntry("loottweaker:dragon_rings", 1, qual);
+lostCityRarePool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityRarePool.addItemEntry(<xat:taurus_ring>, 1, qual, [Functions.setCount(0, 1)], [], "taurus_ring");
 lostCityRarePool.addLootTableEntry("minecraft:chests/nether_bridge", 10);
 lostCityRarePool.addLootTableEntry("minecraft:chests/stronghold_corridor", 20);
@@ -167,13 +183,15 @@ lostCityRarePool.addLootTableEntry("loottweaker:lowtable", 20);
 
 //==== Uncommon Loot (titan) ====
 lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, qual, [Functions.setCount(0, 1)], [], "titan_ring");
+lostCityUncommonPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityUncommonPool.addLootTableEntry("minecraft:chests/simple_dungeon", 15);
 lostCityUncommonPool.addLootTableEntry("charm:village/butcher", 10);
 lostCityUncommonPool.addLootTableEntry("loottweaker:buildertable", 25);
 
 
 //==== Common Loot (faelis) ====
-lostCityUncommonPool.addItemEntry(<xat:faelis_ring>, 1, qual, [Functions.setCount(0, 1)], [], "faelis_ring");
+lostCityCommonPool.addItemEntry(<xat:faelis_ring>, 1, qual, [Functions.setCount(0, 1)], [], "faelis_ring");
+lostCityCommonPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityCommonPool.addLootTableEntry("minecraft:chests/spawn_bonus_chest", 1);
 lostCityCommonPool.addLootTableEntry("charm:village/fisherman", 10);
 lostCityCommonPool.addLootTableEntry("charm:village/shepherd", 10);
