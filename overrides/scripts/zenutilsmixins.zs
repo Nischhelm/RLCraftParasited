@@ -76,19 +76,6 @@ zenClass EntityParasiteBaseMixin {
     }
 }
 
-#mixin {targets: "com.oblivioussp.spartanweaponry.compat.trinkets.TrinketsHelper"}
-zenClass TrinketsHelperMixin {
-    #mixin Static
-    #mixin Redirect
-    #{
-    #   method: "getEntityRace",
-    #   at: {value: "INVOKE", target: "Lxzeroair/trinkets/capabilities/race/EntityProperties;getCurrentRace()Lxzeroair/trinkets/races/EntityRace;"}
-    #}
-    function zenutils_fixCompat(entityProp as native.xzeroair.trinkets.capabilities.race.EntityProperties) as native.xzeroair.trinkets.races.EntityRace {
-        return entityProp.getCurrentRace().getRace();
-    }
-}
-
 #mixin {targets: "electroblob.wizardry.entity.living.EntityWizard"}
 zenClass EntityWizardMixin {
     #mixin ModifyArg
