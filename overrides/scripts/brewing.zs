@@ -1,28 +1,22 @@
 import mods.inspirations.Cauldron;
+import crafttweaker.item.IItemStack;
+import crafttweaker.recipes.IPotionRecipe;
+import crafttweaker.potions.IPotionType;
 
-function removePotion(potion as string, ingredient as crafttweaker.item.IItemStack) {
+function removePotion(potion as string, ingredient as IItemStack) {
     brewing.removeRecipe(<minecraft:potion>.withTag({Potion: potion}), ingredient);
     brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: potion}), ingredient);
     brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: potion}), ingredient);
 }
 
-function addContainerChangingRecipes(potion as string) {
-    brewing.addBrew(<minecraft:potion>.withTag({Potion: potion}), <minecraft:gunpowder>, <minecraft:splash_potion>.withTag({Potion: potion}));
-    brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: potion}), <minecraft:dragon_breath>, <minecraft:lingering_potion>.withTag({Potion: potion}));
+function addBrewRecipe(potionIn as string, ingredient as IItemStack, potionOut as string){
+    IPotionRecipe.add(IPotionType.fromString(potionIn), ingredient, IPotionType.fromString(potionOut));
 }
 
-function addBrewRecipe(potionIn as string, ingredient as crafttweaker.item.IItemStack, potionOut as string, potionStrong as string = null, potionLong as string = null) {
-    brewing.addBrew(<minecraft:potion>.withTag({Potion: potionIn}), ingredient, <minecraft:potion>.withTag({Potion: potionOut}));
-    addContainerChangingRecipes(potionOut);
-    
-    if(!isNull(potionStrong)){
-        brewing.addBrew(<minecraft:potion>.withTag({Potion: potionOut}), <minecraft:glowstone_dust>, <minecraft:potion>.withTag({Potion: potionStrong}));
-        addContainerChangingRecipes(potionStrong);
-    } 
-    if(!isNull(potionLong)){
-        brewing.addBrew(<minecraft:potion>.withTag({Potion: potionOut}), <minecraft:redstone>, <minecraft:potion>.withTag({Potion: potionLong}));
-        addContainerChangingRecipes(potionLong);
-    } 
+function addBrewRecipe(potionIn as string, ingredient as IItemStack, potionOut as string, potionStrong as string, potionLong as string = null) {
+    addBrewRecipe(potionIn, ingredient, potionOut);
+    addBrewRecipe(potionIn, <minecraft:glowstone_dust>, potionStrong);
+    if(!isNull(potionLong)) addBrewRecipe(potionIn, <minecraft:redstone>, potionLong);
 }
 
 function removeContainerChangingRecipes(potion as string) {
