@@ -1,145 +1,144 @@
 import mods.inspirations.Cauldron;
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.IPotionRecipe;
 import crafttweaker.potions.IPotionType;
 
 function removePotion(potion as string, ingredient as IItemStack) {
-    brewing.removeRecipe(<minecraft:potion>.withTag({Potion: potion}), ingredient);
-    brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: potion}), ingredient);
-    brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: potion}), ingredient);
+    brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": potion}), ingredient);
+    brewing.removeRecipe(<minecraft:splash_potion>.withTag({"Potion": potion}), ingredient);
+    brewing.removeRecipe(<minecraft:lingering_potion>.withTag({"Potion": potion}), ingredient);
 }
 
-function addBrewRecipe(potionIn as string, ingredient as IItemStack, potionOut as string){
-    IPotionRecipe.add(IPotionType.fromString(potionIn), ingredient, IPotionType.fromString(potionOut));
+function addBrewRecipe(potionIn as string, ingredient as IIngredient, potionOut as string){
+    val potA = IPotionType.fromString(potionIn);
+    val potB = IPotionType.fromString(potionOut);
+    if(isNull(potA)) print("Couldnt find Input Potion Type " + potionIn);
+    else if(isNull(potB)) print("Couldnt find Output Potion Type " + potionOut);
+    else IPotionRecipe.add(IPotionType.fromString(potionIn), ingredient, IPotionType.fromString(potionOut));
 }
 
-function addBrewRecipe(potionIn as string, ingredient as IItemStack, potionOut as string, potionStrong as string, potionLong as string = null) {
+function addBrewRecipe2(potionIn as string, ingredient as IIngredient, potionOut as string, potionStrong as string, potionLong as string = null) {
     addBrewRecipe(potionIn, ingredient, potionOut);
-    addBrewRecipe(potionIn, <minecraft:glowstone_dust>, potionStrong);
+    if(!isNull(potionStrong)) addBrewRecipe(potionIn, <minecraft:glowstone_dust>, potionStrong);
     if(!isNull(potionLong)) addBrewRecipe(potionIn, <minecraft:redstone>, potionLong);
 }
 
 function removeContainerChangingRecipes(potion as string) {
-    brewing.removeRecipe(<minecraft:potion>.withTag({Potion: potion}), <minecraft:gunpowder>);
-    brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: potion}), <minecraft:dragon_breath>);
+    brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": potion}), <minecraft:gunpowder>);
+    brewing.removeRecipe(<minecraft:splash_potion>.withTag({"Potion": potion}), <minecraft:dragon_breath>);
 }
 
 
 removePotion("minecraft:water", <minecraft:glowstone_dust>);
 removePotion("minecraft:water", <minecraft:redstone>);
 
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mujmajnkraftsbettersurvival:milk"}), <minecraft:golden_apple>);
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mujmajnkraftsbettersurvival:milk"}), <minecraft:fermented_spider_eye>);
+brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": "mujmajnkraftsbettersurvival:milk"}), <minecraft:golden_apple>);
+brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": "mujmajnkraftsbettersurvival:milk"}), <minecraft:fermented_spider_eye>);
 
-removePotion("minecraft:awkward"}), <simpledifficulty:ice_chunk>);
-removePotion("minecraft:awkward"}), <simpledifficulty:magma_chunk>);
-removePotion("xat:sparkling"}), <minecraft:snow>);
+removePotion("minecraft:awkward", <simpledifficulty:ice_chunk>);
+removePotion("minecraft:awkward", <simpledifficulty:magma_chunk>);
+removePotion("xat:sparkling", <minecraft:snow>);
 
-removeContainerChangingRecipes("potioncore:revival");
-
-
-brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <waystones:warp_scroll>, <bountifulbaubles:potionrecall>);
+brewing.addBrew(<minecraft:potion>.withTag({"Potion": "minecraft:awkward"}), <waystones:warp_scroll>, <bountifulbaubles:potionrecall>);
 brewing.addBrew(<bountifulbaubles:potionrecall>, <minecraft:ender_eye>, <bountifulbaubles:potionwormhole>);
 
-brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <betternether:bone_mushroom>, <minecraft:potion>.withTag({Potion: "minecraft:thick"}));
+brewing.addBrew(<minecraft:potion>.withTag({"Potion": "minecraft:water"}), <betternether:bone_mushroom>, <minecraft:potion>.withTag({Potion: "minecraft:thick"}));
 
-addBrewRecipe("minecraft:awkward", <contenttweaker:glacier_cream>, 
+addBrewRecipe2("minecraft:awkward", <contenttweaker:glacier_cream>,
     "xat:ice_resistance", null, "xat:extended_ice_resistance");
 
-addBrewRecipe("minecraft:thick", <scalinghealth:heartcontainer>, 
+addBrewRecipe2("minecraft:thick", <scalinghealth:heartcontainer>,
     "potioncore:health_boost", "potioncore:strong_health_boost", "potioncore:long_health_boost");
 
-addBrewRecipe("minecraft:mundane", <minecraft:feather>, 
+addBrewRecipe2("minecraft:mundane", <minecraft:feather>,
     "potioncore:levitation", "potioncore:strong_levitation");
 
-addBrewRecipe("minecraft:thick", <minecraft:feather>, 
+addBrewRecipe2("minecraft:thick", <minecraft:feather>,
     "potioncore:slow_fall", "potioncore:strong_slow_fall");
 
-addBrewRecipe("minecraft:thick", <familiarfauna:pixie_dust>, 
+addBrewRecipe("minecraft:thick", <familiarfauna:pixie_dust>,
     "potioncore:flight");
 
-addBrewRecipe("minecraft:thick", <iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>, 
+addBrewRecipe2("minecraft:thick", <iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>,
     "potioncore:repair", "potioncore:strong_repair", "potioncore:long_repair");
 
-addBrewRecipe("minecraft:mundane", <minecraft:rabbit_foot>, 
+addBrewRecipe2("minecraft:mundane", <minecraft:rabbit_foot>,
     "potioncore:launch", "potioncore:strong_launch");
 
-addBrewRecipe("minecraft:thick", <spartanweaponry:dynamite>, 
+addBrewRecipe2("minecraft:thick", <spartanweaponry:dynamite>,
     "potioncore:explode", "potioncore:strong_explode");
 
-addBrewRecipe("minecraft:thick", <aquaculture:fish:21>, 
+addBrewRecipe("minecraft:thick", <aquaculture:fish:21>,
     "potioncore:lightning");
 
-addBrewRecipe("minecraft:thick", <lycanitesmobs:embercharge>, 
+addBrewRecipe2("minecraft:thick", <lycanitesmobs:embercharge>,
     "potioncore:fire", "potioncore:strong_fire");
 
-addBrewRecipe("minecraft:thick", <iceandfire:fire_dragon_flesh>|<iceandfire:ice_dragon_flesh>|<iceandfire:lightning_dragon_flesh>, 
+addBrewRecipe2("minecraft:thick", <iceandfire:fire_dragon_flesh>|<iceandfire:ice_dragon_flesh>|<iceandfire:lightning_dragon_flesh>,
     "potioncore:iron_skin", "potioncore:strong_iron_skin", "potioncore:long_iron_skin");
 
-addBrewRecipe("minecraft:thick", <minecraft:diamond_block>, 
+addBrewRecipe2("minecraft:thick", <minecraft:diamond_block>,
     "potioncore:diamond_skin", "potioncore:strong_diamond_skin", "potioncore:long_diamond_skin");
 
-addBrewRecipe("minecraft:thick", <defiledlands:vilespine>, 
+addBrewRecipe2("minecraft:thick", <defiledlands:vilespine>,
     "potioncore:recoil", "potioncore:strong_recoil", "potioncore:long_recoil");
 
-addBrewRecipe("minecraft:thick", <minecraft:web>, 
+addBrewRecipe("minecraft:thick", <minecraft:web>,
     "potioncore:climb");
 
-addBrewRecipe("minecraft:thick", <minecraft:rabbit_foot>, 
+addBrewRecipe2("minecraft:thick", <minecraft:rabbit_foot>,
     "potioncore:step_up", "potioncore:strong_step_up", "potioncore:long_step_up");
 
-addBrewRecipe("minecraft:thick", <advanced-fishing:fish:8>, 
+addBrewRecipe2("minecraft:thick", <advanced-fishing:fish:8>,
     "potioncore:solid_core", null, "potioncore:long_solid_core");
 
-addBrewRecipe("minecraft:thick", <lycanitesmobs:immunizer>, 
+addBrewRecipe("minecraft:thick", <lycanitesmobs:immunizer>,
     "potioncore:cure");
 
-addBrewRecipe("minecraft:mundane", <lycanitesmobs:immunizer>, 
+addBrewRecipe2("minecraft:mundane", <lycanitesmobs:immunizer>,
     "potioncore:antidote", null, "potioncore:long_antidote");
 
-addBrewRecipe("minecraft:mundane", <defiledlands:blastem_fruit>, 
+addBrewRecipe2("minecraft:mundane", <defiledlands:blastem_fruit>,
     "potioncore:burst", "potioncore:strong_burst");
 
-addBrewRecipe("minecraft:thick", <minecraft:skull>, 
+addBrewRecipe2("minecraft:thick", <minecraft:skull>,
     "potioncore:archery", "potioncore:strong_archery", "potioncore:long_archery");
 
-addBrewRecipe("minecraft:mundane", <minecraft:skull>, 
+addBrewRecipe2("minecraft:mundane", <minecraft:skull>,
     "potioncore:potioncore:klutz", "potioncore:strong_klutz", "potioncore:long_klutz");
 
-addBrewRecipe("minecraft:thick", <minecraft:skull:1>, 
+addBrewRecipe2("minecraft:thick", <minecraft:skull:1>,
     "potioncore:purity", null, "potioncore:long_purity");
 
-addBrewRecipe("minecraft:thick", <quark:crab_leg>, 
+addBrewRecipe2("minecraft:thick", <quark:crab_leg>,
     "potioncore:reach", "potioncore:strong_reach", "potioncore:long_reach");
 
-addBrewRecipe("minecraft:mundane", <iceandfire:sea_serpent_fang>, 
+addBrewRecipe2("minecraft:mundane", <iceandfire:sea_serpent_fang>,
     "potioncore:broken_armor", "potioncore:strong_broken_armor", "potioncore:long_broken_armor");
 
-addBrewRecipe("minecraft:thick", <iceandfire:fire_dragon_blood>|<iceandfire:ice_dragon_blood>|<iceandfire:lightning_dragon_blood>, 
+addBrewRecipe2("minecraft:thick", <iceandfire:fire_dragon_blood>|<iceandfire:ice_dragon_blood>|<iceandfire:lightning_dragon_blood>,
     "potioncore:magic_focus", "potioncore:strong_magic_focus", "potioncore:long_magic_focus");
 
-addBrewRecipe("minecraft:mundane", <minecraft:fermented_spider_eye>, 
+addBrewRecipe2("minecraft:mundane", <minecraft:fermented_spider_eye>,
     "potioncore:magic_inhibition", "potioncore:strong_magic_inhibition", "potioncore:long_magic_inhibition");
 
-addBrewRecipe("minecraft:mundane", <minecraft:totem_of_undying>, 
+addBrewRecipe2("minecraft:mundane", <minecraft:totem_of_undying>,
     "potioncore:vulnerable", "potioncore:strong_vulnerable");
 
-//addBrewRecipe("minecraft:thick", <minecraft:totem_of_undying>, 
-//    "potioncore:revival");
-
-addBrewRecipe("minecraft:thick", <minecraft:ender_pearl>, 
+addBrewRecipe2("minecraft:thick", <minecraft:ender_pearl>,
     "potioncore:teleport", "potioncore:strong_teleport");
 
-addBrewRecipe("minecraft:thick", <minecraft:ender_eye>, 
+addBrewRecipe("minecraft:thick", <minecraft:ender_eye>,
     "potioncore:teleport_surface");
 
-addBrewRecipe("minecraft:mundane", <iceandfire:witherbone>, 
+addBrewRecipe2("minecraft:mundane", <iceandfire:witherbone>,
     "mujmajnkraftsbettersurvival:decay", "mujmajnkraftsbettersurvival:strong_decay", "mujmajnkraftsbettersurvival:long_decay");
 
-addBrewRecipe("minecraft:mundane", <minecraft:blaze_powder>, 
+addBrewRecipe2("minecraft:mundane", <minecraft:blaze_powder>,
     "simpledifficulty:heat_resist_type", null, "simpledifficulty:long_heat_resist_type");
 
-addBrewRecipe("minecraft:mundane", <simpledifficulty:frost_powder>, 
+addBrewRecipe2("minecraft:mundane", <simpledifficulty:frost_powder>,
     "simpledifficulty:cold_resist_type", null, "simpledifficulty:long_cold_resist_type");
 
 addBrewRecipe("minecraft:thick", <rlmixins:cleansing_talisman>, 
@@ -175,21 +174,12 @@ Cauldron.addBrewingRecipe("simpledifficulty:heat_resist_type", "minecraft:mundan
 Cauldron.addBrewingRecipe("simpledifficulty:long_cold_resist_type", "simpledifficulty:cold_resist_type", <minecraft:redstone>);
 Cauldron.addBrewingRecipe("simpledifficulty:long_heat_resist_type", "simpledifficulty:heat_resist_type", <minecraft:redstone>);
 
-Cauldron.removeFluidRecipe(<minecraft:potion>.withTag({Potion: "potioncore:revival"}));
-Cauldron.removeFluidRecipe(<minecraft:splash_potion>.withTag({Potion: "potioncore:revival"}));
-Cauldron.removeFluidRecipe(<minecraft:lingering_potion>.withTag({Potion: "potioncore:revival"}));
-
-Cauldron.removeFillRecipe(<minecraft:potion>.withTag({Potion: "potioncore:revival"}));
-Cauldron.removeFillRecipe(<minecraft:splash_potion>.withTag({Potion: "potioncore:revival"}));
-Cauldron.removeFillRecipe(<minecraft:lingering_potion>.withTag({Potion: "potioncore:revival"}));
-
 Cauldron.removeFillRecipe(<minecraft:potion>.withTag({Potion: "rlmixins:curse_break"}));
 
 Cauldron.removeFluidRecipe(<minecraft:tipped_arrow>.withTag({Potion: "rlmixins:curse_break"}));
 Cauldron.removeFluidRecipe(<minecraft:splash_potion>.withTag({Potion: "rlmixins:curse_break"}));
 Cauldron.removeFluidRecipe(<minecraft:lingering_potion>.withTag({Potion: "rlmixins:curse_break"}));
 
-Cauldron.removeBrewingRecipe("potioncore:revival");
 Cauldron.removeBrewingRecipe("rlmixins:curse_break");
 
 //FUCKING CARROT JUICE
