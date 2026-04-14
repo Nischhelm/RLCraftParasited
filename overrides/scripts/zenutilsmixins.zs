@@ -114,3 +114,15 @@ zenClass EntityWizardMixin {
         return 1; //from 3, to skip the weight 2 arcane tome. elementless master wizard trades will always be a neutral master wand
     }
 }
+
+#mixin {targets: "noppes.vc.items.ItemMusket"}
+zenClass ItemMusketMixin {
+    #mixin ModifyConstant
+    #{
+    #   method: "onUsingTick",
+    #   constant: {intValue: 60}
+    #}
+    function zenutils_changeMusketLoadingTime(original as int) as int {
+        return 20; #loading time in ticks, 20 ticks = 1 sec
+    }
+}
