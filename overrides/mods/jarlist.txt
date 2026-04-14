@@ -82,7 +82,7 @@ EnchantmentControl-1.0.8.5
 EnchantmentDescriptions-1.12.2-1.1.20
 EnhancedVisuals_v1.4.4_mc1.12.2
 EntityCulling-1.12.2-6.5.0
-Everything Nunchaku-1.0.2
+Everything Nunchaku-1.0.2.1
 FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.070
