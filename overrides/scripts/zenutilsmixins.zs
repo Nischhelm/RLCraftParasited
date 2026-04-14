@@ -12,7 +12,7 @@ zenClass ModBiomesMixin {
     #   at: {value: "TAIL"}
     #}
     function zenutils_disableRTGCompat(ci as mixin.CallbackInfo) as void {
-        RTGID = false; #dont add RTG compat for wrong RTG version
+        RTGID = false; //dont add RTG compat for wrong RTG version
     }
 }
 
@@ -25,7 +25,7 @@ zenClass TreasureDataMixin {
     #   at: {value: "INVOKE", target: "Ljava/util/Collections;addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z"}
     #}
     function zenutils_disableDefaultLoot(obj1 as native.java.util.Collection, obj2 as native.java.lang.Object[]) as bool {
-        return false; #dont add default loot, done via cfg file instead
+        return false; //dont add default loot, done via cfg file instead
     }
 }
 
@@ -123,6 +123,6 @@ zenClass ItemMusketMixin {
     #   constant: {intValue: 60}
     #}
     function zenutils_changeMusketLoadingTime(original as int) as int {
-        return 20; #loading time in ticks, 20 ticks = 1 sec
+        return 20; //loading time in ticks, 20 ticks = 1 sec
     }
 }
