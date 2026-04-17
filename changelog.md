@@ -1,3 +1,20 @@
+--- April 17 2026 ---
+
+Added PotionControl
+    for now mostly to unregister some potions and potion types 
+    also fixes amplifiers in gui
+Fixed Phantoms spawning every night
+Disable gibbed for Assimilated Horses (invisible bombs)
+Added Pixies to Cherry Groves
+Added Master Spells loot entries to all LC transformation ring chests
+Allowed Offhand Nunchaku (thought i did already weird)
+Increased musket loading speed (credits to ShyPlox, have fun getting a musket)
+Added (potentially socketed) myrmex gear to myrmex hive loot tables
+Added (potentially socketed) dragonbone gear to LC dragon ring loot table
+updated various mods for no big impact (aaam, ev.nunchaku, voicechat)
+cleaned up brewing.zs, to be moved to potioncontrol potiontype jsons
+
+
 --- April 8 2026 ---
 
 Added Electroblobs Wizardry
