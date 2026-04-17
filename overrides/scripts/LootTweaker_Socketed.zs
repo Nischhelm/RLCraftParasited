@@ -23,21 +23,21 @@ val myrmex_weap_table = LootTweaker.newTable("loottweaker:myrmex_weapons");
 val myrmex_weap_pool = myrmex_weap_table.addPool("myrmex_weapons", 1, 3, 0, 1);
 
 //function addItemEntry(stack as IItemStack, weight as int);
-for(item in vanillaArmor)
-    for(type in ["desert", "jungle"])
+for item in vanillaArmor
+    for type in ["desert", "jungle"]
         myrmex_weap_pool.addItemEntry(itemUtils.getItem("iceandfire:myrmex_"+type+"_"+item), 1);
-for(item in vanillaItems)
-    for(type in ["desert", "jungle"])
+for item in vanillaItems
+    for type in ["desert", "jungle"]
         myrmex_weap_pool.addItemEntry(itemUtils.getItem("iceandfire:myrmex_"+type+"_"+item), 1);   
 myrmex_weap_pool.addItemEntry(itemUtils.getItem("iceandfire:myrmex_desert_sword_venom"), 1);   
 myrmex_weap_pool.addItemEntry(itemUtils.getItem("iceandfire:myrmex_jungle_sword_venom"), 1);
-for(item in spartanItems)
-    for(type in ["desert", "jungle"])
-        for(stinger in ["", "_venom"])
+for item in spartanItems
+    for type in ["desert", "jungle"]
+        for stinger in ["", "_venom"]
             myrmex_weap_pool.addItemEntry(itemUtils.getItem("spartanfire:"+item+"_"+type+stinger), 1);   
-for(item in bsItems)
-    for(type in ["desert", "jungle"])
-        for(stinger in ["chitin", "stinger"])
+for item in bsItems
+    for type in ["desert", "jungle"]
+        for stinger in ["chitin", "stinger"]
             myrmex_weap_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:item"+type+"_"+stinger+"_"+item), 1);   
 
 //Add to myrmex loot + trash pools
@@ -49,12 +49,12 @@ val dragonbone_table = LootTweaker.newTable("loottweaker:dragonbone");
 val dragonbone_pool = myrmex_weap_table.addPool("dragonbone", 1, 3, 0, 1);
 
 //function addItemEntry(stack as IItemStack, weight as int);
-for(item in vanillaItems)
+for item in vanillaItems
     dragonbone_pool.addItemEntry(itemUtils.getItem("iceandfire:dragonbone_"+item), 1);
 dragonbone_pool.addItemEntry(itemUtils.getItem("iceandfire:dragonbone_bow"), 1);
-for(item in spartanItems)
+for item in spartanItems
     dragonbone_pool.addItemEntry(itemUtils.getItem("spartanfire:"+item+"_dragonbone"), 1);
-for(item in bsItems)
+for item in bsItems
     dragonbone_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:itemdragonbone"+item), 1);
 
 //Dragon Ring Chests in LC
