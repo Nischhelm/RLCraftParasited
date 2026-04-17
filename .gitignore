@@ -5,3 +5,12 @@ export/overrides/mods/memory_repo/
 build/*/
 zips/*
 .gradle/*
+overrides/config/jei/worldSettings.cfg
+overrides/config/InvTweaks/InvTweaks.cfg
+overrides/config/itemphysic.json
+overrides/config/itlt.cfg
+overrides/config/globalgamerules.cfg
+/overrides/config/voicechat
+/overrides/config/TwitchIntegration
+overrides/config/twitchintegration.cfg
+overrides/config/teamreborn/configData.nbt
