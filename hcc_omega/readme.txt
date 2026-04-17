@@ -3,6 +3,8 @@ RLCraft Parasited HARDCORE Server Setup
 Nischi comment: This is literally just Shivaxis 2.9.3 Server HCC v2.
 This turns HCC into Omega, with permanent loss of progression on death
 
+The only thing i changed is add srpmixins.cfg to disable player phases. idk, feels more omega when its echo
+
 ---------
 
 ========
