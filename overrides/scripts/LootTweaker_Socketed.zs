@@ -38,7 +38,7 @@ for item in spartanItems
 for item in bsItems
     for type in ["desert", "jungle"]
         for stinger in ["chitin", "stinger"]
-            myrmex_weap_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:item"+type+"_"+stinger+"_"+item), 1);   
+                myrmex_weap_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:item"+type+stinger+item), 1);
 
 //Add to myrmex loot + trash pools
 LootTweaker.getTable("iceandfire:myrmex_loot_chest").getPool("myrmex_loot_chest").addLootTableEntry("loottweaker:myrmex_weapons", 25);
