@@ -1,12 +1,20 @@
-HARDCORE Config Pack for RLCraft v2.9.3 (v1)
+HARDCORE Config Pack for RLCraft Parasited
+
+Nischi comment: This is literally Shivaxis 2.9.3 HCC v1, translated over to Parasited.
+The only change i did is that RTG is not default enabled because that doesnt work with CherryOn.
+
+----------
 
 HOW TO INSTALL:
 
-Simply download this zip, navigate to your RLCraft install, and unzip the contents of this zip file into your RLCraft main directory.  The Config folder here should merge with the Config folder in your RLCraft install, overwriting some files.  Same with the Scripts folder, etc.  You can even make a new profile, fresh install RLCraft v2.9.3, rename it to something like "RLCraft Hardcore Config" and install this config over the new install, which is recommended.
+Simply download this zip, navigate to your RLCraft Parasited install, and unzip the contents of this zip file into your RLCraft Parasited main directory.
+The Config folder here should merge with the Config folder in your RLCraft install, overwriting some files.  Same with the Scripts folder, etc.
+You can even make a new profile, fresh install RLCraft Parasited, rename it to something like "RLCraft Parasited Hardcore Config" and install this config over the new install, which is recommended.
 
 Summary:
 
-These changes represent a rebalance and change to things I personally feel are either OP or would provide a better challenge, but may be too difficult for the average player. Some of these changes may make it in a future RLCraft update.  This was meant for Hardcore mode but it does not have to be played in Hardcore.
+These changes represent a rebalance and change to things I personally feel are either OP or would provide a better challenge, but may be too difficult for the average player.
+This was meant for Hardcore mode but it does not have to be played in Hardcore.
 
 Features:
 
