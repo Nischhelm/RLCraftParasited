@@ -176,6 +176,18 @@ zenClass ImbuementAltarRecipeCategoryMixin {
     }
 }
 
+#mixin {targets: "electroblob.wizardry.integration.jei.WizardryJEIPlugin"}
+zenClass WizardryJEIPluginMixin {
+    #mixin WrapWithCondition
+    #{
+    #   method: "register",
+    #   at: {value: "INVOKE", target: "Lelectroblob/wizardry/integration/jei/WizardryJEIPlugin;addEnchantmentInfo(Lmezz/jei/api/IModRegistry;Lnet/minecraft/enchantment/Enchantment;)V"}
+    #}
+    function zenutils_dontRegisterEnchantmentInfos(registry as native.mezz.jei.api.IModRegistry, enchantment as native.net.minecraft.enchantment.Enchantment) as bool {
+        return false;
+    }
+}
+
 #mixin {targets: "electroblob.wizardry.item.ItemWizardArmour"}
 zenClass ItemWizardArmourMixin {
     #mixin Static
