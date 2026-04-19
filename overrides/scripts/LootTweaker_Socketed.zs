@@ -46,7 +46,7 @@ LootTweaker.getTable("iceandfire:myrmex_trash_chest").getPool("myrmex_trash_ches
 
 
 val dragonbone_table = LootTweaker.newTable("loottweaker:dragonbone");
-val dragonbone_pool = myrmex_weap_table.addPool("dragonbone", 1, 3, 0, 1);
+val dragonbone_pool = dragonbone_table.addPool("dragonbone", 1, 3, 0, 1);
 
 //function addItemEntry(stack as IItemStack, weight as int);
 for item in vanillaItems
