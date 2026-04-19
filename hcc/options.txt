@@ -111,8 +111,8 @@ key_key.toggle_soulgazer_auto.lycanitestweaks:34:CONTROL
 key_key.toggle_soulgazer_manual.lycanitestweaks:35:CONTROL
 key_neat.keybind.toggle:0
 key_key.switchhud:51
-key_key.scalinghealth.difficulty_meter:49
-key_key.scalinghealth.show_always:49:CONTROL
+key_key.scalinghealth.difficulty_meter:0
+key_key.scalinghealth.show_always:49
 key_key.xat.trinket_gui.desc:0
 key_key.xat.trinket_target.desc:79
 key_key.xat.trinket_toggle_effect.desc:81
