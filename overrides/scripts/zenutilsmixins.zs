@@ -138,3 +138,53 @@ zenClass ItemArcaneTomeMixin {
         this0.func_77625_d(16); //setMaxStackSize 16
     }
 }
+
+#mixin {targets: "electroblob.wizardry.integration.jei.ArcaneWorkbenchRecipeCategory"}
+zenClass ArcaneWorkbenchRecipeCategoryMixin {
+    #mixin Static
+    #mixin Redirect
+    #{
+    #   method: "generateRecipes",
+    #   at: {value: "INVOKE", ordinal: 2, target: "Ljava/util/List;addAll(Ljava/util/Collection;)Z"}
+    #}
+    function zenutils_dontRegisterScrollJeiRecipes(recipes as [native.electroblob.wizardry.integration.jei.ArcaneWorkbenchRecipe], scrollRecipes as native.java.util.Collection) as bool {
+        return false;
+    }
+
+    #mixin Static
+    #mixin WrapOperation
+    #{
+    #   method: "generateUpgradeRecipes",
+    #   at: {value: "INVOKE", ordinal: 0, target: "Lnet/minecraft/item/Item;func_150895_a(Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/util/NonNullList;)V"}
+    #}
+    function zenutils_dontRegisterArmorUpgradeJeiRecipes(item as native.net.minecraft.item.Item, tab as native.net.minecraft.creativetab.CreativeTabs, items as native.net.minecraft.util.NonNullList, original as mixin.Operation) as void {
+        if(item instanceof native.electroblob.wizardry.item.ItemArmourUpgrade) return;
+        original.call(item, tab, items);
+    }
+}
+
+#mixin {targets: "electroblob.wizardry.integration.jei.ImbuementAltarRecipeCategory"}
+zenClass ImbuementAltarRecipeCategoryMixin {
+    #mixin Static
+    #mixin Redirect
+    #{
+    #   method: "generateRecipes",
+    #   at: {value: "INVOKE", ordinal: 3, target: "Ljava/util/List;addAll(Ljava/util/Collection;)Z"}
+    #}
+    function zenutils_dontRegisterArmorJeiRecipes(recipes as [native.electroblob.wizardry.integration.jei.ImbuementAltarRecipe], armorRecipes as native.java.util.Collection) as bool {
+        return false;
+    }
+}
+
+#mixin {targets: "electroblob.wizardry.item.ItemWizardArmour"}
+zenClass ItemWizardArmourMixin {
+    #mixin Static
+    #mixin WrapWithCondition
+    #{
+    #   method: "<init>*",
+    #   at: {value: "INVOKE", target: "Lelectroblob/wizardry/registry/WizardryRecipes;addToManaFlaskCharging(Lnet/minecraft/item/Item;)V"}
+    #}
+    function zenutils_dontRegisterArmorJei(item as native.net.minecraft.item.Item) as bool {
+        return false;
+    }
+}
