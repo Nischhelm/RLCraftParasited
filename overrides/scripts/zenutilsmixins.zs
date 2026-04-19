@@ -126,3 +126,15 @@ zenClass ItemMusketMixin {
         return 20; //loading time in ticks, 20 ticks = 1 sec
     }
 }
+
+#mixin {targets: "electroblob.wizardry.item.ItemArcaneTome"}
+zenClass ItemArcaneTomeMixin {
+    #mixin Inject
+    #{
+    #   method: "<init>",
+    #   at: {value: "TAIL"}
+    #}
+    function zenutils_modifyMaxStackSize(ci as mixin.CallbackInfo) as void {
+        this0.func_77625_d(16); //setMaxStackSize 16
+    }
+}
