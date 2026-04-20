@@ -1,3 +1,23 @@
+--- April 20 2026 ---
+
+Added HCC and Omega Server configs to installer zip. See each ones readme for installation guide
+Added Description of mod in readme.md, nicely presented on https://github.com/Nischhelm/RLCraftParasited
+Added server install guidelines in server_readme.md
+Updated some SRP values
+    - Changed unlock msgs
+    - reduced some min phases for point penalties (ada despawn, infestation+biome spread)
+    - reduced needler dmg on players (could oneshot you before)
+Modify Ebwizardry
+    - Removed almost two thirds of the spells
+    - Remove Scrolls entirely (except Dispensers)
+    - stack Arcane Tomes to 16
+    - made some ebwiz potions not modifiable with wine (transience, font_of_mana, empowering_presence)
+    - removed transportation stones, a system used by a single spell that i removed
+    - removed discovery eyeglass bauble, idk why i thought it was a good idea to keep it, i disabled the discovery mode
+Fixes
+    - Update EnchantmentControl to fix Incompatibilities of Smite etc
+    - Fixed dragonbone items being in myrmex loot pools
+
 --- April 17 2026 ---
 
 Added PotionControl
