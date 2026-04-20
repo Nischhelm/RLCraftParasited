@@ -2,7 +2,7 @@
 ---- Minecraft Crash Report ----
 // Crash report modified by FermiumASM.
 // FermiumASM deobfuscated this stacktrace using MCP's stable-39 mappings.
-// Hey, that tickles! Hehehe!
+// I'm sorry, Dave.
 
 Time: 2026-04-20 22:16:21 CEST
 Description: Error executing task
@@ -21,6 +21,14 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
     at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
     at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
 Caused by: java.lang.NullPointerException
+    at net.minecraft.client.network.NetHandlerPlayClient.handleEntityProperties(NetHandlerPlayClient.java:2084)
+    at net.minecraft.network.play.server.SPacketEntityProperties.processPacket(SourceFile:70)
+    at net.minecraft.network.play.server.SPacketEntityProperties.processPacket(SourceFile:15)
+    at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:22)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+    at net.minecraft.util.Util.runTask(Util.java:529)
+    ... 9 more
 
 
 A detailed walkthrough of the error, its code path and all known details is as follows:
