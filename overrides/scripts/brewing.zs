@@ -20,8 +20,8 @@ function addBrewRecipe(potionIn as string, ingredient as IIngredient, potionOut 
 
 function addBrewRecipe2(potionIn as string, ingredient as IIngredient, potionOut as string, potionStrong as string, potionLong as string = null) {
     addBrewRecipe(potionIn, ingredient, potionOut);
-    if(!isNull(potionStrong)) addBrewRecipe(potionIn, <minecraft:glowstone_dust>, potionStrong);
-    if(!isNull(potionLong)) addBrewRecipe(potionIn, <minecraft:redstone>, potionLong);
+    if(!isNull(potionStrong)) addBrewRecipe(potionOut, <minecraft:glowstone_dust>, potionStrong);
+    if(!isNull(potionLong)) addBrewRecipe(potionOut, <minecraft:redstone>, potionLong);
 }
 
 function removeContainerChangingRecipes(potion as string) {
@@ -96,9 +96,6 @@ addBrewRecipe2("minecraft:thick", <advanced-fishing:fish:8>,
 addBrewRecipe("minecraft:thick", <lycanitesmobs:immunizer>,
     "potioncore:cure");
 
-addBrewRecipe2("minecraft:mundane", <lycanitesmobs:immunizer>,
-    "potioncore:antidote", null, "potioncore:long_antidote");
-
 addBrewRecipe2("minecraft:mundane", <defiledlands:blastem_fruit>,
     "potioncore:burst", "potioncore:strong_burst");
 
@@ -107,9 +104,6 @@ addBrewRecipe2("minecraft:thick", <minecraft:skull>,
 
 addBrewRecipe2("minecraft:mundane", <minecraft:skull>,
     "potioncore:potioncore:klutz", "potioncore:strong_klutz", "potioncore:long_klutz");
-
-addBrewRecipe2("minecraft:thick", <minecraft:skull:1>,
-    "potioncore:purity", null, "potioncore:long_purity");
 
 addBrewRecipe2("minecraft:thick", <quark:crab_leg>,
     "potioncore:reach", "potioncore:strong_reach", "potioncore:long_reach");
