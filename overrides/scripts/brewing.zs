@@ -24,11 +24,6 @@ function addBrewRecipe2(potionIn as string, ingredient as IIngredient, potionOut
     if(!isNull(potionLong)) addBrewRecipe(potionOut, <minecraft:redstone>, potionLong);
 }
 
-function removeContainerChangingRecipes(potion as string) {
-    brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": potion}), <minecraft:gunpowder>);
-    brewing.removeRecipe(<minecraft:splash_potion>.withTag({"Potion": potion}), <minecraft:dragon_breath>);
-}
-
 
 removePotion("minecraft:water", <minecraft:glowstone_dust>);
 removePotion("minecraft:water", <minecraft:redstone>);
