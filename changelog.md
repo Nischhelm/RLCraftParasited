@@ -1,3 +1,8 @@
+--- April 22 2026 ---
+
+Hotfix for some Long + Strong potions not being brewable (woops)
+Also removed some  more useless potions
+
 --- April 20 2026 ---
 
 Added HCC and Omega Server configs to installer zip. See each ones readme for installation guide
