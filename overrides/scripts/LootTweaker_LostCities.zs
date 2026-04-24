@@ -69,7 +69,8 @@ lowPool.addItemEntry(<betternether:cincinnasite>, 10, 1, [Functions.setCount(0, 
 lowPool.addItemEntry(<betternether:cincinnasite_block>, 15, 1, [Functions.setCount(0, 8)], [], "9");
 lowPool.addItemEntry(<minecraft:ender_pearl>, 15, 1, [Functions.setCount(0, 8)], [], "10");
 lowPool.addItemEntry(<iceandfire:sapphire_gem>, 10, 1, [Functions.setCount(0, 8)], [], "11");
-lowPool.addItemEntry(<defiledlands:scarlite>, 10, 1, [Functions.setCount(0, 8)], [], "12");
+lowPool.addItemEntry(<iceandfire:ruby_gem>, 10, 1, [Functions.setCount(0, 8)], [], "12");
+lowPool.addItemEntry(<iceandfire:amethyst_gem>, 10, 1, [Functions.setCount(0, 8)], [], "13");
 
 
 //==== Med Loot ====
@@ -136,7 +137,6 @@ lostCityGroundPool.addLootTableEntry("loottweaker:medtable", 20);
 
 //==== Basement Loot (dwarf) ====
 lostCityBasementPool.addItemEntry(<xat:dwarf_ring>, 1, qual, [Functions.setCount(0, 1)], [], "dwarf_ring");
-lostCityBasementPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityBasementPool.addLootTableEntry("minecraft:chests/end_city_treasure", 15);
 lostCityBasementPool.addLootTableEntry("iceandfire:ice_dragon_cave", 15);
 lostCityBasementPool.addLootTableEntry("charm:village/smith", 20);
@@ -144,7 +144,6 @@ lostCityBasementPool.addLootTableEntry("charm:village/smith", 20);
 
 //==== Subway Loot (goblin) ====
 lostCitySubwayPool.addItemEntry(<xat:goblin_ring>, 1, qual, [Functions.setCount(0, 1)], [], "goblin_ring");
-lostCitySubwayPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCitySubwayPool.addLootTableEntry("minecraft:chests/abandoned_mineshaft", 10);
 lostCitySubwayPool.addLootTableEntry("iceandfire:fire_dragon_cave", 10);
 lostCitySubwayPool.addLootTableEntry("charm:treasure/common_potions", 10);
@@ -183,7 +182,6 @@ lostCityRarePool.addLootTableEntry("loottweaker:lowtable", 20);
 
 //==== Uncommon Loot (titan) ====
 lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, qual, [Functions.setCount(0, 1)], [], "titan_ring");
-lostCityUncommonPool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityUncommonPool.addLootTableEntry("minecraft:chests/simple_dungeon", 15);
 lostCityUncommonPool.addLootTableEntry("charm:village/butcher", 10);
 lostCityUncommonPool.addLootTableEntry("loottweaker:buildertable", 25);
