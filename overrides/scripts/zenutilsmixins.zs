@@ -200,3 +200,15 @@ zenClass ItemWizardArmourMixin {
         return false;
     }
 }
+
+#mixin {targets: "melonslise.locks.common.container.LockPickingContainer"}
+zenClass LockPickingContainerMixin {
+    #mixin ModifyConstant
+    #{
+    #   method: "checkPin",
+    #   constant: {floatValue: 1.25}
+    #}
+    function zenutils_modifyCloseToFailPitchMulti(original as float) as float {
+        return 0.5 as float;
+    }
+}
