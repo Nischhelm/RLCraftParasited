@@ -212,3 +212,30 @@ zenClass LockPickingContainerMixin {
         return 0.5 as float;
     }
 }
+
+#mixin {targets: "melonslise.locks.common.init.LocksItems"}
+zenClass LocksItemsMixin {
+    static DRAGONBONE_LOCK_PICK as native.net.minecraft.item.Item;
+
+    #mixin Static
+    #mixin Inject
+    #{
+    #   method: "<clinit>",
+    #   at: {value: "TAIL"}
+    #}
+    function zenutils_registerDragonboneLockpick(ci as mixin.CallbackInfo) as void {
+        DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.item.LockPickItem(1.15);
+        DRAGONBONE_LOCK_PICK.setCreativeTab(native.melonslise.locks.common.init.LocksCreativeTabs.TAB);
+        DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.init.LocksItems.add("dragonbone_lock_pick", DRAGONBONE_LOCK_PICK);
+    }
+
+    #mixin Static
+    #mixin Inject
+    #{
+    #   method: "register",
+    #   at: {value: "TAIL"}
+    #}
+    function zenutils_addDragonboneLockpickToOreDict(ci as mixin.CallbackInfo) as void {
+		native.net.minecraftforge.oredict.OreDictionary.registerOre("locksLockPick", DRAGONBONE_LOCK_PICK);
+    }
+}
