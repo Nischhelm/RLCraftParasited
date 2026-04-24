@@ -957,6 +957,11 @@ recipes.addShaped("lolarecipe90e",<locks:diamond_lock_pick>,
   [null,<variedcommodities:coin_diamond>,null],
   [<variedcommodities:coin_diamond>,null,null]]);
 
+recipes.addShaped("lolarecipe90f",<locks:dragonbone_lock_pick>*9,
+ [[null,<iceandfire:dragonbone>,<iceandfire:dragonbone>],
+  [null,<iceandfire:dragonbone>,null],
+  [<iceandfire:dragonbone>,null,null]]);
+
 recipes.addShaped("lolarecipe92",<variedcommodities:lamp>,
  [[<contenttweaker:steel_nugget>,<variedcommodities:ingot_steel>,<contenttweaker:steel_nugget>],
   [<minecraft:glass_pane>,<minecraft:torch>,<minecraft:glass_pane>],
