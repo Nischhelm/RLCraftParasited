@@ -1,3 +1,11 @@
+--- April 25 2026 ---
+
++25% dmg for certain BS+Spartan items for certain races
+distinguished locks lockpicking fail sound difference between normal and "close to correct", should be more audible now
+added dragonbone lockpick (normal lock 3% break chance, crafted by 4 dragonbones)
+modified LC loot a bit, dragonsteel gear now in dwarf chests
+updated default keybinds to be less overlappy
+
 --- April 22 2026 ---
 
 Hotfix for some Long + Strong potions not being brewable (woops)
