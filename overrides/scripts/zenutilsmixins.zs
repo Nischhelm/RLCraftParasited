@@ -224,7 +224,7 @@ zenClass LocksItemsMixin {
     #   at: {value: "TAIL"}
     #}
     function zenutils_registerDragonboneLockpick(ci as mixin.CallbackInfo) as void {
-        DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.item.LockPickItem(1.15);
+        DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.item.LockPickItem(0.97);
         DRAGONBONE_LOCK_PICK.setCreativeTab(native.melonslise.locks.common.init.LocksCreativeTabs.TAB);
         DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.init.LocksItems.add("dragonbone_lock_pick", DRAGONBONE_LOCK_PICK);
     }
