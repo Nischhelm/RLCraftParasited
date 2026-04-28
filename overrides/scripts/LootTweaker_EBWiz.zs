@@ -43,6 +43,7 @@ LootTweaker.getTable("ebwizardry:chests/wizard_tower").getPool("wizardry").remov
 
 LootTweaker.getTable("ebwizardry:chests/shrine").getPool("artefact").removeEntry("ebwizardry:subsets/epic_artefacts");
 
+LootTweaker.getTable("ebwizardry:chests/dungeon_additions").getPool("wizardry").removeEntry("ebwizardry:subsets/wizard_armour");
 LootTweaker.getTable("ebwizardry:chests/wizard_tower").getPool("wizardry").removeEntry("ebwizardry:subsets/wizard_armour");
 
 LootTweaker.getTable("ebwizardry:chests/obelisk").getPool("high_value").removeEntry("ebwizardry:subsets/armour_upgrades");
@@ -56,7 +57,6 @@ LootTweaker.getTable("ebwizardry:chests/obelisk").getPool("high_value").removeEn
 LootTweaker.getTable("ebwizardry:chests/shrine").getPool("high_value").removeEntry("ebwizardry:scroll");
 LootTweaker.getTable("ebwizardry:chests/wizard_tower").getPool("wizardry").removeEntry("ebwizardry:scroll");
 
-LootTweaker.getTable("ebwizardry:chests/dungeon_additions").getPool("wizardry").removeEntry("ebwizardry:subsets/wizard_armour");
 
 for table in toClear {
     table.clear();
@@ -65,11 +65,11 @@ for table in toClear {
 val uncommonPool = LootTweaker.getTable("ebwizardry:subsets/uncommon_artefacts").getPool("uncommon_artefacts");
 uncommonPool.clearEntries();
 for name in uncommonBaublesToKeep {
-    uncommonPool.addItemEntry(itemUtils.getItem(name), 1, 0, [], [Conditions.randomChance(0.2)]);
+    uncommonPool.addItemEntry(itemUtils.getItem(name), 1, 0, [], [Conditions.randomChance(0.02)]);
 }
 
 val rarePool = LootTweaker.getTable("ebwizardry:subsets/rare_artefacts").getPool("rare_artefacts");
 rarePool.clearEntries();
 for name in rareBaublesToKeep {
-    rarePool.addItemEntry(itemUtils.getItem(name), 1, 0, [], [Conditions.randomChance(0.2)]);
+    rarePool.addItemEntry(itemUtils.getItem(name), 1, 0, [], [Conditions.randomChance(0.02)]);
 }
