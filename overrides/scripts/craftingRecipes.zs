@@ -957,7 +957,7 @@ recipes.addShaped("lolarecipe90e",<locks:diamond_lock_pick>,
   [null,<variedcommodities:coin_diamond>,null],
   [<variedcommodities:coin_diamond>,null,null]]);
 
-recipes.addShaped("lolarecipe90f",<locks:dragonbone_lock_pick>*9,
+recipes.addShaped("lolarecipe90f",<locks:dragonbone_lock_pick>*4,
  [[null,<iceandfire:dragonbone>,<iceandfire:dragonbone>],
   [null,<iceandfire:dragonbone>,null],
   [<iceandfire:dragonbone>,null,null]]);
