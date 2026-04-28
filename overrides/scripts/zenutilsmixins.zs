@@ -54,10 +54,14 @@ zenClass BloodmoonHandlerMixin {
     function zenutils_disableBloodmoon(event as native.net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent, ci as mixin.CallbackInfo) as void {
         val world as native.net.minecraft.world.World = event.world;
         val players as [native.net.minecraft.entity.player.EntityPlayer] = world.playerEntities;
-        if(players.length != 1) return; // only works if this world has only one player
-        val player as native.net.minecraft.entity.player.EntityPlayer = players[0];
-        val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
-        if(phase <= 2) ci.cancel(); // no bloodmoon before phase 3
+        if(players.length == 0) return; # no players in dim, shouldnt happen
+    
+        for player in players {
+            val player as native.net.minecraft.entity.player.EntityPlayer = players[0];
+            val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
+            if(phase >= 3) return; // anyone above phase 2: bloodmoons allowed
+        }
+        ci.cancel(); // no bloodmoon if everyone online before phase 3
     }
 }
 
