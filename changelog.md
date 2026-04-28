@@ -1,3 +1,18 @@
+--- April xx 2026 ---
+
+Added JEI Want That - highlights location of various jei-bookmarked (left side) and config defined entities, blocks etc. in the world. feels almost cheaty
+race weapon affinity +25% dmg now at least +3 dmg.
+Nerfed dragonbone lockpick recipe because they are so close to unbreakable. Now 4 bones = 4 PICKS
+Fixed various items not being socketable at all (BS items, SW crossbows, defiledlands items, trident)
+InfernalMobs can now drop socketed items (higher chance on stronger ones)
+Increase Mob Loot socket chance from 0.2 to 0.4
+Made EBWiz baubles more rare (from shrines, the ones that summon wizards)
+increased champion+infernalmob base chances in LC for parasites when phase >= 9 by 50%
+Made Cherry biome appear in atlas as the biomes'o'plenty cherry biome tile from Golrith (2015)
+Added reforging material (emerald) and Set Bonus to emerald armor (you wont get it)
+Removed some debug Socketed gems (Scarlite, Magma Block, Emerald Block)
+Added crafting recipe for Blood Anvil (uses 2 sentient cores and 31 dragonsteel of one type... sorry it just fits to well)
+
 --- April 25 2026 ---
 
 +25% dmg for certain BS+Spartan items for certain races
