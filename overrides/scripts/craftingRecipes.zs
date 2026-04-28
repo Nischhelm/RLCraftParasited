@@ -2018,3 +2018,19 @@ recipes.addShaped("antimagictalisman",<rlmixins:antimagic_talisman>,
  [[null,<quark:black_ash>,null],
   [<quark:black_ash>,<rlmixins:cleansing_talisman>,<quark:black_ash>],
   [null,<quark:black_ash>,null]]);
+
+recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
+    [<iceandfire:dragonsteel_ice_block>, <iceandfire:dragonsteel_ice_block>, <iceandfire:dragonsteel_ice_block>],
+    [<contenttweaker:sentient_core>, <iceandfire:dragonsteel_ice_ingot>, <contenttweaker:sentient_core>],
+    [<iceandfire:dragonsteel_ice_ingot>, <iceandfire:dragonsteel_ice_ingot>, <iceandfire:dragonsteel_ice_ingot>]
+]);
+recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
+    [<iceandfire:dragonsteel_fire_block>, <iceandfire:dragonsteel_fire_block>, <iceandfire:dragonsteel_fire_block>],
+    [<contenttweaker:sentient_core>, <iceandfire:dragonsteel_fire_ingot>, <contenttweaker:sentient_core>],
+    [<iceandfire:dragonsteel_fire_ingot>, <iceandfire:dragonsteel_fire_ingot>, <iceandfire:dragonsteel_fire_ingot>]
+]);
+recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
+    [<iceandfire:dragonsteel_lightning_block>, <iceandfire:dragonsteel_lightning_block>, <iceandfire:dragonsteel_lightning_block>],
+    [<contenttweaker:sentient_core>, <iceandfire:dragonsteel_lightning_ingot>, <contenttweaker:sentient_core>],
+    [<iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>]
+]);
