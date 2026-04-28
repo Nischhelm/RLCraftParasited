@@ -115,5 +115,5 @@ events.onEntityLivingHurt(function(event as crafttweaker.event.EntityLivingHurtE
 
     val items = raceItems[race];
     if(!isNull(items) && items has itemType)
-        event.amount = event.amount * 1.25; // +25% dmg
+        event.amount = max(event.amount * 1.25, event.amount + 3); // +25% dmg or +3 dmg
 });
