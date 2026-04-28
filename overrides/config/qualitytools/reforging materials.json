@@ -2603,5 +2603,45 @@
     "material": {
         "item": "iceandfire:myrmex_desert_chitin"
     }
+  },
+  {
+    "tool": {
+      "item": "variedcommodities:full_emerald_head"
+    },
+    "material": {
+      "item": "minecraft:emerald"
+    }
+  },
+  {
+    "tool": {
+      "item": "variedcommodities:full_emerald_chest"
+    },
+    "material": {
+      "item": "minecraft:emerald"
+    }
+  },
+  {
+    "tool": {
+      "item": "variedcommodities:full_emerald_legs"
+    },
+    "material": {
+      "item": "minecraft:emerald"
+    }
+  },
+  {
+    "tool": {
+      "item": "variedcommodities:emerald_skirt"
+    },
+    "material": {
+      "item": "minecraft:emerald"
+    }
+  },
+  {
+    "tool": {
+      "item": "variedcommodities:full_emerald_boots"
+    },
+    "material": {
+      "item": "minecraft:emerald"
+    }
   }
 ]
