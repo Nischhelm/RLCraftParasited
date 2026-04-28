@@ -243,3 +243,44 @@ zenClass LocksItemsMixin {
 		native.net.minecraftforge.oredict.OreDictionary.registerOre("locksLockPick", DRAGONBONE_LOCK_PICK);
     }
 }
+
+#mixin {targets: "atomicstryker.infernalmobs.common.InfernalMobsCore"}
+zenClass InfernalMobsCoreMixin {
+    #mixin ModifyExpressionValue
+    #{
+    #   method: "processEntitySpawn",
+    #   at: {value: "FIELD", target: "Latomicstryker/infernalmobs/common/InfernalMobsCore;eliteRarity:I"}
+    #}
+    #mixin Local{argsOnly: true}
+    function zenutils_modifyInfernalChance(original as int, entity as native.net.minecraft.entity.EntityLivingBase) as int {
+        if(!(entity instanceof native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase)) return original;
+        val world as native.net.minecraft.world.World = entity.world;
+        if(world.provider.getDimension() != 111) return original;
+        val player as native.net.minecraft.entity.player.EntityPlayer = world.getClosestPlayerToEntity(entity, 128);
+        if(isNull(player)) return original;
+        val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
+        if(phase < 9) return original; // below phase 9: no increase
+        return (original / 1.5) as int; // increase by 50%, roughly
+    }
+}
+
+#mixin {targets: "c4.champions.common.util.ChampionHelper"}
+zenClass ChampionHelperMixin {
+    #mixin Static
+    #mixin ModifyExpressionValue
+    #{
+    #   method: "generateRank",
+    #   at: {value: "INVOKE", ordinal: 0, target: "Lc4/champions/common/rank/Rank;getChance()F"}
+    #}
+    #mixin Local{argsOnly: true}
+    function zenutils_modifyChampionChance(original as float, entity as native.net.minecraft.entity.EntityLiving) as float {
+        if(!(entity instanceof native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase)) return original;
+        val world as native.net.minecraft.world.World = entity.world;
+        if(world.provider.getDimension() != 111) return original;
+        val player as native.net.minecraft.entity.player.EntityPlayer = world.getClosestPlayerToEntity(entity, 128);
+        if(isNull(player)) return original;
+        val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
+        if(phase < 9) return original; // below phase 9: no increase
+        return original * 1.5; // increase by 50%
+    }
+}
