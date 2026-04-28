@@ -4,13 +4,6 @@
   "Text Color": "GRAY",
   "Effects": [
     {
-      "Attribute Name": "generic.attackDamage",
-      "Modifier Amount": 1.0,
-      "Modifier Operation": 0,
-      "Effect Type": "Attribute",
-      "Equipment Slot Type": "HAND"
-    },
-    {
       "Attribute Name": "generic.armor",
       "Modifier Amount": 1.0,
       "Modifier Operation": 0,
