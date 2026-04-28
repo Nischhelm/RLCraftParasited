@@ -56,6 +56,8 @@ LootTweaker.getTable("ebwizardry:chests/obelisk").getPool("high_value").removeEn
 LootTweaker.getTable("ebwizardry:chests/shrine").getPool("high_value").removeEntry("ebwizardry:scroll");
 LootTweaker.getTable("ebwizardry:chests/wizard_tower").getPool("wizardry").removeEntry("ebwizardry:scroll");
 
+LootTweaker.getTable("ebwizardry:chests/dungeon_additions").getPool("wizardry").removeEntry("ebwizardry:subsets/wizard_armour");
+
 for table in toClear {
     table.clear();
 }
