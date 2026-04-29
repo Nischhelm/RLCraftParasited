@@ -119,7 +119,7 @@ ItemPhysic_Full_1.4.37_mc1.12.2
 itlt-1.12.x-1.0.4
 IvToolkit-1.3.3-1.12
 jei_1.12.2-4.16.1.1013
-JEI Want That-1.0.3
+JEI Want That-1.0.3.1
 JSON-Paintings-v1.4.0-mc1.12.2
 Kiwi-1.12.2-0.5.3.32
 lagbgonrevived-1.1.0
@@ -221,7 +221,7 @@ Toast Control-1.12.2-1.8.1
 ToggleSneakSprint-1.1.3
 ToolBelt-1.12.2-1.9.14
 Traverse-1.12.2-1.6.0-69
-Trinkets and Baubles-Forge-1.12.2-0.33.1
+Trinkets and Baubles-Forge-1.12.2-0.33.2
 trumpetskeleton-1.12-1.0.2.1
 tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
