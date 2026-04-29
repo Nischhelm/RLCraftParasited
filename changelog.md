@@ -1,18 +1,30 @@
 --- April xx 2026 ---
 
 Added JEI Want That - highlights location of various jei-bookmarked (left side) and config defined entities, blocks etc. in the world. feels almost cheaty
+Add Replay Mod Lock Fix by Iqury - for those using Replay Mod with RLCraft not being able to use lockpicks
 race weapon affinity +25% dmg now at least +3 dmg.
-Nerfed dragonbone lockpick recipe because they are so close to unbreakable. Now 4 bones = 4 PICKS
-Fixed various items not being socketable at all (BS items, SW crossbows, defiledlands items, trident)
-InfernalMobs can now drop socketed items (higher chance on stronger ones)
-Increase Mob Loot socket chance from 0.2 to 0.4
+crafting
+    Nerfed dragonbone lockpick recipe because they are so close to unbreakable. Now 4 bones = 4 PICKS
+    Added crafting recipe for Blood Anvil (uses 2 sentient cores and 31 dragonsteel of one type... sorry it just fits to well)
+    Added reforging material (emerald) and Set Bonus to emerald armor (you wont get it)
+socketed
+    Fixed various items not being socketable at all (BS items, SW crossbows, defiledlands items, trident)
+    InfernalMobs can now drop socketed items (higher chance on stronger ones)
+    Increase Mob Loot socket chance from 0.2 to 0.4
+    Removed some debug Socketed gems (Scarlite, Magma Block, Emerald Block)
+Biomes
+    Made Cherry biome appear in atlas as the biomes'o'plenty cherry biome tile from Golrith (2015)
+    Made normal end biome more common (from 5% vanilla end biome to ~40%) to make betterend less jarring and hopefully increase end structure count
 Made EBWiz baubles more rare (from shrines, the ones that summon wizards)
-increased champion+infernalmob base chances in LC for parasites when phase >= 9 by 50%
-Made Cherry biome appear in atlas as the biomes'o'plenty cherry biome tile from Golrith (2015)
-Added reforging material (emerald) and Set Bonus to emerald armor (you wont get it)
-Removed some debug Socketed gems (Scarlite, Magma Block, Emerald Block)
-Added crafting recipe for Blood Anvil (uses 2 sentient cores and 31 dragonsteel of one type... sorry it just fits to well)
-Made normal end biome more common (from 5% vanilla end biome to ~40%) to make betterend less jarring and hopefully increase end structure count
+Some SRP changes
+    copy over sneak+invis swap from rlcraft 2.10. this makes parasites way more aware even with sneaking+invis. feedback requested. might need to be smth in the middle.
+    increased champion+infernalmob base chances in LC for parasites when phase >= 9 by 50%
+    removed sleep phase point penalty. sleep as much as you want (thanks for suggestion by iqury)
+    reduced max adaptation of most parasites. now only stage 4 dispatcher/beckon can 100% adapt to dmgs (thanks for suggestion by iqury)
+    reduced node spread max range to max 400 (effects 800) (thanks for suggestion by iqury)
+    enabled killcount plus mechanic, slowly evolving parasites from phase 3 onwards
+    removed nidus point multiplier for nidus failing to create a dispatcher due to dispatcher crowding
+    
 
 --- April 25 2026 ---
 
