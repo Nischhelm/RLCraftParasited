@@ -26,10 +26,6 @@ val yep = creepy.addPool("yep", 0, 1, 0, 0);
 yep.addItemEntry(<minecraft:skull:4>, 1);
 yep.addItemEntry(<minecraft:gunpowder>, 24);
 
-val shivdrop = LootTweaker.getTable("playerbosses:entity/player_boss");
-val mkey = shivdrop.addPool("mkey", 1, 1, 0, 0);
-mkey.addItemEntry(<locks:master_key>, 1);
-
 events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
   var player = event.player;
   var potionToRemove = <potion:minecraft:jump_boost>;

@@ -3,20 +3,31 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.item.IItemStack;
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.event.EntityLivingDeathEvent;
+import crafttweaker.event.EntityLivingDeathDropsEvent;
 
 print("Script starting!");
 
 //Shivaxi Boss turns into Shivaxi Dragon on death
-events.onEntityLivingDeath(function(event as EntityLivingDeathEvent)
-{
-	if (!isNull(event.entity.definition) && (event.entity.definition.id) has "playerbosses:player_boss" && !event.entity.world.isRemote())
-		{
-		var x = event.entity.position.x;
-		var y = event.entity.position.y;
-		var z = event.entity.position.z;
-		event.entity.world.performExplosion(event.entity, x, y, z, 16, true, true);
-		server.commandManager.executeCommand(server, "summon iceandfire:shivaxi_dragon " + x + " " + y + " " + z);
-		}
+events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
+    if (event.entity.world.remote) return;
+	val def = event.entity.definition;
+	if (isNull(def)) return;
+	if(def.id has "playerbosses:player_boss"){
+        val x = event.entity.position.x;
+        val y = event.entity.position.y;
+        val z = event.entity.position.z;
+        event.entity.world.performExplosion(event.entity, x, y, z, 16, true, true);
+        server.commandManager.executeCommand(server, "summon iceandfire:shivaxi_dragon " + x + " " + y + " " + z);
+    }
+});
+
+//Shivaxi Boss turns into Shivaxi Dragon on death
+events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
+    if (event.entity.world.remote) return;
+	val def = event.entity.definition;
+	if (isNull(def)) return;
+	if(def.id has "iceandfire:shivaxi_dragon")
+		event.addItem(<locks:master_key>);
 });
 
 // Listen to the block harvest event
