@@ -3,6 +3,9 @@
 Added JEI Want That - highlights location of various jei-bookmarked (left side) and config defined entities, blocks etc. in the world. feels almost cheaty
 Add Replay Mod Lock Fix by Iqury - for those using Replay Mod with RLCraft not being able to use lockpicks
 race weapon affinity +25% dmg now at least +3 dmg.
+Made EBWiz baubles more rare (from shrines, the ones that summon wizards)
+Moved Master Key drop from Shivaxi to Shivaxi Dragon
+fixed obby skull recipe exploit
 crafting
     Nerfed dragonbone lockpick recipe because they are so close to unbreakable. Now 4 bones = 4 PICKS
     Added crafting recipe for Blood Anvil (uses 2 sentient cores and 31 dragonsteel of one type... sorry it just fits to well)
@@ -15,7 +18,6 @@ socketed
 Biomes
     Made Cherry biome appear in atlas as the biomes'o'plenty cherry biome tile from Golrith (2015)
     Made normal end biome more common (from 5% vanilla end biome to ~40%) to make betterend less jarring and hopefully increase end structure count
-Made EBWiz baubles more rare (from shrines, the ones that summon wizards)
 Some SRP changes
     copy over sneak+invis swap from rlcraft 2.10. this makes parasites way more aware even with sneaking+invis. feedback requested. might need to be smth in the middle.
     increased champion+infernalmob base chances in LC for parasites when phase >= 9 by 50%
@@ -24,7 +26,8 @@ Some SRP changes
     reduced node spread max range to max 400 (effects 800) (thanks for suggestion by iqury)
     enabled killcount plus mechanic, slowly evolving parasites from phase 3 onwards
     removed nidus point multiplier for nidus failing to create a dispatcher due to dispatcher crowding
-    
+    made parasites unable to adapt to fire type dmgs
+    increased fire-induced adaptation inability window to a fully second (from half second) on parasites
 
 --- April 25 2026 ---
 
