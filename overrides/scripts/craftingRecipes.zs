@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 print("Script starting!");
 
 recipes.remove(<minecraft:coal_ore>);
@@ -194,6 +196,7 @@ recipes.removeByRecipeName("bountifulbaubles:spectralsilt_shieldcobalt");
 recipes.removeByRecipeName("bountifulbaubles:amuletsinwrath");
 recipes.removeByRecipeName("bountifulbaubles:amuletsingluttony");
 recipes.removeByRecipeName("bountifulbaubles:crowngold");
+recipes.removeByRecipeName("bountifulbaubles:trinketobsidianskull");
 
 recipes.removeByRecipeName("foodexpansion:netherwartsoup");
 
@@ -555,7 +558,26 @@ recipes.addShaped("lolarecipe27",<bountifulbaubles:crowngold>,
  [[null,<iceandfire:ruby_gem>,null],
   [<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>],
   [<minecraft:gold_ingot>,null,<minecraft:gold_ingot>]]);
-  
+
+val fireRes = <minecraft:potion>.withTag({"Potion": "fire_resistance"})|<minecraft:potion>.withTag({"Potion": "long_fire_resistance"})|<minecraft:splash_potion>.withTag({"Potion": "fire_resistance"})|<minecraft:splash_potion>.withTag({"Potion": "long_fire_resistance"})|<minecraft:lingering_potion>.withTag({"Potion": "fire_resistance"})|<minecraft:lingering_potion>.withTag({"Potion": "long_fire_resistance"});
+recipes.addShaped("lolarecipe27a",<bountifulbaubles:trinketobsidianskull>,
+ [[<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>],
+  [fireRes,<minecraft:skull:0>|<minecraft:skull:1>,fireRes],
+  [<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>]]);
+
+recipes.addHiddenShaped("lolarecipe27b",<bountifulbaubles:trinketobsidianskull>,
+ [[<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>],
+  [(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes1"),<minecraft:skull:0>|<minecraft:skull:1>,(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes2")],
+  [<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>]],
+  function(output as IItemStack, inputs as IItemStack[string], craftingInfo as crafttweaker.recipes.ICraftingInfo) as IItemStack{
+    val pottype1 as string = inputs.fireRes1.tag.memberGet("Potion").asString();
+    if(!pottype1.endsWith("fire_resistance")) return null;
+    val pottype2 = inputs.fireRes2.tag.memberGet("Potion").asString();
+    if(!pottype2.endsWith("fire_resistance")) return null;
+    return output;
+  }
+);
+
 recipes.addShaped("lolarecipe28",<wolfarmor:chainmail_wolf_armor>,
  [[null,<minecraft:chainmail_helmet>,null],
   [<craftablechainmail:chainmail_plate>,<minecraft:chainmail_boots>,<craftablechainmail:chainmail_plate>],
