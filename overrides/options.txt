@@ -177,6 +177,9 @@ key_key.enderlaunch.desc:-100
 key_key.rocket.desc:-100
 key_key.slide.desc:42
 key_invtweaks.key.sort:0
+key_key.jeiwt.enableDisplay:56
+key_key.jeiwt.modifiedTooltip:0
+key_key.jeiwt.fullTooltip:0
 key_key.mobends.menu:0
 key_key.mobends.refresh_animations:0
 key_togglesneak.key.toggle.sneak:0
