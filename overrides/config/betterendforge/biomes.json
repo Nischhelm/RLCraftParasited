@@ -2,7 +2,7 @@
   "minecraft": {
     "sky": {
       "enabled [default: true]": true,
-      "netherapi_weight [default: 80]": 80
+      "netherapi_weight [default: 80]": 1520
     }
   },
   "betterendforge": {
