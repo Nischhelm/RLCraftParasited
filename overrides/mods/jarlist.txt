@@ -1,4 +1,4 @@
-!configanytimeclone-3.0
+!configanytime-3.0
 !mixinbooter-10.7
 !mod-director-launchwrapper-1.9.1
 `FermiumBooter-1.4.1
@@ -162,7 +162,7 @@ pigstep-1.12
 Placebo-1.12.2-1.6.1
 playerbosses-1.12.2-1.1.0
 PortalDupeBegone-1.0.0
-PotionControl-1.0.1
+PotionControl-1.0.2
 PotionCore-1.9_for_1.12.2
 potiondescriptions-1.12.2-1.2.4
 PotionFingers-r1.0-8
@@ -236,4 +236,4 @@ Xp Cost-1.0.1
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-zenutils-1.26.19
+zenutils-1.27.0
