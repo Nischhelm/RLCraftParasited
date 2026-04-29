@@ -12,6 +12,7 @@ Made Cherry biome appear in atlas as the biomes'o'plenty cherry biome tile from 
 Added reforging material (emerald) and Set Bonus to emerald armor (you wont get it)
 Removed some debug Socketed gems (Scarlite, Magma Block, Emerald Block)
 Added crafting recipe for Blood Anvil (uses 2 sentient cores and 31 dragonsteel of one type... sorry it just fits to well)
+Made normal end biome more common (from 5% vanilla end biome to ~40%) to make betterend less jarring and hopefully increase end structure count
 
 --- April 25 2026 ---
 
