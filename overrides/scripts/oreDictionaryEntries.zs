@@ -30,3 +30,12 @@
 <ore:lycaniteSaddle>.add(<lycanitesmobs:saddle_beast:*>, <lycanitesmobs:saddle_insect:*>, <lycanitesmobs:saddle_dragon:*>, <lycanitesmobs:saddle_amphibian:*>, <lycanitesmobs:saddle_reptile:*>, <lycanitesmobs:saddle_avian:*>, <lycanitesmobs:saddle_aquatic:*>, <lycanitesmobs:saddle_aberration:*>, <lycanitesmobs:saddle_demon:*>);
 
 <ore:charmCrate>.add(<charm:crate:0>, <charm:crate:1>, <charm:crate:2>, <charm:crate:3>, <charm:crate:4>, <charm:crate:5>);
+
+<ore:steelGear>.add(<mujmajnkraftsbettersurvival:itemsteelhammer:*>, <mujmajnkraftsbettersurvival:itemsteelspear:*>, <mujmajnkraftsbettersurvival:itemsteeldagger:*>, <mujmajnkraftsbettersurvival:itemsteelbattleaxe:*>, <mujmajnkraftsbettersurvival:itemsteelnunchaku:*>, <spartanweaponry:dagger_steel:*>, <spartanweaponry:longsword_steel:*>, <spartanweaponry:katana_steel:*>, <spartanweaponry:scythe_steel:*>, <spartanweaponry:saber_steel:*>, <spartanweaponry:rapier_steel:*>, <spartanweaponry:greatsword_steel:*>, <spartanweaponry:hammer_steel:*>, <spartanweaponry:warhammer_steel:*>, <spartanweaponry:spear_steel:*>, <spartanweaponry:throwing_axe_steel:*>, <spartanweaponry:halberd_steel:*>, <spartanweaponry:pike_steel:*>, <spartanweaponry:lance_steel:*>, <spartanweaponry:throwing_knife_steel:*>, <spartanweaponry:javelin_steel:*>, <spartanweaponry:boomerang_steel:*>, <spartanweaponry:battleaxe_steel:*>, <spartanweaponry:mace_steel:*>, <spartanweaponry:glaive_steel:*>, <spartanweaponry:staff_steel:*>);
+
+<ore:ebwizWands>.add(<ebwizardry:magic_wand:*>, <ebwizardry:apprentice_wand:*>, <ebwizardry:advanced_wand:*>, <ebwizardry:master_wand:*>);
+for element in ["healing", "fire", "lightning", "ice", "necromancy", "sorcery", "earth"] {
+    for tier in ["novice", "apprentice", "advanced", "master"] {
+        <ore:ebwizWands>.addItems(itemUtils.getItem("ebwizardry:".concat(tier).concat("_").concat(element).concat("_wand")).anyDamage().itemArray);
+    }
+}
