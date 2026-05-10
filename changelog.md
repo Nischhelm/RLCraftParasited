@@ -1,3 +1,11 @@
+fixed simplediff parasites being a buff, now a debuff
+fixed srp rage being a debuff, now a buff
+updated some mods (jeiwt, ebwiz, voicechat, crafttweaker)
+added reskillable requirements for ebwiz wands (6, 12, 18, 24)
+branding: added custom loading screen and various main menu backgrounds by iqury from 2024
+allowed feral mobs to despawn after 20 minutes (same as assimilated already)
+added direct connect link to parasited.modded.fun
+
 --- May 01 2026 ---
 
 Added JEI Want That - highlights location of various jei-bookmarked (left side) and config defined entities, blocks etc. in the world. feels almost cheaty

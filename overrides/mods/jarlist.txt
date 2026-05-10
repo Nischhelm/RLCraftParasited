@@ -61,7 +61,7 @@ Controlling-3.0.12.4
 CoralReef-2.5-1.12.2
 corpsecomplex-1.12.2-1.0.12.0
 craftablechainmail-1.0
-CraftTweaker2-1.12-4.1.20.711
+CraftTweaker2-1.12-4.1.20.715
 CreativeCore_v1.10.71_mc1.12.2
 creeperconfetti-1.4.2
 CustomMainMenu-MC1.12.2-2.0.9.1
@@ -78,7 +78,7 @@ DynamicTreesTraverse-1.12.2-2.1
 EagleMixins-1.2.4-indev
 easiervillagertrading-1.12-forge14.21.1.2387-1.3
 EditableEdibles-1.3.3
-ElectroblobsWizardry-4.3.15
+ElectroblobsWizardry-4.3.17
 ElenaiDodge-1.12.2-2.1
 EnchantmentControl-1.0.8.6
 EnchantmentDescriptions-1.12.2-1.1.20
@@ -119,7 +119,7 @@ ItemPhysic_Full_1.4.37_mc1.12.2
 itlt-1.12.x-1.0.4
 IvToolkit-1.3.3-1.12
 jei_1.12.2-4.16.1.1013
-JEI Want That-1.0.3.1
+JEI Want That-1.0.3.2
 JSON-Paintings-v1.4.0-mc1.12.2
 Kiwi-1.12.2-0.5.3.32
 lagbgonrevived-1.1.0
@@ -228,7 +228,7 @@ tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
 VariedCommodities_1.12.2-(31Mar23)
 VCFix-1.0.3.2
-voicechat-forge-1.12.2-2.6.16
+voicechat-forge-1.12.2-2.6.17
 Waystones_1.12.2-4.1.0
 WearableBackpacks-RLCraft-1.12.2-3.2.6
 WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed
