@@ -5,6 +5,11 @@ added reskillable requirements for ebwiz wands (6, 12, 18, 24)
 branding: added custom loading screen and various main menu backgrounds by iqury from 2024
 allowed feral mobs to despawn after 20 minutes (same as assimilated already)
 added direct connect link to parasited.modded.fun
+added custom game icon (nischhSkull for now)
+fixed cooldown and min/max days per phase depending on server time instead of play time
+nerfed foster effect (by colony carriers) by a lot
+gave feral endermen in the end the same treatment as simmermen before them
+
 
 --- May 01 2026 ---
 
