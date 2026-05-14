@@ -11,7 +11,6 @@ Amphithere Mod-1.10
 antiqueatlas-1.12.2-4.6.3
 AntiqueAtlasAutoMarker-1.5.4.3
 antiquecities-1.2.1
-anvilpatch-1.1.1
 Aquaculture-1.12.2-1.6.8
 armorunder-mc1.12.2-1.0.0
 astikorcarts-1.12.2-0.1.2.8
