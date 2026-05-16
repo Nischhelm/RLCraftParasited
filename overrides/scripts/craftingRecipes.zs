@@ -202,11 +202,7 @@ recipes.removeByRecipeName("foodexpansion:netherwartsoup");
 
 recipes.remove(<classyhats:phantom_thread>);
 
-//recipes.remove(<campfire:campfire>);
-
 recipes.remove(<potionfingers:ring:1>);
-
-//recipes.remove(<minecraft:snow_layer>);
 
 recipes.remove(<switchbow:arrowdiamond>);
 recipes.remove(<switchbow:arrowfire>);
@@ -427,144 +423,144 @@ recipes.removeByRecipeName("variedcommodities:demonic_legs_0");
 recipes.removeByRecipeName("variedcommodities:mithril_boots_0");
 recipes.removeByRecipeName("variedcommodities:demonic_boots_0");
 
-recipes.addShapeless("lolarecipe1",<antiqueatlas:empty_antique_atlas>,[<minecraft:writable_book>,<minecraft:compass>]);
+recipes.addShapeless("rec1",<antiqueatlas:empty_antique_atlas>,[<minecraft:writable_book>,<minecraft:compass>]);
 
-recipes.addShapeless("lolarecipe2",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:red_flower:*>,<minecraft:yellow_flower>]);
+recipes.addShapeless("rec2",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:red_flower:*>,<minecraft:yellow_flower>]);
 
-recipes.addShapeless("lolarecipe3",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:cactus>]);
+recipes.addShapeless("rec3",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:cactus>]);
 
-recipes.addShapeless("lolarecipe4",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:vine>]);
+recipes.addShapeless("rec4",<roughtweaks:salve>,[<minecraft:bowl>,<rustic:aloe_vera>,<minecraft:vine>]);
 
-recipes.addShapeless("lolarecipe5",<roughtweaks:plaster>,[<roughtweaks:salve>|<rustic:aloe_vera>,<ore:string>,<minecraft:paper>]);
+recipes.addShapeless("rec5",<roughtweaks:plaster>,[<roughtweaks:salve>|<rustic:aloe_vera>,<ore:string>,<minecraft:paper>]);
 
-recipes.addShaped("lolarecipe6",<roughtweaks:bandage>,
+recipes.addShaped("rec6",<roughtweaks:bandage>,
  [[null,null,null],
   [<ore:string>,<minecraft:wool:*>,<ore:string>],
   [null,<roughtweaks:salve>|<rustic:aloe_vera>,null]]);
 
-recipes.addShaped("lolarecipe7",<minecraft:golden_apple:1>,
+recipes.addShaped("rec7",<minecraft:golden_apple:1>,
  [[<minecraft:gold_block>,<minecraft:gold_block>,<minecraft:gold_block>],
   [<minecraft:gold_block>,<minecraft:apple>,<minecraft:gold_block>],
   [<minecraft:gold_block>,<minecraft:gold_block>,<minecraft:gold_block>]]);
 
-recipes.addShapeless("lolarecipe8",<minecraft:string>*4,[<minecraft:wool:*>]);
+recipes.addShapeless("rec8",<minecraft:string>*4,[<minecraft:wool:*>]);
 
-//recipes.addShaped("lolarecipe9",<minecraft:packed_ice>,
+//recipes.addShaped("rec9",<minecraft:packed_ice>,
 // [[<toughasnails:ice_cube>,<toughasnails:ice_cube>,<toughasnails:ice_cube>],
 //  [<toughasnails:ice_cube>,<toughasnails:ice_cube>,<toughasnails:ice_cube>],
 //  [<toughasnails:ice_cube>,<toughasnails:ice_cube>,<toughasnails:ice_cube>]]);
 
-recipes.addShapeless("lolarecipe10",<firstaid:plaster>,[<ore:string>,<minecraft:paper>]);
+recipes.addShapeless("rec10",<firstaid:plaster>,[<ore:string>,<minecraft:paper>]);
 
-recipes.addShaped("lolarecipe11",<firstaid:bandage>*2,
+recipes.addShaped("rec11",<firstaid:bandage>*2,
  [[<ore:string>,<minecraft:wool:*>,<ore:string>]]);
 
-recipes.addShaped("lolarecipe12",<mujmajnkraftsbettersurvival:itemwooddagger>,
+recipes.addShaped("rec12",<mujmajnkraftsbettersurvival:itemwooddagger>,
  [[null,<minecraft:planks:*>],
   [<minecraft:stick>]]);
 
-recipes.addShaped("lolarecipe13",<mujmajnkraftsbettersurvival:itemstonedagger>,
+recipes.addShaped("rec13",<mujmajnkraftsbettersurvival:itemstonedagger>,
  [[null,<ore:cobblestone>],
   [<minecraft:stick>]]);
 
-recipes.addShaped("lolarecipe14",<mujmajnkraftsbettersurvival:itemgolddagger>,
+recipes.addShaped("rec14",<mujmajnkraftsbettersurvival:itemgolddagger>,
  [[null,<minecraft:gold_ingot>],
   [<minecraft:stick>]]);
 
-recipes.addShaped("lolarecipe15",<mujmajnkraftsbettersurvival:itemirondagger>,
+recipes.addShaped("rec15",<mujmajnkraftsbettersurvival:itemirondagger>,
  [[null,<minecraft:iron_ingot>],
   [<minecraft:stick>]]);
 
-recipes.addShaped("lolarecipe16",<mujmajnkraftsbettersurvival:itemdiamonddagger>,
+recipes.addShaped("rec16",<mujmajnkraftsbettersurvival:itemdiamonddagger>,
  [[null,<minecraft:diamond>],
   [<minecraft:stick>]]);
   
-recipes.addShaped("lolarecipe16again",<mujmajnkraftsbettersurvival:itemsilverdagger>,
+recipes.addShaped("rec16again",<mujmajnkraftsbettersurvival:itemsilverdagger>,
  [[null,<iceandfire:silver_ingot>],
   [<minecraft:stick>]]);
   
-recipes.addShaped("lolarecipe16againagain",<mujmajnkraftsbettersurvival:itembronzedagger>,
+recipes.addShaped("rec16againagain",<mujmajnkraftsbettersurvival:itembronzedagger>,
  [[null,<variedcommodities:ingot_bronze>],
   [<minecraft:stick>]]);
 
-recipes.addShaped("lolarecipe16dragonbonedagger",<mujmajnkraftsbettersurvival:itemdragonbonedagger>,
+recipes.addShaped("rec16dragonbonedagger",<mujmajnkraftsbettersurvival:itemdragonbonedagger>,
  [[null,<iceandfire:dragonbone>],
   [<iceandfire:witherbone>]]);
 
-recipes.addShaped("lolarecipe16junglemyrmexdagger",<mujmajnkraftsbettersurvival:itemjunglechitindagger>,
+recipes.addShaped("rec16junglemyrmexdagger",<mujmajnkraftsbettersurvival:itemjunglechitindagger>,
  [[null,<iceandfire:myrmex_jungle_chitin>],
   [<iceandfire:witherbone>]]);
 
-recipes.addShaped("lolarecipe16desertmyrmexdagger",<mujmajnkraftsbettersurvival:itemdesertchitindagger>,
+recipes.addShaped("rec16desertmyrmexdagger",<mujmajnkraftsbettersurvival:itemdesertchitindagger>,
  [[null,<iceandfire:myrmex_desert_chitin>],
   [<iceandfire:witherbone>]]);
 
-recipes.addShaped("lolarecipe17",<mujmajnkraftsbettersurvival:itemstonespear>*4,
+recipes.addShaped("rec17",<mujmajnkraftsbettersurvival:itemstonespear>*4,
  [[null,null,<ore:cobblestone>],
   [null,<minecraft:stick>,null],
   [<minecraft:stick>,null,null]]);
 
-recipes.addShaped("lolarecipe18",<mujmajnkraftsbettersurvival:itemstonebattleaxe>,
+recipes.addShaped("rec18",<mujmajnkraftsbettersurvival:itemstonebattleaxe>,
  [[null,<ore:cobblestone>,<ore:cobblestone>],
   [<minecraft:stick>,<minecraft:stick>,<ore:cobblestone>],
   [null,<ore:cobblestone>,<ore:cobblestone>]]);
   
-recipes.addShaped("lolarecipe19",<mujmajnkraftsbettersurvival:itemstonenunchaku>,
+recipes.addShaped("rec19",<mujmajnkraftsbettersurvival:itemstonenunchaku>,
  [[null,null,null],
   [null,<ore:string>,null],
   [<ore:cobblestone>,null,<ore:cobblestone>]]);
   
-recipes.addShaped("lolarecipe20",<mujmajnkraftsbettersurvival:itemstonehammer>,
+recipes.addShaped("rec20",<mujmajnkraftsbettersurvival:itemstonehammer>,
  [[null,<ore:cobblestone>,<ore:cobblestone>],
   [<minecraft:stick>,<ore:cobblestone>,<ore:cobblestone>],
   [null,<ore:cobblestone>,<ore:cobblestone>]]);
 
-//recipes.addShapeless("lolarecipe21",<minecraft:paper>*3,[<minecraft:log:2>]);
+//recipes.addShapeless("rec21",<minecraft:paper>*3,[<minecraft:log:2>]);
 
-recipes.addShapeless("lolarecipe21test",<minecraft:paper>*4,[<minecraft:log:2>,<minecraft:log:2>]);
+recipes.addShapeless("rec21test",<minecraft:paper>*4,[<minecraft:log:2>,<minecraft:log:2>]);
 
-recipes.addShaped("lolarecipe22",<qualitytools:emerald_ring>,
+recipes.addShaped("rec22",<qualitytools:emerald_ring>,
  [[null,<minecraft:emerald>,null],
   [<minecraft:gold_ingot>,null,<minecraft:gold_ingot>],
   [null,<minecraft:gold_ingot>,null]]);
   
-recipes.addShaped("lolarecipe23",<qualitytools:emerald_amulet>,
+recipes.addShaped("rec23",<qualitytools:emerald_amulet>,
  [[<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>],
   [<minecraft:gold_ingot>,null,<minecraft:gold_ingot>],
   [null,<minecraft:emerald>,null]]);
   
-recipes.addShaped("lolarecipe25",<xat:wither_ring>,
+recipes.addShaped("rec25",<xat:wither_ring>,
  [[<xat:glowing_ingot>,<variedcommodities:ingot_steel>,<xat:glowing_ingot>],
   [<variedcommodities:ingot_steel>,<minecraft:skull:1>|<iceandfire:dragon_skull:1>,<variedcommodities:ingot_steel>],
   [<xat:glowing_ingot>,<variedcommodities:ingot_steel>,<xat:glowing_ingot>]]);
 
-recipes.addShaped("lolarecipe25a",<xat:poison_stone>,
+recipes.addShaped("rec25a",<xat:poison_stone>,
  [[<xat:glowing_ingot>,<iceandfire:hydra_fang>,<xat:glowing_ingot>],
   [<iceandfire:hydra_fang>,<bountifulbaubles:trinketbezoar>,<iceandfire:hydra_fang>],
   [<xat:glowing_ingot>,<iceandfire:hydra_fang>,<xat:glowing_ingot>]]);
 
-recipes.addShaped("lolarecipe25b",<xat:sea_stone>,
+recipes.addShaped("rec25b",<xat:sea_stone>,
  [[<minecraft:prismarine_crystals>,<xat:glowing_ingot>,<minecraft:prismarine_crystals>],
   [<xat:glowing_ingot>,<aquaculture:loot:1>,<xat:glowing_ingot>],
   [<minecraft:prismarine_crystals>,<xat:glowing_ingot>,<minecraft:prismarine_crystals>]]);
   
-//recipes.addShaped("lolarecipe26",<campfire:campfire>,
+//recipes.addShaped("rec26",<campfire:campfire>,
 // [[null,<realistictorches:matchbox>.anyDamage().transformDamage(),null],
 //  [null,<ore:plankWood>,null],
 //  [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>]]);
   
-recipes.addShaped("lolarecipe27",<bountifulbaubles:crowngold>,
+recipes.addShaped("rec27",<bountifulbaubles:crowngold>,
  [[null,<iceandfire:ruby_gem>,null],
   [<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>],
   [<minecraft:gold_ingot>,null,<minecraft:gold_ingot>]]);
 
 val fireRes = <minecraft:potion>.withTag({"Potion": "fire_resistance"})|<minecraft:potion>.withTag({"Potion": "long_fire_resistance"})|<minecraft:splash_potion>.withTag({"Potion": "fire_resistance"})|<minecraft:splash_potion>.withTag({"Potion": "long_fire_resistance"})|<minecraft:lingering_potion>.withTag({"Potion": "fire_resistance"})|<minecraft:lingering_potion>.withTag({"Potion": "long_fire_resistance"});
-recipes.addShaped("lolarecipe27a",<bountifulbaubles:trinketobsidianskull>,
+recipes.addShaped("rec27a",<bountifulbaubles:trinketobsidianskull>,
  [[<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>],
   [fireRes,<minecraft:skull:0>|<minecraft:skull:1>,fireRes],
   [<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>]]);
 
-recipes.addHiddenShaped("lolarecipe27b",<bountifulbaubles:trinketobsidianskull>,
+recipes.addHiddenShaped("rec27b",<bountifulbaubles:trinketobsidianskull>,
  [[<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>],
   [(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes1"),<minecraft:skull:0>|<minecraft:skull:1>,(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes2")],
   [<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>]],
@@ -577,737 +573,737 @@ recipes.addHiddenShaped("lolarecipe27b",<bountifulbaubles:trinketobsidianskull>,
   }
 );
 
-recipes.addShaped("lolarecipe28",<wolfarmor:chainmail_wolf_armor>,
+recipes.addShaped("rec28",<wolfarmor:chainmail_wolf_armor>,
  [[null,<minecraft:chainmail_helmet>,null],
   [<craftablechainmail:chainmail_plate>,<minecraft:chainmail_boots>,<craftablechainmail:chainmail_plate>],
   [null,<minecraft:chainmail_boots>,null]]);
   
 recipes.addShapeless("z29",<minecraft:leather>*7,[<wolfarmor:leather_wolf_armor>]);
   
-recipes.addShaped("lolarecipe29",<scalinghealth:crystalshard>,
+recipes.addShaped("rec29",<scalinghealth:crystalshard>,
  [[<scalinghealth:heartdust>,<scalinghealth:heartdust>,<scalinghealth:heartdust>],
   [<scalinghealth:heartdust>,<scalinghealth:heartdust>,<scalinghealth:heartdust>],
   [<scalinghealth:heartdust>,<scalinghealth:heartdust>,<scalinghealth:heartdust>]]);
 
-recipes.addShaped("lolarecipe30",<bountifulbaubles:amuletsinempty>,
+recipes.addShaped("rec30",<bountifulbaubles:amuletsinempty>,
  [[<bountifulbaubles:spectralsilt>,<ore:string>,<bountifulbaubles:spectralsilt>],
   [<bountifulbaubles:spectralsilt>,<iceandfire:silver_ingot>,<bountifulbaubles:spectralsilt>],
   [<bountifulbaubles:spectralsilt>,<bountifulbaubles:spectralsilt>,<bountifulbaubles:spectralsilt>]]);
   
-//recipes.addShapeless("lolarecipe31",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<minecraft:diamond_block>]);
+//recipes.addShapeless("rec31",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<minecraft:diamond_block>]);
 
-//recipes.addShapeless("lolarecipe32",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<minecraft:emerald_block>]);
+//recipes.addShapeless("rec32",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<minecraft:emerald_block>]);
 
-recipes.addShapeless("lolarecipe31x",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:phantomprism>]);
+recipes.addShapeless("rec31x",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:phantomprism>]);
 
-recipes.addShapeless("lolarecipe31y",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketbezoar>]);
+recipes.addShapeless("rec31y",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketbezoar>]);
 
-recipes.addShapeless("lolarecipe31z",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketvitamins>]);
+recipes.addShapeless("rec31z",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketvitamins>]);
 
-recipes.addShapeless("lolarecipe31a",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketapple>]);
+recipes.addShapeless("rec31a",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketapple>]);
 
-recipes.addShapeless("lolarecipe31s",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:ringoverclocking>]);
+recipes.addShapeless("rec31s",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:ringoverclocking>]);
 
-recipes.addShapeless("lolarecipe31d",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:ringfreeaction>]);
+recipes.addShapeless("rec31d",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:ringfreeaction>]);
 
-recipes.addShapeless("lolarecipe31f",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:enderdragonscale>]);
+recipes.addShapeless("rec31f",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:enderdragonscale>]);
 
-recipes.addShapeless("lolarecipe31g",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketblackdragonscale>]);
+recipes.addShapeless("rec31g",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketblackdragonscale>]);
 
-recipes.addShapeless("lolarecipe31h",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketmixeddragonscale>]);
+recipes.addShapeless("rec31h",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketmixeddragonscale>]);
 
-recipes.addShapeless("lolarecipe31j",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketankhcharm>]);
+recipes.addShapeless("rec31j",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketankhcharm>]);
 
-recipes.addShapeless("lolarecipe31k",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:amuletsingluttony>]);
+recipes.addShapeless("rec31k",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:amuletsingluttony>]);
 
-recipes.addShapeless("lolarecipe31l",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:amuletsinpride>]);
+recipes.addShapeless("rec31l",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:amuletsinpride>]);
 
-recipes.addShapeless("lolarecipe31q",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:amuletsinwrath>]);
+recipes.addShapeless("rec31q",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:amuletsinwrath>]);
 
-recipes.addShapeless("lolarecipe31e",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketobsidianskull>]);
+recipes.addShapeless("rec31e",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:trinketobsidianskull>]);
 
-recipes.addShapeless("lolarecipe31w",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<quark:rune:16>]);
+recipes.addShapeless("rec31w",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<quark:rune:16>]);
 
-//recipes.addShaped("lolarecipe33",<advanced-fishing:blazing_fishing_pole>,
+//recipes.addShaped("rec33",<advanced-fishing:blazing_fishing_pole>,
 // [[null,null,<minecraft:blaze_rod>],
 //  [null,<minecraft:blaze_rod>,<ore:string>],
 //  [<minecraft:blaze_rod>,<minecraft:magma_cream>,<ore:string>]]);
 
-recipes.addShaped("lolarecipe33carrotstick",<minecraft:carrot_on_a_stick>,
+recipes.addShaped("rec33carrotstick",<minecraft:carrot_on_a_stick>,
  [[null,null,<minecraft:stick>],
   [null,<minecraft:stick>,<ore:string>],
   [<minecraft:stick>,<minecraft:carrot>,<ore:string>]]);
 
-recipes.addShapeless("lolarecipe33new",<fishingmadebetter:bobber_obsidian>,[<advanced-fishing:blazing_fishing_pole:*>]);
+recipes.addShapeless("rec33new",<fishingmadebetter:bobber_obsidian>,[<advanced-fishing:blazing_fishing_pole:*>]);
   
-recipes.addShapeless("lolarecipe35",<armorunder:auto_chestplate_liner>,[<armorunder:warm_chestplate_liner>,<armorunder:cool_chestplate_liner>]);
+recipes.addShapeless("rec35",<armorunder:auto_chestplate_liner>,[<armorunder:warm_chestplate_liner>,<armorunder:cool_chestplate_liner>]);
 
-recipes.addShapeless("lolarecipe36",<armorunder:auto_leggings_liner>,[<armorunder:warm_leggings_liner>,<armorunder:cool_leggings_liner>]);
+recipes.addShapeless("rec36",<armorunder:auto_leggings_liner>,[<armorunder:warm_leggings_liner>,<armorunder:cool_leggings_liner>]);
 
-recipes.addShaped("lolarecipe37",<minecraft:web>,
+recipes.addShaped("rec37",<minecraft:web>,
  [[<ore:string>,<ore:string>,<ore:string>],
   [<ore:string>,<ore:string>,<ore:string>],
   [<ore:string>,<ore:string>,<ore:string>]]);
   
-recipes.addShaped("lolarecipe38",<sereneseasons:greenhouse_glass>*4,
+recipes.addShaped("rec38",<sereneseasons:greenhouse_glass>*4,
  [[<ore:dyeCyan>,<ore:blockGlass>,<ore:dyeCyan>],
   [<ore:blockGlass>,<ore:plankWood>,<ore:blockGlass>],
   [<ore:dyeCyan>,<ore:blockGlass>,<ore:dyeCyan>]]);
   
-recipes.addShapeless("lolarecipe39",<realistictorches:torch_lit>,[<realistictorches:torch_unlit>,<minecraft:flint_and_steel>.anyDamage().transformDamage()]);
+recipes.addShapeless("rec39",<realistictorches:torch_lit>,[<realistictorches:torch_unlit>,<minecraft:flint_and_steel>.anyDamage().transformDamage()]);
 
-recipes.addShapeless("lolarecipe40",<armorunder:flipflop_liner_material>,[<armorunder:warm_liner_material>,<armorunder:cool_liner_material>]);
+recipes.addShapeless("rec40",<armorunder:flipflop_liner_material>,[<armorunder:warm_liner_material>,<armorunder:cool_liner_material>]);
 
-recipes.addShaped("lolarecipe41",<armorunder:auto_chestplate_liner>,
+recipes.addShaped("rec41",<armorunder:auto_chestplate_liner>,
  [[<armorunder:flipflop_liner_material>,null,<armorunder:flipflop_liner_material>],
   [<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>],
   [<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>]]);
   
-recipes.addShaped("lolarecipe42",<armorunder:auto_leggings_liner>,
+recipes.addShaped("rec42",<armorunder:auto_leggings_liner>,
  [[<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>],
   [<armorunder:flipflop_liner_material>,null,<armorunder:flipflop_liner_material>],
   [<armorunder:flipflop_liner_material>,null,<armorunder:flipflop_liner_material>]]);
   
-recipes.addShaped("lolarecipe43",<waystones:waystone>,
+recipes.addShaped("rec43",<waystones:waystone>,
  [[null,<minecraft:stonebrick>,null],
   [<minecraft:stonebrick>,<minecraft:nether_star>,<minecraft:stonebrick>],
   [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
   
-recipes.addShaped("lolarecipe44",<minecraft:diamond>,
+recipes.addShaped("rec44",<minecraft:diamond>,
  [[<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>],
   [<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>],
   [<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>]]);
   
-recipes.addShapeless("lolarecipe45",<variedcommodities:coin_diamond> * 9,[<minecraft:diamond>]);
+recipes.addShapeless("rec45",<variedcommodities:coin_diamond> * 9,[<minecraft:diamond>]);
 
-recipes.addShaped("lolarecipe44b",<variedcommodities:ingot_bronze>,
+recipes.addShaped("rec44b",<variedcommodities:ingot_bronze>,
  [[<variedcommodities:coin_bronze>,<variedcommodities:coin_bronze>,<variedcommodities:coin_bronze>],
   [<variedcommodities:coin_bronze>,<variedcommodities:coin_bronze>,<variedcommodities:coin_bronze>],
   [<variedcommodities:coin_bronze>,<variedcommodities:coin_bronze>,<variedcommodities:coin_bronze>]]);
   
-recipes.addShapeless("lolarecipe45b",<variedcommodities:coin_bronze> * 9,[<variedcommodities:ingot_bronze>]);
+recipes.addShapeless("rec45b",<variedcommodities:coin_bronze> * 9,[<variedcommodities:ingot_bronze>]);
 
-recipes.addShaped("lolarecipe40fak",<variedcommodities:ingot_steel>,
+recipes.addShaped("rec40fak",<variedcommodities:ingot_steel>,
  [[<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>],
   [<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>],
   [<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>]]);
   
-recipes.addShapeless("lolarecipe40fac",<contenttweaker:steel_nugget> * 9,[<variedcommodities:ingot_steel>]);
+recipes.addShapeless("rec40fac",<contenttweaker:steel_nugget> * 9,[<variedcommodities:ingot_steel>]);
 
-recipes.addShaped("lolarecipe40frick",<aquaculture:loot:1>,
+recipes.addShaped("rec40frick",<aquaculture:loot:1>,
  [[<contenttweaker:neptunium_nugget>,<contenttweaker:neptunium_nugget>,<contenttweaker:neptunium_nugget>],
   [<contenttweaker:neptunium_nugget>,<contenttweaker:neptunium_nugget>,<contenttweaker:neptunium_nugget>],
   [<contenttweaker:neptunium_nugget>,<contenttweaker:neptunium_nugget>,<contenttweaker:neptunium_nugget>]]);
 
-recipes.addShapeless("lolarecipe40frack",<contenttweaker:neptunium_nugget> * 9,[<aquaculture:loot:1>]);
+recipes.addShapeless("rec40frack",<contenttweaker:neptunium_nugget> * 9,[<aquaculture:loot:1>]);
 
-recipes.addShaped("lolarecipe46",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:speed"}),
+recipes.addShaped("rec46",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:speed"}),
  [[<iceandfire:amethyst_block>, <minecraft:sugar>, null],
   [<minecraft:sugar>, <potionfingers:ring>, <minecraft:sugar>],
   [null, <minecraft:sugar>, null]]);
   
-recipes.addShaped("lolarecipe47",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:jump_boost"}),
+recipes.addShaped("rec47",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:jump_boost"}),
  [[<minecraft:rabbit_foot>, <minecraft:slime_ball>, null],
   [<minecraft:slime_ball>, <potionfingers:ring>, <minecraft:slime_ball>],
   [null, <minecraft:slime_ball>, null]]);
 
-recipes.addShaped("lolarecipe48",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:haste"}),
+recipes.addShaped("rec48",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:haste"}),
  [[<minecraft:prismarine:0>, <minecraft:prismarine_crystals>, null],
   [<minecraft:prismarine_crystals>, <potionfingers:ring>, <minecraft:prismarine_crystals>],
   [null, <minecraft:prismarine_crystals>, null]]);
 
-recipes.addShaped("lolarecipe49",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:strength"}),
+recipes.addShaped("rec49",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:strength"}),
  [[<minecraft:magma>, <minecraft:blaze_powder>, null],
   [<minecraft:blaze_powder>, <potionfingers:ring>, <minecraft:blaze_powder>],
   [null, <minecraft:blaze_powder>, null]]);
 
-recipes.addShaped("lolarecipe50",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:regeneration"}),
+recipes.addShaped("rec50",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:regeneration"}),
  [[<iceandfire:hydra_heart>, <minecraft:ghast_tear>, null],
   [<minecraft:ghast_tear>, <potionfingers:ring>, <minecraft:ghast_tear>],
   [null, <minecraft:ghast_tear>, null]]);
 
-recipes.addShaped("lolarecipe51",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:resistance"}),
+recipes.addShaped("rec51",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:resistance"}),
  [[<quark:diamond_heart>, <minecraft:diamond>, null],
   [<minecraft:diamond>, <potionfingers:ring>, <minecraft:diamond>],
   [null, <minecraft:diamond>, null]]);
 
-//recipes.addShaped("lolarecipe51iron",<potionfingers:ring:1>.withTag({Quality: {}, effect: "potioncore:iron_skin"}),
+//recipes.addShaped("rec51iron",<potionfingers:ring:1>.withTag({Quality: {}, effect: "potioncore:iron_skin"}),
 // [[<betternether:cincinnasite_lantern>, <variedcommodities:ingot_steel>, null],
 //  [<variedcommodities:ingot_steel>, <potionfingers:ring>, <variedcommodities:ingot_steel>],
 //  [null, <variedcommodities:ingot_steel>, null]]);
 
-//recipes.addShaped("lolarecipe51diamond",<potionfingers:ring:1>.withTag({Quality: {}, effect: "potioncore:diamond_skin"}),
+//recipes.addShaped("rec51diamond",<potionfingers:ring:1>.withTag({Quality: {}, effect: "potioncore:diamond_skin"}),
 // [[<quark:diamond_heart>, <minecraft:diamond>, null],
 //  [<minecraft:diamond>, <potionfingers:ring>, <minecraft:diamond>],
 //  [null, <minecraft:diamond>, null]]);
   
-recipes.addShaped("lolaskirt52leather",<variedcommodities:leather_skirt>,
+recipes.addShaped("skirt52leather",<variedcommodities:leather_skirt>,
  [[<minecraft:leather>,<ore:string>,<minecraft:leather>],
   [<minecraft:leather>,null,<minecraft:leather>],
   [<minecraft:leather>,<minecraft:leather>,<minecraft:leather>]]);
 
-recipes.addShaped("lolarecipe52",<variedcommodities:chain_skirt>,
+recipes.addShaped("rec52",<variedcommodities:chain_skirt>,
  [[<craftablechainmail:chainmail_plate>,<ore:string>,<craftablechainmail:chainmail_plate>],
   [<craftablechainmail:chainmail_plate>,null,<craftablechainmail:chainmail_plate>],
   [<craftablechainmail:chainmail_plate>,<craftablechainmail:chainmail_plate>,<craftablechainmail:chainmail_plate>]]);
   
-recipes.addShaped("lolarecipe53",<variedcommodities:golden_skirt>,
+recipes.addShaped("rec53",<variedcommodities:golden_skirt>,
  [[<minecraft:gold_ingot>,<ore:string>,<minecraft:gold_ingot>],
   [<minecraft:gold_ingot>,null,<minecraft:gold_ingot>],
   [<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>]]);
   
-recipes.addShaped("lolarecipe54",<variedcommodities:iron_skirt>,
+recipes.addShaped("rec54",<variedcommodities:iron_skirt>,
  [[<minecraft:iron_ingot>,<ore:string>,<minecraft:iron_ingot>],
   [<minecraft:iron_ingot>,null,<minecraft:iron_ingot>],
   [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]]);
   
-recipes.addShaped("lolarecipe55",<variedcommodities:diamond_skirt>,
+recipes.addShaped("rec55",<variedcommodities:diamond_skirt>,
  [[<minecraft:diamond>,<ore:string>,<minecraft:diamond>],
   [<minecraft:diamond>,null,<minecraft:diamond>],
   [<minecraft:diamond>,<minecraft:diamond>,<minecraft:diamond>]]);
   
-recipes.addShaped("lolarecipe56",<xat:glowing_ingot>,
+recipes.addShaped("rec56",<xat:glowing_ingot>,
  [[<minecraft:glowstone_dust>,<minecraft:blaze_powder>,<minecraft:glowstone_dust>],
   [<minecraft:blaze_powder>,<iceandfire:silver_ingot>,<minecraft:blaze_powder>],
   [<minecraft:glowstone_dust>,<minecraft:blaze_powder>,<minecraft:glowstone_dust>]]);
   
-recipes.addShaped("lolarecipe57",<xat:glowing_ingot>,
+recipes.addShaped("rec57",<xat:glowing_ingot>,
  [[<xat:glowing_powder>,<xat:glowing_powder>],
   [<xat:glowing_powder>,<xat:glowing_powder>]]);
 
-recipes.addShapeless("lolarecipe59",<variedcommodities:trading_block>,[<minecraft:crafting_table>,<minecraft:crafting_table>]);
+recipes.addShapeless("rec59",<variedcommodities:trading_block>,[<minecraft:crafting_table>,<minecraft:crafting_table>]);
 
-recipes.addShaped("lolarecipe60",<xat:damage_shield>,
+recipes.addShaped("rec60",<xat:damage_shield>,
  [[<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>],
   [<quark:biotite>,<minecraft:dragon_egg>|<iceandfire:dragonegg_red>|<iceandfire:dragonegg_green>|<iceandfire:dragonegg_bronze>|<iceandfire:dragonegg_gray>|<iceandfire:dragonegg_blue>|<iceandfire:dragonegg_white>|<iceandfire:dragonegg_sapphire>|<iceandfire:dragonegg_silver>|<iceandfire:dragonegg_amethyst>|<iceandfire:dragonegg_electric>|<iceandfire:dragonegg_black>|<iceandfire:dragonegg_copper>,<quark:biotite>],
   [<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>]]);
 
-recipes.addShaped("lolarecipe61",<bountifulbaubles:spectralsilt>,
+recipes.addShaped("rec61",<bountifulbaubles:spectralsilt>,
  [[<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>],
   [<bountifulbaubles:flare_red>,<bountifulbaubles:disintegrationtablet>,<bountifulbaubles:flare_red>],
   [<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>]]);
   
-recipes.addShaped("lolarecipe62",<minecraft:sandstone>,
+recipes.addShaped("rec62",<minecraft:sandstone>,
  [[<notreepunching:rock/sandstone>,<notreepunching:rock/sandstone>],
   [<notreepunching:rock/sandstone>,<notreepunching:rock/sandstone>]]);
   
-recipes.addShaped("lolarecipe63",<minecraft:red_sandstone>,
+recipes.addShaped("rec63",<minecraft:red_sandstone>,
  [[<notreepunching:rock/red_sandstone>,<notreepunching:rock/red_sandstone>],
   [<notreepunching:rock/red_sandstone>,<notreepunching:rock/red_sandstone>]]);
 
-recipes.addShaped("lolarecipe65",<quark:leaf_carpet:7>*2,
+recipes.addShaped("rec65",<quark:leaf_carpet:7>*2,
  [[<quark:variant_leaves:1>,<quark:variant_leaves:1>]]);
 
-recipes.addShaped("lolarecipe66",<mujmajnkraftsbettersurvival:itemdragonbonenunchaku>,
+recipes.addShaped("rec66",<mujmajnkraftsbettersurvival:itemdragonbonenunchaku>,
  [[null,<quark:chain>,null],
   [<iceandfire:dragonbone>,null,<iceandfire:dragonbone>]]);
 
-recipes.addShaped("lolarecipe67",<mujmajnkraftsbettersurvival:itemjunglechitinnunchaku>,
+recipes.addShaped("rec67",<mujmajnkraftsbettersurvival:itemjunglechitinnunchaku>,
  [[null,<quark:chain>,null],
   [<iceandfire:myrmex_jungle_chitin>,null,<iceandfire:myrmex_jungle_chitin>]]);
 
-recipes.addShaped("lolarecipe67s",<mujmajnkraftsbettersurvival:itemjunglestingernunchaku>,
+recipes.addShaped("rec67s",<mujmajnkraftsbettersurvival:itemjunglestingernunchaku>,
  [[null,<quark:chain>,null],
   [<iceandfire:myrmex_jungle_chitin>,null,<iceandfire:myrmex_stinger>]]);
 
-recipes.addShaped("lolarecipe68",<mujmajnkraftsbettersurvival:itemdesertchitinnunchaku>,
+recipes.addShaped("rec68",<mujmajnkraftsbettersurvival:itemdesertchitinnunchaku>,
  [[null,<quark:chain>,null],
   [<iceandfire:myrmex_desert_chitin>,null,<iceandfire:myrmex_desert_chitin>]]);
 
-recipes.addShaped("lolarecipe68s",<mujmajnkraftsbettersurvival:itemdesertstingernunchaku>,
+recipes.addShaped("rec68s",<mujmajnkraftsbettersurvival:itemdesertstingernunchaku>,
  [[null,<quark:chain>,null],
   [<iceandfire:myrmex_desert_chitin>,null,<iceandfire:myrmex_stinger>]]);
 
-recipes.addShaped("lolarecipe69",<iceandfire:earplugs>,
+recipes.addShaped("rec69",<iceandfire:earplugs>,
  [[<minecraft:wooden_button>|<quark:spruce_button>|<quark:birch_button>|<quark:jungle_button>|<quark:acacia_button>|<quark:dark_oak_button>,<minecraft:wooden_button>|<quark:spruce_button>|<quark:birch_button>|<quark:jungle_button>|<quark:acacia_button>|<quark:dark_oak_button>]]);
 
-recipes.addShapeless("lolarecipe69lmao",<minecraft:wooden_button>,[<traverse:fir_planks>|<defiledlands:tenebra_planks>|<rustic:planks:0>|<rustic:planks:1>]);
+recipes.addShapeless("rec69lmao",<minecraft:wooden_button>,[<traverse:fir_planks>|<defiledlands:tenebra_planks>|<rustic:planks:0>|<rustic:planks:1>]);
 
-recipes.addShaped("lolarecipe70",<simpledifficulty:heater>,
+recipes.addShaped("rec70",<simpledifficulty:heater>,
  [[<minecraft:blaze_rod>,null,<minecraft:blaze_rod>],
   [<minecraft:blaze_rod>,<ore:cobblestone>,<minecraft:blaze_rod>],
   [<ore:cobblestone>,<minecraft:redstone>,<ore:cobblestone>]]);
 
-recipes.addShaped("lolarecipe71",<simpledifficulty:chiller>,
+recipes.addShaped("rec71",<simpledifficulty:chiller>,
  [[<simpledifficulty:frost_rod>,null,<simpledifficulty:frost_rod>],
   [<simpledifficulty:frost_rod>,<ore:cobblestone>,<simpledifficulty:frost_rod>],
   [<ore:cobblestone>,<minecraft:redstone>,<ore:cobblestone>]]);
 
-recipes.addShaped("lolarecipe71a",<simpledifficulty:spit>,
+recipes.addShaped("rec71a",<simpledifficulty:spit>,
  [[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
   [<minecraft:stick>,null,<minecraft:stick>],
   [<minecraft:stick>,null,<minecraft:stick>]]);
   
-recipes.addShaped("lolarecipe71b",<simpledifficulty:campfire>,
+recipes.addShaped("rec71b",<simpledifficulty:campfire>,
  [[null,<ore:logWood>,null],
   [<ore:logWood>,<ore:logWood>,<ore:logWood>],
   [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]]);
 
-recipes.addShaped("lolarecipe72",<lycanitesmobs:soulcubedemonic>,
+recipes.addShaped("rec72",<lycanitesmobs:soulcubedemonic>,
  [[<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>],
   [<quark:biotite>,<lycanitesmobs:soulstone_demon>,<quark:biotite>],
   [<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>]]);
 
-recipes.addShaped("lolarecipe73",<lycanitesmobs:soulcubeaberrant>,
+recipes.addShaped("rec73",<lycanitesmobs:soulcubeaberrant>,
  [[<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>],
   [<variedcommodities:heart>,<lycanitesmobs:soulstone_aberration>,<variedcommodities:heart>],
   [<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>]]);
 
-recipes.addShaped("lolarecipe74",<lycanitesmobs:soulcubeundead>,
+recipes.addShaped("rec74",<lycanitesmobs:soulcubeundead>,
  [[<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>],
   [<variedcommodities:skull>,<lycanitesmobs:soulstone_undead>,<variedcommodities:skull>],
   [<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>]]);
 
-recipes.addShaped("lolarecipe75",<spartanweaponry:arrow_wood>*4,
+recipes.addShaped("rec75",<spartanweaponry:arrow_wood>*4,
  [[<ore:plankWood>],
   [<minecraft:stick>],
   [<minecraft:paper>]]);
 
-recipes.addShaped("lolarecipe76",<simpledifficulty:dragon_canteen>,
+recipes.addShaped("rec76",<simpledifficulty:dragon_canteen>,
  [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>|<iceandfire:dragon_skull:2>],
   [<simpledifficulty:iron_canteen:*>],
   [<iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>]]);
 
-recipes.addShaped("lolarecipe77",<quark:iron_plate>*8,
+recipes.addShaped("rec77",<quark:iron_plate>*8,
  [[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
   [<minecraft:iron_ingot>,null,<minecraft:iron_ingot>],
   [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]]);
 
-recipes.addShaped("lolarecipe78",<quark:iron_plate:1>*8,
+recipes.addShaped("rec78",<quark:iron_plate:1>*8,
  [[<quark:iron_plate>,<quark:iron_plate>,<quark:iron_plate>],
   [<quark:iron_plate>,<minecraft:water_bucket>,<quark:iron_plate>],
   [<quark:iron_plate>,<quark:iron_plate>,<quark:iron_plate>]]);
 
-recipes.addShaped("lolarecipe79",<waystones:warp_stone>,
+recipes.addShaped("rec79",<waystones:warp_stone>,
  [[<quark:rune:10>,<forgottenitems:ender_gem>,<quark:rune:10>],
   [<forgottenitems:ender_gem>,<forgottenitems:ender_talisman>,<forgottenitems:ender_gem>],
   [<quark:rune:10>,<forgottenitems:ender_gem>,<quark:rune:10>]]);
 
-recipes.addShaped("lolarecipe80",<variedcommodities:pedestal:0>,
+recipes.addShaped("rec80",<variedcommodities:pedestal:0>,
  [[null,null,null],
   [<minecraft:log:0>,null,<minecraft:log:0>],
   [<minecraft:log:0>,<minecraft:log:0>,<minecraft:log:0>]]);
 
-recipes.addShaped("lolarecipe81",<variedcommodities:pedestal:1>,
+recipes.addShaped("rec81",<variedcommodities:pedestal:1>,
  [[null,null,null],
   [<minecraft:stone:0>,null,<minecraft:stone:0>],
   [<minecraft:stone:0>,<minecraft:stone:0>,<minecraft:stone:0>]]);
 
-recipes.addShaped("lolarecipe82",<variedcommodities:pedestal:2>,
+recipes.addShaped("rec82",<variedcommodities:pedestal:2>,
  [[null,null,null],
   [<minecraft:iron_block>,null,<minecraft:iron_block>],
   [<minecraft:iron_block>,<minecraft:iron_block>,<minecraft:iron_block>]]);
 
-recipes.addShaped("lolarecipe83",<variedcommodities:pedestal:3>,
+recipes.addShaped("rec83",<variedcommodities:pedestal:3>,
  [[null,null,null],
   [<minecraft:gold_block>,null,<minecraft:gold_block>],
   [<minecraft:gold_block>,<minecraft:gold_block>,<minecraft:gold_block>]]);
 
-recipes.addShaped("lolarecipe84",<variedcommodities:pedestal:4>,
+recipes.addShaped("rec84",<variedcommodities:pedestal:4>,
  [[null,null,null],
   [<minecraft:diamond_block>,null,<minecraft:diamond_block>],
   [<minecraft:diamond_block>,<minecraft:diamond_block>,<minecraft:diamond_block>]]);
 
-recipes.addShaped("lolarecipe85",<armorunder:cooling_goo>*2,
+recipes.addShaped("rec85",<armorunder:cooling_goo>*2,
  [[<simpledifficulty:frost_powder>,<minecraft:slime_ball>],
   [<minecraft:slime_ball>,null]]);
 
-recipes.addShaped("lolarecipe86",<armorunder:heating_goo>*2,
+recipes.addShaped("rec86",<armorunder:heating_goo>*2,
  [[<minecraft:blaze_powder>,<minecraft:slime_ball>],
   [<minecraft:slime_ball>,null]]);
 
-recipes.addShapeless("lolarecipe87",<contenttweaker:steel_alloy>,[<minecraft:coal>|<minecraft:coal:1>,<betternether:cincinnasite>,<minecraft:iron_ingot>]);
+recipes.addShapeless("rec87",<contenttweaker:steel_alloy>,[<minecraft:coal>|<minecraft:coal:1>,<betternether:cincinnasite>,<minecraft:iron_ingot>]);
 
-recipes.addShaped("lolarecipe88a",<charm:crate>,
+recipes.addShaped("rec88a",<charm:crate>,
  [[<variedcommodities:ingot_steel>,<minecraft:planks>,<variedcommodities:ingot_steel>],
   [<minecraft:planks>,null,<minecraft:planks>],
   [<variedcommodities:ingot_steel>,<minecraft:planks>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe88b",<charm:crate:1>,
+recipes.addShaped("rec88b",<charm:crate:1>,
  [[<variedcommodities:ingot_steel>,<minecraft:planks:1>,<variedcommodities:ingot_steel>],
   [<minecraft:planks:1>,null,<minecraft:planks:1>],
   [<variedcommodities:ingot_steel>,<minecraft:planks:1>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe88c",<charm:crate:2>,
+recipes.addShaped("rec88c",<charm:crate:2>,
  [[<variedcommodities:ingot_steel>,<minecraft:planks:2>,<variedcommodities:ingot_steel>],
   [<minecraft:planks:2>,null,<minecraft:planks:2>],
   [<variedcommodities:ingot_steel>,<minecraft:planks:2>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe88d",<charm:crate:3>,
+recipes.addShaped("rec88d",<charm:crate:3>,
  [[<variedcommodities:ingot_steel>,<minecraft:planks:3>,<variedcommodities:ingot_steel>],
   [<minecraft:planks:3>,null,<minecraft:planks:3>],
   [<variedcommodities:ingot_steel>,<minecraft:planks:3>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe88e",<charm:crate:4>,
+recipes.addShaped("rec88e",<charm:crate:4>,
  [[<variedcommodities:ingot_steel>,<minecraft:planks:4>,<variedcommodities:ingot_steel>],
   [<minecraft:planks:4>,null,<minecraft:planks:4>],
   [<variedcommodities:ingot_steel>,<minecraft:planks:4>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe88f",<charm:crate:5>,
+recipes.addShaped("rec88f",<charm:crate:5>,
  [[<variedcommodities:ingot_steel>,<minecraft:planks:5>,<variedcommodities:ingot_steel>],
   [<minecraft:planks:5>,null,<minecraft:planks:5>],
   [<variedcommodities:ingot_steel>,<minecraft:planks:5>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe89",<locks:steel_lock_mechanism>,
+recipes.addShaped("rec89",<locks:steel_lock_mechanism>,
  [[<locks:spring>,<locks:spring>,<locks:spring>],
   [<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>],
   [<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe90a",<locks:wood_lock_pick>,
+recipes.addShaped("rec90a",<locks:wood_lock_pick>,
  [[null,<minecraft:stick>,null],
   [<minecraft:stick>,null,<minecraft:stick>],
   [<minecraft:stick>,<minecraft:stick>,null]]);
 
-recipes.addShaped("lolarecipe90b",<locks:iron_lock_pick>,
+recipes.addShaped("rec90b",<locks:iron_lock_pick>,
  [[null,<minecraft:iron_nugget>,<minecraft:iron_nugget>],
   [null,<minecraft:iron_nugget>,null],
   [<minecraft:iron_nugget>,null,null]]);
 
-recipes.addShaped("lolarecipe90c",<locks:gold_lock_pick>,
+recipes.addShaped("rec90c",<locks:gold_lock_pick>,
  [[null,<minecraft:gold_nugget>,<minecraft:gold_nugget>],
   [null,<minecraft:gold_nugget>,null],
   [<minecraft:gold_nugget>,null,null]]);
 
-recipes.addShaped("lolarecipe90d",<locks:steel_lock_pick>,
+recipes.addShaped("rec90d",<locks:steel_lock_pick>,
  [[null,<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>],
   [null,<contenttweaker:steel_nugget>,null],
   [<contenttweaker:steel_nugget>,null,null]]);
 
-recipes.addShaped("lolarecipe90e",<locks:diamond_lock_pick>,
+recipes.addShaped("rec90e",<locks:diamond_lock_pick>,
  [[null,<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>],
   [null,<variedcommodities:coin_diamond>,null],
   [<variedcommodities:coin_diamond>,null,null]]);
 
-recipes.addShaped("lolarecipe90f",<locks:dragonbone_lock_pick>*4,
+recipes.addShaped("rec90f",<locks:dragonbone_lock_pick>*4,
  [[null,<iceandfire:dragonbone>,<iceandfire:dragonbone>],
   [null,<iceandfire:dragonbone>,null],
   [<iceandfire:dragonbone>,null,null]]);
 
-recipes.addShaped("lolarecipe92",<variedcommodities:lamp>,
+recipes.addShaped("rec92",<variedcommodities:lamp>,
  [[<contenttweaker:steel_nugget>,<variedcommodities:ingot_steel>,<contenttweaker:steel_nugget>],
   [<minecraft:glass_pane>,<minecraft:torch>,<minecraft:glass_pane>],
   [<contenttweaker:steel_nugget>,<variedcommodities:ingot_steel>,<contenttweaker:steel_nugget>]]);
 
-recipes.addShaped("lolarecipe93",<variedcommodities:candle>*4,
+recipes.addShaped("rec93",<variedcommodities:candle>*4,
  [[null,<minecraft:glowstone_dust>,null],
   [null,<rustic:tallow>|<rustic:beeswax>,null],
   [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]]);
 
-recipes.addShaped("lolarecipe93a",<variedcommodities:candle>*4,
+recipes.addShaped("rec93a",<variedcommodities:candle>*4,
  [[<minecraft:glowstone_dust>],
   [<rustic:tallow>|<rustic:beeswax>],
   [<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe93b",<rustic:candle>*4,
+recipes.addShaped("rec93b",<rustic:candle>*4,
  [[null,<minecraft:glowstone_dust>,null],
   [<minecraft:iron_ingot>,<rustic:tallow>|<rustic:beeswax>,<minecraft:iron_ingot>],
   [null,<minecraft:iron_ingot>,null]]);
 
-recipes.addShaped("lolarecipe93c",<rustic:candle_gold>*4,
+recipes.addShaped("rec93c",<rustic:candle_gold>*4,
  [[null,<minecraft:glowstone_dust>,null],
   [<minecraft:gold_ingot>,<rustic:tallow>|<rustic:beeswax>,<minecraft:gold_ingot>],
   [null,<minecraft:gold_ingot>,null]]);
 
-recipes.addShaped("lolarecipe93d",<rustic:candle_silver>*4,
+recipes.addShaped("rec93d",<rustic:candle_silver>*4,
  [[null,<minecraft:glowstone_dust>,null],
   [<iceandfire:silver_ingot>,<rustic:tallow>|<rustic:beeswax>,<iceandfire:silver_ingot>],
   [null,<iceandfire:silver_ingot>,null]]);
 
-recipes.addShaped("lolarecipe93e",<rustic:iron_lantern>,
+recipes.addShaped("rec93e",<rustic:iron_lantern>,
  [[<minecraft:iron_nugget>,<minecraft:iron_ingot>,<minecraft:iron_nugget>],
   [<minecraft:iron_nugget>,<minecraft:torch>,<minecraft:iron_nugget>],
   [<minecraft:iron_nugget>,<minecraft:iron_ingot>,<minecraft:iron_nugget>]]);
 
-recipes.addShaped("lolarecipe93f",<rustic:golden_lantern>,
+recipes.addShaped("rec93f",<rustic:golden_lantern>,
  [[<minecraft:gold_nugget>,<minecraft:gold_ingot>,<minecraft:gold_nugget>],
   [<minecraft:gold_nugget>,<minecraft:torch>,<minecraft:gold_nugget>],
   [<minecraft:gold_nugget>,<minecraft:gold_ingot>,<minecraft:gold_nugget>]]);
 
-recipes.addShaped("lolarecipe93g",<rustic:silver_lantern>,
+recipes.addShaped("rec93g",<rustic:silver_lantern>,
  [[<iceandfire:silver_nugget>,<iceandfire:silver_ingot>,<iceandfire:silver_nugget>],
   [<iceandfire:silver_nugget>,<minecraft:torch>,<iceandfire:silver_nugget>],
   [<iceandfire:silver_nugget>,<iceandfire:silver_ingot>,<iceandfire:silver_nugget>]]);
 
-recipes.addShaped("lolarecipe94",<betternether:cincinnasite_forge>,
+recipes.addShaped("rec94",<betternether:cincinnasite_forge>,
  [[<variedcommodities:ingot_steel>,<betternether:cincinnasite_forged>,<variedcommodities:ingot_steel>],
   [<betternether:cincinnasite_forged>,<betternether:netherrack_furnace>,<betternether:cincinnasite_forged>],
   [<variedcommodities:ingot_steel>,<betternether:cincinnasite_forged>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe94b",<betternether:cincinnasite_frame>,
+recipes.addShaped("rec94b",<betternether:cincinnasite_frame>,
  [[null,<betternether:cincinnasite_bars>,null],
   [<betternether:cincinnasite_bars>,<minecraft:glass>,<betternether:cincinnasite_bars>],
   [null,<betternether:cincinnasite_bars>,null]]);
 
-recipes.addShaped("lolarecipe95",<inspirations:rope:1>*3,
+recipes.addShaped("rec95",<inspirations:rope:1>*3,
  [[<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>],
   [<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>],
   [<contenttweaker:steel_nugget>,<contenttweaker:steel_nugget>]]);
 
-recipes.addShaped("lolarecipe96",<lycanitesmobs:equipment_station>,
+recipes.addShaped("rec96",<lycanitesmobs:equipment_station>,
  [[<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,<lycanitesmobs:equipmentforge_lesser>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe97",<variedcommodities:tombstone>,
+recipes.addShaped("rec97",<variedcommodities:tombstone>,
  [[<minecraft:stone>,<minecraft:stone>],
   [<minecraft:stone>,<minecraft:stone>],
   [<minecraft:stone>,<minecraft:stone>]]);
 
-recipes.addShapeless("lolarecipe98",<variedcommodities:tombstone:1>,[<variedcommodities:tombstone>]);
+recipes.addShapeless("rec98",<variedcommodities:tombstone:1>,[<variedcommodities:tombstone>]);
 
-recipes.addShapeless("lolarecipe99",<variedcommodities:tombstone:2>,[<variedcommodities:tombstone:1>]);
+recipes.addShapeless("rec99",<variedcommodities:tombstone:2>,[<variedcommodities:tombstone:1>]);
 
-recipes.addShapeless("lolarecipe100",<lycanitesmobs:ironpaxel>,[<minecraft:iron_shovel>,<minecraft:iron_axe>,<minecraft:iron_pickaxe>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>]);
+recipes.addShapeless("rec100",<lycanitesmobs:ironpaxel>,[<minecraft:iron_shovel>,<minecraft:iron_axe>,<minecraft:iron_pickaxe>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>]);
 
-recipes.addShapeless("lolarecipe101",<lycanitesmobs:woodenpaxel>,[<minecraft:wooden_shovel>,<minecraft:wooden_axe>,<minecraft:wooden_pickaxe>,<minecraft:stick>,<minecraft:stick>,<minecraft:stick>]);
+recipes.addShapeless("rec101",<lycanitesmobs:woodenpaxel>,[<minecraft:wooden_shovel>,<minecraft:wooden_axe>,<minecraft:wooden_pickaxe>,<minecraft:stick>,<minecraft:stick>,<minecraft:stick>]);
 
-recipes.addShaped("lolarecipe102",<lycanitesmobs:ironrod>,
+recipes.addShaped("rec102",<lycanitesmobs:ironrod>,
  [[<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>],
   [<lycanitesmobs:woodenrod>]]);
 
-recipes.addShaped("lolarecipe103",<lycanitesmobs:ironhilt>,
+recipes.addShaped("rec103",<lycanitesmobs:ironhilt>,
  [[<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [null,<lycanitesmobs:woodenhilt>,null]]);
 
-recipes.addShaped("lolarecipe104",<lycanitesmobs:ironpikejoint>,
+recipes.addShaped("rec104",<lycanitesmobs:ironpikejoint>,
  [[<variedcommodities:ingot_steel>],
   [<lycanitesmobs:woodenhilt>],
   [<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarecipe105",<lycanitesmobs:ironaxehead>,
+recipes.addShaped("rec105",<lycanitesmobs:ironaxehead>,
  [[null,<variedcommodities:ingot_steel>,null],
   [<variedcommodities:ingot_steel>,<lycanitesmobs:woodenhilt>,<variedcommodities:ingot_steel>],
   [null,<variedcommodities:ingot_steel>,null]]);
 
-recipes.addShaped("lolarecipe106",<minecraft:coal:1>,
+recipes.addShaped("rec106",<minecraft:coal:1>,
  [[<iceandfire:ash>,<iceandfire:ash>,<iceandfire:ash>],
   [<iceandfire:ash>,<iceandfire:ash>,<iceandfire:ash>],
   [<iceandfire:ash>,<iceandfire:ash>,<iceandfire:ash>]]);
 
-recipes.addShaped("lolatreat1",<lycanitesmobs:dragontreat>*4,
+recipes.addShaped("treat1",<lycanitesmobs:dragontreat>*4,
  [[null,<iceandfire:ruby_gem>,<iceandfire:sapphire_gem>],
   [<minecraft:bone>,<minecraft:bone>,<iceandfire:amethyst_gem>],
   [null,<iceandfire:ruby_gem>,<iceandfire:sapphire_gem>]]);
 
-recipes.addShaped("lolatreat2",<lycanitesmobs:aviantreat>*4,
+recipes.addShaped("treat2",<lycanitesmobs:aviantreat>*4,
  [[null,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>],
   [<minecraft:bone>,<minecraft:bone>,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>],
   [null,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>,<lycanitesmobs:cooked_ika_meat>|<lycanitesmobs:cooked_silex_meat>|<quark:cooked_crab_leg>]]);
 
-recipes.addShaped("lolatreat3",<lycanitesmobs:beasttreat>*4,
+recipes.addShaped("treat3",<lycanitesmobs:beasttreat>*4,
  [[null,<lycanitesmobs:cooked_pinky_meat>|<aquaculture:food:5>|<lycanitesmobs:cooked_aspid_meat>,<lycanitesmobs:cooked_pinky_meat>|<aquaculture:food:5>|<lycanitesmobs:cooked_aspid_meat>],
   [<minecraft:bone>,<minecraft:bone>,<lycanitesmobs:cooked_pinky_meat>|<aquaculture:food:5>|<lycanitesmobs:cooked_aspid_meat>],
   [null,<lycanitesmobs:cooked_pinky_meat>|<aquaculture:food:5>|<lycanitesmobs:cooked_aspid_meat>,<lycanitesmobs:cooked_pinky_meat>|<aquaculture:food:5>|<lycanitesmobs:cooked_aspid_meat>]]);
 
-recipes.addShaped("lolatreat4",<lycanitesmobs:planttreat>*4,
+recipes.addShaped("treat4",<lycanitesmobs:planttreat>*4,
  [[null,<minecraft:pumpkin>|<minecraft:beetroot>|<minecraft:golden_carrot>,<minecraft:pumpkin>|<minecraft:beetroot>|<minecraft:golden_carrot>],
   [<minecraft:reeds>,<minecraft:reeds>,<minecraft:pumpkin>|<minecraft:beetroot>|<minecraft:golden_carrot>],
   [null,<minecraft:pumpkin>|<minecraft:beetroot>|<minecraft:golden_carrot>,<minecraft:pumpkin>|<minecraft:beetroot>|<minecraft:golden_carrot>]]);
 
-recipes.addShaped("lolatreat5",<lycanitesmobs:undeadtreat>*4,
+recipes.addShaped("treat5",<lycanitesmobs:undeadtreat>*4,
  [[null,<lycanitesmobs:geistliver>,<lycanitesmobs:geistliver>],
   [<minecraft:bone>,<minecraft:bone>,<lycanitesmobs:geistliver>],
   [null,<lycanitesmobs:geistliver>,<lycanitesmobs:geistliver>]]);
 
-recipes.addShaped("lolatreat6",<lycanitesmobs:demontreat>*4,
+recipes.addShaped("treat6",<lycanitesmobs:demontreat>*4,
  [[null,<betternether:black_apple>|<betternether:wart_seed>|<foodexpansion:itemnetherwartsoup>,<betternether:black_apple>|<betternether:wart_seed>|<foodexpansion:itemnetherwartsoup>],
   [<betternether:nether_reed>,<betternether:nether_reed>,<betternether:black_apple>|<betternether:wart_seed>|<foodexpansion:itemnetherwartsoup>],
   [null,<betternether:black_apple>|<betternether:wart_seed>|<foodexpansion:itemnetherwartsoup>,<betternether:black_apple>|<betternether:wart_seed>|<foodexpansion:itemnetherwartsoup>]]);
 
-recipes.addShaped("lolanetherwartsoupalt",<foodexpansion:itemnetherwartsoup>,
+recipes.addShaped("netherwartsoupalt",<foodexpansion:itemnetherwartsoup>,
  [[<minecraft:nether_wart>,<betternether:black_apple>,<minecraft:nether_wart>],
   [null,<minecraft:bowl>,null]]);
 
-recipes.addShaped("lolatreat7",<lycanitesmobs:arachnidtreat>*4,
+recipes.addShaped("treat7",<lycanitesmobs:arachnidtreat>*4,
  [[null,<lycanitesmobs:cooked_joust_meat>|<lycanitesmobs:cooked_concapede_meat>,<lycanitesmobs:cooked_joust_meat>|<lycanitesmobs:cooked_concapede_meat>],
   [<minecraft:bone>,<minecraft:bone>,<lycanitesmobs:cooked_joust_meat>|<lycanitesmobs:cooked_concapede_meat>],
   [null,<lycanitesmobs:cooked_joust_meat>|<lycanitesmobs:cooked_concapede_meat>,<lycanitesmobs:cooked_joust_meat>|<lycanitesmobs:cooked_concapede_meat>]]);
 
-recipes.addShaped("lolatreat8",<lycanitesmobs:aquatictreat>*4,
+recipes.addShaped("treat8",<lycanitesmobs:aquatictreat>*4,
  [[null,<lycanitesmobs:cooked_cephignis_meat>|<lycanitesmobs:lapis_fish_and_chips>|<aquaculture:food:6>,<lycanitesmobs:cooked_cephignis_meat>|<lycanitesmobs:lapis_fish_and_chips>|<aquaculture:food:6>],
   [<minecraft:bone>,<minecraft:bone>,<lycanitesmobs:cooked_cephignis_meat>|<lycanitesmobs:lapis_fish_and_chips>|<aquaculture:food:6>],
   [null,<lycanitesmobs:cooked_cephignis_meat>|<lycanitesmobs:lapis_fish_and_chips>|<aquaculture:food:6>,<lycanitesmobs:cooked_cephignis_meat>|<lycanitesmobs:lapis_fish_and_chips>|<aquaculture:food:6>]]);
 
-recipes.addShaped("lolarecipe109",<disenchanter:disenchantmenttable>,
+recipes.addShaped("rec109",<disenchanter:disenchantmenttable>,
  [[null,null,null],
   [<defiledlands:book_wyrm_scale_golden>,<minecraft:emerald>,<defiledlands:book_wyrm_scale_golden>],
   [<minecraft:emerald>,<minecraft:enchanting_table>,<minecraft:emerald>]]);
 
-recipes.addShapeless("lolarecipe110",<rustic:honeycomb>,[<lycanitesmobs:veswax>,<forge:bucketfilled>.withTag({FluidName: "honey", Amount: 1000})]);
+recipes.addShapeless("rec110",<rustic:honeycomb>,[<lycanitesmobs:veswax>,<forge:bucketfilled>.withTag({FluidName: "honey", Amount: 1000})]);
 
-recipes.addShapeless("lolarecipe112",<simpledifficulty:frost_powder>*2,[<simpledifficulty:frost_rod>]);
+recipes.addShapeless("rec112",<simpledifficulty:frost_powder>*2,[<simpledifficulty:frost_rod>]);
 
-recipes.addShapeless("lolarecipe113",<iceandfire:fire_stew>,[<iceandfire:fire_lily>,<minecraft:blaze_powder>,<minecraft:bowl>]);
+recipes.addShapeless("rec113",<iceandfire:fire_stew>,[<iceandfire:fire_lily>,<minecraft:blaze_powder>,<minecraft:bowl>]);
 
-recipes.addShapeless("lolarecipe114",<iceandfire:frost_stew>,[<iceandfire:frost_lily>,<simpledifficulty:frost_powder>,<minecraft:bowl>]);
+recipes.addShapeless("rec114",<iceandfire:frost_stew>,[<iceandfire:frost_lily>,<simpledifficulty:frost_powder>,<minecraft:bowl>]);
 
-recipes.addShaped("lolarecipe115",<rustic:stone_pillar>*2,
+recipes.addShaped("rec115",<rustic:stone_pillar>*2,
   [[<minecraft:stone:0>],
   [<minecraft:stone:0>]]);
 
-recipes.addShaped("lolarecipe116",<rustic:andesite_pillar>*2,
+recipes.addShaped("rec116",<rustic:andesite_pillar>*2,
   [[<minecraft:stone:5>],
   [<minecraft:stone:5>]]);
 
-recipes.addShaped("lolarecipe117",<rustic:diorite_pillar>*2,
+recipes.addShaped("rec117",<rustic:diorite_pillar>*2,
   [[<minecraft:stone:3>],
   [<minecraft:stone:3>]]);
 
-recipes.addShaped("lolarecipe118",<rustic:granite_pillar>*2,
+recipes.addShaped("rec118",<rustic:granite_pillar>*2,
   [[<minecraft:stone:1>],
   [<minecraft:stone:1>]]);
 
-recipes.addShaped("lolarecipe119",<switchbow:arrowfire>*4,
+recipes.addShaped("rec119",<switchbow:arrowfire>*4,
  [[null,<minecraft:arrow>,null],
   [<minecraft:arrow>,<minecraft:blaze_powder>,<minecraft:arrow>],
   [null,<minecraft:arrow>,null]]);
 
-recipes.addShaped("lolarecipe120",<switchbow:arrowfrost>*4,
+recipes.addShaped("rec120",<switchbow:arrowfrost>*4,
  [[null,<minecraft:arrow>,null],
   [<minecraft:arrow>,<simpledifficulty:frost_powder>,<minecraft:arrow>],
   [null,<minecraft:arrow>,null]]);
 
-recipes.addShaped("lolarecipe121",<switchbow:arrowwither>*4,
+recipes.addShaped("rec121",<switchbow:arrowwither>*4,
  [[null,<minecraft:arrow>,null],
   [<minecraft:arrow>,<quark:black_ash>,<minecraft:arrow>],
   [null,<minecraft:arrow>,null]]);
 
-recipes.addShaped("lolarecipe122",<switchbow:arrowvampier>*4,
+recipes.addShaped("rec122",<switchbow:arrowvampier>*4,
  [[null,<minecraft:arrow>,null],
   [<minecraft:arrow>,<scalinghealth:heartdust>,<minecraft:arrow>],
   [null,<minecraft:arrow>,null]]);
 
-recipes.addShaped("lolarecipe123",<switchbow:arrowburial>*4,
+recipes.addShaped("rec123",<switchbow:arrowburial>*4,
  [[null,<minecraft:arrow>,null],
   [<minecraft:arrow>,<quark:soul_powder>,<minecraft:arrow>],
   [null,<minecraft:arrow>,null]]);
 
-recipes.addShaped("lolarecipe124",<xat:glow_ring>,
+recipes.addShaped("rec124",<xat:glow_ring>,
  [[<xat:glowing_ingot>,<iceandfire:silver_ingot>,null],
   [<iceandfire:silver_ingot>,<minecraft:golden_carrot>,<iceandfire:silver_ingot>],
   [null,<iceandfire:silver_ingot>,null]]);
 
-recipes.addShaped("lolarecipe125",<xat:dwarf_stout>,
+recipes.addShaped("rec125",<xat:dwarf_stout>,
  [[<xat:mana_crystal>,<quark:diamond_heart>,<xat:mana_crystal>],
   [<rustic:ironberries>,<xat:dwarf_ring>,<rustic:ironberries>],
   [<xat:mana_crystal>,<rustic:fluid_bottle:*>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe126",<xat:elf_sap>,
+recipes.addShaped("rec126",<xat:elf_sap>,
  [[<xat:mana_crystal>,<quark:variant_sapling:1>,<xat:mana_crystal>],
   [<rustic:fluid_bottle:*>,<xat:elf_ring>,<rustic:fluid_bottle:*>],
   [<xat:mana_crystal>,<rustic:mooncap_mushroom>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe127",<xat:faelis_food>,
+recipes.addShaped("rec127",<xat:faelis_food>,
  [[<xat:mana_crystal>,<quark:glowshroom>,<xat:mana_crystal>],
   [<minecraft:sugar>,<xat:faelis_ring>,<minecraft:sugar>],
   [<xat:mana_crystal>,<minecraft:milk_bucket>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe128",<xat:fairy_dew>,
+recipes.addShaped("rec128",<xat:fairy_dew>,
  [[<xat:mana_crystal>,<minecraft:ghast_tear>,<xat:mana_crystal>],
   [<familiarfauna:pixie_dust>,<xat:fairy_ring>,<familiarfauna:pixie_dust>],
   [<xat:mana_crystal>,<minecraft:water_bucket>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe129",<xat:goblin_soup>,
+recipes.addShaped("rec129",<xat:goblin_soup>,
  [[<xat:mana_crystal>,<minecraft:fermented_spider_eye>,<xat:mana_crystal>],
   [<aquaculture:food:7>,<xat:goblin_ring>,<aquaculture:food:7>],
   [<xat:mana_crystal>,<minecraft:mushroom_stew>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe130",<xat:titan_spirit>,
+recipes.addShaped("rec130",<xat:titan_spirit>,
  [[<xat:mana_crystal>,<betternether:bone_mushroom>,<xat:mana_crystal>],
   [<variedcommodities:ingot_bronze>,<xat:titan_ring>,<variedcommodities:ingot_bronze>],
   [<xat:mana_crystal>,<lycanitesmobs:bucketmoglava>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131",<xat:dragon_gem:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}),
+recipes.addShaped("rec131",<xat:dragon_gem:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}),
  [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
   [<iceandfire:ruby_gem>,<xat:dragon_ring:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}) ,<iceandfire:sapphire_gem>],
   [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.1",<xat:dragon_gem:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}),
+recipes.addShaped("rec131.1",<xat:dragon_gem:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}),
  [[<xat:mana_crystal>, <iceandfire:ruby_gem>, <xat:mana_crystal>],
   [<iceandfire:ruby_gem>, <xat:dragon_ring:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}), <iceandfire:ruby_gem>],
   [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.2",<xat:dragon_gem:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}),
+recipes.addShaped("rec131.2",<xat:dragon_gem:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}),
  [[<xat:mana_crystal>, <iceandfire:sapphire_gem>, <xat:mana_crystal>],
   [<iceandfire:sapphire_gem>, <xat:dragon_ring:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}), <iceandfire:sapphire_gem>],
   [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.3",<xat:dragon_gem:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}),
+recipes.addShaped("rec131.3",<xat:dragon_gem:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}),
  [[<xat:mana_crystal>, <iceandfire:amethyst_gem>, <xat:mana_crystal>],
   [<iceandfire:amethyst_gem>, <xat:dragon_ring:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}), <iceandfire:amethyst_gem>],
   [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
 
-recipes.addShaped("lolarecipe131.4",<xat:taurus_tea>,
+recipes.addShaped("rec131.4",<xat:taurus_tea>,
  [[<xat:mana_crystal>,<iceandfire:seaserpent_skull>,<xat:mana_crystal>],
   [<iceandfire:hydra_fang>,<xat:taurus_ring>,<iceandfire:cyclops_eye>],
   [<xat:mana_crystal>,<iceandfire:dragonbone>,<xat:mana_crystal>]]);
 
-recipes.addShaped("lolasaddle1",<lycanitesmobs:saddle_beast>,
+recipes.addShaped("saddle1",<lycanitesmobs:saddle_beast>,
  [[<lycanitesmobs:wendigoantler:*>,null,null],
   [<lycanitesmobs:frostyfur>,<lycanitesmobs:frostyfur>,<lycanitesmobs:frostyfur>],
   [<craftablechainmail:chainmail_plate>,<minecraft:saddle>,<craftablechainmail:chainmail_plate>]]);
 
-recipes.addShaped("lolasaddle2",<lycanitesmobs:saddle_insect>,
+recipes.addShaped("saddle2",<lycanitesmobs:saddle_insect>,
  [[<notreepunching:grass_string>,null,null],
   [<iceandfire:myrmex_desert_chitin>|<iceandfire:myrmex_jungle_chitin>,<iceandfire:myrmex_desert_chitin>|<iceandfire:myrmex_jungle_chitin>,<iceandfire:myrmex_desert_chitin>|<iceandfire:myrmex_jungle_chitin>],
   [<inspirations:rope:2>,<minecraft:saddle>,<inspirations:rope:2>]]);
 
-recipes.addShaped("lolasaddle3",<lycanitesmobs:saddle_dragon>,
+recipes.addShaped("saddle3",<lycanitesmobs:saddle_dragon>,
  [[<iceandfire:troll_tusk>,null,null],
   [<iceandfire:dragonscales_red>|<iceandfire:dragonscales_green>|<iceandfire:dragonscales_bronze>|<iceandfire:dragonscales_gray>|<iceandfire:dragonscales_blue>|<iceandfire:dragonscales_white>|<iceandfire:dragonscales_sapphire>|<iceandfire:dragonscales_silver>|<iceandfire:dragonscales_amethyst>|<iceandfire:dragonscales_electric>|<iceandfire:dragonscales_black>|<iceandfire:dragonscales_copper>,<iceandfire:dragonscales_red>|<iceandfire:dragonscales_green>|<iceandfire:dragonscales_bronze>|<iceandfire:dragonscales_gray>|<iceandfire:dragonscales_blue>|<iceandfire:dragonscales_white>|<iceandfire:dragonscales_sapphire>|<iceandfire:dragonscales_silver>|<iceandfire:dragonscales_amethyst>|<iceandfire:dragonscales_electric>|<iceandfire:dragonscales_black>|<iceandfire:dragonscales_copper>,<iceandfire:dragonscales_red>|<iceandfire:dragonscales_green>|<iceandfire:dragonscales_bronze>|<iceandfire:dragonscales_gray>|<iceandfire:dragonscales_blue>|<iceandfire:dragonscales_white>|<iceandfire:dragonscales_sapphire>|<iceandfire:dragonscales_silver>|<iceandfire:dragonscales_amethyst>|<iceandfire:dragonscales_electric>|<iceandfire:dragonscales_black>|<iceandfire:dragonscales_copper>],
   [<quark:chain>,<minecraft:saddle>,<quark:chain>]]);
 
-recipes.addShaped("lolasaddle4",<lycanitesmobs:saddle_amphibian>,
+recipes.addShaped("saddle4",<lycanitesmobs:saddle_amphibian>,
  [[<minecraft:lead>,null,null],
   [<iceandfire:shiny_scales>,<iceandfire:shiny_scales>,<iceandfire:shiny_scales>],
   [<iceandfire:myrmex_desert_resin>|<iceandfire:myrmex_jungle_resin>,<minecraft:saddle>,<iceandfire:myrmex_desert_resin>|<iceandfire:myrmex_jungle_resin>]]);
 
-recipes.addShaped("lolasaddle5",<lycanitesmobs:saddle_reptile>,
+recipes.addShaped("saddle5",<lycanitesmobs:saddle_reptile>,
  [[<iceandfire:sea_serpent_fang>,null,null],
   [<defiledlands:book_wyrm_scale>,<defiledlands:book_wyrm_scale>,<defiledlands:book_wyrm_scale>],
   [<fishingmadebetter:hook_barbed>,<minecraft:saddle>,<fishingmadebetter:hook_barbed>]]);
 
-recipes.addShaped("lolasaddle6",<lycanitesmobs:saddle_avian>,
+recipes.addShaped("saddle6",<lycanitesmobs:saddle_avian>,
  [[<iceandfire:troll_tusk>,null,null],
   [<iceandfire:troll_leather_forest>|<iceandfire:troll_leather_frost>|<iceandfire:troll_leather_mountain>,<iceandfire:troll_leather_forest>|<iceandfire:troll_leather_frost>|<iceandfire:troll_leather_mountain>,<iceandfire:troll_leather_forest>|<iceandfire:troll_leather_frost>|<iceandfire:troll_leather_mountain>],
   [<iceandfire:stymphalian_bird_feather>|<iceandfire:amphithere_feather>,<minecraft:saddle>,<iceandfire:stymphalian_bird_feather>|<iceandfire:amphithere_feather>]]);
 
-recipes.addShaped("lolasaddle7",<lycanitesmobs:saddle_aquatic>,
+recipes.addShaped("saddle7",<lycanitesmobs:saddle_aquatic>,
  [[<minecraft:lead>,null,null],
   [<quark:crab_shell>,<quark:crab_shell>,<quark:crab_shell>],
   [<iceandfire:myrmex_desert_resin>|<iceandfire:myrmex_jungle_resin>,<minecraft:saddle>,<iceandfire:myrmex_desert_resin>|<iceandfire:myrmex_jungle_resin>]]);
 
-recipes.addShaped("lolasaddle8",<lycanitesmobs:saddle_aberration>,
+recipes.addShaped("saddle8",<lycanitesmobs:saddle_aberration>,
  [[<minecraft:end_rod>,null,null],
   [<quark:biotite>,<quark:biotite>,<quark:biotite>],
   [<minecraft:ender_pearl>,<minecraft:saddle>,<minecraft:ender_pearl>]]);
 
-recipes.addShaped("lolasaddle9",<lycanitesmobs:saddle_demon>,
+recipes.addShaped("saddle9",<lycanitesmobs:saddle_demon>,
  [[<betternether:nether_reed>,null,null],
   [<iceandfire:fire_dragon_flesh>,<iceandfire:fire_dragon_flesh>,<iceandfire:fire_dragon_flesh>],
   [<iceandfire:witherbone>,<minecraft:saddle>,<iceandfire:witherbone>]]);
 
-recipes.addShapeless("lolarecipe132",<iceandfire:sea_serpent_fang>,[<ore:toolKnife>.transformDamage(1),<iceandfire:fishing_spear:*>]);
+recipes.addShapeless("rec132",<iceandfire:sea_serpent_fang>,[<ore:toolKnife>.transformDamage(1),<iceandfire:fishing_spear:*>]);
 
-recipes.addShapeless("lolarecipe132a",<minecraft:slime_ball>,[<ore:toolKnife>.transformDamage(1),<familiarfauna:snail_shell:*>]);
+recipes.addShapeless("rec132a",<minecraft:slime_ball>,[<ore:toolKnife>.transformDamage(1),<familiarfauna:snail_shell:*>]);
 
-recipes.addShaped("lolarecipe133",<betternether:quartz_stained_glass:8>*8,
+recipes.addShaped("rec133",<betternether:quartz_stained_glass:8>*8,
  [[<betternether:quartz_glass>,<betternether:quartz_glass>,<betternether:quartz_glass>],
   [<betternether:quartz_glass>,<ore:dyeLightGray>,<betternether:quartz_glass>],
   [<betternether:quartz_glass>,<betternether:quartz_glass>,<betternether:quartz_glass>]]);
 
-recipes.addShaped("lolarecipe134",<betternether:quartz_stained_glass_framed:8>*8,
+recipes.addShaped("rec134",<betternether:quartz_stained_glass_framed:8>*8,
  [[<betternether:quartz_glass_framed>,<betternether:quartz_glass_framed>,<betternether:quartz_glass_framed>],
   [<betternether:quartz_glass_framed>,<ore:dyeLightGray>,<betternether:quartz_glass_framed>],
   [<betternether:quartz_glass_framed>,<betternether:quartz_glass_framed>,<betternether:quartz_glass_framed>]]);
 
-recipes.addShaped("lolarecipe135",<classyhats:phantom_thread>,
+recipes.addShaped("rec135",<classyhats:phantom_thread>,
  [[<bountifulbaubles:spectralsilt>,<ore:string>,null],
   [<ore:string>,<bountifulbaubles:phantomprism>,<ore:string>],
   [null,<ore:string>,<bountifulbaubles:spectralsilt>]]);
 
-recipes.addShaped("lolarecipe136",<betternether:nether_brick_tile_slab_half>*6,
+recipes.addShaped("rec136",<betternether:nether_brick_tile_slab_half>*6,
  [[<betternether:nether_brick_tile_small>,<betternether:nether_brick_tile_small>,<betternether:nether_brick_tile_small>]]);
 
 recipes.addShaped("SUSSOUP1",<charm:suspicious_soup:0>,
@@ -1375,68 +1371,68 @@ recipes.addShaped("SUSSOUP13",<charm:suspicious_soup:12>,
   [<inspirations:edibles>,<inspirations:edibles>,<inspirations:edibles>],
   [<inspirations:flower:3>,<minecraft:bowl>,<inspirations:flower:3>]]);
 
-recipes.addShaped("lolarecipe137",<bountifulbaubles:amuletsingluttony>,
+recipes.addShaped("rec137",<bountifulbaubles:amuletsingluttony>,
  [[null,<minecraft:cake>,null],
   [<minecraft:golden_apple:1>,<bountifulbaubles:amuletsinempty>,<minecraft:golden_apple:1>],
   [null,<lycanitesmobs:battle_burrito>,null]]);
 
-recipes.addShaped("lolarecipe138",<variedcommodities:holyhandgrenade>,
+recipes.addShaped("rec138",<variedcommodities:holyhandgrenade>,
  [[<minecraft:gold_ingot>,<bountifulbaubles:ringiron>,<minecraft:gold_ingot>],
   [<minecraft:quartz_block>,<bountifulbaubles:amuletcross>,<minecraft:quartz_block>],
   [<minecraft:gold_ingot>,<minecraft:quartz_block>,<minecraft:gold_ingot>]]);
 
-recipes.addShaped("lolarecipe139",<defiledlands:stone_defiled_stairs>*4,
+recipes.addShaped("rec139",<defiledlands:stone_defiled_stairs>*4,
  [[<defiledlands:stone_defiled>,null,null],
   [<defiledlands:stone_defiled>,<defiledlands:stone_defiled>,null],
   [<defiledlands:stone_defiled>,<defiledlands:stone_defiled>,<defiledlands:stone_defiled>]]);
 
-recipes.addShaped("lolarecipe140",<defiledlands:sandstone_defiled_stairs>*4,
+recipes.addShaped("rec140",<defiledlands:sandstone_defiled_stairs>*4,
  [[<defiledlands:sandstone_defiled>,null,null],
   [<defiledlands:sandstone_defiled>,<defiledlands:sandstone_defiled>,null],
   [<defiledlands:sandstone_defiled>,<defiledlands:sandstone_defiled>,<defiledlands:sandstone_defiled>]]);
 
-recipes.addShaped("lolarecipe141",<defiledlands:stone_defiled_bricks_stairs>*4,
+recipes.addShaped("rec141",<defiledlands:stone_defiled_bricks_stairs>*4,
  [[<defiledlands:stone_defiled_decoration:0>,null,null],
   [<defiledlands:stone_defiled_decoration:0>,<defiledlands:stone_defiled_decoration:0>,null],
   [<defiledlands:stone_defiled_decoration:0>,<defiledlands:stone_defiled_decoration:0>,<defiledlands:stone_defiled_decoration:0>]]);
 
-recipes.addShaped("lolarecipe142",<defiledlands:tenebra_stairs>*4,
+recipes.addShaped("rec142",<defiledlands:tenebra_stairs>*4,
  [[<defiledlands:tenebra_planks>,null,null],
   [<defiledlands:tenebra_planks>,<defiledlands:tenebra_planks>,null],
   [<defiledlands:tenebra_planks>,<defiledlands:tenebra_planks>,<defiledlands:tenebra_planks>]]);
 
-recipes.addShaped("lolarecipe143",<spartandefiled:staff_umbrium>,
+recipes.addShaped("rec143",<spartandefiled:staff_umbrium>,
  [[null,null,<defiledlands:umbrium_ingot>],
   [null,<spartanweaponry:material:1>,null],
   [<defiledlands:umbrium_ingot>,null,null]]);
 
-recipes.addShaped("lolarecipe144",<minecraft:stone_brick_stairs>*4,
+recipes.addShaped("rec144",<minecraft:stone_brick_stairs>*4,
  [[<minecraft:stonebrick>,null,null],
   [<minecraft:stonebrick>,<minecraft:stonebrick>,null],
   [<minecraft:stonebrick>,<minecraft:stonebrick>,<minecraft:stonebrick>]]);
 
-recipes.addShaped("lolarecipe145",<minecraft:stone_slab:5>*6,
+recipes.addShaped("rec145",<minecraft:stone_slab:5>*6,
  [[<minecraft:stonebrick>,<minecraft:stonebrick>,<minecraft:stonebrick>]]);
 
-recipes.addShaped("lolarecipe148",<quark:duskbound_block>*8,
+recipes.addShaped("rec148",<quark:duskbound_block>*8,
  [[<minecraft:purpur_block>,<minecraft:purpur_block>,<minecraft:purpur_block>],
   [<minecraft:purpur_block>,<minecraft:obsidian>,<minecraft:purpur_block>],
   [<minecraft:purpur_block>,<minecraft:purpur_block>,<minecraft:purpur_block>]]);
 
-recipes.addShaped("lolarecipe149",<quark:midori_block>*8,
+recipes.addShaped("rec149",<quark:midori_block>*8,
  [[<minecraft:purpur_block>,<minecraft:purpur_block>,<minecraft:purpur_block>],
   [<minecraft:purpur_block>,<minecraft:dye:2>,<minecraft:purpur_block>],
   [<minecraft:purpur_block>,<minecraft:purpur_block>,<minecraft:purpur_block>]]);
 
-recipes.addShaped("lolarecipe150",<quark:grate>*4,
+recipes.addShaped("rec150",<quark:grate>*4,
  [[<minecraft:iron_bars>,<minecraft:iron_bars>],
   [<minecraft:iron_bars>,<minecraft:iron_bars>]]);
 
-recipes.addShapeless("lolarecipe151",<contenttweaker:glacier_cream>,[<minecraft:slime_ball>,<simpledifficulty:frost_powder>]);
+recipes.addShapeless("rec151",<contenttweaker:glacier_cream>,[<minecraft:slime_ball>,<simpledifficulty:frost_powder>]);
 
 recipes.addShapeless("lesalad152",<lycanitesmobs:paleo_salad>,[<lycanitesmobs:cooked_arisaur_meat>,<minecraft:carrot>,<quark:variant_leaves:1>]);
 
-recipes.addShaped("lolarecipe153",<socketed:socket_bench>,
+recipes.addShaped("rec153",<socketed:socket_bench>,
  [[null,<iceandfire:ruby_gem>,null],
   [<iceandfire:amethyst_gem>,<ore:plankWood>,<iceandfire:sapphire_gem>],
   [<ore:plankWood>,null,<ore:plankWood>]]);
@@ -1519,11 +1515,11 @@ recipes.remove(<betternether:stalagnate_planks_fence>);
 
 recipes.remove(<minecraft:saddle>);
 
-recipes.addShaped("lolarecipe146",<betternether:stalagnate_planks_fence>*3,
+recipes.addShaped("rec146",<betternether:stalagnate_planks_fence>*3,
  [[<betternether:stalagnate_planks>,<minecraft:stick>,<betternether:stalagnate_planks>],
   [<betternether:stalagnate_planks>,<minecraft:stick>,<betternether:stalagnate_planks>]]);
 
-recipes.addShaped("lolarecipe147",<betternether:reeds_fence>*3,
+recipes.addShaped("rec147",<betternether:reeds_fence>*3,
  [[<betternether:reeds_block>,<minecraft:stick>,<betternether:reeds_block>],
   [<betternether:reeds_block>,<minecraft:stick>,<betternether:reeds_block>]]);
 
@@ -1620,95 +1616,95 @@ recipes.addShaped("quarkrunerainbow",<quark:rune:16>*8,
 //DOOR TIME
 //===============
 
-recipes.addShaped("loltrapdoor1",<minecraft:trapdoor>*4,
+recipes.addShaped("trapdoor1",<minecraft:trapdoor>*4,
  [[<minecraft:planks:0>,<minecraft:planks:0>,<minecraft:planks:0>],
   [<minecraft:planks:0>,<minecraft:planks:0>,<minecraft:planks:0>]]);
 
-//recipes.addShaped("loltrapdoor2",<minecraft:iron_trapdoor>*4,
+//recipes.addShaped("trapdoor2",<minecraft:iron_trapdoor>*4,
 // [[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
 //  [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]]);
 
-recipes.addShaped("loltrapdoor3",<quark:spruce_trapdoor>*4,
+recipes.addShaped("trapdoor3",<quark:spruce_trapdoor>*4,
  [[<minecraft:planks:1>,<minecraft:planks:1>,<minecraft:planks:1>],
   [<minecraft:planks:1>,<minecraft:planks:1>,<minecraft:planks:1>]]);
 
-recipes.addShaped("loltrapdoor4",<quark:birch_trapdoor>*4,
+recipes.addShaped("trapdoor4",<quark:birch_trapdoor>*4,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("loltrapdoor5",<quark:jungle_trapdoor>*4,
+recipes.addShaped("trapdoor5",<quark:jungle_trapdoor>*4,
  [[<minecraft:planks:3>,<minecraft:planks:3>,<minecraft:planks:3>],
   [<minecraft:planks:3>,<minecraft:planks:3>,<minecraft:planks:3>]]);
 
-recipes.addShaped("loltrapdoor6",<quark:acacia_trapdoor>*4,
+recipes.addShaped("trapdoor6",<quark:acacia_trapdoor>*4,
  [[<minecraft:planks:4>,<minecraft:planks:4>,<minecraft:planks:4>],
   [<minecraft:planks:4>,<minecraft:planks:4>,<minecraft:planks:4>]]);
 
-recipes.addShaped("loltrapdoor7",<quark:dark_oak_trapdoor>*4,
+recipes.addShaped("trapdoor7",<quark:dark_oak_trapdoor>*4,
  [[<minecraft:planks:5>,<minecraft:planks:5>,<minecraft:planks:5>],
   [<minecraft:planks:5>,<minecraft:planks:5>,<minecraft:planks:5>]]);
 
-recipes.addShaped("loldoor1",<minecraft:wooden_door>*2,
+recipes.addShaped("door1",<minecraft:wooden_door>*2,
  [[<minecraft:planks:0>,<minecraft:planks:0>],
   [<minecraft:planks:0>,<minecraft:planks:0>],
   [<minecraft:planks:0>,<minecraft:planks:0>]]);
 
-recipes.addShaped("loldoor2",<minecraft:iron_door>*1,
+recipes.addShaped("door2",<minecraft:iron_door>*1,
  [[<minecraft:iron_ingot>,<minecraft:iron_ingot>],
   [<minecraft:iron_ingot>,<minecraft:iron_ingot>],
   [<minecraft:iron_ingot>,<minecraft:iron_ingot>]]);
 
-recipes.addShaped("loldoor3",<minecraft:spruce_door>*2,
+recipes.addShaped("door3",<minecraft:spruce_door>*2,
  [[<minecraft:planks:1>,<minecraft:planks:1>],
   [<minecraft:planks:1>,<minecraft:planks:1>],
   [<minecraft:planks:1>,<minecraft:planks:1>]]);
 
-recipes.addShaped("loldoor4",<minecraft:birch_door>*2,
+recipes.addShaped("door4",<minecraft:birch_door>*2,
  [[<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("loldoor5",<minecraft:jungle_door>*2,
+recipes.addShaped("door5",<minecraft:jungle_door>*2,
  [[<minecraft:planks:3>,<minecraft:planks:3>],
   [<minecraft:planks:3>,<minecraft:planks:3>],
   [<minecraft:planks:3>,<minecraft:planks:3>]]);
 
-recipes.addShaped("loldoor6",<minecraft:acacia_door>*2,
+recipes.addShaped("door6",<minecraft:acacia_door>*2,
  [[<minecraft:planks:4>,<minecraft:planks:4>],
   [<minecraft:planks:4>,<minecraft:planks:4>],
   [<minecraft:planks:4>,<minecraft:planks:4>]]);
 
-recipes.addShaped("loldoor7",<minecraft:dark_oak_door>*2,
+recipes.addShaped("door7",<minecraft:dark_oak_door>*2,
  [[<minecraft:planks:5>,<minecraft:planks:5>],
   [<minecraft:planks:5>,<minecraft:planks:5>],
   [<minecraft:planks:5>,<minecraft:planks:5>]]);
 
-recipes.addShaped("loldoor8",<betternether:bone_reed_door>*2,
+recipes.addShaped("door8",<betternether:bone_reed_door>*2,
  [[<betternether:reeds_block>,<betternether:bone_block>],
   [<betternether:bone_block>,<betternether:bone_block>],
   [<betternether:bone_block>,<betternether:reeds_block>]]);
 
-recipes.addShaped("loldoor9",<betternether:bone_cincinnasite_door>*2,
+recipes.addShaped("door9",<betternether:bone_cincinnasite_door>*2,
  [[<betternether:cincinnasite_forged>,<betternether:bone_block>],
   [<betternether:bone_block>,<betternether:bone_block>],
   [<betternether:bone_block>,<betternether:cincinnasite_forged>]]);
 
-recipes.addShaped("loldoor10",<defiledlands:tenebra_door>*2,
+recipes.addShaped("door10",<defiledlands:tenebra_door>*2,
  [[<defiledlands:tenebra_planks>,<defiledlands:tenebra_planks>],
   [<defiledlands:tenebra_planks>,<defiledlands:tenebra_planks>],
   [<defiledlands:tenebra_planks>,<defiledlands:tenebra_planks>]]);
 
-recipes.addShaped("loldoor11",<rustic:olive_door>*2,
+recipes.addShaped("door11",<rustic:olive_door>*2,
  [[<rustic:planks:0>,<rustic:planks:0>],
   [<rustic:planks:0>,<rustic:planks:0>],
   [<rustic:planks:0>,<rustic:planks:0>]]);
 
-recipes.addShaped("loldoor12",<rustic:ironwood_door>*2,
+recipes.addShaped("door12",<rustic:ironwood_door>*2,
  [[<rustic:planks:1>,<rustic:planks:1>],
   [<rustic:planks:1>,<rustic:planks:1>],
   [<rustic:planks:1>,<rustic:planks:1>]]);
 
-recipes.addShaped("loldoor13",<traverse:fir_door>*2,
+recipes.addShaped("door13",<traverse:fir_door>*2,
  [[<traverse:fir_planks>,<traverse:fir_planks>],
   [<traverse:fir_planks>,<traverse:fir_planks>],
   [<traverse:fir_planks>,<traverse:fir_planks>]]);
@@ -1717,162 +1713,162 @@ recipes.addShaped("loldoor13",<traverse:fir_door>*2,
 //PLANK STUFF
 //=====================
 
-recipes.addShaped("lolarecipeSTAIN0",<quark:stained_planks:0>*8,
+recipes.addShaped("recSTAIN0",<quark:stained_planks:0>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeWhite>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN1",<quark:stained_planks:1>*8,
+recipes.addShaped("recSTAIN1",<quark:stained_planks:1>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeOrange>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN2",<quark:stained_planks:2>*8,
+recipes.addShaped("recSTAIN2",<quark:stained_planks:2>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeMagenta>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN3",<quark:stained_planks:3>*8,
+recipes.addShaped("recSTAIN3",<quark:stained_planks:3>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeLightBlue>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN4",<quark:stained_planks:4>*8,
+recipes.addShaped("recSTAIN4",<quark:stained_planks:4>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeYellow>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN5",<quark:stained_planks:5>*8,
+recipes.addShaped("recSTAIN5",<quark:stained_planks:5>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeLime>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN6",<quark:stained_planks:6>*8,
+recipes.addShaped("recSTAIN6",<quark:stained_planks:6>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyePink>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN7",<quark:stained_planks:7>*8,
+recipes.addShaped("recSTAIN7",<quark:stained_planks:7>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeGray>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN8",<quark:stained_planks:8>*8,
+recipes.addShaped("recSTAIN8",<quark:stained_planks:8>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeLightGray>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN9",<quark:stained_planks:9>*8,
+recipes.addShaped("recSTAIN9",<quark:stained_planks:9>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeCyan>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN10",<quark:stained_planks:10>*8,
+recipes.addShaped("recSTAIN10",<quark:stained_planks:10>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyePurple>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN11",<quark:stained_planks:11>*8,
+recipes.addShaped("recSTAIN11",<quark:stained_planks:11>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeBlue>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN12",<quark:stained_planks:12>*8,
+recipes.addShaped("recSTAIN12",<quark:stained_planks:12>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeBrown>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN13",<quark:stained_planks:13>*8,
+recipes.addShaped("recSTAIN13",<quark:stained_planks:13>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeGreen>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN14",<quark:stained_planks:14>*8,
+recipes.addShaped("recSTAIN14",<quark:stained_planks:14>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeRed>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeSTAIN15",<quark:stained_planks:15>*8,
+recipes.addShaped("recSTAIN15",<quark:stained_planks:15>*8,
  [[<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<ore:dyeBlack>,<minecraft:planks:2>],
   [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]]);
 
-recipes.addShaped("lolarecipeDYE0",<rustic:painted_wood_white>*8,
+recipes.addShaped("recDYE0",<rustic:painted_wood_white>*8,
  [[<quark:stained_planks:0>,<quark:stained_planks:0>,<quark:stained_planks:0>],
   [<quark:stained_planks:0>,<ore:dyeWhite>,<quark:stained_planks:0>],
   [<quark:stained_planks:0>,<quark:stained_planks:0>,<quark:stained_planks:0>]]);
 
-recipes.addShaped("lolarecipeDYE1",<rustic:painted_wood_orange>*8,
+recipes.addShaped("recDYE1",<rustic:painted_wood_orange>*8,
  [[<quark:stained_planks:1>,<quark:stained_planks:1>,<quark:stained_planks:1>],
   [<quark:stained_planks:1>,<ore:dyeOrange>,<quark:stained_planks:1>],
   [<quark:stained_planks:1>,<quark:stained_planks:1>,<quark:stained_planks:1>]]);
 
-recipes.addShaped("lolarecipeDYE2",<rustic:painted_wood_magenta>*8,
+recipes.addShaped("recDYE2",<rustic:painted_wood_magenta>*8,
  [[<quark:stained_planks:2>,<quark:stained_planks:2>,<quark:stained_planks:2>],
   [<quark:stained_planks:2>,<ore:dyeMagenta>,<quark:stained_planks:2>],
   [<quark:stained_planks:2>,<quark:stained_planks:2>,<quark:stained_planks:2>]]);
 
-recipes.addShaped("lolarecipeDYE3",<rustic:painted_wood_light_blue>*8,
+recipes.addShaped("recDYE3",<rustic:painted_wood_light_blue>*8,
  [[<quark:stained_planks:3>,<quark:stained_planks:3>,<quark:stained_planks:3>],
   [<quark:stained_planks:3>,<ore:dyeLightBlue>,<quark:stained_planks:3>],
   [<quark:stained_planks:3>,<quark:stained_planks:3>,<quark:stained_planks:3>]]);
 
-recipes.addShaped("lolarecipeDYE4",<rustic:painted_wood_yellow>*8,
+recipes.addShaped("recDYE4",<rustic:painted_wood_yellow>*8,
  [[<quark:stained_planks:4>,<quark:stained_planks:4>,<quark:stained_planks:4>],
   [<quark:stained_planks:4>,<ore:dyeYellow>,<quark:stained_planks:4>],
   [<quark:stained_planks:4>,<quark:stained_planks:4>,<quark:stained_planks:4>]]);
 
-recipes.addShaped("lolarecipeDYE5",<rustic:painted_wood_lime>*8,
+recipes.addShaped("recDYE5",<rustic:painted_wood_lime>*8,
  [[<quark:stained_planks:5>,<quark:stained_planks:5>,<quark:stained_planks:5>],
   [<quark:stained_planks:5>,<ore:dyeLime>,<quark:stained_planks:5>],
   [<quark:stained_planks:5>,<quark:stained_planks:5>,<quark:stained_planks:5>]]);
 
-recipes.addShaped("lolarecipeDYE6",<rustic:painted_wood_pink>*8,
+recipes.addShaped("recDYE6",<rustic:painted_wood_pink>*8,
  [[<quark:stained_planks:6>,<quark:stained_planks:6>,<quark:stained_planks:6>],
   [<quark:stained_planks:6>,<ore:dyePink>,<quark:stained_planks:6>],
   [<quark:stained_planks:6>,<quark:stained_planks:6>,<quark:stained_planks:6>]]);
 
-recipes.addShaped("lolarecipeDYE7",<rustic:painted_wood_gray>*8,
+recipes.addShaped("recDYE7",<rustic:painted_wood_gray>*8,
  [[<quark:stained_planks:7>,<quark:stained_planks:7>,<quark:stained_planks:7>],
   [<quark:stained_planks:7>,<ore:dyeGray>,<quark:stained_planks:7>],
   [<quark:stained_planks:7>,<quark:stained_planks:7>,<quark:stained_planks:7>]]);
 
-recipes.addShaped("lolarecipeDYE8",<rustic:painted_wood_silver>*8,
+recipes.addShaped("recDYE8",<rustic:painted_wood_silver>*8,
  [[<quark:stained_planks:8>,<quark:stained_planks:8>,<quark:stained_planks:8>],
   [<quark:stained_planks:8>,<ore:dyeLightGray>,<quark:stained_planks:8>],
   [<quark:stained_planks:8>,<quark:stained_planks:8>,<quark:stained_planks:8>]]);
 
-recipes.addShaped("lolarecipeDYE9",<rustic:painted_wood_cyan>*8,
+recipes.addShaped("recDYE9",<rustic:painted_wood_cyan>*8,
  [[<quark:stained_planks:9>,<quark:stained_planks:9>,<quark:stained_planks:9>],
   [<quark:stained_planks:9>,<ore:dyeCyan>,<quark:stained_planks:9>],
   [<quark:stained_planks:9>,<quark:stained_planks:9>,<quark:stained_planks:9>]]);
 
-recipes.addShaped("lolarecipeDYE10",<rustic:painted_wood_purple>*8,
+recipes.addShaped("recDYE10",<rustic:painted_wood_purple>*8,
  [[<quark:stained_planks:10>,<quark:stained_planks:10>,<quark:stained_planks:10>],
   [<quark:stained_planks:10>,<ore:dyePurple>,<quark:stained_planks:10>],
   [<quark:stained_planks:10>,<quark:stained_planks:10>,<quark:stained_planks:10>]]);
 
-recipes.addShaped("lolarecipeDYE11",<rustic:painted_wood_blue>*8,
+recipes.addShaped("recDYE11",<rustic:painted_wood_blue>*8,
  [[<quark:stained_planks:11>,<quark:stained_planks:11>,<quark:stained_planks:11>],
   [<quark:stained_planks:11>,<ore:dyeBlue>,<quark:stained_planks:11>],
   [<quark:stained_planks:11>,<quark:stained_planks:11>,<quark:stained_planks:11>]]);
 
-recipes.addShaped("lolarecipeDYE12",<rustic:painted_wood_brown>*8,
+recipes.addShaped("recDYE12",<rustic:painted_wood_brown>*8,
  [[<quark:stained_planks:12>,<quark:stained_planks:12>,<quark:stained_planks:12>],
   [<quark:stained_planks:12>,<ore:dyeBrown>,<quark:stained_planks:12>],
   [<quark:stained_planks:12>,<quark:stained_planks:12>,<quark:stained_planks:12>]]);
 
-recipes.addShaped("lolarecipeDYE13",<rustic:painted_wood_green>*8,
+recipes.addShaped("recDYE13",<rustic:painted_wood_green>*8,
  [[<quark:stained_planks:13>,<quark:stained_planks:13>,<quark:stained_planks:13>],
   [<quark:stained_planks:13>,<ore:dyeGreen>,<quark:stained_planks:13>],
   [<quark:stained_planks:13>,<quark:stained_planks:13>,<quark:stained_planks:13>]]);
 
-recipes.addShaped("lolarecipeDYE14",<rustic:painted_wood_red>*8,
+recipes.addShaped("recDYE14",<rustic:painted_wood_red>*8,
  [[<quark:stained_planks:14>,<quark:stained_planks:14>,<quark:stained_planks:14>],
   [<quark:stained_planks:14>,<ore:dyeRed>,<quark:stained_planks:14>],
   [<quark:stained_planks:14>,<quark:stained_planks:14>,<quark:stained_planks:14>]]);
 
-recipes.addShaped("lolarecipeDYE15",<rustic:painted_wood_black>*8,
+recipes.addShaped("recDYE15",<rustic:painted_wood_black>*8,
  [[<quark:stained_planks:15>,<quark:stained_planks:15>,<quark:stained_planks:15>],
   [<quark:stained_planks:15>,<ore:dyeBlack>,<quark:stained_planks:15>],
   [<quark:stained_planks:15>,<quark:stained_planks:15>,<quark:stained_planks:15>]]);
@@ -1881,22 +1877,22 @@ recipes.addShaped("lolarecipeDYE15",<rustic:painted_wood_black>*8,
 //HORSE ARMOR
 //=====================
 
-recipes.addShaped("lolarecipe64",<minecraft:saddle>,
+recipes.addShaped("rec64",<minecraft:saddle>,
  [[<minecraft:leather>,<minecraft:leather>,<minecraft:leather>],
   [<ore:string>,null,<ore:string>],
   [<minecraft:iron_ingot>,null,<minecraft:iron_ingot>]]);
 
-recipes.addShaped("lolarecipeHORSEIRON",<minecraft:iron_horse_armor>,
+recipes.addShaped("recHORSEIRON",<minecraft:iron_horse_armor>,
  [[null,null,<minecraft:iron_helmet>],
   [<minecraft:iron_ingot>,<minecraft:wool:*>,<minecraft:iron_ingot>],
   [<minecraft:iron_leggings>,null,<minecraft:iron_leggings>]]);
 
-recipes.addShaped("lolarecipeHORSEGOLD",<minecraft:golden_horse_armor>,
+recipes.addShaped("recHORSEGOLD",<minecraft:golden_horse_armor>,
  [[null,null,<minecraft:golden_helmet>],
   [<minecraft:gold_ingot>,<minecraft:wool:*>,<minecraft:gold_ingot>],
   [<minecraft:golden_leggings>,null,<minecraft:golden_leggings>]]);
 
-recipes.addShaped("lolarecipeHORSEDIAMOND",<minecraft:diamond_horse_armor>,
+recipes.addShaped("recHORSEDIAMOND",<minecraft:diamond_horse_armor>,
  [[null,null,<minecraft:diamond_helmet>],
   [<minecraft:diamond>,<minecraft:wool:*>,<minecraft:diamond>],
   [<minecraft:diamond_leggings>,null,<minecraft:diamond_leggings>]]);
@@ -1905,39 +1901,39 @@ recipes.addShaped("lolarecipeHORSEDIAMOND",<minecraft:diamond_horse_armor>,
 //NEW LE ARMORS
 //=====================
 
-recipes.addShaped("lolarmor1",<rlmixins:steel_helmet>,
+recipes.addShaped("rmor1",<rlmixins:steel_helmet>,
  [[<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarmor2",<rlmixins:steel_chestplate>,
+recipes.addShaped("rmor2",<rlmixins:steel_chestplate>,
  [[<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarmor3",<rlmixins:steel_leggings>,
+recipes.addShaped("rmor3",<rlmixins:steel_leggings>,
  [[<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("lolarmor4",<rlmixins:steel_boots>,
+recipes.addShaped("rmor4",<rlmixins:steel_boots>,
  [[<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>]]);
 
-//recipes.addShaped("lolarmor5",<rlmixins:scarlite_helmet>,
+//recipes.addShaped("rmor5",<rlmixins:scarlite_helmet>,
 // [[<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>]]);
 
-//recipes.addShaped("lolarmor6",<rlmixins:scarlite_chestplate>,
+//recipes.addShaped("rmor6",<rlmixins:scarlite_chestplate>,
 // [[<defiledlands:scarlite>,null,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>]]);
 
-//recipes.addShaped("lolarmor7",<rlmixins:scarlite_leggings>,
+//recipes.addShaped("rmor7",<rlmixins:scarlite_leggings>,
 // [[<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>]]);
 
-//recipes.addShaped("lolarmor8",<rlmixins:scarlite_boots>,
+//recipes.addShaped("rmor8",<rlmixins:scarlite_boots>,
 // [[<defiledlands:scarlite>,null,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>]]);
 
@@ -1972,21 +1968,21 @@ recipes.addShapeless("somuchsilt",<bountifulbaubles:spectralsilt>*8,[<bountifulb
 //SRPARASITE THINGIES
 //=====================
 
-recipes.addShaped("lolsrarmor1",<srparasites:armor_helm>,
+recipes.addShaped("srarmor1",<srparasites:armor_helm>,
  [[<srparasites:vile_shell>,<srparasites:vile_shell>,<srparasites:vile_shell>],
   [<srparasites:vile_shell>,<srparasites:living_core>,<srparasites:vile_shell>]]);
 
-recipes.addShaped("lolsrarmor2",<srparasites:armor_chest>,
+recipes.addShaped("srarmor2",<srparasites:armor_chest>,
  [[<srparasites:vile_shell>,<srparasites:living_core>,<srparasites:vile_shell>],
   [<srparasites:vile_shell>,<srparasites:vile_shell>,<srparasites:vile_shell>],
   [<srparasites:vile_shell>,<srparasites:vile_shell>,<srparasites:vile_shell>]]);
 
-recipes.addShaped("lolsrarmor3",<srparasites:armor_pants>,
+recipes.addShaped("srarmor3",<srparasites:armor_pants>,
  [[<srparasites:vile_shell>,<srparasites:vile_shell>,<srparasites:vile_shell>],
   [<srparasites:vile_shell>,<srparasites:living_core>,<srparasites:vile_shell>],
   [<srparasites:vile_shell>,null,<srparasites:vile_shell>]]);
 
-recipes.addShaped("lolsrarmor4",<srparasites:armor_boots>,
+recipes.addShaped("srarmor4",<srparasites:armor_boots>,
  [[<srparasites:vile_shell>,<srparasites:living_core>,<srparasites:vile_shell>],
   [<srparasites:vile_shell>,null,<srparasites:vile_shell>]]);
   
@@ -2011,18 +2007,18 @@ recipes.addShaped("srpmaul",<srparasites:weapon_maul>,
 recipes.addShapeless("srplancesentient",<srparasites:weapon_lance_sentient>,[<srparasites:weapon_lance>,<contenttweaker:sentient_core>]);
 recipes.addShapeless("srpmaulsentient",<srparasites:weapon_maul_sentient>,[<srparasites:weapon_maul>,<contenttweaker:sentient_core>]);
 
-recipes.addShapeless("lolsrsarmor1",<srparasites:armor_helm_sentient>,[<srparasites:armor_helm>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsarmor2",<srparasites:armor_chest_sentient>,[<srparasites:armor_chest>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsarmor3",<srparasites:armor_pants_sentient>,[<srparasites:armor_pants>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsarmor4",<srparasites:armor_boots_sentient>,[<srparasites:armor_boots>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsarmor1",<srparasites:armor_helm_sentient>,[<srparasites:armor_helm>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsarmor2",<srparasites:armor_chest_sentient>,[<srparasites:armor_chest>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsarmor3",<srparasites:armor_pants_sentient>,[<srparasites:armor_pants>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsarmor4",<srparasites:armor_boots_sentient>,[<srparasites:armor_boots>,<contenttweaker:sentient_core>]);
 
-recipes.addShapeless("lolsrsweapon1",<srparasites:weapon_scythe_sentient>,[<srparasites:weapon_scythe>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon2",<srparasites:weapon_axe_sentient>,[<srparasites:weapon_axe>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon3",<srparasites:weapon_sword_sentient>,[<srparasites:weapon_sword>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon4",<srparasites:weapon_cleaver_sentient>,[<srparasites:weapon_cleaver>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon5",<srparasites:weapon_bow_sentient>,[<srparasites:weapon_bow>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsweapon1",<srparasites:weapon_scythe_sentient>,[<srparasites:weapon_scythe>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsweapon2",<srparasites:weapon_axe_sentient>,[<srparasites:weapon_axe>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsweapon3",<srparasites:weapon_sword_sentient>,[<srparasites:weapon_sword>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsweapon4",<srparasites:weapon_cleaver_sentient>,[<srparasites:weapon_cleaver>,<contenttweaker:sentient_core>]);
+recipes.addShapeless("srsweapon5",<srparasites:weapon_bow_sentient>,[<srparasites:weapon_bow>,<contenttweaker:sentient_core>]);
 
-recipes.addShaped("lolsrsentientcore",<contenttweaker:sentient_core>,
+recipes.addShaped("srsentientcore",<contenttweaker:sentient_core>,
  [[<contenttweaker:blood_tear>,<contenttweaker:blood_tear>,<contenttweaker:blood_tear>],
   [<contenttweaker:blood_tear>,<srparasites:living_core>,<contenttweaker:blood_tear>],
   [<contenttweaker:blood_tear>,<contenttweaker:blood_tear>,<contenttweaker:blood_tear>]]);
