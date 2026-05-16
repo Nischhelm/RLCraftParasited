@@ -221,10 +221,8 @@ recipes.removeByRecipeName("defiledlands:decoration/stone_defiled_bricks_stairs"
 recipes.removeByRecipeName("defiledlands:decoration/tenebra_stairs");
 
 recipes.remove(<grapplemod:block_grapple_modifier>);
-recipes.remove(<grapplemod:launcheritem>);
 recipes.remove(<grapplemod:repeller>);
 recipes.remove(<grapplemod:baseupgradeitem>);
-recipes.remove(<grapplemod:doubleupgradeitem>);
 recipes.remove(<grapplemod:doubleupgradeitem>);
 recipes.remove(<grapplemod:forcefieldupgradeitem>);
 recipes.remove(<grapplemod:magnetupgradeitem>);
@@ -234,6 +232,7 @@ recipes.remove(<grapplemod:staffupgradeitem>);
 recipes.remove(<grapplemod:swingupgradeitem>);
 recipes.remove(<grapplemod:throwupgradeitem>);
 recipes.remove(<grapplemod:limitsupgradeitem>);
+recipes.remove(<grapplemod:rocketupgradeitem>);
 recipes.remove(<grapplemod:longfallboots>);
 
 recipes.remove(<minecraft:web>);
