@@ -66,7 +66,7 @@ key_key.inventory:18
 key_key.chat:20
 key_key.playerlist:15
 key_key.pickItem:-98
-key_key.command:53
+key_key.command:0
 key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
@@ -128,16 +128,16 @@ key_key.xat.aux_key.desc:80
 key_key.xat.race_ability.desc:45
 key_key.spartanweaponry.access_quiver:23
 key_key.toastcontrol.clear:0
-key_dshuds.keybind.SelectionBox:68
+key_dshuds.keybind.SelectionBox:0
 key_dshuds.keybind.LightLevel:65
-key_dshuds.keybind.ChunkBorders:67
+key_dshuds.keybind.ChunkBorders:0
 key_key.pickup.item:0
 key_key.openatlas.desc:0
 key_key.unhook:45
 key_gui.antiqueatlas.addMarker:30
 key_gui.antiqueatlas.delMarker:32
 key_gui.antiqueatlas.hideMarkers:0
-key_gui.antiqueatlas.followPlayer:33:CONTROL
+key_gui.antiqueatlas.followPlayer:33
 key_gui.antiqueatlas.copymarker:0
 key_key.aaam.librarian:22
 key_key.astikorcarts.desc:36
@@ -167,15 +167,15 @@ key_key.reelOut:205
 key_key.boththrow.desc:-99
 key_key.leftthrow.desc:0
 key_key.rightthrow.desc:0
-key_key.motoronoff.desc:42
+key_key.motoronoff.desc:0
 key_key.jumpanddetach.desc:57
 key_key.slow.desc:42
 key_key.climb.desc:42
 key_key.climbup.desc:0
 key_key.climbdown.desc:0
-key_key.enderlaunch.desc:-100
-key_key.rocket.desc:-100
-key_key.slide.desc:42
+key_key.enderlaunch.desc:0
+key_key.rocket.desc:0
+key_key.slide.desc:0
 key_invtweaks.key.sort:0
 key_key.jeiwt.enableDisplay:56
 key_key.jeiwt.modifiedTooltip:0
@@ -197,7 +197,6 @@ key_key.voice_chat_settings:0
 key_key.voice_chat_group:0
 key_key.voice_chat_toggle_recording:0
 key_key.voice_chat_adjust_volumes:0
-key_key.xp_cost.show_enchants:56
 key_Open Skill GUI:21
 key_key.switchbow.switchup:0
 key_key.switchbow.switchdown:0
