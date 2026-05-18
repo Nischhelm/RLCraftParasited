@@ -1,6 +1,7 @@
 !configanytime-3.0
 !mixinbooter-10.7
 !mod-director-launchwrapper-1.9.1
+!Red-Core-MC-1.8-1.12-0.7.1
 `FermiumBooter-1.4.1
 AARCAddon-1.0.1
 AdHooks-1.12.2-3.3.1.0-build.0626
