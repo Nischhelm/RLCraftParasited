@@ -1,15 +1,49 @@
-fixed simplediff parasites being a buff, now a debuff
-fixed srp rage being a debuff, now a buff
-updated some mods (jeiwt, ebwiz, voicechat, crafttweaker)
-added reskillable requirements for ebwiz wands (6, 12, 18, 24)
-branding: added custom loading screen and various main menu backgrounds by iqury from 2024
-allowed feral mobs to despawn after 20 minutes (same as assimilated already)
-added direct connect link to parasited.modded.fun
-added custom game icon (nischhSkull for now)
-fixed cooldown and min/max days per phase depending on server time instead of play time
-nerfed foster effect (by colony carriers) by a lot
-gave feral endermen in the end the same treatment as simmermen before them
+--- May XX 2026 ---
 
+Featured
+    changed repair cost scaling using enchantmentcontrol
+        now 0 1 4 9 16 25 36 as opposed 
+        to  0 1 3 7 15 31 63 
+        so it is first slightly more, then from 25 onwards dramatically less
+    enabled grapplemod ender staff (magic 16, 3s cooldown. dont kill yourself)
+
+Mods
+    removed anvilpatch (now done by enchantmentcontrol)
+    removed xp cost (done by jei wt instead)
+    replaced phosphor (+crash fix) with alfheim (+red core)
+    added fluidlogged (lets hope it doesnt break)
+    updated zenutils, ebwizardry, jeiwt, voicechat, crafttweaker, phantoms
+
+Branding
+    added custom loading screen and various main menu backgrounds by iqury from 2024
+    added custom game icon (nischhSkull for now)
+    added direct connect link to parasited.modded.fun
+
+Configs
+    PotionCore
+        fixed simplediff parasites being a buff, now a debuff
+        fixed srp rage being a debuff, now a buff
+    EBWiz
+        added reskillable requirements for ebwiz wands (6, 12, 18, 24)
+        disabled flamecatcher spell (forgot that one)
+    SRP/SRPMixins
+        allowed feralized mobs to despawn after 20 minutes (same as assimilated already)
+        fixed cooldown and min/max days per phase depending on server time instead of play time
+        nerfed foster effect (by colony carriers) by a lot
+        gave feral endermen in the end the same treatment as simmermen before them
+        made parasites 3x weaker against lightning spells, and unable to adapt to fire spells
+        disabled adaptation of sentient armor to spell dmg types
+    Quark
+        disabled invalid slot rendering
+        fix crates being in shulker box preview woops
+    Various
+        reenabled colored end skies from betterend
+        disabled rlfoliage shortgrass feature (annoying)
+        disabled even more never used hotkeys
+        added 20% attack evade chance on fairies
+
+hcc
+    reenabled myrmex + myrmex stinger weapons (werent supposed to still be disabled)
 
 --- May 01 2026 ---
 
