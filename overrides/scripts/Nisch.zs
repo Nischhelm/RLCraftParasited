@@ -1,6 +1,7 @@
 import mods.inspirations.Cauldron as cauldronRecipes;
 import mods.notreepunching.Knife as knifeRecipes;
 import srpmixins.SRPSaveData;
+import crafttweaker.player.IPlayer;
 
 recipes.addShaped("nodecompass",<srparasites:nodecompass>,
  [[null,<srparasites:lurecomponent6>,null],
@@ -48,4 +49,19 @@ events.onPlayerInteract(function(event as crafttweaker.event.PlayerInteractEvent
     if(event.item.definition.id != "grapplemod:launcheritem") return;
     player.setCooldown(event.item, 60);
     event.damageItem(1);
+});
+
+events.onEntityLivingAttacked(function(event as crafttweaker.event.EntityLivingAttackedEvent){
+    if(isNull(event.damageSource)) return;
+    if(event.damageSource.isDamageUnblockable()) return;
+
+    if(isNull(event.entityLivingBase)) return;
+    if(!(event.entityLivingBase instanceof IPlayer)) return;
+    val player = event.entityLivingBase;
+
+    val race as string = native.xzeroair.trinkets.api.EntityApiHelper.getEntityRace(player);
+    if(race != "Fairy") return;
+
+    if(player.world.getRandom().nextFloat() < 0.2) 
+    event.cancel();
 });
