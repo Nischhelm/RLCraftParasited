@@ -1,4 +1,4 @@
---- May XX 2026 ---
+--- May 24 2026 ---
 
 Featured
     changed repair cost scaling using enchantmentcontrol
@@ -46,7 +46,7 @@ Configs
         added 20% attack evade chance on fairies
 
 hcc
-    reenabled myrmex + myrmex stinger weapons (werent supposed to still be disabled)
+    reenabled myrmex + myrmex stinger weapons (werent supposed to be disabled)
 
 updated hcc + omega zips, added unparasited zip
 
