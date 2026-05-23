@@ -12,7 +12,8 @@ Mods
     removed xp cost (done by jei wt instead)
     replaced phosphor (+crash fix) with alfheim (+red core)
     added fluidlogged (lets hope it doesnt break)
-    updated zenutils, ebwizardry, jeiwt, voicechat, crafttweaker, phantoms
+    updated zenutils, ebwizardry, jeiwt, voicechat, crafttweaker, phantoms, enchantmentcontrol
+    updated potioncontrol: mobs show their potion effects now
 
 Branding
     added custom loading screen and various main menu backgrounds by iqury from 2024
@@ -25,7 +26,9 @@ Configs
         fixed srp rage being a debuff, now a buff
     EBWiz
         added reskillable requirements for ebwiz wands (6, 12, 18, 24)
-        disabled flamecatcher spell (forgot that one)
+        disabled flamecatcher spell (had forgotten that one)
+        disabled some vanilla mob summon spells (zombies/skellie variants, spider, iron golem)
+        started to work on balancing skills (doesnt get loaded yet)
     SRP/SRPMixins
         allowed feralized mobs to despawn after 20 minutes (same as assimilated already)
         fixed cooldown and min/max days per phase depending on server time instead of play time
