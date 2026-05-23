@@ -48,6 +48,8 @@ Configs
 hcc
     reenabled myrmex + myrmex stinger weapons (werent supposed to still be disabled)
 
+updated hcc + omega zips, added unparasited zip
+
 --- May 01 2026 ---
 
 Added JEI Want That - highlights location of various jei-bookmarked (left side) and config defined entities, blocks etc. in the world. feels almost cheaty
