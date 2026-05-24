@@ -1,0 +1,5 @@
+recipes.addShaped(<variedcommodities:diamond_gun>, [[null, null, null],[<minecraft:log>, <minecraft:diamond>, <minecraft:diamond>], [<minecraft:log>, null, null]]);
+recipes.addShaped(<variedcommodities:golden_gun>, [[null, null, null],[<minecraft:log>, <minecraft:gold_ingot>, <minecraft:gold_ingot>], [<minecraft:log>, null, null]]);
+recipes.addShaped(<variedcommodities:iron_gun>, [[null, null, null],[<minecraft:log>, <minecraft:iron_ingot>, <minecraft:iron_ingot>], [<minecraft:log>, null, null]]);
+recipes.addShaped(<variedcommodities:musket>, [[<variedcommodities:ingot_steel>, null, null],[<iceandfire:copper_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>], [<minecraft:log>, null, null]]);
+recipes.addShaped(<variedcommodities:bullet> * 9, [[<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],[<minecraft:iron_nugget>, <minecraft:gunpowder>, <minecraft:iron_nugget>], [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>]]);

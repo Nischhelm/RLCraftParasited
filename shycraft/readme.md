@@ -1,0 +1,1 @@
+This zip is used to turn current Parasited to ShyCraft Edition

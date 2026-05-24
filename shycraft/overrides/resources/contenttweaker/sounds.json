@@ -1,0 +1,178 @@
+{
+  "rlmusic_blight": {
+    "sounds": [
+      {
+        "name": "contenttweaker:rlmusic_blight",
+        "stream": true
+      }
+    ]
+  },
+  "rlmusic_bliss": {
+    "sounds": [
+      {
+        "name": "contenttweaker:rlmusic_bliss",
+        "stream": true
+      }
+    ]
+  },
+  "la_lecon": {
+    "sounds": [
+      {
+        "name": "contenttweaker:la_lecon",
+        "stream": true
+      }
+    ]
+  },
+  "sovngarde": {
+    "sounds": [
+      {
+        "name": "contenttweaker:sovngarde",
+        "stream": true
+      }
+    ]
+  },
+  "sanctuary_village": {
+    "sounds": [
+      {
+        "name": "contenttweaker:sanctuary_village",
+        "stream": true
+      }
+    ]
+  },
+  "dragonborn": {
+    "sounds": [
+      {
+        "name": "contenttweaker:dragonborn",
+        "stream": true
+      }
+    ]
+  },
+  "far": {
+    "sounds": [
+      {
+        "name": "contenttweaker:far",
+        "stream": true
+      }
+    ]
+  },
+  "hushed": {
+    "sounds": [
+      {
+        "name": "contenttweaker:hushed",
+        "stream": true
+      }
+    ]
+  },
+  "lugia": {
+    "sounds": [
+      {
+        "name": "contenttweaker:lugia",
+        "stream": true
+      }
+    ]
+  },
+  "march": {
+    "sounds": [
+      {
+        "name": "contenttweaker:march",
+        "stream": true
+      }
+    ]
+  },
+  "spells": {
+    "sounds": [
+      {
+        "name": "contenttweaker:spells",
+        "stream": true
+      }
+    ]
+  },
+  "subwoofer": {
+    "sounds": [
+      {
+        "name": "contenttweaker:subwoofer",
+        "stream": true
+      }
+    ]
+  },
+  "sweden": {
+    "sounds": [
+      {
+        "name": "contenttweaker:sweden",
+        "stream": true
+      }
+    ]
+  },
+  "tavern": {
+    "sounds": [
+      {
+        "name": "contenttweaker:tavern",
+        "stream": true
+      }
+    ]
+  },
+  "careless": {
+    "sounds": [
+      {
+        "name": "contenttweaker:careless",
+        "stream": true
+      }
+    ]
+  },
+  "underworld": {
+    "sounds": [
+      {
+        "name": "contenttweaker:underworld",
+        "stream": true
+      }
+    ]
+  },
+  "killers": {
+    "sounds": [
+      {
+        "name": "contenttweaker:killers",
+        "stream": true
+      }
+    ]
+  },
+  "glamour": {
+    "sounds": [
+      {
+        "name": "contenttweaker:glamour",
+        "stream": true
+      }
+    ]
+  },
+  "elwynn_forest": {
+    "sounds": [
+      {
+        "name": "contenttweaker:elwynn_forest",
+        "stream": true
+      }
+    ]
+  },
+  "nightmare": {
+    "sounds": [
+      {
+        "name": "contenttweaker:nightmare",
+        "stream": true
+      }
+    ]
+  },
+  "megalovania": {
+    "sounds": [
+      {
+        "name": "contenttweaker:megalovania",
+        "stream": true
+      }
+    ]
+  },
+  "ragnaros": {
+    "sounds": [
+      {
+        "name": "contenttweaker:ragnaros",
+        "stream": true
+      }
+    ]
+  }
+}
