@@ -1,0 +1,952 @@
+[
+	{
+		"motive": "rlcraft_logo1",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 4,
+		"height": 1
+	},
+	{
+		"motive": "rlcraft_logo2",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 4,
+		"height": 1
+	},
+	{
+		"motive": "shycraft",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "campfire1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "campfire2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "castle1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "castle2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "castle3",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "chris_art",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "chris_pub",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "drunk_wizzards",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "fuinha",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "ghosty1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "ghosty2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "griipi",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "haunter",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "receptionist",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "shop",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "shy_dragon",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+    {
+		"motive": "simmerman",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "crafty_moo",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "dragon_forge",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "flying_amphis",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "shycraft_castle",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "sinister_shy",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 4
+	},
+	{
+		"motive": "simmermen",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "amalgalitch",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "creepy_minecraft",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "enderman_in_danger",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "epic_shycraft",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "epic_shycraft_2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 4
+	},
+	{
+		"motive": "ghost_screenshot",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 2
+	},
+	{
+		"motive": "house_in_danger_day",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "house_in_danger_night",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury_shennanigans_1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury_shennanigans_2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury3",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury4",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury5",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury6",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury7",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "iqury8",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "meme",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 2
+	},
+	{
+		"motive": "moo",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 3
+	},
+	{
+		"motive": "nanocow",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "neighborhood",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "ray_screenshot_1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "ray_screenshot_2",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "sim_dragon",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "twin_towers",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "garden",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "night_dragon",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "giant_crab",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 2
+	},
+	{
+		"motive": "bog",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "bog_above",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "cabin",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "city_of_origins_hall",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "city1",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "defiled",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "desert_fog",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "desert_sun",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "eagle_adventure",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "foggy_city",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "frozen",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "frozen_mountains",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "frozen_peaks",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "ship_render",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "shore",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "dragon_eye",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "epic_drawing",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "vento_doodle",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "chillin",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "shiv_rune",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "shadowman",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "wraither",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "minimal_mesa",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "found_city",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "sea_serpent_battle",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "sea_serpent",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 2
+	},
+	{
+		"motive": "beautiful_day",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 2
+	},
+	{
+		"motive": "wraamon_watches_you",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 2,
+		"height": 2
+	},
+	{
+		"motive": "defiled_lands",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 2
+	},
+	{
+		"motive": "fireandicedragons",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "seapent",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "nymph1",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "nymph2",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	},
+	{
+		"motive": "oops_all_headshots",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 2
+	},
+	{
+		"motive": "crown",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 4
+	},
+	{
+		"motive": "sea_serpent_ocean",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 2,
+		"height": 4
+	},
+	{
+		"motive": "banshee",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 3
+	},
+	{
+		"motive": "dragonborn",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 4,
+		"height": 4
+	},
+	{
+		"motive": "rlcraft_legacies",
+		"textures":
+			{
+			"side": "jsonpaintings:rlborder",
+			"back": "jsonpaintings:rlborder"
+			},
+		"width": 3,
+		"height": 4
+	},
+	{
+		"motive": "krill",
+		"textures":
+			{
+			"side": "jsonpaintings:clear",
+			"back": "jsonpaintings:clear"
+			},
+		"width": 1,
+		"height": 1
+	}
+]
