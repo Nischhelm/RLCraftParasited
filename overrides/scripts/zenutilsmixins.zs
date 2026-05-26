@@ -284,3 +284,15 @@ zenClass ChampionHelperMixin {
         return original * 1.5; // increase by 50%
     }
 }
+
+#mixin {targets: "familiarfauna.entities.EntityPixie"}
+zenClass EntityPixieMixin {  // func_70601_bi = getCanSpawnHere
+    #mixin ModifyConstant
+    #{
+    #   method: "func_70601_bi",
+    #   constant: {intValue: 90}
+    #}
+    function zenutils_modifyPixieSpawningMaxHeight(original as int) as int {
+        return 110;
+    }
+}
