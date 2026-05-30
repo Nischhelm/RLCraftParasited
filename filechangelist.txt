@@ -1,0 +1,48 @@
+3x
+    options.txt
+
+2x
+    custommainmenu
+    trinkets
+    scalinghealth
+
+hcc
+    custommainmenu - mainmenu.json
+    lyca dungeon schematics
+    lyca flower spawner
+    lyca general.cfg
+    scalinghealth main.cfg
+    sereneseasons seasons.cfg
+    spawnercontrol spawnercontrol.cfg
+    battletowers.cfg
+    fermiummixins.cfg
+    firstaid.cfg
+    globalgamerules.cfg
+    infernalmobs.cfg
+    potioncore.cfg
+    realistictorches.cfg
+    reskillable.cfg
+    somanyenchantments.cfg
+    tnt_utilities.cfg
+    options.txt
+
+omega
+    trinkets - trinkets.cfg
+    scalinghealth - main.cfg
+    levelup2.cfg
+    bountiful - rewards.json
+    corpsecomplex.cfg
+
+shycraft
+    options.txt
+    trinkets - trinkets.cfg
+    scripts - craftingRecipes.zs
+    reccomplex.cfg
+    VariedCommodities.cfg
+    antiqueatlas - atlas_overlay.cfg
+
+unparasited
+    custommainmenu - mainmenu.json
+    overlast - overlast.cfg
+    srparasites - srp/srpsystems .cfg
+    rltweaker.cfg
