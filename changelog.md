@@ -4,11 +4,12 @@ nerf infernals, now +20% health per modifier, was +100%
 update fermiummixins
 update socketed, hopefully fixes multiplayer random kicks due to CME
 moved around GUI elements (ebwiz spell, potion display, default disabled togglesneak, hcc difficulty meter)
-started to tweak spells, started with heal spells, WIP changes might not make it
+started to tweak spells, started with heal spells (WIP, changes might not make it). also added default properties for all spells
 added shycraft override folder to create shycraft from current parasited. will see if i can keep it up to date
 allowed pixies to spawn 20 blocks higher (max 110) so they can spawn in some parts of cherry groves
 reduced blood anvil cost from 100 to 80 (did you know theres been a craft)
 add reskillable req for blood anvil (building 24)
+updated enchantmentcontrol: fix upg pot issue and underline first enchant of multi enchant itemstacks (not ench books, is that needed?)
 
 --- May 24 2026 ---
 
