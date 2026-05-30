@@ -1,8 +1,8 @@
 3x
     options.txt
+    custommainmenu
 
 2x
-    custommainmenu
     trinkets
     scalinghealth
 
@@ -35,11 +35,13 @@ omega
 
 shycraft
     options.txt
+    custommainmenu - mainmenu.json
     trinkets - trinkets.cfg
     scripts - craftingRecipes.zs
     reccomplex.cfg
     VariedCommodities.cfg
-    antiqueatlas - atlas_overlay.cfg
+    paintings/paintings.json
+    resources/contenttweaker/sounds.json
 
 unparasited
     custommainmenu - mainmenu.json
