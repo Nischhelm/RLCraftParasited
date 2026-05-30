@@ -108,7 +108,7 @@ GooglyEyes-1.12.2-7.1.1
 grapplemod-1.12.2-v12.3
 HelpFixer-1.12.1-1.5.18
 I Hate Ghost Blocks-1.0.0
-Ice And Fire-2.2.6-MyrmexAiFix
+Ice And Fire-2.2.8-MyrmexAiFix
 iChunUtil-1.12.2-7.2.2
 incontrol-1.12-3.9.18
 InfernalMobs-1.12.2
