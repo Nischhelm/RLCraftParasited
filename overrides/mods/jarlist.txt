@@ -149,6 +149,7 @@ Neat 1.4-17
 Nether-API-v1.4.2-mc1.12.2
 NoiseThreader-1.1.3
 notreepunching-2.0.21
+oauth-1.06.4
 OceanicExpanse-1.2.2
 OptifineCITPatch-1.0.5
 OreLib-1.12.2-3.6.0.1
