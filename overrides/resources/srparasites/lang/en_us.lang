@@ -5,3 +5,156 @@ tile.srparasites.evolutionlure_ten.name=Lure (§3Pure§f)
 
 # From Localizator
 message.srparasites.node_warning=Corruption Spreads
+
+# From SRP 1.10.6 for Lycanites Bestiary
+#INBORN
+lore.srparasites.buglin=§lEpithet:§r Lodo §l|§r §oRoughly the size of a basketball, this grub-like mass is formed from unstable flesh that bends and compresses in ways it should not, often appearing moments from rupturing. It carries a sharp metallic stench, and its substance tastes sour and aggressively acidic. Sixteen small hook-like claws, each about an inch long, line its underside and allow it to crawl across terrain or force itself into and out of living prey. It possesses no visible orifices, its body sealed like a malformed catalyst. Despite its flexibility, the Buglin is fragile under extreme pressure, rupturing instantly beneath the weight of an iron golem. Often found emerging from parasite tunnels.
+lore.srparasites.rupter=§lEpithet:§r Mudo §l|§r §oRupters operate in packs, using speed and numbers to split formations and harass isolated targets. When alone they are initially docile, though this behavior is subject to rapid change. Their musculature and tendons are folded into a dense, tesseract-like arrangement, while internal organs sprawl through the body like root systems with no clear structure. They weigh roughly the same as a cannonball and are capable of long, fast jumps, as well as climbing sheer surfaces, though they lack the dexterity to hang from ceilings that well. Tendrils twinge outward when agitated, gripping and boring into targets. Rupters frequently tear through cattle and smaller creatures, often killing them unintentionally. Solid matter is dissolved within the stomach and regurgitated back onto or into victims in small indistinguishable traces to efficiently transmit COTH without much retaliation. Their organs can be harvested, dried, and processed into a durable fiber-like material. Limbs may be torn free from the body similar to a spider; it remains unknown whether lost limbs can regenerate.
+lore.srparasites.mangler=§lEpithet:§r Nuuh §l|§r §oA close-quarters brute derived from Rupters, grown specifically for larger prey such as cattle, horses, and llamas. It weighs roughly the same as a large dog and is built for endurance and sustained force rather than speed. While bulkier in form, it retains the transmissible capabilities of its predecessors. The metallic scent present in Rupters is significantly stronger, often detectable before visual contact.
+lore.srparasites.carrier_flying=§lEpithet:§r Buthol §l|§r §oAn airborne infestation vector that hovers over active infestation zones. Three external bulbous growths hang blow the body, each containing a separate chemical component. When agitated, the compounds are forcibly mixed within the bulbs, causing rapid inflation before the body ruptures outward. Upon exposure to open air, the released mixture converts into a highly toxic, gas-like substance. The creature emits an odor similar to industrial chemical waste. Its surface is lined with fine hypodermic pricks and needle-like protrusions that damage nearby matter during detonation. The resulting compound rapidly melts exposed skin. Fire engulfment appears to destabilize and partially defuse the reaction.
+lore.srparasites.carrier_heavy=§lEpithet:§r Rathol §l|§r §oA heavy carrier designed to spread dense payloads of filth, toxins, and supporting parasites. The body is fully sealed, displaying no visible orifices, and functions primarily as a pressure vessel for stored noxious gas. Specimens may form empty of living mass yet remain filled with volatile chemical mixtures. Within its compartmental structure, several partially digested parasites remain suspended and mobile, swimming through the slurry. Prior to detonation, the organism dissolves its own internal organs and structural barriers, rapidly building internal pressure before rupturing. It reacts strongly to vibrations and emits an odor comparable to spoiled cooked meat sealed in a warm container. Fire engulfment appears to destabilize and partially defuse the reaction.
+lore.srparasites.carrier_light=§lEpithet:§r Gothol §l|§r §oA nimble carrier adapted for rapid strikes and short-range seeding. Its body is composed of hundreds of small compartments filled with a volatile slurry chemically bound to its vital functions. Internal organs are densely centralized, forming a firm core similar in structure to the center of a blackberry. Despite its instability, the organism is capable of maintaining balance independently and reacts aggressively to vibrations in its surroundings. It emits an odor comparable to spoiled cooked meat sealed in a warm container. Detonation leaves widespread residue. Fire engulfment appears to destabilize and partially defuse the reaction.
+lore.srparasites.gnat=§lEpithet:§r Ata §l|§r §oA small parasitic that uses its tentacles as rotating drill-heads to bore into hosts, allowing it to hijack and control both organic and inorganic entities. Individually weak, its appendages are exceptionally sharp and capable of chewing through dense material and resilient prey. A bulbous growth along its back dissolves or violently ruptures once embedded within a host, accelerating internal damage and takeover. It is heavily attracted to the scent of blood, to the point where it can be deliberately used as a distraction. The organism lacks any form of hearing and relies entirely on scent to navigate. Specimens are often coated in a slick, lubricant-like mucus, a residue from being secreted out of vermin.
+lore.srparasites.lice=§lEpithet:§r Viin §l|§r §oA highly erratic parasitic that uses its tentacles as rotating drill-heads to burrow into hosts, hijacking and controlling both organic and inorganic entities. Its abdomen is grossly inflated and lined with multiple bulbous growths that serve as both fuel and explosive charges, allowing it to force attachment and penetrate resistant targets. Movement is unpredictable to the point of inefficiency, making it difficult to track or swat. The organism is strongly attracted to the scent of sweat and blood and produces a faint humming noise when in close proximity.
+
+#ASSIMILATED
+lore.srparasites.sim_adventurer=§lEpithet:§r Sim §l|§r §oObserved traveling in loose groups, but once enough gather, they begin to match pace. They still check containers, doorways, and camp-like structures, as if memory survives in fragments. Occasionally, one will stop and stare into familiar spaces for several seconds, as though trying to remember what it once was. They appear to like assimilated dogs. I guess some things never change.
+lore.srparasites.sim_bear=§lEpithet:§r Sim §l|§r §oIts body has been preserved for force rather than speed. Specimens do not posture or bluff-charge like healthy bears; once agitated, they commit fully. Trees, barricades, and even damaged walls are treated as inconveniences by this thing. I observed one of them chewing the flesh from its own body once, as if to satiate an itch.
+lore.srparasites.sim_bigspider=§lEpithet:§r Dorpa §l|§r §oThis one produces excessive webbing mixed with foul organic runoff. Trails left behind often remain contaminated long after the host has passed. Its movements are strangely deliberate, as if it is less interested in pursuit and more concerned with spreading material across as much ground as possible. This one has a discernible temper, and I once witnessed it relentlessly stab holes into a pig with its legs, like a horse trampling a mound of flesh. I can only assume it did this because the prey was loud; it did not bother infesting it. Perhaps it was just food for fodder parasites?
+lore.srparasites.sim_cow=§lEpithet:§r Sim §l|§r §oStill reacts to the presence of feed and familiar sounds from husbandry, though only briefly. Once engaged, it lowers its head and drives forward with enough force to crush fencing or break bone. The contrast between its farm-bred mannerisms and sudden violence is deeply unsettling. It keeps wailing and crying whenever the sun rises. I don't know why.
+lore.srparasites.sim_dragone=§lEpithet:§r Sim §l|§r §oFlight appears difficult for its body, suggesting severe anatomical compromise. Even so, it remains highly lethal during descent and close approach. It seems to compensate for its failing body with distance and flight. Armor recovered from corpses often shows tearing and melted patterns, consistent with dipping tin foil in acid rather than clean predation. It does not seem acclimated to its body yet, as evidenced by it repeatedly thrashing its skull against the obsidian pillars of the End like a mace.
+lore.srparasites.sim_enderman=§lEpithet:§r Sim §l|§r §oDisplays unstable teleportation behavior and little concern for its own condition. When set ablaze, it does not retreat as expected and may instead continue advancing, igniting anything nearby in the process. It shows no sign of preserving itself and will throw itself into water despite its seemingly toxic nature. This suggests pain response has either been dulled or rendered irrelevant. Its beheaded variant doesn't seem to be affected by water for some reason, though.
+lore.srparasites.sim_horse=§lEpithet:§r Sim §l|§r §oThe abdomen is swollen with pressurized putrid matter, making even minor trauma hazardous. It startles easily under force, heat, or sudden rupture and may detonate before full collapse. Despite this instability, it can still close distance quickly. I've seen it thrash and cry like a living horse moments before detonation.
+lore.srparasites.sim_human=§lEpithet:§r Sim §l|§r §oRetains more recognizable behavior than most infected stock. Some specimens hesitate at doorways, look toward voices, or recoil from sudden heat before resuming attack. These reactions imply awareness has not been fully erased. They are difficult to study for long, as their movements often resemble panic as much as hostility. I can't discern what emotions they might be exhibiting.
+lore.srparasites.sim_pig=§lEpithet:§r Sim §l|§r §oAt a distance, it can still pass for an ordinary animal, especially when idle. Closer observation reveals constant chewing motions and abrupt changes in focus. It roots through organic waste, remains, and contaminated growth with equal interest. Very little of the original temperament appears intact, other than its impressive intelligence. I've seen it mindlessly roll around in the dirt and dig up carrots, but they just fall out of its maw, seemingly unwilling to commit to fully consuming them.
+lore.srparasites.sim_sheep=§lEpithet:§r Sim §l|§r §oIts crying is among the worst sounds recorded from infected livestock. The vocalization resembles an ordinary bleat, but prolonged listening reveals a strained, wet quality unlike anything natural. Nearby specimens sometimes grow more active when it cries. Whether this is communication or simple agitation is still unknown. I've noticed they can be dyed in a few select colors. Why anyone would want to do that, I don't know.
+lore.srparasites.sim_squid=§lEpithet:§r Sim §l|§r §oMoves through water with an almost passive grace, shedding rot, debris, and infectious matter as it drifts. Areas it frequents become visibly fouled over time. It shows little urgency when approached. The surrounding current often carries pieces of it farther than the body travels. I can't tell which end is its mouth. Maybe it has two.
+lore.srparasites.sim_villager=§lEpithet:§r Sim §l|§r §oStill turns its head toward movement with the same curious rhythm seen in normal villagers. Some have been observed lingering near doors, workstations, and former gathering places. The resemblance ends the moment one closes distance. Whatever social instinct remains has been hollowed out and repurposed into a grotesque imitation. I've seen one that did not approach in open aggression, though it looked nothing like a villager. Six legs, long hair, and an odd 'face'. Something tall and pulsing runs along the back of its neck. I once watched it place something strange into the hands of another thing nearby, as though carrying out some sort of exchange. I feel like it's trying to say something, but I can't make sense of its hollow noises. Not yet, anyway.
+lore.srparasites.sim_wolf=§lEpithet:§r Sim §l|§r §oResponds quickly to movement and rarely attacks without testing distance first. Multiple specimens will begin circling behavior even when no clear pack leader is present, implying the old instinct survives in broken form. Maybe it's chasing its own tail? Bites are fast, repetitive, and often aimed low, toward ankles. I've seen some with collars still strapped around their necks, and they react oddly when their former names, printed on their collars, are called out.
+
+#DETACHED HEADS
+lore.srparasites.sim_cowhead=§lEpithet:§r Desim §l|§r §oA decapitated host animated by crawling sinew. It smells like stomach acid and beef. Will seek to reunite with any pile of meat to hijack.
+lore.srparasites.sim_dragonehead=§lEpithet:§r Desim §l|§r §oAncient bone and teeth driven by fresh hunger. Still can use its rancid breath somehow.
+lore.srparasites.sim_endermanhead=§lEpithet:§r Desim §l|§r §oStill looks... still finds. Still works. Still annoying. Can only carry the things of a similar size.
+lore.srparasites.sim_horsehead=§lEpithet:§r Desim §l|§r §oGallops on rotten skin-covered tendrils where legs once were. Will seek to reunite with any pile of meat to hijack.
+lore.srparasites.sim_humanhead=§lEpithet:§r Desim §l|§r §oIts hollow sockets hold enough shape to form a gaze. Will seek to reunite with any pile of meat to hijack.
+lore.srparasites.sim_pighead=§lEpithet:§r Desim §l|§r §oSnuffling mass tethered by cords of meat. It still oinks. Will seek to reunite with any pile of meat to hijack.
+lore.srparasites.sim_sheephead=§lEpithet:§r Desim §l|§r §oWool matted with living threads. Will seek to reunite with any pile of meat to hijack.
+lore.srparasites.sim_villagerhead=§lEpithet:§r Desim §l|§r §oMutters in a voice that isn't language. Will seek to reunite with any pile of meat to hijack.
+lore.srparasites.sim_wolfhead=§lEpithet:§r Desim §l|§r §oThinking is optional. Will seek to reunite with any pile of meat to hijack.
+
+#FERAL
+lore.srparasites.fer_bear=§lEpithet:§r Fer §l|§r §oUnleashes unstoppable fury, rending prey. As if converted bear wasn't enough.
+lore.srparasites.fer_cow=§lEpithet:§r Fer §l|§r §oA lumbering vessel of meat and muscle, driven by endless hunger. The one who denies all.
+lore.srparasites.fer_enderman=§lEpithet:§r Fer §l|§r §oStalks silently, warping through space with feral precision. Can ferry larger things and is not deterred by any water at all. Rage eternal.
+lore.srparasites.fer_horse=§lEpithet:§r Fer §l|§r §oGallops with reckless speed, trampling the fallen in its path.
+lore.srparasites.fer_human=§lEpithet:§r Fer §l|§r §oHuman form stripped of reason and skin.
+lore.srparasites.fer_pig=§lEpithet:§r Fer §l|§r §oA grotesque feeder, squealing with hunger.
+lore.srparasites.fer_sheep=§lEpithet:§r Fer §l|§r §oA maw in fleece.
+lore.srparasites.fer_villager=§lEpithet:§r Fer §l|§r §oCommunity instincts perverted.
+lore.srparasites.fer_wolf=§lEpithet:§r Fer §l|§r §oAlpha predator; a relentless hunter.
+
+# CRUDE
+lore.srparasites.crux=§lEpithet:§r Cruxa §l|§r §oFramework of a brutish, selfless creature still knitting itself together. Its rage deepens with every corpse it leaves behind. I have seen it hurl its own comrades at fleeing prey, with little care for whether the impact kills them. Under immense strain, its body secretes a strange boiling orange substance, and when driven to great speed, steam rises from it as though the whole frame is on the verge of catching fire. I cannot imagine the force required to keep such a body in motion.
+lore.srparasites.crux_incomplete=§lEpithet:§r Cruxa §l|§r §oAn outline of awkwardly knitted teeth. What remains is little more than a charred, half-formed frame, buying time and flesh until the fuller body forces its way through. It often settles in shallow creeks and streams to cool itself, as though the water hastens the mending of its crude, misshapen, chrysalis-like body.
+lore.srparasites.heed=§lEpithet:§r Heed §l|§r §oFive-headed scout borne on an ant-like frame, with a maw set sideways across the face. It does little leading of its own, instead carrying signals forward and stirring the hunt where resistance is found. I have seen it engage in trophallaxis with smaller, needier parasites.
+lore.srparasites.host=§lEpithet:§r Host §l|§r §oIt is often said that earthquakes foretell doom. Much of it remains buried, with only otherworldly groans and the stirring ground above betraying where the rest has gone. Corpses are rendered down into a strange black, tar-like matter that binds through its frame and keeps the greater body pliant. Each tentacle ends in a hollow opening put to many uses, from mending torn flesh to feeding from the fallen.
+lore.srparasites.hostii=§lEpithet:§r Hostii §l|§r §oThe herd moves beneath soft and jagged ground as though its body can yield to every sharp crevice in the tainted soil. What was once a buried carrier has swollen into a heavier colony-form, casting out engorged bombs in quick bursts, each one packed with unknown venom and disease. Beneath the noise of its passing, there are often repeated mutterings that suggest some low, collective intelligence, though nothing in them has yet proven understandable.
+lore.srparasites.incompleteform_medium=§lEpithet:§r Inhoo §l|§r §oHalf-shaped, wholly lethal. The sort of thing one expects to find scraping at the walls of a body, not running loose without one.
+lore.srparasites.incompleteform_small=§lEpithet:§r Inhoo §l|§r §oSmall frame, fast cuts. Light in the arms and ugly on impact, like catching a sack filled with teeth. Smells abhorrent and is best taken care of quickly.
+lore.srparasites.thrall=§lEpithet:§r Mes §l|§r §oObedience made flesh. Its body hangs together like a butchered thing forced back upright, with dark trailing filaments lashing behind it like severed reins. They are often found near places once crowded with life, kneading and worrying at the objects of vanished routine. The feet have warped into hard, hoof-like stumps, and the face has drawn into a melted expression too ruined to call human, yet still recognizably trying.
+lore.srparasites.dredge=§lEpithet:§r Done §l|§r §oMeasured violence. Beneath an otherworldly executioner's skull, the body closes in deliberate loops, testing ribs, throat, and spine with the calm precision of something that already knows where the human frame and spirit gives first. The tail binds and strangles, starves the body of air, and leaves the victim reeling with a violent loss of coordination long before death. Its victims are left in a state resembling '§4ataxia telangiectasia§o§0', §obut accelerated into something cruelly immediate. The struggle is prolonged with too much care to be accidental. No other parasite of this tier appears so invested in keeping prey conscious through the worst of it. Whether it feeds on the chemicals of panic or on the memories shaken loose by suffering, I cannot yet say.
+lore.srparasites.airscrew=§lEpithet:§r Leer §l|§r §oIts proboscis yields enough strength to lift a van with ease. The sac above its body keeps it hanging like a spoiled calamari, likely filled with a volatile low-density gas produced in excess by its own tissues and held under enough pressure to offset the creature's weight. The mouth beneath gives off concentrated COTH in wet, choking drafts. Prey caught in its webbed projectiles is drawn upward and worked against the hooked underside of its dislocated maw with similar rhythm one might use to strip meat from bone. More than once, I have seen two or more fight over the same catch, pulling with such blind force that the victim came apart between them. Those that survive the feeding do not always remain whole in mind; the turned variants are sometimes discarded afterward and left to tumble to their deaths.
+
+#ASSIMARA
+lore.srparasites.mar_bear=§lEpithet:§r Mar §l|§r §oNothing about its body makes sense. A colony of spiders nests inside.
+lore.srparasites.mar_cow=§lEpithet:§r Mar §l|§r §oNothing about its body makes sense. Its internal chamber works ceaselessly.
+lore.srparasites.mar_enderman=§lEpithet:§r Mar §l|§r §oNothing about its body makes sense. Twisted beyond recognition.
+lore.srparasites.mar_human=§lEpithet:§r Mar §l|§r §oNothing about its body makes sense. Irritatingly disruptive.
+lore.srparasites.mar_sheep=§lEpithet:§r Mar §l|§r §oNothing about its body makes sense. A tall vigil.
+lore.srparasites.mar_villager=§lEpithet:§r Mar §l|§r §oNothing about its body makes sense. The face of the oblivion.
+
+#HIJACKED
+lore.srparasites.hi_blaze=§lEpithet:§r Hi §l|§r §oThe impossible has happened.
+lore.srparasites.hi_skeleton=§lEpithet:§r Hi §l|§r §oA frame for something to stand on.
+lore.srparasites.hi_golem=§lEpithet:§r Hi §l|§r §oFrom protector to oppressor.
+
+#PRIMITIVE
+lore.srparasites.pri_arachnida=§lEpithet:§r Ranrac §l|§r §oCrude eight-legged horror, precursor to greater forms.
+lore.srparasites.pri_bolster=§lEpithet:§r Bano e'Zetmo §l|§r §oBulky frame, primitive yet resilient.
+lore.srparasites.pri_devourer=§lEpithet:§r Lum §l|§r §oGuided only by hunger and the scent of blood in water.
+lore.srparasites.pri_longarms=§lEpithet:§r Shyco §l|§r §oGrasping limbs lunge far, though clumsy compared to later forms.
+lore.srparasites.pri_manducater=§lEpithet:§r Hull §l|§r §oGrinding jaws that never cease. Stays out of the eyesight.
+lore.srparasites.pri_reeker=§lEpithet:§r Nogla §l|§r §oIt smells awful. Charges headfast.
+lore.srparasites.pri_summoner=§lEpithet:§r Canra §l|§r §oCalls lesser spawn in erratic bursts. Re-sews what was slain out of leftovers.
+lore.srparasites.pri_tozoon=§lEpithet:§r Wymo §l|§r §oEarthquakes are a sign.
+lore.srparasites.pri_yelloweye=§lEpithet:§r Emana §l|§r §oPonytails of sinew and bone. Its caustic bile is anathema to armor.
+lore.srparasites.pri_vermin=§lEpithet:§r Iki §l|§r §oIt's a weather balloon. Its contents are even worse.
+lore.srparasites.pri_burrower=§lEpithet:§r Zaa §l|§r §oInstinctively digs, carving out nests for others.
+lore.srparasites.pri_viscera=§lEpithet:§r Gim §l|§r §oRaw flesh given crude mobility.
+
+#ADAPTED
+lore.srparasites.ada_burrower=§lEpithet:§r Zaa §l|§r §oEfficient tunneler, opening controlled paths.
+lore.srparasites.ada_viscera=§lEpithet:§r Gim §l|§r §oLooks like a Nautilidae. Others treat it like mother.
+lore.srparasites.ada_devourer=§lEpithet:§r Lum §l|§r §oA scavenging harpoon. A damnation of the seas.
+lore.srparasites.ada_tozoon=§lEpithet:§r Wymo §l|§r §oWormy.
+lore.srparasites.ada_arachnida=§lEpithet:§r Ranrac §l|§r §oRefined hunter, webs and strikes with precision.
+lore.srparasites.ada_bolster=§lEpithet:§r Bano e'Zetmo §l|§r §oAdapted bulk, built to shield and support.
+lore.srparasites.ada_longarms=§lEpithet:§r Shyco §l|§r §oLimbs elongated with accuracy, no wasted motion. Surrender, or don't. It is fine with either.
+lore.srparasites.ada_manducater=§lEpithet:§r Hull §l|§r §oJaw structure perfected for maximum tissue yield. Nobody sees it coming.
+lore.srparasites.ada_reeker=§lEpithet:§r Nogla §l|§r §oBuilt for charging long distances. Move fast or die slow.
+lore.srparasites.ada_summoner=§lEpithet:§r Canra §l|§r §oSummons spawn from the remains of other parasites.
+lore.srparasites.ada_yelloweye=§lEpithet:§r Emana §l|§r §oHatsune Miku or Kasane Teto. High acidic harzard.
+lore.srparasites.ada_vermin=§lEpithet:§r Iki §l|§r §oIt can unhinge its body to twice its width and has the jaw strength to crush steel with ease.
+
+
+#DETERRENT
+lore.srparasites.dispatcherten=§lEpithet:§r DodT §l|§r §oA barbed conduit for orders.
+lore.srparasites.kyphosis=§lEpithet:§r Tonro §l|§r §oHunched mass that coiled sinew uses as a living shield and battering ram.
+lore.srparasites.seizer=§lEpithet:§r Nak §l|§r §oGrabs and pins. Struggling makes it angrier.
+lore.srparasites.sentry=§lEpithet:§r Unvo §l|§r §oTheir projectiles melt through bone and steel alike.
+lore.srparasites.worm=§lEpithet:§r Rof §l|§r §oComing into contact with such a creature is difficult. How did you manage that?
+
+#PURE
+lore.srparasites.grunt=§lEpithet:§r Flog §l|§r §oNothing wasted, nothing spared; advances until one of you stops. A "grunt" to the larger ones out there.
+lore.srparasites.bomber_light=§lEpithet:§r Omboo §l|§r §oHollow frame packed with volatile tissue.
+lore.srparasites.marauder=§lEpithet:§r Esor §l|§r §oCarver of corridors through living lines; momentum is its favorite weapon.
+lore.srparasites.monarch=§lEpithet:§r Orch §l|§r §oCommands lesser forms by impulse alone; the swarm kneels without thought.
+lore.srparasites.overseer=§lEpithet:§r Alafha §l|§r §oAn auditor of authority.
+lore.srparasites.vigilante=§lEpithet:§r Anged §l|§r §oHunts outliers and stragglers. It is a good job, mate.
+lore.srparasites.warden=§lEpithet:§r Ganro §l|§r §oBulwark organism. Holds its authority and ground like a tumor.
+
+#PREEMINENT
+lore.srparasites.bogle=§lEpithet:§r Lencia §l|§r §oHow does it fly? Regardless of that, only  deep blast craters remain.
+lore.srparasites.carrier_colony=§lEpithet:§r Vesta §l|§r §oA city of mouths and holes travelling on too many legs. It appears to link and coordinate nearby units, and make them adapt faster and together.
+lore.srparasites.haunter=§lEpithet:§r Pheon §l|§r §oA presence felt before seen.
+lore.srparasites.bomber_heavy=§lEpithet:§r Jinjo §l|§r §oA walking verdict when it arrives, the area is rewritten. Where have I seen this before?
+lore.srparasites.wraith=§lEpithet:§r Elvia §l|§r §oHalf-anchored to flesh, half to nightmare; passes where walls do not. Fires a headache of a projectile.
+lore.srparasites.succor=§lEpithet:§r Flam §l|§r §oLittle guy.
+
+#ANCIENT
+lore.srparasites.anc_dreadnaut=§lEpithet:§r Oronco §l|§r §oNULL EXISTENCE
+lore.srparasites.anc_overlord=§lEpithet:§r Terla §l|§r §oNULL EXISTENCE
+
+#NEXUS
+lore.srparasites.beckon_si=§lEpithet:§r Venkrol §l|§r §oSeed structure that calls parasites like moths to a wound.
+lore.srparasites.beckon_sii=§lEpithet:§r Venkrol §l|§r §oThe call grows louder; the ground learns to answer back.
+lore.srparasites.beckon_siii=§lEpithet:§r Venkrol §l|§r §oBeacon and birthing room; the air tastes like copper and is thick like mud.
+lore.srparasites.beckon_siv=§lEpithet:§r Venkrol §l|§r §oAn address for the hive. Everything nearby is now an entrance, exit, and void.
+lore.srparasites.dispatcher_si=§lEpithet:§r Dod §l|§r §oFirst dispatcher; signals, orders, and others in tidy loops.
+lore.srparasites.dispatcher_sii=§lEpithet:§r Dod §l|§r §oChannels widen; traffic of limbs and messages never ceases.
+lore.srparasites.dispatcher_siii=§lEpithet:§r Dod §l|§r §oLogistics perfected and reinforcements arrive before you finish bleeding.
+lore.srparasites.dispatcher_siv=§lEpithet:§r Dod §l|§r §oThe hub and the highway; strike it down or watch a living continent converge.
+lore.srparasites.rooter_si=§lEpithet:§r Leem §l|§r §oSeeded structure meant for enduring the pain of other parasites in it's place.
+lore.srparasites.rooter_sii=§lEpithet:§r Leem §l|§r §oSeeded structure meant for enduring the pain of other parasites in it's place.
+lore.srparasites.rooter_siii=§lEpithet:§r Leem §l|§r §oSeeded structure meant for enduring the pain of other parasites in it's place.
+lore.srparasites.rooter_siv=§lEpithet:§r Leem §l|§r §oSeeded structure meant for enduring the pain of other parasites in it's place.
+lore.srparasites.rooterball=§lEpithet:§r Leem §l|§r §oSeeded structure meant for enduring the pain of other parasites in it's place.
+
+#ABOMINATION
+lore.srparasites.abo_bodies=§lEpithet:§r Abo §l|§r §oConglomerate of conscious creatures mashed together from some unknown cause. Resembles that of a siphonophore.
+lore.srparasites.abo_head=§lEpithet:§r Abo §l|§r §oConglomerate of conscious creatures mashed together from some unknown cause. Resembles that of a siphonophore shaped like a head.
+
+#DETERRENT
+lore.srparasites.draconite=§lEpithet:§r Heblu §l|§r §oIt is perpetually caked in ash, burning from the inside out. Its chest and stomach function as a toxic hellforge, cycling extreme heat and corrosive byproducts through its body and the surrounding air. The process melts its own flesh as it runs, rupturing weak points and punching holes clean through its frame. Layers of skin continually char, split, and peel away, giving it a pale, ashy-white appearance. Evidence suggests it was formed from something sealed deep within netherrack, only recently forced back into existence. The growth was so violent and rapid that it shed itself faster than its body could stabilize- its head tearing free from the base of its neck during formation, leaving behind a blunt, stump-like structure. The internal combustion of its core sounds as if a freight train is carrying me through the deepest pits of hell.
+lore.srparasites.kirin=§lEpithet:§r Kirin §l|§r §oKirin exists in a constant state of structural failure. Its body is perpetually on the verge of tearing itself apart, which explains its bruised, bloodied exterior and unstable movements. Large cavities line each of its hollow arm structures, acting as vents for excess heat and bursts of cosmic radiation generated internally. These openings along their body act as vents or outlets- without them, the entity would likely detonate. The strain placed on its form causes Kirin to molt daily. Each projection it manifests further destabilizes its body, forcing layers of damaged tissue to be shed and replaced at an alarming rate. The creature shows no signs of self-preservation. It has not yet failed completely. Else I would be dead.
