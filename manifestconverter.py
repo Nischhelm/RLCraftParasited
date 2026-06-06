@@ -42,11 +42,10 @@ def main():
         data = json.load(f)
 
     for entry in data["files"]:
-        if entry["fileName"] == None:
-            entry["fileName"] = get_filename(
-                entry["projectID"],
-                entry["fileID"]
-            )
+        entry["fileName"] = get_filename(
+            entry["projectID"],
+            entry["fileID"]
+        )
 
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=None)
