@@ -68,7 +68,7 @@ disenchanter[1.12]1.8
 distinctdamagedescriptions-1.9.8
 distinctsocketdescriptions-indev
 dldungeonsjbg-1.14.14-MC1.12.2
-DramaticTrees-1.12.2-0.13.4
+DramaticTrees-1.12.2-0.13.6
 DynamicSurroundings-1.12.2-3.6.2.1
 DynamicSurroundingsHuds-1.12.2-3.6.0.0
 dynamictreesdefiledlands-1.12.2-1.0.0
@@ -144,7 +144,7 @@ MouseTweaks-2.10.1-mc1.12.2
 MTLib-3.0.7
 MultiMine-1.12.2
 Neat 1.4-17
-Nether-API-v1.4.2-mc1.12.2
+Nether-API-v1.4.5-mc1.12.2
 NoiseThreader-1.1.3
 notreepunching-2.0.21
 oauth-1.06.4
@@ -234,4 +234,4 @@ WornHorseshoes-1.1.1.1
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-zenutils-1.27.1
+zenutils-1.27.2
