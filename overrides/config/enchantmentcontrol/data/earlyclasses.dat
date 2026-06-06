@@ -1,5 +1,6 @@
 !! This file is used by EnchantmentControl internally and automatically. Not a config !!
 com.shultrea.rin.enchantments.armor.protection.EnchantmentAdvancedFireProtection
+com.shultrea.rin.enchantments.EnchantmentUpgradedPotentials
 com.shultrea.rin.enchantments.armor.EnchantmentMagmaWalker
 ald
 alc
@@ -12,6 +13,7 @@ alj
 ali
 svenhjol.charm.enchanting.enchantment.EnchantmentSalvage
 alp
+com.shultrea.rin.enchantments.weapon.damage.EnchantmentButchering
 alr
 alq
 alt
