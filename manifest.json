@@ -173,7 +173,7 @@
     {"projectID": 407190, "fileID": 4448655, "required": true, "fileName": "BetterTabs-1.0.4"},
     {"projectID": 408853, "fileID": 5337217, "required": true, "fileName": "particleculling-1.12.2-v1.4.3"},
     {"projectID": 409087, "fileID": 6215595, "required": true, "fileName": "EntityCulling-1.12.2-6.5.0"},
-    {"projectID": 416089, "fileID": 8037585, "required": true, "fileName": "voicechat-forge-1.12.2-2.6.17"},
+    {"projectID": 416089, "fileID": 8158447, "required": true, "fileName": "voicechat-forge-1.12.2-2.6.18"},
     {"projectID": 419286, "fileID": 7049694, "required": true, "fileName": "!mixinbooter-10.7"},
     {"projectID": 423758, "fileID": 4448659, "required": true, "fileName": "BQTweaker-1.3.5"},
     {"projectID": 427597, "fileID": 3136255, "required": true, "fileName": "dynamictreesdefiledlands-1.12.2-1.0.0"},
