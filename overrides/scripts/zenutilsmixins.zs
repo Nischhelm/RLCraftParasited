@@ -302,9 +302,8 @@ zenClass BackpackDataItemsMixin {  // func_70601_bi = getCanSpawnHere
     #mixin ModifyExpressionValue
     #{
     #   method: "getItems(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraftforge/items/ItemStackHandler;",
-    #   at: {value: "FIELD", target: "Lnet/mcft/copy/backpacks/misc/BackpackDataItems;_lootTable:Ljava/lang/String;", ordinal = 0}
+    #   at: {value: "FIELD", target: "Lnet/mcft/copy/backpacks/misc/BackpackDataItems;_lootTable:Ljava/lang/String;", ordinal: 0}
     #}
-    #mixin Local{argsOnly:true}
     function zenutils_fixRareBackpackCrash(original as string, world as native.net.minecraft.world.World, player as native.net.minecraft.entity.player.EntityPlayer) as string {
         if(isNull(world))
             return null; //fix indev in https://github.com/fonnymunkey/WearableBackpacksRLCraft/pull/5
