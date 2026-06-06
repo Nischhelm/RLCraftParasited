@@ -4,14 +4,16 @@ Config changes
     add reskillable req for blood anvil (building 24)
     reduced blood anvil repair cost from 100 to 80 (did you know theres been a crafting recipe)
     nerf infernals, now +20% health per modifier, was +100%
-    moved around GUI elements (ebwiz spell, potion display, default disabled togglesneak, hcc difficulty meter)
+    moved around GUI elements to make the gui look better (ebwiz spell, xat mana bar, potion display, default disabled togglesneak, hcc difficulty meter)
     started to tweak spells, started with heal spells (WIP, changes might not make it). also added default properties for all spells
     zenutilsmixin: allowed pixies to spawn 20 blocks higher (max 110) so they can spawn in some parts of cherry groves
     ebwiz summons are coth immune, wizards turn to witch/evoker
     removed various fully unused configs mostly inherited from rlcraft
     zenutilsmixin: fix rare ungenned loottable backpack crash
+    removed all ebwiz pots and some others from R:MB
+    fixed issue with missing mainmenu background
 Mod Updates
-    updated enchantmentcontrol: fix upg pot issue and underline first enchant of multi enchant itemstacks (not ench books, is that needed?)
+    updated enchantmentcontrol: fix upg pot issue and underline first enchant of multi enchant itemstacks (not ench books, is that needed?), fix issue with anvil use cost scaling
     update fermiummixins, remove log spam
     update socketed, hopefully fixes multiplayer random kicks due to CME
     update srpmixins, fix serverside logspam from srpextra 0.6.2
