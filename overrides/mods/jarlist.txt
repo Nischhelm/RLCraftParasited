@@ -1,13 +1,11 @@
 !configanytime-3.0
 !mixinbooter-10.7
 !mod-director-launchwrapper-1.9.1
-!Red-Core-MC-1.8-1.12-0.7.1
 `FermiumBooter-1.4.1
 AARCAddon-1.0.1
 Advanced-Fishing-1.12.2-1.3.3
 AIReducer-1.12.2-0.3.0
 alcatrazcore-1.0.4
-Alfheim-1.6
 Amphithere Mod-1.10
 antiqueatlas-1.12.2-4.6.3
 AntiqueAtlasAutoMarker-1.5.4.3
@@ -156,6 +154,8 @@ OreLib-1.12.2-3.6.0.1
 OverLast-Lite-1.12.2-0.05(for SRPV1920)
 particleculling-1.12.2-v1.4.3
 phantoms-indev
+phosphor-1.12.2-0.2.6+build50-universal
+PhosphorCrashFix-1.12.2-1.0.0
 pigstep-1.12
 Placebo-1.12.2-1.6.1
 playerbosses-1.12.2-1.1.0
