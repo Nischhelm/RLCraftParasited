@@ -1,4 +1,4 @@
---- June XX 2026 ---
+--- June 6 2026 ---
 
 Config changes
     add reskillable req for blood anvil (building 24)
@@ -30,8 +30,8 @@ Addons
         right now similar to 1.2.2, depending what base you use 
         (correct would prob be a mix of may24-2026 release + cherrypicked commits: 5b7f32b, 7709aa9, d68e2ff, c3b40e6)
     updated server installer readme
-    
-    
+    updated hcc installer zip
+    updated omega server installer zip    
 
 --- May 24 2026 ---
 
