@@ -1,15 +1,35 @@
 --- June XX 2026 ---
 
-nerf infernals, now +20% health per modifier, was +100%
-update fermiummixins
-update socketed, hopefully fixes multiplayer random kicks due to CME
-moved around GUI elements (ebwiz spell, potion display, default disabled togglesneak, hcc difficulty meter)
-started to tweak spells, started with heal spells (WIP, changes might not make it). also added default properties for all spells
-added shycraft override folder to create shycraft from current parasited. will see if i can keep it up to date
-allowed pixies to spawn 20 blocks higher (max 110) so they can spawn in some parts of cherry groves
-reduced blood anvil cost from 100 to 80 (did you know theres been a craft)
-add reskillable req for blood anvil (building 24)
-updated enchantmentcontrol: fix upg pot issue and underline first enchant of multi enchant itemstacks (not ench books, is that needed?)
+Config changes
+    add reskillable req for blood anvil (building 24)
+    reduced blood anvil repair cost from 100 to 80 (did you know theres been a crafting recipe)
+    nerf infernals, now +20% health per modifier, was +100%
+    moved around GUI elements (ebwiz spell, potion display, default disabled togglesneak, hcc difficulty meter)
+    started to tweak spells, started with heal spells (WIP, changes might not make it). also added default properties for all spells
+    zenutilsmixin: allowed pixies to spawn 20 blocks higher (max 110) so they can spawn in some parts of cherry groves
+    ebwiz summons are coth immune, wizards turn to witch/evoker
+    removed various fully unused configs mostly inherited from rlcraft
+    zenutilsmixin: fix rare ungenned loottable backpack crash
+Mod Updates
+    updated enchantmentcontrol: fix upg pot issue and underline first enchant of multi enchant itemstacks (not ench books, is that needed?)
+    update fermiummixins, remove log spam
+    update socketed, hopefully fixes multiplayer random kicks due to CME
+    update srpmixins, fix serverside logspam from srpextra 0.6.2
+    update iceandfire, dragons drink coffee, bottled dragonbreath
+    updated lycanitestweaks. so many changes i havent read them all. read here: https://github.com/Nischhelm/RLCraftParasited/pull/4 and cf file changelogs for 1.0.16 and 1.0.16.1
+    updated xat to 0.33.3 indev to fix some issues and hopefully not get more
+    updated dramatictrees, zenutils, voicechat and netherapi hoping for the best
+Mod Changes
+    reverted fluidlogged change: replaced fluidlogged, alfheim, red-core back with phosphor & phosphor crash fix
+    added oauth to fix smp relogs failing saying the session is invalid
+    removed advanced hookshots (pudge hook etc) and its lib forgeendertech
+Addons
+    added shycraft override folder to create shycraft from current parasited. will see if i can keep it up to date. 
+        right now similar to 1.2.2, depending what base you use 
+        (correct would prob be a mix of may24-2026 release + cherrypicked commits: 5b7f32b, 7709aa9, d68e2ff, c3b40e6)
+    updated server installer readme
+    
+    
 
 --- May 24 2026 ---
 
