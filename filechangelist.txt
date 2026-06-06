@@ -5,6 +5,7 @@
 2x
     trinkets
     scalinghealth
+    reskillable.cfg
 
 hcc
     custommainmenu - mainmenu.json
@@ -21,7 +22,6 @@ hcc
     infernalmobs.cfg
     potioncore.cfg
     realistictorches.cfg
-    reskillable.cfg
     somanyenchantments.cfg
     tnt_utilities.cfg
     options.txt
@@ -34,14 +34,21 @@ omega
     corpsecomplex.cfg
 
 shycraft
-    options.txt
+    options.txt - modify direct connect server
     custommainmenu - mainmenu.json
+    lostcities - citydata - conditions.json
+    lycanitesmobs - equipment - raidra/vespid/warg/xaphan
+    socketed - gemtypes - netherstar.json
     trinkets - trinkets.cfg
-    scripts - craftingRecipes.zs
-    reccomplex.cfg
-    VariedCommodities.cfg
-    paintings/paintings.json
-    resources/contenttweaker/sounds.json
+    reskillable -> change brewing barrel to farming32 building32 bruh
+    reccomplex.cfg -> command lvl
+    rlartifacts -> various balancing around the lesser used baubles
+    srpmixins -> add dim 10 to spawning blacklist
+    VariedCommodities.cfg -> gun properties
+    scripts - craftingRecipes.zs - change dragon gem recipe
+    paintings/paintings.json - add new paintings
+    resources/contenttweaker/sounds.json - add new records
+    resources/contenttweaker/lang/en_us.lang - add new record names
 
 unparasited
     custommainmenu - mainmenu.json

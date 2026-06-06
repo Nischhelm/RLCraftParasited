@@ -219,7 +219,7 @@
            "alignment":"bottom_left"
         },
 		"rl_craft":{
-			"text":"ShyCraft Parasited X (1.2)",
+			"text":"ShyCraft Parasited X (1.2.1)",
 			"posX":55,
 			"posY":-38,
 			"color" : 9561599,
@@ -243,14 +243,15 @@
 			"image": "",
 			"slideshow": {
 				"images": [
-					"mainmenu:images/shycraft/1.png",
-					"mainmenu:images/shycraft/2.png",
-					"mainmenu:images/shycraft/3.png",
-					"mainmenu:images/shycraft/4.png",
-					"mainmenu:images/shycraft/5.png",
-					"mainmenu:images/shycraft/6.png",
-					"mainmenu:images/shycraft/7.png",
-                    "mainmenu:images/others/1.png"
+                  "mainmenu:images/shycraft/0.png",
+                  "mainmenu:images/shycraft/1.png",
+                  "mainmenu:images/shycraft/2.png",
+                  "mainmenu:images/shycraft/3.png",
+                  "mainmenu:images/shycraft/4.png",
+                  "mainmenu:images/shycraft/5.png",
+                  "mainmenu:images/shycraft/6.png",
+                  "mainmenu:images/shycraft/7.png",
+                  "mainmenu:images/others/1.png"
 				],
 				"displayDuration": 150,
 				"fadeDuration": 200,

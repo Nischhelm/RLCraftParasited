@@ -1,5 +1,9 @@
+#loader contenttweaker
+import mods.contenttweaker.VanillaFactory;
+
+// ShyCraft Music Disks
 VanillaFactory.createRecord("dragonborn");
-VanillaFactory.createRecord("far");
+VanillaFactory.createRecord("faraway");
 VanillaFactory.createRecord("hushed");
 VanillaFactory.createRecord("la_lecon");
 VanillaFactory.createRecord("lugia");
