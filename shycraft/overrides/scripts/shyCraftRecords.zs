@@ -22,3 +22,4 @@ VanillaFactory.createRecord("elwynn_forest");
 VanillaFactory.createRecord("nightmare");
 VanillaFactory.createRecord("megalovania");
 VanillaFactory.createRecord("ragnaros");
+VanillaFactory.createRecord("ariab");

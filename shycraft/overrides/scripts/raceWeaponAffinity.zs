@@ -1,4 +1,4 @@
-raceWeaponAffinity.zsimport crafttweaker.player.IPlayer;
+import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
 import mods.zenutils.StringList;
 import native.xzeroair.trinkets.api.EntityApiHelper;

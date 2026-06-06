@@ -159,6 +159,14 @@
       }
     ]
   },
+  "ariab": {
+    "sounds": [
+      {
+        "name": "contenttweaker:ariab",
+        "stream": true
+      }
+    ]
+  },
   "megalovania": {
     "sounds": [
       {
