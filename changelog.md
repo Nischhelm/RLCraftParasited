@@ -1,3 +1,8 @@
+--- June XX 2026 ---
+
+update wearable backpacks rlcraft to fix the issue that was previously fixed with a zenutilsmixin
+
+
 --- June 6 2026 ---
 
 Config changes
