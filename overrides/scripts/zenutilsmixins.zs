@@ -296,3 +296,20 @@ zenClass EntityPixieMixin {  // func_70601_bi = getCanSpawnHere
         return 110;
     }
 }
+
+#mixin {targets: "knightminer.inspirations.recipes.recipe.TippedArrowCauldronRecipe"}
+zenClass TippedArrowCauldronRecipeMixin {
+    #mixin ModifyReturnValue
+    #{
+    #   method: "matches",
+    #   at: {value: "RETURN"}
+    #}
+    function zenutils_fixCauldronSplashingArrows(original as bool, stack as native.net.minecraft.item.ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe$CauldronState) as bool {
+        return original
+        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185229_a //EMPTY
+        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185230_b //WATER
+        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185231_c //MUNDANE
+        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185232_d //THICK
+        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185233_e; //AWKWARD
+    }
+}
