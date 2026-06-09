@@ -313,3 +313,24 @@ zenClass TippedArrowCauldronRecipeMixin {
         && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185233_e; //AWKWARD
     }
 }
+
+#mixin {targets: "electroblob.wizardry.util.BlockUtils"}
+zenClass BlockUtilsMixin {
+    static zenutils_block_blacklist as string[] = [
+        "minecraft:mob_spawner",
+        "minecraft:chest"
+    ] as string[];
+
+    #mixin Static
+    #mixin ModifyReturnValue
+    #{
+    #   method: "isBlockUnbreakable",
+    #   at: {value: "RETURN"}
+    #}
+    function zenutils_addUnbreakableBlockList(original as bool, world as native.net.minecraft.world.World, pos as native.net.minecraft.util.math.BlockPos) as bool {
+        if(original) return true;
+        val blockLoc = world.func_180495_p(pos).func_177230_c().getRegistryName(); //getBlockState(pos).getBlock().getRegistryName()
+        if(isNull(blockLoc)) return false;
+        return zenutils_block_blacklist has blockLoc.toString();
+    }
+}
