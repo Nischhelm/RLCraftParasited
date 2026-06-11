@@ -331,4 +331,10 @@ furnace.addRecipe(<variedcommodities:ingot_steel> * 3, <rlmixins:steel_chestplat
 furnace.addRecipe(<variedcommodities:ingot_steel> * 3, <rlmixins:steel_leggings:*>, 1);
 furnace.addRecipe(<variedcommodities:ingot_steel> * 1, <rlmixins:steel_boots:*>, 1);
 
+furnace.addRecipe(<minecraft:gold_ingot> * 2, <bountifulbaubles:crowngold:*>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 2, <qualitytools:emerald_amulet>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <qualitytools:emerald_ring>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <potionfingers:ring>, 1);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <baubles:ring>, 1);
+
 print("Script ending!");
