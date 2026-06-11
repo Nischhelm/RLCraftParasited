@@ -5,6 +5,8 @@ added block blacklist for Mine spell (also black hole and phase step), currently
 fixed getting water/splash tipped arrows from empty cauldrons (and from empty/water/mundane/thick/awkward filled cauldrons)
 update phantoms, same code but from cf now
 update betterend to indev version, added fix for chest rendering being broken (trapped x normal)
+added various bauble destroy recipes suggested by drtehnix (knife for toolbelt+backpack, dont snip away your items, furnace for emerald ring/amulet, miners ring, potion rings, crown)
+updated wornhorseshoes, adds horse stat display in Neat hp bar. also slightly increases horse spawn speed stat (+2 b/s on avg) and varied undead horse spawn speed
 
 --- June 6 2026 ---
 
