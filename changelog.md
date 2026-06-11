@@ -1,7 +1,10 @@
 --- June XX 2026 ---
 
 update wearable backpacks rlcraft to fix the issue that was previously fixed with a zenutilsmixin
-
+added block blacklist for Mine spell (also black hole and phase step), currently only chests+spawners
+fixed getting water/splash tipped arrows from empty cauldrons (and from empty/water/mundane/thick/awkward filled cauldrons)
+update phantoms, same code but from cf now
+update betterend to indev version, added fix for chest rendering being broken (trapped x normal)
 
 --- June 6 2026 ---
 
