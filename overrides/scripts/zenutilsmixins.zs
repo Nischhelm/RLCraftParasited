@@ -334,3 +334,47 @@ zenClass BlockUtilsMixin {
         return zenutils_block_blacklist has blockLoc.toString();
     }
 }
+
+#mixin {targets: "git.jbredwards.nether_api.mod.common.world.biome.BiomeProviderNether"}
+zenClass BiomeProviderNetherMixin {
+
+    #mixin ModifyConstant
+    #{
+    #   method: "getBiomeGenerators",
+    #   constant: {intValue: 3}
+    #}
+    function zenutils_changeNetherBiomeSize(original as int) as int {
+        return 1; //smallest possible value
+    }
+}
+
+#mixin {targets: "git.jbredwards.nether_api.mod.common.compat.betternether.BiomeBetterNether"}
+zenClass BiomeBetterNetherMixin { //target lambda is in getSubBiomes
+
+    #mixin ModifyConstant
+    #{
+    #   method: "lambda$getSubBiomes$1",
+    #   constant: {intValue: 1000}
+    #}
+    function zenutils_changeBoneReefRarity(original as int) as int {
+        return 1; //this is for all sub biomes but there is only one (as poor grasslands is disabled)
+    }
+}
+
+#mixin {targets: "git.jbredwards.nether_api.mod.common.compat.betternether.BetterNetherHandler"}
+zenClass BetterNetherHandlerMixin {
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "getWeight",
+    #   constant: {intValue: 1}
+    #}
+    function zenutils_changeNetherBiomeWeights(original as int, biome as native.git.jbredwards.nether_api.mod.common.compat.betternether.BiomeBetterNether) as int {
+        val name = biome.netherBiome.name;
+        if(name == "Bone Reef" || name == "Nether Grasslands")
+            return 3;
+        else
+            return original; // in legacy BetterNether all 5 normal (not edge, not sub) biomes have weight 1
+            // those 5 normal ones are Gravel Desert, Nether Jungle, Wart Forest, Nether Grasslands, Nether Mushroom Forest
+    }
+}
