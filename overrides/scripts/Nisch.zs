@@ -11,7 +11,9 @@ recipes.addShaped("nodecompass",<srparasites:nodecompass>,
 knifeRecipes.add(<minecraft:book>,<minecraft:paper>*2);
 knifeRecipes.add(<toolbelt:pouch>,<minecraft:leather>*2);
 knifeRecipes.add(<toolbelt:belt>,<minecraft:leather>*3);
+knifeRecipes.add(<switchbow:quiver>,<minecraft:leather>*3);
 knifeRecipes.add(<wearablebackpacks:backpack>,<minecraft:leather>*5);
+knifeRecipes.add(<quark:quilted_wool:*>,<minecraft:string>*4);
 
 events.onBlockHarvestDrops(function(event as crafttweaker.event.BlockHarvestDropsEvent){
     if(event.isPlayer) return;

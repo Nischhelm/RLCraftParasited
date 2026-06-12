@@ -332,9 +332,29 @@ furnace.addRecipe(<variedcommodities:ingot_steel> * 3, <rlmixins:steel_leggings:
 furnace.addRecipe(<variedcommodities:ingot_steel> * 1, <rlmixins:steel_boots:*>, 1);
 
 furnace.addRecipe(<minecraft:gold_ingot> * 2, <bountifulbaubles:crowngold:*>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 2, <bountifulbaubles:amuletcross>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 2, <qualitytools:emerald_amulet>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <qualitytools:emerald_ring>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <potionfingers:ring>, 1);
-furnace.addRecipe(<minecraft:iron_ingot> * 1, <baubles:ring>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <charm:nether_gold_deposit>, 1);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <baubles:ring>, 0.7);
+
+furnace.addRecipe(<minecraft:diamond> * 7, <iceandfire:diamond_hippogryph_armor:*>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 7, <iceandfire:gold_hippogryph_armor:*>, 1);
+furnace.addRecipe(<minecraft:iron_ingot> * 7, <iceandfire:iron_hippogryph_armor:*>, 0.7);
+
+furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <notreepunching:mattock/diamond>, 1);
+furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:knife/diamond>, 1);
+furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:saw/diamond>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:mattock/gold>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:saw/gold>, 1);
+furnace.addRecipe(<minecraft:gold_nugget> * 1, <notreepunching:knife/gold>, 1);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:mattock/iron>, 0.7);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:saw/iron>, 0.7);
+furnace.addRecipe(<minecraft:iron_nugget> * 1, <notreepunching:knife/iron>, 0.7);
+
+furnace.addRecipe(<minecraft:diamond> * 1, <wornhorseshoes:horseshoes_diamond>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <wornhorseshoes:horseshoes_gold>, 1);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <wornhorseshoes:horseshoes_iron>, 0.7);
 
 print("Script ending!");
