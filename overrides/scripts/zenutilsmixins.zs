@@ -304,7 +304,7 @@ zenClass TippedArrowCauldronRecipeMixin {
     #   method: "matches",
     #   at: {value: "RETURN"}
     #}
-    function zenutils_fixCauldronSplashingArrows(original as bool, stack as native.net.minecraft.item.ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe$CauldronState) as bool {
+    function zenutils_fixCauldronSplashingArrows(original as bool, stack as native.net.minecraft.item.ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState) as bool {
         return original
         && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185229_a //EMPTY
         && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185230_b //WATER
