@@ -6,6 +6,7 @@ fixed getting water/splash tipped arrows from empty cauldrons (and from empty/wa
 update phantoms, same code but from cf now
 update betterend to indev version, added fix for chest rendering being broken (trapped x normal)
 added various bauble destroy recipes suggested by drtehnix (knife for toolbelt+backpack, dont snip away your items, furnace for emerald ring/amulet, miners ring, potion rings, crown)
+added even more knife+furnace recipes, for NTP tools, for horseshoes, hippogryph armor, some baubles and quilted wool->string)
 updated wornhorseshoes, adds horse stat display in Neat hp bar. also slightly increases horse spawn speed stat (+2 b/s on avg) and varied undead horse spawn speed
 update indev fermiummixins, fix quality tools reforging station overlay issue and add threshold for autosave logging
 fix netherapi betternether generation. still not exactly as it was before but should be way closer
