@@ -10,6 +10,7 @@ added even more knife+furnace recipes, for NTP tools, for horseshoes, hippogryph
 updated wornhorseshoes, adds horse stat display in Neat hp bar. also slightly increases horse spawn speed stat (+2 b/s on avg) and varied undead horse spawn speed
 update indev fermiummixins, fix quality tools reforging station overlay issue and add threshold for autosave logging
 fix netherapi betternether generation. still not exactly as it was before but should be way closer
+update potioncontrol, mainly fixes amalgalich issue (packet spam=lag)
 
 --- June 6 2026 ---
 
