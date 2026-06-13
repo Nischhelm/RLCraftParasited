@@ -1,16 +1,21 @@
---- June XX 2026 ---
+--- June 13 2026 ---
 
-update wearable backpacks rlcraft to fix the issue that was previously fixed with a zenutilsmixin
-added block blacklist for Mine spell (also black hole and phase step), currently only chests+spawners
-fixed getting water/splash tipped arrows from empty cauldrons (and from empty/water/mundane/thick/awkward filled cauldrons)
-update phantoms, same code but from cf now
-update betterend to indev version, added fix for chest rendering being broken (trapped x normal)
-added various bauble destroy recipes suggested by drtehnix (knife for toolbelt+backpack, dont snip away your items, furnace for emerald ring/amulet, miners ring, potion rings, crown)
-added even more knife+furnace recipes, for NTP tools, for horseshoes, hippogryph armor, some baubles and quilted wool->string)
-updated wornhorseshoes, adds horse stat display in Neat hp bar. also slightly increases horse spawn speed stat (+2 b/s on avg) and varied undead horse spawn speed
-update indev fermiummixins, fix quality tools reforging station overlay issue and add threshold for autosave logging
-fix netherapi betternether generation. still not exactly as it was before but should be way closer
-update potioncontrol, mainly fixes amalgalich issue (packet spam=lag)
+Config changes
+    added block blacklist for Mine spell (also black hole and phase step), currently only chests+spawners
+    fixed getting water/splash tipped arrows from empty cauldrons (and from empty/water/mundane/thick/awkward filled cauldrons)
+    added various bauble destroy recipes suggested by drtehnix (knife for toolbelt+backpack, dont snip away your items, furnace for emerald ring/amulet, miners ring, potion rings, crown)
+    added even more knife+furnace recipes, for NTP tools, for horseshoes, hippogryph armor, some baubles and quilted wool->string)
+    fix netherapi betternether generation. still not exactly as it was before but should be way closer
+Mod Updates
+    update wearable backpacks rlcraft to fix the issue that was previously fixed with a zenutilsmixin
+    update phantoms, same code but from cf now
+    update betterend to indev version, added fix for chest rendering being broken (trapped x normal)
+    updated wornhorseshoes, adds horse stat display in Neat hp bar. also slightly increases horse spawn speed stat (+2 b/s on avg) and varied undead horse spawn speed
+    update indev fermiummixins, fix quality tools reforging station overlay issue and add threshold for autosave logging
+    update potioncontrol, mainly fixes amalgalich issue (packet spam=lag)
+    update enchantmentcontrol, removes air requirement from around ench table, fixes some oceanic expanse loot
+Addons
+    no changes to last version, use [those](https://github.com/Nischhelm/RLCraftParasited/releases/tag/Jun6-2026)
 
 --- June 6 2026 ---
 
