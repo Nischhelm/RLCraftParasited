@@ -48,7 +48,7 @@ def main():
         )
 
     with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=None)
+        json.dump(data, f, indent=2)
 
     print(f"Updated {len(data['files'])} entries.")
 
