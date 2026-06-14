@@ -181,8 +181,8 @@
 		
 		"discord":
         {
-            "text" : "Shivaxi's Discord",
-            "hoverText" : " nShivaxi's Discord",
+            "text" : "Nischheim's Discord",
+            "hoverText" : " nNischheim's Discord",
             "posX" : 5,
             "posY" : 49,
             "color" : 9561599,
@@ -190,7 +190,7 @@
             "action" : 
             {
                 "type" : "openLink",
-                "link" : "https://discord.gg/QURkzuQ"
+                "link" : "https://discord.gg/YYrqFMecNG"
             }
         },
 		
@@ -219,7 +219,7 @@
            "alignment":"bottom_left"
         },
 		"rl_craft":{
-			"text":"ShyCraft Parasited X (1.2.2)",
+			"text":"ShyCraft Parasited X (1.2.3)",
 			"posX":55,
 			"posY":-38,
 			"color" : 9561599,
@@ -243,15 +243,26 @@
 			"image": "",
 			"slideshow": {
 				"images": [
-                  "mainmenu:images/shycraft/0.png",
-                  "mainmenu:images/shycraft/1.png",
-                  "mainmenu:images/shycraft/2.png",
-                  "mainmenu:images/shycraft/3.png",
-                  "mainmenu:images/shycraft/4.png",
-                  "mainmenu:images/shycraft/5.png",
-                  "mainmenu:images/shycraft/6.png",
-                  "mainmenu:images/shycraft/7.png",
-                  "mainmenu:images/others/1.jpg"
+                                        "mainmenu:images/shycraft/0.png",
+                                        "mainmenu:images/shycraft/1.jpg",
+                                        "mainmenu:images/shycraft/2.png",
+                                        "mainmenu:images/shycraft/3.png",
+                                        "mainmenu:images/others/1.jpg",
+		                        "mainmenu:images/iqury/1.png",
+		                        "mainmenu:images/iqury/2.png",
+		                        "mainmenu:images/iqury/3.png",
+		                        "mainmenu:images/iqury/4.png",
+		                        "mainmenu:images/iqury/5.png",
+		                        "mainmenu:images/iqury/6.png",
+		                        "mainmenu:images/iqury/7.png",
+		                        "mainmenu:images/iqury/8.png",
+		                        "mainmenu:images/iqury/9.png",
+		                        "mainmenu:images/iqury/10.png",
+		                        "mainmenu:images/iqury/11.png",
+		                        "mainmenu:images/iqury/12.png",
+		                        "mainmenu:images/iqury/13.png",
+					"mainmenu:images/iqury/14.png",
+                                        "mainmenu:images/iqury/15.png"
 				],
 				"displayDuration": 150,
 				"fadeDuration": 200,
