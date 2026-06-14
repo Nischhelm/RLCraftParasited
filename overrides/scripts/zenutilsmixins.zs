@@ -45,6 +45,8 @@ zenClass CraftRecipeMixin {
 
 #mixin {targets: "lumien.bloodmoon.server.BloodmoonHandler"}
 zenClass BloodmoonHandlerMixin {
+    static zenutils_cfg_val as int = 3;
+
     #mixin Inject
     #{
     #   method: "endWorldTick",
@@ -59,7 +61,7 @@ zenClass BloodmoonHandlerMixin {
         for player in players {
             val player as native.net.minecraft.entity.player.EntityPlayer = players[0];
             val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
-            if(phase >= 3) return; // anyone above phase 2: bloodmoons allowed
+            if(phase >= zenutils_cfg_val) return; // anyone above phase 2: bloodmoons allowed
         }
         ci.cancel(); // no bloodmoon if everyone online before phase 3
     }
@@ -121,13 +123,15 @@ zenClass EntityWizardMixin {
 
 #mixin {targets: "noppes.vc.items.ItemMusket"}
 zenClass ItemMusketMixin {
+    static zenutils_cfg_val as int = 20;
+
     #mixin ModifyConstant
     #{
     #   method: "onUsingTick",
     #   constant: {intValue: 60}
     #}
     function zenutils_changeMusketLoadingTime(original as int) as int {
-        return 20; //loading time in ticks, 20 ticks = 1 sec
+        return zenutils_cfg_val; //loading time in ticks, 20 ticks = 1 sec
     }
 }
 
@@ -207,18 +211,21 @@ zenClass ItemWizardArmourMixin {
 
 #mixin {targets: "melonslise.locks.common.container.LockPickingContainer"}
 zenClass LockPickingContainerMixin {
+    static zenutils_cfg_val as double = 0.5;
+
     #mixin ModifyConstant
     #{
     #   method: "checkPin",
     #   constant: {floatValue: 1.25}
     #}
     function zenutils_modifyCloseToFailPitchMulti(original as float) as float {
-        return 0.5 as float;
+        return zenutils_cfg_val as float;
     }
 }
 
 #mixin {targets: "melonslise.locks.common.init.LocksItems"}
 zenClass LocksItemsMixin {
+    static zenutils_cfg_val as double = 0.97;
     static DRAGONBONE_LOCK_PICK as native.net.minecraft.item.Item;
 
     #mixin Static
@@ -228,7 +235,7 @@ zenClass LocksItemsMixin {
     #   at: {value: "TAIL"}
     #}
     function zenutils_registerDragonboneLockpick(ci as mixin.CallbackInfo) as void {
-        DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.item.LockPickItem(0.97);
+        DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.item.LockPickItem(zenutils_cfg_val);
         DRAGONBONE_LOCK_PICK.setCreativeTab(native.melonslise.locks.common.init.LocksCreativeTabs.TAB);
         DRAGONBONE_LOCK_PICK = native.melonslise.locks.common.init.LocksItems.add("dragonbone_lock_pick", DRAGONBONE_LOCK_PICK);
     }
@@ -246,6 +253,8 @@ zenClass LocksItemsMixin {
 
 #mixin {targets: "atomicstryker.infernalmobs.common.InfernalMobsCore"}
 zenClass InfernalMobsCoreMixin {
+    static zenutils_cfg_val = 0.5; // increase by 50%, roughly
+
     #mixin ModifyExpressionValue
     #{
     #   method: "processEntitySpawn",
@@ -260,12 +269,14 @@ zenClass InfernalMobsCoreMixin {
         if(isNull(player)) return original;
         val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
         if(phase < 9) return original; // below phase 9: no increase
-        return (original / 1.5) as int; // increase by 50%, roughly
+        return (original / (1+zenutils_cfg_val)) as int;
     }
 }
 
 #mixin {targets: "c4.champions.common.util.ChampionHelper"}
 zenClass ChampionHelperMixin {
+    static zenutils_cfg_val = 0.5; // increase by 50%
+
     #mixin Static
     #mixin ModifyExpressionValue
     #{
@@ -281,19 +292,21 @@ zenClass ChampionHelperMixin {
         if(isNull(player)) return original;
         val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
         if(phase < 9) return original; // below phase 9: no increase
-        return original * 1.5; // increase by 50%
+        return original * (1+zenutils_cfg_val);
     }
 }
 
 #mixin {targets: "familiarfauna.entities.EntityPixie"}
 zenClass EntityPixieMixin {  // func_70601_bi = getCanSpawnHere
+    static zenutils_cfg_val = 110;
+
     #mixin ModifyConstant
     #{
     #   method: "func_70601_bi",
     #   constant: {intValue: 90}
     #}
     function zenutils_modifyPixieSpawningMaxHeight(original as int) as int {
-        return 110;
+        return zenutils_cfg_val;
     }
 }
 
@@ -337,6 +350,7 @@ zenClass BlockUtilsMixin {
 
 #mixin {targets: "git.jbredwards.nether_api.mod.common.world.biome.BiomeProviderNether"}
 zenClass BiomeProviderNetherMixin {
+    static zenutils_cfg_val as int = 1; //smallest possible value
 
     #mixin ModifyConstant
     #{
@@ -344,7 +358,7 @@ zenClass BiomeProviderNetherMixin {
     #   constant: {intValue: 3}
     #}
     function zenutils_changeNetherBiomeSize(original as int) as int {
-        return 1; //smallest possible value
+        return zenutils_cfg_val;
     }
 }
 
