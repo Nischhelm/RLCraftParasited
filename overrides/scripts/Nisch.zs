@@ -2,6 +2,7 @@ import mods.inspirations.Cauldron as cauldronRecipes;
 import mods.notreepunching.Knife as knifeRecipes;
 import srpmixins.SRPSaveData;
 import crafttweaker.player.IPlayer;
+import dynamic.zenutils.config.Parasited;
 
 recipes.addShaped("nodecompass",<srparasites:nodecompass>,
  [[null,<srparasites:lurecomponent6>,null],
@@ -67,6 +68,6 @@ events.onEntityLivingAttacked(function(event as crafttweaker.event.EntityLivingA
     val race as string = native.xzeroair.trinkets.api.EntityApiHelper.getEntityRace(player);
     if(race != "Fairy") return;
 
-    if(player.world.getRandom().nextFloat() < 0.2) 
+    if(player.world.getRandom().nextFloat() < Parasited.fairyBlockChance) 
     event.cancel();
 });
