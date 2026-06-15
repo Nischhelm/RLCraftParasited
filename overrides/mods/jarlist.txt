@@ -116,7 +116,7 @@ ItemPhysic_Full_1.4.37_mc1.12.2
 itlt-1.12.x-1.0.4
 IvToolkit-1.3.3-1.12
 jei_1.12.2-4.16.1.1013
-JEI Want That-1.0.3.2
+JEI Want That-1.0.3.3
 JSON-Paintings-v1.4.0-mc1.12.2
 Kiwi-1.12.2-0.5.3.32
 lagbgonrevived-1.1.0
@@ -131,7 +131,7 @@ LoginHPFix-1.12.2.002
 LootTweaker-0.3.1+MC1.12.2
 lostcities-1.12-2.0.22
 lycanitesmobs-1.12.2-2.0.8.10
-LycanitesTweaks-1.0.16.1
+LycanitesTweaks-1.0.16.3
 MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
@@ -188,6 +188,7 @@ roughTweaks0.2.4-1.12.2
 RTG-1.12.2-6.1.0.0-snapshot.1
 Ruins-1.12.2
 rustic-1.1.7
+Save My Ankh Shield-1.0.0.1
 savemystronghold-1.12.2-1.0.0
 ScalingHealth-1.12.2-1.3.42+147
 SereneSeasons-1.12.2-1.2.18-universal
@@ -234,4 +235,4 @@ WornHorseshoes-1.1.2.1
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-zenutils-1.27.2
+zenutils-1.27.3
