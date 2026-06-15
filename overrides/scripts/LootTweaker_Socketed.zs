@@ -13,7 +13,7 @@ val spartanItems = [
 //------------------ MYRMEX ------------------
 
 val myrmex_weap_table = LootTweaker.newTable("loottweaker:myrmex_gear");
-val myrmex_weap_pool = myrmex_weap_table.addPool("myrmex_weapons", 1, 3, 0, 1);
+val myrmex_weap_pool = myrmex_weap_table.addPool("myrmex_weapons", 1, 3, 1, 1);
 
 //function addItemEntry(stack as IItemStack, weight as int);
 for item in vanillaArmor
@@ -34,13 +34,13 @@ for item in bsItems
                 myrmex_weap_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:item"+type+stinger+item), 1);
 
 //Add to myrmex loot + trash pools
-LootTweaker.getTable("iceandfire:myrmex_loot_chest").getPool("myrmex_loot_chest").addLootTableEntry("loottweaker:myrmex_gear", 25);
-LootTweaker.getTable("iceandfire:myrmex_trash_chest").getPool("myrmex_trash_chest").addLootTableEntry("loottweaker:myrmex_gear", 50);
+LootTweaker.getTable("iceandfire:myrmex_loot_chest").getPool("myrmex_loot_chest").addLootTableEntry("loottweaker:myrmex_gear", 50, 50);
+LootTweaker.getTable("iceandfire:myrmex_trash_chest").getPool("myrmex_trash_chest").addLootTableEntry("loottweaker:myrmex_gear", 100, 100);
 
 //------------------ DRAGONBONE ------------------
 
 val dragonbone_table = LootTweaker.newTable("loottweaker:dragonbone_gear");
-val dragonbone_pool = dragonbone_table.addPool("dragonbone", 1, 3, 0, 1);
+val dragonbone_pool = dragonbone_table.addPool("dragonbone", 1, 3, 1, 1);
 
 //function addItemEntry(stack as IItemStack, weight as int);
 for item in vanillaItems
@@ -57,7 +57,7 @@ LootTweaker.getTable("loottweaker:lostcityrare").getPool("rare").addLootTableEnt
 //------------------ DRAGONSTEEL ------------------
 
 val dragonsteel_table = LootTweaker.newTable("loottweaker:dragonsteel_gear");
-val dragonsteel_pool = dragonsteel_table.addPool("dragonsteel", 1, 3, 0, 1);
+val dragonsteel_pool = dragonsteel_table.addPool("dragonsteel", 1, 3, 1, 1);
 
 //function addItemEntry(stack as IItemStack, weight as int);
 for item in vanillaItems
