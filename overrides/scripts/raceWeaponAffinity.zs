@@ -2,6 +2,7 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
 import mods.zenutils.StringList;
 import native.xzeroair.trinkets.api.EntityApiHelper;
+import dynamic.zenutils.config.Parasited;
 
 val spartanItems = [
     "dagger","longsword","katana","scythe","saber",
@@ -32,16 +33,7 @@ val materialsBS = [
     "junglechitin", "desertchitin", "junglestinger", "desertstinger"
 ];
 
-val raceItems = {
-//    "Faelis": [],
-    "Dragon": ["katana", "longsword", "warhammer"],
-    "Taurus": ["scythe", "halberd", "glaive"],
-    "Titan":  ["greatsword", "mace"],
-    "Dwarf":  ["hammer", "battleaxe"],
-    "Elf":    ["saber", "lance", "staff"],
-    "Goblin": ["dagger", "rapier"],
-    "Fairy":  ["spear", "pike"]
-} as string[][string];
+val raceItems = Parasited.raceWeaponAffinities;
 
 //Tooltips:
 
@@ -115,5 +107,5 @@ events.onEntityLivingHurt(function(event as crafttweaker.event.EntityLivingHurtE
 
     val items = raceItems[race];
     if(!isNull(items) && items has itemType)
-        event.amount = max(event.amount * 1.25, event.amount + 3); // +25% dmg or +3 dmg
+        event.amount = max(event.amount * Parasited.raceWeaponMulti, event.amount + Parasited.raceWeaponAddMin); // +25% dmg or +3 dmg
 });
