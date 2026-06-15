@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import dynamic.zenutils.config.Parasited;
 
 print("Script starting!");
 
@@ -1214,25 +1215,47 @@ recipes.addShaped("rec130",<xat:titan_spirit>,
   [<variedcommodities:ingot_bronze>,<xat:titan_ring>,<variedcommodities:ingot_bronze>],
   [<xat:mana_crystal>,<lycanitesmobs:bucketmoglava>,<xat:mana_crystal>]]);
 
-recipes.addShaped("rec131",<xat:dragon_gem:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}),
- [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
-  [<iceandfire:ruby_gem>,<xat:dragon_ring:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}) ,<iceandfire:sapphire_gem>],
-  [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
+if(Parasited.useShyCraftDragonGemRecipe){
+    recipes.addShaped("rec131",<xat:dragon_gem:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}),
+     [[<iceandfire:fire_dragon_blood>,<contenttweaker:amethyst_gem_epic>,<iceandfire:ice_dragon_blood>],
+      [<contenttweaker:ruby_gem_epic>,<xat:dragon_ring:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}) ,<contenttweaker:sapphire_gem_epic>],
+      [<minecraft:dragon_breath>,<xat:moon_rose>,<iceandfire:lightning_dragon_blood>]]);
 
-recipes.addShaped("rec131.1",<xat:dragon_gem:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}),
- [[<xat:mana_crystal>, <iceandfire:ruby_gem>, <xat:mana_crystal>],
-  [<iceandfire:ruby_gem>, <xat:dragon_ring:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}), <iceandfire:ruby_gem>],
-  [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+    recipes.addShaped("rec131.1",<xat:dragon_gem:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}),
+     [[<contenttweaker:sentient_core>, <variedcommodities:heart>, <contenttweaker:ruby_gem_epic>],
+      [<iceandfire:dragonegg_red>, <xat:dragon_ring:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}), <iceandfire:fire_dragon_heart>],
+      [<minecraft:dragon_breath>, <xat:moon_rose>, <iceandfire:fire_dragon_blood>]]);
 
-recipes.addShaped("rec131.2",<xat:dragon_gem:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}),
- [[<xat:mana_crystal>, <iceandfire:sapphire_gem>, <xat:mana_crystal>],
-  [<iceandfire:sapphire_gem>, <xat:dragon_ring:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}), <iceandfire:sapphire_gem>],
-  [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+    recipes.addShaped("rec131.2",<xat:dragon_gem:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}),
+     [[<contenttweaker:sentient_core>, <variedcommodities:heart>, <contenttweaker:sapphire_gem_epic>],
+      [<iceandfire:dragonegg_silver>, <xat:dragon_ring:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}), <iceandfire:ice_dragon_heart>],
+      [<minecraft:dragon_breath>, <xat:moon_rose>, <iceandfire:ice_dragon_blood>]]);
 
-recipes.addShaped("rec131.3",<xat:dragon_gem:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}),
- [[<xat:mana_crystal>, <iceandfire:amethyst_gem>, <xat:mana_crystal>],
-  [<iceandfire:amethyst_gem>, <xat:dragon_ring:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}), <iceandfire:amethyst_gem>],
-  [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+    recipes.addShaped("rec131.3",<xat:dragon_gem:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}),
+     [[<contenttweaker:sentient_core>, <variedcommodities:heart>, <contenttweaker:amethyst_gem_epic>],
+      [<iceandfire:dragonegg_amethyst>, <xat:dragon_ring:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}), <iceandfire:lightning_dragon_heart>],
+      [<minecraft:dragon_breath>, <xat:moon_rose>, <iceandfire:lightning_dragon_blood>]]);
+} else {
+    recipes.addShaped("rec131",<xat:dragon_gem:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}),
+     [[<xat:mana_crystal>,<iceandfire:amethyst_gem>,<xat:mana_crystal>],
+      [<iceandfire:ruby_gem>,<xat:dragon_ring:0>.withTag({"Elements": {"primary": "xat:neutral"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:neutral"}}}) ,<iceandfire:sapphire_gem>],
+      [<xat:mana_crystal>,<minecraft:dragon_breath>,<xat:mana_crystal>]]);
+
+    recipes.addShaped("rec131.1",<xat:dragon_gem:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}),
+     [[<xat:mana_crystal>, <iceandfire:ruby_gem>, <xat:mana_crystal>],
+      [<iceandfire:ruby_gem>, <xat:dragon_ring:1>.withTag({"Elements": {"primary": "xat:fire"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:fire"}}}), <iceandfire:ruby_gem>],
+      [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+
+    recipes.addShaped("rec131.2",<xat:dragon_gem:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}),
+     [[<xat:mana_crystal>, <iceandfire:sapphire_gem>, <xat:mana_crystal>],
+      [<iceandfire:sapphire_gem>, <xat:dragon_ring:2>.withTag({"Elements": {"primary": "xat:ice"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:ice"}}}), <iceandfire:sapphire_gem>],
+      [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+
+    recipes.addShaped("rec131.3",<xat:dragon_gem:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}),
+     [[<xat:mana_crystal>, <iceandfire:amethyst_gem>, <xat:mana_crystal>],
+      [<iceandfire:amethyst_gem>, <xat:dragon_ring:3>.withTag({"Elements": {"primary": "xat:lightning"}}).withCapNBT({"Parent": {"Elements": {"primary": "xat:lightning"}}}), <iceandfire:amethyst_gem>],
+      [<xat:mana_crystal>, <minecraft:dragon_breath>, <xat:mana_crystal>]]);
+}
 
 recipes.addShaped("rec131.4",<xat:taurus_tea>,
  [[<xat:mana_crystal>,<iceandfire:seaserpent_skull>,<xat:mana_crystal>],
