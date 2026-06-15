@@ -166,7 +166,7 @@
     {"projectID": 384446, "fileID": 2965215, "required": true, "fileName": "AARCAddon-1.0.1"},
     {"projectID": 389665, "fileID": 3247154, "required": true, "fileName": "BetterMineshaftsForge-1.12.2-2.2.1"},
     {"projectID": 399377, "fileID": 3113274, "required": true, "fileName": "YungsLaw-1.12.2-1.0.4"},
-    {"projectID": 401178, "fileID": 8135692, "required": true, "fileName": "zenutils-1.27.2"},
+    {"projectID": 401178, "fileID": 8245235, "required": true, "fileName": "zenutils-1.27.3"},
     {"projectID": 403303, "fileID": 3191544, "required": true, "fileName": "potiondescriptions-1.12.2-1.2.4"},
     {"projectID": 403617, "fileID": 7743830, "required": true, "fileName": "distinctdamagedescriptions-1.9.8"},
     {"projectID": 407056, "fileID": 3093214, "required": true, "fileName": "DynamicTreesTraverse-1.12.2-2.1"},
@@ -238,6 +238,7 @@
     {"projectID": 1228719, "fileID": 6349413, "required": true, "fileName": "IceAndFire_SoundFixes"},
     {"projectID": 1231319, "fileID": 7134674, "required": true, "fileName": "OptifineCITPatch-1.0.5"},
     {"projectID": 1234346, "fileID": 7280687, "required": true, "fileName": "RLDragonsteel-1.1.0"},
+    {"projectID": 1240257, "fileID": 8225266, "required": true, "fileName": "LycanitesTweaks-1.0.16.3"},
     {"projectID": 1247938, "fileID": 6470188, "required": true, "fileName": "spartandragonsteel-1.0.0"},
     {"projectID": 1251046, "fileID": 6460813, "required": true, "fileName": "FoodFix-1.12.2.001"},
     {"projectID": 1262814, "fileID": 7700731, "required": true, "fileName": "VCFix-1.0.3.2"},
@@ -255,10 +256,11 @@
     {"projectID": 1442027, "fileID": 7913561, "required": true, "fileName": "Everything Nunchaku-1.0.2.1"},
     {"projectID": 1480667, "fileID": 7737413, "required": true, "fileName": "Gibbed-1.0.1"},
     {"projectID": 1481158, "fileID": 7730416, "required": true, "fileName": "I Hate Ghost Blocks-1.0.0"},
-    {"projectID": 1485531, "fileID": 8041049, "required": true, "fileName": "JEI Want That-1.0.3.2"},
+    {"projectID": 1485531, "fileID": 8251194, "required": true, "fileName": "JEI Want That-1.0.3.3"},
     {"projectID": 1499740, "fileID": 8219362, "required": true, "fileName": "Phantoms-1.12.2-1.0.0a"},
     {"projectID": 1516844, "fileID": 8243005, "required": true, "fileName": "PotionControl-1.0.3.1"},
-    {"projectID": 1521061, "fileID": 7962881, "required": true, "fileName": "ReplayMod Lock Fix-1.0.0"}
+    {"projectID": 1521061, "fileID": 7962881, "required": true, "fileName": "ReplayMod Lock Fix-1.0.0"},
+    {"projectID": 1569549, "fileID": 8251137, "required": true, "fileName": "Save My Ankh Shield-1.0.0.1"}
   ],
   "overrides": "overrides",
   "image": "profileImage/ShyCraft Minecraft ver.png"
