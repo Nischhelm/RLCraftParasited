@@ -202,4 +202,4 @@ Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 7, Cant
 Cauldron.addFillRecipe(<simpledifficulty:dragon_canteen>.withTag({Doses: 8, CanteenType: 3}), <liquid:water>, 1, <simpledifficulty:dragon_canteen>.withTag({Doses: 7, CanteenType: 3}));
 
 //Milk Kek
-//Cauldron.addBrewingRecipe("mujmajnkraftsbettersurvival:milk", "minecraft:thick", <minecraft:milk_bucket>);
+Cauldron.addBrewingRecipe("mujmajnkraftsbettersurvival:milk", "minecraft:thick", <minecraft:milk_bucket>);
