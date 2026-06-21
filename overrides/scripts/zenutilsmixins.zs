@@ -404,3 +404,18 @@ zenClass MinecraftHandlerMixin {
         return !(zomb instanceof native.com.sirsquidly.oe.entity.EntityDrowned);
     }
 }
+
+#mixin {targets: "com.dhanantry.scapeandrunparasites.entity.tile.TileEntityDod"}
+zenClass TileEntityDodMixin { //func_73660_a = update
+    #mixin Inject
+    #{
+    #   method: "func_73660_a",
+    #   at: {value: "INVOKE", target: "Lcom/dhanantry/scapeandrunparasites/world/SRPSaveData;setTotalKills(IIZLnet/minecraft/world/World;Z)Z"}
+    #}
+    #mixin Local
+    function zenutils_addPivotNearby(ci as mixin.CallbackInfo, axisalignedbb as native.net.minecraft.util.math.AxisAlignedBB) as void {
+        for para in this0.field_145850_b.func_72872_a(native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase.class, axisalignedbb) {
+            native.com.dhanantry.scapeandrunparasites.init.SRPPotions.applyStackPotion(native.com.dhanantry.scapeandrunparasites.init.SRPPotions.PIVOT_E, para as native.net.minecraft.entity.EntityLivingBase, 6000, 0);
+        }
+    }
+}
