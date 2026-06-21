@@ -392,3 +392,15 @@ zenClass BetterNetherHandlerMixin {
             // those 5 normal ones are Gravel Desert, Nether Jungle, Wart Forest, Nether Grasslands, Nether Mushroom Forest
     }
 }
+
+#mixin {targets: "com.charles445.rltweaker.handler.MinecraftHandler"}
+zenClass MinecraftHandlerMixin {
+    #mixin WrapWithCondition
+    #{
+    #   method: "onEntityJoinWorldEvent",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/entity/monster/EntityZombie;func_146070_a(Z)V"}
+    #}
+    function zenutils_dontLogBs(zomb as native.net.minecraft.entity.monster.EntityZombie, input as bool) as bool {
+        return !(zomb instanceof native.com.sirsquidly.oe.entity.EntityDrowned);
+    }
+}
