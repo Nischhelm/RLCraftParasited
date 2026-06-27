@@ -419,3 +419,15 @@ zenClass TileEntityDodMixin { //func_73660_a = update
         }
     }
 }
+
+#mixin {targets: "vazkii.arl.util.DropInHandler"}
+zenClass DropInHandlerMixin { //arl = autoreglib
+    #mixin Redirect
+    #{
+    #   method: "onRightClick",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/inventory/Slot;getSlotIndex()I"}
+    #}
+    function zenutils_fixQuarkShulkerDropoff(slot as native.net.minecraft.inventory.Slot as int {
+        return slot.field_75222_d; //slotNumber is correct
+    }
+}
