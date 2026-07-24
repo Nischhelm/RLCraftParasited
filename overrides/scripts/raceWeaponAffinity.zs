@@ -33,7 +33,7 @@ val materialsBS = [
     "junglechitin", "desertchitin", "junglestinger", "desertstinger"
 ];
 
-val raceItems = Parasited.raceWeaponAffinities;
+val raceItems = Parasited.trinkets.raceWeaponAffinities as string[][string];
 
 //Tooltips:
 
@@ -107,5 +107,5 @@ events.onEntityLivingHurt(function(event as crafttweaker.event.EntityLivingHurtE
 
     val items = raceItems[race];
     if(!isNull(items) && items has itemType)
-        event.amount = max(event.amount * Parasited.raceWeaponMulti, event.amount + Parasited.raceWeaponAddMin); // +25% dmg or +3 dmg
+        event.amount = max(event.amount * Parasited.trinkets.raceWeaponMulti, event.amount + Parasited.trinkets.raceWeaponAddMin); // +25% dmg or +3 dmg
 });
