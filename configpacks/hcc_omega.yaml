@@ -1,6 +1,6 @@
 name: "RLCraft Parasited HCC_OMEGA"
 version: "1.0.0"
-description: "These are the changes by shivs HARDCORE Server Setup v2"
+description: "These are the changes by shivs HARDCORE Server Setup v2 - lose all progression on death"
 
 # Patches to apply
 patches:
@@ -33,7 +33,7 @@ patches:
   - type: file_add
     source: hcc_omega/mods/RLDeath-1.12.2-1.1.1.jar
     destination: mods/RLDeath-1.12.2-1.1.1.jar
-    description: "removes various stuff on death - can get it on cf as well"
+    description: "removes various stuff on death"
 
   - type: cfg_patch
     file: config/trinkets/Trinkets_And_Baubles.cfg
