@@ -29,15 +29,6 @@
       "aimType": "target"
     },
     {
-      "type": "lycanitestweaks:advancedFireProjectiles",
-      "projectileName": "doomfireball",
-      "tickRate": 5,
-      "impactCount": 0,
-      "sizeScale": 1.5,
-      "velocity": 0.8,
-      "aimType": "random"
-    },
-    {
       "type": "explosion",
       "radius": 3
     },
