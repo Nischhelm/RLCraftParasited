@@ -22,7 +22,7 @@ import sys
 # Add tools directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from patchers import CfgPatcher, JsonPatcher, ScriptPatcher
+from patchers import CfgPatcher, JsonPatcher, ScriptPatcher, KeyValuePatcher
 
 
 @dataclass
@@ -73,6 +73,7 @@ class PackBuilder:
         self.cfg_patcher = CfgPatcher()
         self.json_patcher = JsonPatcher()
         self.script_patcher = ScriptPatcher()
+        self.keyvalue_patcher = KeyValuePatcher()
 
     def log(self, message: str):
         """Log message if verbose mode is enabled."""
@@ -241,7 +242,7 @@ class PackBuilder:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, dest)
 
-            elif patch_type in ['cfg_patch', 'json_patch', 'script_patch']:
+            elif patch_type in ['cfg_patch', 'json_patch', 'script_patch', 'keyvalue_patch']:
                 # For patches: Copy original file, apply patch, save to temp
                 file_rel = patch.get('file')
                 if not file_rel:
@@ -269,6 +270,8 @@ class PackBuilder:
                     self.json_patcher.apply(target_dir, patch)
                 elif patch_type == 'script_patch':
                     self.script_patcher.apply(target_dir, patch)
+                elif patch_type == 'keyvalue_patch':
+                    self.keyvalue_patcher.apply(target_dir, patch)
 
             else:
                 raise ValueError(f"Unknown patch type: {patch_type}")
@@ -301,6 +304,9 @@ class PackBuilder:
 
             elif patch_type == 'script_patch':
                 self.script_patcher.apply(target_dir, patch)
+
+            elif patch_type == 'keyvalue_patch':
+                self.keyvalue_patcher.apply(target_dir, patch)
 
             elif patch_type == 'file_add':
                 # file_add is handled differently - it adds from configpacks/_files/

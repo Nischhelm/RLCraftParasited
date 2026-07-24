@@ -76,6 +76,12 @@ class ConfigpackMigrator:
                         if patch:
                             patches.append(patch)
 
+                    elif file_path.suffix == '.txt' and file_path.name == 'options.txt':
+                        # Handle key:value files like options.txt
+                        patch = self._diff_keyvalue(base_file, file_path, str(rel_path))
+                        if patch:
+                            patches.append(patch)
+
                     elif file_path.suffix == '.zs':
                         # For scripts, just note that they're different
                         print(f"    → SCRIPT FILE (needs manual review)")
@@ -133,8 +139,18 @@ class ConfigpackMigrator:
                 base_value = base_values.get(key)
 
                 if base_value != pack_value:
-                    print(f"    → CHANGED: [{section}] {key} = {pack_value} (was: {base_value})")
-                    section_changes[key] = pack_value
+                    # Check if both are lists - use add/remove/replace format
+                    if isinstance(base_value, list) and isinstance(pack_value, list):
+                        list_ops = self._diff_cfg_list(base_value, pack_value)
+                        if list_ops:
+                            print(f"    → LIST CHANGED: [{section}] {key}")
+                            print(f"       {len(list_ops.get('add', []))} additions, "
+                                  f"{len(list_ops.get('remove', []))} removals, "
+                                  f"{len(list_ops.get('replace', []))} replacements")
+                            section_changes[key] = list_ops
+                    else:
+                        print(f"    → CHANGED: [{section}] {key} = {pack_value} (was: {base_value})")
+                        section_changes[key] = pack_value
 
             if section_changes:
                 changes[section] = section_changes
@@ -249,6 +265,105 @@ class ConfigpackMigrator:
 
         return sections
 
+    def _diff_cfg_list(self, base_list: List[Any], pack_list: List[Any]) -> Dict[str, Any]:
+        """
+        Compare two .cfg lists and generate add/remove/replace operations.
+
+        Returns:
+            Dict with 'add', 'remove', 'replace' keys (only if non-empty)
+            Returns None if lists are identical
+        """
+        if base_list == pack_list:
+            return None
+
+        base_set = set(base_list)
+        pack_set = set(pack_list)
+
+        added = pack_set - base_set
+        removed = base_set - pack_set
+
+        # Find potential replacements (items with same prefix before '=' but different suffix)
+        # This handles cases like: "item:name=value1" -> "item:name=value2"
+        replacements = []
+        added_copy = added.copy()
+        removed_copy = removed.copy()
+
+        for removed_item in list(removed_copy):
+            if '=' in removed_item:
+                removed_prefix = removed_item.split('=')[0]
+                # Look for matching prefix in added items
+                for added_item in list(added_copy):
+                    if '=' in added_item:
+                        added_prefix = added_item.split('=')[0]
+                        if removed_prefix == added_prefix:
+                            # Found a replacement!
+                            replacements.append({
+                                'old': removed_item,
+                                'new': added_item
+                            })
+                            removed_copy.discard(removed_item)
+                            added_copy.discard(added_item)
+                            break
+
+        # Build result
+        operations = {}
+        if removed_copy:
+            operations['remove'] = sorted(removed_copy)
+        if added_copy:
+            operations['add'] = sorted(added_copy)
+        if replacements:
+            operations['replace'] = replacements
+
+        return operations if operations else None
+
+    def _diff_keyvalue(self, base_file: Path, pack_file: Path, rel_path: str) -> Dict[str, Any]:
+        """
+        Compare two key:value files (like options.txt) and generate patch.
+
+        Returns:
+            Patch dict or None if files are identical
+        """
+        base_lines = base_file.read_text().splitlines()
+        pack_lines = pack_file.read_text().splitlines()
+
+        # Parse both files into key:value dicts
+        base_values = self._parse_keyvalue(base_lines)
+        pack_values = self._parse_keyvalue(pack_lines)
+
+        changes = {}
+
+        # Find changed values
+        for key, pack_value in pack_values.items():
+            base_value = base_values.get(key)
+
+            if base_value != pack_value:
+                print(f"    → CHANGED: {key} = {pack_value} (was: {base_value})")
+                changes[key] = pack_value
+
+        if not changes:
+            print(f"    → NO CHANGES")
+            return None
+
+        return {
+            'type': 'keyvalue_patch',
+            'file': rel_path,
+            'changes': changes
+        }
+
+    def _parse_keyvalue(self, lines: List[str]) -> Dict[str, str]:
+        """
+        Parse key:value lines into a dict.
+
+        Returns:
+            {key: value}
+        """
+        values = {}
+        for line in lines:
+            if ':' in line:
+                key, value = line.split(':', 1)
+                values[key] = value
+        return values
+
     def _diff_json(self, base_file: Path, pack_file: Path, rel_path: str) -> Dict[str, Any]:
         """
         Compare two .json files and auto-generate patch operations.
@@ -351,7 +466,27 @@ class ConfigpackMigrator:
                         else:
                             f.write(f"      {section}:\n")
                         for key, value in values.items():
-                            if isinstance(value, list):
+                            # Check if this is the new add/remove/replace format for lists
+                            if isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace']):
+                                f.write(f'        {key}:\n')
+                                # Write remove operations
+                                if 'remove' in value:
+                                    f.write(f'          remove:\n')
+                                    for item in value['remove']:
+                                        f.write(f'            - {item}\n')
+                                # Write add operations
+                                if 'add' in value:
+                                    f.write(f'          add:\n')
+                                    for item in value['add']:
+                                        f.write(f'            - {item}\n')
+                                # Write replace operations
+                                if 'replace' in value:
+                                    f.write(f'          replace:\n')
+                                    for repl in value['replace']:
+                                        f.write(f'            - old: {repl["old"]}\n')
+                                        f.write(f'              new: {repl["new"]}\n')
+                            elif isinstance(value, list):
+                                # Old format - complete list
                                 f.write(f'        {key}:\n')
                                 for item in value:
                                     f.write(f'        - {item}\n')
@@ -405,6 +540,18 @@ class ConfigpackMigrator:
                                     f.write(f'      {line}\n')
                         if 'from' in op:
                             f.write(f"      from: {op['from']}\n")
+                    f.write('\n')
+
+                elif patch_type == 'keyvalue_patch':
+                    file_name = Path(patch['file']).name
+                    f.write(f"  - type: keyvalue_patch\n")
+                    f.write(f"    file: {patch['file']}\n")
+                    f.write(f'    description: "TODO: Describe what changes in {file_name}"\n')
+                    f.write(f"    changes:\n")
+
+                    # Format key:value changes
+                    for key, value in patch['changes'].items():
+                        f.write(f'      {key}: {value}\n')
                     f.write('\n')
 
                 elif patch_type == 'script_patch':
