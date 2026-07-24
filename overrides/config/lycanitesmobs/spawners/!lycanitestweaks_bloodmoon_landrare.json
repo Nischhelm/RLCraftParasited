@@ -2,7 +2,7 @@
   "name": "bloodmoon_landrare",
   "type": "spawner",
   "enabled": true,
-  "loadDefault": true,
+  "loadDefault": false,
   "mobCountMin": 1,
   "mobCountPlayerRange": 128,
   "ignoreDimensions": true,
@@ -11,6 +11,13 @@
   "conditions": [
     {
       "type": "lycanitestweaks:bloodmoon"
+    },
+    {
+      "type": "world",
+      "dimensionIds": [
+        0
+      ],
+      "dimensionListType": "whitelist"
     }
   ],
   "triggers": [
