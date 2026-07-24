@@ -1,0 +1,355 @@
+name: "RLCraft Parasited HCC"
+version: "1.0.0"
+description: "These are the changes of shivs HARDCORE Config v1 for RLCraft 2.9.3"
+
+# Patches to apply
+patches:
+  - type: file_add
+    source: hcc/readme.txt
+    destination: readme.txt
+    description: "readme"
+
+  - type: keyvalue_patch
+    file: options.txt
+    description: "hcc darkness and scaling health diff meter keybind N"
+    changes:
+      gamma: -0.25
+      key_key.scalinghealth.show_always: 49
+
+  - type: cfg_patch
+    file: config/realistictorches.cfg
+    description: "some torches on structs are lit torches"
+    changes:
+      general:
+        B:world.generateLitTorches: true
+
+  - type: cfg_patch
+    file: config/firstaid.cfg
+    description: "reduce health on body parts and healing via sleep"
+    changes:
+      "general.damagesystem":
+        I:maxHealthBody: 4
+        I:maxHealthHead: 4
+        I:maxHealthLeftArm: 4
+        I:maxHealthLeftFoot: 4
+        I:maxHealthLeftLeg: 4
+        I:maxHealthRightArm: 4
+        I:maxHealthRightFoot: 4
+        I:maxHealthRightLeg: 4
+      "general.externalhealing":
+        D:sleepHealPercentage: 0.25
+
+  - type: cfg_patch
+    file: config/reskillable.cfg
+    description: "reskillable shield changes, dirt bucket and wooden shields unobtainable"
+    changes:
+      general:
+        S:"Skill Locks":
+          remove:
+            - mujmajnkraftsbettersurvival:itemsmallshield:*=reskillable:defense|4
+          add:
+            - dynamictrees:dirtbucket:*=unobtainable
+            - spartanshields:shield_basic_wood:*=unobtainable
+            - spartanshields:shield_tower_wood:*=unobtainable
+          replace:
+            - old: minecraft:shield:*=reskillable:defense|12
+              new: minecraft:shield:*=reskillable:defense|4
+
+  - type: cfg_patch
+    file: config/battletowers.cfg
+    description: "top 2 chests are locked (added key blank)"
+    changes:
+      battletowerchestitems:
+        S:"Floor 9": locks:key_blank-0-100-1-1;bountifulbaubles:spectralsilt-0-1-1-4;xat:glowing_ingot-0-15-1-2;potionfingers:ring-0-10-1-1;blaze_rod-0-20-1-2;armorunder:auto_chestplate_liner-0-3-1-1;armorunder:auto_leggings_liner-0-3-1-1;baubles:ring-0-10-1-1;qualitytools:emerald_ring-0-10-1-1;qualitytools:emerald_amulet-0-10-1-1;diamond_horse_armor-0-15-1-1;diamond_horse_armor-0-10-1-1;lapis_block-0-70-1-3;experience_bottle-0-50-1-16;blaze_powder-0-50-1-5;glowstone_dust-0-70-1-5;glowstone_dust-0-70-1-5;diamond_helmet-0-30-1-1;diamond_chestplate-0-30-1-1;diamond_leggings-0-30-1-1;diamond_boots-0-30-1-1;bookshelf-0-70-1-5;bookshelf-0-70-1-5;bookshelf-0-70-1-5;ender_pearl-0-50-1-4;emerald-0-40-3-6;emerald-0-30-4-8;emerald_block-0-30-1-3;redstone_lamp-0-60-2-2;brewing_stand-0-50-1-1;scalinghealth:heartcontainer-0-1-1-1;ChestGenHook:chests/simple_dungeon:4
+        S:"Top Floor": locks:key_blank-0-100-1-1;defiledlands:essence_mourner-0-5-1-4;defiledlands:essence_destroyer-0-5-1-4;defiledlands:ravaging_ingot-0-5-1-4;bountifulbaubles:spectralsilt-0-1-1-4;xat:glowing_ingot-0-15-1-2;potionfingers:ring-0-10-1-1;baubles:ring-0-10-1-1;xpbook:xp_book-0-3-1-1;xpbook:xp_book-250-3-1-1;xpbook:xp_book-500-3-1-1;xpbook:xp_book-1000-3-1-1;qualitytools:emerald_ring-0-10-1-1;qualitytools:emerald_amulet-0-10-1-1;nether_star-0-1-1-1;lapis_block-0-70-1-3;experience_bottle-0-50-1-10;experience_bottle-0-50-1-10;blaze_powder-0-50-1-5;blaze_rod-0-50-1-4;glowstone_dust-0-70-1-5;glowstone_dust-0-70-1-5;glowstone_dust-0-70-1-5;ender_pearl-0-50-1-4;diamond-0-50-1-3;diamond-0-30-2-4;diamond-0-20-3-5;diamond_block-0-30-1-2;redstone-0-75-5-10;gold_ingot-0-70-8-16;scalinghealth:heartcontainer-0-1-1-1;ChestGenHook:chests/simple_dungeon:5
+
+  - type: cfg_patch
+    file: config/globalgamerules.cfg
+    description: "reduced spawnradius to 1k (2k diameter, vanilla naming is wrong)"
+    changes:
+      gamerules:
+        S:spawnRadius: 2000.0
+
+  - type: cfg_patch
+    file: config/tnt_utilities.cfg
+    description: "explosions hurt items again"
+    changes:
+      entity_damage:
+        B:disableItemDamage: false
+
+  - type: cfg_patch
+    file: config/infernalmobs.cfg
+    description: "various bossy mobs are always infernal, regen is enabled"
+    changes:
+      entitiesalwaysinfernal:
+        B:AS_EntityGolem: true
+        B:EntityAmalgalich: true
+        B:EntityAsmodeus: true
+        B:EntityDestroyer: true
+        B:EntityDragon: true
+        B:EntityGiantZombie: true
+        B:EntityMourner: true
+        B:EntityOronco: true
+        B:EntityPlayerBoss: true
+        B:EntityRahovart: true
+        B:EntityTerla: true
+        B:EntityWither: true
+      general:
+        B:"MM_Regen enabled": true
+      permittedentities:
+        B:EntityMourner: true
+
+  - type: cfg_patch
+    file: config/fermiummixins.cfg
+    description: "no water bucket MLG, hcc darkness, lightning destroys items again"
+    changes:
+      "general.vanilla config":
+        B:"Configurable Water Fall Damage Reduction (Vanilla)": true
+        D:"Maximum Gamma Value": -0.25
+        D:"Minimum Gamma Value": -0.5
+        B:"Stop Lightning Destroying Items": false
+
+  - type: cfg_patch
+    file: config/potioncore.cfg
+    description: "potion sickness from 9 buffs onwards, 8 buffs is max"
+    changes:
+      potion_sickness:
+        I:"Number of Good Potions to Activate Potion Sickness": 9
+
+  - type: cfg_patch
+    file: config/somanyenchantments.cfg
+    description: "halve xp gain"
+    changes:
+      "general.miscellaneous":
+        B:"Retain Double XP Orbs Bug": false
+
+  - type: file_add
+    source: hcc/scripts/craftingRecipesHCC.zs
+    destination: scripts/craftingRecipesHCC.zs
+    description: "remove wood and stone spartan items"
+
+  - type: cfg_patch
+    file: config/sereneseasons/seasons.cfg
+    description: "start in a random season"
+    changes:
+      time settings:
+        I:"Starting Sub Season": 0
+
+  - type: json_patch
+    file: config/CustomMainMenu/mainmenu.json
+    encoding: latin-1
+    description: "modify main menu modpack name"
+    changes:
+    - op: replace
+      path: /labels/rl_craft/text
+      value: "RLCraft Parasited HCC"
+
+  - type: cfg_patch
+    file: config/lycanitesmobs/general.cfg
+    description: "bt golems have boss protection"
+    changes:
+      block protection:
+        S:"Custom Entity Block Protection":
+          add:
+            - battletowers:golem;16
+
+  - type: cfg_patch
+    file: config/scalinghealth/main.cfg
+    description: "difficulty as distance from spawn, +0..3 dmg per diff, +15%..45% HP per diff, max 20 diff"
+    changes:
+      "main.client":
+        B:"Render Difficulty Meter": true
+        B:"Render Difficulty Meter Always": true
+      "main.player.health":
+        I:"Min Health": 2
+      "main.mob":
+        S:"Damage Modifier": 3.0
+        S:"Max Damage Bonus": 69420.0
+      "main.mob.health":
+        S:"Base Health Modifier": 3.0
+        S:"Base Health Modifier Peaceful": 3.0
+        S:"Scaling Mode": MULTI
+      "main.difficulty":
+        S:"Area Mode": DISTANCE_FROM_SPAWN
+        S:"Difficulty Per Block": 0.001
+        S:"Max Value": 20.0
+        S:"Min Value": 0.5
+
+  - type: cfg_patch
+    file: config/spawnercontrol/spawnercontrol.cfg
+    description: "spawners spawn in daylight"
+    changes:
+      "general.vanillaspawnerconfig.spawnconditions":
+        B:checkSunlight: false
+        B:forceSpawnerAllSpawns: true
+
+  - type: json_patch
+    file: config/lycanitesmobs/spawners/flower.json
+    description: "nerf nymph spawning"
+    changes:
+    - op: replace
+      path: /triggers/0/chance
+      value: 0.25
+    - op: replace
+      path: /loadDefault
+      value: false
+    - op: replace
+      path: /locations/0/blockCost
+      value: 20
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/desertcrypts.json
+    description: "boss protection for lyca dungeon bosses in desertcrypts"
+    changes:
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/9/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/10/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/shadowlabyrinth.json
+    description: "boss protection for lyca dungeon bosses in shadowlabyrinth"
+    changes:
+    - op: replace
+      path: /loadDefault
+      value: false
+    - op: add
+      path: /mobSpawns/7/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/9/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/demonictemple.json
+    description: "boss protection for lyca dungeon bosses in demonictemple"
+    changes:
+    - op: replace
+      path: /loadDefault
+      value: false
+    - op: add
+      path: /mobSpawns/5/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/6/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/7/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/lushtomb.json
+    description: "boss protection for lyca dungeon bosses in lushtomb"
+    changes:
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/9/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/10/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/aberrantstation.json
+    description: "boss protection for lyca dungeon bosses in aberrantstation"
+    changes:
+    - op: replace
+      path: /loadDefault
+      value: false
+    - op: add
+      path: /mobSpawns/10/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/11/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/12/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/13/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/streamshrine.json
+    description: "boss protection for lyca dungeon bosses in streamshrine"
+    changes:
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/9/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/10/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/shadowlabyrinth_random.json
+    description: "boss protection for lyca dungeon bosses in shadowlabyrinth_random"
+    changes:
+    - op: replace
+      path: /loadDefault
+      value: false
+    - op: add
+      path: /mobSpawns/7/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/9/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/aberrantstation_random.json
+    description: "boss protection for lyca dungeon bosses in aberrantstation_random"
+    changes:
+    - op: replace
+      path: /loadDefault
+      value: false
+    - op: add
+      path: /mobSpawns/10/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/11/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/12/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/13/blockProtection
+      value: 36
+
+  - type: json_patch
+    file: config/lycanitesmobs/dungeons/schematics/ashenmausoleum.json
+    description: "boss protection for lyca dungeon bosses in ashenmausoleum"
+    changes:
+    - op: add
+      path: /mobSpawns/6/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/7/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/8/blockProtection
+      value: 36
+    - op: add
+      path: /mobSpawns/9/blockProtection
+      value: 36
+
+# Build configuration
+build:
+  output_name: "RLCraftParasitedHCC.zip"
