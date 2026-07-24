@@ -3,8 +3,12 @@ export/overrides/config/fantasticlib/reference/
 export/overrides/config/jei/worldSettings.cfg
 export/overrides/mods/memory_repo/
 build/*/
+build/
 zips/*
 .gradle/*
+tools/venv/
+tools/__pycache__/
+tools/patchers/__pycache__/
 overrides/config/jei/worldSettings.cfg
 overrides/config/InvTweaks/InvTweaks.cfg
 overrides/config/itemphysic.json
