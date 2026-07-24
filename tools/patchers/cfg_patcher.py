@@ -97,26 +97,75 @@ class CfgPatcher:
                 if full_key in changes[current_section]:
                     # This is a list we want to modify
                     new_values = changes[current_section][full_key]
-                    if not isinstance(new_values, list):
-                        new_values = [new_values]
 
-                    # Add the list header
-                    result.append(line)
+                    # Check if this is the new add/remove/replace format
+                    if isinstance(new_values, dict) and any(k in new_values for k in ['add', 'remove', 'replace']):
+                        # New format - apply operations to existing list
+                        # Add the list header
+                        result.append(line)
 
-                    # Skip old list content until we find the closing >
-                    i += 1
-                    while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
+                        # Read old list values
+                        old_values = []
                         i += 1
+                        while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
+                            old_values.append(lines[i].strip())
+                            i += 1
 
-                    # Add new list values
-                    for value in new_values:
-                        result.append(f"        {value}")
+                        # Apply operations
+                        final_values = old_values.copy()
 
-                    # Add the closing >
-                    if i < len(lines):
-                        result.append(lines[i])
-                    i += 1
-                    continue
+                        # 1. Remove operations
+                        if 'remove' in new_values:
+                            for item in new_values['remove']:
+                                if item in final_values:
+                                    final_values.remove(item)
+
+                        # 2. Replace operations
+                        if 'replace' in new_values:
+                            for replacement in new_values['replace']:
+                                old = replacement['old']
+                                new = replacement['new']
+                                if old in final_values:
+                                    idx = final_values.index(old)
+                                    final_values[idx] = new
+
+                        # 3. Add operations (at the end)
+                        if 'add' in new_values:
+                            for item in new_values['add']:
+                                if item not in final_values:  # Avoid duplicates
+                                    final_values.append(item)
+
+                        # Write final list
+                        for value in final_values:
+                            result.append(f"        {value}")
+
+                        # Add the closing >
+                        if i < len(lines):
+                            result.append(lines[i])
+                        i += 1
+                        continue
+                    else:
+                        # Old format - replace entire list
+                        if not isinstance(new_values, list):
+                            new_values = [new_values]
+
+                        # Add the list header
+                        result.append(line)
+
+                        # Skip old list content until we find the closing >
+                        i += 1
+                        while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
+                            i += 1
+
+                        # Add new list values
+                        for value in new_values:
+                            result.append(f"        {value}")
+
+                        # Add the closing >
+                        if i < len(lines):
+                            result.append(lines[i])
+                        i += 1
+                        continue
 
             # If we're in a section that has changes (simple key=value)
             if section_stack and current_section in changes:
