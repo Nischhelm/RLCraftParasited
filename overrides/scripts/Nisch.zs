@@ -68,6 +68,6 @@ events.onEntityLivingAttacked(function(event as crafttweaker.event.EntityLivingA
     val race as string = native.xzeroair.trinkets.api.EntityApiHelper.getEntityRace(player);
     if(race != "Fairy") return;
 
-    if(player.world.getRandom().nextFloat() < Parasited.fairyBlockChance) 
+    if(player.world.getRandom().nextFloat() < Parasited.trinkets.fairyBlockChance)
     event.cancel();
 });
