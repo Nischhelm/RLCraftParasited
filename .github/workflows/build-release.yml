@@ -45,7 +45,7 @@ jobs:
       - name: Extract latest changelog
         id: changelog
         run: |
-          python .github/scripts/extract_changelog.py changelog.md > /tmp/changelog_entry.md
+          python .github/scripts/extract_changelog.py overrides/changelog.md > /tmp/changelog_entry.md
           echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
           cat /tmp/changelog_entry.md >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
