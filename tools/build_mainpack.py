@@ -18,6 +18,7 @@ def build_mainpack(output_dir: Path = None):
     # Files to include in the main pack (relative to root)
     include_files = [
         "manifest.json",
+        "readme.md",
     ]
 
     # Directories to include
