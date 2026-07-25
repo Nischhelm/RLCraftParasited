@@ -53,7 +53,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          name: RLCraft Parasited ${{ steps.version.outputs.VERSION }}
+          name: ${{ steps.version.outputs.VERSION }}
           body: |
             ## RLCraft Parasited ${{ steps.version.outputs.VERSION }}
 
@@ -61,17 +61,17 @@ jobs:
 
             ---
 
-            ### Downloads:
-            - **RLCraft Parasited.zip** - Main modpack
-            - **RLCraftParasitedHCC.zip** - Hardcore Config (Standard difficulty increase)
-            - **RLCraftParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (Maximum difficulty)
-            - **RLCraftParasitedUnparasited.zip** - Removes parasite mechanics
+            ### Main Pack (import in cf app):
+            - **RLCraft Parasited.zip**
+
+            ### Config Packs:
+            - **RLCraftParasitedHCC.zip** - Hardcore Config (if you like pain)
+            - **RLCraftParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (lose all progression on death)
+            - **RLCraftParasitedUnparasited.zip** - Unparasited (put the parasites where they came from)
 
             ### Installation:
-            **Main Pack:** Install via CurseForge/MultiMC/Prism Launcher or extract manually
+            **Main Pack:** Import ZIP in CurseForge app or similar features in other launchers
             **Configpacks:** Download and extract over your RLCraft Parasited installation, confirm to overwrite files
-
-            Built with [Config Pack Creator](https://github.com/${{ github.repository }})
           files: |
             build/*.zip
           draft: false
