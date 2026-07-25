@@ -38,28 +38,38 @@ jobs:
         id: version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
 
+      - name: Extract latest changelog
+        id: changelog
+        run: |
+          python .github/scripts/extract_changelog.py changelog.md > /tmp/changelog_entry.md
+          echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
+          cat /tmp/changelog_entry.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          name: RLCraft Parasited Configpacks ${{ steps.version.outputs.VERSION }}
+          name: RLCraft Parasited ${{ steps.version.outputs.VERSION }}
           body: |
-            ## RLCraft Parasited Configpacks ${{ steps.version.outputs.VERSION }}
+            ## RLCraft Parasited ${{ steps.version.outputs.VERSION }}
 
-            Download the configpack you want and extract it over your RLCraft Parasited installation.
+            ${{ steps.changelog.outputs.CHANGELOG }}
 
-            ### Available Configpacks:
+            ---
+
+            ### Downloads:
+            - **RLCraft Parasited.zip** - Main modpack
             - **HCC.zip** - Hardcore Config (Standard difficulty increase)
             - **HCC_Omega.zip** - Hardcore Config Omega (Maximum difficulty)
             - **Unparasited.zip** - Removes parasite mechanics
 
             ### Installation:
-            1. Download the ZIP file for your desired configpack
-            2. Extract the contents over your RLCraft Parasited installation folder
-            3. Confirm to overwrite existing files
-            4. Launch the game
+            **Main Pack:** Install via CurseForge/MultiMC or extract manually
+            **Configpacks:** Download and extract over your RLCraft Parasited installation, confirm to overwrite files
 
             Built with [Config Pack Creator](https://github.com/${{ github.repository }})
           files: |
+            RLCraft Parasited.zip
             build/*.zip
           draft: false
           prerelease: false
