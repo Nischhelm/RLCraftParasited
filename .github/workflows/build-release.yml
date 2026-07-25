@@ -5,6 +5,9 @@ on:
     tags:
       - '*'  # Trigger on any tag
 
+permissions:
+  contents: write  # Required to create releases
+
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
