@@ -1,0 +1,64 @@
+name: Build and Release Configpacks
+
+on:
+  push:
+    tags:
+      - '*'  # Trigger on any tag
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r tools/requirements.txt
+
+      - name: Build all configpacks
+        run: |
+          python tools/packbuilder.py build --all
+
+      - name: List built files
+        run: |
+          ls -lh build/
+
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: RLCraft Parasited Configpacks ${{ steps.version.outputs.VERSION }}
+          body: |
+            ## RLCraft Parasited Configpacks ${{ steps.version.outputs.VERSION }}
+
+            Download the configpack you want and extract it over your RLCraft Parasited installation.
+
+            ### Available Configpacks:
+            - **HCC.zip** - Hardcore Config (Standard difficulty increase)
+            - **HCC_Omega.zip** - Hardcore Config Omega (Maximum difficulty)
+            - **Unparasited.zip** - Removes parasite mechanics
+
+            ### Installation:
+            1. Download the ZIP file for your desired configpack
+            2. Extract the contents over your RLCraft Parasited installation folder
+            3. Confirm to overwrite existing files
+            4. Launch the game
+
+            Built with [Config Pack Creator](https://github.com/${{ github.repository }})
+          files: |
+            build/*.zip
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
