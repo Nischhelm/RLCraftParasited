@@ -2,7 +2,7 @@ This is a curseforge import zip installer for **RLCraft Parasited**
 
 ---
 
-Install via curseforge app → import → from zip.
+Install via curseforge app → import → from zip. Don't extract this.
 
 ---
 
