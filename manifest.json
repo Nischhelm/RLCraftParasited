@@ -192,7 +192,7 @@
     {"projectID": 580690, "fileID": 3650166, "required": true, "fileName": "BlockOverlayFix-1.12.2-1.0.0"},
     {"projectID": 585546, "fileID": 7207726, "required": true, "fileName": "BHMenu-Forge-1.12.2-2.4.6"},
     {"projectID": 624967, "fileID": 6461209, "required": true, "fileName": "RenderLib-1.12.2-1.4.5"},
-    {"projectID": 627630, "fileID": 4005371, "required": true, "fileName": "AnimEmis_srparasites"},
+    {"projectID": 627630, "fileID": 8355779, "required": true, "fileName": "AnimEmis_srparasites"},
     {"projectID": 637540, "fileID": 8142559, "required": true, "fileName": "DramaticTrees-1.12.2-0.13.6"},
     {"projectID": 638065, "fileID": 8209432, "required": true, "fileName": "AnimEmis_defiledlands"},
     {"projectID": 639575, "fileID": 5144801, "required": true, "fileName": "AnimEmis_ForgottenItems"},
