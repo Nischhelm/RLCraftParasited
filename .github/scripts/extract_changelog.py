@@ -4,6 +4,38 @@
 import sys
 from pathlib import Path
 
+def convert_to_markdown_lists(text):
+    """Convert indented text to markdown lists"""
+    lines = text.split('\n')
+    result = []
+
+    for line in lines:
+        # Skip separator lines and empty lines
+        if line.strip().startswith('---') or not line.strip():
+            result.append(line)
+            continue
+
+        # Count leading spaces
+        stripped = line.lstrip()
+        indent_count = len(line) - len(stripped)
+
+        # Convert to markdown list format
+        # 0 spaces -> "- text"
+        # 4 spaces -> "  - text" (2 spaces + dash)
+        # 8 spaces -> "    - text" (4 spaces + dash)
+        if indent_count == 0:
+            result.append(f"- {stripped}")
+        elif indent_count == 4:
+            result.append(f"  - {stripped}")
+        elif indent_count == 8:
+            result.append(f"    - {stripped}")
+        else:
+            # For other indents, preserve as-is but add dash
+            markdown_indent = ' ' * ((indent_count // 4) * 2)
+            result.append(f"{markdown_indent}- {stripped}")
+
+    return '\n'.join(result)
+
 def extract_latest_changelog(changelog_path):
     """Extract the first entry from changelog.md (between first two --- lines)"""
     try:
@@ -27,6 +59,10 @@ def extract_latest_changelog(changelog_path):
         end = separator_indices[1]
 
         changelog_entry = '\n'.join(lines[start:end]).strip()
+
+        # Convert to markdown lists
+        changelog_entry = convert_to_markdown_lists(changelog_entry)
+
         return changelog_entry
 
     except FileNotFoundError:
