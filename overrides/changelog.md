@@ -1,3 +1,59 @@
+--- July XX 2026 ---
+
+Mod Updates
+    updated trinkets to (presumably) newest indev version
+    updated jeiwt
+    updated lycatweaks
+    updated Artsy's AnimEmis DefiledLands + SRParasites
+    updated srpmixins
+    updated enchantmentcontrol
+    updated mindpalaces
+    minor updates:
+        updated zenutils to 1.27.5 (cant continue to update past 27.5 bc of 28 uses new mixinbooter 11+ features)
+        updated jei
+        updated baubley elytra
+        updated atlas lib
+        updated ddd
+        updated ebwizardry
+        updated voicechat
+    added save my ankh shield by cdstk
+
+Config changes
+    SRP: this is trying to make point progression "at will" easier
+        removed point reduction when killing "real" parasites
+            now only on assim (-1) and feral (-5)
+            thanks to lynch for suggestion
+        reduced infestation penalty min phase to 3
+        dispatcher nidus failing to spawn gives stacking pivot effect (max lvl 10) on surrounding paras, increasing points
+        readd nexus block bonus, happens when nidus fail to spawn dispatchers, increases point penalty from it growing
+        increased merge penalty when moving flesh (from assims) merges to primitive paras
+    socketable items
+        increase myrmex+dragon gear loot chance
+            especially with luck
+            not done yet, missing quality on dragonbone+dragonsteel and i want dragonbone in simple dragon nest chests
+    re-added milk
+    lycatweaks
+        auto updated lycatweaks cfg
+        ill regret this - lycatweaks bloodmoon spawners
+            these are changes that happen automatically from having loadDefault (except when loadDefault disables the spawners except for one)
+        some auto changes to sigil wraith skull
+            no clue, comes from loaddefault
+
+Fixes
+    add OE logspam fix via zenutils
+    fixed quark shulker dropoff not working in some scenarios
+    created various configs for crafttweaker scripts in parasited.cfg
+
+Addons
+    updated shycraft to 1.2.3 (kinda old again by now)
+    migrate to auto creation of configpacks through github workflow
+    delete old unparasited / omega setup
+    initial setup of config pack creator
+
+Docs
+    Created readme_if_it_lags.txt
+    changed direct connect server to nischhelm.com
+
 --- June 13 2026 ---
 
 Mod Updates
