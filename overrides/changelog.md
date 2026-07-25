@@ -1,15 +1,22 @@
---- July XX 2026 ---
+--- July 25 2026 ---
 
-Mod Updates
-    updated trinkets to (presumably) newest indev version
-    updated jeiwt
-    updated lycatweaks
+Mod changes
+    updated trinkets to newest indev version
+    updated jei want that
+    updated lycanitestweaks
     updated Artsy's AnimEmis DefiledLands + SRParasites
     updated srpmixins
+        changed adaptation dmg reduction and fire damage multiplier when wearing liv/sent armor while burning. 
+            now 2x dmg (was 4x) and 50% reduced adaptation effect (was 100% reduced) when burning
+        fixed lang key issue with sentient maul and all lances, should now display correctly
+        fixed remote server soft-crash logspam from srpextra 0.6.x damageAni field missing
+        bosses with COTH will now still drop loot
     updated enchantmentcontrol
+        enchantments that dont make the enchants on the left item better won't cost anything anymore (ex prot 4 + prot 4 or sharp 3 + sharp 1)
     updated mindpalaces
+        share mind palaces with /mindpalaces dream with xyz or dream alone to leave.
     minor updates:
-        updated zenutils to 1.27.5 (cant continue to update past 27.5 bc of 28 uses new mixinbooter 11+ features)
+        updated zenutils to 1.27.5 (cant continue to update past 1.27.5 bc 1.28+ uses new mixinbooter 11+ features. but thats fine)
         updated jei
         updated baubley elytra
         updated atlas lib
@@ -19,37 +26,34 @@ Mod Updates
     added save my ankh shield by cdstk
 
 Config changes
-    SRP: this is trying to make point progression "at will" easier
+    SRP: this all is trying to make point progression "at will" easier when ppl want to go to LC
         removed point reduction when killing "real" parasites
             now only on assim (-1) and feral (-5)
             thanks to lynch for suggestion
-        reduced infestation penalty min phase to 3
-        dispatcher nidus failing to spawn gives stacking pivot effect (max lvl 10) on surrounding paras, increasing points
-        readd nexus block bonus, happens when nidus fail to spawn dispatchers, increases point penalty from it growing
-        increased merge penalty when moving flesh (from assims) merges to primitive paras
+        reduced infestation penalty minimum phase to 3 (was 4). kill beckons around you or else
+        dispatcher nidus failing to spawn (bc near other nexus) gives stacking pivot effect (max lvl 10) on surrounding paras, increasing points
+        readded nexus point penalty multiplier (x3), also happens when nidus fail to spawn dispatchers
+        increased merge penalty when moving flesh (from assims) merges to primitive paras (500, was 10)
     socketable items
         increase myrmex+dragon gear loot chance
             especially with luck
-            not done yet, missing quality on dragonbone+dragonsteel and i want dragonbone in simple dragon nest chests
-    re-added milk
+            TODO: still missing quality (=weight per luck) entry on dragonbone+dragonsteel, also dragonbone in simple dragon nest chests
+    re-added milk :3
     lycatweaks
         auto updated lycatweaks cfg
         ill regret this - lycatweaks bloodmoon spawners
             these are changes that happen automatically from having loadDefault (except when loadDefault disables the spawners except for one)
-        some auto changes to sigil wraith skull
-            no clue, comes from loaddefault
+            idk what these do but presumably make bloodmoons worse :shrug:
 
-Fixes
-    add OE logspam fix via zenutils
+Scripts
+    add OE logspam fix via zenutils (was srpmixins)
     fixed quark shulker dropoff not working in some scenarios
     created various configs for crafttweaker scripts in parasited.cfg
 
-Addons
-    updated shycraft to 1.2.3 (kinda old again by now)
-    migrate to auto creation of configpacks through github workflow
-    delete old unparasited / omega setup
-    initial setup of config pack creator
-
+Config Packs
+    updated shycraft to 1.2.3 (kinda old again by now, will push updates soon)
+    migrated to "config pack creator", a set of python scripts that creates and publishes all config packs through yaml difference files in a github publish workflow
+    
 Docs
     Created readme_if_it_lags.txt
     changed direct connect server to nischhelm.com
