@@ -26,6 +26,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tools/requirements.txt
 
+      - name: Build main modpack
+        run: |
+          python tools/build_mainpack.py
+
       - name: Build all configpacks
         run: |
           python tools/packbuilder.py build --all
@@ -59,17 +63,16 @@ jobs:
 
             ### Downloads:
             - **RLCraft Parasited.zip** - Main modpack
-            - **HCC.zip** - Hardcore Config (Standard difficulty increase)
-            - **HCC_Omega.zip** - Hardcore Config Omega (Maximum difficulty)
-            - **Unparasited.zip** - Removes parasite mechanics
+            - **RLCraftParasitedHCC.zip** - Hardcore Config (Standard difficulty increase)
+            - **RLCraftParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (Maximum difficulty)
+            - **RLCraftParasitedUnparasited.zip** - Removes parasite mechanics
 
             ### Installation:
-            **Main Pack:** Install via CurseForge/MultiMC or extract manually
+            **Main Pack:** Install via CurseForge/MultiMC/Prism Launcher or extract manually
             **Configpacks:** Download and extract over your RLCraft Parasited installation, confirm to overwrite files
 
             Built with [Config Pack Creator](https://github.com/${{ github.repository }})
           files: |
-            RLCraft Parasited.zip
             build/*.zip
           draft: false
           prerelease: false
