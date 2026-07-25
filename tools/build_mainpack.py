@@ -17,10 +17,7 @@ def build_mainpack(output_dir: Path = None):
 
     # Files to include in the main pack (relative to root)
     include_files = [
-        "changelog.md",
         "manifest.json",
-        "readme.md",
-        "server_readme.md",
     ]
 
     # Directories to include
