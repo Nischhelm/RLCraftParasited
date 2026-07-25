@@ -1,10 +1,6 @@
 --- July 25 2026 ---
 
 Mod changes
-    updated trinkets to newest indev version
-    updated jei want that
-    updated lycanitestweaks
-    updated Artsy's AnimEmis DefiledLands + SRParasites
     updated srpmixins
         changed adaptation dmg reduction and fire damage multiplier when wearing liv/sent armor while burning. 
             now 2x dmg (was 4x) and 50% reduced adaptation effect (was 100% reduced) when burning
@@ -15,6 +11,10 @@ Mod changes
         enchantments that dont make the enchants on the left item better won't cost anything anymore (ex prot 4 + prot 4 or sharp 3 + sharp 1)
     updated mindpalaces
         share mind palaces with /mindpalaces dream with xyz or dream alone to leave.
+    updated trinkets to newest indev version
+    updated jei want that
+    updated lycanitestweaks
+    updated Artsy's AnimEmis DefiledLands + SRParasites
     minor updates:
         updated zenutils to 1.27.5 (cant continue to update past 1.27.5 bc 1.28+ uses new mixinbooter 11+ features. but thats fine)
         updated jei
@@ -51,9 +51,15 @@ Scripts
     created various configs for crafttweaker scripts in parasited.cfg
 
 Config Packs
-    updated shycraft to 1.2.3 (kinda old again by now, will push updates soon)
-    migrated to "config pack creator", a set of python scripts that creates and publishes all config packs through yaml difference files in a github publish workflow
-    
+    migrated to "config pack creator", a set of python scripts that create and publish all config packs through yaml diff files through a github publish workflow
+    will update shycraft 1.2.3 to newest parasited soon
+
+Structures
+    reviewed many new structures for parasited, thanks for the send-ins! 
+        their generation conditions and loot arent set yet, so wont be included in this update
+        feel free to send more thematic structs using dread, parasite, oceanic, betterend, cherry or other block palettes 
+        (dont mix mods too much though)
+
 Docs
     Created readme_if_it_lags.txt
     changed direct connect server to nischhelm.com
