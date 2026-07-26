@@ -16,13 +16,12 @@ patches:
       gamma: -0.25
       key_key.scalinghealth.show_always: 49
 
-# disabled as long as cherry groves dont gen in RTG
-#  - type: cfg_patch
-#    file: config/RTG/rtg.cfg
-#    description: "default worldtype RTG"
-#    changes:
-#      client:
-#        B:rtgWorldTypeByDefault: true
+  - type: cfg_patch
+    file: config/RTG/rtg.cfg
+    description: "default worldtype RTG"
+    changes:
+      client:
+        B:rtgWorldTypeByDefault: true
 
   - type: cfg_patch
     file: config/realistictorches.cfg
