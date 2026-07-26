@@ -15,12 +15,14 @@ Scripts
     fixed Y menu "more wheat" perk giving wheat on not fully grown wheat blocks
     clocks and compasses can be smelted now, to 2 ingots each
     readded default milk cauldron brewing recipes (gold apple -> cure, ferm spider eye -> dispel)
+    fixed rtg x cherry grove compat mixin
+    fixed rare issue with new obby skull recipe (thanks blake/pvpete for report)
 
 Structures
     
 
 Config Packs
-    
+    re-enabled RTG as default worldtype for HCC as its now working with cherry grove
 
 Docs
     
