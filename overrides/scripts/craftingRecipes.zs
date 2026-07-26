@@ -566,6 +566,7 @@ recipes.addHiddenShaped("rec27b",<bountifulbaubles:trinketobsidianskull>,
   [(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes1"),<minecraft:skull:0>|<minecraft:skull:1>,(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes2")],
   [<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>]],
   function(output as IItemStack, inputs as IItemStack[string], craftingInfo as crafttweaker.recipes.ICraftingInfo) as IItemStack{
+    if(isNull(inputs.fireRes1.tag) || isNull(inputs.fireRes2.tag)) return null;
     val pottype1 as string = inputs.fireRes1.tag.memberGet("Potion").asString();
     if(!pottype1.endsWith("fire_resistance")) return null;
     val pottype2 = inputs.fireRes2.tag.memberGet("Potion").asString();
