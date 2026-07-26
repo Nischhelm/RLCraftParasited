@@ -137,7 +137,27 @@ class PackBuilder:
         # 1. Load configpack definition
         pack = self.load_configpack(configpack_name)
 
-        # 2. Create temporary build directory
+        # Check build mode
+        build_mode = pack.build_config.get('mode', 'configpack')
+
+        if build_mode == 'modpack':
+            return self._build_as_modpack(pack, configpack_name, tag_version)
+        else:
+            return self._build_as_configpack(pack, configpack_name, tag_version)
+
+    def _build_as_configpack(self, pack: ConfigPack, configpack_name: str, tag_version: Optional[str] = None):
+        """
+        Build as a configpack (only changed files).
+
+        Args:
+            pack: ConfigPack object
+            configpack_name: Name of the configpack
+            tag_version: Optional version tag
+
+        Returns:
+            Path to the generated ZIP file
+        """
+        # Create temporary build directory
         temp_dir = self.output_dir / "temp" / configpack_name
         if temp_dir.exists():
             shutil.rmtree(temp_dir)
@@ -146,18 +166,18 @@ class PackBuilder:
         self.log(f"Created temp directory: {temp_dir}")
 
         try:
-            # 3. Apply patches (ONLY copy files that are being patched)
+            # Apply patches (ONLY copy files that are being patched)
             print(f"  Processing {len(pack.patches)} patches...")
             for i, patch in enumerate(pack.patches, 1):
                 self._apply_patch_selective(temp_dir, patch, i)
 
-            # 5. Add configpack-specific files
+            # Add configpack-specific files
             if pack.files:
                 print(f"  Adding {len(pack.files)} additional files...")
                 for file_spec in pack.files:
                     self._add_file(temp_dir, file_spec)
 
-            # 6. Create ZIP
+            # Create ZIP
             output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
 
             # Add version tag if provided
@@ -174,7 +194,69 @@ class PackBuilder:
             return output_zip
 
         finally:
-            # 7. Cleanup temp directory
+            # Cleanup temp directory
+            if temp_dir.exists():
+                shutil.rmtree(temp_dir)
+                self.log("Cleaned up temp directory")
+
+    def _build_as_modpack(self, pack: ConfigPack, configpack_name: str, tag_version: Optional[str] = None):
+        """
+        Build as a complete modpack (like main pack).
+
+        Args:
+            pack: ConfigPack object
+            configpack_name: Name of the configpack
+            tag_version: Optional version tag
+
+        Returns:
+            Path to the generated ZIP file
+        """
+        print(f"  Building as complete modpack")
+
+        # Create temporary build directory
+        temp_dir = self.output_dir / "temp" / configpack_name
+        if temp_dir.exists():
+            shutil.rmtree(temp_dir)
+        temp_dir.mkdir(parents=True, exist_ok=True)
+
+        self.log(f"Created temp directory: {temp_dir}")
+
+        try:
+            # 1. Copy ENTIRE overrides directory
+            print(f"  Copying overrides/ directory...")
+            overrides_dest = temp_dir / "overrides"
+            shutil.copytree(self.overrides_dir, overrides_dest)
+
+            # 2. Apply patches to the copied overrides
+            print(f"  Applying {len(pack.patches)} patches to overrides...")
+            for i, patch in enumerate(pack.patches, 1):
+                self._apply_patch_modpack(temp_dir, patch, i)
+
+            # 3. Include additional files/folders (manifest.json, profileImage, etc.)
+            include_list = pack.build_config.get('include', [])
+            if include_list:
+                print(f"  Including {len(include_list)} additional items...")
+                for item in include_list:
+                    self._include_modpack_item(temp_dir, item, pack, configpack_name)
+
+            # 4. Create ZIP
+            output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
+
+            # Add version tag if provided
+            if tag_version:
+                base_name = output_name.replace('.zip', '')
+                output_name = f"{base_name}-{tag_version}.zip"
+
+            output_zip = self.output_dir / output_name
+
+            print(f"  Creating ZIP: {output_zip.name}")
+            self._create_zip(temp_dir, output_zip)
+
+            print(f"✓ Built: {output_zip}")
+            return output_zip
+
+        finally:
+            # Cleanup temp directory
             if temp_dir.exists():
                 shutil.rmtree(temp_dir)
                 self.log("Cleaned up temp directory")
@@ -353,6 +435,154 @@ class PackBuilder:
 
         except Exception as e:
             raise RuntimeError(f"Failed to apply patch {patch_num}: {e}")
+
+    def _apply_patch_modpack(self, target_dir: Path, patch: Dict[str, Any], patch_num: int):
+        """
+        Apply a patch to the modpack build (patches are applied to overrides/ or root).
+
+        Args:
+            target_dir: Temporary build directory (contains overrides/)
+            patch: Patch specification
+            patch_num: Patch number (for logging)
+        """
+        patch_type = patch.get('type')
+
+        if not patch_type:
+            raise ValueError(f"Patch {patch_num} missing 'type' field")
+
+        self.log(f"[{patch_num}] Applying {patch_type}: {patch.get('file', patch.get('destination', '?'))}")
+
+        try:
+            if patch_type == 'file_add':
+                # file_add: Copy from configpacks/_files/ to overrides/
+                source_rel = patch.get('source')
+                dest_rel = patch.get('destination')
+
+                if not source_rel or not dest_rel:
+                    raise ValueError("file_add requires 'source' and 'destination'")
+
+                source = self.configpacks_dir / "_files" / source_rel
+                dest = target_dir / "overrides" / dest_rel
+
+                if not source.exists():
+                    raise FileNotFoundError(f"Source file not found: {source}")
+
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source, dest)
+
+            elif patch_type == 'folder_add':
+                # folder_add: Copy entire folder to overrides/
+                source_rel = patch.get('source')
+                dest_rel = patch.get('destination')
+
+                if not source_rel or not dest_rel:
+                    raise ValueError("folder_add requires 'source' and 'destination'")
+
+                source = self.configpacks_dir / "_files" / source_rel
+                dest = target_dir / "overrides" / dest_rel
+
+                if not source.exists():
+                    raise FileNotFoundError(f"Source folder not found: {source}")
+
+                if not source.is_dir():
+                    raise ValueError(f"Source must be a directory: {source}")
+
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copytree(source, dest, dirs_exist_ok=True)
+
+            elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch']:
+                # Apply patch to files
+                file_rel = patch.get('file')
+                if not file_rel:
+                    raise ValueError(f"{patch_type} requires 'file' field")
+
+                # Check if this is a root-level file (like manifest.json) or in overrides/
+                # Root-level files don't start with typical config paths
+                is_root_file = file_rel in ['manifest.json', 'modlist.html']
+
+                if is_root_file:
+                    # Patch applies to root (will be handled by _include_modpack_item)
+                    # Skip here - these patches are applied when including the file
+                    pass
+                else:
+                    # Patch applies to overrides/
+                    overrides_dir = target_dir / "overrides"
+
+                    # Apply patch
+                    if patch_type == 'cfg_patch':
+                        self.cfg_patcher.apply(overrides_dir, patch)
+                    elif patch_type == 'json_patch':
+                        self.json_patcher.apply(overrides_dir, patch)
+                    elif patch_type == 'json_append_all':
+                        self.json_patcher.apply_append_all(overrides_dir, patch)
+                    elif patch_type == 'script_patch':
+                        self.script_patcher.apply(overrides_dir, patch)
+                    elif patch_type == 'keyvalue_patch':
+                        self.keyvalue_patcher.apply(overrides_dir, patch)
+
+            else:
+                raise ValueError(f"Unknown patch type: {patch_type}")
+
+        except Exception as e:
+            raise RuntimeError(f"Failed to apply patch {patch_num}: {e}")
+
+    def _include_modpack_item(self, target_dir: Path, item: str, pack: ConfigPack, configpack_name: str):
+        """
+        Include additional items for modpack build (manifest.json, profileImage, etc.).
+
+        Args:
+            target_dir: Temporary build directory
+            item: Item to include (file or folder name)
+            pack: ConfigPack object
+            configpack_name: Name of the configpack
+        """
+        # Check if item is a patch for a root-level file (like manifest.json)
+        patches_for_item = [p for p in pack.patches if p.get('file') == item]
+
+        if patches_for_item:
+            # This item has patches - copy from base and apply patches
+            source = self.base_dir / item
+            dest = target_dir / item
+
+            if source.exists():
+                self.log(f"Copying and patching: {item}")
+                if source.is_file():
+                    shutil.copy2(source, dest)
+                else:
+                    shutil.copytree(source, dest, dirs_exist_ok=True)
+
+                # Apply patches to this item
+                for patch in patches_for_item:
+                    patch_type = patch.get('type')
+                    if patch_type == 'json_patch':
+                        self.json_patcher.apply(target_dir, patch)
+                    elif patch_type == 'json_append_all':
+                        self.json_patcher.apply_append_all(target_dir, patch)
+                    # Add other patch types as needed
+        else:
+            # No patches - just copy from configpack _files or base
+            # First try configpack _files
+            source_from_files = self.configpacks_dir / "_files" / configpack_name / item
+
+            if source_from_files.exists():
+                self.log(f"Copying from _files: {item}")
+                dest = target_dir / item
+                if source_from_files.is_file():
+                    shutil.copy2(source_from_files, dest)
+                else:
+                    shutil.copytree(source_from_files, dest, dirs_exist_ok=True)
+            else:
+                # Try base directory
+                source_from_base = self.base_dir / item
+                if source_from_base.exists():
+                    self.log(f"Copying from base: {item}")
+                    dest = target_dir / item
+                    if source_from_base.is_file():
+                        shutil.copy2(source_from_base, dest)
+                    else:
+                        shutil.copytree(source_from_base, dest, dirs_exist_ok=True)
+                else:
+                    raise FileNotFoundError(f"Item not found: {item} (checked _files and base)")
 
     def _add_file(self, target_dir: Path, file_spec: Dict[str, Any]):
         """
