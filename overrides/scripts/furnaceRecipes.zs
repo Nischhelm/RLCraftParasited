@@ -357,4 +357,7 @@ furnace.addRecipe(<minecraft:diamond> * 1, <wornhorseshoes:horseshoes_diamond>, 
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <wornhorseshoes:horseshoes_gold>, 1);
 furnace.addRecipe(<minecraft:iron_ingot> * 1, <wornhorseshoes:horseshoes_iron>, 0.7);
 
+furnace.addRecipe(<minecraft:iron_ingot> * 2, <minecraft:compass>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 2, <minecraft:clock>, 1);
+
 print("Script ending!");
