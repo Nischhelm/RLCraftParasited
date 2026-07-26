@@ -1,3 +1,25 @@
+--- Aug 0X 2026 ---
+
+Mod changes
+    update trinkets jar    
+
+Config changes
+    
+
+Scripts
+    moved shulker rightclick dropoff zenutils mixin to clientside only to fix server complaint
+    add magikarp +10 luck tooltip
+
+Structures
+    
+
+Config Packs
+    
+
+Docs
+    
+
+
 --- July 25 2026 ---
 
 Mod changes
