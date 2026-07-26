@@ -439,3 +439,16 @@ zenClass TraitMoreWheatMixin { //func_177230_c = getBlock
         return native.net.minecraft.init.Blocks.AIR;
     }
 }
+
+#mixin {targets: "knightminer.inspirations.recipes.recipe.DyeCauldronWater"}
+zenClass DyeCauldronWaterMixin {
+    #mixin Inject
+    #{
+    #   method: "matches",
+    #   at: {value: "HEAD"},
+    #   cancellable: true
+    #}
+    function zenutils_onlyDyeWhenNotCooking(stack as native.net.minecraft.item.ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState, cir as mixin.CallbackInfoReturnable) as bool {
+        if(boiling) cir.setReturnValue(false); // no matchies to protect coffee
+    }
+}

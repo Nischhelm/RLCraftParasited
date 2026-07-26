@@ -8,7 +8,9 @@ Config changes
 
 Scripts
     moved shulker rightclick dropoff zenutils mixin to clientside only to fix server complaint
-    add magikarp +10 luck tooltip
+    added magikarp +10 luck tooltip
+    coffee can now be brewed in cauldron (dyed water now only if cauldron not boiling)
+    fixed Y menu "more wheat" perk giving wheat on not fully grown wheat blocks
 
 Structures
     
