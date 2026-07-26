@@ -137,7 +137,7 @@ Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
 mcw-bridges-1.0.6b-mc1.12.2
 MindPalaces-1.2.1.2
-MmmMmmMmmMmm-1.12-2.0.6
+MmmMmmMmmMmm-1.12-2.0.7
 MoBends_1.12.2-1.2.2-29.09.25-all
 modtweaker-4.0.20.11
 MouseTweaks-2.10.1-mc1.12.2
