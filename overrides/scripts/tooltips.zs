@@ -87,6 +87,8 @@
 <srparasites:lurecomponent5>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.5","en_us"));
 <srparasites:lurecomponent6>.addTooltip(game.localize("tooltip.srparasites:lurecomponent.6","en_us"));
 
+<advanced-fishing:fish:38>.addTooltip(game.localize("tooltip.magikarp","en_us"));
+
 <ore:ebwizWands>.modifyTooltip(function (stack as crafttweaker.item.IItemStack, tooltip as mods.zenutils.StringList, shiftPressed as bool, advanced as bool) as void{
     tooltip.removeIf(function(line as string) as bool {
         return line.matches("(§\\w)?Progression: \\d+/\\d+");
