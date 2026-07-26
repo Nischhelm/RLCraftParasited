@@ -19,6 +19,15 @@ import jsonpatch
 class JsonPatcher:
     """Patches JSON files using RFC 6902 JSON Patch format."""
 
+    def __init__(self, configpacks_dir: Path = None):
+        """
+        Initialize JsonPatcher.
+
+        Args:
+            configpacks_dir: Directory containing configpack files (for append_all)
+        """
+        self.configpacks_dir = configpacks_dir
+
     def apply(self, target_dir: Path, patch: Dict[str, Any]):
         """
         Apply a json_patch to a JSON file.
@@ -71,6 +80,87 @@ class JsonPatcher:
         with open(file_path, 'w', encoding=encoding) as f:
             json.dump(patched_data, f, indent=2, ensure_ascii=False)
             f.write('\n')  # Add trailing newline
+
+    def apply_append_all(self, target_dir: Path, patch: Dict[str, Any]):
+        """
+        Append all items from a source JSON to a target JSON.
+
+        For arrays: Appends all elements from source to end of target
+        For objects: Merges source keys into target (source overwrites conflicts)
+
+        Args:
+            target_dir: Base directory containing the target file
+            patch: Patch specification with 'file', 'source', and optional 'path'
+
+        Example patch format:
+            {
+                'file': 'paintings/paintings.json',
+                'source': 'shycraft/paintings/paintings.json',
+                'path': '/',  # Optional, defaults to root
+                'encoding': 'utf-8'  # Optional
+            }
+        """
+        if not self.configpacks_dir:
+            raise ValueError("configpacks_dir not set - required for json_append_all")
+
+        target_file = target_dir / patch['file']
+        source_rel = patch.get('source')
+
+        if not source_rel:
+            raise ValueError("json_append_all requires 'source' field")
+
+        source_file = self.configpacks_dir / "_files" / source_rel
+
+        if not target_file.exists():
+            raise FileNotFoundError(f"Target JSON file not found: {target_file}")
+
+        if not source_file.exists():
+            raise FileNotFoundError(f"Source JSON file not found: {source_file}")
+
+        # Get encoding
+        encoding = patch.get('encoding', 'utf-8')
+
+        # Load target
+        with open(target_file, 'r', encoding=encoding) as f:
+            target_data = json.load(f)
+
+        # Load source
+        with open(source_file, 'r', encoding=encoding) as f:
+            source_data = json.load(f)
+
+        # Get path (defaults to root)
+        path = patch.get('path', '/')
+
+        # Navigate to the path in target
+        if path == '/':
+            target_at_path = target_data
+        else:
+            # Simple path navigation (e.g. "/key1/key2")
+            parts = [p for p in path.split('/') if p]
+            target_at_path = target_data
+            for part in parts:
+                if isinstance(target_at_path, dict):
+                    target_at_path = target_at_path[part]
+                elif isinstance(target_at_path, list):
+                    target_at_path = target_at_path[int(part)]
+
+        # Append/merge based on type
+        if isinstance(target_at_path, list) and isinstance(source_data, list):
+            # Array: append all elements
+            target_at_path.extend(source_data)
+        elif isinstance(target_at_path, dict) and isinstance(source_data, dict):
+            # Object: merge keys
+            target_at_path.update(source_data)
+        else:
+            raise ValueError(
+                f"Type mismatch: target at {path} is {type(target_at_path).__name__}, "
+                f"source is {type(source_data).__name__}"
+            )
+
+        # Write back
+        with open(target_file, 'w', encoding=encoding) as f:
+            json.dump(target_data, f, indent=2, ensure_ascii=False)
+            f.write('\n')
 
     def validate(self, patch: Dict[str, Any]) -> bool:
         """

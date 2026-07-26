@@ -71,7 +71,7 @@ class PackBuilder:
 
         # Initialize patchers
         self.cfg_patcher = CfgPatcher()
-        self.json_patcher = JsonPatcher()
+        self.json_patcher = JsonPatcher(configpacks_dir=self.configpacks_dir)
         self.script_patcher = ScriptPatcher()
         self.keyvalue_patcher = KeyValuePatcher()
 
@@ -242,7 +242,28 @@ class PackBuilder:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, dest)
 
-            elif patch_type in ['cfg_patch', 'json_patch', 'script_patch', 'keyvalue_patch']:
+            elif patch_type == 'folder_add':
+                # folder_add: Copy entire folder recursively from configpacks/_files/ to temp
+                source_rel = patch.get('source')
+                dest_rel = patch.get('destination')
+
+                if not source_rel or not dest_rel:
+                    raise ValueError("folder_add requires 'source' and 'destination'")
+
+                source = self.configpacks_dir / "_files" / source_rel
+                dest = target_dir / dest_rel
+
+                if not source.exists():
+                    raise FileNotFoundError(f"Source folder not found: {source}")
+
+                if not source.is_dir():
+                    raise ValueError(f"Source must be a directory: {source}")
+
+                # Copy entire directory recursively
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copytree(source, dest, dirs_exist_ok=True)
+
+            elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch']:
                 # For patches: Copy original file, apply patch, save to temp
                 file_rel = patch.get('file')
                 if not file_rel:
@@ -268,6 +289,8 @@ class PackBuilder:
                     self.cfg_patcher.apply(target_dir, patch)
                 elif patch_type == 'json_patch':
                     self.json_patcher.apply(target_dir, patch)
+                elif patch_type == 'json_append_all':
+                    self.json_patcher.apply_append_all(target_dir, patch)
                 elif patch_type == 'script_patch':
                     self.script_patcher.apply(target_dir, patch)
                 elif patch_type == 'keyvalue_patch':
@@ -403,15 +426,32 @@ class PackBuilder:
                     print(f"  ✗ Patch {i} missing 'type' field")
                     return False
 
-                if 'file' not in patch and patch['type'] != 'file_add':
+                if 'file' not in patch and patch['type'] not in ['file_add', 'folder_add']:
                     print(f"  ✗ Patch {i} missing 'file' field")
                     return False
+
+                # Check if source files exist for json_append_all
+                if patch['type'] == 'json_append_all':
+                    source = self.configpacks_dir / "_files" / patch.get('source', '')
+                    if not source.exists():
+                        print(f"  ✗ Patch {i}: Source JSON not found: {source}")
+                        return False
 
                 # Check if files exist for file_add
                 if patch['type'] == 'file_add':
                     source = self.configpacks_dir / "_files" / patch.get('source', '')
                     if not source.exists():
                         print(f"  ✗ Patch {i}: Source file not found: {source}")
+                        return False
+
+                # Check if folders exist for folder_add
+                if patch['type'] == 'folder_add':
+                    source = self.configpacks_dir / "_files" / patch.get('source', '')
+                    if not source.exists():
+                        print(f"  ✗ Patch {i}: Source folder not found: {source}")
+                        return False
+                    if not source.is_dir():
+                        print(f"  ✗ Patch {i}: Source must be a directory: {source}")
                         return False
 
             # Validate JSON patches
