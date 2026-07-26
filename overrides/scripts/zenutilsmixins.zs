@@ -419,3 +419,23 @@ zenClass TileEntityDodMixin { //func_73660_a = update
         }
     }
 }
+
+#mixin {targets: "codersafterdark.reskillable.skill.farming.TraitMoreWheat"}
+zenClass TraitMoreWheatMixin { //func_177230_c = getBlock
+    #mixin WrapOperation
+    #{
+    #   method: "onBlockDrops",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/block/state/IBlockState;func_177230_c()Lnet/minecraft/block/Block;"}
+    #}
+    function zenutils_onlyFullyGrownWheat(state as native.net.minecraft.block.state.IBlockState, original as mixin.Operation) as native.net.minecraft.block.Block {
+        val block = original.call(state) as native.net.minecraft.block.Block;
+        if(!(block instanceof native.net.minecraft.block.BlockCrops))
+            return block;
+        val crops = block as native.net.minecraft.block.BlockCrops;
+
+        if(crops.isMaxAge(state)) return block;
+
+        // not fully grown wheat shouldn't drop extra wheat
+        return native.net.minecraft.init.Blocks.AIR;
+    }
+}
