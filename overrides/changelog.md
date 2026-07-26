@@ -1,16 +1,19 @@
 --- Aug 0X 2026 ---
 
 Mod changes
-    update trinkets jar    
+    updated trinkets jar
+    updated testdummy to 2.0.7 (indev jar until its on cf) fixing a dupe
 
 Config changes
-    
+    reduced betterend biomes even more (now 2:1 vanilla end to betterend)
+    made dummy immune to coth
 
 Scripts
     moved shulker rightclick dropoff zenutils mixin to clientside only to fix server complaint
     added magikarp +10 luck tooltip
     coffee can now be brewed in cauldron (dyed water now only if cauldron not boiling)
     fixed Y menu "more wheat" perk giving wheat on not fully grown wheat blocks
+    clocks and compasses can be smelted now, to 2 ingots each
 
 Structures
     
