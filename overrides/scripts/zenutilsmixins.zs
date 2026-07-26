@@ -2,17 +2,15 @@
 
 #mixin {targets: "suike.suikecherry.world.biome.ModBiomes"}
 zenClass ModBiomesMixin {
-    #mixin Shadow
-    static RTGID as bool;
 
     #mixin Static
-    #mixin Inject
+    #mixin Redirect
     #{
-    #   method: "<clinit>",
-    #   at: {value: "TAIL"}
+    #   method: "initBiomes",
+    #   at: {value: "INVOKE", target: "Lrtg/api/RTGAPI;addRTGBiomes([Lrtg/api/world/biome/IRealisticBiome;)V"}
     #}
-    function zenutils_disableRTGCompat(ci as mixin.CallbackInfo) as void {
-        RTGID = false; // dont add RTG compat for wrong RTG version
+    function zenutils_fixRTGCompat(biomes as native.rtg.api.world.biome.IRealisticBiome[]) as void {
+        native.rtg.api.RTGAPI.RTG_BIOMES.addBiomes(biomes);
     }
 }
 
