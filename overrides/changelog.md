@@ -14,6 +14,7 @@ Scripts
     coffee can now be brewed in cauldron (dyed water now only if cauldron not boiling)
     fixed Y menu "more wheat" perk giving wheat on not fully grown wheat blocks
     clocks and compasses can be smelted now, to 2 ingots each
+    readded default milk cauldron brewing recipes (gold apple -> cure, ferm spider eye -> dispel)
 
 Structures
     

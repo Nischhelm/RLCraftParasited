@@ -28,8 +28,8 @@ function addBrewRecipe2(potionIn as string, ingredient as IIngredient, potionOut
 removePotion("minecraft:water", <minecraft:glowstone_dust>);
 removePotion("minecraft:water", <minecraft:redstone>);
 
-brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": "mujmajnkraftsbettersurvival:milk"}), <minecraft:golden_apple>);
-brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": "mujmajnkraftsbettersurvival:milk"}), <minecraft:fermented_spider_eye>);
+//brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": "mujmajnkraftsbettersurvival:milk"}), <minecraft:golden_apple>);
+//brewing.removeRecipe(<minecraft:potion>.withTag({"Potion": "mujmajnkraftsbettersurvival:milk"}), <minecraft:fermented_spider_eye>);
 
 removePotion("minecraft:awkward", <simpledifficulty:ice_chunk>);
 removePotion("minecraft:awkward", <simpledifficulty:magma_chunk>);
