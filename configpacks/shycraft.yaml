@@ -46,11 +46,11 @@ patches:
 - type: file_add
   source: shycraft/config/pinatamobs.cfg
   destination: config/pinatamobs.cfg
-  description: "TODO: Describe why this file is added"
+  description: "pinatas go brr"
 
 - type: cfg_patch
   file: config/srpmixins.cfg
-  description: "TODO: Describe what changes in srpmixins.cfg"
+  description: "no parasites in sanctuary"
   changes:
     general.spawning:
       S:"Parasite Spawning Biome Blacklist per dimension":
@@ -59,7 +59,7 @@ patches:
 
 - type: cfg_patch
   file: config/reskillable.cfg
-  description: "TODO: Describe what changes in reskillable.cfg"
+  description: "change silver/gold lvls as well as wine"
   changes:
     general:
       S:"Skill Locks":
@@ -91,7 +91,7 @@ patches:
 
 - type: cfg_patch
   file: config/parasited.cfg
-  description: "TODO: Describe what changes in parasited.cfg"
+  description: "modifications to races"
   changes:
     general:
       B:"Use ShyCraft Dragon Gem Recipe": true
@@ -99,7 +99,7 @@ patches:
 
 - type: cfg_patch
   file: config/RLArtifacts.cfg
-  description: "TODO: Describe what changes in RLArtifacts.cfg"
+  description: "modifications to some artifacts"
   changes:
     general:
       S:"Antidote Vessel Blacklisted Effects":
@@ -114,14 +114,14 @@ patches:
 
 - type: cfg_patch
   file: config/reccomplex.cfg
-  description: "TODO: Describe what changes in reccomplex.cfg"
+  description: "this is probably not needed but maybe who knows"
   changes:
     general:
       I:asCommandPermissionLevel: 2
 
 - type: cfg_patch
   file: config/somanyenchantments.cfg
-  description: "TODO: Describe what changes in somanyenchantments.cfg"
+  description: "just to be nice i guess"
   changes:
     general.miscellaneous:
       B:"Evasion Dodge Effect": false
@@ -129,26 +129,26 @@ patches:
 - type: json_append_all
   file: paintings/paintings.json
   source: shycraft/paintings/paintings.json
-  description: "Append all ShyCraft paintings to paintings.json"
+  description: "so many paintings"
 
 - type: file_add
   source: shycraft/scripts/noTravelFromSancToNether.zs
   destination: scripts/noTravelFromSancToNether.zs
-  description: "TODO: Describe why this file is added"
+  description: "hotfixes a crash when teleporting from sanctuary to nether by disallowing that"
 
 - type: file_add
   source: shycraft/scripts/shyCraftRecords.zs
   destination: scripts/shyCraftRecords.zs
-  description: "TODO: Describe why this file is added"
+  description: "so many music discs"
 
 - type: file_add
   source: shycraft/scripts/shyCraftGunCraftingRecipes.zs
   destination: scripts/shyCraftGunCraftingRecipes.zs
-  description: "TODO: Describe why this file is added"
+  description: "craft guns..."
 
 - type: cfg_patch
   file: config/trinkets/Trinkets_And_Baubles.cfg
-  description: "TODO: Describe what changes in Trinkets_And_Baubles.cfg"
+  description: "uh... read for yourself"
   changes:
     general.client settings.mana hud:
       D:"Location X": 0.00936768149882904
@@ -547,7 +547,7 @@ patches:
 - type: json_patch
   file: config/CustomMainMenu/mainmenu.json
   encoding: latin-1
-  description: "TODO: Describe what changes in mainmenu.json"
+  description: "main menu changes"
   changes:
   - op: add
     path: /other/background/slideshow/images/0
@@ -594,7 +594,7 @@ patches:
 
 - type: cfg_patch
   file: config/setbonus/1.12.2.009+.cfg
-  description: "TODO: Describe what changes in 1.12.2.009+.cfg"
+  description: "scarlite changes"
   changes:
     general.server settings:
       S:"2f. Bonuses":
@@ -612,7 +612,7 @@ patches:
 
 - type: json_patch
   file: config/socketed/gemtypes/netherstar.json
-  description: "TODO: Describe what changes in netherstar.json"
+  description: "increase wither lvl, nerf dmg of nether star as socket gem"
   changes:
   - op: replace
     path: /Effects/0/Amplifier
@@ -623,7 +623,7 @@ patches:
 
 - type: json_patch
   file: config/lycanitesmobs/equipment/wargskull.json
-  description: "TODO: Describe what changes in wargskull.json"
+  description: "idk man"
   changes:
   - op: replace
     path: /features/1/damageCooldown
@@ -634,7 +634,7 @@ patches:
 
 - type: json_patch
   file: config/lycanitesmobs/equipment/xaphanspine.json
-  description: "TODO: Describe what changes in xaphanspine.json"
+  description: "no clue"
   changes:
   - op: add
     path: /features/5
@@ -649,7 +649,7 @@ patches:
 
 - type: json_patch
   file: config/lycanitesmobs/equipment/vespidstinger.json
-  description: "TODO: Describe what changes in vespidstinger.json"
+  description: "dont ask me"
   changes:
   - op: add
     path: /features/3
@@ -664,7 +664,7 @@ patches:
 
 - type: json_patch
   file: config/lycanitesmobs/equipment/raidrablade.json
-  description: "TODO: Describe what changes in raidrablade.json"
+  description: "yea idk why this is negative"
   changes:
   - op: replace
     path: /features/3/damageAmount
@@ -678,7 +678,7 @@ patches:
 
 - type: json_patch
   file: config/lostcities/citydata/conditions.json
-  description: "TODO: Describe what changes in conditions.json"
+  description: "i guess that changes the chances for certain chests in LC"
   changes:
   - op: replace
     path: /4/values/0/factor
