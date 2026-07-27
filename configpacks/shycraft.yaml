@@ -1,0 +1,739 @@
+name: RLCraft Parasited ShyCraft
+version: 1.0.0
+description: 'ShyCraft TODO: Add description of what this configpack changes'
+build:
+  mode: modpack
+  output_name: ShyCraft Parasited.zip
+  include:
+    - manifest.json
+    - profileImage
+patches:
+- type: json_patch
+  file: manifest.json
+  description: Update manifest for ShyCraft
+  changes:
+  - op: replace
+    path: /name
+    value: "ShyCraft Parasited X"
+  - op: replace
+    path: /version
+    value: "1.2.3"
+  - op: add
+    path: /image
+    value: "profileImage/ShyCraft Minecraft ver.png"
+  - op: add
+    path: /files/238
+    value:
+      projectID: 1395835
+      fileID: 7701356
+      required: true
+      fileName: "Pinata Mobs-1.0.6"
+- type: keyvalue_patch
+  file: options.txt
+  description: 'TODO: Describe what changes in options.txt'
+  changes:
+    lastServer: ShyCraft.mcserver.us
+- type: keyvalue_patch
+  file: config/VariedCommodities.cfg
+  description: Increase weapon damage and reduce musket knockback
+  changes:
+    MachineGunDamage: 10
+    MusketDamage: 30
+    MusketKnockback: 3
+- type: file_add
+  source: shycraft/config/pinatamobs.cfg
+  destination: config/pinatamobs.cfg
+  description: 'TODO: Describe why this file is added'
+- type: cfg_patch
+  file: config/srpmixins.cfg
+  description: 'TODO: Describe what changes in srpmixins.cfg'
+  changes:
+    general.spawning:
+      S:"Parasite Spawning Biome Blacklist per dimension":
+        add:
+        - 10
+- type: cfg_patch
+  file: config/reskillable.cfg
+  description: 'TODO: Describe what changes in reskillable.cfg'
+  changes:
+    general:
+      S:"Skill Locks":
+        replace:
+        - old: iceandfire:armor_silver_metal_boots:*=reskillable:defense|4,reskillable:magic|2
+          new: iceandfire:armor_silver_metal_boots:*=reskillable:defense|16,reskillable:magic|16
+        - old: iceandfire:armor_silver_metal_leggings:*=reskillable:defense|4,reskillable:magic|2
+          new: iceandfire:armor_silver_metal_leggings:*=reskillable:defense|16,reskillable:magic|16
+        - old: iceandfire:armor_silver_metal_chestplate:*=reskillable:defense|4,reskillable:magic|2
+          new: iceandfire:armor_silver_metal_chestplate:*=reskillable:defense|16,reskillable:magic|16
+        - old: iceandfire:armor_silver_metal_helmet:*=reskillable:defense|4,reskillable:magic|2
+          new: iceandfire:armor_silver_metal_helmet:*=reskillable:defense|16,reskillable:magic|16
+        - old: rlmixins:scarlite_boots:*=reskillable:defense|8
+          new: rlmixins:scarlite_boots:*=reskillable:defense|30
+        - old: rlmixins:scarlite_leggings:*=reskillable:defense|8
+          new: rlmixins:scarlite_leggings:*=reskillable:defense|30
+        - old: rlmixins:scarlite_chestplate:*=reskillable:defense|8
+          new: rlmixins:scarlite_chestplate:*=reskillable:defense|30
+        - old: rlmixins:scarlite_helmet:*=reskillable:defense|8
+          new: rlmixins:scarlite_helmet:*=reskillable:defense|30
+        - old: minecraft:gold_ore=reskillable:mining|2,reskillable:magic|2
+          new: minecraft:gold_ore=reskillable:mining|6,reskillable:magic|6
+        - old: iceandfire:silver_ore=reskillable:mining|2,reskillable:magic|2
+          new: iceandfire:silver_ore=reskillable:mining|12,reskillable:magic|12
+        - old: rustic:brewing_barrel:*=reskillable:farming|18
+          new: rustic:brewing_barrel:*=reskillable:farming|32,reskillable:building|32
+        - old: rustic:grape_stem:*=reskillable:farming|8
+          new: rustic:grape_stem:*=reskillable:farming|30
+- type: cfg_patch
+  file: config/parasited.cfg
+  description: 'TODO: Describe what changes in parasited.cfg'
+  changes:
+    general:
+      B:"Use ShyCraft Dragon Gem Recipe": true
+- type: cfg_patch
+  file: config/RLArtifacts.cfg
+  description: 'TODO: Describe what changes in RLArtifacts.cfg'
+  changes:
+    general:
+      S:"Antidote Vessel Blacklisted Effects":
+        remove:
+        - rustic:tipsy
+      D:"Flame Pendant Chance": 0.75
+      D:"Shock Pendant Chance": 0.5
+      I:"Star Cloak Cooldown": 5
+      I:"Star Cloak Falling Star Damage": 24
+      I:"Star Cloak Maximum Stars": 24
+      D:"Thorn Pendant Chance": 0.5
+- type: cfg_patch
+  file: config/reccomplex.cfg
+  description: 'TODO: Describe what changes in reccomplex.cfg'
+  changes:
+    general:
+      I:asCommandPermissionLevel: 2
+- type: cfg_patch
+  file: config/somanyenchantments.cfg
+  description: 'TODO: Describe what changes in somanyenchantments.cfg'
+  changes:
+    general.miscellaneous:
+      B:"Evasion Dodge Effect": false
+- type: json_append_all
+  file: paintings/paintings.json
+  source: shycraft/paintings/paintings.json
+  description: Append all ShyCraft paintings to paintings.json
+- type: file_add
+  source: shycraft/scripts/noTravelFromSancToNether.zs
+  destination: scripts/noTravelFromSancToNether.zs
+  description: 'TODO: Describe why this file is added'
+- type: file_add
+  source: shycraft/scripts/shyCraftRecords.zs
+  destination: scripts/shyCraftRecords.zs
+  description: 'TODO: Describe why this file is added'
+- type: file_add
+  source: shycraft/scripts/shyCraftGunCraftingRecipes.zs
+  destination: scripts/shyCraftGunCraftingRecipes.zs
+  description: 'TODO: Describe why this file is added'
+- type: cfg_patch
+  file: config/trinkets/Trinkets_And_Baubles.cfg
+  description: 'TODO: Describe what changes in Trinkets_And_Baubles.cfg'
+  changes:
+    general.client settings.mana hud:
+      D:"Location X": 0.00936768149882904
+      D:"Location Y": 0.9208333333333333
+    general.server settings.trinkets container:
+      B:"Enable T&B Container": true
+      I:"T&B Container Slots": 4
+    general.server settings.items.stone of greater inertia:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.movementSpeed, Amount:1.0, Operation:2
+        - Name:xat.jump, Amount:1, Operation:2
+        add:
+        - Name:generic.movementSpeed, Amount:0.5, Operation:2
+        - Name:xat.jump, Amount:0.5, Operation:2
+    general.server settings.magic:
+      I:"Max Bonuses": 25
+    general.server settings.race configuration:
+      B:"00. Race Selection Menu": true
+      S:"01. Blacklisted Races":
+        add:
+        - Fairy
+        - Titan
+    general.server settings.race configuration.human.magic:
+      I:"Magic Affinity": 25
+    general.server settings.race configuration.elf:
+      S:"06. Potion Resistances":
+        add:
+        - potioncore:perplexity
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:-0.25, Operation:1
+        add:
+        - Name:forge.swimSpeed, Amount:0.15, Operation:1
+        - Name:generic.armor, Amount:-0.10, Operation:1
+        - Name:generic.armorToughness, Amount:-0.10, Operation:1
+        - Name:generic.attackDamage, Amount:0, Operation:0
+        - Name:generic.attackSpeed, Amount:0.25, Operation:1
+        - Name:generic.knockbackResistance; Amount:-0.1; Operation:1
+        - Name:generic.movementSpeed, Amount:0.15, Operation:1
+        - Name:generic.reachDistance, Amount:0.1, Operation:1
+        - Name:xat.flyspeed, Amount:0.35, Operation:2
+        - Name:xat.jump, Amount:0.25, Operation:2
+        - Name:xat.stepheight, Amount:0.5, Operation:1
+    general.server settings.race configuration.elf.abilities.skilled archer:
+      D:"05. Damage Multiplier": 2.5
+      D:"06. Minimum Damage Multiplier": 0.5
+      D:"07. Mana Usage Bonus": 0.5
+      S:"09. Bow Blacklist":
+        add:
+        - spartandefiled:spartanweaponry:crossbow_umbrium
+        - spartanfire:spartanweaponry:crossbow_desert
+        - spartanfire:spartanweaponry:crossbow_desert_venom
+        - spartanfire:spartanweaponry:crossbow_dragonbone
+        - spartanfire:spartanweaponry:crossbow_fire_dragonbone
+        - spartanfire:spartanweaponry:crossbow_fire_dragonsteel
+        - spartanfire:spartanweaponry:crossbow_ice_dragonbone
+        - spartanfire:spartanweaponry:crossbow_ice_dragonsteel
+        - spartanfire:spartanweaponry:crossbow_jungle
+        - spartanfire:spartanweaponry:crossbow_jungle_venom
+        - spartanfire:spartanweaponry:crossbow_lightning_dragonbone
+        - spartanfire:spartanweaponry:crossbow_lightning_dragonsteel
+        - spartanweaponry:crossbow_diamond
+        - spartanweaponry:crossbow_iron
+        - spartanweaponry:crossbow_leather
+        - spartanweaponry:crossbow_wood
+        - spartanweaponry:spartanweaponry:crossbow_bronze
+        - spartanweaponry:spartanweaponry:crossbow_silver
+        - spartanweaponry:spartanweaponry:crossbow_steel
+        - switchbow:switchcrossbow
+      S:"10. Bow Weights":
+        remove:
+        - minecraft:bow;*;40.0
+        - spartanweaponry:longbow_wood;*;70.0
+        add:
+        - minecraft:bow;*;20.0
+        - spartandefiled:longbow_umbrium;*;30.0
+        - spartanfire:longbow_desert;*;50.0
+        - spartanfire:longbow_desert_venom;*;50.0
+        - spartanfire:longbow_dragonbone;*;60.0
+        - spartanfire:longbow_fire_dragonbone;*;70.0
+        - spartanfire:longbow_fire_dragonsteel;*;80.0
+        - spartanfire:longbow_ice_dragonbone;*;70.0
+        - spartanfire:longbow_ice_dragonsteel;*;80.0
+        - spartanfire:longbow_jungle;*;50.0
+        - spartanfire:longbow_jungle_venom;*;50.0
+        - spartanfire:longbow_lightning_dragonbone;*;70.0
+        - spartanfire:longbow_lightning_dragonsteel;*;80.0
+        - spartanweaponry:longbow_bronze;*;30.0
+        - spartanweaponry:longbow_diamond;*;40.0
+        - spartanweaponry:longbow_iron;*;30.0
+        - spartanweaponry:longbow_leather;*;20.0
+        - spartanweaponry:longbow_silver;*;40.0
+        - spartanweaponry:longbow_steel;*;40.0
+        - spartanweaponry:longbow_wood;*;20.0
+        - srparasites:weapon_bow;*;60.0
+        - srparasites:weapon_bow_sentient;*;80.0
+        - switchbow:switchbow;*;35.0
+    general.server settings.race configuration.elf.magic:
+      I:"Magic Affinity": 75
+    general.server settings.race configuration.elf.size:
+      I:"01. Width": 90
+    general.server settings.race configuration.dwarf:
+      S:"06. Potion Resistances":
+        add:
+        - rustic:tipsy
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:0.1, Operation:1
+        - Name:generic.attackSpeed, Amount:-0.25, Operation:2
+        - Name:generic.maxHealth, Amount:-0.25, Operation:2
+        - Name:generic.reachDistance, Amount:-0.25, Operation:2
+        add:
+        - Name:forge.swimSpeed, Amount:-0.10, Operation:1
+        - Name:generic.armor, Amount:0.10, Operation:1
+        - Name:generic.attackDamage, Amount:0.25, Operation:1
+        - Name:generic.attackSpeed, Amount:-0.1, Operation:2
+        - Name:generic.maxHealth, Amount:0.10, Operation:1
+        - Name:generic.reachDistance, Amount:-0.05, Operation:1
+        - Name:xat.flyspeed, Amount:-0.10, Operation:2
+    general.server settings.race configuration.dwarf.abilities.skilled miner.blocks:
+      I:"02. Max Bonus": 1
+    general.server settings.race configuration.dwarf.magic:
+      I:"Magic Affinity": 25
+    general.server settings.race configuration.dwarf.size:
+      I:"00. Height": 85
+      I:"01. Width": 95
+    general.server settings.race configuration.fairy:
+      S:"05. Potion Effects":
+        add:
+        - potioncore:cure
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armor, Amount:-0.5, Operation:2
+        - Name:generic.armorToughness, Amount:-0.25, Operation:2
+        - Name:generic.attackDamage, Amount:-0.75, Operation:2
+        - Name:generic.luck, Amount:2, Operation:0
+        - Name:generic.maxHealth, Amount:-0.75, Operation:1
+        - Name:generic.movementSpeed, Amount:-0.25, Operation:1
+        - Name:generic.reachDistance, Amount:-0.5, Operation:2
+        - Name:xat.flyspeed, Amount:-0.4, Operation:2
+        add:
+        - Name:generic.armor, Amount:-0.75, Operation:2
+        - Name:generic.armorToughness, Amount:-0.75, Operation:2
+        - Name:generic.attackDamage, Amount:-0.35, Operation:2
+        - Name:generic.attackSpeed, Amount:0.10, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.maxHealth, Amount:-0.25, Operation:1
+        - Name:generic.movementSpeed, Amount:0.15, Operation:1
+        - Name:generic.reachDistance, Amount:-0.50, Operation:2
+        - Name:xat.flyspeed, Amount:0.10, Operation:2
+    general.server settings.race configuration.fairy.abilities.creative flight:
+      D:"01. Mana Cost": 1.0
+    general.server settings.race configuration.fairy.abilities.climbing:
+      S:"02. Climbable Blocks":
+        remove:
+        - minecraft:*cobblestone*
+        - minecraft:*planks*
+        - minecraft:dirt
+        - minecraft:glass
+        - minecraft:grass
+        - minecraft:netherrack
+        - minecraft:obsidian
+        - minecraft:sand
+        - minecraft:stonebrick
+    general.server settings.race configuration.fairy.abilities.restoration field:
+      B:"00. Enabled": true
+      D:"01. Radius": 3.0
+      D:"02. Vertical Radius": 2.0
+      I:"03. Duration": 120
+      I:"04. Wait Time": 10
+      I:"05. Pulse Interval": 20
+      I:"06. Reapplication Delay": 20
+      I:"07. Repair Amount": 1
+      I:"08. Growth Attempts Per Pulse": 4
+      D:"09. Cast Range": 15.0
+      S:"10. Primary Effect": minecraft:instant_health:60:0
+      D:"11. Mana Cost Per Second": 20.0
+      D:"12. Mana Cost Per Potion Effect": 5.0
+      D:"13. Mana Cost Per Effect Level": 5.0
+    general.server settings.race configuration.fairy.magic:
+      I:"Magic Affinity": 150
+    general.server settings.race configuration.faelis:
+      D:"02. Bare Handed Bonus": 3.0
+      S:"03. Bare handed equipment":
+        add:
+        - variedcommodities:bear_claw
+        - variedcommodities:katar
+        - variedcommodities:ninja_claw
+        - variedcommodities:steel_claw
+      S:"07. Milk Effects":
+        remove:
+        - minecraft:jump_boost:1200:3
+        add:
+        - minecraft:jump_boost:1200:0
+      S:"90. Attributes":
+        remove:
+        - Name:forge.swimSpeed, Amount:0.5, Operation:1
+        - Name:generic.attackSpeed, Amount:0.5, Operation:2
+        - Name:generic.movementSpeed, Amount:0.25, Operation:1
+        add:
+        - Name:forge.swimSpeed, Amount:0.25, Operation:1
+        - Name:generic.armor, Amount:-0.10, Operation:1
+        - Name:generic.armorToughness, Amount:-0.25, Operation:2
+        - Name:generic.attackDamage, Amount:0, Operation:1
+        - Name:generic.attackSpeed, Amount:0.35, Operation:2
+        - Name:generic.knockbackResistance; Amount:-0.1; Operation:1
+        - Name:generic.luck, Amount:0, Operation:0
+        - Name:generic.maxHealth, Amount:0, Operation:0
+        - Name:generic.movementSpeed, Amount:0.10, Operation:1
+        - Name:generic.reachDistance, Amount:-0.1, Operation:1
+        - Name:xat.flyspeed, Amount:0.25, Operation:2
+    general.server settings.race configuration.faelis.abilities.climbing:
+      S:"02. Climbable Blocks":
+        remove:
+        - minecraft:dirt
+        - minecraft:glass
+        - minecraft:grass
+        - minecraft:nether_brick
+        - minecraft:netherrack
+        - minecraft:obsidian
+        - minecraft:sand
+        - minecraft:sandstone
+        - minecraft:stonebrick
+    general.server settings.race configuration.faelis.abilities.night vision:
+      B:"00. Enabled": true
+      D:"01. Mana Cost": 2.0
+    general.server settings.race configuration.faelis.magic:
+      I:"Magic Affinity": 50
+    general.server settings.race configuration.faelis.size:
+      I:"00. Height": 65
+      I:"01. Width": 60
+    general.server settings.race configuration.goblin:
+      S:"09. Potion Resistances":
+        add:
+        - minecraft:blindness
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:-0.25, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.maxHealth, Amount:-0.5, Operation:1
+        - Name:generic.movementSpeed, Amount:0.2, Operation:1
+        - Name:generic.reachDistance, Amount:-0.25, Operation:2
+        - Name:xat.jump, Amount:0.2, Operation:1
+        add:
+        - Name:generic.armor, Amount:-0.25, Operation:1
+        - Name:generic.armorToughness, Amount:0, Operation:0
+        - Name:generic.attackDamage, Amount:0.15, Operation:1
+        - Name:generic.attackSpeed, Amount:0.10, Operation:1
+        - Name:generic.knockbackResistance, Amount:-0.10, Operation:1
+        - Name:generic.luck, Amount:0, Operation:0
+        - Name:generic.maxHealth, Amount:0, Operation:0
+        - Name:generic.movementSpeed, Amount:0.15, Operation:1
+        - Name:generic.reachDistance, Amount:-0.10, Operation:1
+        - Name:xat.flyspeed, Amount:0.50, Operation:2
+        - Name:xat.jump, Amount:0.25, Operation:1
+    general.server settings.race configuration.goblin.abilities.climbing:
+      S:"02. Climbable Blocks":
+        remove:
+        - minecraft:brick_block
+        - minecraft:dirt
+        - minecraft:glass
+        - minecraft:grass
+        - minecraft:nether_brick
+        - minecraft:netherrack
+        - minecraft:obsidian
+        - minecraft:sand
+        - minecraft:sandstone
+        - minecraft:stonebrick
+    general.server settings.race configuration.goblin.magic:
+      I:"Magic Affinity": 25
+    general.server settings.race configuration.titan:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:1, Operation:2
+        - Name:generic.knockbackResistance, Amount:0.75, Operation:0
+        - Name:generic.movementSpeed, Amount:0.25, Operation:1
+        - Name:generic.reachDistance, Amount:0.5, Operation:1
+        - Name:xat.jump, Amount:0.75, Operation:2
+        - Name:xat.stepheight, Amount:1.4, Operation:0
+        add:
+        - Name:forge.swimSpeed, Amount:-0.50, Operation:2
+        - Name:generic.armor, Amount:0.5, Operation:2
+        - Name:generic.armorToughness, Amount:0.50, Operation:2
+        - Name:generic.attackDamage, Amount:0.75, Operation:2
+        - Name:generic.knockbackResistance, Amount:1, Operation:0
+        - Name:generic.movementSpeed, Amount:-0.25, Operation:1
+        - Name:generic.reachDistance, Amount:0.75, Operation:1
+        - Name:xat.flyspeed, Amount:-0.50, Operation:2
+        - Name:xat.jump, Amount:0.25, Operation:2
+        - Name:xat.stepheight, Amount:0.5, Operation:0
+    general.server settings.race configuration.titan.magic:
+      I:"Magic Affinity": 25
+    general.server settings.race configuration.titan.size:
+      I:"00. Height": 175
+      I:"01. Width": 170
+    general.server settings.race configuration.taurus:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armor, Amount:0.2, Operation:1
+        - Name:generic.attackDamage, Amount:0.2, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.5, Operation:0
+        add:
+        - Name:generic.armor, Amount:0.3, Operation:1
+        - Name:generic.attackDamage, Amount:0.50, Operation:1
+        - Name:generic.attackSpeed, Amount:-0.10, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.75, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.reachDistance, Amount:0.50, Operation:1
+        - Name:xat.flyspeed, Amount:-0.20, Operation:2
+    general.server settings.race configuration.taurus.abilities.stampede:
+      D:"01. Damage Dealt Max": 35.0
+      I:"03. Charge Time": 30
+    general.server settings.race configuration.dragon:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:generic.armor, Amount:0.25, Operation:1
+        - Name:generic.armorToughness, Amount:0.25, Operation:2
+        - Name:generic.knockbackResistance, Amount:0.25, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.movementSpeed, Amount:0.10, Operation:1
+        - Name:generic.reachDistance, Amount:0.10, Operation:1
+        - Name:xat.flyspeed, Amount:0.40, Operation:2
+    general.server settings.race configuration.dragon.elements.fire:
+      S:"90. Attributes":
+        remove:
+        - Name:forge.swimSpeed, Amount:-0.25, Operation:2
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.attackDamage, Amount:0.25, Operation:1
+        - Name:generic.maxHealth, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:forge.swimSpeed, Amount:-0.50, Operation:2
+        - Name:generic.armor, Amount:0, Operation:0
+        - Name:generic.armorToughness, Amount:0.35, Operation:2
+        - Name:generic.attackDamage, Amount:0.75, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.25, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.maxHealth, Amount:0.10, Operation:1
+        - Name:generic.movementSpeed, Amount:0, Operation:0
+        - Name:generic.reachDistance, Amount:0.10, Operation:1
+        - Name:xat.flyspeed, Amount:0.60, Operation:2
+    general.server settings.race configuration.dragon.elements.fire.abilities.fire breath:
+      D:"02. Damage": 20.0
+    general.server settings.race configuration.dragon.elements.ice:
+      S:"90. Attributes":
+        remove:
+        - Name:forge.swimSpeed, Amount:-0.25, Operation:2
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.maxHealth, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:forge.swimSpeed, Amount:0.75, Operation:2
+        - Name:generic.armor, Amount:0.25, Operation:1
+        - Name:generic.armorToughness, Amount:0.50, Operation:2
+        - Name:generic.attackSpeed, Amount:-0.10, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.50, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.maxHealth, Amount:0.50, Operation:1
+        - Name:generic.movementSpeed, Amount:0, Operation:0
+        - Name:generic.reachDistance, Amount:0.10, Operation:1
+        - Name:xat.flyspeed, Amount:0.50, Operation:2
+    general.server settings.race configuration.dragon.elements.ice.abilities.ice breath:
+      D:"02. Damage": 15.0
+      D:"03. Mana Cost": 5.0
+    general.server settings.race configuration.dragon.elements.lightning:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.attackDamage, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:generic.armor, Amount:0, Operation:1
+        - Name:generic.armorToughness, Amount:0, Operation:1
+        - Name:generic.attackDamage, Amount:0, Operation:1
+        - Name:generic.attackSpeed, Amount:0.50, Operation:1
+        - Name:generic.knockbackResistance, Amount:0, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.movementSpeed, Amount:0.25, Operation:1
+        - Name:generic.reachDistance, Amount:0.10, Operation:1
+        - Name:xat.flyspeed, Amount:0.75, Operation:2
+    general.server settings.race configuration.dragon.elements.lightning.abilities.lightning breath:
+      D:"02. Damage": 10.0
+      D:"03. Mana Cost": 5.0
+    general.server settings.race configuration.dragon.elements.lightning.abilities.lightning bolt:
+      D:"01. Damage Dealt Max": 60.0
+      D:"02. Mana Cost Max": 100.0
+    general.server settings.race configuration.dragon.magic:
+      I:"Magic Affinity": 250
+    general.server settings.race configuration.dragon.size:
+      I:"01. Width": 115
+- type: json_patch
+  file: config/CustomMainMenu/mainmenu.json
+  encoding: latin-1
+  description: 'TODO: Describe what changes in mainmenu.json'
+  changes:
+  - op: add
+    path: /other/background/slideshow/images/0
+    value: mainmenu:images/shycraft/0.png
+  - op: add
+    path: /other/background/slideshow/images/1
+    value: mainmenu:images/shycraft/1.jpg
+  - op: add
+    path: /other/background/slideshow/images/2
+    value: mainmenu:images/shycraft/2.png
+  - op: add
+    path: /other/background/slideshow/images/3
+    value: mainmenu:images/shycraft/3.png
+  - op: move
+    path: /other/background/slideshow/images/4
+    from: /other/background/slideshow/images/19
+  - op: replace
+    path: /other/background/slideshow/fadeDuration
+    value: 200
+  - op: replace
+    path: /other/background/slideshow/displayDuration
+    value: 150
+  - op: replace
+    path: /labels/discord 2/hoverText
+    value: ' nShyCraft Discord'
+  - op: replace
+    path: /labels/discord 2/action/link
+    value: https://discord.gg/FznKCfHjAJ
+  - op: replace
+    path: /labels/discord 2/text
+    value: ShyCraft Discord
+  - op: replace
+    path: /labels/rl_craft/text
+    value: ShyCraft Parasited X (1.2.3)
+  - op: replace
+    path: /labels/discord/hoverText
+    value: ' nNischhelm''s Discord'
+  - op: replace
+    path: /labels/discord/action/link
+    value: https://discord.gg/YYrqFMecNG
+  - op: replace
+    path: /labels/discord/text
+    value: Nischhelm's Discord
+- type: cfg_patch
+  file: config/setbonus/1.12.2.009+.cfg
+  description: 'TODO: Describe what changes in 1.12.2.009+.cfg'
+  changes:
+    general.server settings:
+      S:"2f. Bonuses":
+        remove:
+        - ScarliteBonus2, Vulnerable, 0, ScarliteSet
+        add:
+        - ScarliteBonus2, Immunity, 0, ScarliteSet
+        - ScarliteBonus3, +8 Magic Shield, 0, ScarliteSet
+      S:"4. Potion Effects":
+        remove:
+        - ScarliteBonus2, potioncore:vulnerable.1.205
+        add:
+        - ScarliteBonus2, potioncore:cure.1.205
+        - ScarliteBonus3, potioncore:magic_shield.2.205
+- type: json_patch
+  file: config/socketed/gemtypes/netherstar.json
+  description: 'TODO: Describe what changes in netherstar.json'
+  changes:
+  - op: replace
+    path: /Effects/0/Amplifier
+    value: 3
+  - op: replace
+    path: /Effects/1/Modifier Amount
+    value: 1.0
+- type: json_patch
+  file: config/lycanitesmobs/equipment/wargskull.json
+  description: 'TODO: Describe what changes in wargskull.json'
+  changes:
+  - op: replace
+    path: /features/1/damageCooldown
+    value: 2
+  - op: replace
+    path: /features/2/damageCooldown
+    value: 2
+- type: json_patch
+  file: config/lycanitesmobs/equipment/xaphanspine.json
+  description: 'TODO: Describe what changes in xaphanspine.json'
+  changes:
+  - op: add
+    path: /features/5
+    value:
+      damageAmount: 0
+      damageCooldown: 1
+      damageKnockback: 0
+      damageRange: -0.9
+      damageSweep: 0
+      featureType: damage
+      levelMin: 1
+- type: json_patch
+  file: config/lycanitesmobs/equipment/vespidstinger.json
+  description: 'TODO: Describe what changes in vespidstinger.json'
+  changes:
+  - op: add
+    path: /features/3
+    value:
+      damageAmount: 0
+      damageCooldown: 1
+      damageKnockback: 0
+      damageRange: 0
+      damageSweep: -180
+      featureType: damage
+      levelMin: 1
+- type: json_patch
+  file: config/lycanitesmobs/equipment/raidrablade.json
+  description: 'TODO: Describe what changes in raidrablade.json'
+  changes:
+  - op: replace
+    path: /features/3/damageAmount
+    value: -2
+  - op: replace
+    path: /features/4/damageAmount
+    value: -2
+  - op: replace
+    path: /features/5/damageAmount
+    value: -2
+- type: json_patch
+  file: config/lostcities/citydata/conditions.json
+  description: 'TODO: Describe what changes in conditions.json'
+  changes:
+  - op: replace
+    path: /4/values/0/factor
+    value: 25
+  - op: replace
+    path: /4/values/6/factor
+    value: 50
+- type: folder_add
+  source: shycraft/paintings/textures
+  destination: paintings/textures
+  description: Add all ShyCraft custom paintings
+- type: json_append_all
+  file: resources/contenttweaker/sounds.json
+  source: shycraft/resources/contenttweaker/sounds.json
+  description: Append all ShyCraft custom music disc sounds
+- type: keyvalue_patch
+  file: resources/contenttweaker/lang/en_us.lang
+  description: Add localization for ShyCraft custom music discs
+  changes:
+    item.contenttweaker.dragonborn.name: §dDragonborn
+    item.record.dragonborn.desc: ShyCraft - Dragonborn
+    item.contenttweaker.faraway.name: §dFaraway
+    item.record.faraway.desc: ShyCraft - faraway
+    item.contenttweaker.hushed.name: §dHushed
+    item.record.hushed.desc: ShyCraft - Hushed
+    item.contenttweaker.la_lecon.name: §dLa_lecon
+    item.record.la_lecon.desc: ShyCraft - La_lecon
+    item.contenttweaker.lugia.name: §dLugia
+    item.record.lugia.desc: ShyCraft - Lugia
+    item.contenttweaker.march.name: §dMarch
+    item.record.march.desc: ShyCraft - March
+    item.contenttweaker.sanctuary_village.name: §dSanctuary
+    item.record.sanctuary_village.desc: ShyCraft - Sanctuary
+    item.contenttweaker.sovngarde.name: §dSovngarde
+    item.record.sovngarde.desc: ShyCraft - Sovngarde
+    item.contenttweaker.spells.name: §dSpells
+    item.record.spells.desc: ShyCraft - Spells
+    item.contenttweaker.subwoofer.name: §dSubwoofer
+    item.record.subwoofer.desc: ShyCraft - Subwoofer
+    item.contenttweaker.sweden.name: §dSweden
+    item.record.sweden.desc: ShyCraft - Sweden
+    item.contenttweaker.tavern.name: §dTavern
+    item.record.tavern.desc: ShyCraft - Tavern
+    item.contenttweaker.careless.name: §dCareless
+    item.record.careless.desc: ShyCraft - Careless
+    item.contenttweaker.underworld.name: §dUnderworld
+    item.record.underworld.desc: ShyCraft - Underworld
+    item.contenttweaker.killers.name: §dKillers
+    item.record.killers.desc: ShyCraft - Killers
+    item.contenttweaker.glamour.name: §dGlamour
+    item.record.glamour.desc: ShyCraft - Glamour
+    item.contenttweaker.elwynn_forest.name: §dElwynn_forest
+    item.record.elwynn_forest.desc: ShyCraft - Elwynn_forest
+    item.contenttweaker.nightmare.name: §dNightmare
+    item.record.nightmare.desc: ShyCraft - Nightmare
+    item.contenttweaker.megalovania.name: §dMegalovania
+    item.record.megalovania.desc: ShyCraft - Megalovania
+    item.contenttweaker.ragnaros.name: §dRagnaros
+    item.record.ragnaros.desc: ShyCraft - Ragnaros
+    item.contenttweaker.ariab.name: §dAriaB
+    item.record.ariab.desc: ShyCraft - AriaB
+- type: folder_add
+  source: shycraft/resources/rlmixins/textures
+  destination: resources/rlmixins/textures
+  description: Add custom Scarlite armor textures
+- type: folder_add
+  source: shycraft/resources/contenttweaker/sounds
+  destination: resources/contenttweaker/sounds
+  description: Add custom music disc sound files
+- type: folder_add
+  source: shycraft/resources/contenttweaker/models/item
+  destination: resources/contenttweaker/models/item
+  description: Add custom music disc item models
+- type: folder_add
+  source: shycraft/resources/contenttweaker/textures/items
+  destination: resources/contenttweaker/textures/items
+  description: Add custom music disc item textures
+- type: folder_add
+  source: shycraft/resources/mainmenu/images/shycraft
+  destination: resources/mainmenu/images/shycraft
+  description: Add ShyCraft main menu slideshow images

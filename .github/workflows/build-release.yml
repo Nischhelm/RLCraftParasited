@@ -26,13 +26,31 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tools/requirements.txt
 
+      - name: Check if ShyCraft release
+        id: check_shycraft
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/ShyCraft* ]]; then
+            echo "IS_SHYCRAFT=true" >> $GITHUB_OUTPUT
+          else
+            echo "IS_SHYCRAFT=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build ShyCraft only
+        if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'true'
+        run: |
+          python tools/packbuilder.py build shycraft
+
       - name: Build main modpack
+        if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'false'
         run: |
           python tools/build_mainpack.py
 
-      - name: Build all configpacks
+      - name: Build configpacks (without ShyCraft)
+        if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'false'
         run: |
-          python tools/packbuilder.py build --all
+          python tools/packbuilder.py build hcc
+          python tools/packbuilder.py build hcc_omega
+          python tools/packbuilder.py build unparasited
 
       - name: List built files
         run: |
@@ -50,31 +68,69 @@ jobs:
           cat /tmp/changelog_entry.md >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
+      - name: Create release body for normal releases
+        if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'false'
+        id: normal_body
+        env:
+          VERSION: ${{ steps.version.outputs.VERSION }}
+          CHANGELOG: ${{ steps.changelog.outputs.CHANGELOG }}
+        run: |
+          cat > /tmp/release_body.md << 'EOFBODY'
+          ## RLCraft Parasited ${VERSION}
+
+          ${CHANGELOG}
+
+          ---
+
+          ### Main Pack (import in cf app):
+          - **RLCraft Parasited.zip**
+
+          ### Config Packs:
+          - **RLCraftParasitedHCC.zip** - Hardcore Config (if you like pain)
+          - **RLCraftParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (lose all progression on death)
+          - **RLCraftParasitedUnparasited.zip** - Unparasited (put the parasites where they came from)
+
+          ### Installation:
+          **Main Pack:** Import ZIP in CurseForge app or similar features in other launchers
+          **Configpacks:** Download and extract over your RLCraft Parasited installation, confirm to overwrite files
+          EOFBODY
+          # Expand environment variables
+          envsubst < /tmp/release_body.md > /tmp/release_body_final.md
+          mv /tmp/release_body_final.md /tmp/release_body.md
+
+      - name: Create release body for ShyCraft releases
+        if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'true'
+        id: shycraft_body
+        env:
+          VERSION: ${{ steps.version.outputs.VERSION }}
+        run: |
+          cat > /tmp/release_body.md << 'EOFBODY'
+          ## ShyCraft Parasited ${VERSION}
+
+          **⚠️ Pre-Release:** This is an automated build that ports the latest RLCraft Parasited changes to the ShyCraft modpack. This is NOT an official ShyCraft release.
+
+          The ShyCraft team will release their own official versions on their own schedule.
+
+          ---
+
+          ### ShyCraft Modpack (import in cf app):
+          - **ShyCraft Parasited.zip** - Complete modpack with ShyCraft customizations
+
+          ### Installation:
+          Import ZIP in CurseForge app or similar features in other launchers. This is a complete modpack, not a configpack overlay.
+          EOFBODY
+          # Expand environment variables
+          envsubst < /tmp/release_body.md > /tmp/release_body_final.md
+          mv /tmp/release_body_final.md /tmp/release_body.md
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ steps.version.outputs.VERSION }}
-          body: |
-            ## RLCraft Parasited ${{ steps.version.outputs.VERSION }}
-
-            ${{ steps.changelog.outputs.CHANGELOG }}
-
-            ---
-
-            ### Main Pack (import in cf app):
-            - **RLCraft Parasited.zip**
-
-            ### Config Packs:
-            - **RLCraftParasitedHCC.zip** - Hardcore Config (if you like pain)
-            - **RLCraftParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (lose all progression on death)
-            - **RLCraftParasitedUnparasited.zip** - Unparasited (put the parasites where they came from)
-
-            ### Installation:
-            **Main Pack:** Import ZIP in CurseForge app or similar features in other launchers
-            **Configpacks:** Download and extract over your RLCraft Parasited installation, confirm to overwrite files
+          body_path: /tmp/release_body.md
           files: |
             build/*.zip
           draft: false
-          prerelease: false
+          prerelease: ${{ steps.check_shycraft.outputs.IS_SHYCRAFT == 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
