@@ -7,6 +7,7 @@ import loottweaker.CustomLootFunction;
 import loottweaker.LootContext;
 import crafttweaker.util.IRandom;
 import crafttweaker.item.IItemStack;
+import dynamic.zenutils.config.Parasited;
  
 val qual = 1; //weight per luck for transformation rings
  
@@ -175,13 +176,16 @@ dragonRingPool.addItemEntry(<xat:dragon_ring:3>, 1, 0, [
 lostCityRarePool.addLootTableEntry("loottweaker:dragon_rings", 1, qual);
 lostCityRarePool.addLootTableEntry("loottweaker:masterspells", 1);
 lostCityRarePool.addItemEntry(<xat:taurus_ring>, 1, qual, [Functions.setCount(0, 1)], [], "taurus_ring");
+if(Parasited.useShyCraftSwapRings) lostCityRarePool.addItemEntry(<xat:titan_ring>, 1, 1, [Functions.setCount(0, 1)], [], "titan_ring");
 lostCityRarePool.addLootTableEntry("minecraft:chests/nether_bridge", 10);
 lostCityRarePool.addLootTableEntry("minecraft:chests/stronghold_corridor", 20);
 lostCityRarePool.addLootTableEntry("loottweaker:lowtable", 20);
 
 
 //==== Uncommon Loot (titan) ====
-lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, qual, [Functions.setCount(0, 1)], [], "titan_ring");
+if(!Parasited.useShyCraftSwapRings) lostCityUncommonPool.addItemEntry(<xat:titan_ring>, 1, qual, [Functions.setCount(0, 1)], [], "titan_ring");
+else lostCityUncommonPool.addItemEntry(<xat:dwarf_ring>, 1, 1, [Functions.setCount(0, 1)], [], "dwarf_ring");
+
 lostCityUncommonPool.addLootTableEntry("minecraft:chests/simple_dungeon", 15);
 lostCityUncommonPool.addLootTableEntry("charm:village/butcher", 10);
 lostCityUncommonPool.addLootTableEntry("loottweaker:buildertable", 25);

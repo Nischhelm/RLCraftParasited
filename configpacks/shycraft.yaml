@@ -89,6 +89,7 @@ patches:
   changes:
     general:
       B:"Use ShyCraft Dragon Gem Recipe": true
+      B:"Use ShyCraft Ring Distribution Rules": true
 - type: cfg_patch
   file: config/RLArtifacts.cfg
   description: 'TODO: Describe what changes in RLArtifacts.cfg'
