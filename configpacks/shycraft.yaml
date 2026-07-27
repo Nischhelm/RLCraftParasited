@@ -1,6 +1,6 @@
 name: RLCraft Parasited ShyCraft
-version: 1.0.0
-description: 'ShyCraft TODO: Add description of what this configpack changes'
+version: 1.2.3 - July 25 2026
+description: 'ShyCraft Parasited: A modification of Parasited'
 build:
   mode: modpack
   output_name: ShyCraft Parasited.zip
@@ -17,7 +17,7 @@ patches:
     value: "ShyCraft Parasited X"
   - op: replace
     path: /version
-    value: "1.2.3"
+    value: "1.2.3 - July 25 2026"
   - op: add
     path: /image
     value: "profileImage/ShyCraft Minecraft ver.png"
@@ -581,7 +581,7 @@ patches:
     value: ShyCraft Discord
   - op: replace
     path: /labels/rl_craft/text
-    value: ShyCraft Parasited X (1.2.3)
+    value: ShyCraft Parasited X (1.2.3 - July 25 2026)
   - op: replace
     path: /labels/discord/hoverText
     value: ' nNischhelm''s Discord'
