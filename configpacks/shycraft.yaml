@@ -10,7 +10,7 @@ build:
 patches:
 - type: json_patch
   file: manifest.json
-  description: Update manifest for ShyCraft
+  description: "Update manifest for ShyCraft"
   changes:
   - op: replace
     path: /name
@@ -28,33 +28,38 @@ patches:
       fileID: 7701356
       required: true
       fileName: "Pinata Mobs-1.0.6"
+
 - type: keyvalue_patch
   file: options.txt
-  description: 'TODO: Describe what changes in options.txt'
+  description: "change direct connect server to ShyCraft"
   changes:
     lastServer: ShyCraft.mcserver.us
+
 - type: keyvalue_patch
   file: config/VariedCommodities.cfg
-  description: Increase weapon damage and reduce musket knockback
+  description: "Increase weapon damage and reduce musket knockback"
   changes:
     MachineGunDamage: 10
     MusketDamage: 30
     MusketKnockback: 3
+
 - type: file_add
   source: shycraft/config/pinatamobs.cfg
   destination: config/pinatamobs.cfg
-  description: 'TODO: Describe why this file is added'
+  description: "TODO: Describe why this file is added"
+
 - type: cfg_patch
   file: config/srpmixins.cfg
-  description: 'TODO: Describe what changes in srpmixins.cfg'
+  description: "TODO: Describe what changes in srpmixins.cfg"
   changes:
     general.spawning:
       S:"Parasite Spawning Biome Blacklist per dimension":
         add:
         - 10
+
 - type: cfg_patch
   file: config/reskillable.cfg
-  description: 'TODO: Describe what changes in reskillable.cfg'
+  description: "TODO: Describe what changes in reskillable.cfg"
   changes:
     general:
       S:"Skill Locks":
@@ -83,16 +88,18 @@ patches:
           new: rustic:brewing_barrel:*=reskillable:farming|32,reskillable:building|32
         - old: rustic:grape_stem:*=reskillable:farming|8
           new: rustic:grape_stem:*=reskillable:farming|30
+
 - type: cfg_patch
   file: config/parasited.cfg
-  description: 'TODO: Describe what changes in parasited.cfg'
+  description: "TODO: Describe what changes in parasited.cfg"
   changes:
     general:
       B:"Use ShyCraft Dragon Gem Recipe": true
       B:"Use ShyCraft Ring Distribution Rules": true
+
 - type: cfg_patch
   file: config/RLArtifacts.cfg
-  description: 'TODO: Describe what changes in RLArtifacts.cfg'
+  description: "TODO: Describe what changes in RLArtifacts.cfg"
   changes:
     general:
       S:"Antidote Vessel Blacklisted Effects":
@@ -104,37 +111,44 @@ patches:
       I:"Star Cloak Falling Star Damage": 24
       I:"Star Cloak Maximum Stars": 24
       D:"Thorn Pendant Chance": 0.5
+
 - type: cfg_patch
   file: config/reccomplex.cfg
-  description: 'TODO: Describe what changes in reccomplex.cfg'
+  description: "TODO: Describe what changes in reccomplex.cfg"
   changes:
     general:
       I:asCommandPermissionLevel: 2
+
 - type: cfg_patch
   file: config/somanyenchantments.cfg
-  description: 'TODO: Describe what changes in somanyenchantments.cfg'
+  description: "TODO: Describe what changes in somanyenchantments.cfg"
   changes:
     general.miscellaneous:
       B:"Evasion Dodge Effect": false
+
 - type: json_append_all
   file: paintings/paintings.json
   source: shycraft/paintings/paintings.json
-  description: Append all ShyCraft paintings to paintings.json
+  description: "Append all ShyCraft paintings to paintings.json"
+
 - type: file_add
   source: shycraft/scripts/noTravelFromSancToNether.zs
   destination: scripts/noTravelFromSancToNether.zs
-  description: 'TODO: Describe why this file is added'
+  description: "TODO: Describe why this file is added"
+
 - type: file_add
   source: shycraft/scripts/shyCraftRecords.zs
   destination: scripts/shyCraftRecords.zs
-  description: 'TODO: Describe why this file is added'
+  description: "TODO: Describe why this file is added"
+
 - type: file_add
   source: shycraft/scripts/shyCraftGunCraftingRecipes.zs
   destination: scripts/shyCraftGunCraftingRecipes.zs
-  description: 'TODO: Describe why this file is added'
+  description: "TODO: Describe why this file is added"
+
 - type: cfg_patch
   file: config/trinkets/Trinkets_And_Baubles.cfg
-  description: 'TODO: Describe what changes in Trinkets_And_Baubles.cfg'
+  description: "TODO: Describe what changes in Trinkets_And_Baubles.cfg"
   changes:
     general.client settings.mana hud:
       D:"Location X": 0.00936768149882904
@@ -529,10 +543,11 @@ patches:
       I:"Magic Affinity": 250
     general.server settings.race configuration.dragon.size:
       I:"01. Width": 115
+
 - type: json_patch
   file: config/CustomMainMenu/mainmenu.json
   encoding: latin-1
-  description: 'TODO: Describe what changes in mainmenu.json'
+  description: "TODO: Describe what changes in mainmenu.json"
   changes:
   - op: add
     path: /other/background/slideshow/images/0
@@ -576,9 +591,10 @@ patches:
   - op: replace
     path: /labels/discord/text
     value: Nischhelm's Discord
+
 - type: cfg_patch
   file: config/setbonus/1.12.2.009+.cfg
-  description: 'TODO: Describe what changes in 1.12.2.009+.cfg'
+  description: "TODO: Describe what changes in 1.12.2.009+.cfg"
   changes:
     general.server settings:
       S:"2f. Bonuses":
@@ -593,9 +609,10 @@ patches:
         add:
         - ScarliteBonus2, potioncore:cure.1.205
         - ScarliteBonus3, potioncore:magic_shield.2.205
+
 - type: json_patch
   file: config/socketed/gemtypes/netherstar.json
-  description: 'TODO: Describe what changes in netherstar.json'
+  description: "TODO: Describe what changes in netherstar.json"
   changes:
   - op: replace
     path: /Effects/0/Amplifier
@@ -603,9 +620,10 @@ patches:
   - op: replace
     path: /Effects/1/Modifier Amount
     value: 1.0
+
 - type: json_patch
   file: config/lycanitesmobs/equipment/wargskull.json
-  description: 'TODO: Describe what changes in wargskull.json'
+  description: "TODO: Describe what changes in wargskull.json"
   changes:
   - op: replace
     path: /features/1/damageCooldown
@@ -613,9 +631,10 @@ patches:
   - op: replace
     path: /features/2/damageCooldown
     value: 2
+
 - type: json_patch
   file: config/lycanitesmobs/equipment/xaphanspine.json
-  description: 'TODO: Describe what changes in xaphanspine.json'
+  description: "TODO: Describe what changes in xaphanspine.json"
   changes:
   - op: add
     path: /features/5
@@ -627,9 +646,10 @@ patches:
       damageSweep: 0
       featureType: damage
       levelMin: 1
+
 - type: json_patch
   file: config/lycanitesmobs/equipment/vespidstinger.json
-  description: 'TODO: Describe what changes in vespidstinger.json'
+  description: "TODO: Describe what changes in vespidstinger.json"
   changes:
   - op: add
     path: /features/3
@@ -641,9 +661,10 @@ patches:
       damageSweep: -180
       featureType: damage
       levelMin: 1
+
 - type: json_patch
   file: config/lycanitesmobs/equipment/raidrablade.json
-  description: 'TODO: Describe what changes in raidrablade.json'
+  description: "TODO: Describe what changes in raidrablade.json"
   changes:
   - op: replace
     path: /features/3/damageAmount
@@ -654,9 +675,10 @@ patches:
   - op: replace
     path: /features/5/damageAmount
     value: -2
+
 - type: json_patch
   file: config/lostcities/citydata/conditions.json
-  description: 'TODO: Describe what changes in conditions.json'
+  description: "TODO: Describe what changes in conditions.json"
   changes:
   - op: replace
     path: /4/values/0/factor
@@ -664,17 +686,20 @@ patches:
   - op: replace
     path: /4/values/6/factor
     value: 50
+
 - type: folder_add
   source: shycraft/paintings/textures
   destination: paintings/textures
-  description: Add all ShyCraft custom paintings
+  description: "Add all ShyCraft custom paintings"
+
 - type: json_append_all
   file: resources/contenttweaker/sounds.json
   source: shycraft/resources/contenttweaker/sounds.json
-  description: Append all ShyCraft custom music disc sounds
+  description: "Append all ShyCraft custom music disc sounds"
+
 - type: keyvalue_patch
   file: resources/contenttweaker/lang/en_us.lang
-  description: Add localization for ShyCraft custom music discs
+  description: "Add localization for ShyCraft custom music discs"
   changes:
     item.contenttweaker.dragonborn.name: §dDragonborn
     item.record.dragonborn.desc: ShyCraft - Dragonborn
@@ -718,23 +743,28 @@ patches:
     item.record.ragnaros.desc: ShyCraft - Ragnaros
     item.contenttweaker.ariab.name: §dAriaB
     item.record.ariab.desc: ShyCraft - AriaB
+
 - type: folder_add
   source: shycraft/resources/rlmixins/textures
   destination: resources/rlmixins/textures
-  description: Add custom Scarlite armor textures
+  description: "Add custom Scarlite armor textures"
+
 - type: folder_add
   source: shycraft/resources/contenttweaker/sounds
   destination: resources/contenttweaker/sounds
-  description: Add custom music disc sound files
+  description: "Add custom music disc sound files"
+
 - type: folder_add
   source: shycraft/resources/contenttweaker/models/item
   destination: resources/contenttweaker/models/item
-  description: Add custom music disc item models
+  description: "Add custom music disc item models"
+
 - type: folder_add
   source: shycraft/resources/contenttweaker/textures/items
   destination: resources/contenttweaker/textures/items
-  description: Add custom music disc item textures
+  description: "Add custom music disc item textures"
+
 - type: folder_add
   source: shycraft/resources/mainmenu/images/shycraft
   destination: resources/mainmenu/images/shycraft
-  description: Add ShyCraft main menu slideshow images
+  description: "Add ShyCraft main menu slideshow images"
