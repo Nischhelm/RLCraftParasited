@@ -25,6 +25,7 @@ better_survival_dragonsteel-1.0.0 (2)
 better_survival-1.5.4
 betterbiomeblend-1.2.0-1.12.2
 bettercaves-1.12.2-2.0.4
+BetterConfig-1.12.2-1.0.0
 BetterEndForge-Unofficial-GBPort-1.12.2-1.3.9-indev
 BetterMineshaftsForge-1.12.2-2.2.1
 betternether-0.1.8.6
