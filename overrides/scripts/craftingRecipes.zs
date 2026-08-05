@@ -1928,39 +1928,39 @@ recipes.addShaped("recHORSEDIAMOND",<minecraft:diamond_horse_armor>,
 //NEW LE ARMORS
 //=====================
 
-recipes.addShaped("rmor1",<rlmixins:steel_helmet>,
+recipes.addShaped("armor1",<rlmixins:steel_helmet>,
  [[<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("rmor2",<rlmixins:steel_chestplate>,
+recipes.addShaped("armor2",<rlmixins:steel_chestplate>,
  [[<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("rmor3",<rlmixins:steel_leggings>,
+recipes.addShaped("armor3",<rlmixins:steel_leggings>,
  [[<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>]]);
 
-recipes.addShaped("rmor4",<rlmixins:steel_boots>,
+recipes.addShaped("armor4",<rlmixins:steel_boots>,
  [[<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>],
   [<variedcommodities:ingot_steel>,null,<variedcommodities:ingot_steel>]]);
 
-//recipes.addShaped("rmor5",<rlmixins:scarlite_helmet>,
+//recipes.addShaped("armor5",<rlmixins:scarlite_helmet>,
 // [[<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>]]);
 
-//recipes.addShaped("rmor6",<rlmixins:scarlite_chestplate>,
+//recipes.addShaped("armor6",<rlmixins:scarlite_chestplate>,
 // [[<defiledlands:scarlite>,null,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>]]);
 
-//recipes.addShaped("rmor7",<rlmixins:scarlite_leggings>,
+//recipes.addShaped("armor7",<rlmixins:scarlite_leggings>,
 // [[<defiledlands:scarlite>,<defiledlands:scarlite>,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>]]);
 
-//recipes.addShaped("rmor8",<rlmixins:scarlite_boots>,
+//recipes.addShaped("armor8",<rlmixins:scarlite_boots>,
 // [[<defiledlands:scarlite>,null,<defiledlands:scarlite>],
 //  [<defiledlands:scarlite>,null,<defiledlands:scarlite>]]);
 
