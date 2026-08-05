@@ -8,9 +8,6 @@ print("Script starting!");
 var mobspawner as IItemStack = <minecraft:mob_spawner>;
 mobspawner.hardness = 15;
 
-//var bountyboard as IItemStack = <bountiful:bountyboarditem>;
-//bountyboard.hardness = 9999;
-
 val skelly = LootTweaker.getTable("minecraft:entities/skeleton");
 val wut = skelly.addPool("wut", 0, 1, 0, 0);
 wut.addItemEntry(<minecraft:skull>, 1);
