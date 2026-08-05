@@ -174,7 +174,6 @@
     {"projectID": 408853, "fileID": 5337217, "required": true, "fileName": "particleculling-1.12.2-v1.4.3"},
     {"projectID": 409087, "fileID": 6215595, "required": true, "fileName": "EntityCulling-1.12.2-6.5.0"},
     {"projectID": 416089, "fileID": 8463988, "required": true, "fileName": "voicechat-forge-1.12.2-2.6.21"},
-    {"projectID": 419286, "fileID": 7049694, "required": true, "fileName": "!mixinbooter-10.7"},
     {"projectID": 423758, "fileID": 4448659, "required": true, "fileName": "BQTweaker-1.3.5"},
     {"projectID": 427597, "fileID": 3136255, "required": true, "fileName": "dynamictreesdefiledlands-1.12.2-1.0.0"},
     {"projectID": 463826, "fileID": 8206890, "required": true, "fileName": "Atlas-Lib-1.12.2-1.1.11"},
