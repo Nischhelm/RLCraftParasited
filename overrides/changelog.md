@@ -3,10 +3,19 @@
 Mod changes
     updated trinkets jar
     updated testdummy to 2.0.7 (indev jar until its on cf) fixing a dupe
+    updated reccomplex to fix some 2014 style potential exploits
 
 Config changes
     reduced betterend biomes even more (now 2:1 vanilla end to betterend)
     made dummy immune to coth
+    increased traverse findbiome timeout
+    fixed more potential container dupes
+    using eagles (/meldexuns) structure cleanup settings for rltweaker
+    added default morpheus cfg with 33% sleep percentage for server owners
+    added a possibly minimal inspirations fix idk
+    enabled chunkloading fix by rltweaker
+    removed default chain skirt recipe
+    made it rain less often
 
 Scripts
     moved shulker rightclick dropoff zenutils mixin to clientside only to fix server complaint
@@ -23,6 +32,7 @@ Structures
 
 Config Packs
     re-enabled RTG as default worldtype for HCC as its now working with cherry grove
+    added Dregora Parasited i guess
 
 Docs
     
