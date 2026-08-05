@@ -450,3 +450,27 @@ zenClass DyeCauldronWaterMixin {
         if(boiling) cir.setReturnValue(false); // no matchies to protect coffee
     }
 }
+
+#mixin {targets: "com.charles445.simpledifficulty.handler.ThirstHandler"}
+zenClass ThirstHandlerMixin {
+    #mixin WrapWithCondition
+    #{
+    #   method: "onAttackEntity",
+	#   at: {value: "INVOKE", target: "Lcom/charles445/simpledifficulty/handler/ThirstHandler;addExhaustion(Lnet/minecraft/entity/player/EntityPlayer;F)V"}
+    #}
+	#mixin Local
+    function zenutils_thirstCheckIFrames(
+		instance as native.com.charles445.simpledifficulty.handler.ThirstHandler,
+		player as native.net.minecraft.entity.player.EntityPlayer,
+		exhaustion as float,
+		target as native.net.minecraft.entity.Entity
+	) as bool {
+        if(target.isEntityInvulnerable(native.net.minecraft.util.DamageSource.causePlayerDamage(player))) return false; // Same as Vanilla
+        if(target instanceof native.net.minecraft.entity.EntityLivingBase) {
+			val living as native.net.minecraft.entity.EntityLivingBase = target as native.net.minecraft.entity.EntityLivingBase;
+            if(living.getHealth() <= 0) return false; // Same as Vanilla
+            if(living.hurtResistantTime > living.maxHurtResistantTime / 2) return false; // Almost Vanilla, does not check lastDamage
+        }
+        return true;
+	}
+}
