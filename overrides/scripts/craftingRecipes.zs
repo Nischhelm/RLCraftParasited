@@ -107,6 +107,7 @@ recipes.remove(<variedcommodities:iron_skirt>);
 recipes.remove(<variedcommodities:golden_skirt>);
 recipes.remove(<variedcommodities:leather_skirt>);
 recipes.remove(<variedcommodities:bronze_skirt>);
+recipes.remove(<variedcommodities:chain_skirt>);
 recipes.remove(<variedcommodities:full_diamond_head>);
 recipes.remove(<variedcommodities:full_emerald_head>);
 recipes.remove(<variedcommodities:full_iron_head>);
