@@ -1,0 +1,509 @@
+{
+  "biomes": [
+    {
+      "conditions": "TRUE",
+      "_comment": "Cave Ambience",
+      "soundReset": false,
+      "aurora": false,
+      "sounds": [
+        {
+          "sound": "dsurround:cave.ambient",
+          "conditions":"!player.canSeeSky && MATCH('(?i)(.*0.*)', dim.id) && MATCH('^(0|[1-9]|[1-4][0-9]|5[0-5])$', player.y)",
+          "soundType": "spot",
+          "weight": 1
+        },
+        {
+          "sound": "dsurround:cave.ambient",
+          "conditions":"!player.canSeeSky && MATCH('(?i)(.*111.*)', dim.id) && MATCH('^(0|[1-9]|[1-4][0-9]|5[0-5])$', player.y)",
+          "soundType": "spot",
+          "weight": 1
+        },
+        {
+          "sound": "dsurround:cave.ambient",
+          "conditions":"!player.canSeeSky && MATCH('(?i)(.*3.*)', dim.id) && MATCH('^(23[0-9]|24[0-9]|25[0-6])$', player.y)",
+          "soundType": "spot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "conditions":"MATCH('(?i)(.*ruins_of_blight.*)', biome.id) || MATCH('(?i)(.*lair_of_the_thing.*)', biome.id) || MATCH('(?i)(.*nuclear_ruins.*)', biome.id)",
+      "_comment": "Ruins of Blight Ambient",
+      "soundReset": true
+    },
+    {
+      "conditions":"TRUE",
+      "_comment": "Ruins of Blight Ambient",
+      "soundReset": false,
+      "sounds": [
+        {
+          "conditions":"!player.isInside && MATCH('(?i)(.*ruins_of_blight.*)', biome.id) || MATCH('(?i)(.*lair_of_the_thing.*)', biome.id) || MATCH('(?i)(.*nuclear_ruins.*)', biome.id)",
+          "sound": "dsurround:city.background.three",
+          "volume": 0.1
+        },
+        {
+          "conditions":"MATCH('(?i)(.*ruins_of_blight.*)', biome.id) || MATCH('(?i)(.*lair_of_the_thing.*)', biome.id) || MATCH('(?i)(.*nuclear_ruins.*)', biome.id)",
+          "sound": "dsurround:city.stinger",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"!player.isInside && MATCH('(?i)(.*ruins_of_blight.*)', biome.id) || MATCH('(?i)(.*lair_of_the_thing.*)', biome.id) || MATCH('(?i)(.*nuclear_ruins.*)', biome.id)",
+          "sound": "dsurround:city.ambience.two",
+          "soundType": "periodic",
+          "volume": 0.1
+        }
+      ]
+    },
+    {
+      "conditions":"true",
+      "_comment": "Ruins of Blight Ambient",
+      "soundReset": false,
+      "sounds": [
+        {
+          "conditions":"MATCH('^(5[0-9]|60)$', player.Y) && MATCH('(?i)(.*ruins_of_blight.*)', biome.id)",
+          "sound": "dsurround:sewer.background.two",
+          "volume": 0.15
+        },
+        {
+          "conditions":"MATCH('^(5[0-9]|60)$', player.Y) && MATCH('(?i)(.*ruins_of_blight.*)', biome.id)",
+          "sound": "dsurround:sewer.stinger",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('^(5[0-9]|60)$', player.Y) && MATCH('(?i)(.*nuclear_ruins.*)', biome.id)",
+          "sound": "dsurround:sewer.background.two",
+          "volume": 0.15
+        },
+        {
+          "conditions":"MATCH('^(5[0-9]|60)$', player.Y) && MATCH('(?i)(.*nuclear_ruins.*)', biome.id)",
+          "sound": "dsurround:sewer.stinger",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('^(5[0-9]|60)$', player.Y) && MATCH('(?i)(.*lair_of_the_thing.*)', biome.id)",
+          "sound": "dsurround:sewer.background.two",
+          "volume": 0.15
+        },
+        {
+          "conditions":"MATCH('^(5[0-9]|60)$', player.Y) && MATCH('(?i)(.*lair_of_the_thing.*)', biome.id)",
+          "sound": "dsurround:sewer.stinger",
+          "soundType": "spot"
+        }
+      ]
+    },
+    {
+      "conditions":"TRUE",
+      "_comment": "Underneath Ambient",
+      "aurora": false,
+      "spotSoundChance": 400,
+      "sounds": [
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:underneath.background.one",
+          "volume": 0.2
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:underneath.background.two",
+          "soundType": "spot",
+          "weight": 1
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:underneath.stinger",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:underneath.ambient",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:underground",
+          "volume": 1.5
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "minecraft:ambient.cave",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:rockfall",
+          "soundType": "spot"
+        }
+      ]
+    },
+    {
+      "conditions":"TRUE",
+      "_comment": "Abyssal Ambience Nether Ambience",
+      "soundReset": false,
+      "aurora": false,
+      "sounds": [
+        {
+          "sound": "dsurround:theend",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
+          "volume": 0.1
+        },
+        {
+          "sound": "dsurround:wind",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
+          "volume": 0.6
+        },
+        {
+          "sound": "charm:spectre_ambient",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
+          "soundType": "spot"
+        },
+        {
+          "sound": "charm:ender_resonance",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
+          "soundType": "spot"
+        },
+        {
+          "sound": "srparasites:ancient.pod",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
+          "soundType": "spot"
+        },
+        {
+          "sound": "dsurround:theend",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 0.1
+        },
+        {
+          "sound": "dsurround:wind",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 0.6
+        },
+        {
+          "sound": "charm:spectre_ambient",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "soundType": "spot"
+        },
+        {
+          "sound": "charm:ender_resonance",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "soundType": "spot"
+        },
+        {
+          "sound": "srparasites:ancient.pod",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "soundType": "spot"
+        },
+        {
+          "sound": "dsurround:dimension.nether",
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 0.1
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:ancient.pod",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:biome.heart",
+          "volume": 0.03,
+          "soundType": "periodic"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "charm:homing",
+          "volume": 0.008,
+          "soundType": "periodic"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:elvia.growl",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "minecraft:ambient.cave",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:terla.death",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:lencia.growl",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:elvia.hurt",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:aranrac.growl",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:dod.siv",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:evolution.phasesix",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:flesh.death",
+          "soundType": "spot"
+        },
+        {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:host.growl",
+          "soundType": "spot"
+        }
+      ]
+    },
+    {
+      "conditions":"biome.isJUNGLE && !biome.isSWAMP && !biome.isMAGICAL",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "71,150,71",
+      "fogDensity": 0.5
+    },
+    {
+      "conditions":"biome.isSANDY",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": true,
+      "fog": false,
+      "fogColor": "191,0,45",
+      "fogDensity": 0.8
+    },
+    {
+      "conditions":"biome.isOCEAN",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "163,168,240",
+      "fogDensity": 1.0
+    },
+    {
+      "conditions":"biome.isBEACH",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "119,149,201",
+      "fogDensity": 1.0
+    },
+    {
+      "conditions":"!biome.isJUNGLE && biome.isSWAMP && biome.isFOREST && !biome.isMAGICAL",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "18,43,18",
+      "fogDensity": 0.6
+    },
+    {
+      "conditions":"biome.isMAGICAL",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "159,136,186",
+      "fogDensity": 0.7
+    },
+    {
+      "conditions":"biome.isFOREST && !biome.isSWAMP && !biome.isMAGICAL",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "102,140,102",
+      "fogDensity": 0.7
+    },
+    {
+      "conditions":"biome.isSPOOKY",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": true,
+      "dustColor": "130,99,148",
+      "fog": true,
+      "fogColor": "59,43,79",
+      "fogDensity": 0.6
+    },
+    {
+      "conditions":"biome.isCOLD && biome.isSNOWY",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "194,239,242",
+      "fogDensity": 0.8
+    },
+    {
+      "conditions":"biome.isCOLD && biome.isFOREST",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": false,
+      "fog": true,
+      "fogColor": "194,242,232",
+      "fogDensity": 0.7
+    },
+    {
+      "conditions":"biome.isDENSE && !biome.isJUNGLE",
+      "_comment": "Turns off dust effects for all biomes",
+      "fogDensity": 0.3
+    },
+    {
+      "conditions":"biome.isLUSH && !biome.isMAGICAL",
+      "_comment": "Turns off dust effects for all biomes",
+      "fog": true,
+      "fogColor": "101,161,102",
+      "fogDensity": 0.6
+    },
+    {
+      "conditions":"biome.isCANYON && biome.isDEAD && biome.isHOT",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": true,
+      "dustColor": "82,21,2",
+      "soundReset": true,
+      "sounds": [
+        {
+          "conditions":"player.isInside",
+          "sound": "dsurround:rockfall",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "sound": "dsurround:wind",
+          "conditions":"!player.isInside",
+          "volume": 0.6
+        },
+        {
+          "sound": "dsurround:desert.wind",
+          "conditions":"!player.isInside",
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "conditions":"biome.isPLAINS && !biome.isCold && !biome.isSNOWY",
+      "_comment": "Turns off dust effects for all biomes",
+      "fog": true,
+      "fogColor": "161,163,142",
+      "fogDensity": 0.9
+
+    },
+    {
+      "conditions":"MATCH('(?i)(.*abyssal_rift.*)', biome.id)",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": true,
+      "dustColor": "24,24,28",
+      "fog": true,
+      "fogColor": "24,24,28",
+      "fogDensity": 0.6
+    },
+    {
+      "conditions":"MATCH('(?i)(.*nuclear_wasteland.*)', biome.id)",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": true,
+      "dustColor": "204,204,102",
+      "fog": true,
+      "fogColor": "204,204,102",
+      "fogDensity": 0.6,
+      "soundReset": true
+    },
+    {
+      "conditions":"TRUE",
+      "soundReset": false,
+      "_comment": "Turns off dust effects for all biomes",
+      "sounds": [
+        {
+          "sound": "dsurround:factory.ambient.one",
+          "conditions":"player.isUnderground && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.1
+        },
+        {
+          "sound": "dsurround:factory.ambient.two",
+          "conditions":"player.isUnderground && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.1
+        },
+        {
+          "sound": "dsurround:factory.ambient.three",
+          "conditions":"player.isUnderground && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.1
+        },
+        {
+          "sound": "dsurround:factory.ambient.one",
+          "conditions":"player.isInside && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.02
+        },
+        {
+          "sound": "dsurround:factory.ambient.two",
+          "conditions":"player.isInside && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.02
+        },
+        {
+          "sound": "dsurround:factory.ambient.three",
+          "conditions":"player.isInside && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.02
+        },
+        {
+          "sound": "dsurround:nuclear.ambience",
+          "conditions":"!player.isInside && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.06
+        },
+        {
+          "sound": "dsurround:nuclear.background",
+          "conditions":"!player.isInside && biome.isNUCLEAR",
+          "volume": 0.06
+        },
+        {
+          "sound": "dsurround:nuclear.ambience",
+          "conditions":"player.isInside && biome.isNUCLEAR",
+          "soundType": "periodic",
+          "volume": 0.02
+        },
+        {
+          "sound": "dsurround:desert.wind",
+          "conditions":"!player.isInside && biome.isNUCLEAR && !(weather.isRaining || weather.isThundering)",
+          "volume": 0.2
+        },
+        {
+          "sound": "dsurround:desert.wind",
+          "conditions":"!player.isInside && biome.isNUCLEAR && (weather.isRaining || weather.isThundering)",
+          "volume": 0.2
+        },
+        {
+          "sound": "dsurround:thunder",
+          "conditions":"weather.isRaining || weather.isThundering && biome.isNUCLEAR",
+          "soundType": "spot"
+        },
+        {
+          "sound": "dsurround:factory.stinger",
+          "conditions":"!player.canSeeSky && player.isInside && biome.isNUCLEAR",
+          "soundType": "spot"
+        }
+      ]
+    },
+    {
+      "conditions":"MATCH('(?i).*traverse:temperate_rainforest.*', biome.id) || MATCH('(?i).*traverse:autumnal_woods.*', biome.id) || MATCH('(?i).*traverse:red_desert .*', biome.id) || MATCH('(?i).*defiledlands:forest_tenebra.*', biome.id) || MATCH('(?i).*defiledlands:ice_plains_defiled.*', biome.id) || MATCH('(?i).*defiledlands:hills_defiled.*', biome.id) || MATCH('(?i).*defiledlands:desert_defiled.*', biome.id) || MATCH('(?i).*defiledlands:forest_vilespine.*', biome.id)",
+      "_comment": "Turns off dust effects for all biomes",
+      "dust": true,
+      "dustColor": "55,2,56",
+      "fog": true,
+      "fogColor": "55,2,56",
+      "fogDensity": 0.5
+    }
+  ],
+  "items": {
+    "TOOL": [
+      "variedcommodities:pendant",
+      "variedcommodities:artifact"
+    ]
+  }
+}

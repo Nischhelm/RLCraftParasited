@@ -10,7 +10,8 @@
     {
       "type": "world",
       "dimensionIds": [
-        4
+        4,
+        3
       ],
       "dimensionListType": "blacklist"
     }
@@ -18,7 +19,7 @@
   "triggers": [
     {
       "type": "world",
-      "chance": 0.25,
+      "chance": 0.2,
       "tickRate": 900
     }
   ],

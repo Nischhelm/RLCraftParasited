@@ -1,0 +1,37 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/reinforced_concrete",
+      "particle": "contenttweaker:blocks/reinforced_concrete"
+    },
+    "model": "contenttweaker:reinforced_concrete",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [
+      {"model": "contenttweaker:reinforced_concrete"},
+      {"model": "contenttweaker:reinforced_concrete_1"},
+      {"model": "contenttweaker:reinforced_concrete_2"},
+      {"model": "contenttweaker:reinforced_concrete_3"},
+      {"model": "contenttweaker:reinforced_concrete_4"},
+      {"model": "contenttweaker:reinforced_concrete_5"},
+      {"model": "contenttweaker:reinforced_concrete_6"},
+      {"model": "contenttweaker:reinforced_concrete_7"},
+      {"model": "contenttweaker:reinforced_concrete_8"},
+      {"model": "contenttweaker:reinforced_concrete_9"},
+      {"model": "contenttweaker:reinforced_concrete_10"},
+      {"model": "contenttweaker:reinforced_concrete_11"},
+      {"model": "contenttweaker:reinforced_concrete_12"},
+      {"model": "contenttweaker:reinforced_concrete_13"},
+      {"model": "contenttweaker:reinforced_concrete_14"},
+      {"model": "contenttweaker:reinforced_concrete_15"}
+    ],
+    "inventory": [
+      {
+        "model": "contenttweaker:reinforced_concrete"
+      }
+    ]
+  }
+}

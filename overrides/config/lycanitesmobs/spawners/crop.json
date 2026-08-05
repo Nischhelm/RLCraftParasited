@@ -10,7 +10,12 @@
   "ignoreLightLevel": true,
   "ignoreGroupLimit": true,
   "ignoreForgeCanSpawnEvent": true,
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "world",
+      "biomes": ["all", "-abyssal"]
+    }
+  ],
   "triggers": [
     {
       "type": "crop",

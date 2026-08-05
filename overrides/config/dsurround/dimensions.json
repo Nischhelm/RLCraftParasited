@@ -1,0 +1,10 @@
+{
+  "dimensions":[
+    {
+      "dimId": 3,
+      "haze": true,
+      "fog": true,
+      "fogDensity": 0.5
+    }
+  ]
+}

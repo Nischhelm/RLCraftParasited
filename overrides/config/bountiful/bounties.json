@@ -1512,6 +1512,15 @@
     "weight": 10
   },
   {
+    "content": "entity:iceandfire:lightningdragon",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 4000,
+    "weight": 5
+  },
+  {
     "content": "entity:iceandfire:seaserpent",
     "amount": {
       "min": 1,
@@ -1628,6 +1637,508 @@
     "unitWorth": 250,
     "weight": 10
   },
+
+  {
+    "content": "entity:iceandfire:icedragon",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 3000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:rupter",
+    "amount": {"min": 10,"max": 30},
+    "unitWorth": 50,
+    "weight": 15
+  },
+  {
+    "content": "entity:srparasites:mangler",
+    "amount": {"min": 5,"max": 10},
+    "unitWorth": 80,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:carrier_flying",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 100,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:sim_enderman",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 700,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:sim_horse",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 175,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_bear",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 200,
+    "weight": 15
+  },
+  {
+    "content": "entity:srparasites:sim_pig",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 100,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_cow",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 100,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_sheep",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 100,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_wolf",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 100,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_villager",
+    "amount": {"min": 5,"max": 10},
+    "unitWorth": 100,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_human",
+    "amount": {"min": 5,"max": 10},
+    "unitWorth": 80,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_adventurer",
+    "amount": {"min": 5,"max": 10},
+    "unitWorth": 70,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:sim_dragone",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 7000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:sim_bigspider",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:fer_enderman",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:fer_horse",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 350,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:fer_bear",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 300,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:fer_pig",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 200,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:fer_cow",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 200,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:fer_sheep",
+    "amount": {"min": 1,"max": 3},
+    "unitWorth": 200,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:fer_villager",
+    "amount": {"min": 5,"max": 10},
+    "unitWorth": 160,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:fer_human",
+    "amount": {"min": 5,"max": 10},
+    "unitWorth": 160,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:crux",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:host",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:heed",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 650,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:thrall",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 650,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:hostii",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 800,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:pri_reeker",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:pri_tozoon",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 700,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:pri_longarms",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 600,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:pri_arachnida",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 550,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:pri_vermin",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 750,
+    "weight": 6
+  },
+  {
+    "content": "entity:srparasites:pri_manducater",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 400,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:pri_summoner",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 7
+  },
+  {
+    "content": "entity:srparasites:pri_yelloweye",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:pri_bolster",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 400,
+    "weight": 10
+  },
+  {
+    "content": "entity:srparasites:ada_bolster",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1250,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:ada_manducater",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1250,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:ada_arachnida",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1250,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:ada_summoner",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1250,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:ada_longarms",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1250,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:ada_yelloweye",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:ada_reeker",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1250,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:beckon_si",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:beckon_sii",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 750,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:beckon_siii",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 2000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:beckon_siv",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 7000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:dispatcher_si",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:dispatcher_sii",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:dispatcher_siii",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 4000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:dispatcher_siv",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 10000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:kyphosis",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1500,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:sentry",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1700,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:worm",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1400,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:overseer",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 2000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:bomber_light",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1700,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:marauder",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 2000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:grunt",
+    "amount": {"min": 5,"max": 5},
+    "unitWorth": 400,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:warden",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 2000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:monarch",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 1750,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:vigilante",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 2000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:carrier_colony",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 15000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:wraith",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 8500,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:bomber_heavy",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 7000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:bogle",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 10000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:haunter",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 12500,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:anc_overlord",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 20000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:anc_dreadnaut",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 20000,
+    "weight": 5
+  },
+  {
+    "content": "entity:srparasites:sim_squid",
+    "amount": {"min": 1,"max": 1},
+    "unitWorth": 500,
+    "weight": 5
+  },
+  {
+    "content": "entity:nuclearcraft:feral_ghoul",
+    "amount": {"min": 10,"max": 50},
+    "unitWorth": 10,
+    "weight": 10
+  },
+  {
+    "content": "srparasites:dispatcher_drop",
+    "amount": {"min": 1, "max": 5},
+    "unitWorth": 100,
+    "weight": 15
+  },
+  {
+    "content": "srparasites:beckon_drop",
+    "amount": {"min": 1, "max": 5},
+    "unitWorth": 100,
+    "weight": 15
+  },
+  {
+    "content": "srparasites:ada_bolster_drop",
+    "amount": {"min": 5, "max": 10},
+    "unitWorth": 100,
+    "weight": 15
+  },
+  {
+    "content": "srparasites:ada_arachnida_drop",
+    "amount": {"min": 5, "max": 10},
+    "unitWorth": 100,
+    "weight": 15
+  },
+  {
+    "comment": "Rupter Viscera",
+    "content": "srparasites:lurecomponent1",
+    "amount": {"min": 10, "max": 25},
+    "unitWorth": 25,
+    "weight": 15
+  },
+  {
+    "comment": "Diseased Heart",
+    "content": "srparasites:lurecomponent2",
+    "amount": {"min": 5, "max": 15},
+    "unitWorth": 35,
+    "weight": 10
+  },
+  {
+    "comment": "Altered Tendons",
+    "content": "srparasites:lurecomponent3",
+    "amount": {"min": 5, "max": 10},
+    "unitWorth": 50,
+    "weight": 10
+  },
+  {
+    "comment": "Toxic Lung",
+    "content": "srparasites:lurecomponent4",
+    "amount": {"min": 1, "max": 10},
+    "unitWorth": 100,
+    "weight": 10
+  },
+  {
+    "comment": "Noxious Brain",
+    "content": "srparasites:lurecomponent5",
+    "amount": {"min": 1, "max": 1},
+    "unitWorth": 1000,
+    "weight": 5
+  },
+  {
+    "comment": "Essential Component",
+    "content": "srparasites:lurecomponent6",
+    "amount": {"min": 10, "max": 25},
+    "unitWorth": 50,
+    "weight": 5
+  },
   {
     "content": "aquaculture:fish:0",
     "amount": {
@@ -1688,7 +2199,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 350,
+    "unitWorth": 250,
     "weight": 15
   },
   {
@@ -1787,7 +2298,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 350,
+    "unitWorth": 250,
     "weight": 15
   },
   {
@@ -1796,7 +2307,7 @@
       "min": 1,
       "max": 4
     },
-    "unitWorth": 580,
+    "unitWorth": 480,
     "weight": 15
   },
   {
@@ -1823,7 +2334,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 560,
+    "unitWorth": 240,
     "weight": 15
   },
   {
@@ -1931,7 +2442,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 580,
+    "unitWorth": 480,
     "weight": 15
   },
   {
@@ -1985,7 +2496,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 440,
+    "unitWorth": 240,
     "weight": 15
   },
   {
@@ -2129,7 +2640,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 560,
+    "unitWorth": 360,
     "weight": 15
   },
   {
@@ -2147,7 +2658,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 440,
+    "unitWorth": 360,
     "weight": 15
   },
   {
@@ -2219,7 +2730,7 @@
       "min": 1,
       "max": 4
     },
-    "unitWorth": 3000,
+    "unitWorth": 420,
     "weight": 15
   },
   {
@@ -2273,7 +2784,7 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 1500,
+    "unitWorth": 1100,
     "weight": 15
   },
   {
@@ -2336,7 +2847,7 @@
       "min": 1,
       "max": 4
     },
-    "unitWorth": 1800,
+    "unitWorth": 1200,
     "weight": 15
   },
   {
@@ -3159,6 +3670,15 @@
     "weight": 20
   },
   {
+    "content": "iceandfire:lightning_dragon_flesh",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 300,
+    "weight": 20
+  },
+  {
     "content": "iceandfire:fire_dragon_heart",
     "amount": {
       "min": 1,
@@ -3177,6 +3697,15 @@
     "weight": 20
   },
   {
+    "content": "iceandfire:lightning_dragon_heart",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 800,
+    "weight": 20
+  },
+  {
     "content": "iceandfire:fire_dragon_blood",
     "amount": {
       "min": 1,
@@ -3187,6 +3716,15 @@
   },
   {
     "content": "iceandfire:ice_dragon_blood",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 1200,
+    "weight": 20
+  },
+  {
+    "content": "iceandfire:lightning_dragon_blood",
     "amount": {
       "min": 1,
       "max": 1
@@ -3284,5 +3822,14 @@
     "unitWorth": 300,
     "weight": 40,
     "nbt_data": "{Potion: \"minecraft:healing\"}"
+  },
+  {
+    "content": "quark:pirate_hat",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 3000,
+    "weight": 15
   }
 ]

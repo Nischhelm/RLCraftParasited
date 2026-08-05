@@ -13,7 +13,8 @@
       ],
       "dimensionListType": "whitelist",
       "biomeIds": [
-        "minecraft:deep_ocean"
+        "minecraft:deep_ocean",
+        "openterraingenerator:overworld_polluted_ocean"
       ],
       "biomeIdListType": "whitelist"
     }

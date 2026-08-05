@@ -32,6 +32,7 @@ betternether-0.1.8.6
 BetterQuesting-3.5.329
 BetterTabs-1.0.4
 BHMenu-Forge-1.12.2-2.4.6
+BiomesOPlenty-1.12.2-7.0.1.2445-universal
 BlockOverlayFix-1.12.2-1.0.0
 Bloodmoon-MC1.12.2-1.5.3
 BNBGamingLib-1.12.2-2.17.6
@@ -46,6 +47,7 @@ Broken Heart  Undershirt Stat-1.0.8
 callablehorses-1.12.2-1.1.1
 carrotslib-mc1.12.2-1.0.0b1
 carryon-1.12.2-1.12.7.23
+CD4017BE_lib-1.12.2-6.5.1
 champions-1.12.2-1.0.11.10
 Charm-1.12.2-1.4.1
 Cherry_on-1.12.2-1.3.35
@@ -54,6 +56,7 @@ classyhats-1.6.0
 CollisionDamage-1.2.2
 comforts-1.12.2-1.4.1.3
 CompatSkills-1.12.2-1.17.0
+ContentCreator-1.3.7-fix2
 ContentTweaker-1.12.2-4.10.0
 controllable-0.11.2-1.12.2
 Controlling-3.0.12.4
@@ -61,18 +64,23 @@ CoralReef-2.5-1.12.2
 corpsecomplex-1.12.2-1.0.12.0
 craftablechainmail-1.0
 CraftTweaker2-1.12-4.1.20.715
+crafttweakerutils-0.7
 CreativeCore_v1.10.71_mc1.12.2
 creeperconfetti-1.4.2
-CustomMainMenu-MC1.12.2-2.0.9.1
+ctintegration-1.8.0
 defiledlands-1.12.2-1.4.3
+DelightfulCuisineForWoodheads_1.12.2-1.1.0
 disenchanter[1.12]1.8
 distinctdamagedescriptions-1.9.10
 distinctsocketdescriptions-indev
 dldungeonsjbg-1.14.14-MC1.12.2
 DramaticTrees-1.12.2-0.13.6
+DregoraRL-3.9
 DynamicSurroundings-1.12.2-3.6.2.1
 DynamicSurroundingsHuds-1.12.2-3.6.0.0
+DynamicTreesBOP-1.12.2-1.5.2
 dynamictreesdefiledlands-1.12.2-1.0.0
+DynamicTreesQuark-1.12.2-1.0.6
 DynamicTreesTraverse-1.12.2-2.1
 EagleMixins-1.2.4-indev
 easiervillagertrading-1.12-forge14.21.1.2387-1.3
@@ -83,13 +91,16 @@ EnchantmentControl-1.1.2
 EnchantmentDescriptions-1.12.2-1.1.20
 EnhancedVisuals_v1.4.4_mc1.12.2
 EntityCulling-1.12.2-6.5.0
+EpicSiegeMod-13.167
 Everything Nunchaku-1.0.2.1
 FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
+fancymenu_forge_2.14.9_MC_1.12-1.12.2
 FantasticLib-1.12.2.070
 fermiumasm-5.31
 FermiumMixins-1.0.13-indev
 firstaid-1.6.22
+Fish's Undead Rising-1.4.2
 FishingMadeBetter-1.12.2-2.2.7
 foamfix-0.10.15-1.12.2
 FoodExpansion1.3.3-1.12.2
@@ -116,10 +127,11 @@ InventoryTweaks-1.64+dev.151
 ItemPhysic_Full_1.4.37_mc1.12.2
 itlt-1.12.x-1.0.4
 IvToolkit-1.3.3-1.12
-jei_1.12.2-4.16.1.1016
 JEI Want That-1.0.3.4
+jei_1.12.2-4.16.5.1016
 JSON-Paintings-v1.4.0-mc1.12.2
 Kiwi-1.12.2-0.5.3.32
+konkrete_forge_1.6.1_MC_1.12-1.12.2
 lagbgonrevived-1.1.0
 LegendaryTooltips-1.12.2-1.1.11
 Level Up! 2-1.1.23-1.12
@@ -133,31 +145,36 @@ LootTweaker-0.3.1+MC1.12.2
 lostcities-1.12-2.0.22
 lycanitesmobs-1.12.2-2.0.8.10
 LycanitesTweaks-1.0.16.3
-MainMenuScale-1.3.2
 Mantle-1.12-1.3.3.55
 MaterialTweaker-1.1.1
 mcw-bridges-1.0.6b-mc1.12.2
 MindPalaces-1.2.1.2
 MmmMmmMmmMmm-1.12-2.0.7
+Mob Arson-1.0.0
 MoBends_1.12.2-1.2.2-29.09.25-all
 modtweaker-4.0.20.11
 MouseTweaks-2.10.1-mc1.12.2
 MTLib-3.0.7
 MultiMine-1.12.2
+NBTManipulator-1.12.2.006
 Neat 1.4-17
 Nether-API-v1.4.5-mc1.12.2
 NoiseThreader-1.1.3
 notreepunching-2.0.21
+nuclearcraft-1.12.2-2.19a
 oauth-1.06.4
 OceanicExpanse-1.2.2
+OpenTerrainGenerator-1.12.2-v9.7-indev
 OptifineCITPatch-1.0.5
 OreLib-1.12.2-3.6.0.1
 OverLast-Lite-1.12.2-0.05(for SRPV1920)
+paintingselgui-PSG+Revamed-1.12.2-1.1.0.1
 particleculling-1.12.2-v1.4.3
 Phantoms-1.12.2-1.0.0a
 phosphor-1.12.2-0.2.6+build50-universal
 PhosphorCrashFix-1.12.2-1.0.0
 pigstep-1.12
+Pinata Mobs-1.0.5
 Placebo-1.12.2-1.6.1
 playerbosses-1.12.2-1.1.0
 PortalDupeBegone-1.0.0
@@ -186,14 +203,13 @@ RLSocketed-indev
 RLTweaker-1.12.2-0.7.5-indev
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.6
 roughTweaks0.2.4-1.12.2
-RTG-1.12.2-6.1.0.0-snapshot.1
-Ruins-1.12.2
 rustic-1.1.7
 Save My Ankh Shield-1.0.0.1
 savemystronghold-1.12.2-1.0.0
 ScalingHealth-1.12.2-1.3.42+147
 SereneSeasons-1.12.2-1.2.18-universal
 SetBonus-1.12.2.040
+shadeless-mobs
 ShieldBreak-1.2.3
 SilentLib-1.12.2-3.0.14+168
 SimpleDifficulty-1.12.2-0.3.9
@@ -226,8 +242,11 @@ Trinkets and Baubles-Forge-1.12.2-0.33.3-indev
 trumpetskeleton-1.12-1.0.2.1
 tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7
+Underneath-2.0
 VariedCommodities_1.12.2-(31Mar23)
 VCFix-1.0.3.2
+VerticallyStackedDimensions-1.12.2-0.1.9
+ViralTracker-1.0.1
 voicechat-forge-1.12.2-2.6.21
 Waystones_1.12.2-4.1.0
 WearableBackpacks-RLCraft-1.12.2-3.2.7

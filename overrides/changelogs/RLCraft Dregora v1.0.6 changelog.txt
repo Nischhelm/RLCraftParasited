@@ -1,0 +1,40 @@
+RLCraft Dregora v1.0.6b PATCH (Thou shall not bug! - edition):
+
+- Fixed remaining instances of faulty stat calculations for armor & weapons through EagleMixins (Thanks Nischelm!)
+- Added weapon the Eternal Dooter and changed weapon Keraunos to be a Javelin instead of a spear
+- Buffed Famine set by removing Corrosion, Vulnerability and Fragile from the Famine Set
+- Buffed Scarecrow heads: Plague Mask has immunization, Pumpkin head has Strength & Rage, and Straw head has Reach I
+- Buffed Weta set with stupidly fast speed + 40% and jump boost + 5 through attributes Kinetic Roach!!!
+- Added missing ] character in loot tables fixing the loottables not spawning and throwing an error
+- Corrected typo Pandroa to Pandora in some custom items (Yes you can see what may have Pandora now)
+- Fixed Epic loottable spawning x10 items instead of x1 items and gave it a luck requirement of at least 1
+- Adjusted Underneath spawner activation range from 25 to 15, spawn range from 15 to 10,max spawn delay from 1.5 to 3 seconds and min spawn delay from 0.5 seconds to 1 second
+- Added copper, weta and swine sets + bone/copper axe/sword and shards of reminiscence along with a few crafting materials
+  to cyclops den chests & increased the chest spawnrate to 5x as much
+- fixed eaglemixins nullpointers: (Thanks Fonny!)
+    at com.tmtravlr.potioncore.potion.PotionExplosion.affectEntity(PotionExplosion.java:42)
+    at eaglemixins.handlers.BerianHandler.onPlayerInteractEntity(BerianHandler.java:50)
+- Converted all of dregora.zs to EagleMixins (Thanks Nischelm!)
+- Eaglemixins remove gradle.properties org.gradle.caching=true (Thanks Fonny!)
+- Fixed unintentional spawning of srparasites in some wasteland biomes by altering the "InheritMobsBiomeName" setting to something else than Wasteland or Steppe
+- Removed SRP dragon from natural spawning in city biomes
+- Blacklisted ghostray from dimension 0 (should only spawn in end now)
+- Added mod Bouncable giving meaning to the jump attribute.
+- Added mod NoiseThreader increasing generation performance for OTG generated worlds.
+- Changed Herbalist trade where you need to give 10 terrestrial artifacts to 1 artifact
+- Added weapon Megumin's Staff to epic loottable
+- Replaced shattered ice recipes & block drops with ice chunks
+- Added high tier & some impossible enchantments to Brutal tower shocked weapon reward in treasure room
+- Changed ravens from 8 weight to 3 weight (Making Crabs spawn more often)
+- Kinetic Roach is too Kinetic do 50/30% current speed
+- Adjust Sussyberian/Mentalberian custom spawns to have special nbt tag
+- Localization mod added enabling translations of items, biome names and more to multiple languages thanks to KameiB
+  (If you like to help translating feel free to create a PR here: https://github.com/KameiB/Localizator/pulls)
+- Added Elder Blacksmiths to Gemtrader outposts (These trade rare goodies for ancient coins)
+- Added rare natural SRP spawns to Abyssal Rift & overworld Parasite Biomes.
+- Buffed srp entities within Abyssal Rift that do not have health/dmg specifically defined to pre 1.0.4 values meaning they will be as strong as in LC again.
+- Fixed Biome Spread for SRP (SRPMixins) and severely limited spread rate causing significant performance gains in Abyssal Rift (Brutal Towers) (Thanks Nischi!)
+- Randomized loading screens (thanks Nischi!)
+- Disarmament/Disarm functionality still disarms but does not longer drop SRP/Dragon weapons if the entity spawned with such weaponry.
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES (for servers and manual installs.  Curseforge launcher will update fine, but backup your options.txt if you don't want to lose custom keybinds)!

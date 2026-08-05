@@ -11,7 +11,7 @@
   "spawning": {
     "enabled": true,
     "spawners": [
-      "watermonster"
+      "water"
     ],
     "disableSubspecies": false,
     "dimensionIds": [

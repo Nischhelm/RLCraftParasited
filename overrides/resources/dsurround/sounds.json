@@ -10,5 +10,181 @@
 		"sounds": [
 			"dsurround:ambient/cave/silence"
 		]
+  },
+  "factory.ambient.one": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/factory/factory_ambient_01"
+    ]
+  },
+  "factory.ambient.two": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/factory/factory_ambient_02"
+    ]
+  },
+  "factory.ambient.three": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/factory/factory_ambient_03"
+    ]
+  },
+  "factory.stinger": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/factory/factory_stinger_01",
+      "dsurround:ambient/factory/factory_stinger_02",
+      "dsurround:ambient/factory/factory_stinger_03",
+      "dsurround:ambient/factory/factory_stinger_04",
+      "dsurround:ambient/factory/factory_stinger_05",
+      "dsurround:ambient/factory/factory_stinger_06"
+    ]
+  },
+  "cave.ambient": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2",
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2",
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2",
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2",
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2",
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2",
+      "dsurround:ambient/cave/smallslide1",
+      "dsurround:ambient/cave/smallslide2",
+      "dsurround:ambient/cave/smallslide3",
+      "dsurround:ambient/cave/bigslide1",
+      "dsurround:ambient/cave/bigslide2"
+    ]
+  },
+  "city.background.one": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/city/city_background_loop_01"
+    ]
+  },
+  "city.background.two": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/city/city_background_loop_02"
+    ]
+  },
+  "city.background.three": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/city/city_background_loop_03"
+    ]
+  },
+  "city.ambience.one": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/city/lair_ambience_01"
+    ]
+  },
+  "city.ambience.two": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/city/lair_ambience_02",
+      "dsurround:ambient/city/lair_ambience_03",
+      "dsurround:ambient/city/lair_ambience_04"
+    ]
+  },
+  "city.stinger": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/city/city_stinger_01",
+      "dsurround:ambient/city/city_stinger_02",
+      "dsurround:ambient/city/city_stinger_03"
+    ]
+  },
+  "nuclear.background": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/nuclear/nuclear_background_loop"
+    ]
+  },
+  "nuclear.stinger": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/nuclear/nuclear_stinger_01"
+    ]
+  },
+  "nuclear.ambience": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/nuclear/nuclear_ambience"
+    ]
+  },
+  "sewer.background.one": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/sewer/sewer_background_loop_01"
+    ]
+  },
+  "sewer.background.two": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/sewer/sewer_background_loop_02"
+    ]
+  },
+  "sewer.stinger": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/sewer/sewer_stinger_01",
+      "dsurround:ambient/sewer/sewer_stinger_02",
+      "dsurround:ambient/sewer/sewer_stinger_03"
+    ]
+  },
+  "underneath.background.one": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/underneath/underneath_background_loop_01"
+    ]
+  },
+  "underneath.background.two": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/underneath/underneath_background_loop_02"
+    ]
+  },
+  "underneath.stinger": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/underneath/underneath_stinger_01",
+      "dsurround:ambient/underneath/underneath_stinger_02",
+      "dsurround:ambient/underneath/underneath_stinger_03",
+      "dsurround:ambient/underneath/underneath_stinger_04"
+    ]
+  },
+  "underneath.ambient": {
+    "category": "ambient",
+    "sounds": [
+      "dsurround:ambient/underneath/underneath_ambience_01",
+      "dsurround:ambient/underneath/underneath_ambience_02",
+      "dsurround:ambient/underneath/underneath_ambience_03"
+    ]
   }
 }

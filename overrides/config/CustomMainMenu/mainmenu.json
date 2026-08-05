@@ -1,269 +1,274 @@
 {
-    "images":
+  "images":
+  {
+    "title":
     {
-        "title":
-        {
-            "image" : "mainmenu:rlcraft_Logo_1_edit.png",
-            "posX" : -200,
-            "posY" : -35,
-            "width" : 400,
-            "height" : 200,
-            "imageWidth" : 2000,
-            "imageHeight" : 1000,
-            "alignment" : "top_center"
-        }
-    },
-    
-    "buttons":
-    {
-        "singleplayer":
-        {
-            "text" : "menu.singleplayer",
-			"normalTextColor" : 9561599,
-			"hoverTextColor" : -1 ,
-            "posX" : -100,
-            "posY" : 36,
-            "width" : 200,
-            "height" : 20,
-            "imageWidth" : 1000,
-            "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "singleplayer"
-            }
-        },
-        
-        "multiplayer":
-        {
-            "text" : "menu.multiplayer",
-			"normalTextColor" : 9561599,
-			"hoverTextColor" : -1,
-            "posX" : -100,
-            "posY" : 60,
-            "width" : 200,
-            "height" : 20,
-            "imageWidth" : 1000,
-            "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "multiplayer"
-            }
-        },
-        
-        "mods":
-        {
-            "text" : "fml.menu.mods",
-			"normalTextColor" : 9561599,
-			"hoverTextColor" : -1,
-            "posX" : -100,
-            "posY" : 84,
-            "width" : 200,
-            "height" : 20,
-            "imageWidth" : 1000,
-            "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "mods"
-            }
-        },
-		
-        "hosting":
-        {
-            "text" : "Host your own server!",
-			"normalTextColor" : 9561599,
-			"hoverTextColor" : -1,
-            "posX" : -100,
-            "posY" : 108,
-            "width" : 200,
-            "height" : 20,
-            "imageWidth" : 1000,
-            "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
-			"hoverText" : "By BisectHosting, use code Shivaxi",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://bisecthosting.com/shivaxi"
-            }
-        },
-            
-        "options":
-        {
-            "text" : "menu.options",
-			"normalTextColor" : 9561599,
-			"hoverTextColor" : -1,
-            "posX" : -100,
-            "posY" : 132,
-            "width" : 98,
-            "height" : 20,
-            "imageWidth" : 500,
-            "imageHeight" : 125,
-			"texture" : "mainmenu:button.png",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "options"
-            }
-        },
-        
-        "quit":
-        {
-            "text" : "menu.quit",
-			"normalTextColor" : 9561599,
-			"hoverTextColor" : -1,
-            "posX" : 2,
-            "posY" : 132,
-            "width" : 98,
-            "imageWidth" : 500,
-            "imageHeight" : 125,
-            "height" : 20,
-			"texture" : "mainmenu:button.png",
-			"hoverText" : "Embrace Cowardice?",
-            "action" : 
-            {
-                "type" : "quit"
-            }
-        }
-    },
-    
-    "labels":
-    {
-        "mojang":
-        {
-            "text" : "Copyright Mojang AB. Do not distribute!",
-            "hoverText" : "§nCopyright Mojang AB. Do not distribute!",
-            "posX" : 5,
-            "posY" : 5,
-            "color" : 9561599,
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "credits"
-            }
-        },
-		
-        "wiki":
-        {
-            "text" : "RLCraft Wiki",
-            "hoverText" : "§nRLCraft Wiki",
-            "posX" : 5,
-            "posY" : 16,
-            "color" : 9561599,
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://rlcraft.fandom.com/wiki/RLCraft_Wiki"
-            }
-        },
-		
-        "reddit":
-        {
-            "text" : "RLCraft Reddit",
-            "hoverText" : "§nRLCraft Reddit",
-            "posX" : 5,
-            "posY" : 27,
-            "color" : 9561599,
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://www.reddit.com/r/RLCraft"
-            }
-        },
-		
-		"discord":
-        {
-            "text" : "Shivaxi's Discord",
-            "hoverText" : "§nShivaxi's Discord",
-            "posX" : 5,
-            "posY" : 49,
-            "color" : 9561599,
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://discord.gg/QURkzuQ"
-            }
-        },
-		
-		"discord 2":
-        {
-            "text" : "RLCraft Speedrun",
-            "hoverText" : "§nRLCraft Speedrun",
-            "posX" : 5,
-            "posY" : 38,
-            "color" : 9561599,
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://speedrun.com/RLCraft"
-            }
-        },
-        
-        "mods_loaded":{
-           "text":"#modsloaded# Mods Loaded",
-           "posX":55,
-           "posY":-28,
-		   "color" : 9561599,
-           "width":90,
-           "height":0,
-           "alignment":"bottom_left"
-        },
-		"rl_craft":{
-			"text":"RLCraft Parasited (July 25 2026)",
-			"posX":55,
-			"posY":-38,
-			"color" : 9561599,
-			"width":90,
-			"height":0,
-			"alignment":"bottom_left"
-		},
-        "clock":{
-           "text":"#time# #date#",
-           "posX":-110,
-           "posY":-33,
-		   "color" : 9561599,
-           "width":90,
-           "height":0,
-           "alignment":"bottom_right"
-        }
-    },
-    
-    "other": {
-		"background": {
-			"image": "",
-			"slideshow": {
-				"images": [
-					"mainmenu:images/iqury/1.png",
-					"mainmenu:images/iqury/2.png",
-					"mainmenu:images/iqury/3.png",
-					"mainmenu:images/iqury/4.png",
-					"mainmenu:images/iqury/5.png",
-					"mainmenu:images/iqury/6.png",
-					"mainmenu:images/iqury/7.png",
-					"mainmenu:images/iqury/8.png",
-					"mainmenu:images/iqury/9.png",
-					"mainmenu:images/iqury/10.png",
-					"mainmenu:images/iqury/11.png",
-					"mainmenu:images/iqury/12.png",
-					"mainmenu:images/iqury/13.png",
-					"mainmenu:images/iqury/14.png",
-                    "mainmenu:images/iqury/15.png",
-                    "mainmenu:images/others/1.jpg"
-				],
-				"displayDuration": 50,
-				"fadeDuration": 100,
-				"mode":"fill"
-			}
-		}
+      "image" : "mainmenu:rlcraft_dregora_logo_full_01.png",
+      "posX" : -200,
+      "posY" : -5,
+      "width" : 360,
+      "height" : 140,
+      "imageWidth" : 2000,
+      "imageHeight" : 1000,
+      "alignment" : "top_center"
     }
+  },
+
+  "buttons":
+  {
+    "singleplayer":
+    {
+      "text" : "menu.singleplayer",
+      "normalTextColor" : 14737632,
+      "hoverTextColor" : 14737632,
+      "posX" : -100,
+      "posY" : 36,
+      "width" : 200,
+      "height" : 20,
+      "imageWidth" : 1000,
+      "imageHeight" : 125,
+      "texture" : "mainmenu:buttons/buttonlong_overgrown_01.png",
+      "action" :
+      {
+        "type" : "openGui",
+        "gui" : "singleplayer"
+      }
+    },
+
+    "multiplayer":
+    {
+      "text" : "menu.multiplayer",
+      "normalTextColor" : 14737632,
+      "hoverTextColor" : 14737632,
+      "posX" : -100,
+      "posY" : 60,
+      "width" : 200,
+      "height" : 20,
+      "imageWidth" : 1000,
+      "imageHeight" : 125,
+      "texture" : "mainmenu:buttons/buttonlong_overgrown_02.png",
+      "action" :
+      {
+        "type" : "openGui",
+        "gui" : "multiplayer"
+      }
+    },
+
+    "mods":
+    {
+      "text" : "fml.menu.mods",
+      "normalTextColor" : 14737632,
+      "hoverTextColor" : 14737632,
+      "posX" : -100,
+      "posY" : 84,
+      "width" : 200,
+      "height" : 20,
+      "imageWidth" : 1000,
+      "imageHeight" : 125,
+      "texture" : "mainmenu:buttons/buttonlong_overgrown_03.png",
+      "action" :
+      {
+        "type" : "openGui",
+        "gui" : "mods"
+      }
+    },
+
+    "hosting":
+    {
+      "text" : "menu.hostyourserver",
+      "normalTextColor" : 14737632,
+      "hoverTextColor" : 14737632,
+      "posX" : -100,
+      "posY" : 108,
+      "width" : 200,
+      "height" : 20,
+      "imageWidth" : 1000,
+      "imageHeight" : 125,
+      "texture" : "mainmenu:buttons/buttonlong_overgrown_04.png",
+      "hoverText" : "menu.hostyourserver.hover",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://bisecthosting.com/shivaxi"
+      }
+    },
+
+    "options":
+    {
+      "text" : "menu.options",
+      "normalTextColor" : 14737632,
+      "hoverTextColor" : 14737632,
+      "posX" : -100,
+      "posY" : 132,
+      "width" : 98,
+      "height" : 20,
+      "imageWidth" : 500,
+      "imageHeight" : 125,
+      "texture" : "mainmenu:buttons/button_overgrown_01.png",
+      "action" :
+      {
+        "type" : "openGui",
+        "gui" : "options"
+      }
+    },
+
+    "quit":
+    {
+      "text" : "menu.quit",
+      "normalTextColor" : 14737632,
+      "hoverTextColor" : 14737632,
+      "posX" : 2,
+      "posY" : 132,
+      "width" : 98,
+      "imageWidth" : 500,
+      "imageHeight" : 125,
+      "height" : 20,
+      "texture" : "mainmenu:buttons/button_overgrown_02.png",
+      "hoverText" : "menu.quit.hover",
+      "action" :
+      {
+        "type" : "quit"
+      }
+    }
+  },
+  "labels":
+  {
+    "mojang":
+    {
+      "text" : "Copyright Mojang AB. Do not distribute!",
+      "hoverText" : "Copyright Mojang AB. Do not distribute!",
+      "posX" : 5,
+      "posY" : 5,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "alignment" : "top_left",
+      "action" :
+      {
+        "type" : "openGui",
+        "gui" : "credits"
+      }
+    },
+
+    "wiki":
+    {
+      "text" : "RLCraft Dregora Wiki",
+      "hoverText" : "RLCraft Dregora Wiki",
+      "posX" : 5,
+      "posY" : 16,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "alignment" : "top_left",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://rldregora.wiki.gg/"
+      }
+    },
+
+    "reddit":
+    {
+      "text" : "RLCraft Reddit",
+      "hoverText" : "RLCraft Reddit",
+      "posX" : 5,
+      "posY" : 27,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "alignment" : "top_left",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://www.reddit.com/r/RLCraft"
+      }
+    },
+
+    "issues":
+    {
+      "text" : "Report issues here!",
+      "hoverText" : "Report issues here!",
+      "posX" : 5,
+      "posY" : 38,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "alignment" : "top_left",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://github.com/fonnymunkey/RLCraft-Dregora-Edition/issues"
+      }
+    },
+
+    "discord 1":
+    {
+      "text" : "Dregora's Discord",
+      "hoverText" : "Dregora's Discord",
+      "posX" : 5,
+      "posY" : 49,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "alignment" : "top_left",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://discord.gg/kyzax24d59"
+      }
+    },
+
+    "discord 2":
+    {
+      "text" : "Shivaxi's Discord",
+      "hoverText" : "Shivaxi's Discord",
+      "posX" : 5,
+      "posY" : 60,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "alignment" : "top_left",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://discord.gg/QURkzuQ"
+      }
+    },
+
+
+
+    "mods_loaded":{
+      "text":"#modsloaded# Mods Loaded",
+      "posX":5,
+      "posY":-28,
+      "color" : 14737632,
+      "width":90,
+      "height":0,
+      "alignment":"bottom_left"
+    },
+    "rl_craft":{
+      "text":"RLCraft Dregora v1.1.0",
+      "posX":5,
+      "posY":-38,
+      "color" : 14737632,
+      "hoverColor" : 11184810,
+      "width":90,
+      "height":0,
+      "alignment":"bottom_left",
+      "action" :
+      {
+        "type" : "openLink",
+        "link" : "https://www.curseforge.com/minecraft/modpacks/rlcraft-dregora"
+      }
+    },
+    "clock":{
+      "text":"#time# #date#",
+      "posX":-110,
+      "posY":-28,
+      "color" : 14737632,
+      "width":90,
+      "height":0,
+      "alignment":"bottom_right"
+    }
+  },
+
+  "other": {
+    "background": {
+      "image": ["mainmenu:background/background_mines.apng", "mainmenu:background/background_troll.apng", "mainmenu:background/background_troll.apng"]
+    }
+  }
 }

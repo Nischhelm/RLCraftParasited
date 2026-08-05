@@ -11,7 +11,11 @@
       "dimensionIds": [
         -1
       ],
-      "dimensionListType": "whitelist"
+      "dimensionListType": "whitelist",
+      "biomeIds": [
+        "nuclearcraft:nuclear_wasteland"
+      ],
+      "biomeIdListType": "blacklist"
     }
   ],
   "placer": {

@@ -1,6 +1,12 @@
 {
   "version": 1,
   "data": {
+    "ABYSSAL_GRASS": [
+      "antiqueatlas:textures/gui/tiles/abyssalgrass.png",
+      "antiqueatlas:textures/gui/tiles/abyssalgrass2.png",
+      "antiqueatlas:textures/gui/tiles/abyssalgrass3.png",
+      "antiqueatlas:textures/gui/tiles/abyssalgrass4.png"
+    ],
     "GOLRITH_BOP_CHERRY": [
       "antiqueatlas:textures/gui/tiles/golrith/bop_cherry.png"
     ],
@@ -60,6 +66,9 @@
       "antiqueatlas:textures/gui/tiles/parasite_forest.png",
       "antiqueatlas:textures/gui/tiles/parasite_flowers.png",
       "antiqueatlas:textures/gui/tiles/parasite_flowers.png"
+    ],
+    "SRP_DEADBLOOD": [
+      "antiqueatlas:textures/gui/tiles/deadblood.png"
     ],
     "TEST": [
       "antiqueatlas:textures/gui/tiles/test.png",

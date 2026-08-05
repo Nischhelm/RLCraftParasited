@@ -11,7 +11,12 @@
   "ignoreGroupLimit": true,
   "ignoreForgeCanSpawnEvent": true,
   "blockBreakRadius": 1,
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "world",
+      "biomes": ["all", "-abyssal"]
+    }
+  ],
   "triggers": [
     {
       "type": "ore",

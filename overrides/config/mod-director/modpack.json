@@ -1,10 +1,10 @@
 {
-	"packName": "RLCraft",
+	"packName": "RLCraft Dregora",
 	"icon": 
 	{
-		"path": "config/itlt/icon.png",
+		"path": "config/itlt/RLCraft_Dregora_Logo_FINAL.png",
 		"width": 256,
 		"height": 256
 	},
-	"localVersion": "2.10"
+	"localVersion": "1.0.0"
 }

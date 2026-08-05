@@ -289,9 +289,9 @@ recipes.remove(<simpledifficulty:chiller>);
 recipes.remove(<simpledifficulty:spit>);
 recipes.remove(<simpledifficulty:campfire>);
 
-recipes.remove(<lycanitesmobs:soulcubedemonic>);
-recipes.remove(<lycanitesmobs:soulcubeaberrant>);
-recipes.remove(<lycanitesmobs:soulcubeundead>);
+//recipes.remove(<lycanitesmobs:soulcubedemonic>); REPLACED BY Dregora.zs
+//recipes.remove(<lycanitesmobs:soulcubeaberrant>); REPLACED BY Dregora.zs
+//recipes.remove(<lycanitesmobs:soulcubeundead>); REPLACED BY Dregora.zs
 recipes.remove(<lycanitesmobs:equipment_station>);
 recipes.remove(<lycanitesmobs:woodenpaxel>);
 recipes.remove(<lycanitesmobs:ironpaxel>);
@@ -388,7 +388,7 @@ recipes.remove(<charm:suspicious_soup:*>);
 
 //recipes.remove(<srparasites:evolutionlure:*>);
 recipes.remove(<srparasites:parasitecanister:*>);
-//recipes.remove(<srparasites:biomepurifier>);
+recipes.remove(<srparasites:biomepurifier>);
 //recipes.remove(<srparasites:evclock>);
 
 recipes.remove(<spartandefiled:staff_umbrium>);
@@ -841,20 +841,23 @@ recipes.addShaped("rec71b",<simpledifficulty:campfire>,
   [<ore:logWood>,<ore:logWood>,<ore:logWood>],
   [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]]);
 
-recipes.addShaped("rec72",<lycanitesmobs:soulcubedemonic>,
- [[<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>],
-  [<quark:biotite>,<lycanitesmobs:soulstone_demon>,<quark:biotite>],
-  [<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>]]);
+// Overridden for Dregora Recipes
+//recipes.addShaped("rec72",<lycanitesmobs:soulcubedemonic>,
+// [[<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>],
+//  [<quark:biotite>,<lycanitesmobs:soulstone_demon>,<quark:biotite>],
+//  [<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>]]);
 
-recipes.addShaped("rec73",<lycanitesmobs:soulcubeaberrant>,
- [[<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>],
-  [<variedcommodities:heart>,<lycanitesmobs:soulstone_aberration>,<variedcommodities:heart>],
-  [<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>]]);
+// Overridden for Dregora Recipes
+//recipes.addShaped("rec73",<lycanitesmobs:soulcubeaberrant>,
+// [[<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>],
+//  [<variedcommodities:heart>,<lycanitesmobs:soulstone_aberration>,<variedcommodities:heart>],
+//  [<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>]]);
 
-recipes.addShaped("rec74",<lycanitesmobs:soulcubeundead>,
- [[<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>],
-  [<variedcommodities:skull>,<lycanitesmobs:soulstone_undead>,<variedcommodities:skull>],
-  [<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>]]);
+// Overridden for Dregora Recipes
+//recipes.addShaped("rec74",<lycanitesmobs:soulcubeundead>,
+// [[<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>],
+//  [<variedcommodities:skull>,<lycanitesmobs:soulstone_undead>,<variedcommodities:skull>],
+//  [<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>]]);
 
 recipes.addShaped("rec75",<spartanweaponry:arrow_wood>*4,
  [[<ore:plankWood>],
@@ -1402,7 +1405,7 @@ recipes.addShaped("rec137",<bountifulbaubles:amuletsingluttony>,
 
 recipes.addShaped("rec138",<variedcommodities:holyhandgrenade>,
  [[<minecraft:gold_ingot>,<bountifulbaubles:ringiron>,<minecraft:gold_ingot>],
-  [<minecraft:quartz_block>,<bountifulbaubles:amuletcross>,<minecraft:quartz_block>],
+  [<minecraft:quartz_block>,<mod_lavacow:holy_grenade>,<minecraft:quartz_block>],
   [<minecraft:gold_ingot>,<minecraft:quartz_block>,<minecraft:gold_ingot>]]);
 
 recipes.addShaped("rec139",<defiledlands:stone_defiled_stairs>*4,
@@ -2028,19 +2031,19 @@ recipes.addShaped("srpmaul",<srparasites:weapon_maul>,
   [null,<srparasites:hardened_bone_handle>,<srparasites:infectious_blade_fragment>],
   [null,<srparasites:hardened_bone_handle>,null]]);
   
-recipes.addShapeless("srplancesentient",<srparasites:weapon_lance_sentient>,[<srparasites:weapon_lance>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("srpmaulsentient",<srparasites:weapon_maul_sentient>,[<srparasites:weapon_maul>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srplancesentient",<srparasites:weapon_lance_sentient>,[<srparasites:weapon_lance>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srpmaulsentient",<srparasites:weapon_maul_sentient>,[<srparasites:weapon_maul>,<contenttweaker:sentient_core>]);
 
 recipes.addShapeless("srsarmor1",<srparasites:armor_helm_sentient>,[<srparasites:armor_helm>,<contenttweaker:sentient_core>]);
 recipes.addShapeless("srsarmor2",<srparasites:armor_chest_sentient>,[<srparasites:armor_chest>,<contenttweaker:sentient_core>]);
 recipes.addShapeless("srsarmor3",<srparasites:armor_pants_sentient>,[<srparasites:armor_pants>,<contenttweaker:sentient_core>]);
 recipes.addShapeless("srsarmor4",<srparasites:armor_boots_sentient>,[<srparasites:armor_boots>,<contenttweaker:sentient_core>]);
 
-recipes.addShapeless("srsweapon1",<srparasites:weapon_scythe_sentient>,[<srparasites:weapon_scythe>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("srsweapon2",<srparasites:weapon_axe_sentient>,[<srparasites:weapon_axe>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("srsweapon3",<srparasites:weapon_sword_sentient>,[<srparasites:weapon_sword>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("srsweapon4",<srparasites:weapon_cleaver_sentient>,[<srparasites:weapon_cleaver>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("srsweapon5",<srparasites:weapon_bow_sentient>,[<srparasites:weapon_bow>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srsweapon1",<srparasites:weapon_scythe_sentient>,[<srparasites:weapon_scythe>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srsweapon2",<srparasites:weapon_axe_sentient>,[<srparasites:weapon_axe>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srsweapon3",<srparasites:weapon_sword_sentient>,[<srparasites:weapon_sword>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srsweapon4",<srparasites:weapon_cleaver_sentient>,[<srparasites:weapon_cleaver>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("srsweapon5",<srparasites:weapon_bow_sentient>,[<srparasites:weapon_bow>,<contenttweaker:sentient_core>]);
 
 recipes.addShaped("srsentientcore",<contenttweaker:sentient_core>,
  [[<contenttweaker:blood_tear>,<contenttweaker:blood_tear>,<contenttweaker:blood_tear>],

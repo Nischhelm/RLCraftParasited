@@ -6,7 +6,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntityWraith",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelWraith",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": true,
   "spawning": {
     "enabled": true,
@@ -94,5 +94,10 @@
     }
   ],
   "sizeScale": 1,
-  "hitboxScale": 1
+  "hitboxScale": 1,
+  "mountOffset": [
+    0,
+    0.9,
+    0
+  ]
 }

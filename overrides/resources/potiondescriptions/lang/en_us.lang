@@ -1,0 +1,63 @@
+tooltip.potiondescriptions.effect=§fEffect:§r %s%s
+tooltip.potiondescriptions.sourceMod=Added by: §9%s
+tooltip.potiondescriptions.missingDescription=§5Missing lang key for§r %s
+
+# Better Survival
+description.effect.stun=Locks you in place, cancelling all movement.
+description.effect.milk=Removes all potion and status effects that the player has.
+description.effect.cure=Removes all negative effects.
+description.effect.dispel=Removes all positive effects.
+description.effect.warp=Random teleport.
+description.effect.antiwarp=Prevents a player or entity with the effect from teleporting or using ender pearls except for Ender Warp.
+
+# Elenai Dodge
+description.effect.skystride=
+description.effect.forceful=Increases the distance the player will dodge.
+description.effect.climber=Grants you the ability to grab a ledge.
+description.effect.skystride=Grants you the ability to Dodge in mid-air
+description.effect.sluggish=Stops you from dodging all together.
+description.effect.nimble=Grants the ability to Wall-Jump if pressed against the wall with your back.
+description.effect.can_dodge=Grants the ability to dodge.
+description.effect.feeble=Decreases the distance the player will dodge.
+
+# Potion Core
+description.effect.potion_sickness=Applies various negative debuffs
+
+# RLMixins
+description.effects.rlmixins.curse_break=Removes the curses from your equipment.
+
+# Simple Difficulty
+description.effect.cold_resist=Grants immunity to Hypothermia.
+description.effect.heat_resist=Grants immunity to Hyperthermia
+
+# SRParasites
+description.mob_effect.srparasites:coth=Turns susceptible entities into Assimilated, Feral or Incomplete parasites.
+description.mob_effect.srparasites:fear=Inflicts major fall damage and cancels controls.
+description.mob_effect.srparasites:antimall=Disables parasites adaption system.
+description.mob_effect.srparasites:bleed=Inflicts damage over time and doubles this when moving.
+description.mob_effect.srparasites:corrosive=Your equipment will lose durability over time.
+description.mob_effect.srparasites:viral=Entities with this effect take more Damage.
+description.mob_effect.srparasites:rage=Increases speed, damage and lowers parasite cooldowns.
+description.mob_effect.srparasites:repel=Decreases the chance of subtracting Call of the Hive by 70%%.
+description.mob_effect.srparasites:senses=Buffs parasite follow range and target range.
+description.mob_effect.srparasites:debar=Halts the subtraction of evolution points and item drops.
+description.mob_effect.srparasites:needler=Deals damage equals to 40%% of HP after reaching stage 7.
+description.mob_effect.srparasites:link=Contributes to global adaptation without the Colony requirement.
+description.mob_effect.srparasites:foster=Increases this parasite's Adaptation values.
+description.mob_effect.srparasites:prey=Creates a new scent at the player location if they wear or wield Sentient equipment.
+description.mob_effect.srparasites:pivot=Diverts damage to Rooters, increases attack speed and doubles evolution gain. Disabled in RLCraft.
+
+# Trinkets & Baubles
+description.xat.effect.goblin=Transforms you into the Goblin race.
+description.xat.effect.elf=Transforms you into the Elven race.
+description.xat.effect.faelis=Transforms you into the Faelis race.
+description.xat.effect.dragon=Transforms you into the Dragon race.
+description.xat.effect.dwarf=Transforms you into the Dwarven race.
+description.xat.effect.fairy=Transforms you into the Fairy race.
+description.xat.effect.titan=Transforms you into the Titan race.
+description.xat.effect.human=Transforms you back to Human state.
+description.xat.effect.ice_resistance=Resistance against Dragon Ice Attacks.
+description.xat.effect.lightning_resistance=Resistance against Dragon Lightning Attacks.
+description.xat.effect.glowing=Crafting component.
+description.xat.effect.glittering=Crafting component. Grants Absorption.
+description.xat.effect.sparkling=Crafting component.
