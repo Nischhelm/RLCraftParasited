@@ -183,7 +183,6 @@
     {"projectID": 409087, "fileID": 6215595, "required": true, "fileName": "EntityCulling-1.12.2-6.5.0"},
     {"projectID": 410295, "fileID": 4514895, "required": true, "fileName": "konkrete_forge_1.6.1_MC_1.12-1.12.2"},
     {"projectID": 416089, "fileID": 8463988, "required": true, "fileName": "voicechat-forge-1.12.2-2.6.21"},
-    {"projectID": 419286, "fileID": 7049694, "required": true, "fileName": "!mixinbooter-10.7"},
     {"projectID": 423758, "fileID": 4448659, "required": true, "fileName": "BQTweaker-1.3.5"},
     {"projectID": 427597, "fileID": 3136255, "required": true, "fileName": "dynamictreesdefiledlands-1.12.2-1.0.0"},
     {"projectID": 435298, "fileID": 3311656, "required": true, "fileName": "ctintegration-1.8.0"},
