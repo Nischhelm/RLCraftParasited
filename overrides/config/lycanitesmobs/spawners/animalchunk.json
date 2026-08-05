@@ -3,7 +3,7 @@
   "sharedName": "animal",
   "type": "spawner",
   "enabled": false,
-  "loadDefault": true,
+  "loadDefault": false,
   "mobCountMin": 8,
   "ignoreBiomes": false,
   "ignoreLightLevel": true,
@@ -12,10 +12,9 @@
     {
       "type": "world",
       "dimensionIds": [
-        -1,
-        1
+        0
       ],
-      "dimensionListType": "blacklist"
+      "dimensionListType": "whitelist"
     }
   ],
   "triggers": [

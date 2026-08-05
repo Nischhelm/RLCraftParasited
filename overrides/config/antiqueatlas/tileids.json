@@ -1,9 +1,10 @@
 {
   "version": 1,
   "data": {
-    "BE_ICE_STARFIELD_VOID": -57,
-    "CAVE_WALLS": -56,
-    "bloodyRiver": -55,
+    "BE_ICE_STARFIELD_VOID": -59,
+    "CAVE_WALLS": -58,
+    "abyssalgrass": -56,
+    "bloodyRiver": -57,
     "bridge_coveredxTile": -45,
     "bridge_coveredzTile": -43,
     "bridge_openxTile": -46,
@@ -14,6 +15,7 @@
     "buildingfloor4Tile": -36,
     "buildingtallTile": -30,
     "buildingtallroofTile": -31,
+    "deadblood": -55,
     "endIsland": -26,
     "endIslandPlants": -27,
     "endVoid": -28,

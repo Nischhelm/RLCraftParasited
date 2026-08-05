@@ -1,4 +1,17 @@
 [
   "minecraft:mutated_forest",
-  "suikecherry:suike_cherry_grove"
+  "biomesoplenty:mystic_grove",
+  "twilightforest:enchanted_forest",
+  "openterraingenerator:overworld_ashen_rainforest",
+  "openterraingenerator:overworld_wicked_plains",
+  "openterraingenerator:overworld_carnivorous_forest",
+  "openterraingenerator:overworld_corrupted_scarlet_grove",
+  "openterraingenerator:overworld_corrupted_shadow_forest",
+  "openterraingenerator:overworld_flower_island",
+  "openterraingenerator:overworld_flower_field",
+  "openterraingenerator:overworld_flower_forest",
+  "openterraingenerator:overworld_flower_grove",
+  "openterraingenerator:overworld_lavender_fields",
+  "biomesoplenty:flower_island",
+  "biomesoplenty:flower_field"
 ]

@@ -23,7 +23,10 @@
     "dimensionListType": "blacklist",
     "ignoreBiome": false,
     "biomeTags": [
-      "mountain"
+      "mountain",
+      "-hot",
+      "-sandy",
+      "-wet"
     ],
     "spawnWeight": 16,
     "dungeonWeight": 0,

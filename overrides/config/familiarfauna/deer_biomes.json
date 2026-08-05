@@ -52,5 +52,17 @@
   "conquest:oldgrowth_forest",
   "conquest:lorein_forest",
   "conquest:mountains",
-  "conquest:mega_boreal_forest"
+  "conquest:mega_boreal_forest",
+  "openterraingenerator:overworld_ancient_autumn_forest",
+  "openterraingenerator:overworld_wicked_plains",
+  "openterraingenerator:overworld_dark_earth",
+  "openterraingenerator:overworld_ancient_tundra",
+  "openterraingenerator:overworld_frozen_mud_plains",
+  "openterraingenerator:overworld_frozen_plains",
+  "openterraingenerator:overworld_corrupted_viking_realm",
+  "openterraingenerator:overworld_viking_realm",
+  "openterraingenerator:overworld_land_of_pillars",
+  "openterraingenerator:overworld_cracked_mountain",
+  "openterraingenerator:overworld_yellowstone",
+  "openterraingenerator:overworld_ancient_redwood_forest"
 ]

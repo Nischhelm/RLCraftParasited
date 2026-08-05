@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/reinforced_concrete_danger",
+      "particle": "contenttweaker:blocks/reinforced_concrete_danger"
+    },
+    "model": "contenttweaker:reinforced_concrete_danger",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

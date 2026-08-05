@@ -2,7 +2,7 @@
   "name": "mushroom",
   "type": "spawner",
   "enabled": true,
-  "loadDefault": true,
+  "loadDefault": false,
   "mobCountMin": 1,
   "ignoreDimensions": true,
   "ignoreBiomes": true,
@@ -42,7 +42,17 @@
       "sorting": "random",
       "blocks": [
         "minecraft:brown_mushroom",
-        "minecraft:red_mushroom"
+        "minecraft:red_mushroom",
+        "biomesoplenty:mushroom",
+        "rustic:mooncap_mushroom",
+        "rustic:deathstalk_mushroom",
+        "quark:glowshroom",
+        "defiledlands:scuronotte",
+        "biomesoplenty:mushroom",
+        "mod_lavacow:glowshroom",
+        "mod_lavacow:bloodtooth_shroom",
+        "mod_lavacow:cordy_shroom",
+        "mod_lavacow:veil_shroom"
       ],
       "blockCost": 4,
       "listType": "whitelist"

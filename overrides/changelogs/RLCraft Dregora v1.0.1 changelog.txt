@@ -1,0 +1,48 @@
+RLCraft Dregora v1.0.1 HOTFIX (painful 5AM headache edition):
+
+- Fixed 69420 lmao health/damage mobs due to accidental exponential multiplication in a thingy that was doing a thing it wasn't supposed to do (very technical)
+- Lightning will no longer strike you at random for no reason (even though I found this quite entertaining) now only during thunderstorms, or while flying when raining (unless flying in Abyssal Rift)
+- Conductivity will now have warnings before lightning is about to strike you (run for cover!)
+- Removed animated loading screens temporarily due to performance issues and crashes on specific hardware (will re-introduce at a later time)
+- FermiumASM set removeForgeSecurityManager to true to fix lag on large world saves
+- Updated RLTweaker caching to fix lag on large world saves
+- Renamed Summon Orbs
+- Fixed Blood Gem being able to craft Ruby Block
+- Fixed missing hit/crit sounds in RLCombat
+- Disabled EpicSeige AI from effecting mobs they weren't supposed to
+- Temporarily removed Zombies from EpicSeige AI as this was causing performance issues, Zombies will no longer dig blocks (will re-introduce at a later time)
+- Added missing Fish textures!  FEESH
+- Remove CarbonConfig from Mods (was unused)
+- Lowered damage of Undead Banshee AOE attack slightly
+- Lowered dragon max flight to 120 (relative to ground level now in new I&F)
+- Fixed loot in Lightning Dragon roosts not generating correctly
+- Fixed Dragons never wanting to land
+- Fixed BetterSurvival config having incorrect enchantment values
+- Fixed Ruby and Blood Gem sharing the same name
+- Shocked Weapons chain lightning effect works properly again
+- Added additional sadism
+- Sussyberian and Mentalberian potion effects no longer desync
+- Sussyberian and Mentalberian spawning no longer desyncs
+- Fixed a few Null Pointer Exceptions, including the one where you smacked your friend =P
+- Fixed new player spawns, should no longer end up in the shadow realm upon first join
+- Fixed new player spawn radius, now properly 3000 to -3000
+- Spawn radius now based on GlobalGameRules
+- Fixed Disarm script and possessed weapons (does not apply to existing items)
+- Removed enchantments that were meant to be disabled from Fish's Undead Rising mod
+- Slightly improved/reworked loot in city structures (both in Overworld and [REDACTED]) this will be improved upon later
+- Fixed several broken smelting recipes
+- Ravine scars in the earth have been slightly toned down (though from a lore perspective these cracks in the world make sense!)
+- Summoning Skeleton King with offhand no longer deletes what is in your main hand (epic)
+- Fixed dupe with Fish's Undead Rising's grenades
+- Improved performance of Blood Moon spawning
+- Fixed Ampithere's trying to migrate to Terraria for some reason
+- Fixed any item with colors Gold and Silver being tagged as Conductive
+- Fixed saplings turning into stone
+- Fixed Foglet item name
+- Fixed Chad set bonus not working
+- Added increased delay to custom structure cache crash (helps with pregen)
+- Fixed Wiki link click box
+- Fixed Dragon's Eye trying to search for Air
+- Fixed a few Pig spawners (might be more)
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES!

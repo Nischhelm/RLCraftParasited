@@ -2,7 +2,7 @@
   "name": "glowstone",
   "type": "spawner",
   "enabled": true,
-  "loadDefault": true,
+  "loadDefault": false,
   "mobCountMin": 1,
   "ignoreDimensions": true,
   "ignoreBiomes": true,
@@ -11,7 +11,12 @@
   "ignoreGroupLimit": true,
   "ignoreForgeCanSpawnEvent": true,
   "blockBreakRadius": 1,
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "world",
+      "biomes": ["all", "-abyssal"]
+    }
+  ],
   "triggers": [
     {
       "type": "block",

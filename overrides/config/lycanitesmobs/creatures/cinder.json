@@ -10,7 +10,7 @@
   "enabled": true,
   "spawning": {
     "enabled": true,
-    "spawners": [],
+    "spawners": ["lavabiome"],
     "disableSubspecies": false,
     "dimensionIds": [],
     "dimensionListType": "blacklist",

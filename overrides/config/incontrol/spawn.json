@@ -1,5 +1,121 @@
 [
-	{
+  {
+    "dimension": 3,
+    "minheight": 235,
+    "spawner": false,
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["lycanitesmobs:joust","lycanitesmobs:joustalpha"],
+    "biome": ["biomesoplenty:volcanic_island"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["lycanitesmobs:djinn"],
+    "biome": ["Abyssal Rift"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["lycanitesmobs:ent","lycanitesmobs:calpod","lycanitesmobs:zephyr","lycanitesmobs:triffid","lycanitesmobs:vapula","lycanitesmobs:gorgomite","lycanitesmobs:spriggan","lycanitesmobs:geonach","lycanitesmobs:treant"],
+    "biome": ["Abyssal Rift", "Abyssal Gate"],
+    "result": "deny"
+  },
+  {
+    "biome": ["Nuclear Wasteland"],
+    "mob": ["nuclearcraft:feral_ghoul","minecraft:skeleton","mod_lavacow:zombiemushroom","mod_lavacow:weta","mod_lavacow:foglet","mod_lavacow:boneworm"],
+    "block": ["minecraft:concrete","contenttweaker:reinforced_concrete","contentcreator:concrete_stairs_reinforced","contentcreator:concrete_slab_reinforced"],
+    "seesky": "false",
+    "result": "default"
+  },
+  {
+    "biome": ["Nuclear Wasteland"],
+    "mob": ["nuclearcraft:feral_ghoul","minecraft:skeleton","mod_lavacow:zombiemushroom","mod_lavacow:weta","mod_lavacow:foglet","mod_lavacow:boneworm"],
+    "random": 0.1,
+    "result": "default"
+  },
+  {
+    "biome": ["Nuclear Wasteland"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": "mod_lavacow:ghostray",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "biometype": ["MOUNTAIN"],
+    "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "biometype": ["HOT", "SANDY", "WET"],
+    "result": "deny"
+  },
+  {
+    "dimension": 111,
+    "mod": "lycanitesmobs",
+    "result": "deny"
+  },
+  {
+    "dimension": 3,
+    "mod": "lycanitesmobs",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["iceandfire:if_troll", "iceandfire:firedragon", "iceandfire:icedragon" ],
+    "biome": ["Crystal Abyss", "Dregora_TrenchDeep", "Dregora_TrenchDeepBridge", "Dregora_TrenchDeepRiver", "Dregora_TrenchDeepRiverBridge", "Dregora_TrenchInnerBorderFromImage", "Dregora_TrenchInnerBorderRandom", "Dregora_TrenchIslands", "Dregora_TrenchOutterBorderFromImage", "Dregora_TrenchOutterBorderRandom", "Dregora_TrenchOutterBorderSlope" ],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["iceandfire:firedragon", "iceandfire:icedragon", "iceandfire:amphithere"],
+    "biome": ["Nuclear Blight", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight"],
+    "result": "deny"
+  },
+  {
+    "mob": "minecraft:wolf",
+    "angry": true,
+    "random": 0.5,
+    "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mod": ["lycanitesmobs", "iceandfire", "quark", "battletowers", "minecraft", "defiledlands", "familiarfauna", "charm"],
+    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight", "Parasite Biome"],
+    "spawner": true,
+    "result": "default"
+  },
+  {
+    "mob": ["minecraft:wither_skeleton","minecraft:zombie","mod_lavacow:zombiemushroom","mod_lavacow:zombiefrozen","mod_lavacow:unburied","mod_lavacow:forsaken","minecraft:zombie_villager","minecraft:zombie_pigman","minecraft:husk","iceandfire:dread_thrall","defiledlands:host"],
+    "random": 0.2,
+    "helditem": ["minecraft:iron_pickaxe"],
+    "result": "default"
+  },
+  {
+    "dimension": 3,
+    "mob": "defiledlands:book_wyrm",
+    "biome": ["Defiled Caverns"],
+    "result": "default"
+  },
+  {
+    "dimension": 3,
+    "mod": "defiledlands",
+    "mincount": {
+      "amount": 50,
+      "passive": true,
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  	{
 		"mob": "srparasites:hi_stray",
 		"biometype": ["COLD", "HILLS"],
 		"result": "default"
@@ -20,4 +136,3 @@
 		"result": "deny"
 	}
 ]
-

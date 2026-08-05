@@ -39,6 +39,28 @@
     ],
     "qualities": [
       {
+          "name": "quality.skill_issue.name",
+          "color": "dark_red",
+          "weight": 5,
+          "attributes": [
+              {
+              "name": "generic.attackDamage",
+              "amount": -0.1,
+              "operation": 2
+              },
+              {
+              "name": "potioncore.projectileDamage",
+              "amount": -0.1,
+              "operation": 2
+              },
+              {
+              "name": "potioncore.magicDamage",
+              "amount": -0.1,
+              "operation": 2
+              }
+          ]
+      },
+      {
         "name": "quality.horrible.name",
         "color": "dark_gray",
         "weight": 10,

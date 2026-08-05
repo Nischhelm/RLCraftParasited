@@ -21,10 +21,20 @@
     },
     "antiqueatlas:anvil": {},
     "antiqueatlas:bed": {},
+    "antiqueatlas:brutalcoin": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/by_knight_gallade/brutalcoin.png"
+      ]
+    },
     "antiqueatlas:book": {},
     "antiqueatlas:cave": {},
     "antiqueatlas:defiled": {},
     "antiqueatlas:diamond": {},
+    "antiqueatlas:emerald": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/by_knight_gallade/emerald.png"
+      ]
+    },
     "antiqueatlas:dragon_blue": {},
     "antiqueatlas:dragon_gold": {},
     "antiqueatlas:dragon_green": {},
@@ -43,9 +53,19 @@
     "antiqueatlas:nether_portal": {},
     "antiqueatlas:parasite": {},
     "antiqueatlas:pickaxe": {},
+    "antiqueatlas:radiation": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/by_knight_gallade/radiation.png"
+      ]
+    },
     "antiqueatlas:quadtower": {},
     "antiqueatlas:red_x_large": {},
     "antiqueatlas:red_x_small": {},
+    "antiqueatlas:ruinedbattletower": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/by_knight_gallade/ruinedbattletower.png"
+      ]
+    },
     "antiqueatlas:ruins": {},
     "antiqueatlas:scroll": {},
     "antiqueatlas:ship": {},
@@ -60,6 +80,11 @@
       ]
     },
     "antiqueatlas:village": {},
+    "antiqueatlas:wrench": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/by_knight_gallade/wrench.png"
+      ]
+    }
     "antiqueatlas:waystone": {},
     "antiqueatlas:wizardtower": {}
   }

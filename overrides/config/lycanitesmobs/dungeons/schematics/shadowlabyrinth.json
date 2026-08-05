@@ -1,6 +1,6 @@
 {
   "name": "shadowlabyrinth",
-  "loadDefault": true,
+  "loadDefault": false,
   "sectorCountMin": 20,
   "sectorCountMax": 30,
   "corridorToCorridorChance": 0.5,
@@ -15,8 +15,28 @@
       "biomeTags": [
         "spooky",
         "mountain",
-        "swamp"
+        "swamp",
+        "-canyon",
+        "-parasite",
+        "-void",
+        "-abyssal"
       ],
+      "biomes": [
+        "-canyon",
+        "-parasite",
+        "-abyssal"
+      ],
+      "biomeIds": [
+        "openterraingenerator:overworld_abyssal_gate",
+        "openterraingenerator:overworld_abyssal_rift",
+        "openterraingenerator:overworld_grey_abyss",
+        "openterraingenerator:overworld_grey_abyss_border",
+        "openterraingenerator:overworld_grey_abyss_pit",
+        "openterraingenerator:overworld_grey_abyss_pit_border",
+        "srparasites:biome_parasite",
+        "nuclearcraft:nuclear_wasteland"
+      ],
+      "biomeIdListType": "blacklist",
       "biomeTagListType": "whitelist"
     }
   ],

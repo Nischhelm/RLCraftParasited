@@ -12,7 +12,8 @@
   "spawning": {
     "enabled": true,
     "spawners": [
-      "lava"
+      "lava",
+      "lavabiome"
     ],
     "disableSubspecies": false,
     "dimensionIds": [],

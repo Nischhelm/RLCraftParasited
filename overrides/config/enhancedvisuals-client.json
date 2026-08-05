@@ -5,6 +5,33 @@
     "enableDamageDebug": false
   },
   "handlers": {
+    "radiation": {
+      "enabled": true,
+      "opacity": 1.0,
+      "renderThresholdLow": 0.001,
+      "renderThresholdMedium": 0.01,
+      "renderThresholdHigh": 0.1,
+      "maxOpacityLow": 0.6,
+      "maxOpacityMedium": 0.8,
+      "maxOpacityHigh": 1,
+      "maxOpacity": 0.8,
+      "fadeFactor": 0.05,
+      "radiation_low": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 30
+      },
+      "radiation_med": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 20
+      },
+      "radiation_high": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 10
+      }
+    },
     "explosion": {
       "enabled": true,
       "opacity": 1.0,
