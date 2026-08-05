@@ -1,19 +1,5 @@
 #loader mixin
 
-#mixin {targets: "suike.suikecherry.world.biome.ModBiomes"}
-zenClass ModBiomesMixin {
-
-    #mixin Static
-    #mixin Redirect
-    #{
-    #   method: "initBiomes",
-    #   at: {value: "INVOKE", target: "Lrtg/api/RTGAPI;addRTGBiomes([Lrtg/api/world/biome/IRealisticBiome;)V"}
-    #}
-    function zenutils_fixRTGCompat(biomes as native.rtg.api.world.biome.IRealisticBiome[]) as void {
-        native.rtg.api.RTGAPI.RTG_BIOMES.addBiomes(biomes);
-    }
-}
-
 #mixin {targets: "suike.suikecherry.data.TreasureData"}
 zenClass TreasureDataMixin {
     #mixin Static
