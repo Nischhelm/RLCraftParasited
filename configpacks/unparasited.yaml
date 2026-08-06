@@ -1,6 +1,6 @@
-name: "RLCraft Parasited Unparasited"
+name: "Dregora Parasited Unparasited"
 version: "1.0.0"
-description: "Parasited minus the parasites"
+description: "Dregora Parasited minus the parasites"
 
 # Patches to apply
 patches:
