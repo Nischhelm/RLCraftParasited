@@ -1,41 +1,39 @@
---- Aug 0X 2026 ---
+--- Aug 07 2026 ---
 
 Mod changes
     updated trinkets jar
     updated testdummy to 2.0.7 (indev jar until its on cf) fixing a dupe
     updated reccomplex to fix some 2014 style potential exploits
+    updated betterconfig
+    updated lycatweaks, pets now lvl by taking/dealing dmg and various other stuff
+    updated srpmixins, enchctrl, jeiwt, worn horseshoes
 
 Config changes
     reduced betterend biomes even more (now 2:1 vanilla end to betterend)
     made dummy immune to coth
-    increased traverse findbiome timeout
+    doubled traverse findbiome timeout (30s)
     fixed more potential container dupes
-    using eagles (/meldexuns) structure cleanup settings for rltweaker
+    using eagles (/meldexuns) structure cleanup settings for rltweaker, not sure if that's gonna be fine
     added default morpheus cfg with 33% sleep percentage for server owners
     added a possibly minimal inspirations fix idk
-    enabled chunkloading fix by rltweaker
-    removed default chain skirt recipe
+    enabled chunkloading fix by rltweaker, idk why it wasn't enabled yet
+    removed default chain skirt recipe (6 bronze ingots...)
     made it rain less often
 
 Scripts
     moved shulker rightclick dropoff zenutils mixin to clientside only to fix server complaint
     added magikarp +10 luck tooltip
-    coffee can now be brewed in cauldron (dyed water now only if cauldron not boiling)
+    coffee can now be brewed in cauldron (dyed water now only if cauldron not boiling), this is for SupremeArtofWar
     fixed Y menu "more wheat" perk giving wheat on not fully grown wheat blocks
-    clocks and compasses can be smelted now, to 2 ingots each
+    clocks and compasses can also be smelted now, giving 2 ingots each
     readded default milk cauldron brewing recipes (gold apple -> cure, ferm spider eye -> dispel)
     fixed rtg x cherry grove compat mixin
-    fixed rare issue with new obby skull recipe (thanks blake/pvpete for report)
-
-Structures
-    
+    fixed rare issue with new obby skull recipe (thanks blake/pvpete for report), not sure if that fully works yet
+    reduced thirst loss when attacking (only on actual hits now) thanks cdstk for the mixin
 
 Config Packs
     re-enabled RTG as default worldtype for HCC as its now working with cherry grove
-    added Dregora Parasited i guess
-
-Docs
-    
+    added Dregora Parasited in a different git branch
 
 
 --- July 25 2026 ---
