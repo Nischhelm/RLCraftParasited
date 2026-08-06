@@ -1,5 +1,18 @@
 #loader mixin
 
+import native.net.minecraft.entity.player.EntityPlayer;
+import native.net.minecraft.entity.EntityLivingBase;
+import native.net.minecraft.init.PotionTypes;
+import native.net.minecraft.world.World;
+import native.net.minecraft.item.Item;
+import native.net.minecraft.item.ItemStack;
+import native.net.minecraft.block.BlockCrops;
+import native.net.minecraft.block.Block;
+import native.java.util.Collection;
+import native.srpmixins.util.customphasemechanics.SRPSaveDataInterface;
+import native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase;
+import native.com.dhanantry.scapeandrunparasites.init.SRPPotions;
+
 #mixin {targets: "suike.suikecherry.data.TreasureData"}
 zenClass TreasureDataMixin {
     #mixin Static
@@ -8,7 +21,7 @@ zenClass TreasureDataMixin {
     #   method: "createTreasureList",
     #   at: {value: "INVOKE", target: "Ljava/util/Collections;addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z"}
     #}
-    function zenutils_disableDefaultLoot(obj1 as native.java.util.Collection, obj2 as native.java.lang.Object[]) as bool {
+    function zenutils_disableDefaultLoot(obj1 as Collection, obj2 as native.java.lang.Object[]) as bool {
         return false; // dont add default loot, done via cfg file instead
     }
 }
@@ -38,13 +51,13 @@ zenClass BloodmoonHandlerMixin {
     #   cancellable: true
     #}
     function zenutils_disableBloodmoon(event as native.net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent, ci as mixin.CallbackInfo) as void {
-        val world as native.net.minecraft.world.World = event.world;
-        val players as [native.net.minecraft.entity.player.EntityPlayer] = world.playerEntities;
+        val world as World = event.world;
+        val players as [EntityPlayer] = world.playerEntities;
         if(players.length == 0) return; # no players in dim, shouldnt happen
     
         for player in players {
-            val player as native.net.minecraft.entity.player.EntityPlayer = players[0];
-            val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
+            val player as EntityPlayer = players[0];
+            val phase as int = SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
             if(phase >= zenutils_cfg_val) return; // anyone above phase 2: bloodmoons allowed
         }
         ci.cancel(); // no bloodmoon if everyone online before phase 3
@@ -139,7 +152,7 @@ zenClass ArcaneWorkbenchRecipeCategoryMixin {
     #   method: "generateRecipes",
     #   at: {value: "INVOKE", ordinal: 2, target: "Ljava/util/List;addAll(Ljava/util/Collection;)Z"}
     #}
-    function zenutils_dontRegisterScrollJeiRecipes(recipes as [native.electroblob.wizardry.integration.jei.ArcaneWorkbenchRecipe], scrollRecipes as native.java.util.Collection) as bool {
+    function zenutils_dontRegisterScrollJeiRecipes(recipes as [native.electroblob.wizardry.integration.jei.ArcaneWorkbenchRecipe], scrollRecipes as Collection) as bool {
         return false;
     }
 
@@ -149,7 +162,7 @@ zenClass ArcaneWorkbenchRecipeCategoryMixin {
     #   method: "generateUpgradeRecipes",
     #   at: {value: "INVOKE", ordinal: 0, target: "Lnet/minecraft/item/Item;func_150895_a(Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/util/NonNullList;)V"}
     #}
-    function zenutils_dontRegisterArmorUpgradeJeiRecipes(item as native.net.minecraft.item.Item, tab as native.net.minecraft.creativetab.CreativeTabs, items as native.net.minecraft.util.NonNullList, original as mixin.Operation) as void {
+    function zenutils_dontRegisterArmorUpgradeJeiRecipes(item as Item, tab as native.net.minecraft.creativetab.CreativeTabs, items as native.net.minecraft.util.NonNullList, original as mixin.Operation) as void {
         if(item instanceof native.electroblob.wizardry.item.ItemArmourUpgrade) return;
         original.call(item, tab, items);
     }
@@ -163,7 +176,7 @@ zenClass ImbuementAltarRecipeCategoryMixin {
     #   method: "generateRecipes",
     #   at: {value: "INVOKE", ordinal: 3, target: "Ljava/util/List;addAll(Ljava/util/Collection;)Z"}
     #}
-    function zenutils_dontRegisterArmorJeiRecipes(recipes as [native.electroblob.wizardry.integration.jei.ImbuementAltarRecipe], armorRecipes as native.java.util.Collection) as bool {
+    function zenutils_dontRegisterArmorJeiRecipes(recipes as [native.electroblob.wizardry.integration.jei.ImbuementAltarRecipe], armorRecipes as Collection) as bool {
         return false;
     }
 }
@@ -188,7 +201,7 @@ zenClass ItemWizardArmourMixin {
     #   method: "<init>*",
     #   at: {value: "INVOKE", target: "Lelectroblob/wizardry/registry/WizardryRecipes;addToManaFlaskCharging(Lnet/minecraft/item/Item;)V"}
     #}
-    function zenutils_dontRegisterArmorJei(item as native.net.minecraft.item.Item) as bool {
+    function zenutils_dontRegisterArmorJei(item as Item) as bool {
         return false;
     }
 }
@@ -210,7 +223,7 @@ zenClass LockPickingContainerMixin {
 #mixin {targets: "melonslise.locks.common.init.LocksItems"}
 zenClass LocksItemsMixin {
     static zenutils_cfg_val as double = 0.97;
-    static DRAGONBONE_LOCK_PICK as native.net.minecraft.item.Item;
+    static DRAGONBONE_LOCK_PICK as Item;
 
     #mixin Static
     #mixin Inject
@@ -245,13 +258,13 @@ zenClass InfernalMobsCoreMixin {
     #   at: {value: "FIELD", target: "Latomicstryker/infernalmobs/common/InfernalMobsCore;eliteRarity:I"}
     #}
     #mixin Local{argsOnly: true}
-    function zenutils_modifyInfernalChance(original as int, entity as native.net.minecraft.entity.EntityLivingBase) as int {
-        if(!(entity instanceof native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase)) return original;
-        val world as native.net.minecraft.world.World = entity.world;
+    function zenutils_modifyInfernalChance(original as int, entity as EntityLivingBase) as int {
+        if(!(entity instanceof EntityParasiteBase)) return original;
+        val world as World = entity.world;
         if(world.provider.getDimension() != 111) return original;
-        val player as native.net.minecraft.entity.player.EntityPlayer = world.getClosestPlayerToEntity(entity, 128);
+        val player as EntityPlayer = world.getClosestPlayerToEntity(entity, 128);
         if(isNull(player)) return original;
-        val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
+        val phase as int = SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
         if(phase < 9) return original; // below phase 9: no increase
         return (original / (1+zenutils_cfg_val)) as int;
     }
@@ -269,12 +282,12 @@ zenClass ChampionHelperMixin {
     #}
     #mixin Local{argsOnly: true}
     function zenutils_modifyChampionChance(original as float, entity as native.net.minecraft.entity.EntityLiving) as float {
-        if(!(entity instanceof native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase)) return original;
-        val world as native.net.minecraft.world.World = entity.world;
+        if(!(entity instanceof EntityParasiteBase)) return original;
+        val world as World = entity.world;
         if(world.provider.getDimension() != 111) return original;
-        val player as native.net.minecraft.entity.player.EntityPlayer = world.getClosestPlayerToEntity(entity, 128);
+        val player as EntityPlayer = world.getClosestPlayerToEntity(entity, 128);
         if(isNull(player)) return original;
-        val phase as int = native.srpmixins.util.customphasemechanics.SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
+        val phase as int = SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
         if(phase < 9) return original; // below phase 9: no increase
         return original * (1+zenutils_cfg_val);
     }
@@ -301,13 +314,13 @@ zenClass TippedArrowCauldronRecipeMixin {
     #   method: "matches",
     #   at: {value: "RETURN"}
     #}
-    function zenutils_fixCauldronSplashingArrows(original as bool, stack as native.net.minecraft.item.ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState) as bool {
+    function zenutils_fixCauldronSplashingArrows(original as bool, stack as ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState) as bool {
         return original
-        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185229_a //EMPTY
-        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185230_b //WATER
-        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185231_c //MUNDANE
-        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185232_d //THICK
-        && state.getPotion() != native.net.minecraft.init.PotionTypes.field_185233_e; //AWKWARD
+        && state.getPotion() != PotionTypes.field_185229_a //EMPTY
+        && state.getPotion() != PotionTypes.field_185230_b //WATER
+        && state.getPotion() != PotionTypes.field_185231_c //MUNDANE
+        && state.getPotion() != PotionTypes.field_185232_d //THICK
+        && state.getPotion() != PotionTypes.field_185233_e; //AWKWARD
     }
 }
 
@@ -324,7 +337,7 @@ zenClass BlockUtilsMixin {
     #   method: "isBlockUnbreakable",
     #   at: {value: "RETURN"}
     #}
-    function zenutils_addUnbreakableBlockList(original as bool, world as native.net.minecraft.world.World, pos as native.net.minecraft.util.math.BlockPos) as bool {
+    function zenutils_addUnbreakableBlockList(original as bool, world as World, pos as native.net.minecraft.util.math.BlockPos) as bool {
         if(original) return true;
         val blockLoc = world.func_180495_p(pos).func_177230_c().getRegistryName(); //getBlockState(pos).getBlock().getRegistryName()
         if(isNull(blockLoc)) return false;
@@ -398,8 +411,8 @@ zenClass TileEntityDodMixin { //func_73660_a = update
     #}
     #mixin Local
     function zenutils_addPivotNearby(ci as mixin.CallbackInfo, axisalignedbb as native.net.minecraft.util.math.AxisAlignedBB) as void {
-        for para in this0.field_145850_b.func_72872_a(native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase.class, axisalignedbb) {
-            native.com.dhanantry.scapeandrunparasites.init.SRPPotions.applyStackPotion(native.com.dhanantry.scapeandrunparasites.init.SRPPotions.PIVOT_E, para as native.net.minecraft.entity.EntityLivingBase, 6000, 0);
+        for para in this0.field_145850_b.func_72872_a(EntityParasiteBase.class, axisalignedbb) {
+            SRPPotions.applyStackPotion(SRPPotions.PIVOT_E, para as EntityLivingBase, 6000, 0);
         }
     }
 }
@@ -411,11 +424,11 @@ zenClass TraitMoreWheatMixin { //func_177230_c = getBlock
     #   method: "onBlockDrops",
     #   at: {value: "INVOKE", target: "Lnet/minecraft/block/state/IBlockState;func_177230_c()Lnet/minecraft/block/Block;"}
     #}
-    function zenutils_onlyFullyGrownWheat(state as native.net.minecraft.block.state.IBlockState, original as mixin.Operation) as native.net.minecraft.block.Block {
-        val block = original.call(state) as native.net.minecraft.block.Block;
-        if(!(block instanceof native.net.minecraft.block.BlockCrops))
+    function zenutils_onlyFullyGrownWheat(state as native.net.minecraft.block.state.IBlockState, original as mixin.Operation) as Block {
+        val block = original.call(state) as Block;
+        if(!(block instanceof BlockCrops))
             return block;
-        val crops = block as native.net.minecraft.block.BlockCrops;
+        val crops = block as BlockCrops;
 
         if(crops.isMaxAge(state)) return block;
 
@@ -432,7 +445,7 @@ zenClass DyeCauldronWaterMixin {
     #   at: {value: "HEAD"},
     #   cancellable: true
     #}
-    function zenutils_onlyDyeWhenNotCooking(stack as native.net.minecraft.item.ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState, cir as mixin.CallbackInfoReturnable) as bool {
+    function zenutils_onlyDyeWhenNotCooking(stack as ItemStack, boiling as bool, level as int, state as native.knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState, cir as mixin.CallbackInfoReturnable) as bool {
         if(boiling) cir.setReturnValue(false); // no matchies to protect coffee
     }
 }
@@ -459,11 +472,11 @@ zenClass ThirstHandlerMixin {
 		val source as native.net.minecraft.util.DamageSource = event.getSource();
 		if(isNull(source)) return;
 
-		if(!(source.getTrueSource() instanceof native.net.minecraft.entity.player.EntityPlayer)) return;
-		if(source.getImmediateSource() instanceof native.net.minecraft.entity.EntityLivingBase &&
-                !(source.getImmediateSource() instanceof native.net.minecraft.entity.player.EntityPlayer)) return; //pets live and do my bidding
+		if(!(source.getTrueSource() instanceof EntityPlayer)) return;
+		if(source.getImmediateSource() instanceof EntityLivingBase &&
+                !(source.getImmediateSource() instanceof EntityPlayer)) return; //pets live and do my bidding
 
-        val player as native.net.minecraft.entity.player.EntityPlayer = source.getTrueSource() as native.net.minecraft.entity.player.EntityPlayer;
+        val player as EntityPlayer = source.getTrueSource() as EntityPlayer;
 
         if(!this0.shouldSkipThirst(player))
             this0.addExhaustion(player, native.com.charles445.simpledifficulty.config.ModConfig.server.thirst.thirstAttacking as float);
