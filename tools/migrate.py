@@ -289,11 +289,12 @@ class ConfigpackMigrator:
         removed_copy = removed.copy()
 
         for removed_item in list(removed_copy):
-            if '=' in removed_item:
+            # Only process strings (not integers)
+            if isinstance(removed_item, str) and '=' in removed_item:
                 removed_prefix = removed_item.split('=')[0]
                 # Look for matching prefix in added items
                 for added_item in list(added_copy):
-                    if '=' in added_item:
+                    if isinstance(added_item, str) and '=' in added_item:
                         added_prefix = added_item.split('=')[0]
                         if removed_prefix == added_prefix:
                             # Found a replacement!
@@ -380,11 +381,18 @@ class ConfigpackMigrator:
             encoding = 'utf-8'
         except UnicodeDecodeError:
             # Fallback for files with special characters (e.g. Minecraft § color codes)
-            with open(base_file, 'r', encoding='latin-1') as f:
-                base_data = json.load(f)
-            with open(pack_file, 'r', encoding='latin-1') as f:
-                pack_data = json.load(f)
-            encoding = 'latin-1'
+            try:
+                with open(base_file, 'r', encoding='latin-1') as f:
+                    base_data = json.load(f)
+                with open(pack_file, 'r', encoding='latin-1') as f:
+                    pack_data = json.load(f)
+                encoding = 'latin-1'
+            except json.JSONDecodeError as e:
+                print(f"    → INVALID JSON (skipping): {e}")
+                return None
+        except json.JSONDecodeError as e:
+            print(f"    → INVALID JSON (skipping): {e}")
+            return None
 
         # Check if identical
         if base_data == pack_data:
