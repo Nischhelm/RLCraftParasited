@@ -1,0 +1,45 @@
+# Mods that should NOT be auto-updated
+# Reasons: Version pinning, API limitations, manual control required
+
+ignore:
+  - projectID: 348025
+    reason: "SRParasites - not gonna update to 1.10.x anytime soon"
+
+  - projectID: 74246
+    reason: "DLDungeons got an update that makes it easier i guess? Dont need it"
+
+  - projectID: 238891
+    reason: "Idk why shiv doesnt update DynSurround but he prob got a reason"
+
+  - projectID: 238911
+    reason: "GrappleMod got a big update changing the entire mod, we dont use it"
+
+  - projectID: 251136
+    reason: "LevelUp2 got a big update changing the entire mod, we dont use it"
+
+  - projectID: 255257
+    reason: "Newer LootTweaker has various issues with other mods idk"
+
+  - projectID: 256141
+    reason: "Not (yet?) updating to newest anniversary edition of Rustic, too many changes to fix"
+
+  - projectID: 318255
+    reason: "Updating Phosphor would technically work but its not needed and idk if theres issues down the line"
+
+  - projectID: 344787
+    reason: "XPTome got a big update changing the entire mod, we dont use it"
+
+  - projectID: 401178
+    reason: "ZenUtils 1.28+ depends on MixinBooter 11.x which isnt compatible with the current Mix2Fermbooter we use"
+
+  - projectID: 580404
+    reason: "OverLast updated to SRP 1.10.x, we don't"
+
+  - projectID: 813247
+    reason: "RLTooltips and RLDTooltips are the same project, we stay on the one we got"
+
+  - projectID: 1140227
+    reason: "SRPExtra is on the latest compatible version already, newer versions crash or depend on SRP 1.10"
+
+  - projectID: 1268838
+    reason: "SRPDeepSeaDanger is on the latest compatible version already, newer versions crash or depend on SRP 1.10"
