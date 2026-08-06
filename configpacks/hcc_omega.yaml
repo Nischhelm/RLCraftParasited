@@ -76,4 +76,4 @@ patches:
 
 # Build configuration
 build:
-  output_name: "RLCraftParasitedOmegaHCC_Server.zip"
+  output_name: "DregoraParasitedOmegaHCC_Server.zip"

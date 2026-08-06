@@ -1,6 +1,6 @@
 name: RLCraft Parasited ShyCraft
 version: 1.2.3 - July 25 2026
-description: 'ShyCraft Parasited: A modification of Parasited'
+description: 'ShyCraft Dregora Parasited: A modification of Dregora Parasited'
 build:
   mode: modpack
   output_name: ShyCraft Parasited.zip

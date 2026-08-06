@@ -360,4 +360,4 @@ patches:
 
 # Build configuration
 build:
-  output_name: "RLCraftParasitedHCC.zip"
+  output_name: "DregoraParasitedHCC.zip"
