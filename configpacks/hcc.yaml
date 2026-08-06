@@ -179,7 +179,7 @@ patches:
         S:"Scaling Mode": MULTI
       "main.difficulty":
         S:"Area Mode": DISTANCE_FROM_SPAWN
-        S:"Difficulty Per Block": 0.001
+        S:"Difficulty Per Block": 0.0005
         S:"Max Value": 20.0
         S:"Min Value": 0.5
 
