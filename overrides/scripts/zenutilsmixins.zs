@@ -460,7 +460,7 @@ zenClass ThirstHandlerMixin {
     #   at: {value: "HEAD"},
     #   cancellable: true
     #}
-    function zenutils_replaceThirstCheck(event as native.net.minecraftforge.event.entity.player.AttackEntityEvent, ci as mixin.CallbackInfo) {
+    function zenutils_replaceThirstCheck(ci as mixin.CallbackInfo) {
         ci.cancel();
 	}
 
@@ -471,11 +471,15 @@ zenClass ThirstHandlerMixin {
     #}
     function zenutils_thirstAfterIFrames(event as native.net.minecraftforge.event.entity.living.LivingHurtEvent, ci as mixin.CallbackInfo) as void {
 		val source as native.net.minecraft.util.DamageSource = event.getSource();
-		if(source.getTrueSource() instanceof native.net.minecraft.entity.player.EntityPlayer && source.damageType == "player") {
-			val player as native.net.minecraft.entity.player.EntityPlayer = source.getTrueSource() as native.net.minecraft.entity.player.EntityPlayer;
-			if(!this0.shouldSkipThirst(player)) {
-				this0.addExhaustion(player, native.com.charles445.simpledifficulty.config.ModConfig.server.thirst.thirstAttacking as float);
-			}
-		}
+		if(isNull(source)) return;
+
+		if(!(source.getTrueSource() instanceof native.net.minecraft.entity.player.EntityPlayer)) return;
+		if(source.getImmediateSource() instanceof native.net.minecraft.entity.EntityLivingBase &&
+                !(source.getImmediateSource() instanceof native.net.minecraft.entity.player.EntityPlayer)) return; //pets live and do my bidding
+
+        val player as native.net.minecraft.entity.player.EntityPlayer = source.getTrueSource() as native.net.minecraft.entity.player.EntityPlayer;
+
+        if(!this0.shouldSkipThirst(player))
+            this0.addExhaustion(player, native.com.charles445.simpledifficulty.config.ModConfig.server.thirst.thirstAttacking as float);
 	}
 }
