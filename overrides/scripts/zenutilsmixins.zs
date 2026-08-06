@@ -436,3 +436,32 @@ zenClass DyeCauldronWaterMixin {
         if(boiling) cir.setReturnValue(false); // no matchies to protect coffee
     }
 }
+
+#mixin {targets: "com.charles445.simpledifficulty.handler.ThirstHandler"}
+zenClass ThirstHandlerMixin {
+
+	#mixin Inject
+    #{
+    #   method: "onAttackEntity",
+    #   at: {value: "HEAD"},
+    #   cancellable: true
+    #}
+    function zenutils_replaceThirstCheck(event as native.net.minecraftforge.event.entity.player.AttackEntityEvent, ci as mixin.CallbackInfo) {
+        ci.cancel();
+	}
+
+    #mixin Inject
+    #{
+    #   method: "onLivingHurt",
+	#   at: {value: "INVOKE", target: "Lnet/minecraftforge/event/entity/living/LivingHurtEvent;getEntity()Lnet/minecraft/entity/Entity;", ordinal = 1}
+    #}
+    function zenutils_thirstAfterIFrames(event as native.net.minecraftforge.event.entity.living.LivingHurtEvent, ci as mixin.CallbackInfo) as void {
+		val source as native.net.minecraft.util.DamageSource = event.getSource();
+		if(source.getTrueSource() instanceof native.net.minecraft.entity.player.EntityPlayer && source.damageType == "player") {
+			val player as native.net.minecraft.entity.player.EntityPlayer = source.getTrueSource() as native.net.minecraft.entity.player.EntityPlayer;
+			if(!this0.shouldSkipThirst(player)) {
+				this0.addExhaustion(player, native.com.charles445.simpledifficulty.config.ModConfig.server.thirst.thirstAttacking as float);
+			}
+		}
+	}
+}
