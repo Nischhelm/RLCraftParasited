@@ -459,7 +459,7 @@ zenClass ThirstHandlerMixin {
     #   at: {value: "HEAD"},
     #   cancellable: true
     #}
-    function zenutils_replaceThirstCheck(ci as mixin.CallbackInfo) {
+    function zenutils_replaceThirstCheck(event as native.net.minecraftforge.event.entity.player.AttackEntityEvent, ci as mixin.CallbackInfo) {
         ci.cancel();
 	}
 
