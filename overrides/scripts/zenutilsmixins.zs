@@ -453,24 +453,29 @@ zenClass DyeCauldronWaterMixin {
 
 #mixin {targets: "com.charles445.simpledifficulty.handler.ThirstHandler"}
 zenClass ThirstHandlerMixin {
-    #mixin WrapWithCondition
+
+	#mixin Inject
     #{
     #   method: "onAttackEntity",
-	#   at: {value: "INVOKE", target: "Lcom/charles445/simpledifficulty/handler/ThirstHandler;addExhaustion(Lnet/minecraft/entity/player/EntityPlayer;F)V"}
+    #   at: {value: "HEAD"},
+    #   cancellable: true
     #}
-	#mixin Local
-    function zenutils_thirstCheckIFrames(
-		instance as native.com.charles445.simpledifficulty.handler.ThirstHandler,
-		player as native.net.minecraft.entity.player.EntityPlayer,
-		exhaustion as float,
-		target as native.net.minecraft.entity.Entity
-	) as bool {
-        if(target.isEntityInvulnerable(native.net.minecraft.util.DamageSource.causePlayerDamage(player))) return false; // Same as Vanilla
-        if(target instanceof native.net.minecraft.entity.EntityLivingBase) {
-			val living as native.net.minecraft.entity.EntityLivingBase = target as native.net.minecraft.entity.EntityLivingBase;
-            if(living.getHealth() <= 0) return false; // Same as Vanilla
-            if(living.hurtResistantTime > living.maxHurtResistantTime / 2) return false; // Almost Vanilla, does not check lastDamage
-        }
-        return true;
+    function zenutils_replaceThirstCheck(event as native.net.minecraftforge.event.entity.player.AttackEntityEvent, ci as mixin.CallbackInfo) {
+        ci.cancel();
+	}
+
+    #mixin Inject
+    #{
+    #   method: "onLivingHurt",
+	#   at: {value: "INVOKE", target: "Lnet/minecraftforge/event/entity/living/LivingHurtEvent;getEntity()Lnet/minecraft/entity/Entity;", ordinal = 1}
+    #}
+    function zenutils_thirstAfterIFrames(event as native.net.minecraftforge.event.entity.living.LivingHurtEvent, ci as mixin.CallbackInfo) as void {
+		val source as native.net.minecraft.util.DamageSource = event.getSource();
+		if(source.getTrueSource() instanceof native.net.minecraft.entity.player.EntityPlayer && source.damageType == "player") {
+			val player as native.net.minecraft.entity.player.EntityPlayer = source.getTrueSource() as native.net.minecraft.entity.player.EntityPlayer;
+			if(!this0.shouldSkipThirst(player)) {
+				this0.addExhaustion(player, native.com.charles445.simpledifficulty.config.ModConfig.server.thirst.thirstAttacking as float);
+			}
+		}
 	}
 }
