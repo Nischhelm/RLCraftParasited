@@ -51,4 +51,4 @@ patches:
 
 # Build configuration
 build:
-  output_name: "RLCraftParasitedUnparasited.zip"
+  output_name: "DregoraParasitedUnparasited.zip"
