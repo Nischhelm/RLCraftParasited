@@ -13,7 +13,7 @@ def build_mainpack(output_dir: Path = None):
     build_dir = output_dir or root / "build"
     build_dir.mkdir(exist_ok=True)
 
-    output_file = build_dir / "RLCraft Parasited.zip"
+    output_file = build_dir / "Dregora Parasited.zip"
 
     # Files to include in the main pack (relative to root)
     include_files = [
