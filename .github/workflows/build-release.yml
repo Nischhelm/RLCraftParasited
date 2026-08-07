@@ -76,23 +76,23 @@ jobs:
           CHANGELOG: ${{ steps.changelog.outputs.CHANGELOG }}
         run: |
           cat > /tmp/release_body.md << 'EOFBODY'
-          ## RLCraft Parasited ${VERSION}
+          ## Dregora Parasited ${VERSION}
 
           ${CHANGELOG}
 
           ---
 
           ### Main Pack (import in cf app):
-          - **RLCraft Parasited.zip**
+          - **Dregora Parasited.zip**
 
           ### Config Packs:
-          - **RLCraftParasitedHCC.zip** - Hardcore Config (if you like pain)
-          - **RLCraftParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (lose all progression on death)
-          - **RLCraftParasitedUnparasited.zip** - Unparasited (put the parasites where they came from)
+          - **DregoraParasitedHCC.zip** - Hardcore Config (if you like pain)
+          - **DregoraParasitedOmegaHCC_Server.zip** - Hardcore Config Omega (lose all progression on death)
+          - **DregoraParasitedUnparasited.zip** - Unparasited (put the parasites where they came from)
 
           ### Installation:
           **Main Pack:** Import ZIP in CurseForge app or similar features in other launchers
-          **Configpacks:** Download and extract over your RLCraft Parasited installation, confirm to overwrite files
+          **Configpacks:** Download and extract over your Dregora Parasited installation, confirm to overwrite files
           EOFBODY
           # Expand environment variables
           envsubst < /tmp/release_body.md > /tmp/release_body_final.md
@@ -105,16 +105,16 @@ jobs:
           VERSION: ${{ steps.version.outputs.VERSION }}
         run: |
           cat > /tmp/release_body.md << 'EOFBODY'
-          ## ShyCraft Parasited ${VERSION}
+          ## ShyCraft Dregora Parasited ${VERSION}
 
-          **⚠️ Pre-Release:** This is an automated build that ports the latest RLCraft Parasited changes to the ShyCraft modpack. This is NOT an official ShyCraft release.
+          **⚠️ Pre-Release:** This is an automated build that ports the latest Dregora Parasited changes to the ShyCraft modpack. This is NOT an official ShyCraft release, ShyCraft doesn't even have a Dregora version yet.
 
           The ShyCraft team will release their own official versions on their own schedule.
 
           ---
 
           ### ShyCraft Modpack (import in cf app):
-          - **ShyCraft Parasited.zip** - Complete modpack with ShyCraft customizations
+          - **ShyCraft Dregora Parasited.zip** - Complete modpack with ShyCraft customizations
 
           ### Installation:
           Import ZIP in CurseForge app or similar features in other launchers. This is a complete modpack, not a configpack overlay.
