@@ -27,6 +27,19 @@ zenClass ModBiomesMixin {
     }
 }
 
+#mixin {targets: "suike.suikecherry.world.biome.BiomeRTG"}
+zenClass BiomeRTGMixin {
+
+    #mixin Redirect
+    #{
+    #   method: "baseBiomeResLoc",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/world/biome/Biome;func_185359_l()Ljava/lang/String;"}
+    #}
+    function zenutils_fixRTGCompat(biome as native.net.minecraft.world.biome.Biome) as string {
+        return "suikecherry:cherry_grove";
+    }
+}
+
 #mixin {targets: "suike.suikecherry.data.TreasureData"}
 zenClass TreasureDataMixin {
     #mixin Static
