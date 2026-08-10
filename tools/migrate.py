@@ -243,12 +243,14 @@ class ConfigpackMigrator:
             # Only process key-value pairs if we're inside a section
             if section_stack:
                 current_section = '.'.join(section_stack)
-                # List start: I:"Key" <
-                list_match = re.match(r'^([BIDSF]):"([^"]+)"\s*<\s*$', line)
+                # List start: I:"Key" < or I:Key <
+                # Support both quoted and unquoted keys
+                list_match = re.match(r'^([BIDSF]):(?:"([^"]+)"|([a-z0-9_]+))\s*<\s*$', line, re.IGNORECASE)
                 if list_match:
                     in_list = True
                     type_prefix = list_match.group(1)
-                    key = list_match.group(2)
+                    # Key is in group 2 (quoted) or group 3 (unquoted)
+                    key = list_match.group(2) or list_match.group(3)
                     list_key = f'{type_prefix}:"{key}"'
                     list_values = []
                     continue
@@ -269,14 +271,17 @@ class ConfigpackMigrator:
                         list_values.append(line)
                     continue
 
-                # Key=value
-                kv_match = re.match(r'^([BIDSF]):(\"?[^\"=]+\"?)=(.*)$', line)
+                # Key=value: S:"name with spaces"=value or S:name=value
+                # Support both quoted and unquoted keys
+                kv_match = re.match(r'^([BIDSF]):(?:"([^"]+)"|([a-z0-9_]+))=(.*)$', line, re.IGNORECASE)
                 if kv_match:
                     type_prefix = kv_match.group(1)
-                    key = kv_match.group(2)
-                    value = kv_match.group(3)
+                    # Key is in group 2 (quoted) or group 3 (unquoted)
+                    key = kv_match.group(2) or kv_match.group(3)
+                    value = kv_match.group(4)
 
-                    full_key = f'{type_prefix}:{key}'
+                    # Always store key with quotes in the full_key for consistency
+                    full_key = f'{type_prefix}:"{key}"'
 
                     # Parse value
                     if value.lower() in ('true', 'false'):
