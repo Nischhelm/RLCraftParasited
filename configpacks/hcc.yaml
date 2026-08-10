@@ -103,15 +103,12 @@ patches:
         B:EntityWither: true
       general:
         B:"MM_Regen enabled": true
-      permittedentities:
-        B:EntityMourner: true
 
   - type: cfg_patch
     file: config/fermiummixins.cfg
     description: "no water bucket MLG, hcc darkness, lightning destroys items again"
     changes:
       "general.vanilla config":
-        B:"Allow Clamping Gamma (Vanilla)": true
         B:"Configurable Water Fall Damage Reduction (Vanilla)": true
         D:"Maximum Gamma Value": -0.25
         D:"Minimum Gamma Value": -0.5
