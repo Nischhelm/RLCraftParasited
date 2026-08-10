@@ -38,7 +38,8 @@ patches:
     changes:
       configuration_general:
         I:"Mobs Blacklisted Dimensions":
-        - 111
+          add:
+            - 111
         B:"Mobs Blacklisted Dimensions Inverted": true
 
   - type: cfg_patch
