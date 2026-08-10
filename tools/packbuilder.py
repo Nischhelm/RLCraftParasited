@@ -307,13 +307,13 @@ class PackBuilder:
         self.log(f"[{patch_num}] Processing {patch_type}: {patch.get('file', patch.get('destination', '?'))}")
 
         try:
-            if patch_type == 'file_add':
-                # file_add: Copy from configpacks/_files/ to temp
+            if patch_type in ['file_add', 'file_replace']:
+                # file_add/file_replace: Copy from configpacks/_files/ to temp
                 source_rel = patch.get('source')
                 dest_rel = patch.get('destination')
 
                 if not source_rel or not dest_rel:
-                    raise ValueError("file_add requires 'source' and 'destination'")
+                    raise ValueError(f"{patch_type} requires 'source' and 'destination'")
 
                 source = self.configpacks_dir / "_files" / source_rel
                 dest = target_dir / dest_rel
@@ -413,13 +413,13 @@ class PackBuilder:
             elif patch_type == 'keyvalue_patch':
                 self.keyvalue_patcher.apply(target_dir, patch)
 
-            elif patch_type == 'file_add':
-                # file_add is handled differently - it adds from configpacks/_files/
+            elif patch_type in ['file_add', 'file_replace']:
+                # file_add/file_replace: copy file from configpacks/_files/
                 source_rel = patch.get('source')
                 dest_rel = patch.get('destination')
 
                 if not source_rel or not dest_rel:
-                    raise ValueError("file_add requires 'source' and 'destination'")
+                    raise ValueError(f"{patch_type} requires 'source' and 'destination'")
 
                 source = self.configpacks_dir / "_files" / source_rel
                 dest = target_dir / dest_rel
@@ -453,13 +453,13 @@ class PackBuilder:
         self.log(f"[{patch_num}] Applying {patch_type}: {patch.get('file', patch.get('destination', '?'))}")
 
         try:
-            if patch_type == 'file_add':
-                # file_add: Copy from configpacks/_files/ to overrides/
+            if patch_type in ['file_add', 'file_replace']:
+                # file_add/file_replace: Copy from configpacks/_files/ to overrides/
                 source_rel = patch.get('source')
                 dest_rel = patch.get('destination')
 
                 if not source_rel or not dest_rel:
-                    raise ValueError("file_add requires 'source' and 'destination'")
+                    raise ValueError(f"{patch_type} requires 'source' and 'destination'")
 
                 source = self.configpacks_dir / "_files" / source_rel
                 dest = target_dir / "overrides" / dest_rel
