@@ -98,16 +98,11 @@ class CfgPatcher:
                                 continue  # Can't add new lists, only modify existing ones
                             # Skip list values (those that should be in list format)
                             if isinstance(value, list):
-                                # For new lists, we need to create them with proper format
-                                # Extract type and key from full_key (e.g., "S:\"NewKey\"")
-                                key_match = re.match(r'^([BIDSF]):"?([^"]+)"?$', key)
-                                if key_match:
-                                    type_prefix = key_match.group(1)
-                                    key_name = key_match.group(2)
-                                    result.append(f'    {type_prefix}:"{key_name}" <')
-                                    for item in value:
-                                        result.append(f"        {item}")
-                                    result.append("     >")
+                                # For new lists, use key format from YAML as-is
+                                result.append(f'    {key} <')
+                                for item in value:
+                                    result.append(f"        {item}")
+                                result.append("     >")
                             else:
                                 # Simple key=value
                                 # Convert Python bool to lowercase string
@@ -124,24 +119,11 @@ class CfgPatcher:
             current_section = '.'.join(section_stack) if section_stack else None
 
             # Check for list format: I:"Key" < or I:Key <
-            list_start_match = re.match(r'^\s*([BIDSF]):(?:"([^"]+)"|([a-z0-9_]+))\s*<\s*$', line.strip(), re.IGNORECASE)
-            if list_start_match and section_stack and current_section in changes:
-                type_prefix = list_start_match.group(1)
-                # Key is in group 2 (quoted) or group 3 (unquoted)
-                key = list_start_match.group(2) or list_start_match.group(3)
-                # Try both quoted and unquoted formats for lookup
-                full_key_quoted = f'{type_prefix}:"{key}"'
-                full_key_unquoted = f'{type_prefix}:{key}'
+            if line.strip().endswith('<') and section_stack and current_section in changes:
+                # Simply split by < and take the key part
+                full_key = line.split('<')[0].strip()
 
-                # Check which format is used in changes dict
-                if full_key_quoted in changes[current_section]:
-                    full_key = full_key_quoted
-                elif full_key_unquoted in changes[current_section]:
-                    full_key = full_key_unquoted
-                else:
-                    full_key = None
-
-                if full_key and full_key in changes[current_section]:
+                if full_key in changes[current_section]:
                     # This is a list we want to modify
                     new_values = changes[current_section][full_key]
 
@@ -221,29 +203,11 @@ class CfgPatcher:
 
             # If we're in a section that has changes (simple key=value)
             if section_stack and current_section in changes:
-                # Parse the current line - support both B:Key and B:"Key With Spaces"
-                key_match = re.match(r'^(\s*)([BIDSF]):(\"?[^\"=]+\"?)=(.*)$', line.strip())
-                if key_match:
-                    indent = key_match.group(1)
-                    type_prefix = key_match.group(2)
-                    key_raw = key_match.group(3)
-                    old_value = key_match.group(4)
+                # Simply split by = and take the key part
+                if '=' in line:
+                    full_key = line.split('=')[0].strip()
 
-                    # Remove quotes if present for normalization
-                    key_name = key_raw.strip('"')
-                    # Try both quoted and unquoted formats for lookup
-                    full_key_quoted = f'{type_prefix}:"{key_name}"'
-                    full_key_unquoted = f'{type_prefix}:{key_name}'
-
-                    # Check which format is used in changes dict
-                    if full_key_quoted in changes[current_section]:
-                        full_key = full_key_quoted
-                    elif full_key_unquoted in changes[current_section]:
-                        full_key = full_key_unquoted
-                    else:
-                        full_key = None
-
-                    if full_key and full_key in changes[current_section]:
+                    if full_key in changes[current_section]:
                         new_value = changes[current_section][full_key]
                         # Mark as applied
                         if current_section not in applied_keys:

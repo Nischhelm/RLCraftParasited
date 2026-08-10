@@ -244,14 +244,10 @@ class ConfigpackMigrator:
             if section_stack:
                 current_section = '.'.join(section_stack)
                 # List start: I:"Key" < or I:Key <
-                # Support both quoted and unquoted keys
-                list_match = re.match(r'^([BIDSF]):(?:"([^"]+)"|([a-z0-9_]+))\s*<\s*$', line, re.IGNORECASE)
-                if list_match:
+                if line.endswith('<'):
                     in_list = True
-                    type_prefix = list_match.group(1)
-                    # Key is in group 2 (quoted) or group 3 (unquoted)
-                    key = list_match.group(2) or list_match.group(3)
-                    list_key = f'{type_prefix}:"{key}"'
+                    # Simply split by < and take the key part
+                    list_key = line.split('<')[0].strip()
                     list_values = []
                     continue
 
@@ -272,16 +268,14 @@ class ConfigpackMigrator:
                     continue
 
                 # Key=value: S:"name with spaces"=value or S:name=value
-                # Support both quoted and unquoted keys
-                kv_match = re.match(r'^([BIDSF]):(?:"([^"]+)"|([a-z0-9_]+))=(.*)$', line, re.IGNORECASE)
-                if kv_match:
-                    type_prefix = kv_match.group(1)
-                    # Key is in group 2 (quoted) or group 3 (unquoted)
-                    key = kv_match.group(2) or kv_match.group(3)
-                    value = kv_match.group(4)
+                if '=' in line:
+                    # Simply split by = and take key and value parts
+                    full_key, value = line.split('=', 1)
+                    full_key = full_key.strip()
+                    value = value.strip()
 
-                    # Always store key with quotes in the full_key for consistency
-                    full_key = f'{type_prefix}:"{key}"'
+                    # Parse value based on type prefix
+                    type_prefix = full_key.split(':')[0] if ':' in full_key else None
 
                     # Parse value
                     if value.lower() in ('true', 'false'):
