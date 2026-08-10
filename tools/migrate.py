@@ -17,6 +17,7 @@ import yaml
 import json
 import jsonpatch
 import re
+import shutil
 
 
 class ConfigpackMigrator:
@@ -57,8 +58,17 @@ class ConfigpackMigrator:
                 print(f"  Analyzing: {rel_path}")
 
                 if not base_file.exists():
-                    # File doesn't exist in base - add as file_add
+                    # File doesn't exist in base - add as file_add (NEW FILE)
                     print(f"    → NEW FILE (will be added via file_add)")
+
+                    # Move file to configpacks/_files/{pack_name}/
+                    files_dest = self.configpacks_dir / "_files" / pack_name / rel_path
+                    files_dest.parent.mkdir(parents=True, exist_ok=True)
+
+                    # Move (not copy) the file
+                    shutil.move(str(file_path), str(files_dest))
+                    print(f"    → MOVED to: configpacks/_files/{pack_name}/{rel_path}")
+
                     patches.append({
                         'type': 'file_add',
                         'source': f'{pack_name}/{rel_path}',
@@ -82,6 +92,12 @@ class ConfigpackMigrator:
                         if patch:
                             patches.append(patch)
 
+                    elif file_path.suffix == '.lang':
+                        # Handle Minecraft language files (key=value format)
+                        patch = self._diff_keyvalue(base_file, file_path, str(rel_path))
+                        if patch:
+                            patches.append(patch)
+
                     elif file_path.suffix == '.zs':
                         # For scripts, just note that they're different
                         print(f"    → SCRIPT FILE (needs manual review)")
@@ -94,7 +110,22 @@ class ConfigpackMigrator:
                         })
 
                     else:
-                        print(f"    → UNKNOWN TYPE (skipping)")
+                        # Unknown file type - exists in base but we replace it completely
+                        print(f"    → UNKNOWN TYPE (will be replaced via file_replace)")
+
+                        # Move file to configpacks/_files/{pack_name}/
+                        files_dest = self.configpacks_dir / "_files" / pack_name / rel_path
+                        files_dest.parent.mkdir(parents=True, exist_ok=True)
+
+                        # Move (not copy) the file
+                        shutil.move(str(file_path), str(files_dest))
+                        print(f"    → MOVED to: configpacks/_files/{pack_name}/{rel_path}")
+
+                        patches.append({
+                            'type': 'file_replace',
+                            'source': f'{pack_name}/{rel_path}',
+                            'destination': str(rel_path)
+                        })
 
         # Generate metadata
         pack_def = {
@@ -319,7 +350,7 @@ class ConfigpackMigrator:
 
     def _diff_keyvalue(self, base_file: Path, pack_file: Path, rel_path: str) -> Dict[str, Any]:
         """
-        Compare two key:value files (like options.txt) and generate patch.
+        Compare two key:value files and generate patch with add/remove/replace operations.
 
         Returns:
             Patch dict or None if files are identical
@@ -327,20 +358,57 @@ class ConfigpackMigrator:
         base_lines = base_file.read_text().splitlines()
         pack_lines = pack_file.read_text().splitlines()
 
-        # Parse both files into key:value dicts
-        base_values = self._parse_keyvalue(base_lines)
-        pack_values = self._parse_keyvalue(pack_lines)
+        # Auto-detect separator
+        separator = self._detect_keyvalue_separator(base_lines)
 
+        # Parse both files into key:value dicts
+        base_values = self._parse_keyvalue(base_lines, separator)
+        pack_values = self._parse_keyvalue(pack_lines, separator)
+
+        # Compute differences
+        base_keys = set(base_values.keys())
+        pack_keys = set(pack_values.keys())
+
+        added_keys = pack_keys - base_keys
+        removed_keys = base_keys - pack_keys
+        changed_keys = {k for k in (base_keys & pack_keys) if base_values[k] != pack_values[k]}
+
+        # Build changes dict
         changes = {}
 
-        # Find changed values
-        for key, pack_value in pack_values.items():
-            base_value = base_values.get(key)
+        # Add operations
+        if added_keys:
+            changes['add'] = {k: pack_values[k] for k in sorted(added_keys)}
+            print(f"    → ADDED {len(added_keys)} key(s)")
+            for k in sorted(added_keys)[:5]:  # Show first 5
+                value_preview = pack_values[k][:50] if len(pack_values[k]) > 50 else pack_values[k]
+                print(f"       • {k} = {value_preview}")
+            if len(added_keys) > 5:
+                print(f"       ... and {len(added_keys) - 5} more")
 
-            if base_value != pack_value:
-                print(f"    → CHANGED: {key} = {pack_value} (was: {base_value})")
-                changes[key] = pack_value
+        # Remove operations
+        if removed_keys:
+            changes['remove'] = sorted(removed_keys)
+            print(f"    → REMOVED {len(removed_keys)} key(s)")
+            for k in sorted(removed_keys)[:5]:
+                print(f"       • {k}")
+            if len(removed_keys) > 5:
+                print(f"       ... and {len(removed_keys) - 5} more")
 
+        # Changed values (simple changes at top level)
+        if changed_keys:
+            print(f"    → CHANGED {len(changed_keys)} value(s)")
+            for key in sorted(changed_keys)[:5]:
+                base_preview = base_values[key][:40] if len(base_values[key]) > 40 else base_values[key]
+                pack_preview = pack_values[key][:40] if len(pack_values[key]) > 40 else pack_values[key]
+                print(f"       • {key} = {pack_preview} (was: {base_preview})")
+            if len(changed_keys) > 5:
+                print(f"       ... and {len(changed_keys) - 5} more")
+
+            for key in changed_keys:
+                changes[key] = pack_values[key]
+
+        # If no changes, return None
         if not changes:
             print(f"    → NO CHANGES")
             return None
@@ -351,19 +419,52 @@ class ConfigpackMigrator:
             'changes': changes
         }
 
-    def _parse_keyvalue(self, lines: List[str]) -> Dict[str, str]:
+    def _parse_keyvalue(self, lines: List[str], separator: str = None) -> Dict[str, str]:
         """
-        Parse key:value lines into a dict.
+        Parse key:value or key=value lines into a dict.
+
+        Args:
+            lines: File lines
+            separator: Separator to use (: or =). If None, auto-detect.
 
         Returns:
             {key: value}
         """
+        # Auto-detect separator if not provided
+        if separator is None:
+            separator = self._detect_keyvalue_separator(lines)
+
         values = {}
         for line in lines:
-            if ':' in line:
-                key, value = line.split(':', 1)
-                values[key] = value
+            stripped = line.strip()
+            # Skip comments and blank lines
+            if not stripped or stripped.startswith('#') or stripped.startswith('//'):
+                continue
+
+            if separator in line:
+                key, value = line.split(separator, 1)
+                values[key.strip()] = value.strip()
         return values
+
+    def _detect_keyvalue_separator(self, lines: list) -> str:
+        """
+        Auto-detect separator used in key-value file (: or =).
+
+        Returns:
+            Detected separator (: or =), defaults to :
+        """
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith('#') or line.startswith('//'):
+                continue
+
+            # Check which separator appears first
+            if '=' in line:
+                return '='
+            elif ':' in line:
+                return ':'
+
+        return ':'  # Default
 
     def _diff_json(self, base_file: Path, pack_file: Path, rel_path: str) -> Dict[str, Any]:
         """
@@ -458,6 +559,12 @@ class ConfigpackMigrator:
                     f.write(f"    source: {patch['source']}\n")
                     f.write(f"    destination: {patch['destination']}\n")
                     f.write(f'    description: "TODO: Describe why this file is added"\n\n')
+
+                elif patch_type == 'file_replace':
+                    f.write(f"  - type: file_replace\n")
+                    f.write(f"    source: {patch['source']}\n")
+                    f.write(f"    destination: {patch['destination']}\n")
+                    f.write(f'    description: "TODO: Describe why this file is replaced"\n\n')
 
                 elif patch_type == 'cfg_patch':
                     file_name = Path(patch['file']).name
@@ -557,9 +664,38 @@ class ConfigpackMigrator:
                     f.write(f'    description: "TODO: Describe what changes in {file_name}"\n')
                     f.write(f"    changes:\n")
 
-                    # Format key:value changes
-                    for key, value in patch['changes'].items():
-                        f.write(f'      {key}: {value}\n')
+                    changes = patch['changes']
+
+                    # Simple value changes first (not add/remove/replace)
+                    for key, value in changes.items():
+                        if key not in ['add', 'remove', 'replace']:
+                            # Escape quotes in value
+                            value_str = str(value).replace('"', '\\"')
+                            f.write(f'      {key}: "{value_str}"\n')
+
+                    # Add operations
+                    if 'add' in changes:
+                        f.write(f"      add:\n")
+                        for key, value in changes['add'].items():
+                            value_str = str(value).replace('"', '\\"')
+                            f.write(f'        {key}: "{value_str}"\n')
+
+                    # Remove operations
+                    if 'remove' in changes:
+                        f.write(f"      remove:\n")
+                        for key in changes['remove']:
+                            f.write(f'        - {key}\n')
+
+                    # Replace operations (if implemented)
+                    if 'replace' in changes:
+                        f.write(f"      replace:\n")
+                        for repl in changes['replace']:
+                            f.write(f'        - old: {repl["old"]}\n')
+                            f.write(f'          new: {repl["new"]}\n')
+                            if 'value' in repl:
+                                value_str = str(repl['value']).replace('"', '\\"')
+                                f.write(f'          value: "{value_str}"\n')
+
                     f.write('\n')
 
                 elif patch_type == 'script_patch':
@@ -608,8 +744,7 @@ def main():
             print("\n✓ Migration complete!")
             print(f"\nNext steps:")
             print(f"  1. Review configpacks/{pack_name}.yaml")
-            print(f"  2. Move unique files to configpacks/_files/{pack_name}/")
-            print(f"  3. Test: python tools/packbuilder.py build {pack_name}")
+            print(f"  2. Test: python tools/packbuilder.py build {pack_name}")
         else:
             print("\nMigration cancelled.")
 
