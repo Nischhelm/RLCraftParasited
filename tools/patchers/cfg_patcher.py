@@ -57,6 +57,7 @@ class CfgPatcher:
         section_stack = []  # Stack to track nested sections
         in_list = False
         list_key = None
+        applied_keys = {}  # Track which keys have been applied per section
         i = 0
 
         while i < len(lines):
@@ -78,7 +79,42 @@ class CfgPatcher:
 
             # Check if exiting a section
             if line.strip() == '}':
+                # Before closing, add any unapplied keys for this section
                 if section_stack:
+                    current_section = '.'.join(section_stack)
+                    if current_section in changes:
+                        # Get all keys that should be in this section
+                        all_keys = set(changes[current_section].keys())
+                        # Get keys that were already applied
+                        applied = applied_keys.get(current_section, set())
+                        # Find unapplied keys
+                        unapplied = all_keys - applied
+
+                        # Add unapplied keys (skip list-format keys with add/remove/replace operations)
+                        for key in sorted(unapplied):
+                            value = changes[current_section][key]
+                            # Skip list operations (those with add/remove/replace dict)
+                            if isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace']):
+                                continue  # Can't add new lists, only modify existing ones
+                            # Skip list values (those that should be in list format)
+                            if isinstance(value, list):
+                                # For new lists, we need to create them with proper format
+                                # Extract type and key from full_key (e.g., "S:\"NewKey\"")
+                                key_match = re.match(r'^([BIDSF]):"?([^"]+)"?$', key)
+                                if key_match:
+                                    type_prefix = key_match.group(1)
+                                    key_name = key_match.group(2)
+                                    result.append(f'    {type_prefix}:"{key_name}" <')
+                                    for item in value:
+                                        result.append(f"        {item}")
+                                    result.append("     >")
+                            else:
+                                # Simple key=value
+                                # Convert Python bool to lowercase string
+                                if isinstance(value, bool):
+                                    value = str(value).lower()
+                                result.append(f"    {key}={value}")
+
                     section_stack.pop()
                 result.append(line)
                 i += 1
@@ -87,16 +123,32 @@ class CfgPatcher:
             # Get current full section path
             current_section = '.'.join(section_stack) if section_stack else None
 
-            # Check for list format: I:"Key" <
-            list_start_match = re.match(r'^\s*([BIDSF]):"([^"]+)"\s*<\s*$', line.strip())
+            # Check for list format: I:"Key" < or I:Key <
+            list_start_match = re.match(r'^\s*([BIDSF]):(?:"([^"]+)"|([a-z0-9_]+))\s*<\s*$', line.strip(), re.IGNORECASE)
             if list_start_match and section_stack and current_section in changes:
                 type_prefix = list_start_match.group(1)
-                key = list_start_match.group(2)
-                full_key = f'{type_prefix}:"{key}"'
+                # Key is in group 2 (quoted) or group 3 (unquoted)
+                key = list_start_match.group(2) or list_start_match.group(3)
+                # Try both quoted and unquoted formats for lookup
+                full_key_quoted = f'{type_prefix}:"{key}"'
+                full_key_unquoted = f'{type_prefix}:{key}'
 
-                if full_key in changes[current_section]:
+                # Check which format is used in changes dict
+                if full_key_quoted in changes[current_section]:
+                    full_key = full_key_quoted
+                elif full_key_unquoted in changes[current_section]:
+                    full_key = full_key_unquoted
+                else:
+                    full_key = None
+
+                if full_key and full_key in changes[current_section]:
                     # This is a list we want to modify
                     new_values = changes[current_section][full_key]
+
+                    # Mark as applied
+                    if current_section not in applied_keys:
+                        applied_keys[current_section] = set()
+                    applied_keys[current_section].add(full_key)
 
                     # Check if this is the new add/remove/replace format
                     if isinstance(new_values, dict) and any(k in new_values for k in ['add', 'remove', 'replace']):
@@ -174,13 +226,29 @@ class CfgPatcher:
                 if key_match:
                     indent = key_match.group(1)
                     type_prefix = key_match.group(2)
-                    key = key_match.group(3)
+                    key_raw = key_match.group(3)
                     old_value = key_match.group(4)
 
-                    # Check if this key should be changed
-                    full_key = f"{type_prefix}:{key}"
-                    if full_key in changes[current_section]:
+                    # Remove quotes if present for normalization
+                    key_name = key_raw.strip('"')
+                    # Try both quoted and unquoted formats for lookup
+                    full_key_quoted = f'{type_prefix}:"{key_name}"'
+                    full_key_unquoted = f'{type_prefix}:{key_name}'
+
+                    # Check which format is used in changes dict
+                    if full_key_quoted in changes[current_section]:
+                        full_key = full_key_quoted
+                    elif full_key_unquoted in changes[current_section]:
+                        full_key = full_key_unquoted
+                    else:
+                        full_key = None
+
+                    if full_key and full_key in changes[current_section]:
                         new_value = changes[current_section][full_key]
+                        # Mark as applied
+                        if current_section not in applied_keys:
+                            applied_keys[current_section] = set()
+                        applied_keys[current_section].add(full_key)
                         # Convert Python bool to lowercase string
                         if isinstance(new_value, bool):
                             new_value = str(new_value).lower()
@@ -232,9 +300,11 @@ mobBaseHealth {
                 'entitiesalwaysinfernal': {
                     'B:EntityAmalgalich': True,
                     'B:EntityDestroyer': True,
+                    'B:EntityNewMob': True,  # NEW KEY - doesn't exist in original
                 },
                 'mobBaseHealth': {
                     'I:EntityAmalgalich': 800,
+                    'I:EntityNewMob': 1200,  # NEW KEY - doesn't exist in original
                 }
             }
         }
