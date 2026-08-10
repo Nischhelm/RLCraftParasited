@@ -168,8 +168,6 @@ patches:
       "main.client":
         B:"Render Difficulty Meter": true
         B:"Render Difficulty Meter Always": true
-      "main.player.health":
-        I:"Min Health": 2
       "main.mob":
         S:"Damage Modifier": 3.0
         S:"Max Damage Bonus": 69420.0

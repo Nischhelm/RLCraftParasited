@@ -57,7 +57,6 @@ patches:
         I:"Health Lost On Death": 100
 
       ## From here this is copy-pasted from hcc. if for whatever reason someone wants omega without hcc, this would need to be left out
-        I:"Min Health": 2
       "main.client":
         B:"Render Difficulty Meter": true
         B:"Render Difficulty Meter Always": true
