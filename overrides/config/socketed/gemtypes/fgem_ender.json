@@ -1,5 +1,5 @@
 {
-  "Display Name": "Ender Gem",
+  "Display Name": "socketed.tooltip.default.ender_gem",
   "Gem Tier": 2,
   "Text Color": "DARK_RED",
   "Effects": [
@@ -16,7 +16,7 @@
           "Target Type": "Self AOE"
         }
       ],
-	  "Tooltip Key": "Warps enemies around you upon dodging",
+	  "Tooltip Key": "socketed.tooltip.default.ender_gem.desc",
       "Effect Type": "Potion",
       "Equipment Slot Type": "FEET"
     }

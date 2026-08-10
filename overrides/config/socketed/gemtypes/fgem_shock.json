@@ -1,5 +1,5 @@
 {
-  "Display Name": "Shock Gem",
+  "Display Name": "socketed.tooltip.default.shock_gem",
   "Gem Tier": 1,
   "Text Color": "GOLD",
   "Effects": [
@@ -14,7 +14,7 @@
           "Target Type": "Other"
         }
       ],
-      "Tooltip Key": "Explode upon dodging",
+      "Tooltip Key": "socketed.tooltip.default.shock_gem.desc",
       "Effect Type": "Explosion",
       "Equipment Slot Type": "FEET"
     },
