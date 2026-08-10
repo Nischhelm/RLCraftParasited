@@ -34,6 +34,7 @@ class ConfigPack:
     patches: List[Dict[str, Any]]
     files: Optional[List[Dict[str, Any]]]
     build_config: Dict[str, Any]
+    inherits: Optional[str] = None  # Parent configpack name to inherit from
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'ConfigPack':
@@ -44,7 +45,8 @@ class ConfigPack:
             description=data.get('description', ''),
             patches=data.get('patches', []),
             files=data.get('files', []),
-            build_config=data.get('build', {})
+            build_config=data.get('build', {}),
+            inherits=data.get('inherits')
         )
 
 
@@ -80,20 +82,30 @@ class PackBuilder:
         if self.verbose:
             print(f"  {message}")
 
-    def load_configpack(self, name: str) -> ConfigPack:
+    def load_configpack(self, name: str, _inheritance_chain: Optional[List[str]] = None) -> ConfigPack:
         """
-        Load and parse configpack YAML definition.
+        Load and parse configpack YAML definition with inheritance support.
 
         Args:
             name: Name of the configpack (without .yaml extension)
+            _inheritance_chain: Internal param to detect circular inheritance
 
         Returns:
-            ConfigPack object
+            ConfigPack object (merged with parent if inherits is set)
 
         Raises:
             FileNotFoundError: If configpack YAML doesn't exist
             yaml.YAMLError: If YAML is malformed
+            ValueError: If circular inheritance is detected
         """
+        # Circular inheritance detection
+        if _inheritance_chain is None:
+            _inheritance_chain = []
+
+        if name in _inheritance_chain:
+            chain_str = " -> ".join(_inheritance_chain + [name])
+            raise ValueError(f"Circular inheritance detected: {chain_str}")
+
         yaml_path = self.configpacks_dir / f"{name}.yaml"
 
         if not yaml_path.exists():
@@ -104,7 +116,42 @@ class PackBuilder:
         with open(yaml_path) as f:
             data = yaml.safe_load(f)
 
-        return ConfigPack.from_dict(data)
+        pack = ConfigPack.from_dict(data)
+
+        # Handle inheritance
+        if pack.inherits:
+            self.log(f"  → Inheriting from: {pack.inherits}")
+            parent = self.load_configpack(
+                pack.inherits,
+                _inheritance_chain + [name]
+            )
+            pack = self._merge_configpacks(parent, pack)
+
+        return pack
+
+    def _merge_configpacks(self, parent: ConfigPack, child: ConfigPack) -> ConfigPack:
+        """
+        Merge parent and child configpacks (inheritance).
+
+        Child overrides parent where conflicts exist.
+        Patches are applied sequentially: parent patches first, then child patches.
+
+        Args:
+            parent: Parent configpack
+            child: Child configpack (inherits from parent)
+
+        Returns:
+            Merged ConfigPack with child values taking precedence
+        """
+        return ConfigPack(
+            name=child.name,  # Child name overrides
+            version=child.version or parent.version,  # Child version if set, else parent
+            description=child.description or parent.description,
+            patches=parent.patches + child.patches,  # Parent patches first, then child (last wins)
+            files=(parent.files or []) + (child.files or []),
+            build_config={**parent.build_config, **child.build_config},  # Child overrides parent
+            inherits=None  # Inheritance already resolved
+        )
 
     def list_configpacks(self) -> List[str]:
         """
@@ -351,20 +398,22 @@ class PackBuilder:
                 if not file_rel:
                     raise ValueError(f"{patch_type} requires 'file' field")
 
-                # Source: original file in overrides/
-                source_file = self.overrides_dir / file_rel
-
                 # Destination: same path in temp directory
                 dest_file = target_dir / file_rel
-
-                # Copy the original file to a temp location for patching
                 dest_file.parent.mkdir(parents=True, exist_ok=True)
 
-                if source_file.exists():
-                    shutil.copy2(source_file, dest_file)
-                else:
-                    # File doesn't exist in base - create empty file (for script patches that create new files)
-                    dest_file.touch()
+                # SEQUENTIAL PATCHING: Check if file already exists in temp_dir (from previous patch)
+                if not dest_file.exists():
+                    # File not yet in temp - copy from overrides/ as base
+                    source_file = self.overrides_dir / file_rel
+
+                    if source_file.exists():
+                        shutil.copy2(source_file, dest_file)
+                    else:
+                        # File doesn't exist in base - create empty file (for script patches that create new files)
+                        dest_file.touch()
+
+                # If file exists in temp_dir, use that version (from previous patch) - enables inheritance!
 
                 # Apply patch to the file in temp directory
                 if patch_type == 'cfg_patch':
