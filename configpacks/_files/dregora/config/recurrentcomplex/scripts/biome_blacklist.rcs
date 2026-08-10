@@ -1,0 +1,6 @@
+# Prevent all structures from generating in these biomes
+onStructureGenerationStart {
+    if (biome.id == "nuclearcraft:nuclear_wasteland" || biome.id == "openterraingenerator:overworld_ruins_of_blight" || biome.id == "openterraingenerator:overworld_nuclear_ruins" || biome.id == "openterraingenerator:overworld_lair_of_the_thing"){
+        cancel()
+    }
+}

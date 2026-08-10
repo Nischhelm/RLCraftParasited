@@ -1,0 +1,34 @@
+tile.contentcreator.iron_plate_stairs_reinforced.name=Reinforced Iron Plate Stairs
+tile.contentcreator.iron_plate_slab_reinforced.name=Reinforced Iron Plate Slab
+block.contentcreator.iron_plate_stairs_reinforced.name=Reinforced Iron Plate Stairs
+block.contentcreator.iron_plate_slab_reinforced.name=Reinforced Iron Plate Slab
+
+tile.contentcreator.concrete_stairs_reinforced.name=Reinforced Concrete Stairs
+tile.contentcreator.concrete_slab_reinforced.name=Reinforced Concrete Slab
+block.contentcreator.concrete_stairs_reinforced.name=Reinforced Concrete Stairs
+block.contentcreator.concrete_slab_reinforced.name=Reinforced Concrete Slab
+
+tile.contentcreator.cobbled_deepslate_slab.name= Cobbled Deepslate Slab
+tile.contentcreator.cobbled_deepslate_stairs.name= Cobbled Deepslate Stairs
+block.contentcreator.cobbled_deepslate_slab.name= Cobbled Deepslate Slab
+block.contentcreator.cobbled_deepslate_stairs.name= Cobbled Deepslate Stairs
+
+tile.contentcreator.deepslate_brick_stairs.name= Deepslate Brick Stairs
+tile.contentcreator.deepslate_brick_slab.name= Deepslate Brick Slab
+block.contentcreator.deepslate_brick_stairs.name= Deepslate Brick Stairs
+block.contentcreator.deepslate_brick_slab.name= Deepslate Brick Slab
+
+tile.contentcreator.deepslate_stairs.name= Deepslate Stairs
+tile.contentcreator.deepslate_slab.name= Deepslate Slab
+block.contentcreator.deepslate_stairs.name= Deepslate Stairs
+block.contentcreator.deepslate_slab.name= Deepslate Slab
+
+tile.contentcreator.deepslate_tile_stairs.name= Deepslate Tile Stairs
+tile.contentcreator.deepslate_tile_slab.name= Deepslate Tile Slab
+block.contentcreator.deepslate_tile_stairs.name= Deepslate Tile Stairs
+block.contentcreator.deepslate_tile_slab.name= Deepslate Tile Slab
+
+tile.contentcreator.polished_deepslate_stairs.name= Polished Deepslate Stairs
+tile.contentcreator.polished_deepslate_slab.name= Polished Deepslate Slab
+block.contentcreator.polished_deepslate_stairs.name= Polished Deepslate Stairs
+block.contentcreator.polished_deepslate_slab.name= Polished Deepslate Slab
