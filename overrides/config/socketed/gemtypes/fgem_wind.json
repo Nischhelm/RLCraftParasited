@@ -1,5 +1,5 @@
 {
-  "Display Name": "Wind Gem",
+  "Display Name": "socketed.tooltip.default.wind_gem",
   "Gem Tier": 1,
   "Text Color": "AQUA",
   "Effects": [
@@ -13,7 +13,7 @@
           "Target Type": "Self"
         }
       ],
-	  "Tooltip Key": "Greatly increased dodging power",
+	  "Tooltip Key": "socketed.tooltip.default.wind_gem.desc1",
       "Effect Type": "Dodge Force",
       "Equipment Slot Type": "FEET"
     },
@@ -29,7 +29,7 @@
           "Target Type": "Self"
         }
       ],
-	  "Tooltip Key": "Grants Slowfall upon dodging",
+	  "Tooltip Key": "socketed.tooltip.default.wind_gem.desc2",
       "Effect Type": "Potion",
       "Equipment Slot Type": "FEET"
     },
@@ -46,7 +46,7 @@
           "Target Type": "Other"
         }
       ],
-      "Tooltip Key": "Throws targets on hit",
+      "Tooltip Key": "socketed.tooltip.default.wind_gem.desc3",
       "Effect Type": "Knockback",
       "Equipment Slot Type": "HAND"
     },
