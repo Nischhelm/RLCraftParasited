@@ -1,0 +1,29 @@
+RLCraft Dregora v1.0.5 HOTFIX (1.0.4 didn't happen edition):
+
+- Fixed barrier blocks in brutal tower breaking with any item
+- Fixed Tunneling breaking Barrier blocks
+- Fixed certain blocks not breaking correctly when holding any item
+- Fixed SRParasites spawning in center of world
+- Fixed SRParasites not spawning as much as they should in Lost Cities
+- Fixed XP Orbs being bugged (Removed Clumps, wasn't mean to be added)
+- Fixed glitched fog effects (Removed Fogger)
+- Reverted global fog change
+- Removed Dynamic Darkness
+- Fixed Lycanite flying mobs not flying correctly (removed Bounceable)
+- Fixed a ton of custom weapons only doing 1 damage due to missing attributes (won't fix already generated custom weapons)
+- Disabled phases for now (was not working as intended, may come back for v1.1)
+- Removed Assimilated Squids in Oceans (oops)
+- Certain SRParasites now have a rare chance to spawn naturally in overworld ruined cities (separate from spawners)
+- SRParasites mobs natural armor nerfed if in Overworld only
+- Fixed infinite health bug (again)
+- Removed city wall generation that was not working correctly
+- Fixed shocked throwing axe not having requirements
+- Fixed Instability+Spectral Dagger NaN breading your health
+- Fixed Corrosion and Bless tooltips
+- Fixed Observers triggering automatically on OTG Worldgen
+- Blacklisted Mimics from obtaining COTH
+- Viral is now 50%
+- Fixed XP Dupe with some of the special Daggers
+- Reverted BHMenu mod to hopefully fix Public Server List suddenly not working >:|
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES (for servers and manual installs.  Curseforge launcher will update fine, but backup your options.txt if you don't want to lose custom keybinds)!

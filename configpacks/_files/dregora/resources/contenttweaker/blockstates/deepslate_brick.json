@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "contenttweaker:blocks/deepslate_brick",
+      "particle": "contenttweaker:blocks/deepslate_brick"
+    },
+    "model": "contenttweaker:deepslate_brick",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

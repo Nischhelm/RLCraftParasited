@@ -1,0 +1,21 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"all": "contenttweaker:blocks/radiation_block",
+		"top": "contenttweaker:blocks/reinforced_concrete"
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down":  { "texture": "#top", "cullface": "down" },
+				"up":    { "texture": "#top", "cullface": "up" },
+				"north": { "texture": "#all", "cullface": "north" },
+				"south": { "texture": "#all", "cullface": "south" },
+				"west":  { "texture": "#all", "cullface": "west" },
+				"east":  { "texture": "#all", "cullface": "east" }
+			}
+		}
+	]
+}

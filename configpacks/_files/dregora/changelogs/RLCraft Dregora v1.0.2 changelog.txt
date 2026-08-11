@@ -1,0 +1,13 @@
+RLCraft Dregora v1.0.1 HOTFIX (painful 5AM headache edition):
+
+- Reworked many loottables that effect 
+- Fixed SRParasites dealing more damage in Overworld instead of less (oops math, blame Eagle 3am brain)
+- Remoced accidental I&F Ghost spawners
+- Fixed Killer Rabbits not killing you (removed from EpicSeige AI as this was breaking them)
+- Lowered wandering Cyclops spawn chance
+- Lowered chance for I&F Trolls to spawn outside
+- Restricted I&F Trolls spawning outside to specific biomes only (such as roofed forests with cover from sunlight)
+- Added Herobrine hat to emissive textures for eye glowing support of spookyness
+
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES!

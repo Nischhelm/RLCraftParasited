@@ -1,0 +1,46 @@
+{
+  "name": "lavabiome",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": false,
+  "mobCountMin": 1,
+  "mobCountMax": 3,
+  "ignoreDimensions": true,
+  "ignoreBiomes": false,
+  "ignoreLightLevel": true,
+  "dropsRequirePlayerDamage": true,
+  "conditions": [
+    {
+      "type": "world",
+      "weather": "clear",
+      "biomeIds": ["biomesoplenty:volcanic_island"]
+    }
+  ],
+  "triggers": [
+    {
+      "type": "world",
+      "chance": 0.25,
+      "tickRate": 600
+    }
+  ],
+  "locations": [
+    {
+      "type": "random",
+      "rangeMin": [
+        42,
+        0,
+        42
+      ],
+      "rangeMax": [
+        32,
+        48,
+        32
+      ],
+      "sorting": "random",
+      "listType": "whitelist",
+      "limit": 32,
+      "solidGround": true,
+      "underground": false
+    }
+  ]
+}

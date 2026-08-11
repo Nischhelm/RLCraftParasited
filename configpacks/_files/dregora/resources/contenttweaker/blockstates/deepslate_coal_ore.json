@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "contenttweaker:blocks/deepslate_coal_ore",
+      "particle": "contenttweaker:blocks/deepslate_coal_ore"
+    },
+    "model": "contenttweaker:deepslate_coal_ore",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

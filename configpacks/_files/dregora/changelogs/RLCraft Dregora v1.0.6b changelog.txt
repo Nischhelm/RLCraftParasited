@@ -1,0 +1,6 @@
+RLCraft Dregora v1.0.6b HOTFIX (Nischi & KameiB pulled a Eagle edition):
+
+- Fixed loottables farmland, bunker & moderncity common not spawning
+- Fixed dragon bones not dropping
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES (for servers and manual installs.  Curseforge launcher will update fine, but backup your options.txt if you don't want to lose custom keybinds)!

@@ -1,0 +1,211 @@
+RLCraft Dregora v1.1.1 [Tweaks & Bugfixes Patch]
+
+
+
+Patch fixing some of the more pressing issues that came with the previous version. Alongside some tweaks and additions enriching your gameplay experience! 
+
+
+
+==============================================
+Contributors: https://dregorarl.wiki.gg/wiki/Contributors
+==============================================
+
+
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL!
+
+
+
+- To get the most out of the RLCraft Dregora modpack we recommend using 6GB of RAM.
+
+
+
+====================
+CHANGELOG for v1.1.1:
+====================
+
+
+
+Mods Updated:
+- Updated SRPMixins
+- Updated Optifine CIT patch
+- Updated Antique Atlas Auto Markers
+- Updated spartan emissive resourcepack
+- Updated RLLuck (Luckified)
+- Updated FermiumMixins
+
+
+
+Performance:
+- Replaced CityDestructor01 through 08 for Nischi's better and more performant CityDestructors
+- Fixed treegen performance (pretty big one if you'd ask me)
+- Increased city generation performance (Yep Again!)
+
+
+
+====================
+RLLuck(Luckified):
+====================
+- Added a minimal amount of enchantability if you got luck effect
+
+
+
+====================
+DregoraRL/Underneath:
+====================
+- Replaced brutal tower bottom floor grates for concrete hazard blocks due to loot falling into the void
+- Fixed CreeperRuin still having pig spawners
+- Disabled biome blocks in underneath structure causing the structure to sometimes be obstructed by other blocks
+- Removed all negative attributes from contaminated items except for the radiation itself
+- Fixed a large quantity of invalid resources within Dregora
+- Fixed a crash caused by Wasteland Mountain Edge
+- Reduced amount of Mana Candy in chest loot
+- Removed a leftover entry of subject english from the loottables
+- Changed Arachna and Arachno Trites in the brutal tower infernal capabilities
+- Gave Arachnit Trites a randomized set of infernal capabilities
+
+
+
+====================
+NuclearCraft:
+====================
+- Fixed Melter recipes missing through CraftTweaker
+- Lowered locational armor on hazmat suit but increased durability
+- Fixed poison damaging hazmat suit through eaglemixins
+
+====================
+MaterialTweaker:
+====================
+- Variedcommodities hammer is now repairable using iron
+
+====================
+FermiumMixins:
+====================
+- Fixed Dynamic Surroundings chat bubbles for entities containing underscores in their namespaced ID's
+
+
+
+====================
+LycanitesMobs:
+====================
+- Tweaked lavaspawner causing lava mobs to overspawn in volcanic biomes
+
+
+====================
+CraftTweaker:
+====================
+- Added recipe to make (not a lot of) paper from books using ntp knifes!
+- Made Reinforced Concrete & Reinforced Iron full blocks explosion resistant
+- Removed redundant CraftTweaker debug logging which may have been the cause of bad performance.
+
+
+
+====================
+EagleMixins:
+====================
+- Fixed Sussyberian not being suss any longer after reroll
+- Fixed Hazmat suit not protecting against radiation
+- Fixed radiation buff for regular entities & gave them fire immunity above 90% max radiation ( 900 total rads)
+- Radiation Buffed entities now also show the particle effect of last potion buff applied
+- Disabled bed obstruction for now
+- Removed SpawnInjector attributing to lava mobs over spawn in volcanic biomes
+- Added a conductivity level of 1 to studded club
+
+
+
+====================
+SetBonus:
+====================
+- Buffed radiation protection for Soldier, Power Armor and Composite Armor & made their bonuses always visible
+
+
+
+====================
+Antique Atlas Auto Marker:
+====================
+- Added 10 new Antique Atlas markers by knight gallade
+- Fixed all OTG biomes displaying as PLAINS
+- Gave Abyssal Rift Antique Atlas Tiles
+
+
+
+====================
+Reskillable:
+====================
+- Gave variedcommodities:soldier, prototype and nanorum armor reskillable requirements
+- Variedcommodities cleaver now has a attack requirement of 8
+
+
+
+====================
+BetterQuesting:
+====================
+- Removed NBT requirement from hazmat quest making the quest completable with a complete yet damaged hazmat suit
+
+
+
+====================
+SRPMixins/SRParasites:
+====================
+- Enabled SRP Colonies
+- Fixed infestation growing uncontrollably
+- Fixed variant parasites getting stat increase applied twice in LC
+- Remove Hijacked Golem from spawn list
+- fixed some minor typos in srp configs (herd -> hostii and biomeoplenty->biomesoplenty)
+
+
+
+====================
+Miscellaneous:
+====================
+- Added Lang Key for Alpha Slabs
+- Disabled world saves being logged due to excessive log spam
+- Disabled mixin compat warning that would sometimes incorrectly appear when people modified their installs, meant for debugging only anyway
+
+
+
+==================================
+Big thanks to all those involved with development:
+==================================
+
+
+
+Yep this indeed is the old thank you page which I will be reposting for all minor versions because it's still applicable :D
+
+Thaaa Shivaxiii!!!! - The Legend himself for being my personal technically unpaid coach in all of this!
+NLBlackHeavenNL - Sorry I couldn't put my own family first, Shivaxi would unfriend me if I didn't put him above you!
+FonnyMunkey - For Coaching my Coach!!! (And the painting ideas!!! And all of his crazy optimizations made together with Meldexun, Kotlin and Nischelm! And much, much more!)
+Meldexun - For helping me learn basic code without saying "O God" all the time! & EagleMixins Additions & Optimizations!!! :D + More!
+Nischelm - For Helping me learn basic coding whilst saying "O God" all the time! & your many additions to EagleMixins + the creation of SRPMixins & SME & The Min/Max Painting & the many great chats over dev!
+Artsy - Those are a LOT of books lol! Also Thanks for the other new texture packs and the LegendaryTooltip upload! :D
+Kotlin - You better NOT pull that uno-reverse on me next time we meet!!! Let me thank you for your efforts on Eaglemixins and I&F next time we meet in October!!
+Fantasy - My partner's nickname for giving me inspiration and support in making this all happen and helping with idea's for the Looooorrreeeee!
+Barryyyyy!!! - Now you are also part of the credits for no apparent reason :D But nah, for real I know you were and are a great help to Shivaxi which indirectly also was a great help to me!
+Rayquazafallout - We really should do a meetup once with some of the other developers and throw a party for
+Fonny who would've had an aneurism handling all the bugs if it wasn't for you lol.
+Iqury - Congratz on your first mod! Looking forward to seeing all the Amphithere variations :D Oh uh and I should also mention, thanks for blowing things up, helped me with balancing xD! And the epic Viking painting of course!
+CDSTK - Thanks for the great insight when playtesting! Your feedback made it so those who follow have a more balanced experience!
+Stranding - The resident radiation expert! Oh dear, what would the community have done without all the balancing you brought to the radiation system xD
+Eclipse - Thanks for the colourful idea's on what to do with that left-over skyscraper, it looks amazing now lol! And for the SRP rebalance tweaks! And moaaarr!!!
+EmeraldMintLeaf - For the epic Dragon painting!! and the epic Forest painting!!! And the epic Green Serpent Painting!!!
+Beckadam01 - For Helping me through the last rough nights, had fun chatting over dev chat lol and looking forward to the awesome stuff you are cooking up!
+KameiB - And I feel tired after writing this changelog, let alone the whole rework of loottables which you pulled off! I'll pay for your drinks once we meet up in October!!!
+TwillightStarArt - For the epic sea serpent art!
+Hecameme - For the Fire & Water Art!
+Zoidzz_ - For the Sunset Tree Painting!
+NotKotlin - For not making a mess out of things this time >:| (I hope?)
+
+
+The Community!! - For being a constant motivator and source of inspiration, loved the reactions I've seen these last few months over discord, YouTube, in my DM's and awkwardly enough sometimes in Real Life too lol and of course from streamers such as Captain Sparkle and his face, that moment in the club haha, that was golden!! Really loved that! Or the stupidly long 500 days from DefinitelyDead & Phaganax along with many other streamers like Kiwi, X33n, Pete, Griippi, Waffles, Nanonaitor, Suev, Wrld, Stingin, Neurotic Goose, Clover of Shurima, Shroud, XEmtek, MeeraRL and the o so many others I wished I had watched but didn't had the time for to because I also had to create a 1.1.0 version for the modpack xD!
+
+
+
+Thanks again for all the feedback both the praising as the critical ones such as those from Pooler, because we all communicate for we care and I appreciate that!
+
+
+
+And Remember everyone, Milk is Creative!
+
+
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL!
