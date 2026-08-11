@@ -71,8 +71,23 @@ class JsonPatcher:
 
         # Apply JSON patch operations
         patch_ops = patch['changes']
+
+        # Pre-process custom operations (not part of RFC 6902)
+        standard_ops = []
+        for op in patch_ops:
+            if op.get('op') == 'remove_by_key':
+                # Custom operation: remove array element by key match
+                self._apply_remove_by_key(data, op)
+            elif op.get('op') == 'replace_by_key':
+                # Custom operation: replace array element by key match
+                self._apply_replace_by_key(data, op)
+            else:
+                # Standard RFC 6902 operation
+                standard_ops.append(op)
+
+        # Apply standard RFC 6902 operations
         try:
-            patched_data = jsonpatch.apply_patch(data, patch_ops)
+            patched_data = jsonpatch.apply_patch(data, standard_ops)
         except jsonpatch.JsonPatchException as e:
             raise ValueError(f"Failed to apply JSON patch to {file_path}: {e}")
 
@@ -183,7 +198,7 @@ class JsonPatcher:
             raise ValueError("JSON patch 'changes' must be a list")
 
         # Validate each operation
-        valid_ops = {'add', 'remove', 'replace', 'move', 'copy', 'test'}
+        valid_ops = {'add', 'remove', 'replace', 'move', 'copy', 'test', 'remove_by_key', 'replace_by_key'}
         for i, change in enumerate(changes):
             if 'op' not in change:
                 raise ValueError(f"Operation {i} missing 'op' field")
@@ -205,6 +220,103 @@ class JsonPatcher:
                     raise ValueError(f"Operation {i} ({change['op']}) requires 'from' field")
 
         return True
+
+    def _apply_remove_by_key(self, data: Dict[str, Any], op: Dict[str, Any]):
+        """
+        Custom operation: Remove array element by key match.
+
+        Format:
+            {
+                'op': 'remove_by_key',
+                'path': '/files',
+                'key': 'projectID',
+                'value': 226406
+            }
+
+        This removes the first array element where element[key] == value.
+        """
+        path = op.get('path', '/')
+        key = op.get('key')
+        value = op.get('value')
+
+        if not key:
+            raise ValueError("remove_by_key operation requires 'key' field")
+        if value is None:
+            raise ValueError("remove_by_key operation requires 'value' field")
+
+        # Navigate to the array
+        if path == '/':
+            target = data
+        else:
+            parts = [p for p in path.split('/') if p]
+            target = data
+            for part in parts:
+                if isinstance(target, dict):
+                    target = target[part]
+                elif isinstance(target, list):
+                    target = target[int(part)]
+
+        # Find and remove element
+        if not isinstance(target, list):
+            raise ValueError(f"remove_by_key requires path to point to an array, got {type(target).__name__}")
+
+        for i, item in enumerate(target):
+            if isinstance(item, dict) and item.get(key) == value:
+                target.pop(i)
+                return
+
+        # Not found - this is a warning, not an error (idempotent)
+        # raise ValueError(f"remove_by_key: No element found with {key}={value}")
+
+    def _apply_replace_by_key(self, data: Dict[str, Any], op: Dict[str, Any]):
+        """
+        Custom operation: Replace array element by key match.
+
+        Format:
+            {
+                'op': 'replace_by_key',
+                'path': '/files',
+                'key': 'projectID',
+                'match': 226406,
+                'value': {'projectID': 226406, 'fileID': 999999, ...}
+            }
+
+        This replaces the first array element where element[key] == match with value.
+        """
+        path = op.get('path', '/')
+        key = op.get('key')
+        match = op.get('match')
+        value = op.get('value')
+
+        if not key:
+            raise ValueError("replace_by_key operation requires 'key' field")
+        if match is None:
+            raise ValueError("replace_by_key operation requires 'match' field")
+        if value is None:
+            raise ValueError("replace_by_key operation requires 'value' field")
+
+        # Navigate to the array
+        if path == '/':
+            target = data
+        else:
+            parts = [p for p in path.split('/') if p]
+            target = data
+            for part in parts:
+                if isinstance(target, dict):
+                    target = target[part]
+                elif isinstance(target, list):
+                    target = target[int(part)]
+
+        # Find and replace element
+        if not isinstance(target, list):
+            raise ValueError(f"replace_by_key requires path to point to an array, got {type(target).__name__}")
+
+        for i, item in enumerate(target):
+            if isinstance(item, dict) and item.get(key) == match:
+                target[i] = value
+                return
+
+        raise ValueError(f"replace_by_key: No element found with {key}={match}")
 
 
 def main():
