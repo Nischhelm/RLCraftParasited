@@ -1,0 +1,30 @@
+name: "RLCraft Parasited"
+version: "Aug 7 2026"
+description: "RLCraft Parasited"
+
+# Build configuration
+build:
+  mode: modpack
+  output_name: "RLCraft Parasited.zip"
+  include:
+    - manifest.json
+    - readme.md
+
+# No patches - just build the base modpack
+patches:
+- type: json_patch
+  file: manifest.json
+  description: "Auto set version"
+  changes:
+  - op: replace
+    path: /version
+    value: "{{version}}"
+
+- type: json_patch
+  file: config/CustomMainMenu/mainmenu.json
+  encoding: latin-1
+  description: "Auto set version"
+  changes:
+    - op: replace
+      path: /labels/rl_craft/text
+      value: "RLCraft Parasited ({{version}})"

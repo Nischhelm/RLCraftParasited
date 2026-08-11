@@ -189,7 +189,7 @@ class KeyValuePatcher:
                     kv_dict[key] = str(value)
 
         # 4. Add operations (append at end)
-        if 'add' in changes:
+        if 'add' in changes and changes['add'] is not None:
             for key, value in changes['add'].items():
                 if key not in kv_dict:  # Avoid duplicates
                     kv_dict[key] = str(value)
