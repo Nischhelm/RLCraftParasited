@@ -18,6 +18,7 @@ import json
 import jsonpatch
 import re
 import shutil
+import hashlib
 
 
 class ConfigpackMigrator:
@@ -49,17 +50,149 @@ class ConfigpackMigrator:
 
         patches = []
 
-        # Find all files in the configpack
+        # Phase 1: Collect all files and categorize them
+        new_files = []  # Files that don't exist in base
+        existing_files = []  # Files that exist and need comparison
+
         for file_path in pack_dir.rglob("*"):
             if file_path.is_file() and not file_path.name.endswith('.zip'):
                 rel_path = file_path.relative_to(pack_dir)
                 base_file = self.overrides_dir / rel_path
 
-                print(f"  Analyzing: {rel_path}")
-
                 if not base_file.exists():
-                    # File doesn't exist in base - add as file_add (NEW FILE)
-                    print(f"    → NEW FILE (will be added via file_add)")
+                    new_files.append((file_path, rel_path))
+                else:
+                    existing_files.append((file_path, rel_path, base_file))
+
+        # Phase 2: Detect complete missing directories and generate folder_add
+        handled_files = set()  # Track files already handled by folder_add
+
+        if new_files:
+            folder_adds = self._detect_folder_adds(new_files, pack_name)
+
+            for folder_source, folder_dest, file_count in folder_adds:
+                print(f"  Detected complete missing directory: {folder_dest}")
+                print(f"    → FOLDER_ADD ({file_count} files)")
+
+                # Move entire folder to configpacks/_files/{pack_name}/
+                source_folder = pack_dir / folder_dest
+                dest_folder = self.configpacks_dir / "_files" / pack_name / folder_dest
+
+                # Only move if source still exists (might have been moved already in a previous run)
+                if not source_folder.exists():
+                    print(f"    → WARNING: Source folder already moved or doesn't exist")
+                    continue
+
+                # Remove destination if it exists
+                if dest_folder.exists():
+                    shutil.rmtree(dest_folder)
+
+                dest_folder.parent.mkdir(parents=True, exist_ok=True)
+
+                # Use shutil.move to move the folder
+                try:
+                    shutil.move(str(source_folder), str(dest_folder))
+                    print(f"    → MOVED to: configpacks/_files/{pack_name}/{folder_dest}")
+                except Exception as e:
+                    print(f"    → ERROR moving folder: {e}")
+                    continue
+
+                patches.append({
+                    'type': 'folder_add',
+                    'source': f'{pack_name}/{folder_dest}',
+                    'destination': str(folder_dest)
+                })
+
+                # Mark all files in this folder as handled
+                for file_path, rel_path in new_files:
+                    if self._is_subpath(rel_path, folder_dest):
+                        handled_files.add(rel_path)
+
+        # Phase 3: Process remaining new files individually
+        for file_path, rel_path in new_files:
+            if rel_path in handled_files:
+                continue  # Already handled by folder_add
+
+            print(f"  Analyzing: {rel_path}")
+            print(f"    → NEW FILE (will be added via file_add)")
+
+            # Move file to configpacks/_files/{pack_name}/
+            files_dest = self.configpacks_dir / "_files" / pack_name / rel_path
+            files_dest.parent.mkdir(parents=True, exist_ok=True)
+
+            # Move (not copy) the file
+            shutil.move(str(file_path), str(files_dest))
+            print(f"    → MOVED to: configpacks/_files/{pack_name}/{rel_path}")
+
+            patches.append({
+                'type': 'file_add',
+                'source': f'{pack_name}/{rel_path}',
+                'destination': str(rel_path)
+            })
+
+        # Phase 4: Process existing files (compare and generate patches)
+        for file_path, rel_path, base_file in existing_files:
+            print(f"  Analyzing: {rel_path}")
+
+            # File exists - compare and generate patches
+            if file_path.suffix == '.cfg':
+                patch = self._diff_cfg(base_file, file_path, str(rel_path))
+                if patch:
+                    patches.append(patch)
+                else:
+                    # No changes - delete the file
+                    file_path.unlink()
+                    print(f"    → DELETED (identical to base)")
+
+            elif file_path.suffix == '.json':
+                patch = self._diff_json(base_file, file_path, str(rel_path))
+                if patch:
+                    patches.append(patch)
+                else:
+                    # No changes - delete the file
+                    file_path.unlink()
+                    print(f"    → DELETED (identical to base)")
+
+            elif file_path.suffix == '.txt' and file_path.name == 'options.txt':
+                # Handle key:value files like options.txt
+                patch = self._diff_keyvalue(base_file, file_path, str(rel_path))
+                if patch:
+                    patches.append(patch)
+                else:
+                    # No changes - delete the file
+                    file_path.unlink()
+                    print(f"    → DELETED (identical to base)")
+
+            elif file_path.suffix == '.lang':
+                # Handle Minecraft language files (key=value format)
+                patch = self._diff_keyvalue(base_file, file_path, str(rel_path))
+                if patch:
+                    patches.append(patch)
+                else:
+                    # No changes - delete the file
+                    file_path.unlink()
+                    print(f"    → DELETED (identical to base)")
+
+            elif file_path.suffix == '.zs':
+                # For scripts, just note that they're different
+                print(f"    → SCRIPT FILE (needs manual review)")
+                patches.append({
+                    '_comment': f'TODO: Review {rel_path}',
+                    'type': 'script_patch',
+                    'file': str(rel_path),
+                    'mode': 'replace',  # or append/prepend
+                    'content': '# TODO: Add script content'
+                })
+
+            else:
+                # Unknown file type - check if it's different from base
+                if self._files_are_identical(base_file, file_path):
+                    print(f"    → NO CHANGES (binary identical)")
+                    # Delete the identical file
+                    file_path.unlink()
+                    print(f"    → DELETED (identical to base)")
+                else:
+                    print(f"    → UNKNOWN TYPE (will be replaced via file_replace)")
 
                     # Move file to configpacks/_files/{pack_name}/
                     files_dest = self.configpacks_dir / "_files" / pack_name / rel_path
@@ -70,62 +203,10 @@ class ConfigpackMigrator:
                     print(f"    → MOVED to: configpacks/_files/{pack_name}/{rel_path}")
 
                     patches.append({
-                        'type': 'file_add',
+                        'type': 'file_replace',
                         'source': f'{pack_name}/{rel_path}',
                         'destination': str(rel_path)
                     })
-                else:
-                    # File exists - compare and generate patches
-                    if file_path.suffix == '.cfg':
-                        patch = self._diff_cfg(base_file, file_path, str(rel_path))
-                        if patch:
-                            patches.append(patch)
-
-                    elif file_path.suffix == '.json':
-                        patch = self._diff_json(base_file, file_path, str(rel_path))
-                        if patch:
-                            patches.append(patch)
-
-                    elif file_path.suffix == '.txt' and file_path.name == 'options.txt':
-                        # Handle key:value files like options.txt
-                        patch = self._diff_keyvalue(base_file, file_path, str(rel_path))
-                        if patch:
-                            patches.append(patch)
-
-                    elif file_path.suffix == '.lang':
-                        # Handle Minecraft language files (key=value format)
-                        patch = self._diff_keyvalue(base_file, file_path, str(rel_path))
-                        if patch:
-                            patches.append(patch)
-
-                    elif file_path.suffix == '.zs':
-                        # For scripts, just note that they're different
-                        print(f"    → SCRIPT FILE (needs manual review)")
-                        patches.append({
-                            '_comment': f'TODO: Review {rel_path}',
-                            'type': 'script_patch',
-                            'file': str(rel_path),
-                            'mode': 'replace',  # or append/prepend
-                            'content': '# TODO: Add script content'
-                        })
-
-                    else:
-                        # Unknown file type - exists in base but we replace it completely
-                        print(f"    → UNKNOWN TYPE (will be replaced via file_replace)")
-
-                        # Move file to configpacks/_files/{pack_name}/
-                        files_dest = self.configpacks_dir / "_files" / pack_name / rel_path
-                        files_dest.parent.mkdir(parents=True, exist_ok=True)
-
-                        # Move (not copy) the file
-                        shutil.move(str(file_path), str(files_dest))
-                        print(f"    → MOVED to: configpacks/_files/{pack_name}/{rel_path}")
-
-                        patches.append({
-                            'type': 'file_replace',
-                            'source': f'{pack_name}/{rel_path}',
-                            'destination': str(rel_path)
-                        })
 
         # Generate metadata
         pack_def = {
@@ -532,6 +613,113 @@ class ConfigpackMigrator:
 
         return patch
 
+    def _detect_folder_adds(self, new_files: List[Tuple[Path, Path]], pack_name: str) -> List[Tuple[str, Path, int]]:
+        """
+        Detect complete missing directories that should use folder_add instead of individual file_add.
+
+        A directory is considered "complete missing" if:
+        1. The directory doesn't exist in /overrides/
+        2. OR the directory exists but is completely empty
+
+        Args:
+            new_files: List of (file_path, rel_path) tuples for new files
+            pack_name: Name of the configpack
+
+        Returns:
+            List of (folder_source, folder_dest, file_count) tuples
+        """
+        # Group files by their parent directory
+        folder_files = {}
+        for file_path, rel_path in new_files:
+            # Get all parent directories (from deepest to shallowest)
+            current = rel_path.parent
+            while current != Path('.'):
+                if current not in folder_files:
+                    folder_files[current] = []
+                folder_files[current].append(rel_path)
+                current = current.parent
+
+        # Find folders that are completely missing or empty in /overrides/
+        complete_folders = []
+
+        # Sort by depth (shallowest first) to handle parent folders before children
+        # This ensures parent folders are processed first, and child folders are skipped
+        sorted_folders = sorted(folder_files.keys(), key=lambda p: len(p.parts))
+
+        handled_folders = set()
+
+        for folder in sorted_folders:
+            # Skip if this folder is a subpath of an already-handled parent folder
+            if any(self._is_subpath(folder, handled) for handled in handled_folders):
+                continue
+
+            base_folder = self.overrides_dir / folder
+
+            # Check if folder is missing or empty
+            is_missing = not base_folder.exists()
+            is_empty = base_folder.exists() and base_folder.is_dir() and not any(base_folder.iterdir())
+
+            if is_missing or is_empty:
+                # Count files in this folder (from pack)
+                files_in_folder = [f for f in new_files if self._is_subpath(f[1], folder)]
+                file_count = len(files_in_folder)
+
+                # Only create folder_add if it contains at least 2 files
+                # (single files are better handled as file_add)
+                if file_count >= 2:
+                    complete_folders.append((
+                        str(folder),  # source
+                        folder,       # destination
+                        file_count
+                    ))
+                    handled_folders.add(folder)
+
+        return complete_folders
+
+    def _is_subpath(self, path: Path, parent: Path) -> bool:
+        """
+        Check if path is a subpath of parent.
+
+        Args:
+            path: Path to check
+            parent: Potential parent path
+
+        Returns:
+            True if path is under parent, False otherwise
+        """
+        try:
+            path.relative_to(parent)
+            return True
+        except ValueError:
+            return False
+
+    def _files_are_identical(self, file1: Path, file2: Path) -> bool:
+        """
+        Compare two files using SHA256 checksum.
+
+        Args:
+            file1: First file path
+            file2: Second file path
+
+        Returns:
+            True if files are binary identical, False otherwise
+        """
+        # Quick check: if sizes differ, files are different
+        if file1.stat().st_size != file2.stat().st_size:
+            return False
+
+        # Calculate SHA256 checksums
+        hash1 = hashlib.sha256()
+        hash2 = hashlib.sha256()
+
+        with open(file1, 'rb') as f1:
+            hash1.update(f1.read())
+
+        with open(file2, 'rb') as f2:
+            hash2.update(f2.read())
+
+        return hash1.hexdigest() == hash2.hexdigest()
+
     def save_yaml(self, pack_name: str, pack_def: Dict[str, Any]):
         """Save the pack definition to a YAML file with user-friendly formatting."""
         output_file = self.configpacks_dir / f"{pack_name}.yaml"
@@ -564,6 +752,12 @@ class ConfigpackMigrator:
                     f.write(f"    source: {patch['source']}\n")
                     f.write(f"    destination: {patch['destination']}\n")
                     f.write(f'    description: "TODO: Describe why this file is replaced"\n\n')
+
+                elif patch_type == 'folder_add':
+                    f.write(f"  - type: folder_add\n")
+                    f.write(f"    source: {patch['source']}\n")
+                    f.write(f"    destination: {patch['destination']}\n")
+                    f.write(f'    description: "TODO: Describe why this folder is added"\n\n')
 
                 elif patch_type == 'cfg_patch':
                     file_name = Path(patch['file']).name
