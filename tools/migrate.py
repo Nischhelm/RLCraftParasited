@@ -574,11 +574,7 @@ class ConfigpackMigrator:
 
                     # Format changes
                     for section, values in patch['changes'].items():
-                        # Quote section names that contain dots (nested sections)
-                        if '.' in section:
-                            f.write(f'      "{section}":\n')
-                        else:
-                            f.write(f"      {section}:\n")
+                        f.write(f"      {section}:\n")
                         for key, value in values.items():
                             # Check if this is the new add/remove/replace format for lists
                             if isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace']):
