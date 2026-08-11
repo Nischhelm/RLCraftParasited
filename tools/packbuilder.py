@@ -216,7 +216,7 @@ class PackBuilder:
             # Apply patches (ONLY copy files that are being patched)
             print(f"  Processing {len(pack.patches)} patches...")
             for i, patch in enumerate(pack.patches, 1):
-                self._apply_patch_selective(temp_dir, patch, i)
+                self._apply_patch_selective(temp_dir, patch, i, pack.version)
 
             # Add configpack-specific files
             if pack.files:
@@ -277,7 +277,7 @@ class PackBuilder:
             # 2. Apply patches to the copied overrides
             print(f"  Applying {len(pack.patches)} patches to overrides...")
             for i, patch in enumerate(pack.patches, 1):
-                self._apply_patch_modpack(temp_dir, patch, i)
+                self._apply_patch_modpack(temp_dir, patch, i, pack.version)
 
             # 3. Include additional files/folders (manifest.json, profileImage, etc.)
             include_list = pack.build_config.get('include', [])
@@ -337,7 +337,61 @@ class PackBuilder:
 
         return results
 
-    def _apply_patch_selective(self, target_dir: Path, patch: Dict[str, Any], patch_num: int):
+    def _replace_version_template(self, patch: Dict[str, Any], version: str):
+        """
+        Replace {{version}} placeholders in patch values with actual version.
+
+        Args:
+            patch: Patch specification dict
+            version: Version string to replace placeholders with
+        """
+        if not version:
+            return
+
+        patch_type = patch.get('type')
+
+        if patch_type == 'json_patch':
+            # Replace in JSON patch operations
+            for change in patch.get('changes', []):
+                if 'value' in change and isinstance(change['value'], str):
+                    change['value'] = change['value'].replace('{{version}}', version)
+
+        elif patch_type == 'cfg_patch':
+            # Replace in cfg patch values
+            for section in patch.get('changes', {}).values():
+                for key in list(section.keys()):
+                    value = section[key]
+                    if isinstance(value, str):
+                        section[key] = value.replace('{{version}}', version)
+                    elif isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace']):
+                        # Handle list operations
+                        if 'add' in value:
+                            value['add'] = [item.replace('{{version}}', version) if isinstance(item, str) else item
+                                          for item in value['add']]
+                        if 'replace' in value:
+                            for repl in value['replace']:
+                                if isinstance(repl.get('old'), str):
+                                    repl['old'] = repl['old'].replace('{{version}}', version)
+                                if isinstance(repl.get('new'), str):
+                                    repl['new'] = repl['new'].replace('{{version}}', version)
+
+        elif patch_type == 'keyvalue_patch':
+            # Replace in keyvalue patch values
+            changes = patch.get('changes', {})
+            for key in list(changes.keys()):
+                if key not in ['add', 'remove', 'replace']:
+                    value = changes[key]
+                    if isinstance(value, str):
+                        changes[key] = value.replace('{{version}}', version)
+
+            # Handle add operations
+            if 'add' in changes and changes['add'] is not None:
+                for key in list(changes['add'].keys()):
+                    value = changes['add'][key]
+                    if isinstance(value, str):
+                        changes['add'][key] = value.replace('{{version}}', version)
+
+    def _apply_patch_selective(self, target_dir: Path, patch: Dict[str, Any], patch_num: int, version: Optional[str] = None):
         """
         Apply a patch by copying ONLY the targeted file, patching it, and saving to temp.
 
@@ -345,6 +399,7 @@ class PackBuilder:
             target_dir: Temporary build directory (will contain only changed files)
             patch: Patch specification
             patch_num: Patch number (for logging)
+            version: Optional version string for template replacement
         """
         patch_type = patch.get('type')
 
@@ -352,6 +407,10 @@ class PackBuilder:
             raise ValueError(f"Patch {patch_num} missing 'type' field")
 
         self.log(f"[{patch_num}] Processing {patch_type}: {patch.get('file', patch.get('destination', '?'))}")
+
+        # Replace {{version}} template before applying patch
+        if version:
+            self._replace_version_template(patch, version)
 
         try:
             if patch_type in ['file_add', 'file_replace']:
@@ -485,7 +544,7 @@ class PackBuilder:
         except Exception as e:
             raise RuntimeError(f"Failed to apply patch {patch_num}: {e}")
 
-    def _apply_patch_modpack(self, target_dir: Path, patch: Dict[str, Any], patch_num: int):
+    def _apply_patch_modpack(self, target_dir: Path, patch: Dict[str, Any], patch_num: int, version: Optional[str] = None):
         """
         Apply a patch to the modpack build (patches are applied to overrides/ or root).
 
@@ -493,6 +552,7 @@ class PackBuilder:
             target_dir: Temporary build directory (contains overrides/)
             patch: Patch specification
             patch_num: Patch number (for logging)
+            version: Optional version string for template replacement
         """
         patch_type = patch.get('type')
 
@@ -500,6 +560,10 @@ class PackBuilder:
             raise ValueError(f"Patch {patch_num} missing 'type' field")
 
         self.log(f"[{patch_num}] Applying {patch_type}: {patch.get('file', patch.get('destination', '?'))}")
+
+        # Replace {{version}} template before applying patch
+        if version:
+            self._replace_version_template(patch, version)
 
         try:
             if patch_type in ['file_add', 'file_replace']:
@@ -602,6 +666,10 @@ class PackBuilder:
 
                 # Apply patches to this item
                 for patch in patches_for_item:
+                    # Replace {{version}} template before applying patch
+                    if pack.version:
+                        self._replace_version_template(patch, pack.version)
+
                     patch_type = patch.get('type')
                     if patch_type == 'json_patch':
                         self.json_patcher.apply(target_dir, patch)

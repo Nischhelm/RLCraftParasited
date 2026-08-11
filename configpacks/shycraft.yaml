@@ -1,6 +1,6 @@
-name: "RLCraft Parasited SHYCRAFT"
-version: "1.2.3 - July 25 2026"
-description: "ShyCraft Parasited: A modification of Parasited"
+name: "ShyCraft Parasited"
+version: "1.2.3 - Aug 7 2026"
+description: "A modification of Parasited"
 
 # Build configuration
 build:
@@ -21,7 +21,7 @@ patches:
     value: "ShyCraft Parasited X"
   - op: replace
     path: /version
-    value: "1.2.3 - July 25 2026"
+    value: "{{version}}"
   - op: add
     path: /image
     value: "profileImage/ShyCraft Minecraft ver.png"
@@ -606,7 +606,7 @@ patches:
     value: "ShyCraft Discord"
   - op: replace
     path: /labels/rl_craft/text
-    value: "ShyCraft Parasited X (1.2.3)"
+    value: "ShyCraft Parasited X ({{version}})"
   - op: replace
     path: /labels/discord/hoverText
     value: " nNischhelm's Discord"

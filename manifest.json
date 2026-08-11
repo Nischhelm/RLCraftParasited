@@ -12,7 +12,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "RLCraft Parasited",
-  "version": "Aug 7 2026",
+  "version": "",
   "author": "",
   "files": [
     {"projectID": 60028, "fileID": 2659258, "required": true, "fileName": "Aquaculture-1.12.2-1.6.8"},

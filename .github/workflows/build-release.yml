@@ -45,7 +45,7 @@ jobs:
       - name: Build main modpack
         if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'false'
         run: |
-          python tools/build_mainpack.py
+          python tools/packbuilder.py build rlcraft_parasited
 
       - name: Build configpacks (without ShyCraft)
         if: steps.check_shycraft.outputs.IS_SHYCRAFT == 'false'
