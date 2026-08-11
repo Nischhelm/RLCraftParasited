@@ -96,6 +96,27 @@ patches:
     general:
       B:"Use ShyCraft Dragon Gem Recipe": true
       B:"Use ShyCraft Ring Distribution Rules": true
+    general.trinkets.race weapon affinities:
+      S:Dragon:
+        remove:
+          - warhammer
+        add:
+          - glaive
+      S:Dwarf:
+        add:
+          - warhammer
+      S:Goblin:
+        add:
+          - mace
+      S:Taurus:
+        remove:
+          - glaive
+        add:
+          - greatsword
+      S:Titan:
+        add:
+          - battleaxe
+          - warhammer
 
 - type: cfg_patch
   file: config/RLArtifacts.cfg
@@ -691,6 +712,11 @@ patches:
   source: shycraft/paintings/textures
   destination: paintings/textures
   description: "Add all ShyCraft custom paintings"
+
+- type: file_replace
+  source: shycraft/resources/loadingscreen/loadingscreen.png
+  destination: resources/loadingscreen/loadingscreen.png
+  description: "TODO: Describe why this file is replaced"
 
 - type: json_append_all
   file: resources/contenttweaker/sounds.json
