@@ -1,0 +1,128 @@
+[
+  {
+    "projectID": 220318,
+    "fileID": 3558882,
+    "required": true,
+    "fileName": "BiomesOPlenty-1.12.2-7.0.1.2445-universal"
+  },
+  {
+    "projectID": 226254,
+    "fileID": 6151363,
+    "required": true,
+    "fileName": "nuclearcraft-1.12.2-2.19a"
+  },
+  {
+    "projectID": 229208,
+    "fileID": 3004631,
+    "required": true,
+    "fileName": "CD4017BE_lib-1.12.2-6.5.1"
+  },
+  {
+    "projectID": 229449,
+    "fileID": 2874756,
+    "required": true,
+    "fileName": "EpicSiegeMod-13.167"
+  },
+  {
+    "projectID": 252042,
+    "fileID": 7156791,
+    "required": true,
+    "fileName": "paintingselgui-PSG%2bRevamed-1.12.2-1.1.0.1"
+  },
+  {
+    "projectID": 289529,
+    "fileID": 4586993,
+    "required": true,
+    "fileName": "DynamicTreesBOP-1.12.2-1.5.2"
+  },
+  {
+    "projectID": 303213,
+    "fileID": 3084399,
+    "required": true,
+    "fileName": "crafttweakerutils-0.7"
+  },
+  {
+    "projectID": 310992,
+    "fileID": 2937031,
+    "required": true,
+    "fileName": "VerticallyStackedDimensions-1.12.2-0.1.9"
+  },
+  {
+    "projectID": 321139,
+    "fileID": 5107583,
+    "required": true,
+    "fileName": "Fish%27s Undead Rising-1.4.2"
+  },
+  {
+    "projectID": 367706,
+    "fileID": 4655936,
+    "required": true,
+    "fileName": "fancymenu_forge_2.14.9_MC_1.12-1.12.2"
+  },
+  {
+    "projectID": 386753,
+    "fileID": 3098571,
+    "required": true,
+    "fileName": "DynamicTreesQuark-1.12.2-1.0.6"
+  },
+  {
+    "projectID": 410295,
+    "fileID": 4514895,
+    "required": true,
+    "fileName": "konkrete_forge_1.6.1_MC_1.12-1.12.2"
+  },
+  {
+    "projectID": 435298,
+    "fileID": 3311656,
+    "required": true,
+    "fileName": "ctintegration-1.8.0"
+  },
+  {
+    "projectID": 622862,
+    "fileID": 4721604,
+    "required": true,
+    "fileName": "ContentCreator-1.3.7-fix2"
+  },
+  {
+    "projectID": 805622,
+    "fileID": 6997581,
+    "required": true,
+    "fileName": "DelightfulCuisineForWoodheads_1.12.2-1.1.0"
+  },
+  {
+    "projectID": 821596,
+    "fileID": 7279499,
+    "required": true,
+    "fileName": "DregoraRL-3.9"
+  },
+  {
+    "projectID": 980576,
+    "fileID": 7156598,
+    "required": true,
+    "fileName": "Underneath-2.0"
+  },
+  {
+    "projectID": 1209013,
+    "fileID": 7438742,
+    "required": true,
+    "fileName": "ViralTracker-1.0.1"
+  },
+  {
+    "projectID": 1293578,
+    "fileID": 6704723,
+    "required": true,
+    "fileName": "RLC_Nuclear.v1.0.1"
+  },
+  {
+    "projectID": 1378547,
+    "fileID": 7188022,
+    "required": true,
+    "fileName": "Mob Arson-1.0.0"
+  },
+  {
+    "projectID": 1395835,
+    "fileID": 7295034,
+    "required": true,
+    "fileName": "Pinata Mobs-1.0.5"
+  }
+]

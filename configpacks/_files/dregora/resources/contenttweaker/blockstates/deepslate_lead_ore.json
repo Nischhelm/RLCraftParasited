@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "contenttweaker:blocks/deepslate_lead_ore",
+      "particle": "contenttweaker:blocks/deepslate_lead_ore"
+    },
+    "model": "contenttweaker:deepslate_lead_ore",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

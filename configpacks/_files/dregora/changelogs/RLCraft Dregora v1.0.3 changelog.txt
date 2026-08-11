@@ -1,0 +1,18 @@
+RLCraft Dregora v1.0.3 HOTFIX (addressing critical mem leak!):
+
+- Fixed memory leak with Mo'Bends rendering models inside spawners causing lag spikes every few seconds
+- Fixed memory leak caused by ModelCrown from Fish's Undead Rising
+- Updated to latest version of SpartanFire to properly fix Lightning Weapons now
+- Fixed Mycosis (Fish's Undead Rising) potion effect desync for client/server
+- Fixed Wendigo (Fish's Undead Rising) potion effect desync for client/server
+- Copper armor no longer glues your feet to the ground
+- Copper armor tooltip correctly displays speed decrease
+- Fixed Steel Armor, Scarlite Armor, and Cincinnasite Tools not requiring levels if they took durability damage
+- Fixed broken recipe with Myrmex Nunchucks
+- Lowered Mimicrab damage
+- Lowered Bogle/Succor damage (even more, they bypass armor currently, will fix later)
+- Fixed block break cheese with certain Lycanite spawners in Abyssal Rift biomes
+
+
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES (for servers and manual installs.  Curseforge launcher will update fine, but backup your options.txt if you don't want to lose custom keybinds)!

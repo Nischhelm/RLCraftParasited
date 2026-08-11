@@ -1,0 +1,104 @@
+RLCraft Dregora v1.0.4 PATCH (Less-Berian, more brutal and a bit of QOL Happy New Year!! - edition!):
+
+Original 1.0.0 release notes can be found here:  https://www.curseforge.com/minecraft/modpacks/rlcraft-dregora/files/5821211
+
+After being over 2 years in the making using RLCraft as it's foundation, RLCraft Dregora is finally here to involve you with a world of creativity and wonder for which we have to thank those who've contributed to the effort. Huge thank you to those who helped test and contribute in the early days!  We look forward to hearing about your experiences in this new world!
+
+==============================================
+Contributors: https://dregorarl.wiki.gg/wiki/Contributors
+==============================================
+
+================
+IMPORTANT INFO:
+================
+
+- To get the most out of the RLCraft Dregora modpack we recommend using 6GB of RAM.
+
+- RLCraft Dregora v1.0 is a first release so there are bound to be bugs that are yet to be found & fixed. If you find any, please contact us through the issue tracker.
+
+- !DO NOT INSTALL THIS VERSION OVER PREVIOUS INSTALLS CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES (for servers and manual installs.  Curseforge launcher will update correctly, but backup your options.txt if you don't want to lose custom keybinds)!
+
+
+
+====================
+CHANGELOG for v1.0.4:
+====================
+
+Stuffs you wanted!
+- Removed most instances of Spawnkill in the Underneath
+- Nerfed the SRP ORB cool down on items.
+- Lowered sentry damage to gear from 0.1 (10%) to 0.005 (0.5%)
+- Increased amount of enchanted books and their levels in brutal towers
+- Reduced viral from 0.5 to 0.3 (Multiplier stuff that became less than it was before!)
+- Decreased amount of dragon spawns spawned as random encounters
+- Made the cure effect remove COTH (call of the hive)
+- Fixed some structures spawning amongus sussyberians that would "randomly" become sus! >:|
+- New chests spawning at y25 have a 5% chance of being a mimic (Hint: Barometer!)
+- Gungnir, Keraunos, Dagger of Vitality & Scythe of Bountiful Risk added to unique weapon loot table
+- Watch closely, and you'll know what items have Pandora now! :D
+- Monstrous Monsters added to the ocean! Blame @Lqury: "id want to be on my toes when crossing these"
+- Pixies now really do spawn on Flower Islands!
+- Quickly unequip your conductive weapons, shields and armor to prevent being struck by lightning!
+
+The neutral zone!
+- Quark Blossom trees now properly spawn as their dynamic tree variant
+- Fixed performance issues in relation to concrete powder in both the Overworld as Underneath
+- Fixed performance related issue in underneath by lowering the amount of population requests
+- Fixed SRP living weapons not saving NBT data on transmutation to sentient weapons
+- Reduced Underneath SRP entities DMG/HP by 20%
+- Buffed sleeper sword! (Grab them lootz!!!) & no over spawning Skull of Luck anymore
+- Food chests appear less often, contain less food & mana candy is added to various loot tables!
+- Added quark dynamic blossoming trees to Mystical and Bog biomes
+- Fixed jump attributes broken by potion core
+- Fixed loottable: DregoraRL\WorldObjects\Chests\Lore\simpledungeon.nbt (Thanks cdstk_ALT)
+- Expanded CURE & COTH potion effect description. See JEI (recipe lookup) for handy potion descriptions!
+- Terresterial Artifact, Lures & the Evolution Clock are craftable now!
+- Newly generated dungeons aren't overrun with silverfish any longer!
+- Renamed goku's cloud to flying Nimbus
+- Increased spawnrate of sky castle (Letsaa gooo! Castle Gang!)
+- Dungeon with the hopper is fixed now... Sticks!
+- Fixed & updated several recurrent complex structures
+- Fixed Djinns not spawning and issues with the darkness & crop spawner
+- Lowered gem spawner chance for Lycanites. (Encourage cave dwelling!)
+- Fix dragon projectiles not colliding with entities properly
+- Fix (remove) dragon horn dupe
+- Fix swimming AI issues for dragons
+- Hydras should move more quickly through water
+- Added some fun new death messages for dying from hydra acid and lightning dragons
+- Set size bounds of dread mobs to keep out house(-sized) spiders
+
+Stuffs we wanted >:D
+- Pickaxe zombies are back! ?
+- Added dimstack blocks to tunneling enchantment
+- Added atmospheric effects fog & darkness
+- SRP Evolution phases! (per individual player)
+- Fixed some waspy thorns (farm) in our side and not so cursed (hp exploit) items >:|
+- All lightning weapons have a conductivity of 10 now with the exception of Mjolnir which has 100!
+- Corrupted Shivaxi now takes 50% less damage below 25% health and 25% less damage below 75% health
+- Nerfed shocked weapon chain lightning (a bit)
+- Bop Mushrooms now spawn Lycanite entities too!
+- Sentient weapons equipped by other entities now have negative durability and high repair cost
+- Mounts are now disallowed in the parasite biomes too (Yeah, this one is going to hurt lol)
+- Bunch of Brutal tower adjustments >:D
+- Expanded the unluck loottable!
+- Gave Helm of Resentment a lure to trick non-suspecting players >:D
+- Brutal coins spawn now where they are supposed to spawn
+
+Bunch of tiny fixes:
+- Fixed Ulfar's compass enchantment issue
+- Fixed Reinforced iron plate block recipe
+- Fixed multiple smaller issues and crashes for OTG
+- Removed poison from immortality potion
+- Added additional death messages
+- Fixed Biome border issues for Ruins of Blight and removed biomes Hot Steppe + Steppe Ruins
+- Added a quarantine wall around the cities.
+- Fixed three typo's in loottables (posessed & liffe and typo in cursed water breathing potion)
+- Fixed invalid book tags at Topographer and the Shivaxi - Bliss trade.
+- Lycanite entities wont spawn in Underneath anymore
+- Fixed the dragon saddle recipe
+- Fixed stairs being mounts in abyssal rift
+- Numerous smaller item/recipe naming fixes
+- Fixed Lycanite dungeons spawning close to Abyssal rift and generating through the Brutal tower
+
+
+!DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL AND COPY OVER YOUR WORLD SAVES!

@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "contenttweaker:blocks/deepslate_silver_ore",
+      "particle": "contenttweaker:blocks/deepslate_silver_ore"
+    },
+    "model": "contenttweaker:deepslate_silver_ore",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

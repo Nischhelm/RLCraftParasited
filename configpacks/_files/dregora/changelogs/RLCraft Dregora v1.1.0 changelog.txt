@@ -1,0 +1,553 @@
+RLCraft Dregora v1.1.0 [Content & Performance goes Brrrrrrrrr Update!]
+
+Hey all and welcome to Eagle's crude changelog, it has seen a good few months of additions since 1.0.6b and we are very glad to bring you this fresh new update featuring the first major biome overhaul!
+This update marks a turning point between what we released and our future plans for RLCraft Dregora!!
+
+!OLD WORLDS ARE NOT COMPATIBLE - DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL!
+
+Added/Updated Resource Packs:
+- RL Enchanted Books
+- RLCraft Dregora NC Textures
+
+Added Mods: [More specifics in Changelog Big & Small Changes/Additions/Fixes]
+- Amphithere Mod [Various tweaks and bug fixes to Amphitheres]
+- AntiqueAtlasAutoMarker [Adds QOL features such as Auto-Marking to AntiqueAtlas and a handy waystone teleportation GUI]
+- DelightfulCuisineForWoodheads [Adds new storage blocks & a kitchen with various QOL benefits]
+- FermiumMixins [General purpose fixes and tweaks to numerous mods within the RLCraft Dregora modpack]
+- FoodFix [Fixes eating double food items]
+- FurnaceXPStorage [Allows furnaces to store XP like in MC 1.13+]
+- JSON-Paintings [Adds the ability to add new paintings to the modpack]
+- NuclearCraft [Adds -SIMPLIFIED & TWEAKED- Ancient Machinery to the world of Dregora]
+- OptifineCITPatch [Fixes a bug in relation with resource packs & enchanted books]
+- PaintingSelGui [Lets you select what painting you want!]
+- RLLuck [Adds various uses to the luck attribute mostly negating the enchantment grind]
+- VCFix [Adds JEI to Carpentry Bench & Various other fixes to Varied Commodities]
+- Added Phosphor Crash Fix [Fixes a crash with Phosphor when Mixinbooter is not present]
+- Added Baubly Elytra [Baublifies your Elytra]
+
+Updated Mods [More specifics in Changelog Big & Small Changes/Additions/Fixes]:
+- !mod-director-launchwrapper [It shows up on the foreground now!]
+- BHMenu [Fixed some bugs]
+- CraftTweaker2 [Fixed/Tweaked a lot of things]
+- DregoraRL [Added a whole lot of additional content]
+- EagleMixins [Re-location of CT scripts to Java, new mechanisms like radiation particle effects and various tweaks / bug fixes
+- EditableEdibles [Fixed a crash & added additional configurability]
+- EntityCulling [Slight RayTrace performance increase & Compat with ASMUtil]
+- FantasticLib [Fixed various crashes & compatibility issues]
+- FermiumASM [Fixed various crashes & compatibility issues]
+- FishingMadeBetter [Fixed a rare crash]
+- Ice and Fire [Tweaks & Bug fixes + Blindfold & Earplugs Baublified - CDSTL & Keletu66666]
+- Localizator [Added localization for various mods]
+- TestDummy2 [Lots of bugs & Tweaks]
+- NoiseThreader [Mulithreaded YUNG's BetterCaves, ~60% performance improvement]
+- ReachFix [Compatibility Update]
+- RenderLib [Compatibility Update & Bug fixes]
+- RLMixins [Moved all general purpose fixes/tweaks from RLMixins to FermiumMixins & Additional compat/tweaks/bug fixes]
+- RLTweaker [Compatibility Update, Bug Fixes & Performance gains]
+- SetBonus [Bugfixes, Crash fixes & Compatibility Updates]
+- SnowRealMagic [NO CHANGELOG >:| - Ah well, uhmm... snow layers have gravity now!]
+- SoManyEnchantments [Fonny's world of cinders and hellfire.. There's a lot of *technical improvements to be found here!]
+- Spark Unforged [Fonny's world of fixes that makes him make performance go Brrrrrrrrrr - Additional Usability added]
+- SRPMixins [Nischi's Epic SRP fixes with a hint of eagle math... That we solved already! because we have beta's and definitely no 1.0.5 releases]
+- Underneath [Same as DregoraRL, lots of effort put in by NLBlackHeavenNL creating all these fancy skyscrapers! Except for the easter one]
+- FermiumBooter [Compatibilty Updates and additional tweaks]
+
+Removed Mods:
+- MixinCompat
+- MixinBooter
+
+#-------------------------------------#
+#              DregoraRL:             #
+#-------------------------------------#
+
+Brutal Tower:
+- Changed a technicality in Brutal Towers making them spawn more reliably
+- Made Grey Abyss Border inherit from Abyssal Rift and allowed continuation of Abyssal Tower making the structure less rare
+- Allowed natural spawning of parasites in parasite biome such as Abyssal Rift if in certain light-level and within the nuclear power plant structure
+- Abyssal/Parasite biome added allowed mounts: (All Land Mounts + Ignibus & I&F Dragons Flying mounts) [SRPMixins]
+  Lycanites: Barghest, Erepede, Eyewig, Feradon, Maug, Pinky, Salamander, Shade, Uvaraptor, Ventoraptor, Warg, Zoataur
+  Ice and Fire: Fire Dragon, Ice Dragon, Lightning Dragon
+  Fish Undead Rising: Salamander
+- Fixed Blighted Shivaxi name formatting [EagleMixins]
+- Fixed a shortcut exploit in the brutal tower maze section. THOU SHALL NOT PASS!!!!!!
+- Brutal Tower Buffed & Nerfed Entities;
+  Maze Boss: 925 -> 2350 hp, 20 dmg -> 65 dmg and changed entity from Wither Skeleton to normal Skeleton.
+  Maze Spawners: added baby zombies! (CDSTK & Iqury) Blame them! :D
+  YellowEye Boss nerf 240 to 60 dmg (Multiplied by 4.5x as is standard for Brutal Tower parasites)
+  Bogle Boss buff: 4 base dmg to 70 dmg (Multiplied by 4.5x as is standard for Brutal Tower parasites)
+  Carrier Boss Buff: 60 dmg to 90 dmg (Multiplied by 4.5x as is standard for Brutal Tower parasites)
+  Overseer Boss nerf 176 dmg to 126 dmg (Multiplied by 4.5x as is standard for Brutal Tower parasites)
+  Corrupted Shivaxi increased dmg from 30 to 90 (Multiplied by 4.5x as is standard for Brutal Tower parasites) [EagleMixins]
+
+Structures:
+- Added Bounty Boards to all gem traders & herbalist
+- Fixed entities for Herbalist and added waystones for Herbalist and Silo Gem Trader.
+- Changed Frozen Temple lapis blocks into Emerald blocks
+- Added Various new skyscrapers to the city generation and opened up our city plan with a bunch of epic parks made by NLBlackHeavenNL!
+- Improved the bunker door of the club trader barracks
+- Added some epic relatively unknown and known streamers to signs in some new structures, if it has a "old world cinema" it has some cool streamers listed!
+- Added a new structure featuring new custom entities and cool loot in Lavender Fields
+- Added new lore inclusive structures that give you the capability to teleport far distances which can be found after visiting the world centre.
+- Added Waystone to the Dregora centre structure.
+- Added Nuclear Power Station to Nuclear Blight and added contaminated blocks + loot to it's interior
+- Decreased likelihood of Daeroc & Cult Church not spawning in the world by increasing their viable spawn area
+- Added 23 Bunkers to generation, 5 of which are solely found in the Nuclear Blight biome. Each structure contains basic information on radiation and several other subjects, some contain more valuables.
+
+Biomes:
+- Removed duplicate steppe biomes
+- Increased Generation of: Temperate Biomes, Jungle Biomes, Defiled Biomes & made them bigger, Frozen Biomes & Decreased Wasteland/Desert biome generation
+- Fixed JotunnHeim biome dread horse overspawning
+- Changed the Underworld (Polluted Ocean with hills) biome to inherit from biomesoplenty:wetlands rather than minecraft:ocean. Underworld Hills remains the same for added diversity
+- Decreased Underworld biome size with 50%
+- Transformed all mixed defiled biomes into full defiled biomes by changing spawn queue of mixed parts which now should also spawn defiled creatures
+- Decreased Generation of Desert & Wasteland Biomes
+- Gave Cities their own dedicated biome group
+- Added new nuclearcraft ores to generation (see in-game tooltips)
+- Adjusted overworld map generation by replacing the trenches leading to the centre with a new type of trench encircling the centre in a ~2400 block radius
+- Updated Shrubland biome to inherit from minecraft:desert spawns and increased temperature from 1.3 to 1.4
+- Disabled block-grieving entities from spawning in Abyssal Gate biomes [InControl]
+- Changed spawning 1% parasites to chunk based spawning but only on blocks found in cities and between 0 and 12 light level and never under the open sky [SRPMixins & InControl]
+- Fixed a issue where there was no water at the Flower Field Edge when bordering a river below y50.
+- Volcanic Island, Cracked Earth and Ashlands now has the following lycanites entities spawning in it: Cinder, Volcan, Khalk, Salamander, Lobber, Gorger and Afrit.
+- Added new biome: Cursed Abyss
+- Added new biome: Abyssal Gate for special long distance teleportation structures
+- Added Biome Nuclear Blight and gave it a high radiation level via NuclearCraft
+
+Loot/Trades:
+- Added hazmat suits to loot tables ruins
+- Fixed item lore/language keys, a lot of typo's and a boatload of other issues, (Thanks KameiB!)
+- Increased the rarity of cure potions in loottables
+- Added new toilet loot (With a rare high level enchant, Make sure to check up-facing droppers!) for both Dregora & Underneath
+- Rewrote the main lore for Dregora to conform a better timeline & added a lot of new lore to the new structures generating throughout Dregora & Underneath
+- Toned down some chest contents to decrease the amount a chest is being overfilled.
+- Removed sacrificial pendant from brutal merchants because Elder Blacksmiths already have them
+- Removed a bunch of negative effects from Immortality potion making you actually Immortal now!
+- Gave Contaminated items a random radiation level [EagleMixins & NuclearCraft]
+- Nerfed the corrupted shield giving it a -95% hp nerf alongside the +20 damage boost
+- Fixed Duplicate pool name 'moderncity_junk_loot' in table 'dregora:dregorarl/loot/moderncity_junk_loot'
+- Fixed Duplicate pool name 'rare_loot' in table 'dregora:dregorarl/loot/rare_loot'
+- Unhid variedcommodities cleaver and sledge hammer from JEI and made it useable and added it to gemtrader trades as ancient artifact
+- Fixed Duplicate pool name 'rare Chest' in table 'dregora:loot/rare_loot'.
+- Fixed Duplicate pool name 'spawn book' in table 'dregora:rlcraft/lore/spawnbook'
+- Changed following trades for Elder Blacksmith: Hearth Container = 10 satchels, Spectral Silt = 1 satchel, Glowing Powder =  30 coins, Nether star = 25 satchels & limited to 1 trade per elder blacksmith
+
+
+#-------------------------------------#
+#              SRPMixins:             #
+#-------------------------------------#
+
+- Made Feral Bears spawn
+- Removed Feral Wolf from spawning as it did not have a model and was always invisible
+- Added ability to reset adaptation on SRP Sentient armour pieces.
+- Configured chunk based SRP phases, lowered starting phase from 8 to 4 and boosted hp/dmg/armour making SRP entities easier in newly visited chunks but slowly ramp up in the same chunk the longer you stay in said chunk
+- Stopped living armour from dropping on upgrade and made a lightning storm spawn around the player on evolve. (Thanks Nischi!)
+- SRPMixins Multiple Damage fixes (including Succor)
+- Enabled Colonies
+- Enabled Lures & Carcasses
+- Decreased the amount viral stacks on contact with certain parasites
+- Multiplayer sleeping does not negatively affect points as much anymore, it now counts as if one player slept
+- Changed spawning for all parasite enabled biomes & dimensions
+- Changed node ranges & fog should now go as far as the node (biome/corruption) stretches, not further.
+- Srpmixins fixed needler, effect now properly applies on players! (Ha Ha Ha! Evil Nischi laughing somewhere on the background.... )
+- Something Something, SRPMixins did a great job on fixing a lot of spawning issues, It's too long a list, but you'll notice!
+- Fixed SRP water spawns, these can now spawn under the right conditions
+- Tweaked parasite default spawning rates for overworld, underneath and lost city dimensions
+- Enabled Bloodmoons for Parasites slightly increasing their spawncap during a bloodmoon
+- Beckons dying won't revert blocks to gravel/dirt any longer
+- Overworld Parasites now do 50% less damage instead of 75% less damage.
+- Tweaked SRP difficulty per individual dimension by moving multipliers to SRPmixins and lowering them.
+
+#-------------------------------------#
+#           NuclearCraft:             #
+#-------------------------------------#
+
+- Added Reinforced Concrete recipe to NuclearCraft Recipes [ContentTweaker]
+- Blacklisted Dragons, Lycanites Structures, Lycanites Entities and ReComplex structures from spawning in Nuclear Blight, Canyon, Rainforest Canyon and Abyssal Gate Biome
+- Made Neptunium slightly radioactive
+- Added Feature that prevents players from spawning in irradiated biomes [RLMixins]
+- Simplified a lot of the recipes, removing unused bloat from JEI and crafting recipes [ContentTweaker], removed all reactors except the fission reactor and RTG blocks.
+- Added new nuclearcraft ore generation for Lost Cities, Overworld and Unique ore generation for Underneath, check the ore tooltips to find out more! [EagleMixins]
+- Made irradiated biomes look the part by creating a system that spawns a mixture of green and yellow particles. [EagleMixins]
+- Added Radiation, Radiation Sources, Radiation Contamination and Spread in Horizontal and Vertical directions from contaminated blocks. [EagleMixins]
+- Added Persistent Radiation Shielding on containers breaking them will keep the radiation shielding [EagleMixins]
+- Added Compatibility for VariedCommodities crates not accepting Radiation shields [EagleMixins]
+- Added static screen effort for when the player is near a contaminated source. [EagleMixins]
+- Simplified units to decimal values. 0.01 rads/t you start seeing effects. 0.1 rads/t is a problem and anything above 1 rads/t will kill you very fast [EagleMixins]
+- Hazmat suit (WHEN FULL SET IS ON) has been given 100000.0 Rad resistance, Prototype 1000.0, Composite Armor 0.01 and Soldier Outfit 0.001 [EagleMixins]
+- Changed radiation shield values light shield shields up to 0.1, medium to 1.0 and heavy to 10.0
+- Added Contamination Potion effect that gives the following debuffs [EagleMixins]:
+  I = Weakness
+  II = Weakness + Mining Fatigue
+  III = Weakness + Mining Fatigue + Increased Hunger + Poisons player until max health drops to 75% - won't damage head until all other damage parts have 0 hearts
+  IV = Weakness + Mining Fatigue + Increased Hunger + Poisons player until max health drops to 50% - won't damage head until all other damage parts have 0 hearts
+  V = Weakness + Mining Fatigue + Increased Hunger + Poisons player until max health drops to 0% - won't damage head until all other damage parts have 0 hearts
+- Made it so NuclearCraft blocks can be interacted with even without the required level to break or place the blocks [EagleMixins]
+- Added radiation capability for itemstacks through NBT [EagleMixins]
+- Added Contamination Potion effect [EagleMixins]
+- Added new liquid block Coolant Fluid and gave it a radiation level
+- Set max radiation level for chunks to 1000 instead of unlimited
+- Excluded Contamination Potion effect from the Cure effect silver gives [RLTweaker]
+
+#-------------------------------------#
+#             Underneath:             #
+#-------------------------------------#
+
+Mechanics:
+- Added Fall damage negation (30% reduction) and a message when teleporting through the void to the underneath [EagleMixins]
+- Tweaked Underneath spawning above y235 to only deny natural spawning but allow spawning from spawners [InControl]
+- Removed bookwyrms from parasite target list [Scape and run Parasites]
+
+Biomes/Structures:
+- Adjusted underneath map generation featuring the first steps towards future expansion
+- Changed portal blocks removing the ability to create portals on roof
+- Added special structure with randomized "Escapist" loot such as a pickaxe, grapple hook, bandages, etc
+- Added various new skyscrapers!
+- Added new biomes for future content: Remnants
+- Added new biomes defiled caverns for all your bookwyrm needs!
+- Added Deepslate blocks: chiseled_deepslatecobbled_deepslate, deepslate_bricks, deepslate_tiles, polished_deepslate, deepslate_coal_ore, deepslate_diamond_ore,
+  deepslate_emerald_ore, deepslate_gold_ore, deepslate_iron_ore, deepslate_lapis_ore, deepslate_redstone_ore, deepslate_silver_ore, deepslate_copper_ore,
+  deepslate_lead_ore, deepslate_thorium_ore, deepslate_uranium_ore, deepslate_boron_ore, deepslate_lithium_ore, deepslate_heart_ore, cobbled_deepslate_slab,
+  cobbled_deepslate_stairs, deepslate_brick_slab, deepslate_brick_stairs, deepslate_tile_slab, deepslate_tile_stairs, polished_deepslate_slab, polished_deepslate_stairs and
+  eaglemixins:deepslate [ContentTweaker & EagleMixins]
+
+Loot:
+- Added resource crates to chest-spawns in cities, new block that drops various new items when mined.
+- Added Mana candy to all underneath chests
+- Buffed BanHammer by removing health, armour and potion sickness debuffs and reducing movement speed debuff
+- Fixed armour slots set to wrong slots for Wretched Chain Slippers of Binding and similar items
+- Added new toilet loot (With a rare high level enchant, Make sure to check up-facing droppers!) for both Dregora & Underneath
+
+#-------------------------------------#
+#                RLLuck:              #
+#-------------------------------------#
+
+- Increased luck attribute comes with following features:
+- * Increase enchantability of (not pregenerated) loot gear (green items)
+- * Change Weights on levels of Enchanted Book Trades on Librarians, giving higher lvl books with more luck
+- * Increase chances to spawn a mimic (RLArtifacts)
+- * Increase weights on rare modifiers on Baubles (BountifulBaubles Reforging Station)
+- * Increase weights on rare qualities on Items (QualityTools Reforging Station)
+- * Increase chances to breed a gold bookwyrm (DefiledLands)
+- Fixed InfernalMobs enchanted gear drops (InfernalMobs) - RLLuck
+- Added enchantability level ranges for the drops of the three InfernalMob tiers - RLLuck
+
+#-------------------------------------#
+#            EagleMixins:             #
+#-------------------------------------#
+
+- Added long distance free teleportation with 1% chance terror for late-gamestage
+- Added Abyssal Gate grief & cheese prevention
+- Made Radiation Shielding applicable on damaged armour through Eaglemixins
+- Removed long drown from randomized entity arrows (there may still be entities with long drown but they should be significantly rarer)
+- Cancelled Ender Queen Crown Teleportation for the Abyssal Rift and Abyssal Gate biomes
+- Instead of air regained instantly when surfacing you now regain 3/300 air per tick (5 seconds for full air)
+- Added Teleportation Sickness Potion that blocks all teleportation for 10 seconds
+- Turned hardcoded "parasites custom names drop loot without restrictions" into a configurable whitelist
+- Fixed non-berians turning into berians on chunk reload
+- Added special new containers dropping various NuclearCraft blocks on being broken
+- Fixed clientside methods crashing servers in some instances
+- Fixed door dupes for BiomesOplenty
+- Irradiated parasites are debuffed by a maximum of 50% health, 30% dmg and 20% armour dependent on radiation level
+- Added handling for Irradiated parasites
+- Made Trapdoors climbable when modded ladders are below instead of just vanilla ladders preventing a soft-lock stuck on ladder situation
+- cancel right click if under any block: <comforts:sleeping_bag_black> <comforts:hammock_black> <variedcommodities:chair> <variedcommodities:couch_wool>
+  <variedcommodities:couch_wood> <variedcommodities:stool> <minecraft:bed>
+- Added config values to Eaglemixins for SRP biome black/whitelist & a whitelist for named parasites that should not have any item drops removed.
+- Added loot-table to Counters & Cabinets
+- Added custom-name support to Counters & Cabinets
+- Moved over Dregora-specific patches from RLMixins
+- Skeletons now only apply their potion effects if they hit you with an arrow, technically they could apply potion with e.g. thorns before.
+- Fixed various arrow handler issues including arrow potions to applying for a long time
+- Fixed Player being able to add effects on entities just by having tipped arrows in hand
+- Removed the ability to use ender pearls in Abyssal Rift & Abyssal Gate biomes
+- Fixed (Brutal) Shivaxi dropping skeleton key outside of the Abyssal Rift >:| ! ! ! !
+
+#-------------------------------------#
+#               Fishing:              #
+#-------------------------------------#
+
+- Changed any time to nighttime for Electric Eel [AquaCulture]
+- Changed fish rarity and weather requirements for Bluebottle Jellyfish, Charged Bullhead and Sparkling Eel, Lightlevels for Prismatic Angler and Abyssal Lurker, Reproductiontime for MagiKarp, Thunder requirement for Nitric
+  Crucian and Mandarin Dragonet [AdvancedFishing]
+- Fixed various fish name typo's in language files
+
+#-------------------------------------#
+#            Performance:             #
+#-------------------------------------#
+
+- Slight performance tweak to Antique Atlas during rescans of already explored areas
+- Tweaked the generation of cities making them more performant! [Underneath & DregoraRL]
+- Curseforge new feature automatically sets the recommended ram value to 6gb, recommended to NOT SET RAM HIGHER THAN 8GB
+- Optimized ArraysCache, GetInts, BiomeGroupManager, Cache saving and FifoMap in OpenTerrainGenerator massively improving generation speed! [OpenTerrainGenerator]
+- Enabled culling on old & new blocks, performance gains in brutal tower and more locations
+- Increased performance through FermiumMixins & Noisethreader updates
+- Spawn Chunk Radius set to -1 instead of 2, No more permanent chunk loaded! (Thanks to Iqury, throw rotten eggs for revenge, it's a great reference!)
+- Many additional smaller tweaks within DregoraRL, Underneath, Eaglemixins, FermiumMixins and a lot of other mods!
+
+#-------------------------------------#
+#       RogueLike Dungeon:            #
+#-------------------------------------#
+
+- Increased amount of Roguelike Dungeon spawning by lowering spawnFrequency=17 to 15
+
+#-------------------------------------#
+#           SRParasites:              #
+#-------------------------------------#
+
+- Lowered COTH health threshold from 0.3 to 0.2 meaning they'll now try to transform under 20% health rather than 30%]
+- Lowered COTH range from 3 to 1 making it harder for COTH to transfer from mob to mob
+- Tripled speed of corruption spread
+
+#-------------------------------------#
+#        DynamicSurroundings:         #
+#-------------------------------------#
+
+- Disabled fog amplification near bedrock
+- Reenabled DynamicSurroundings fog & Disabled OpenTerrainGenerator global fog
+- Expanded soundscape for City biomes, Underneath and added custom soundscape for Nuclear Blight Biome
+- Disabled OTG fog effect and re-enabled dynamic surrounding fog effects & adjusted values on a per biome type basis [DregoraRL]
+
+#-------------------------------------#
+#           ContentTweaker:           #
+#-------------------------------------#
+
+- Reinforced Concrete [Corruption & Parasite grief resistant blocks with the exception of Preeminent, Ancient, and Nexus tiers]
+- Coolant Water [Irradiated]
+- Radioactive and Biohazard items for use in inspiration signs, banners and the new Reinforced Concrete Block to craft special variants
+
+
+#-------------------------------------#
+#        Fish Undead Rising:          #
+#-------------------------------------#
+
+- Wendigo's (Ithuaqa's) now spawn in all forests when it is storming and all spooky biomes at night
+- Removed Kinetic Roach speed buff from weta set [SetBonus]
+- Added artifacts Mimic chests to Fish Undead Rising dreamcatcher bauble spawnlist with a weight of 30
+
+#-------------------------------------#
+#         SoManyEnchantments:         #
+#-------------------------------------#
+
+General:
+- Added configs for enchantment rarity, enchantability, incompatibility, application, etc.
+- Added enchantment upgrading system accessible through the vanilla enchanting table. Only works for tier upgrades, costs biotite and lvls, doesn’t increase anvil use cost
+- Blacklisted some enchantments from appearing through various sources such as loot or trades
+
+Enchantment Renames:
+- Lunars Blessing: Lunas Blessing
+- Subject Science: Subject Chemistry (explosions if lots of potion effects on user)
+
+Enchantment additions:
+- Breached Plating (basically negative armour)
+- Ascetic (no loot/fish loot)
+- Extinguish (removes fire)
+- Subject Biology (more dmg on infernal/blight/champion)
+- Subject Physics (more dmg if big height difference)
+- Subject Mathematics (more dmg if lots of xp on the player)
+- Subject Geography (applies potion effects depending on biome type)
+- Combat Medic (Helmet, increased healing)
+- Rune: Magical Blessing (weapon: magic dmg, some armour ignore, random debuffs)
+- Rune: Resurrection (totem on shields)
+- Rune: Revival (chance to not break the item on 0 dura)
+- Ancient Sealed Curses (apply curses on target)
+- Ancient Sword Mastery (more dmg the higher the targets atk stat)
+- Counter Attack (thorns on weapon)
+- Supreme Protection (lol)
+
+Enchantment removals
+- Subject English
+
+Enchantment Fixes and Changes:
+- Fixed Burning Thorns not applying durability damage
+- Gave Magma Walker temporary Magma blocks that re-melt when lava is nearby
+- Made Underwater Strider compatible with Depth Strider
+- Made Meltdown a curse
+- Made Dragging a curse
+- Natural Blocking now triggers before armour calc (so it also reduces durability damage on armour), but got nerfed to max 20% DR
+- Fixed Advanced Efficiency to applying correctly on items that aren’t mining the block they are the correct tool for (an L for saw gang)
+- Made Mortalitas only incompatible with Viper and Dark Shadows (conditional dmg enchants)
+- Increased dmg of Dark Shadows
+- Fixed Viper adding 1 dmg flat at any lvl
+- Made Crit Strike and Luck Magnification not w ork with each other but with no other enchants (crit enchants)
+- Made Inhumane also trigger on Vexes and Witches
+- Gave Penetrating Edge and Spell Breaker a dmg cap
+- Nerfed Ash Destroyer to scale its dmg multiplier with the fire ticks on the target.
+- Balanced and buffed Weather enchants to not be more curses than helpful enchants
+- Made Brutality scale with enchant lvl
+- Made lesser/normal/adv/supreme enchants be applicable independently of each other so a weapon can have BoA + Adv Smite + Supr Sharp (but only one per tier and one per type)
+- Made Butchering/Defusing Edge/Inhumane/Water Aspect their own separate incompatibility group, not incompat with sharpness-likes anymore
+- Fixed Culling having too strict requirements to cause a mob head to drop, removed jumpboost effect
+- Counter Attack and Parry now enhance each others chance to trigger. Counter Attack gives thorns dmg to the attacker, Parry blocks the attack
+- Purging blade now gives a dmg increase if a potion effect is removed
+- True Strike now has a low change for iframe bypass
+- Fixed Unreasonable not working in Survival
+- Changed Unsheathing to not auto pull the weapon but instead increase dmg when hitting right after pulling the weapon out
+- Nerfed Adept adding a lot of xp on top of its percentage increase (added +2+level flat, now adds at least +(level+1)/2, but usually 15% per lvl / 50% per lvl for bosses)
+- Hors de Combat will now give various vanilla potion effects randomly
+- Freezing will now create ice blocks that turn into air when melting instead of water
+
+#-------------------------------------#
+#           LycanitesMobs:            #
+#-------------------------------------#
+
+- Fixed Djin spawning
+- Disabled Djin spawning in Abyssal Rift biomes
+
+#-------------------------------------#
+#        LegendaryTooltips:           #
+#-------------------------------------#
+
+- Added new legendary tooltips for Delightful Cuisine for Woodheads & NuclearCraft [EagleMixins]
+
+#-------------------------------------#
+#     OpenTerrainGenerator:           #
+#-------------------------------------#
+
+- Lots of optimizations done, for a more detailed list see the Performance section a bit up ^
+- Fixed a bunch of issues in OpenTerrainGenerator:
+  Fixed TerrainGen.populate() being called with the block position, rather than chunk position.
+  Fixed ForgeWorld using inverted X and Z positions for getBiome() call.
+  Fixed OTGMineshaftGen using incorrect positioning for getBiome() call.
+  Fixed RavinesGen using incorrect positioning for getBiome() call.
+  Fixed ChunkCoordinate's hash-code function incorrectly handling / ignoring the X-position.
+  Fixed BiomeCommand using the y-position instead of z-position for getSavedBiomeName() with -s parameter.
+
+#-------------------------------------#
+#          EditableEdibles:           #
+#-------------------------------------#
+
+- Eating raw foods now gives you debuffs!
+
+#-------------------------------------#
+# Delightful Cuisine for Woodheads:  #
+#-------------------------------------#
+
+- Sinks can now be drunk from whilst holding shift (still does contain parasites!) [EagleMixins]
+
+#-------------------------------------#
+#           BetterQuesting:           #
+#-------------------------------------#
+
+- Added new questlines: Nuclear Blight, Brutal Tower, Corrupted Cities and tweaked Horrors of the Deep and The End of All Things.
+
+#-------------------------------------#
+#          Json Paintings:            #
+#-------------------------------------#
+
+- Added ~30 new paintings, stored in EagleMixins
+
+#-------------------------------------#
+#           BountyBoard:              #
+#-------------------------------------#
+
+- Added new bounty rewards: resource crate & brutal coin fragments and new bounties: Scape and Run Parasites and Lightning Dragons
+
+#-------------------------------------#
+#           Antique Atlas:            #
+#-------------------------------------#
+
+- Added pre-determined markers throughout Dregora with locational activators [Antique Atlas Auto Markers]
+- Added new tiles for biomes such as biomesoplenty and DregoraRL biomes! [Antique Atlas Auto Markers]
+
+#-------------------------------------#
+#            FancyMenu:               #
+#-------------------------------------#
+
+- Added various new loading screens teasing new areas and structures
+
+#-------------------------------------#
+#         Spartanweaponry:            #
+#-------------------------------------#
+
+- Changed scythe damage from 5.0 to 4.0 and speed 1.0 to 0.9
+
+#-------------------------------------#
+#            DefiledLands:            #
+#-------------------------------------#
+
+- Defiled Lands generate more often now [DregoraRL]
+- Bookwyrm max level increased from 30 to 40
+
+#-------------------------------------#
+#         FermiumMixins:              #
+#-------------------------------------#
+
+- Boatload of fixes optimizing RLCraft Dregora, to get a more detailed list check out the performance changes near the top of the changelog!
+- Added new foods to the hungry farmer blacklist; biomesoplenty:berries, nuclearcraft:radaway, nuclearcraft:radaway_slow, nuclearcraft:rad_x, mod_lavacow:netherstew,
+  mod_lavacow:parasite_item, mod_lavacow:plagued_porkchop, mod_lavacow:ghostjelly, mod_lavacow:bonestew, mod_lavacow:cactus_fruit, mod_lavacow:baobing
+
+#-------------------------------------#
+#             BattleTowers:           #
+#-------------------------------------#
+
+- Added Hazmat loot to battletowers [BattleTowers]
+
+#-------------------------------------#
+#          BetterCombatMod:           #
+#-------------------------------------#
+
+- New subtle breathing animation
+- New animation for when too close to a wall
+- Additional compatibility and bug fixes
+
+#-------------------------------------#
+#                Quark:               #
+#-------------------------------------#
+
+- Made bowls of food from Fish Undead Rising and Biomesoplenty stackable up to 16 [Quark]
+
+#-------------------------------------#
+#           Miscellaneous:            #
+#-------------------------------------#
+
+- Added localization for books within bunkers [Localizator]
+- Fixed Yale spawns (Again!?), these should now spawn in biomes of type MOUNTAIN without the following tags: HOT, LUSH, WET [InControl]
+- Added new Nuclearcraft Ores to Dragon Eye Xray [Trinkets & Baubles]
+- Removed reskillable requirements from dimension stack blocks (Blocks used in Brutal Tower among other locations) [Dimension Stack]
+- Added new status effect description in JEI status potions for new Contaminated & Teleportation Denial effects. [ContentTweaker]
+- Disabled iron skin rendering for slimes and shulkers [Rustic]
+- Altered universal biome matcher and added a script for recurrent complex disallowing structure generation in some biomes
+- Fixed sorting buttons in variedcommodities crates
+- Shivaxi Boss holds a dragonbone ice sword now instead of a diamond greatsword.
+- Blacklisted new iceandire entities from being culled [LagBGonRevived]
+- Fixed localization for item_gem_ruby_vc.name
+- Some minor fixes to loottables preventing them from spawning correctly [DregoraRL]
+- Changed villager chat villager from Another settlement needs our help to "your help" and several other typo's in villager chat [FermiumMixins & DynamicSurroundings]
+- Added Corruption Resistant tooltip to contentcreator:iron_plate_slab_reinforced [ContentTweaker]
+- Fixed an issue where blood gems could be used to create terrestrial artifact from Biomesoplenty [ContentTweaker]
+- Unhid several items from the recipe screen: bop berry bush, fur parasite items, dragon collar, ore chunks, monster box, portal framed and more! [JEI]
+- Fixed the holy hand grenade recipe attempting to take a lot of items, more boom for less! [ContentTweaker]
+- Switched out the biomesoplenty amethysts for ice and fire amethysts and biomesoplenty sapphires for ice and fire sapphires [ContentTweaker]
+- SERVER README updated because important stuff. READ OR PERISH!
+
+Big Thanks (And Curses to you all because I'm doing this in the unrefined Eagle way!)
+
+Thaaa Shivaxiii!!!! - The Legend himself for being my personal technically unpaid coach in all of this!
+NLBlackHeavenNL - Sorry I couldn't put my own family first, Shivaxi would unfriend me if I didn't put him above you!
+FonnyMunkey - For Coaching my Coach!!! (And the painting ideas!!! And all of his crazy optimizations made together with Meldexun, Kotlin and Nischelm! And much, much more!)
+Meldexun - For helping me learn basic code without saying "O God" all the time! & EagleMixins Additions & Optimizations!!! :D + More!
+Nischelm - For Helping me learn basic coding whilst saying "O God" all the time! & your many additions to EagleMixins + the creation of SRPMixins & SME & The Min/Max Painting & the many great chats over dev!
+Artsy - Those are a LOT of books lol! Also Thanks for the other new texture packs and the LegendaryTooltip upload! :D
+Kotlin - You better NOT pull that uno-reverse on me next time we meet!!! Let me thank you for your efforts on Eaglemixins and I&F next time we meet in October!!
+Fantasy - My partner's nickname for giving me inspiration and support in making this all happen and helping with idea's for the Looooorrreeeee!
+Barryyyyy!!! - Now you are also part of the credits for no apparent reason :D But nah, for real I know you were and are a great help to Shivaxi which indirectly also was a great help to me!
+Rayquazafallout - We really should do a meetup once with some of the other developers and throw a party for Fonny who would've had an aneurism handling all the bugs if it wasn't for you lol.
+Iqury - Congratz on your first mod! Looking forward to seeing all the Amphithere variations :D Oh uh and I should also mention, thanks for blowing things up, helped me with balancing xD! And the epic Viking painting of course!
+CDSTK - Thanks for the great insight when playtesting! Your feedback made it so those who follow have a more balanced experience!
+Stranding - The resident radiation expert! Oh dear, what would the community have done without all the balancing you brought to the radiation system xD
+Eclipse - Thanks for the colourful idea's on what to do with that left-over skyscraper, it looks amazing now lol! And for the SRP rebalance tweaks! And moaaarr!!!
+EmeraldMintLeaf - For the epic Dragon painting!! and the epic Forest painting!!! And the epic Green Serpent Painting!!!
+Beckadam01 - For Helping me through the last rough nights, had fun chatting over dev chat lol and looking forward to the awesome stuff you are cooking up!
+KameiB - And I feel tired after writing this changelog, let alone the whole rework of loottables which you pulled off! I'll pay for your drinks once we meet up in October!!!
+TwillightStarArt - For the epic sea serpent art!
+Hecameme - For the Fire & Water Art!
+Zoidzz_ - For the Sunset Tree Painting!
+NotKotlin - For not making a mess out of things this time >:| (I hope?)
+
+The Community!! - For being a constant motivator and source of inspiration, loved the reactions I've seen these last few months over discord, YouTube, in my DM's and awkwardly enough sometimes in Real Life too lol and of course from streamers such as Captain Sparkle and his face, that moment in the club haha, that was golden!! Really loved that! Or the stupidly long 500 days from DefinitelyDead & Phaganax along with many other streamers like Kiwi, X33n, Pete, Griippi, Waffles, Nanonaitor, Suev, Wrld, Stingin, Neurotic Goose, Clover of Shurima, Shroud, XEmtek, MeeraRL and the o so many others I wished I had watched but didn't had the time for to because I also had to create a 1.1.0 version for the modpack xD!
+
+Thanks again for all the feedback both the praising as the critical ones such as those from Pooler, because we all communicate for we care and I appreciate that!
+
+And Remember everyone, Milk is Creative!
+
+!OLD WORLDS ARE NOT COMPATIBLE - DO NOT INSTALL THIS OVER PREVIOUS INSTALLS, CREATE A NEW INSTALL!
