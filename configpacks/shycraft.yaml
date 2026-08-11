@@ -1,12 +1,16 @@
-name: RLCraft Parasited ShyCraft
-version: 1.2.3 - July 25 2026
-description: 'ShyCraft Parasited: A modification of Parasited'
+name: "RLCraft Parasited SHYCRAFT"
+version: "1.2.3 - July 25 2026"
+description: "ShyCraft Parasited: A modification of Parasited"
+
+# Build configuration
 build:
   mode: modpack
-  output_name: ShyCraft Parasited.zip
+  output_name: "ShyCraft Parasited.zip"
   include:
     - manifest.json
     - profileImage
+
+# Patches to apply
 patches:
 - type: json_patch
   file: manifest.json
@@ -33,7 +37,7 @@ patches:
   file: options.txt
   description: "change direct connect server to ShyCraft"
   changes:
-    lastServer: ShyCraft.mcserver.us
+    lastServer: "ShyCraft.mcserver.us"
 
 - type: keyvalue_patch
   file: config/VariedCommodities.cfg
@@ -572,16 +576,16 @@ patches:
   changes:
   - op: add
     path: /other/background/slideshow/images/0
-    value: mainmenu:images/shycraft/0.png
+    value: "mainmenu:images/shycraft/0.png"
   - op: add
     path: /other/background/slideshow/images/1
-    value: mainmenu:images/shycraft/1.jpg
+    value: "mainmenu:images/shycraft/1.jpg"
   - op: add
     path: /other/background/slideshow/images/2
-    value: mainmenu:images/shycraft/2.png
+    value: "mainmenu:images/shycraft/2.png"
   - op: add
     path: /other/background/slideshow/images/3
-    value: mainmenu:images/shycraft/3.png
+    value: "mainmenu:images/shycraft/3.png"
   - op: move
     path: /other/background/slideshow/images/4
     from: /other/background/slideshow/images/19
@@ -593,25 +597,25 @@ patches:
     value: 150
   - op: replace
     path: /labels/discord 2/hoverText
-    value: ' nShyCraft Discord'
+    value: " nShyCraft Discord"
   - op: replace
     path: /labels/discord 2/action/link
-    value: https://discord.gg/FznKCfHjAJ
+    value: "https://discord.gg/FznKCfHjAJ"
   - op: replace
     path: /labels/discord 2/text
-    value: ShyCraft Discord
+    value: "ShyCraft Discord"
   - op: replace
     path: /labels/rl_craft/text
-    value: ShyCraft Parasited X (1.2.3 - July 25 2026)
+    value: "ShyCraft Parasited X (1.2.3)"
   - op: replace
     path: /labels/discord/hoverText
-    value: ' nNischhelm''s Discord'
+    value: " nNischhelm's Discord"
   - op: replace
     path: /labels/discord/action/link
-    value: https://discord.gg/YYrqFMecNG
+    value: "https://discord.gg/YYrqFMecNG"
   - op: replace
     path: /labels/discord/text
-    value: Nischhelm's Discord
+    value: "Nischhelm's Discord"
 
 - type: cfg_patch
   file: config/setbonus/1.12.2.009+.cfg
@@ -727,48 +731,49 @@ patches:
   file: resources/contenttweaker/lang/en_us.lang
   description: "Add localization for ShyCraft custom music discs"
   changes:
-    item.contenttweaker.dragonborn.name: §dDragonborn
-    item.record.dragonborn.desc: ShyCraft - Dragonborn
-    item.contenttweaker.faraway.name: §dFaraway
-    item.record.faraway.desc: ShyCraft - faraway
-    item.contenttweaker.hushed.name: §dHushed
-    item.record.hushed.desc: ShyCraft - Hushed
-    item.contenttweaker.la_lecon.name: §dLa_lecon
-    item.record.la_lecon.desc: ShyCraft - La_lecon
-    item.contenttweaker.lugia.name: §dLugia
-    item.record.lugia.desc: ShyCraft - Lugia
-    item.contenttweaker.march.name: §dMarch
-    item.record.march.desc: ShyCraft - March
-    item.contenttweaker.sanctuary_village.name: §dSanctuary
-    item.record.sanctuary_village.desc: ShyCraft - Sanctuary
-    item.contenttweaker.sovngarde.name: §dSovngarde
-    item.record.sovngarde.desc: ShyCraft - Sovngarde
-    item.contenttweaker.spells.name: §dSpells
-    item.record.spells.desc: ShyCraft - Spells
-    item.contenttweaker.subwoofer.name: §dSubwoofer
-    item.record.subwoofer.desc: ShyCraft - Subwoofer
-    item.contenttweaker.sweden.name: §dSweden
-    item.record.sweden.desc: ShyCraft - Sweden
-    item.contenttweaker.tavern.name: §dTavern
-    item.record.tavern.desc: ShyCraft - Tavern
-    item.contenttweaker.careless.name: §dCareless
-    item.record.careless.desc: ShyCraft - Careless
-    item.contenttweaker.underworld.name: §dUnderworld
-    item.record.underworld.desc: ShyCraft - Underworld
-    item.contenttweaker.killers.name: §dKillers
-    item.record.killers.desc: ShyCraft - Killers
-    item.contenttweaker.glamour.name: §dGlamour
-    item.record.glamour.desc: ShyCraft - Glamour
-    item.contenttweaker.elwynn_forest.name: §dElwynn_forest
-    item.record.elwynn_forest.desc: ShyCraft - Elwynn_forest
-    item.contenttweaker.nightmare.name: §dNightmare
-    item.record.nightmare.desc: ShyCraft - Nightmare
-    item.contenttweaker.megalovania.name: §dMegalovania
-    item.record.megalovania.desc: ShyCraft - Megalovania
-    item.contenttweaker.ragnaros.name: §dRagnaros
-    item.record.ragnaros.desc: ShyCraft - Ragnaros
-    item.contenttweaker.ariab.name: §dAriaB
-    item.record.ariab.desc: ShyCraft - AriaB
+    add:
+    item.contenttweaker.dragonborn.name: "§dDragonborn"
+    item.record.dragonborn.desc: "ShyCraft - Dragonborn"
+    item.contenttweaker.faraway.name: "§dFaraway"
+    item.record.faraway.desc: "ShyCraft - faraway"
+    item.contenttweaker.hushed.name: "§dHushed"
+    item.record.hushed.desc: "ShyCraft - Hushed"
+    item.contenttweaker.la_lecon.name: "§dLa_lecon"
+    item.record.la_lecon.desc: "ShyCraft - La_lecon"
+    item.contenttweaker.lugia.name: "§dLugia"
+    item.record.lugia.desc: "ShyCraft - Lugia"
+    item.contenttweaker.march.name: "§dMarch"
+    item.record.march.desc: "ShyCraft - March"
+    item.contenttweaker.sanctuary_village.name: "§dSanctuary"
+    item.record.sanctuary_village.desc: "ShyCraft - Sanctuary"
+    item.contenttweaker.sovngarde.name: "§dSovngarde"
+    item.record.sovngarde.desc: "ShyCraft - Sovngarde"
+    item.contenttweaker.spells.name: "§dSpells"
+    item.record.spells.desc: "ShyCraft - Spells"
+    item.contenttweaker.subwoofer.name: "§dSubwoofer"
+    item.record.subwoofer.desc: "ShyCraft - Subwoofer"
+    item.contenttweaker.sweden.name: "§dSweden"
+    item.record.sweden.desc: "ShyCraft - Sweden"
+    item.contenttweaker.tavern.name: "§dTavern"
+    item.record.tavern.desc: "ShyCraft - Tavern"
+    item.contenttweaker.careless.name: "§dCareless"
+    item.record.careless.desc: "ShyCraft - Careless"
+    item.contenttweaker.underworld.name: "§dUnderworld"
+    item.record.underworld.desc: "ShyCraft - Underworld"
+    item.contenttweaker.killers.name: "§dKillers"
+    item.record.killers.desc: "ShyCraft - Killers"
+    item.contenttweaker.glamour.name: "§dGlamour"
+    item.record.glamour.desc: "ShyCraft - Glamour"
+    item.contenttweaker.elwynn_forest.name: "§dElwynn_forest"
+    item.record.elwynn_forest.desc: "ShyCraft - Elwynn_forest"
+    item.contenttweaker.nightmare.name: "§dNightmare"
+    item.record.nightmare.desc: "ShyCraft - Nightmare"
+    item.contenttweaker.megalovania.name: "§dMegalovania"
+    item.record.megalovania.desc: "ShyCraft - Megalovania"
+    item.contenttweaker.ragnaros.name: "§dRagnaros"
+    item.record.ragnaros.desc: "ShyCraft - Ragnaros"
+    item.contenttweaker.ariab.name: "§dAriaB"
+    item.record.ariab.desc: "ShyCraft - AriaB"
 
 - type: folder_add
   source: shycraft/resources/rlmixins/textures
