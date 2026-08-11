@@ -1,0 +1,17 @@
+name: "Dregora HCC Omega overrides"
+version: "1.0.0"
+description: "Dregora-specific overrides for HCC Omega configpack"
+inherits: hcc_omega
+
+# Patches to apply
+patches:
+  - type: cfg_patch
+    file: config/scalinghealth/main.cfg
+    description: "difficulty as distance from spawn, halved in dregora hcc to be able to explore more"
+    changes:
+      "main.difficulty":
+        S:"Difficulty Per Block": 0.0005
+
+# Build configuration
+build:
+  output_name: "OmegaHCC_Server.zip"
