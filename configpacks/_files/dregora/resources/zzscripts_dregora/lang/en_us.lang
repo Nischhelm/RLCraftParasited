@@ -1,0 +1,684 @@
+##################################################################
+# Dregora.zs
+##################################################################
+## Event-conditioned Item Names & Lore =============================================
+item.rldregora.corrupted_ashes.name=Corrupted Ashes
+item.rldregora.infernal_ashes.name=Infernal Ashes
+## Ores
+
+
+##################################################################
+# Nuclearcraft_recipes.zs
+##################################################################
+## Lead Ore
+rldregora.nuclearcraft:ore:2.tooltip=Found in non-canyon biomes deep under solid ground
+## Thorium Ore
+rldregora.nuclearcraft:ore:3.tooltip=Found in Abyssal Rift and lower Underneath/Lost Cities
+## Uranium Ore
+rldregora.nuclearcraft:ore:4.tooltip=Found in Nuclear Blight and below Cities
+## Boron Ore
+rldregora.nuclearcraft:ore:5.tooltip=Found deep below Mountains and lower Underneath/Lost Cities
+## Lithium Ore
+rldregora.nuclearcraft:ore:6.tooltip=Resource found in the Underneath/Lost Cities
+## Lead Ore
+rldregora.deepslate_lead.tooltip=
+## Thorium Ore
+rldregora.deepslate_thorium.tooltip=Found in the Underneath
+## Uranium Ore
+rldregora.deepslate_uranium.tooltip=Found in the Underneath
+## Boron Ore
+rldregora.deepslate_boron.tooltip=Found in the Underneath
+## Lithium Ore
+rldregora.deepslate_lithium.tooltip=Found in the Underneath
+
+
+## Misc items
+rldregora.nuclearcraft:tutorial.tooltip=§7Protocols are documented in the quest archive
+rldregora.nuclearcraft:tritium_lamp.tooltip=§dAncient light source, rarely found in §4§lRegistered Fallout Shelters.
+rldregora.nuclearcraft:upgrade.tooltip=§dLost technology, rarely found in §8§lIndustrial Crates
+rldregora.nuclearcraft:record.tooltip=§dVinyl! rarely found in §8§lIndustrial Crates
+rldregora.nuclearcraft:rad_shielding:0.tooltip=§eCan be applied to containers such as chests or shulker boxes
+rldregora.nuclearcraft:rad_shielding:1.tooltip=§eCan be applied to containers such as chests or shulker boxes
+rldregora.nuclearcraft:rad_shielding:2.tooltip=§eCan be applied to containers such as chests or shulker boxes
+## Radiation protection
+rldregora.nuclearcraft:geiger_counter.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:helm_hazmat.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:chest_hazmat.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:legs_hazmat.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:boots_hazmat.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:radaway_slow.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:rad_x.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+rldregora.nuclearcraft:radaway.tooltip=§dFound in either §8§lIndustrial Crates§r, §e§lFallout Shelters§r and §4§lRegistered Fallout Shelters
+## Nuclear Reactor Components
+rldregora.nuclearcraft:shelter_fission.tooltip=§dReactor Core Component, found in §4§lRegistered Fallout Shelters§r & very rarely in §8§lIndustrial Crates
+## Machine Blocks that use power in Big Shelters
+rldregora.nuclearcraft:shelter_big.tooltip=§dOld World Machinery usually found in §4§lRegistered Fallout Shelters§r and rarely in §8§lIndustrial Crates
+## Machine Blocks in small & big shelters that do not use power
+rldregora.nuclearcraft:shelter_small.tooltip=§dOld World Machinery found in §8§lIndustrial Crates, §4§lRegistered§r and §e§lRegular Fallout Shelters
+## Machine Blocks that collect resources when powered (Water/Nitrogen/Helium)
+rldregora.nuclearcraft:collector.tooltip=§dOld World Machinery found in §8§lIndustrial Crates, §4§lRegistered§r and §e§lRegular Fallout Shelters
+## Blocks that emit radiation and RF (energy)
+rldregora.nuclearcraft:generators.tooltip=§dDangerous, Radioactive Generators found rarely in §8§lIndustrial Crates§r and §4§lRegistered Fallout Shelters
+## Blocks that store power
+rldregora.nuclearcraft:power_storage.tooltip=§dOld World Machinery usually found in §4§lRegistered Fallout Shelters§r and rarely in §8§lIndustrial Crates
+
+##################################################################
+# Dregora_arrays.zs
+##################################################################
+## BlackListEntitiesNameChangeVillager ==================================
+Sussyberian=Sussyberian
+Mentalberian=Mentalberian
+## BlackListEntitiesNameChangeVillager ==================================
+Dismounting=Dismounting
+Dismounter=Dismounter
+Dispel=Dispel
+Sarevok=Sarevok
+Jester=Jester
+## BlackListEntitiesNameChangePlayerbosses ==================================
+Blighted Shivaxi=Blighted Shivaxi
+## BlackListEntitiesNameChangeParasite ==================================
+Sentient Horror=Sentient Horror
+Degrading Overseer=Degrading Overseer
+Malformed Observer=Malformed Observer
+Corrupted Carrier=Corrupted Carrier
+Necrotic Blight=Necrotic Blight
+
+##################################################################
+# Dregora_PotionTooltips.zs
+##################################################################
+# Vanilla Effects
+rldregora.effect.minecraft.levitation.name=§rStatus Effect§c Levitation
+rldregora.effect.minecraft.levitation.lore=§f ☕§b Makes affected entities float upward.
+rldregora.effect.minecraft.health_boost.name=§rStatus Effect§a Health Boost
+rldregora.effect.minecraft.health_boost.lore=§f ☕§b Increases maximum health.
+rldregora.effect.minecraft.jump_boost.name=§rStatus Effect§a Jump Boost
+rldregora.effect.minecraft.jump_boost.lore=§f ☕§b Increases jump height and reduces fall damage.
+rldregora.effect.minecraft.hunger.name=§rStatus Effect§c Hunger
+rldregora.effect.minecraft.hunger.lore=§f ☕§b Increases hunger exhaustion rate.
+rldregora.effect.minecraft.poison.name=§rStatus Effect§c Poison
+rldregora.effect.minecraft.poison.lore=§f ☕§b Deals damage over time. Does not affect undead.
+rldregora.effect.minecraft.night_vision.name=§rStatus Effect§a Night Vision
+rldregora.effect.minecraft.night_vision.lore=§f ☕§b Allows to see in the dark.
+rldregora.effect.minecraft.instant_health.name=§rStatus Effect§a Instant Health
+rldregora.effect.minecraft.instant_health.lore=§f ☕§b Increases health for living mobs and damages the undead.
+rldregora.effect.minecraft.strength.name=§rStatus Effect§a Strength
+rldregora.effect.minecraft.strength.lore=§f ☕§b Increases player's melee attack damage by 3.
+rldregora.effect.minecraft.speed.name=§rStatus Effect§a Speed
+rldregora.effect.minecraft.speed.lore=§f ☕§b Increases movement speed, sprinting speed, and jumping length by 20%%.
+rldregora.effect.minecraft.luck.name=§rStatus Effect§a Luck
+rldregora.effect.minecraft.luck.lore=§f ☕§b Makes it more likely to receive better loot from certain loot tables.
+rldregora.effect.minecraft.instant_damage.name=§rStatus Effect§c Instant Damage
+rldregora.effect.minecraft.instant_damage.lore=§f ☕§b Decreases health for players and living mobs and heals the undead.
+rldregora.effect.minecraft.resistance.name=§rStatus Effect§a Resistance
+rldregora.effect.minecraft.resistance.lore=§f ☕§b Reduces incoming damage.
+rldregora.effect.minecraft.nausea.name=§rStatus Effect§c Nausea
+rldregora.effect.minecraft.nausea.lore=§f ☕§b Warps and wobbles the player's vision.
+rldregora.effect.minecraft.glowing.name=§rStatus Effect§a Glowing
+rldregora.effect.minecraft.glowing.lore=§f ☕§b Outlines entities, making them visible through blocks.
+rldregora.effect.minecraft.weakness.name=§rStatus Effect§c Weakness
+rldregora.effect.minecraft.weakness.lore=§f ☕§b Decreases melee damage.
+rldregora.effect.minecraft.mining_fatigue.name=§rStatus Effect§c Mining Fatigue
+rldregora.effect.minecraft.mining_fatigue.lore=§f ☕§b Decreases mining and attack speed.
+rldregora.effect.minecraft.invisibility.name=§rStatus Effect§a Invisibility
+rldregora.effect.minecraft.invisibility.lore=§f ☕§b Grants invisibility.
+rldregora.effect.minecraft.wither.name=§rStatus Effect§c Wither
+rldregora.effect.minecraft.wither.lore=§f ☕§b Deals damage over time.
+rldregora.effect.minecraft.absorption.name=§rStatus Effect§a Absorption
+rldregora.effect.minecraft.absorption.lore=§f ☕§b Grants additional health points.
+rldregora.effect.minecraft.haste.name=§rStatus Effect§a Haste
+rldregora.effect.minecraft.haste.lore=§f ☕§b Increases attack speed by 10%%.
+rldregora.effect.minecraft.water_breathing.name=§rStatus Effect§a Water Breathing
+rldregora.effect.minecraft.water_breathing.lore=§f ☕§b Grants the ability to breathe underwater.
+rldregora.effect.minecraft.slowness.name=§rStatus Effect§c Slowness
+rldregora.effect.minecraft.slowness.lore=§f ☕§b Decreases movement speed.
+rldregora.effect.minecraft.saturation.name=§rStatus Effect§a Saturation
+rldregora.effect.minecraft.saturation.lore=§f ☕§b Restores hunger over time.
+rldregora.effect.minecraft.regeneration.name=§rStatus Effect§a Regeneration
+rldregora.effect.minecraft.regeneration.lore=§f ☕§b Restores health over time.
+rldregora.effect.minecraft.blindness.name=§rStatus Effect§c Blindness
+rldregora.effect.minecraft.blindness.lore=§f ☕§b Reduces viewing range and prevents the player from sprinting and dealing critical hits.
+rldregora.effect.minecraft.unluck.name=§rStatus Effect§c Bad Luck
+rldregora.effect.minecraft.unluck.lore=§f ☕§b Can decrease the quality and quantity of loot.
+rldregora.effect.minecraft.fire_resistance.name=§rStatus Effect§a Fire Resistance
+rldregora.effect.minecraft.fire_resistance.lore=§f ☕§b Grants immunity to fire and lava.
+
+# Charm Effects =================================================================
+rldregora.effect.charm.ender_sight.name=§rStatus Effect§a Ender Sight
+rldregora.effect.charm.ender_sight.lore=§f ☕§b Allows to locate the stronghold and attracts endermen.
+rldregora.effect.charm.coffee.name=§rStatus Effect§a Coffee
+rldregora.effect.charm.coffee.lore=§f ☕§b Gives Speed, Haste and Strength for a short time.
+
+# PotionCore Effects =================================================================
+rldregora.effect.potioncore.magic_inhibition.name=§rStatus Effect§c Magic Inhibition
+rldregora.effect.potioncore.magic_inhibition.lore=§f ☕§b Decreases magic damage.
+rldregora.effect.potioncore.bless.name=§rStatus Effect§a Bless
+rldregora.effect.potioncore.bless.lore=§f ☕§b Gives a random positive potion effect.
+rldregora.effect.potioncore.teleport.name=§rStatus Effect§c Teleport
+rldregora.effect.potioncore.teleport.lore=§f ☕§b Teleports the target to a random nearby location.
+rldregora.effect.potioncore.iron_skin.name=§rStatus Effect§a Iron Skin
+rldregora.effect.potioncore.iron_skin.lore=§f ☕§b Increases armor.
+rldregora.effect.potioncore.recoil.name=§rStatus Effect§a Recoil
+rldregora.effect.potioncore.recoil.lore=§f ☕§b Reflects some of the damage back to the attacker.
+rldregora.effect.potioncore.drown.name=§rStatus Effect§c Drowning
+rldregora.effect.potioncore.drown.lore=§f ☕§b Makes the target only breath underwater.
+rldregora.effect.potioncore.broken_magic_shield.name=§rStatus Effect§c Broken Shield
+rldregora.effect.potioncore.broken_magic_shield.lore=§f ☕§b Increases magic damage taken.
+rldregora.effect.potioncore.flight.name=§rStatus Effect§a Flight
+rldregora.effect.potioncore.flight.lore=§f ☕§b Grants creative flight.
+rldregora.effect.potioncore.love.name=§rStatus Effect§a Love
+rldregora.effect.potioncore.love.lore=§f ☕§b Causes affected animals to breed.
+rldregora.effect.potioncore.perplexity.name=§rStatus Effect§c Perplexity
+rldregora.effect.potioncore.perplexity.lore=§f ☕§b Reverses player's controls.
+rldregora.effect.potioncore.klutz.name=§rStatus Effect§c Klutz
+rldregora.effect.potioncore.klutz.lore=§f ☕§b Decreases projectile damage.
+rldregora.effect.potioncore.chance.name=§rStatus Effect§a Chance
+rldregora.effect.potioncore.chance.lore=§f ☕§b Gives a random potion effect.
+rldregora.effect.potioncore.antidote.name=§rStatus Effect§a Antidote
+rldregora.effect.potioncore.antidote.lore=§f ☕§b Grants immunity to poison.
+rldregora.effect.potioncore.magic_shield.name=§rStatus Effect§a Magic Shield
+rldregora.effect.potioncore.magic_shield.lore=§f ☕§b Reduces magic damage taken.
+rldregora.effect.potioncore.teleport_spawn.name=§rStatus Effect§a Spawn Teleport
+rldregora.effect.potioncore.teleport_spawn.lore=§f ☕§b Teleports you to the spawn after standing still for 10 seconds.
+rldregora.effect.potioncore.revival.name=§rStatus Effect§a Revival
+rldregora.effect.potioncore.revival.lore=§f ☕§b Revives the target with 2 hearts per level on death.
+rldregora.effect.potioncore.broken_armor.name=§rStatus Effect§c Broken Armor
+rldregora.effect.potioncore.broken_armor.lore=§f ☕§b Decreases armor.
+rldregora.effect.potioncore.magic_focus.name=§rStatus Effect§a Magic Focus
+rldregora.effect.potioncore.magic_focus.lore=§f ☕§b Increases magic damage.
+rldregora.effect.potioncore.burst.name=§rStatus Effect§a Burst
+rldregora.effect.potioncore.burst.lore=§f ☕§b Creates an explosion that doesn't damage the target and surrounding blocks.
+rldregora.effect.potioncore.teleport_surface.name=§rStatus Effect§a Teleport Surface
+rldregora.effect.potioncore.teleport_surface.lore=§f ☕§b Teleports the target to the surface.
+rldregora.effect.potioncore.extension.name=§rStatus Effect§a Extension
+rldregora.effect.potioncore.extension.lore=§f ☕§b Extends the duration of one random effect per level.
+rldregora.effect.potioncore.repair.name=§rStatus Effect§a Repairing
+rldregora.effect.potioncore.repair.lore=§f ☕§b Repairs target's equipped and held items.
+rldregora.effect.potioncore.lightning.name=§rStatus Effect§c Lightning
+rldregora.effect.potioncore.lightning.lore=§f ☕§b Strikes the target with lightning.
+rldregora.effect.potioncore.spin.name=§rStatus Effect§c Spinning
+rldregora.effect.potioncore.spin.lore=§f ☕§b Makes the target spin around.
+rldregora.effect.potioncore.vulnerable.name=§rStatus Effect§c Vulnerability
+rldregora.effect.potioncore.vulnerable.lore=§f ☕§b Increases damage taken.
+rldregora.effect.potioncore.curse.name=§rStatus Effect§c Curse
+rldregora.effect.potioncore.curse.lore=§f ☕§b Gives a random negative potion effect.
+rldregora.effect.potioncore.archery.name=§rStatus Effect§a Trueshot
+rldregora.effect.potioncore.archery.lore=§f ☕§b Increases projectile damage.
+rldregora.effect.potioncore.fire.name=§rStatus Effect§c Fire
+rldregora.effect.potioncore.fire.lore=§f ☕§b Sets the target on fire.
+rldregora.effect.potioncore.explode.name=§rStatus Effect§c Explode
+rldregora.effect.potioncore.explode.lore=§f ☕§b Creates an explosion.
+rldregora.effect.potioncore.step_up.name=§rStatus Effect§a Step Up
+rldregora.effect.potioncore.step_up.lore=§f ☕§b Increases step height.
+rldregora.effect.potioncore.cure.name=§rStatus Effect§a Cure
+rldregora.effect.potioncore.cure.lore=§f ☕§b Clears all negative potion effects.
+rldregora.effect.potioncore.potion_sickness.name=§rStatus Effect§c Potion Sickness
+rldregora.effect.potioncore.potion_sickness.lore=§f ☕§b Applies various negative debuffs
+rldregora.effect.potioncore.climb.name=§rStatus Effect§a Climbing
+rldregora.effect.potioncore.climb.lore=§f ☕§b Allows climbing on walls.
+rldregora.effect.potioncore.solid_core.name=§rStatus Effect§a Solid Core
+rldregora.effect.potioncore.solid_core.lore=§f ☕§b Increases knockback resistance.
+rldregora.effect.potioncore.slow_fall.name=§rStatus Effect§a Slowfall
+rldregora.effect.potioncore.slow_fall.lore=§f ☕§b Reduces falling speed and fall damage.
+rldregora.effect.potioncore.reach.name=§rStatus Effect§a Reach
+rldregora.effect.potioncore.reach.lore=§f ☕§b Increases reach.
+rldregora.effect.potioncore.diamond_skin.name=§rStatus Effect§a Diamond Skin
+rldregora.effect.potioncore.diamond_skin.lore=§f ☕§b Increases armor toughness.
+rldregora.effect.potioncore.launch.name=§rStatus Effect§c Launch
+rldregora.effect.potioncore.launch.lore=§f ☕§b Launches the target into the air.
+rldregora.effect.potioncore.rust.name=§rStatus Effect§c Corrosion
+rldregora.effect.potioncore.rust.lore=§f ☕§b Damages target's equipped and held items. Gold is not affected.
+rldregora.effect.potioncore.invert.name=§rStatus Effect§c Invert
+rldregora.effect.potioncore.invert.lore=§f ☕§b Inverts potion effects.
+rldregora.effect.potioncore.purity.name=§rStatus Effect§a Purity
+rldregora.effect.potioncore.purity.lore=§f ☕§b Grants immunity to wither.
+rldregora.effect.potioncore.disorganization.name=§rStatus Effect§c Disorganization
+rldregora.effect.potioncore.disorganization.lore=§f ☕§b Shuffles player's inventory.
+rldregora.effect.potioncore.weight.name=§rStatus Effect§c Weight
+rldregora.effect.potioncore.weight.lore=§f ☕§b Decreases jump height.
+rldregora.effect.potioncore.dispel.name=§rStatus Effect§c Dispel
+rldregora.effect.potioncore.dispel.lore=§f ☕§b Clears all positive potion effects.
+
+# Rustic Effects =================================================================
+rldregora.effect.rustic.blazing_trail.name=§rStatus Effect§a Blazing Trail
+rldregora.effect.rustic.blazing_trail.lore=§f ☕§b Leaves a trail of fire behind the target.
+rldregora.effect.rustic.shame.name=§rStatus Effect§c Shame
+rldregora.effect.rustic.shame.lore=§f ☕§b Shame on you!
+rldregora.effect.rustic.tipsy.name=§rStatus Effect§c Inebriated
+rldregora.effect.rustic.tipsy.lore=§f ☕§b Causes slowness and blindness at stage 3.
+rldregora.effect.rustic.feather.name=§rStatus Effect§a Feather
+rldregora.effect.rustic.feather.lore=§f ☕§b Reduces falling speed and negates fall damage.
+rldregora.effect.rustic.wither_ward.name=§rStatus Effect§a Wither Ward
+rldregora.effect.rustic.wither_ward.lore=§f ☕§b Grants immunity to wither damage.
+rldregora.effect.rustic.magic_resistance.name=§rStatus Effect§a Magic Resistance
+rldregora.effect.rustic.magic_resistance.lore=§f ☕§b Reduces magic damage taken.
+rldregora.effect.rustic.ironskin.name=§rStatus Effect§a Iron Skin
+rldregora.effect.rustic.ironskin.lore=§f ☕§b Increases armor and armor toughness.
+
+# Quark Effects =================================================================
+rldregora.effect.quark.resilience.name=§rStatus Effect§a Resilience
+rldregora.effect.quark.resilience.lore=§f ☕§b Increases knockback resistance.
+
+# SimpleDifficulty Effects ======================================================
+rldregora.effect.simpledifficulty.parasites.name=§rStatus Effect§c Parasites
+rldregora.effect.simpledifficulty.parasites.lore=§f ☕§b Deals damage each second.
+rldregora.effect.simpledifficulty.cold_resist.name=§rStatus Effect§a Cold Resistance
+rldregora.effect.simpledifficulty.cold_resist.lore=§f ☕§b Grants immunity to Hypothermia.
+rldregora.effect.simpledifficulty.hypothermia.name=§rStatus Effect§c Hypothermia
+rldregora.effect.simpledifficulty.hypothermia.lore=§f ☕§b Causes damage over time.
+rldregora.effect.simpledifficulty.heat_resist.name=§rStatus Effect§a Heat Resistance
+rldregora.effect.simpledifficulty.heat_resist.lore=§f ☕§b Grants immunity to Hyperthermia
+rldregora.effect.simpledifficulty.hyperthermia.name=§rStatus Effect§c Hyperthermia
+rldregora.effect.simpledifficulty.hyperthermia.lore=§f ☕§b Causes damage over time.
+rldregora.effect.simpledifficulty.thirsty.name=§rStatus Effect§c Thirsty
+rldregora.effect.simpledifficulty.thirsty.lore=§f ☕§b Causes increased thirst.
+
+# ScalingHealth Effects ==========================================================
+rldregora.effect.scalinghealth.bandaged.name=§rStatus Effect§a Bandaged
+rldregora.effect.scalinghealth.bandaged.lore=§f ☕§b Applies Slowness and Heals you over time
+
+#SRParasites Effects =============================================================
+rldregora.effect.srparasites.needler.name=§rStatus Effect§c Needler
+rldregora.effect.srparasites.needler.lore=§f ☕§b Deals 40%% of HP after reaching stage 7.
+rldregora.effect.srparasites.antimall.name=§rStatus Effect§c Immalleable
+rldregora.effect.srparasites.antimall.lore=§f ☕§b Disables parasites adaption system.
+rldregora.effect.srparasites.senses.name=§rStatus Effect§a Heightened Senses
+rldregora.effect.srparasites.senses.lore=§f ☕§b Buffs parasite follow range and target range.
+rldregora.effect.srparasites.debar.name=§rStatus Effect§a Debar
+rldregora.effect.srparasites.debar.lore=§f ☕§b Halts the subtraction of evolution points and item drops.
+rldregora.effect.srparasites.pivot.name=§rStatus Effect§a Pivot
+rldregora.effect.srparasites.pivot.lore=§f ☕§b Diverts damage to Rooters, increases attack speed and doubles evolution gain.
+rldregora.effect.srparasites.repel.name=§rStatus Effect§a Camouflage
+rldregora.effect.srparasites.repel.lore=§f ☕§b Decreases the chance of subtracting Call of the Hive by 70%%.
+rldregora.effect.srparasites.bleed.name=§rStatus Effect§c Bleeding
+rldregora.effect.srparasites.bleed.lore=§f ☕§b Inflicts damage over time and doubles this when moving.
+rldregora.effect.srparasites.foster.name=§rStatus Effect§a Foster
+rldregora.effect.srparasites.foster.lore=§f ☕§b Increases Adaptation.
+rldregora.effect.srparasites.link.name=§rStatus Effect§a Link
+rldregora.effect.srparasites.link.lore=§f ☕§b Contributes to global adaptation without the Colony requirement.
+rldregora.effect.srparasites.coth.name=§rStatus Effect§c Call of the Hive
+rldregora.effect.srparasites.coth.lore=§f ☕§b Turns susceptible entities into Assimilated, Feral or Incomplete parasites.
+rldregora.effect.srparasites.viral.name=§rStatus Effect§c Viral
+rldregora.effect.srparasites.viral.lore=§f ☕§b Entities with this effect take more Damage.
+rldregora.effect.srparasites.rage.name=§rStatus Effect§a Rage
+rldregora.effect.srparasites.rage.lore=§f ☕§b Increases speed, damage and lowers parasite cooldowns.
+rldregora.effect.srparasites.prey.name=§rStatus Effect§c Prey
+rldregora.effect.srparasites.prey.lore=§f ☕§b Creates a new scent at the player location if they wear or wield Sentient equipment.
+rldregora.effect.srparasites.corrosive.name=§rStatus Effect§c Corrosion
+rldregora.effect.srparasites.corrosive.lore=§f ☕§b Weakens armor durability.
+rldregora.effect.srparasites.fear.name=§rStatus Effect§c Fear
+rldregora.effect.srparasites.fear.lore=§f ☕§b Inflicts major fall damage and cancels controls.
+
+# Fish Undead Effects ==============================================================
+rldregora.effect.mod_lavacow.infested.name=§rStatus Effect§c Infested
+rldregora.effect.mod_lavacow.infested.lore=§f ☕§b Inflicts Hunger and Slowness, also spawns parasites when the inflicted is dead.
+rldregora.effect.mod_lavacow.fragile.name=§rStatus Effect§c Deathtouched
+rldregora.effect.mod_lavacow.fragile.lore=§f ☕§b Instantly kills afflicted non-boss target if its health drops under 25%%.
+rldregora.effect.mod_lavacow.thorned.name=§rStatus Effect§a Thorned
+rldregora.effect.mod_lavacow.thorned.lore=§f ☕§b Damages attackers when they deal damage on the inflicted, grants immunity against cactus and thorns.
+rldregora.effect.mod_lavacow.corroded.name=§rStatus Effect§c Corroded
+rldregora.effect.mod_lavacow.corroded.lore=§f ☕§b Causes the inflicted entity to receive bonus damage.
+rldregora.effect.mod_lavacow.soiled.name=§rStatus Effect§c Soiled
+rldregora.effect.mod_lavacow.soiled.lore=§f ☕§b Causes inflicted entity to be unable to eat food or drink potions.
+
+# LycanitesMobs Effects ============================================================
+rldregora.effect.lycanitesmobs.paralysis.name=§rStatus Effect§c Paralysis
+rldregora.effect.lycanitesmobs.paralysis.lore=§f ☕§b Drastically reduces movement speed and prevents jumping.
+rldregora.effect.lycanitesmobs.insomnia.name=§rStatus Effect§c Insomnia
+rldregora.effect.lycanitesmobs.insomnia.lore=§f ☕§b Prevents sleeping.
+rldregora.effect.lycanitesmobs.rage.name=§rStatus Effect§c Rage
+rldregora.effect.lycanitesmobs.rage.lore=§f ☕§b Causes the afflicted to lose their mind and attack anything nearby.
+rldregora.effect.lycanitesmobs.rejuvenation.name=§rStatus Effect§a Rejuvenation
+rldregora.effect.lycanitesmobs.rejuvenation.lore=§f ☕§b Boosts all healing received.
+rldregora.effect.lycanitesmobs.cleansed.name=§rStatus Effect§a Cleansed
+rldregora.effect.lycanitesmobs.cleansed.lore=§f ☕§b Removes and grants immunity to wither, bad luck, fear and insomnia.
+rldregora.effect.lycanitesmobs.repulsion.name=§rStatus Effect§a Repulsion
+rldregora.effect.lycanitesmobs.repulsion.lore=§f ☕§b Pushes away attackers and also prevents being picked up or latched onto.
+rldregora.effect.lycanitesmobs.freezeaura.name=§rStatus Effect§a Freeze Aura
+rldregora.effect.lycanitesmobs.freezeaura.lore=§f ☕§b Burns enemies around the affected.
+rldregora.effect.lycanitesmobs.fear.name=§rStatus Effect§c Fear
+rldregora.effect.lycanitesmobs.fear.lore=§f ☕§b Causes the afflicted to lose their mind and run around uncontrollably.
+rldregora.effect.lycanitesmobs.staticaura.name=§rStatus Effect§a Static Aura
+rldregora.effect.lycanitesmobs.staticaura.lore=§f ☕§b Paralyses enemies around the affected.
+rldregora.effect.lycanitesmobs.swiftswimming.name=§rStatus Effect§a Swiftswimming
+rldregora.effect.lycanitesmobs.swiftswimming.lore=§f ☕§b Increases swimming speed.
+rldregora.effect.lycanitesmobs.smited.name=§rStatus Effect§c Smited
+rldregora.effect.lycanitesmobs.smited.lore=§f ☕§b Causes the afflicted to burn in sunlight.
+rldregora.effect.lycanitesmobs.bleed.name=§rStatus Effect§c Bleed
+rldregora.effect.lycanitesmobs.bleed.lore=§f ☕§b Deals damage rapidly over time if the afflicted moves.
+rldregora.effect.lycanitesmobs.leech.name=§rStatus Effect§a Leech
+rldregora.effect.lycanitesmobs.leech.lore=§f ☕§b Drains opponents health when dealing damage.
+rldregora.effect.lycanitesmobs.fallresist.name=§rStatus Effect§a Fall Resistance
+rldregora.effect.lycanitesmobs.fallresist.lore=§f ☕§b Prevents falling damage.
+rldregora.effect.lycanitesmobs.penetration.name=§rStatus Effect§c Penetration
+rldregora.effect.lycanitesmobs.penetration.lore=§f ☕§b Weakens defenses, increasing any damage received.
+rldregora.effect.lycanitesmobs.smouldering.name=§rStatus Effect§c Smouldering
+rldregora.effect.lycanitesmobs.smouldering.lore=§f ☕§b Constantly applies burning to the afflicted, staying in water can suppress but not remove this.
+rldregora.effect.lycanitesmobs.immunization.name=§rStatus Effect§a Immunization
+rldregora.effect.lycanitesmobs.immunization.lore=§f ☕§b Removes and grants immunity to poison, hunger, weakness, nausea and paralysis.
+rldregora.effect.lycanitesmobs.instability.name=§rStatus Effect§c Instability
+rldregora.effect.lycanitesmobs.instability.lore=§f ☕§b Randomly pushes the afflicted around in all directions.
+rldregora.effect.lycanitesmobs.recklessness.name=§rStatus Effect§c Recklessness
+rldregora.effect.lycanitesmobs.recklessness.lore=§f ☕§b Drastically weakens defenses but also increases damage dealt.
+rldregora.effect.lycanitesmobs.aphagia.name=§rStatus Effect§c Aphagia
+rldregora.effect.lycanitesmobs.aphagia.lore=§f ☕§b Prevents eating and the use of various items.
+rldregora.effect.lycanitesmobs.envenom.name=§rStatus Effect§a Envenom
+rldregora.effect.lycanitesmobs.envenom.lore=§f ☕§b Adds poison to any attacks.
+rldregora.effect.lycanitesmobs.lifeleak.name=§rStatus Effect§c Lifeleak
+rldregora.effect.lycanitesmobs.lifeleak.lore=§f ☕§b Causes any damage dealt by the afflicted to heal instead.
+rldregora.effect.lycanitesmobs.decay.name=§rStatus Effect§c Decay
+rldregora.effect.lycanitesmobs.decay.lore=§f ☕§b Reduces all healing received.
+rldregora.effect.lycanitesmobs.plague.name=§rStatus Effect§c Plague
+rldregora.effect.lycanitesmobs.plague.lore=§f ☕§b Instantly poisons the afflicted and then spreads Plague one level lower or Poison if lowest level to nearby creatures.
+rldregora.effect.lycanitesmobs.weight.name=§rStatus Effect§c Weight
+rldregora.effect.lycanitesmobs.weight.lore=§f ☕§b Creates a constant downwards pull increasing falling speed and preventing jumping or swimming/flying upwards.
+rldregora.effect.lycanitesmobs.heataura.name=§rStatus Effect§a Heat Aura
+rldregora.effect.lycanitesmobs.heataura.lore=§f ☕§b Burns enemies around the affected.
+
+# DefiledLands Effects ==========================================================
+rldregora.effect.defiledlands.bleeding.name=§rStatus Effect§c Bleeding
+rldregora.effect.defiledlands.bleeding.lore=§f ☕§b Deals damage every 2 seconds, with damage scaling with level.
+rldregora.effect.defiledlands.grounded.name=§rStatus Effect§c Grounded
+rldregora.effect.defiledlands.grounded.lore=§f ☕§b Applies constant downwards velocity as long as the victim is in the air.
+rldregora.effect.defiledlands.vulnerability.name=§rStatus Effect§c Vulnerability
+rldregora.effect.defiledlands.vulnerability.lore=§f ☕§b Increases all damage taken by 20%% per level.
+
+# Xat Trinkets and Baubles Effects ==============================================
+rldregora.effect.xat.goblin.name=§rStatus Effect§a Goblin
+rldregora.effect.xat.goblin.lore.0=§f ☕§b Transforms you into the Goblin race with the following stats:
+rldregora.effect.xat.goblin.lore.1=§f ☕§b 50%% of original size.
+rldregora.effect.xat.goblin.lore.2=§f ☕§b Can mount tamed wolves.
+rldregora.effect.xat.goblin.lore.3=§f ☕§b Gains Strength + Regen when mounted on a wolf.
+rldregora.effect.xat.goblin.lore.4=§f ☕§b Minor Explosion and Fire Resistance.
+rldregora.effect.xat.goblin.lore.5=§f ☕§b Creepers ignore you.
+rldregora.effect.xat.goblin.lore.6=§f ☕§b -25%% Attack Damage.
+rldregora.effect.xat.goblin.lore.7=§f ☕§b -50%% Health.
+rldregora.effect.xat.goblin.lore.8=§f ☕§b +20%% Movement Speed.
+rldregora.effect.xat.goblin.lore.9=§f ☕§b +1 Luck.
+rldregora.effect.xat.goblin.lore.10=§f ☕§b +10%% Swim Speed.
+rldregora.effect.xat.goblin.lore.11=§f ☕§b +20%% Jump Height.
+rldregora.effect.xat.elf.name=§rStatus Effect§a Elf
+rldregora.effect.xat.elf.lore.0=§f ☕§b Transforms you into the Elven race with the following stats:
+rldregora.effect.xat.elf.lore.1=§f ☕§b 100%% of original size (unchanged)
+rldregora.effect.xat.elf.lore.2=§f ☕§b Can press sneak while using a bow to activate Power Shot.
+rldregora.effect.xat.elf.lore.3=§f ☕§b Gains Movement + Attack Speed in Forests.
+rldregora.effect.xat.elf.lore.4=§f ☕§b -25%% Attack Damage
+rldregora.effect.xat.faelis.name=§rStatus Effect§a Faelis
+rldregora.effect.xat.faelis.lore.0=§f ☕§b Transforms you into the Faelis race with the following stats:
+rldregora.effect.xat.faelis.lore.1=§f ☕§b 75%% of original size.
+rldregora.effect.xat.faelis.lore.2=§f ☕§b Increased 'Bare Hand' Damage.
+rldregora.effect.xat.faelis.lore.3=§f ☕§b Buff when drinking milk.
+rldregora.effect.xat.faelis.lore.4=§f ☕§b Movement Penalty when wearing 'Heavy' Armor.
+rldregora.effect.xat.faelis.lore.5=§f ☕§b +50%% Attack Speed.
+rldregora.effect.xat.faelis.lore.6=§f ☕§b +25%% Movement Speed.
+rldregora.effect.xat.faelis.lore.7=§f ☕§b +50%% Swim Speed.
+rldregora.effect.xat.faelis.lore.8=§f ☕§b +60%% Jump Height.
+rldregora.effect.xat.dragon.name=§rStatus Effect§a Dragon
+rldregora.effect.xat.dragon.lore.0=§f ☕§b Transforms you into the Dragon race with the following stats:
+rldregora.effect.xat.dragon.lore.1=§f ☕§b 120%% of original size.
+rldregora.effect.xat.dragon.lore.2=§f ☕§b All Bonuses of Dragon's Eye.
+rldregora.effect.xat.dragon.lore.3=§f ☕§b Night Vision.
+rldregora.effect.xat.dragon.lore.4=§f ☕§b Fire Resistance.
+rldregora.effect.xat.dragon.lore.5=§f ☕§b Can search for any ore or chest.
+rldregora.effect.xat.dragon.lore.6=§f ☕§b Limited Flight.
+rldregora.effect.xat.dragon.lore.7=§f ☕§b +25%% Attack Damage.
+rldregora.effect.xat.dragon.lore.8=§f ☕§b +25%% Health.
+rldregora.effect.xat.dragon.lore.9=§f ☕§b +50%% Armor Toughness.
+rldregora.effect.xat.dragon.lore.10=§f ☕§b -25%% Swim Speed.
+rldregora.effect.xat.dwarf.name=§rStatus Effect§a Dwarf
+rldregora.effect.xat.dwarf.lore.0=§f ☕§b Transforms you into the Dwarven race with the following stats:
+rldregora.effect.xat.dwarf.lore.1=§f ☕§b 75%% of original size.
+rldregora.effect.xat.dwarf.lore.2=§f ☕§b Exp drops from certain blocks mined.
+rldregora.effect.xat.dwarf.lore.3=§f ☕§b Constant mining speed for all blocks.
+rldregora.effect.xat.dwarf.lore.4=§f ☕§b -25%% Attack Speed.
+rldregora.effect.xat.dwarf.lore.5=§f ☕§b +10%% Attack Damage.
+rldregora.effect.xat.dwarf.lore.6=§f ☕§b -25%% Health.
+rldregora.effect.xat.dwarf.lore.7=§f ☕§b +25%% Armor Toughness.
+rldregora.effect.xat.dwarf.lore.8=§f ☕§b +0.25 Knockback Resistance.
+rldregora.effect.xat.dwarf.lore.9=§f ☕§b -10%% Movement Speed.
+rldregora.effect.xat.fairy.name=§rStatus Effect§a Fairy
+rldregora.effect.xat.fairy.lore.0=§f ☕§b Transforms you into the Fairy race with the following stats:
+rldregora.effect.xat.fairy.lore.1=§f ☕§b 25%% of Original Size.
+rldregora.effect.xat.fairy.lore.2=§f ☕§b Granted Creative Flight.
+rldregora.effect.xat.fairy.lore.3=§f ☕§b -75%% Attack Damage.
+rldregora.effect.xat.fairy.lore.4=§f ☕§b -75%% Health.
+rldregora.effect.xat.fairy.lore.5=§f ☕§b -50%% Armor.
+rldregora.effect.xat.fairy.lore.6=§f ☕§b -25%% Armor Toughness.
+rldregora.effect.xat.fairy.lore.7=§f ☕§b -25%% Movement Speed.
+rldregora.effect.xat.fairy.lore.8=§f ☕§b +2 Luck.
+rldregora.effect.xat.fairy.lore.9=§f ☕§b -25%% Swim Speed.
+rldregora.effect.xat.fairy.lore.10=§f ☕§b -25%% Jump Height.
+rldregora.effect.xat.fairy.lore.11=§f ☕§b -0.35 Step Height.
+rldregora.effect.xat.fairy.lore.12=§f ☕§b -40%% Reach.
+rldregora.effect.xat.fairy.lore.13=§f ☕§b Can Climb Walls.
+rldregora.effect.xat.fairy.lore.14=§f ☕§b Fall Damage Immunity.
+rldregora.effect.xat.titan.name=§rStatus Effect§a Titan
+rldregora.effect.xat.titan.lore.0=§f ☕§b Transforms you into the Titan race with the following stats:
+rldregora.effect.xat.titan.lore.1=§f ☕§b 300%% of original size.
+rldregora.effect.xat.titan.lore.2=§f ☕§b 3x3x3 Mining Range.
+rldregora.effect.xat.titan.lore.3=§f ☕§b Sinks in Water.
+rldregora.effect.xat.titan.lore.4=§f ☕§b Tramples Crops.
+rldregora.effect.xat.titan.lore.5=§f ☕§b -50%% Attack Speed.
+rldregora.effect.xat.titan.lore.6=§f ☕§b +100%% Attack Damage.
+rldregora.effect.xat.titan.lore.7=§f ☕§b +100%% Health.
+rldregora.effect.xat.titan.lore.8=§f ☕§b +75%% Knockback Resist.
+rldregora.effect.xat.titan.lore.9=§f ☕§b +25%% Movement Speed.
+rldregora.effect.xat.titan.lore.10=§f ☕§b +75%% Jump Height.
+rldregora.effect.xat.titan.lore.11=§f ☕§b +1.4 Step Height.
+rldregora.effect.xat.human.name=§rStatus Effect§a Human
+rldregora.effect.xat.human.lore=§f ☕§b Transforms you back to human state.
+rldregora.effect.xat.ice_resistance.name=§rStatus Effect§a Ice Resistance
+rldregora.effect.xat.ice_resistance.lore=§f ☕§b Resistance against Dragon Ice Attacks
+rldregora.effect.xat.lightning_resistance.name=§rStatus Effect§a Lightning Resistance
+rldregora.effect.xat.lightning_resistance.lore=§f ☕§b Resistance against Dragon Lightning Attacks
+rldregora.effect.elenaidodge.forceful.name=§rStatus Effect§a Forceful
+rldregora.effect.elenaidodge.forceful.lore=§f ☕§b Increases the distance the player will dodge.
+rldregora.effect.elenaidodge.climber.name=§rStatus Effect§a Climber
+rldregora.effect.elenaidodge.climber.lore=§f ☕§b Grants you the ability to grab a ledge.
+rldregora.effect.elenaidodge.skystride.name=§rStatus Effect§a Skystride
+rldregora.effect.elenaidodge.skystride.lore=§f ☕§b Grants you the ability to Dodge in mid-air
+rldregora.effect.elenaidodge.sluggish.name=§rStatus Effect§c Sluggish
+rldregora.effect.elenaidodge.sluggish.lore=§f ☕§b Stops you from dodging all together.
+rldregora.effect.elenaidodge.nimble.name=§rStatus Effect§a Nimble
+rldregora.effect.elenaidodge.nimble.lore=§f ☕§b Grants the ability to Wall-Jump if pressed against the wall with your back.
+rldregora.effect.elenaidodge.can_dodge.name=§rStatus Effect§a Elenai's Blessing
+rldregora.effect.elenaidodge.can_dodge.lore=§f ☕§b Grants the ability to dodge.
+rldregora.effect.elenaidodge.feeble.name=§rStatus Effect§c Feeble
+rldregora.effect.elenaidodge.feeble.lore=§f ☕§b Decreases the distance the player will dodge.
+rldregora.effect.mujmajnkraftsbettersurvival.antiwarp.name=§rStatus Effect§c Anti-Warp
+rldregora.effect.mujmajnkraftsbettersurvival.antiwarp.lore=§f ☕§b Prevents a player or entity with the effect from teleporting or using ender pearls except for Ender Warp.
+rldregora.effect.mujmajnkraftsbettersurvival.milk.name=§rStatus Effect§a Milk
+rldregora.effect.mujmajnkraftsbettersurvival.milk.lore=§f ☕§b Removes all potion and status effects that the player has.
+rldregora.effect.mujmajnkraftsbettersurvival.cure.name=§rStatus Effect§a Cure
+rldregora.effect.mujmajnkraftsbettersurvival.cure.lore=§f ☕§b Removes all negative effects.
+rldregora.effect.mujmajnkraftsbettersurvival.stun.name=§rStatus Effect§c Stun
+rldregora.effect.mujmajnkraftsbettersurvival.stun.lore=§f ☕§b Locks you in place, cancelling all movement.
+rldregora.effect.mujmajnkraftsbettersurvival.warp.name=§rStatus Effect§a Ender Warp
+rldregora.effect.mujmajnkraftsbettersurvival.warp.lore=§f ☕§b Random teleport.
+rldregora.effect.mujmajnkraftsbettersurvival.dispel.name=§rStatus Effect§c Dispel
+rldregora.effect.mujmajnkraftsbettersurvival.dispel.lore=§f ☕§b Removes all positive effects.
+rldregora.effect.rlmixins.lesser_fire_resistance.name=§rStatus Effect§a Flame Hardened
+rldregora.effect.rlmixins.lesser_fire_resistance.lore=§f ☕§b 50%% Fire resistance and can't be set on fire.
+rldregora.effect.rlmixins.delayed_launch.name=§rStatus Effect§a Delayed Launch
+rldregora.effect.rlmixins.delayed_launch.lore=§f ☕§b Launches you up in the air after a delay.
+rldregora.effect.rlmixins.encumbered.name=§rStatus Effect§c Encumbered
+rldregora.effect.rlmixins.encumbered.lore=§f ☕§b Decreases movement speed 5%%, mining speed by 10%%, attack speed by 15%%, and increases your hunger.
+rldregora.effect.rlmixins.cow.name=§rStatus Effect§a Moo
+rldregora.effect.rlmixins.cow.lore=§f ☕§b Yeah... That's a cow.
+rldregora.effect.rlmixins.curse_break.name=§rStatus Effect§a Curse Break
+rldregora.effect.rlmixins.curse_break.lore=§f ☕§b Removes the curses from your equipment.
+rldregora.effect.champions.injured.name=§rStatus Effect§c Injured
+rldregora.effect.champions.injured.lore=§f ☕§b Decreases healing and increases damage taken.
+rldregora.effect.champions.plague.name=§rStatus Effect§c Plague
+rldregora.effect.champions.plague.lore=§f ☕§b Inflicts Plague on entities within a range of 3 blocks which gives Poison I for 10 seconds.
+rldregora.effect.champions.jailed.name=§rStatus Effect§c Jailed
+rldregora.effect.champions.jailed.lore=§f ☕§b 20%% chance per attack to 'jail' targets, making them unable to move for 5 seconds.
+rldregora.effect.switchbow.love.name=§rStatus Effect§c In love
+rldregora.effect.switchbow.love.lore=§f ☕§b It makes animals (ready to) mate and affects enemies with the In Love effect, making them forget to attack.
+rldregora.effect.switchbow.freeze.name=§rStatus Effect§c Freeze
+rldregora.effect.switchbow.freeze.lore=§f ☕§b Gives the enemy a 'Freeze' effect when hit. The opponent cannot move.
+rldregora.effect.iceandfire.acid.name=§rStatus Effect§c Acid
+rldregora.effect.iceandfire.acid.lore=§f ☕§b Deals damage over time, can be washed off in water.
+rldregora.effect.biomesoplenty.curse.name=§rStatus Effect§c Curse
+rldregora.effect.biomesoplenty.curse.lore=§f ☕§b Randomly teleports the afflicted in a small radius.
+rldregora.effect.firstaid.morphine.name=§rStatus Effect§a Morphine
+rldregora.effect.firstaid.morphine.lore=§f ☕§b Allowing you to run with broken legs, and punch with broken arms.
+rldregora.effect.bountifulbaubles.sinful.name=§rStatus Effect§a Sinful
+rldregora.effect.bountifulbaubles.sinful.lore=§f ☕§b Gives an armor and damage buff.
+rldregora.effect.eaglemixins.contamination.name=§rStatus Effect§c Contaminated
+rldregora.effect.eaglemixins.contamination.lore_01=§f ☕§b Parasites: Weakened up to 50%% less HP, 30%% less DMG, and 10%% less ARM.
+rldregora.effect.eaglemixins.contamination.lore_02=§bPassive Mobs: Same as Players
+rldregora.effect.eaglemixins.contamination.lore_03=§bOther Mobs: Amplifier I gives Speed I, II + Strength I, III + Resistance, IV + Absorption, V + Regeneration.
+rldregora.effect.eaglemixins.contamination.lore_04=§bPlayers: Amplifier I gives Weakness, II + Fatigue, III + Exhaustion & MaxHP 75%%, IV MaxHP 50%%, V = Death from radiation sickness.
+rldregora.effect.eaglemixins.teleportation_sickness.name=§rStatus Effect§c Warp Sickness
+rldregora.effect.eaglemixins.teleportation_sickness.lore=§f ☕§b Cancels teleportation through unconventional teleportation methods.
+##################################################################
+# Dregora_recipes.zs
+##################################################################
+## VariedCommodities
+rldregora.variedcommodities:mana.tooltip=§6A valuable resource used as ancient power source for magic wands.
+item.satchel.name=Coin Purse
+rldregora.variedcommodities:satchel.tooltip=§6A purse filled with ancient coins!
+## ContentTweaker ========================================================
+rldregora.contenttweaker:shelter_special_item.tooltip=§eThis sign marks §4§bRegistered Fallout Shelters§r found exclusively in radiated zones
+rldregora.contenttweaker:shelter_item.tooltip=§eThis sign marks §4§bFallout Shelters§r found commonly throughout the world
+rldregora.reinforced_blocks.tooltip=§eCorruption Resistant
+## Quark =================================================================
+rldregora.quark:witch_hat.tooltip=§7Makes witches friendly and negates charm spectre curses
+rldregora.quark:pirate_hat.tooltip=§7Grants permanent looting I
+rldregora.quark:archaeologist_hat.tooltip=§7Grants 25% additional chance to drop ores.
+# Fish Undead ============================================================
+item.mod_lavacow.skeletonking_mace.name=Ban Hammer
+item.mod_lavacow.holy_grenade.name=Inferior Holy Grenade
+item.mod_lavacow.bonestew.name=Dragon Bone Stew
+item.mod_lavacow.dreamcatcher.name=Cursed Dream Catcher
+rldregora.mod_lavacow:fissionpotion.tooltip=§cSplits some tamable animals into two individual baby ones.
+rldregora.mod_lavacow:hatred_shard.tooltip.0=§9Fragment of reminiscence, carried by the skeleton king's underlings.
+rldregora.mod_lavacow:kings_crown.tooltip.0=§9Legend says the soul needs its crown to be in the true desert for the body to rise once again.
+rldregora.mod_lavacow:skeletonking_mace.tooltip=§9Effects not applied on bosses.
+rldregora.famine_armors.tooltip=§9Lost to the Cities and Chasms Deep
+item.mod_lavacow.acidicheart.name=Acidic Osvermis/Mummy Heart
+item.mod_lavacow.feather_black.name=Black Raven/Penghoul Feathers
+item.mod_lavacow.burntovipositor.name=Burnt Salamander Ovipositor
+item.mod_lavacow.foul_bristle.name=Foul Foglet/Ithaqua Bristles
+item.mod_lavacow.hyphae.name=Mycosis Hyphae
+rldregora.mod_lavacow:kings_crown.tooltip.1=The True Desert's Treasure
+rldregora.mod_lavacow:hatred_shard.tooltip.1=The memory of a King and all those who were slain in his name.
+item.mod_lavacow.moltenbeef.name=Molten Salamander Meat
+item.mod_lavacow.mossy_stick.name=Sludge Stick
+item.mod_lavacow.pigboarhide.name=Undead Swine Hide
+item.mod_lavacow.plagued_porkchop.name=Undead Swine Meat
+item.mod_lavacow.poisonspore.name=Poisonous Mycosis Spores
+item.mod_lavacow.scythe_claw.name=Ithaqua Claw
+item.mod_lavacow.banshee_vocal_cord.name=Banshee Shriek Cord
+item.mod_lavacow.cactus_fruit.name=Cactyrant/Cactoid Fruit
+rldregora.mod_lavacow:sharptooth.tooltip=Obtained from Foglet, Swarmer, Undead Swine, Wolf and Polar bears
+item.mod_lavacow.chitin.name=Weta Chitin
+item.mod_lavacow.frozenthigh.name=Frigid Thigh
+item.mod_lavacow.poisonstinger.name=Poisonous Vespa Stinger
+rldregora.mod_lavacow:raven_whistle.tooltip=§eRavens can be tamed using fermented spider eye or parasites.
+rldregora.mod_lavacow:ghostjelly.tooltip=§eGives 6 seconds Resistance IV & 3 seconds Levitation III
+rldregora.mod_lavacow:vespa_dagger.tooltip=§eInflicts Poison II
+rldregora.mod_lavacow:dreamcatcher.tooltip.0=§eThe Dead roam nearby as you wake from your deep slumber...
+rldregora.mod_lavacow:dreamcatcher.tooltip.1=§8Foglet, Undead Swine, Ithaqua, Sludge lord, Vespa, Scarecrow, Osvermis
+rldregora.mod_lavacow:dreamcatcher.tooltip.2=§8Pinghoul, Undertaker, Banshee, Avaton, Vindicator, Ghost or a Chest!?
+rldregora.mod_lavacow:skeletonking_mace.tooltip.0=§eInstantly kills if the victim falls under 25%% health for 10 seconds after each hit.
+rldregora.mod_lavacow:skeletonking_mace.tooltip.1=§4This item is banned for obvious reasons.
+rldregora.mod_lavacow:mootenheart.tooltip=§eFire Damage Reduction: 25%%
+# VariedCommodities =================================================================
+rldregora.variedcommodities:tuxedo_chest.tooltip=Fancy Chestpiece, extremely old yet in near pristine state.
+rldregora.variedcommodities:tuxedo_pants.tooltip=Fancy Pants, extremely old yet in near pristine state.
+rldregora.variedcommodities:tuxedo_bottom.tooltip=Aged yet Fancy Trenchcoat, extremely old yet in near pristine state.
+item.soldier_head.name=§6☢ §8§lProtective Helmet
+item.soldier_chest.name=§6☢ §8§lProtective ChestPlate
+item.soldier_legs.name=§6☢ §8§lProtective Leggings
+item.soldier_bottom.name=§6☢ §8§lProtective Bottoms
+rldregora.soldier_armor.tooltip=Woven from a unknown ancient material, There's more to this armor then the eye meets.
+item.x407_head.name=§8§lX407 Prototype Helmet
+item.x407_chest.name=§8§lX407 Prototype ChestPlate
+item.x407_legs.name=§8§lX407 Prototype Leggings
+item.x407_boots.name=§8§lX407 Prototype Boots
+rldregora.x407_armor.tooltip=The Pinnacle of engineering from a time before the Blight.
+item.commissar_head.name=§8§lCommissar's Cap
+item.commissar_chest.name=§8§lCommissar's Torso
+item.commissar_legs.name=§8§lCommissar's Leggings
+item.commissar_bottom.name=§8§lCommissar's Bottoms
+rldregora.variedcommodities:commissar_head.tooltip=Aged decorative Cap, a leather cap lined with fine cloth.
+rldregora.variedcommodities:commissar_chest.tooltip=Aged decorative Chestpiece, a leather jack, lined with fine cloth complete with decorative elements.
+rldregora.variedcommodities:commissar_legs.tooltip=Aged decorative Pants, sturdy pants lined with fine cloth.
+rldregora.variedcommodities:commissar_bottom.tooltip=Aged decorative Trenchcoat, made to last.
+rldregora.variedcommodities:infantry_helmet.tooltip=Aged Equipment, still provides decent protection.
+rldregora.variedcommodities:officer_chest.tooltip=Old yet sturdy Chestplate, decorated with various emblems and signs.
+rldregora.variedcommodities:tactical_chest.tooltip=Aged Equipment, still provides decent protection.
+rldregora.variedcommodities:tactical_head.tooltip=Aged Equipment, still provides decent protection.
+item.nanorum_head.name=§8§lHeavy Industries Helmet
+item.nanorum_chest.name=§8§lHeavy Industries Torso
+item.nanorum_legs.name=§8§lHeavy Industries Leggings
+item.nanorum_boots.name=§8§lHeavy Industries Boots
+rldregora.variedcommodities:nanorum_head.tooltip=Aged Helmet, made of advanced alloys. Provides excellent protection.
+rldregora.variedcommodities:nanorum_chest.tooltip=Aged Chestplate, made of advanced alloys. Provides excellent protection.
+rldregora.variedcommodities:nanorum_legs.tooltip=Aged Legs, made of advanced alloys. Provides excellent protection.
+rldregora.variedcommodities:nanorum_boots.tooltip=Aged Boots, made of advanced alloys. Provides excellent protection.
+# Herbalist and Brutal Tower Traders/Info ================================================
+rldregora.variedcommodities:artifact.name=Ancient Artifact
+rldregora.srparasites:biomepurifier.tooltip=§6Obtainable at most Herbalists, rarely found at their overgrown cabin in plains and flower fields.
+rldregora.contenttweaker:blood_tear.tooltip=§eRemnants of Dreadnauts and Overlords
+item.coin_stone.name=Brutal Fragment
+rldregora.variedcommodities:coin_stone.tooltip=§6Fragments of a brutal coins found in brutal towers, can be repaired
+rldregora.biomesoplenty:terrestrial_artifact.tooltip=§6Brimming with the essence of life & purity, can be traded with most Herbalist to craft biome purifiers.
+item.coin_gold.name=Ancient Coins
+rldregora.variedcommodities:coin_gold.tooltip=§6Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities.
+item.ancient_coin.name=Brutal Coins
+rldregora.variedcommodities:ancient_coin.tooltip=§6The rarest of treasures, found in brutal towers surrounded by gray fog and traded for exceptional items with Topographers in outposts & most Herbalist rarely found in cabins situated in plains and flower fields.
+item.lead_pipe.name=Ancient Artifact
+rldregora.variedcommodities:lead_pipe.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:lead_pipe.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+item.crowbar.name=Ancient Artifact
+rldregora.variedcommodities:crowbar.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:crowbar.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+item.hammer.name=Ancient Artifact
+rldregora.variedcommodities:hammer.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:hammer.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+item.wrench.name=Ancient Artifact
+rldregora.variedcommodities:wrench.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:wrench.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+item.pipe_wrench.name=Ancient Artifact
+rldregora.variedcommodities:pipe_wrench.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:pipe_wrench.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+item.sledge_hammer.name=Ancient Artifact
+rldregora.variedcommodities:sledge_hammer.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:sledge_hammer.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+item.cleaver.name=Ancient Artifact
+rldregora.variedcommodities:cleaver.tooltip.0=§6Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities.
+rldregora.variedcommodities:cleaver.tooltip.1=§6Only sold when in pristine condition, use every day iron ingots to repair.
+rldregora.dimstack:bedrock:7.tooltip=§7Can be destroyed with a §4‡ §6§lBrutal Artifact - Theta§r §4‡§r §7equipped in offhand.
+rldregora.dimstack:bedrock:6.tooltip=§7Can be destroyed with a §4‡ §6§lBrutal Pendant - Eta§r §4‡§r §7equipped in offhand.
+rldregora.dimstack:bedrock:5.tooltip=§7Can be destroyed with a §4‡ §6§lBrutal Pendant - Eta§r §4‡§r §7equipped in offhand. - WIP
+rldregora.dimstack:bedrock:0.tooltip=§7Can be destroyed with a §4‡ §6§lBrutal Pendant - §kAlpha§r §4‡§r §7equipped in offhand. - WIP
+item.artifact.name=§4‡ §6§lBrutal Artifact - Theta§r §4‡
+rldregora.variedcommodities:artifact.tooltip.0=§6Gain the ability to destroy Theta barrier blocks when equipped in off-hand.
+rldregora.variedcommodities:artifact.tooltip.1=§6Buy this item from Brutal Merchants in Gem Trader Outposts.
+item.pendant.name=§4‡ §6§lBrutal Pendant - Eta§r §4‡
+rldregora.variedcommodities:pendant.tooltip=§6Gain the ability to destroy Eta barrier blocks when equipped in off-hand.
+item.element_fire.name=Auric Essence
+rldregora.variedcommodities:element_fire.tooltip.0=§aEssence abstracted from the purest of gold.
+rldregora.variedcommodities:element_fire.tooltip.1=§6Can be obtained through Brutal Merchants in Outposts.
+item.gem_ruby_vc.name=Blood Gem
+rldregora.variedcommodities:gem_ruby.tooltip.0=§aThis gem, magical to those who not know it's secrets feels heavy and somehow alive...
+rldregora.variedcommodities:gem_ruby.tooltip.1=§6Extracted from Amalgalich remains.
+rldregora.variedcommodities:orb:0.name=Brutal Orb
+rldregora.variedcommodities:orb:0.tooltip.0=§aWithin this orb resides a mighty power akin to lightning.
+rldregora.variedcommodities:orb:0.tooltip.1=§6Only to be obtained from the deepest chambers of Brutal Towers.
+rldregora.variedcommodities:orb:1.name=Summon Orb
+rldregora.variedcommodities:orb:1.tooltip.0=§aThrough the Orb you can see suffering and fire.
+rldregora.variedcommodities:orb:1.tooltip.1=§6Can be obtained through Brutal Merchants in Outposts.
+rldregora.variedcommodities:orb:5.name=Summon Orb
+rldregora.variedcommodities:orb:5.tooltip.0=§aOrbs of unknown, perhaps alien origin.
+rldregora.variedcommodities:orb:5.tooltip.1=§6Can be obtained through Brutal Merchants in Outposts.
+rldregora.variedcommodities:orb:6.name=Summon Orb
+rldregora.variedcommodities:orb:6.tooltip.0=§aA Dark fog resides within the orb.
+rldregora.variedcommodities:orb:6.tooltip.1=§6Can be obtained through Brutal Merchants in Outposts.
+rldregora.plant_harvest_shears.tooltip=Harvest with shears.
+rldregora.biomesoplenty:mushroom:3.tooltip=Gleamshroom
+rldregora.biomesoplenty:terrarium:8.tooltip=Gleamshroom Terrarium
+rldregora.biomesoplenty:seaweed.name=Dried Seaweed
+tile.seaweed.kelp.name=Dried Seaweed
