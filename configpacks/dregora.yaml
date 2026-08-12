@@ -1691,7 +1691,7 @@ patches:
             - mod_lavacow:moltenhammer
         S:level9_entries:
           add:
-            - @mod_lavacow
+            - "@mod_lavacow"
             - biomesoplenty:biome_essence
             - biomesoplenty:biome_finder
             - biomesoplenty:crystal_shard
@@ -1723,7 +1723,7 @@ patches:
             - contenttweaker:deepslate_emerald_ore
         S:level12_entries:
           add:
-            - @dynamictreesbop
+            - "@dynamictreesbop"
             - biomesoplenty:flower_0
             - biomesoplenty:flower_1
             - biomesoplenty:sapling_0
@@ -1752,14 +1752,14 @@ patches:
             - contenttweaker:rlmusic_blight
             - contenttweaker:rlmusic_bliss
         S:level16_entries:
-        - @nuclearcraft
+        - "@nuclearcraft"
         - contenttweaker:deepslate_lead_ore
         - contenttweaker:deepslate_thorium_ore
         - contenttweaker:deepslate_uranium_ore
         - contenttweaker:deepslate_boron_ore
         - contenttweaker:deepslate_lithium_ore
         S:level17_entries:
-        - @cookingforblockheads
+        - "@cookingforblockheads"
         - minecraft:spider_eye
         - minecraft:cooked_chicken
         - minecraft:golden_apple:1
@@ -2073,15 +2073,15 @@ patches:
           add:
             - 0
       general.client options:
-        B:"LoadingScreens: Display in Random Order": true
+        'B:"LoadingScreens: Display in Random Order"': true
         S:"Particle Spawn System":
           add:
             - all, all, [SOLID], [mobSpell@71,116,57|mobSpell@146,116,24], 6, 25, 1.0, 1.0, 0, 0.001, 30, true, 0, 256, [], all
             - all, all, [], [totem], 6, 1, 1.0, 2.0, 10, 0, 30, true, 0, 256, [], all
       general.abyssal rift options:
         D:"Abyssal Enchant Drop Chance": 0.3
-        D:"Abyssal Rift Parasite Stat Multi: Dmg": 2.0
-        D:"Abyssal Rift Parasite Stat Multi: HP": 2.0
+        'D:"Abyssal Rift Parasite Stat Multi: Dmg"': 2.0
+        'D:"Abyssal Rift Parasite Stat Multi: HP"': 2.0
         S:"Abyssal Rift Teleportation Methods":
           add:
             - chorusFruit
@@ -2605,8 +2605,8 @@ patches:
     changes:
       balancing:
         S:minDistToSpawnForGeneration: 500.0
-        S:universalBiomeMatcher: !type=DEAD&!type=PARASITE&!type=CANYON&!type=CITY&!type=NUCLEAR
-        S:universalDimensionMatcher: !111&!3&!44
+        S:universalBiomeMatcher: "!type=DEAD&!type=PARASITE&!type=CANYON&!type=CITY&!type=NUCLEAR"
+        S:universalDimensionMatcher: "!111&!3&!44"
 
   - type: cfg_patch
     file: config/champions.cfg
@@ -2897,28 +2897,29 @@ patches:
     changes:
     - op: add
       path: /handlers/radiation
-      enabled: true
-      fadeFactor: 0.05
-      maxOpacity: 0.8
-      maxOpacityHigh: 1
-      maxOpacityLow: 0.6
-      maxOpacityMedium: 0.8
-      opacity: 1.0
-      radiation_high:
-        animationSpeed: 10
-        disabled: false
+      value:
+        enabled: true
+        fadeFactor: 0.05
+        maxOpacity: 0.8
+        maxOpacityHigh: 1
+        maxOpacityLow: 0.6
+        maxOpacityMedium: 0.8
         opacity: 1.0
-      radiation_low:
-        animationSpeed: 30
-        disabled: false
-        opacity: 1.0
-      radiation_med:
-        animationSpeed: 20
-        disabled: false
-        opacity: 1.0
-      renderThresholdHigh: 0.1
-      renderThresholdLow: 0.001
-      renderThresholdMedium: 0.01
+        radiation_high:
+          animationSpeed: 10
+          disabled: false
+          opacity: 1.0
+        radiation_low:
+          animationSpeed: 30
+          disabled: false
+          opacity: 1.0
+        radiation_med:
+          animationSpeed: 20
+          disabled: false
+          opacity: 1.0
+        renderThresholdHigh: 0.1
+        renderThresholdLow: 0.001
+        renderThresholdMedium: 0.01
 
   - type: cfg_patch
     file: config/somanyenchantments.cfg
@@ -3097,9 +3098,10 @@ patches:
     changes:
     - op: add
       path: /openterraingenerator:wicked_plains
-      disable_crops: false
-      enable_seasonal_effects: false
-      use_tropical_seasons: true
+      value:
+        disable_crops: false
+        enable_seasonal_effects: false
+        use_tropical_seasons: true
 
   - type: json_patch
     file: config/dsurround/rlcraft_entity.json
@@ -3107,64 +3109,84 @@ patches:
     changes:
     - op: add
       path: /entities/iceandfire:if_troll
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/minecraft:villager_golem
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/minecraft:painting
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/minecraft:illusion_illager
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/iceandfire:if_pixie
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/srparasites:sim_human
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/iceandfire:firedragon
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/srparasites:sim_adventurer
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/srparasites:sim_villager
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/battletowers:golem
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/minecraft:evocation_illager
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/minecraft:vex
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/iceandfire:icedragon
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/iceandfire:lightningdragon
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/iceandfire:snowvillager
-      effects: bow,swing,footprint,breath,chat
+      value:
+        effects: bow,swing,footprint,breath,chat
     - op: add
       path: /entities/minecraft:stray
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/quark:archaeologist
-      effects: bow,swing,footprint,breath,chat
+      value:
+        effects: bow,swing,footprint,breath,chat
     - op: add
       path: /entities/minecraft:vindication_illager
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/minecraft:wither_skeleton
-      effects: chat
+      value:
+        effects: chat
     - op: add
       path: /entities/quark:pirate
-      effects: chat
+      value:
+        effects: chat
 
   - type: json_patch
     file: config/dsurround/rlcraft_sounds.json
@@ -3286,20 +3308,22 @@ patches:
     changes:
     - op: add
       path: /-
-      amount:
-        max: 1
-        min: 1
-      content: contenttweaker:resource_crate
-      unitWorth: 500
-      weight: 25
+      value:
+        amount:
+          max: 1
+          min: 1
+        content: contenttweaker:resource_crate
+        unitWorth: 500
+        weight: 25
     - op: add
       path: /-
-      amount:
-        max: 1
-        min: 1
-      content: variedcommodities:coin_stone
-      unitWorth: 2500
-      weight: 10
+      value:
+        amount:
+          max: 1
+          min: 1
+        content: variedcommodities:coin_stone
+        unitWorth: 2500
+        weight: 10
 
   - type: cfg_patch
     file: config/jei/itemBlacklist.cfg
@@ -3866,6 +3890,7 @@ patches:
     changes:
     - op: add
       path: /biomesoplenty:blue_fire
+      value:
       - properties: {}
         temperature: -5.0
 
@@ -3875,6 +3900,7 @@ patches:
     changes:
     - op: add
       path: /biomesoplenty:berries
+      value:
       - amount: 1
         identity:
           metadata: -1
@@ -4058,12 +4084,14 @@ patches:
     changes:
     - op: add
       path: /data/ABYSSAL_GRASS
+      value:
       - antiqueatlas:textures/gui/tiles/abyssalgrass.png
       - antiqueatlas:textures/gui/tiles/abyssalgrass2.png
       - antiqueatlas:textures/gui/tiles/abyssalgrass3.png
       - antiqueatlas:textures/gui/tiles/abyssalgrass4.png
     - op: add
       path: /data/SRP_DEADBLOOD
+      value:
       - antiqueatlas:textures/gui/tiles/deadblood.png
 
   - type: json_append_all
@@ -4379,6 +4407,7 @@ patches:
     changes:
     - op: add
       path: /mountOffset
+      value:
       - 0
       - 0.9
       - 0
@@ -4435,6 +4464,7 @@ patches:
     changes:
     - op: add
       path: /mountOffset
+      value:
       - 0
       - 0.9
       - 0
@@ -4480,6 +4510,7 @@ patches:
     changes:
     - op: add
       path: /mountOffset
+      value:
       - 0
       - 0.9
       - 0
@@ -4504,6 +4535,7 @@ patches:
       value: "blacklist"
     - op: add
       path: /spawning/biomes
+      value:
       - Abyssal Rift
       - Abyssal Gate
     - op: add
@@ -4516,6 +4548,7 @@ patches:
     changes:
     - op: add
       path: /mountOffset
+      value:
       - 0
       - 0.6
       - 0
@@ -4746,6 +4779,7 @@ patches:
     changes:
     - op: add
       path: /conditions/0/biomeIds
+      value:
       - nuclearcraft:nuclear_wasteland
     - op: add
       path: /conditions/0/biomeIdListType
@@ -4763,6 +4797,7 @@ patches:
     changes:
     - op: add
       path: /conditions/0/biomeIds
+      value:
       - openterraingenerator:overworld_abyssal_gate
       - openterraingenerator:overworld_abyssal_rift
       - openterraingenerator:overworld_grey_abyss
@@ -4776,6 +4811,7 @@ patches:
       value: "blacklist"
     - op: add
       path: /conditions/0/biomes
+      value:
       - -canyon
       - -parasite
       - -abyssal
@@ -4812,6 +4848,7 @@ patches:
     changes:
     - op: add
       path: /conditions/0/biomeIds
+      value:
       - openterraingenerator:overworld_abyssal_gate
       - openterraingenerator:overworld_abyssal_rift
       - openterraingenerator:overworld_grey_abyss
@@ -4825,6 +4862,7 @@ patches:
       value: "blacklist"
     - op: add
       path: /conditions/0/biomes
+      value:
       - -canyon
       - -parasite
       - -abyssal
@@ -4858,6 +4896,7 @@ patches:
     changes:
     - op: add
       path: /conditions/0/biomeIds
+      value:
       - nuclearcraft:nuclear_wasteland
     - op: add
       path: /conditions/0/biomeIdListType
@@ -4874,6 +4913,7 @@ patches:
     changes:
     - op: add
       path: /criteria/biomes
+      value:
       - openterraingenerator:bog_big_pillar_edge
       - openterraingenerator:bog_big_pillar
       - openterraingenerator:bog_border
@@ -5560,6 +5600,7 @@ patches:
       - biomesoplenty:lush_desert
     - op: add
       path: /criteria/biomeTypes
+      value:
       - FOREST
       - WASTELAND
       - COLD
