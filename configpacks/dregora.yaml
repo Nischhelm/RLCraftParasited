@@ -3913,7 +3913,8 @@ patches:
     changes:
     - op: add
       path: /hot_spring_water
-      temperature: 3.0
+      value:
+        temperature: 3.0
 
   - type: script_patch
     file: config/FBP/AnimBlockBlacklist.txt
@@ -4003,32 +4004,36 @@ patches:
     changes:
     - op: add
       path: /0
-      __comment: Cancel DynamicTreeOverride
-      apply:
-        cancelvanilla: false
-      select:
-        name: openterraingenerator:.*
+      value:
+        __comment: Cancel DynamicTreeOverride
+        apply:
+          cancelvanilla: false
+        select:
+          name: openterraingenerator:.*
     - op: add
       path: /1
-      __comment: Cancel DynamicTreeOverride
-      apply:
-        cancelvanilla: false
-      select:
-        name: minecraft:.*
+      value:
+        __comment: Cancel DynamicTreeOverride
+        apply:
+          cancelvanilla: false
+        select:
+          name: minecraft:.*
     - op: add
       path: /2
-      __comment: Cancel DynamicTreeOverride
-      apply:
-        cancelvanilla: false
-      select:
-        name: traverse:.*
+      value:
+        __comment: Cancel DynamicTreeOverride
+        apply:
+          cancelvanilla: false
+        select:
+          name: traverse:.*
     - op: add
       path: /3
-      __comment: Cancel DynamicTreeOverride
-      apply:
-        cancelvanilla: false
-      select:
-        name: biomesoplenty:.*
+      value:
+        __comment: Cancel DynamicTreeOverride
+        apply:
+          cancelvanilla: false
+        select:
+          name: biomesoplenty:.*
 
   - type: json_patch
     file: config/dynamictrees/dimensions.json
@@ -4036,12 +4041,13 @@ patches:
     changes:
     - op: add
       path: /0
-      __comment: OTG Override
-      active: false
-      dim: 0
-      files:
-      - worldgen/worldgen.json
-      - worldgen.json
+      value:
+        __comment: OTG Override
+        active: false
+        dim: 0
+        files:
+        - worldgen/worldgen.json
+        - worldgen.json
 
   - type: file_replace
     source: dregora/config/betterquesting/DefaultQuests.json
@@ -4106,24 +4112,29 @@ patches:
     changes:
     - op: add
       path: /data/antiqueatlas:emerald
-      textures:
-      - antiqueatlas:textures/gui/markers/by_knight_gallade/emerald.png
+      value:
+        textures:
+        - antiqueatlas:textures/gui/markers/by_knight_gallade/emerald.png
     - op: add
       path: /data/antiqueatlas:wrench
-      textures:
-      - antiqueatlas:textures/gui/markers/by_knight_gallade/wrench.png
+      value:
+        textures:
+        - antiqueatlas:textures/gui/markers/by_knight_gallade/wrench.png
     - op: add
       path: /data/antiqueatlas:brutalcoin
-      textures:
-      - antiqueatlas:textures/gui/markers/by_knight_gallade/brutalcoin.png
+      value:
+        textures:
+        - antiqueatlas:textures/gui/markers/by_knight_gallade/brutalcoin.png
     - op: add
       path: /data/antiqueatlas:radiation
-      textures:
-      - antiqueatlas:textures/gui/markers/by_knight_gallade/radiation.png
+      value:
+        textures:
+        - antiqueatlas:textures/gui/markers/by_knight_gallade/radiation.png
     - op: add
       path: /data/antiqueatlas:ruinedbattletower
-      textures:
-      - antiqueatlas:textures/gui/markers/by_knight_gallade/ruinedbattletower.png
+      value:
+        textures:
+        - antiqueatlas:textures/gui/markers/by_knight_gallade/ruinedbattletower.png
 
   - type: json_patch
     file: config/antiqueatlas/tile_textures.json
@@ -4374,13 +4385,14 @@ patches:
     changes:
     - op: add
       path: /entries/0/callForHelpEntries/0
-      entityNames:
-      - minecraft:creeper
-      horizontalRange: 8.0
-      ignoreParentChanceTestFailed: false
-      ignoreParentInCombat: true
-      requiresVision: true
-      verticalRange: 4.0
+      value:
+        entityNames:
+        - minecraft:creeper
+        horizontalRange: 8.0
+        ignoreParentChanceTestFailed: false
+        ignoreParentInCombat: true
+        requiresVision: true
+        verticalRange: 4.0
 
   - type: json_patch
     file: config/lycanitesmobs/creatures/lobber.json
@@ -4578,10 +4590,11 @@ patches:
     changes:
     - op: add
       path: /drops/13
-      chance: 1
-      item: variedcommodities:gem_ruby
-      maxAmount: 1
-      minAmount: 1
+      value:
+        chance: 1
+        item: variedcommodities:gem_ruby
+        maxAmount: 1
+        minAmount: 1
 
   - type: json_patch
     file: config/lycanitesmobs/creatures/treant.json
@@ -4627,10 +4640,11 @@ patches:
     changes:
     - op: add
       path: /conditions/0
-      biomes:
-      - all
-      - -abyssal
-      type: world
+      value:
+        biomes:
+        - all
+        - -abyssal
+        type: world
 
   - type: json_patch
     file: config/lycanitesmobs/spawners/mushroom.json
@@ -4687,10 +4701,11 @@ patches:
     changes:
     - op: add
       path: /conditions/0
-      biomes:
-      - all
-      - -abyssal
-      type: world
+      value:
+        biomes:
+        - all
+        - -abyssal
+        type: world
 
   - type: json_patch
     file: config/lycanitesmobs/spawners/darkness.json
@@ -4715,8 +4730,9 @@ patches:
       value: 2
     - op: add
       path: /mobSpawns/5
-      mobId: iceandfire:seaserpent
-      weight: 1
+      value:
+        mobId: iceandfire:seaserpent
+        weight: 1
 
   - type: json_patch
     file: config/lycanitesmobs/spawners/glowstone.json
@@ -4724,10 +4740,11 @@ patches:
     changes:
     - op: add
       path: /conditions/0
-      biomes:
-      - all
-      - -abyssal
-      type: world
+      value:
+        biomes:
+        - all
+        - -abyssal
+        type: world
     - op: replace
       path: /loadDefault
       value: false
@@ -4738,10 +4755,11 @@ patches:
     changes:
     - op: add
       path: /conditions/0
-      biomes:
-      - all
-      - -abyssal
-      type: world
+      value:
+        biomes:
+        - all
+        - -abyssal
+        type: world
 
   - type: json_patch
     file: config/lycanitesmobs/spawners/void.json
@@ -5640,159 +5658,180 @@ patches:
     changes:
     - op: add
       path: /nuclear.stinger
-      category: ambient
-      sounds:
-      - dsurround:ambient/nuclear/nuclear_stinger_01
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/nuclear/nuclear_stinger_01
     - op: add
       path: /nuclear.background
-      category: ambient
-      sounds:
-      - dsurround:ambient/nuclear/nuclear_background_loop
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/nuclear/nuclear_background_loop
     - op: add
       path: /underneath.background.two
-      category: ambient
-      sounds:
-      - dsurround:ambient/underneath/underneath_background_loop_02
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/underneath/underneath_background_loop_02
     - op: add
       path: /nuclear.ambience
-      category: ambient
-      sounds:
-      - dsurround:ambient/nuclear/nuclear_ambience
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/nuclear/nuclear_ambience
     - op: add
       path: /factory.ambient.three
-      category: ambient
-      sounds:
-      - dsurround:ambient/factory/factory_ambient_03
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/factory/factory_ambient_03
     - op: add
       path: /city.ambience.one
-      category: ambient
-      sounds:
-      - dsurround:ambient/city/lair_ambience_01
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/city/lair_ambience_01
     - op: add
       path: /factory.stinger
-      category: ambient
-      sounds:
-      - dsurround:ambient/factory/factory_stinger_01
-      - dsurround:ambient/factory/factory_stinger_02
-      - dsurround:ambient/factory/factory_stinger_03
-      - dsurround:ambient/factory/factory_stinger_04
-      - dsurround:ambient/factory/factory_stinger_05
-      - dsurround:ambient/factory/factory_stinger_06
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/factory/factory_stinger_01
+        - dsurround:ambient/factory/factory_stinger_02
+        - dsurround:ambient/factory/factory_stinger_03
+        - dsurround:ambient/factory/factory_stinger_04
+        - dsurround:ambient/factory/factory_stinger_05
+        - dsurround:ambient/factory/factory_stinger_06
     - op: add
       path: /sewer.background.two
-      category: ambient
-      sounds:
-      - dsurround:ambient/sewer/sewer_background_loop_02
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/sewer/sewer_background_loop_02
     - op: add
       path: /city.background.two
-      category: ambient
-      sounds:
-      - dsurround:ambient/city/city_background_loop_02
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/city/city_background_loop_02
     - op: add
       path: /factory.ambient.one
-      category: ambient
-      sounds:
-      - dsurround:ambient/factory/factory_ambient_01
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/factory/factory_ambient_01
     - op: add
       path: /city.ambience.two
-      category: ambient
-      sounds:
-      - dsurround:ambient/city/lair_ambience_02
-      - dsurround:ambient/city/lair_ambience_03
-      - dsurround:ambient/city/lair_ambience_04
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/city/lair_ambience_02
+        - dsurround:ambient/city/lair_ambience_03
+        - dsurround:ambient/city/lair_ambience_04
     - op: add
       path: /cave.ambient
-      category: ambient
-      sounds:
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
-      - dsurround:ambient/cave/smallslide1
-      - dsurround:ambient/cave/smallslide2
-      - dsurround:ambient/cave/smallslide3
-      - dsurround:ambient/cave/bigslide1
-      - dsurround:ambient/cave/bigslide2
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
+        - dsurround:ambient/cave/smallslide1
+        - dsurround:ambient/cave/smallslide2
+        - dsurround:ambient/cave/smallslide3
+        - dsurround:ambient/cave/bigslide1
+        - dsurround:ambient/cave/bigslide2
     - op: add
       path: /sewer.background.one
-      category: ambient
-      sounds:
-      - dsurround:ambient/sewer/sewer_background_loop_01
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/sewer/sewer_background_loop_01
     - op: add
       path: /city.background.three
-      category: ambient
-      sounds:
-      - dsurround:ambient/city/city_background_loop_03
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/city/city_background_loop_03
     - op: add
       path: /factory.ambient.two
-      category: ambient
-      sounds:
-      - dsurround:ambient/factory/factory_ambient_02
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/factory/factory_ambient_02
     - op: add
       path: /underneath.background.one
-      category: ambient
-      sounds:
-      - dsurround:ambient/underneath/underneath_background_loop_01
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/underneath/underneath_background_loop_01
     - op: add
       path: /city.stinger
-      category: ambient
-      sounds:
-      - dsurround:ambient/city/city_stinger_01
-      - dsurround:ambient/city/city_stinger_02
-      - dsurround:ambient/city/city_stinger_03
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/city/city_stinger_01
+        - dsurround:ambient/city/city_stinger_02
+        - dsurround:ambient/city/city_stinger_03
     - op: add
       path: /city.background.one
-      category: ambient
-      sounds:
-      - dsurround:ambient/city/city_background_loop_01
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/city/city_background_loop_01
     - op: add
       path: /underneath.ambient
-      category: ambient
-      sounds:
-      - dsurround:ambient/underneath/underneath_ambience_01
-      - dsurround:ambient/underneath/underneath_ambience_02
-      - dsurround:ambient/underneath/underneath_ambience_03
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/underneath/underneath_ambience_01
+        - dsurround:ambient/underneath/underneath_ambience_02
+        - dsurround:ambient/underneath/underneath_ambience_03
     - op: add
       path: /underneath.stinger
-      category: ambient
-      sounds:
-      - dsurround:ambient/underneath/underneath_stinger_01
-      - dsurround:ambient/underneath/underneath_stinger_02
-      - dsurround:ambient/underneath/underneath_stinger_03
-      - dsurround:ambient/underneath/underneath_stinger_04
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/underneath/underneath_stinger_01
+        - dsurround:ambient/underneath/underneath_stinger_02
+        - dsurround:ambient/underneath/underneath_stinger_03
+        - dsurround:ambient/underneath/underneath_stinger_04
     - op: add
       path: /sewer.stinger
-      category: ambient
-      sounds:
-      - dsurround:ambient/sewer/sewer_stinger_01
-      - dsurround:ambient/sewer/sewer_stinger_02
-      - dsurround:ambient/sewer/sewer_stinger_03
+      value:
+        category: ambient
+        sounds:
+        - dsurround:ambient/sewer/sewer_stinger_01
+        - dsurround:ambient/sewer/sewer_stinger_02
+        - dsurround:ambient/sewer/sewer_stinger_03
 
   - type: keyvalue_patch
     file: resources/dsurround/dsurround/data/chat/en_us.lang
