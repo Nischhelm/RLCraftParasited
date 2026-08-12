@@ -6,6 +6,8 @@ import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
 import crafttweaker.event.BlockHarvestDropsEvent;
 
+val CoinPile = VanillaFactory.createItem("coin_pile");
+CoinPile.register();
 
 val CementRebar = VanillaFactory.createItem("rebar");
 CementRebar.register();
