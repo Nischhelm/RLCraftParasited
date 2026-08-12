@@ -451,6 +451,23 @@ class PackBuilder:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copytree(source, dest, dirs_exist_ok=True)
 
+            elif patch_type == 'file_delete':
+                # Delete a file from the target
+                file_rel = patch.get('file')
+                if not file_rel:
+                    raise ValueError("file_delete requires 'file' field")
+
+                # Path in the temp directory
+                dest_file = target_dir / file_rel
+
+                # If file exists in temp, delete it
+                if dest_file.exists():
+                    dest_file.unlink()
+                    print(f"  Deleted: {file_rel}")
+                else:
+                    # File doesn't exist - that's fine, idempotent operation
+                    print(f"  Skipped (not found): {file_rel}")
+
             elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch']:
                 # For patches: Copy original file, apply patch, save to temp
                 file_rel = patch.get('file')
@@ -602,6 +619,27 @@ class PackBuilder:
 
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copytree(source, dest, dirs_exist_ok=True)
+
+            elif patch_type == 'file_delete':
+                # Delete a file from the modpack
+                file_rel = patch.get('file')
+                if not file_rel:
+                    raise ValueError("file_delete requires 'file' field")
+
+                # Check if this is a root-level file or in overrides/
+                is_root_file = file_rel in ['manifest.json', 'modlist.html']
+
+                if is_root_file:
+                    dest_file = target_dir / file_rel
+                else:
+                    dest_file = target_dir / "overrides" / file_rel
+
+                # Delete if exists
+                if dest_file.exists():
+                    dest_file.unlink()
+                    print(f"  Deleted: {file_rel}")
+                else:
+                    print(f"  Skipped (not found): {file_rel}")
 
             elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch']:
                 # Apply patch to files
