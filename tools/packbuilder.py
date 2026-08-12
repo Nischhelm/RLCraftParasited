@@ -811,7 +811,7 @@ class PackBuilder:
                     print(f"  ✗ Patch {i} missing 'type' field")
                     return False
 
-                if 'file' not in patch and patch['type'] not in ['file_add', 'folder_add']:
+                if 'file' not in patch and patch['type'] not in ['file_add', 'file_replace', 'folder_add', 'file_delete']:
                     print(f"  ✗ Patch {i} missing 'file' field")
                     return False
 

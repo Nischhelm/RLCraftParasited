@@ -838,10 +838,11 @@ class ConfigpackMigrator:
                                 f.write(f'      value: {value}\n')
                             else:
                                 # Complex value, use YAML dump for this part
+                                f.write(f'      value:\n')
                                 value_yaml = yaml.dump(value, default_flow_style=False).strip()
-                                # Indent properly
+                                # Indent properly (add 2 more spaces for nested content)
                                 for line in value_yaml.split('\n'):
-                                    f.write(f'      {line}\n')
+                                    f.write(f'        {line}\n')
                         if 'from' in op:
                             f.write(f"      from: {op['from']}\n")
                     f.write('\n')
