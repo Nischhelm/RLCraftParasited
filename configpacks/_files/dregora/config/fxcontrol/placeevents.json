@@ -1,0 +1,26 @@
+[
+  {
+    "block": "minecraft:piston",
+    "message": "A powerful presence prevents you from placing this block.",
+    "biome": ["Abyssal Rift", "Abyssal Gate"],
+    "result": "deny"
+  },
+  {
+    "block": "minecraft:dragon_egg",
+    "message": "A powerful presence prevents you from placing this block.",
+    "biome": ["Abyssal Rift", "Abyssal Gate"],
+    "result": "deny"
+  },
+  {
+    "block": "minecraft:sticky_piston",
+    "message": "A powerful presence prevents you from placing this block.",
+    "biome": ["Abyssal Rift", "Abyssal Gate"],
+    "result": "deny"
+  },
+  {
+    "block": "waystones:waystone",
+    "message": "A powerful presence prevents you from placing this block.",
+    "biome": ["Abyssal Rift", "Abyssal Gate"],
+    "result": "deny"
+  }
+]
