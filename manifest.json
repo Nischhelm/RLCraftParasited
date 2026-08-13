@@ -109,6 +109,7 @@
     {"projectID": 278494, "fileID": 3973967, "required": true, "fileName": "foamfix-0.10.15-1.12.2"},
     {"projectID": 278717, "fileID": 2848862, "required": true, "fileName": "sit-1.12.2-v1.3"},
     {"projectID": 279311, "fileID": 2549462, "required": true, "fileName": "trumpetskeleton-1.12-1.0.2.1"},
+    {"projectID": 279900, "fileID": 8619478, "required": true, "fileName": "Trinkets and Baubles-Forge-1.12.2-0.33.3"},
     {"projectID": 280510, "fileID": 4427962, "required": true, "fileName": "AttributeFix-Forge-1.12.2-1.0.12"},
     {"projectID": 281125, "fileID": 2722339, "required": true, "fileName": "classyhats-1.6.0"},
     {"projectID": 283644, "fileID": 4629597, "required": true, "fileName": "Placebo-1.12.2-1.6.1"},
