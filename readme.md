@@ -1,4 +1,4 @@
-This is a curseforge import zip installer for **RLCraft Parasited**
+This is a curseforge import zip installer for **RLCraft Parasited** or one of its sub-packs.
 
 ---
 
@@ -6,7 +6,7 @@ Install via curseforge app → import → from zip. Don't extract this.
 
 ---
 
-Up to date with RLCraft 2.10 with almost all other mods also updated to newest
+Up to date with RLCraft 2.10 betas with almost all other mods also updated to newest
 
 ---
 
