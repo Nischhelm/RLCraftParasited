@@ -286,6 +286,13 @@ class PackBuilder:
                 for item in include_list:
                     self._include_modpack_item(temp_dir, item, pack, configpack_name)
 
+            # 3.5. Build and include configpacks if specified
+            build_configpacks = pack.build_config.get('build_configpacks', [])
+            if build_configpacks:
+                configpacks_dest = pack.build_config.get('configpacks_dest', 'overrides/configpacks')
+                print(f"  Building and including {len(build_configpacks)} configpack(s)...")
+                self._build_and_include_configpacks(temp_dir, build_configpacks, configpacks_dest, tag_version, configpack_name)
+
             # 4. Create ZIP
             output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
 
@@ -307,6 +314,63 @@ class PackBuilder:
             if temp_dir.exists():
                 shutil.rmtree(temp_dir)
                 self.log("Cleaned up temp directory")
+
+    def _build_and_include_configpacks(self, temp_dir: Path, configpack_names: list,
+                                       dest_path: str, tag_version: Optional[str],
+                                       parent_configpack: str):
+        """
+        Build specified configpacks and include their ZIPs in the modpack.
+
+        Args:
+            temp_dir: Temporary build directory for the parent modpack
+            configpack_names: List of configpack names to build
+            dest_path: Destination path within the modpack (e.g., 'overrides/configpacks')
+            tag_version: Optional version tag
+            parent_configpack: Name of the parent configpack (to avoid circular dependencies)
+        """
+        # Create destination directory
+        full_dest = temp_dir / dest_path
+        full_dest.mkdir(parents=True, exist_ok=True)
+
+        for configpack_name in configpack_names:
+            # Avoid circular dependencies
+            if configpack_name == parent_configpack:
+                print(f"    ⚠ Skipping {configpack_name} (circular dependency)")
+                continue
+
+            try:
+                print(f"    Building {configpack_name}...")
+
+                # Build the configpack (this should build as configpack mode, not modpack mode)
+                zip_path = self._build_configpack_for_inclusion(configpack_name, tag_version)
+
+                # Copy the ZIP to destination
+                dest_zip = full_dest / zip_path.name
+                shutil.copy2(zip_path, dest_zip)
+
+                print(f"    ✓ Included {zip_path.name} → {dest_path}/")
+
+            except Exception as e:
+                print(f"    ✗ Failed to build/include {configpack_name}: {e}")
+                raise
+
+    def _build_configpack_for_inclusion(self, configpack_name: str, tag_version: Optional[str] = None):
+        """
+        Build a configpack specifically for inclusion in a modpack.
+        Always builds as a configpack (mode: configpack), not as a modpack.
+
+        Args:
+            configpack_name: Name of the configpack to build
+            tag_version: Optional version tag
+
+        Returns:
+            Path to the generated ZIP file
+        """
+        pack = self.load_configpack(configpack_name)
+
+        # Force configpack mode for included configpacks
+        # (we want the small ZIP with only changes, not a full modpack)
+        return self._build_as_configpack(pack, configpack_name, tag_version)
 
     def build_all(self, tag_version: Optional[str] = None):
         """
