@@ -109,6 +109,7 @@ patches:
     description: "no water bucket MLG, hcc darkness, lightning destroys items again"
     changes:
       "general.vanilla config":
+        B:"Allow Clamping Gamma (Vanilla)": true
         B:"Configurable Water Fall Damage Reduction (Vanilla)": true
         D:"Maximum Gamma Value": -0.25
         D:"Minimum Gamma Value": -0.5
