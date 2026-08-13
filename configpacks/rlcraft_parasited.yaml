@@ -6,6 +6,11 @@ description: "RLCraft Parasited"
 build:
   mode: modpack
   output_name: "RLCraft Parasited.zip"
+  build_configpacks:
+    - hcc
+    - hcc_omega
+    - unparasited
+  configpacks_dest: "overrides"
   include:
     - manifest.json
     - readme.md
