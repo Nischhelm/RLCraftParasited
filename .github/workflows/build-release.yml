@@ -91,7 +91,7 @@ jobs:
           body_path: /tmp/release_body.md
           files: |
             build/RLCraft Parasited.zip
-            build/DregoraParasited.zip
+            build/Dregora Parasited.zip
             build/ShyCraft Parasited.zip
           draft: false
           prerelease: false
