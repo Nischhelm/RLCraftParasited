@@ -5,7 +5,7 @@ description: "Dregora x Parasited"
 # Build configuration
 build:
   mode: modpack
-  output_name: DregoraParasited.zip
+  output_name: "Dregora Parasited.zip"
   build_configpacks:
     - dregora_hcc
     - dregora_omega
