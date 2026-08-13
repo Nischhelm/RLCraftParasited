@@ -3022,6 +3022,8 @@ patches:
             - biomesoplenty:double_plant:3
             - biomesoplenty:plant_1:11
             - biomesoplenty:plant_1:3
+      world.tree variants:
+        B:"Enable Blossom": false
 
   - type: cfg_patch
     file: config/antiqueatlasautomarker.cfg
