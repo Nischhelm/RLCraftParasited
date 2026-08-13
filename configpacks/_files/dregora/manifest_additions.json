@@ -79,9 +79,9 @@
   },
   {
     "projectID": 622862,
-    "fileID": 4721604,
+    "fileID": 6826317,
     "required": true,
-    "fileName": "ContentCreator-1.3.7-fix2"
+    "fileName": "ContentCreator-1.3.96"
   },
   {
     "projectID": 805622,
@@ -103,9 +103,9 @@
   },
   {
     "projectID": 1209013,
-    "fileID": 7438742,
+    "fileID": 8333946,
     "required": true,
-    "fileName": "ViralTracker-1.0.1"
+    "fileName": "ViralTracker-1.0.8"
   },
   {
     "projectID": 1293578,
@@ -121,8 +121,8 @@
   },
   {
     "projectID": 1395835,
-    "fileID": 7295034,
+    "fileID": 7701356,
     "required": true,
-    "fileName": "Pinata Mobs-1.0.5"
+    "fileName": "Pinata Mobs-1.0.6"
   }
 ]
