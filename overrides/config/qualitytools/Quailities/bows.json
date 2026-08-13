@@ -1,10 +1,6 @@
 {
-    "comment": "These qualities will apply for bows, and possibly for guns from
-                other mods if they extend the vanilla bow class. For more info
-                about how to edit this file and add more files, visit
-                https://bitbucket.org/Tmtravlr/qualitytools/wiki/Home",
-
-    "slot": [
+  "comment": "These qualities will apply for anything that can go in baubles slots, and also the totem of undying (which can be held in the offhand slot). For more info about how to edit this file and add more files, visit https://bitbucket.org/Tmtravlr/qualitytools/wiki/Home",
+  "slot": [
         "mainhand",
         "offhand"
     ],
@@ -14,7 +10,7 @@
 	 },
 	 {
 	   "class": "ItemCrossbow"
-	 },
+	 }
     ],
 	
     "blacklist": [
