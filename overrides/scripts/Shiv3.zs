@@ -9,24 +9,30 @@ print("Script starting!");
 
 //Shivaxi Boss turns into Shivaxi Dragon on death
 events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
-    if (event.entity.world.remote) return;
-	val def = event.entity.definition;
+	val entity = event.entity;
+	val world = entity.world;
+    if (world.remote) return;
+	val def = entity.definition;
 	if (isNull(def)) return;
-	if(def.id has "playerbosses:player_boss"){
-        val x = event.entity.position.x;
-        val y = event.entity.position.y;
-        val z = event.entity.position.z;
-        event.entity.world.performExplosion(event.entity, x, y, z, 16, true, true);
-        server.commandManager.executeCommand(server, "summon iceandfire:shivaxi_dragon " + x + " " + y + " " + z);
-    }
+	if (def.id != "playerbosses:player_boss") return;
+
+	val position = entity.position;
+	val biome = world.getBiome(position);
+	if(!isNull(biome) && biome.id == "openterraingenerator:overworld_abyssal_rift") return;
+
+	val x = position.x;
+	val y = position.y;
+	val z = position.z;
+	world.performExplosion(entity, x, y, z, 16, true, true);
+	server.commandManager.executeCommand(server, "summon iceandfire:shivaxi_dragon " + x + " " + y + " " + z);
 });
 
-//Shivaxi Boss turns into Shivaxi Dragon on death
+//Shivaxi Dragon drops master key
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
     if (event.entity.world.remote) return;
 	val def = event.entity.definition;
 	if (isNull(def)) return;
-	if(def.id has "iceandfire:shivaxi_dragon")
+	if (def.id == "iceandfire:shivaxi_dragon")
 		event.addItem(<locks:master_key>);
 });
 
