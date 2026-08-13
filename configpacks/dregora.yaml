@@ -4626,16 +4626,47 @@ patches:
       value: "-abyssal"
 
   - type: json_patch
+    file: config/lycanitesmobs/creatures/rahovart.json
+    description: "Added drops to raho"
+    changes:
+      - op: add
+        path: /drops/-
+        value:
+          chance: 1
+          item: variedcommodities:ancient_coin
+          maxAmount: 2
+          minAmount: 2
+
+  - type: json_patch
+    file: config/lycanitesmobs/creatures/asmodeus.json
+    description: "Added drops to asmo"
+    changes:
+      - op: add
+        path: /drops/-
+        value:
+          chance: 1
+          item: variedcommodities:ancient_coin
+          maxAmount: 2
+          minAmount: 2
+
+  - type: json_patch
     file: config/lycanitesmobs/creatures/amalgalich.json
-    description: "TODO: TODO"
+    description: "Added drops to amal"
     changes:
     - op: add
-      path: /drops/13
+      path: /drops/-
       value:
         chance: 1
         item: variedcommodities:gem_ruby
         maxAmount: 1
         minAmount: 1
+    - op: add
+      path: /drops/-
+      value:
+        chance: 1
+        item: variedcommodities:ancient_coin
+        maxAmount: 2
+        minAmount: 2
 
   - type: json_patch
     file: config/lycanitesmobs/creatures/treant.json
