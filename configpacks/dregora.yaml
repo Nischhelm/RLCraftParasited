@@ -6,6 +6,11 @@ description: "Dregora x Parasited"
 build:
   mode: modpack
   output_name: DregoraParasited.zip
+  build_configpacks:
+    - dregora_hcc
+    - dregora_omega
+    - dregora_unparasited
+  configpacks_dest: "overrides"
   include:
     - manifest.json
 
