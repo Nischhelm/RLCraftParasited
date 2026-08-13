@@ -18,4 +18,4 @@ patches:
     main.difficulty:
       S:"Difficulty Per Block": 0.0005
 build:
-  output_name: "HCC.zip"
+  output_name: "Dregora Parasited HCC.zip"

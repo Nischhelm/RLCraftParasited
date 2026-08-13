@@ -52,4 +52,4 @@ patches:
 
 # Build configuration
 build:
-  output_name: "Unparasited.zip"
+  output_name: "Parasited Unparasited.zip"
