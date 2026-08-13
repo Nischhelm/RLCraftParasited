@@ -168,9 +168,7 @@ class CfgPatcher:
                         # 3. Add operations (at the end)
                         if 'add' in new_values:
                             for item in new_values['add']:
-                                item_str = str(item)
-                                if item_str not in final_values:  # Avoid duplicates
-                                    final_values.append(item_str)
+                                final_values.append(str(item))
 
                         # Write final list
                         for value in final_values:
