@@ -1,0 +1,13 @@
+[
+  {
+    "dimension": 3,
+    "mobs": [
+      {
+        "mob": "defiledlands:book_wyrm",
+        "weight": 30,
+        "groupcountmin": 2,
+        "groupcountmax": 4
+      }
+    ]
+  }
+]
