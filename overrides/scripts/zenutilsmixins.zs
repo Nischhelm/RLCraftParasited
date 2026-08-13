@@ -482,3 +482,15 @@ zenClass ThirstHandlerMixin {
             this0.addExhaustion(player, native.com.charles445.simpledifficulty.config.ModConfig.server.thirst.thirstAttacking as float);
 	}
 }
+
+#mixin {targets: "dev.satyrn.wolfarmor.common.loot.LootHandler"}
+zenClass WolfArmorLootHandlerMixin {
+    #mixin ModifyArg
+    #{
+    #   method: "getInjectPool",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/world/storage/loot/RandomValueRange;<init>(F)V"}
+    #}
+    function zenutils_noBonusWolfArmor(original as float) as float {
+        return 0.0 as float; //replace 1-1 bonus rolls with 0-0 bonus rolls
+    }
+}
