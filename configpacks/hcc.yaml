@@ -355,4 +355,4 @@ patches:
 
 # Build configuration
 build:
-  output_name: "HCC.zip"
+  output_name: "Parasited HCC.zip"
