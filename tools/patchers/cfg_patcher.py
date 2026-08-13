@@ -151,14 +151,16 @@ class CfgPatcher:
                         # 1. Remove operations
                         if 'remove' in new_values:
                             for item in new_values['remove']:
-                                if item in final_values:
-                                    final_values.remove(item)
+                                # Convert to string for comparison (YAML may parse as int)
+                                item_str = str(item)
+                                if item_str in final_values:
+                                    final_values.remove(item_str)
 
                         # 2. Replace operations
                         if 'replace' in new_values:
                             for replacement in new_values['replace']:
-                                old = replacement['old']
-                                new = replacement['new']
+                                old = str(replacement['old'])
+                                new = str(replacement['new'])
                                 if old in final_values:
                                     idx = final_values.index(old)
                                     final_values[idx] = new
@@ -166,8 +168,9 @@ class CfgPatcher:
                         # 3. Add operations (at the end)
                         if 'add' in new_values:
                             for item in new_values['add']:
-                                if item not in final_values:  # Avoid duplicates
-                                    final_values.append(item)
+                                item_str = str(item)
+                                if item_str not in final_values:  # Avoid duplicates
+                                    final_values.append(item_str)
 
                         # Write final list
                         for value in final_values:
