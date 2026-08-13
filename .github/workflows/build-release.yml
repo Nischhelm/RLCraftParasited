@@ -59,7 +59,7 @@ jobs:
           CHANGELOG: ${{ steps.changelog.outputs.CHANGELOG }}
         run: |
           cat > /tmp/release_body.md << 'EOFBODY'
-          ## RLCraft Parasited ${VERSION}, Dregora & ShyCraft
+          ## RLCraft, Dregora & ShyCraft **Parasited** ${VERSION}
 
           ${CHANGELOG}
 
@@ -90,7 +90,9 @@ jobs:
           name: ${{ steps.version.outputs.VERSION }}
           body_path: /tmp/release_body.md
           files: |
-            build/*.zip
+            build/RLCraft Parasited.zip
+            build/DregoraParasited.zip
+            build/ShyCraft Parasited.zip
           draft: false
           prerelease: false
         env:
