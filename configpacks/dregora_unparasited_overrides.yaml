@@ -1,0 +1,26 @@
+name: "Dregora Unparasited Overrides"
+version: "1.0.0"
+description: "Dregora-specific overrides for Unparasited configpack"
+inherits: unparasited
+
+patches:
+  - type: cfg_patch
+    file: config/srparasites/SRParasites.cfg
+    description: "Also allow spawning paras in underneath"
+    changes:
+      configuration_general:
+        I:"Mobs Blacklisted Dimensions":
+          add:
+            - 3
+
+  - type: cfg_patch
+    file: config/rltweaker.cfg
+    description: "Disallow any parasite in end and nether, not overworld"
+    changes:
+      general.server.scape and run parasites:
+        I:"Parasites Dimension Blacklist" :
+          remove:
+            - 0
+
+build:
+  output_name: "Unparasited.zip"
