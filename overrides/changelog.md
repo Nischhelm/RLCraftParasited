@@ -1,3 +1,53 @@
+--- Aug 14 2026 ---
+
+This is mostly a hotfix update, but theres some nice things in here as well, such as
+    Trinkets and Baubles update
+    High Lvl Lyca end Bosses drop Socket items (thanks ShyCraft team!)
+    Dregora Lyca End Bosses also drop Brutal Coins
+
+### Full changelog:
+
+Mod changes
+    Updated Trinkets to release version
+    Updated LycaTweaks (no more falling lyca riders in dregora)
+    Updated voicechat & jei
+
+Resource Packs
+    Added Animated Textures for RLCraft and RLCraft 3D Mushrooms by ShionBryan
+    Added ThiccPixieDust by Iqury (disabled by default, also makes the two Stones of Inertia bigger)
+    Sorted resourcepacks so Jappa beats ShionBryan (because i like it like that, feel free to change)
+
+Config changes
+    more raw meat has parasites+hunger chance now
+    fixed bettermineshaft log complaints (presumably), by eagle
+    added lightning dragon and SRP stuff to bounties, by eagle
+
+Localisation
+    localised set bonus, by kamei, was already in dregora
+    localised additional socketed gems
+    corrected subject hist/bio/geo descriptions
+
+Scripts
+    removed bonus rolls for wolf armor, now not luck dependent anymore (finally)
+    high lvl lyca bosses (raho 2000, asmo 1000, amal 500) now drop 3-9 random sockets, double if variant, script adapted by shycraft
+
+Dregora specifics
+    re-disabled FUR enchants
+    fixed observers blowing up brutal tower outside
+    lyca bosses drop 2 brutal coins (4 if variant)
+    updated pinatamobs, viraltracker, contentcreator to newest versions
+
+ShyCraft specifics
+    fixed race affinity override not applying
+    fixed loadingscreen change not applying
+
+Config Packs
+    now all packs are in the same release (Parasited, Dregora, ShyCraft)
+    config packs are now inside the modpack zips and can just be directly extracted at the spot they are at
+    fixed dregora versions of the config packs
+        corrected scalingdiff difficulty scaling by distance (1 diff per 2k blocks)
+        corrected parasite spawning in overworld
+
 --- Aug 07 2026 ---
 
 Mod changes
