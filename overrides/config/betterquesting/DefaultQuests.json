@@ -3260,7 +3260,7 @@
           "posY:3": 0,
           "posZ:3": 0,
           "biome:8": "",
-          "name:8": "Nether",
+          "name:8": "betterquesting.task.location.31",
           "dimension:3": -1,
           "taxiCabDist:1": 0,
           "taskID:8": "bq_standard:location"
@@ -3308,7 +3308,7 @@
           "posY:3": 0,
           "posZ:3": 0,
           "biome:8": "",
-          "name:8": "End",
+          "name:8": "betterquesting.task.location.32",
           "dimension:3": 1,
           "taxiCabDist:1": 0,
           "taskID:8": "bq_standard:location"
@@ -4051,7 +4051,7 @@
           "posY:3": 0,
           "posZ:3": 0,
           "biome:8": "",
-          "name:8": "Lost Cities",
+          "name:8": "betterquesting.task.location.39",
           "dimension:3": 111,
           "taxiCabDist:1": 0,
           "taskID:8": "bq_standard:location"
@@ -15145,7 +15145,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Underground Town",
+          "name:8": "betterquesting.task.location.195",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_LargeUndergroundTown",
@@ -15201,7 +15201,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Plains Windmill",
+          "name:8": "betterquesting.task.location.196",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_PlainsWindmill",
@@ -15686,7 +15686,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Four Towers",
+          "name:8": "betterquesting.task.location.200",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_4Towers",
@@ -15893,7 +15893,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Small Town",
+          "name:8": "betterquesting.task.location.204",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_SmallTown",
@@ -16047,7 +16047,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Friendly Outpost",
+          "name:8": "betterquesting.task.location.207",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_FriendlyOutpost",
@@ -16103,7 +16103,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Plains Camp",
+          "name:8": "betterquesting.task.location.208",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_PlainsCamp",
@@ -16159,7 +16159,7 @@
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "Forest Stronghold",
+          "name:8": "betterquesting.task.location.209",
           "index:3": 0,
           "dimension:3": 0,
           "structure:8": "RLCraft_ForestStronghold",
