@@ -735,3 +735,15 @@ betterquesting.quest.desc.345=Tendrils of flesh and viscera wrapped around thems
 betterquesting.quest.desc.346=Flesh and bone, hardened and sharpened by hatred and death, sapping life from their targets...\nWith every strike, you can hear them whispering to you, promising you power in exchange for wielding them...
 betterquesting.quest.desc.347=No Description
 betterquesting.quest.desc.348=Sometimes those lazy villagers post bounties on the town bounty board for things they want retrieved, or hunted down.\nAt least the payment makes up for their ridiculous requests!\n\n(Right-click a bounty board with a finished bounty to redeem it.)
+
+# Added by KameiB
+betterquesting.task.location.31=The Nether
+betterquesting.task.location.32=The End
+betterquesting.task.location.39=Lost Cities
+betterquesting.task.location.195=Underground Town (RLCraft_LargeUndergroundTown)
+betterquesting.task.location.196=Plains Windmill (RLCraft_PlainsWindmill)
+betterquesting.task.location.200=Four Towers (RLCraft_4Towers)
+betterquesting.task.location.204=Small Town (RLCraft_SmallTown)
+betterquesting.task.location.207=Friendly Outpost (RLCraft_FriendlyOutpost)
+betterquesting.task.location.208=Plains Camp (RLCraft_PlainsCamp)
+betterquesting.task.location.209=College of Evil (RLCraft_ForestStronghold)
