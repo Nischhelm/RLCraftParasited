@@ -339,21 +339,6 @@ patches:
         - minecraft:obsidian
         - minecraft:sand
         - minecraft:stonebrick
-    general.server settings.race configuration.fairy.abilities.restoration field:
-      B:"00. Enabled": true
-      D:"01. Radius": 3.0
-      D:"02. Vertical Radius": 2.0
-      I:"03. Duration": 120
-      I:"04. Wait Time": 10
-      I:"05. Pulse Interval": 20
-      I:"06. Reapplication Delay": 20
-      I:"07. Repair Amount": 1
-      I:"08. Growth Attempts Per Pulse": 4
-      D:"09. Cast Range": 15.0
-      S:"10. Primary Effect": minecraft:instant_health:60:0
-      D:"11. Mana Cost Per Second": 20.0
-      D:"12. Mana Cost Per Potion Effect": 5.0
-      D:"13. Mana Cost Per Effect Level": 5.0
     general.server settings.race configuration.fairy.magic:
       I:"Magic Affinity": 150
     general.server settings.race configuration.faelis:
@@ -541,7 +526,6 @@ patches:
         - Name:xat.flyspeed, Amount:0.50, Operation:2
     general.server settings.race configuration.dragon.elements.ice.abilities.ice breath:
       D:"02. Damage": 15.0
-      D:"03. Mana Cost": 5.0
     general.server settings.race configuration.dragon.elements.lightning:
       S:"90. Attributes":
         remove:
@@ -560,7 +544,6 @@ patches:
         - Name:xat.flyspeed, Amount:0.75, Operation:2
     general.server settings.race configuration.dragon.elements.lightning.abilities.lightning breath:
       D:"02. Damage": 10.0
-      D:"03. Mana Cost": 5.0
     general.server settings.race configuration.dragon.elements.lightning.abilities.lightning bolt:
       D:"01. Damage Dealt Max": 60.0
       D:"02. Mana Cost Max": 100.0
