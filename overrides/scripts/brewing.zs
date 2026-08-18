@@ -40,9 +40,6 @@ brewing.addBrew(<bountifulbaubles:potionrecall>, <minecraft:ender_eye>, <bountif
 
 brewing.addBrew(<minecraft:potion>.withTag({"Potion": "minecraft:water"}), <betternether:bone_mushroom>, <minecraft:potion>.withTag({Potion: "minecraft:thick"}));
 
-addBrewRecipe2("minecraft:awkward", <contenttweaker:glacier_cream>,
-    "xat:ice_resistance", null, "xat:extended_ice_resistance");
-
 addBrewRecipe2("minecraft:thick", <scalinghealth:heartcontainer>,
     "potioncore:health_boost", "potioncore:strong_health_boost", "potioncore:long_health_boost");
 
