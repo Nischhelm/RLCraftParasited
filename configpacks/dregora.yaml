@@ -2892,6 +2892,17 @@ patches:
         S:"Wall Block": minecraft:barrier
 
   - type: cfg_patch
+    file: config/enchantmentcontrol.cfg
+    description: "Unregister FUR enchants"
+    changes:
+      general.blacklists:
+        S:"Registered Enchantment Blacklist":
+          add:
+            - mod_lavacow:corrosive
+            - mod_lavacow:lifesteal
+            - mod_lavacow:poisonous
+
+  - type: cfg_patch
     file: config/rltweaker.cfg
     description: "TODO: Describe what changes in rltweaker.cfg"
     changes:
@@ -6698,7 +6709,7 @@ patches:
     description: "TODO: Describe why this file is replaced"
 
   - type: file_delete
-    file: dregora/structures/active/P_TreeDungeon.rcst
+    file: structures/active/P_TreeDungeon.rcst
     description: "Eagle removed this one and made his own floating tree in OTG"
 
   - type: keyvalue_patch
