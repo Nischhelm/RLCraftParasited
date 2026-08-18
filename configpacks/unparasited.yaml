@@ -50,6 +50,13 @@ patches:
         B:"Evolution Custom Spawner": false
         B:"Evolution Phases": false
 
+  - type: cfg_patch
+    file: config/lostcities/profile_rlcraft.cfg
+    description: "Remove para biome from LC chunk gen"
+    changes:
+      lostcity_rlcraft:
+        S:allowedBiomeFactors: []
+
 # Build configuration
 build:
   output_name: "Parasited Unparasited.zip"
