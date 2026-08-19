@@ -264,5 +264,16 @@
     {"projectID": 1569549, "fileID": 8251137, "required": true, "fileName": "Save My Ankh Shield-1.0.0.1"},
     {"projectID": 1642593, "fileID": 8637928, "required": true, "fileName": "§l3D_§lRLMushroomsV2"}
   ],
+  "curr_unused": [
+    {"projectID": 267035, "fileID": 7156865, "required": true, "fileName": "SoManyEnchantments-1.0.8-1.12.2"},
+    {"projectID": 711730, "fileID": 8151138, "required": true, "fileName": "RLMixins-1.4.7"},
+    {"projectID": 734347, "fileID": 6518808, "required": true, "fileName": "RLTweaker-1.12.2-0.7.5"},
+    {"projectID": 821595, "fileID": 7284855, "required": true, "fileName": "EagleMixins-1.2.4"},
+    {"projectID": 888556, "fileID": 8350620, "required": true, "fileName": "Ice and Fire-2.2.9"},
+    {"projectID": 1165149, "fileID": 7593909, "required": true, "fileName": "BetterEndForge-Unofficial-GBPort-1.12.2-1.3.9"},
+    {"projectID": 1303863, "fileID": 8150964, "required": true, "fileName": "FermiumMixins-1.0.13"},
+    {"projectID": 1319911, "fileID": "NA", "required": true, "fileName": "Socketed-indev"},
+    {"projectID": 1627433, "fileID": 8545878, "required": true, "fileName": "BetterConfig-1.12.2-1.0.1"}
+  ],
   "overrides": "overrides"
 }
