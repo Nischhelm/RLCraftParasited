@@ -2394,6 +2394,7 @@ patches:
             - chorusFruit
             - enderCrown
             - enderPearl
+            - enderTalisman
             - mujmajnkraftsbettersurvival:warp
             - potioncore:strong_teleport
             - potioncore:teleport
@@ -2863,6 +2864,7 @@ patches:
           add:
             - minecraft:mutated_forest
       general.mixin toggles:
+        B:"Patch Observer Ticking (Vanilla)": true
         B:"Abyssal Player Bosses (Giant Player Boss)": true
         B:"Cancel Reaper Scythe Custom Sweep (FUR)": true
         B:"Cancel Summon Loot & XP (FUR)": true
