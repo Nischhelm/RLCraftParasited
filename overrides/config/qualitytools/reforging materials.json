@@ -2209,6 +2209,14 @@
   },
   {
     "tool": {
+      "item": "xat:taurus_ring"
+    },
+    "material": {
+      "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
         "item": "xat:wither_ring"
     },
     "material": {
