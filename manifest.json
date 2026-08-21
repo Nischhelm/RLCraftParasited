@@ -210,7 +210,7 @@
     {"projectID": 813247, "fileID": 4375806, "required": true, "fileName": "RLTooltips"},
     {"projectID": 815314, "fileID": 4358088, "required": true, "fileName": "Wilhelm"},
     {"projectID": 819886, "fileID": 4475428, "required": true, "fileName": "RLArtifacts-1.1.2"},
-    {"projectID": 821595, "fileID": 8685557, "required": true, "fileName": "EagleMixins-1.3.0"},
+    {"projectID": 821595, "fileID": 8685591, "required": true, "fileName": "EagleMixins-1.3.0"},
     {"projectID": 830652, "fileID": 4409243, "required": true, "fileName": "JAPPA_RLCraftAdd-on_Nether"},
     {"projectID": 840576, "fileID": 7009970, "required": true, "fileName": "OceanicExpanse-1.2.2"},
     {"projectID": 879970, "fileID": 4609749, "required": true, "fileName": "RL SRP Better Visuals V0.1"},
