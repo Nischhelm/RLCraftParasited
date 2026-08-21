@@ -3183,6 +3183,18 @@ patches:
             - mod_lavacow:poisonous
 
   - type: cfg_patch
+    file: config/potioncontrol.cfg
+    description: "Re-register eaglemixins potions"
+    changes:
+      general.blacklists:
+        S:"Registered Potion Blacklist":
+          remove:
+            - eaglemixins:radiation_sickness
+            - eaglemixins:radiation_fatigue
+            - eaglemixins:radiation_weakness
+            - eaglemixins:teleportation_sickness
+
+  - type: cfg_patch
     file: config/rltweaker.cfg
     description: "TODO: Describe what changes in rltweaker.cfg"
     changes:
