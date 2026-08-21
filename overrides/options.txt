@@ -114,6 +114,14 @@ key_key.spawn_keybound_pet.lycanitestweaks:48:SHIFT
 key_key.teleport_keybound_pet.lycanitestweaks:-99:CONTROL
 key_key.toggle_soulgazer_auto.lycanitestweaks:34:CONTROL
 key_key.toggle_soulgazer_manual.lycanitestweaks:35:CONTROL
+key_key.lycanitestweaks.toggleAmuletBauble:0
+key_key.lycanitestweaks.toggleRing1Bauble:0
+key_key.lycanitestweaks.toggleRing2Bauble:0
+key_key.lycanitestweaks.toggleBeltBauble:0
+key_key.lycanitestweaks.toggleHeadBauble:0
+key_key.lycanitestweaks.toggleBodyBauble:0
+key_key.lycanitestweaks.toggleCharmBauble:0
+key_key.lycanitestweaks.toggleAllBaubles:0
 key_neat.keybind.toggle:0
 key_key.switchhud:0
 key_key.scalinghealth.difficulty_meter:0
@@ -123,6 +131,7 @@ key_key.xat.trinket_target.desc:79
 key_key.xat.trinket_toggle_effect.desc:81
 key_key.xat.magnet_toggle_effect.desc:43
 key_key.xat.trinket_arcing_attack.desc:45
+key_key.xat.trinket_arcing_dodge.desc:0
 key_key.xat.trinket_ender_crown.desc:0
 key_key.xat.aux_key.desc:80
 key_key.xat.race_ability.desc:45
@@ -133,7 +142,6 @@ key_dshuds.keybind.LightLevel:65
 key_dshuds.keybind.ChunkBorders:0
 key_key.pickup.item:0
 key_key.openatlas.desc:0
-key_key.unhook:45
 key_gui.antiqueatlas.addMarker:30
 key_gui.antiqueatlas.delMarker:32
 key_gui.antiqueatlas.hideMarkers:0
