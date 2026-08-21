@@ -10,6 +10,7 @@ recipes.addShaped("nodecompass",<srparasites:nodecompass>,
   [null,<srparasites:lurecomponent6>,null]]);
 
 knifeRecipes.add(<minecraft:book>,<minecraft:paper>*2);
+knifeRecipes.add(<minecraft:saddle>,<minecraft:leather>*1);
 knifeRecipes.add(<toolbelt:pouch>,<minecraft:leather>*2);
 knifeRecipes.add(<toolbelt:belt>,<minecraft:leather>*3);
 knifeRecipes.add(<switchbow:quiver>,<minecraft:leather>*3);
