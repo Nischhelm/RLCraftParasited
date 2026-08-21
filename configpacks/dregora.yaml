@@ -403,6 +403,8 @@ patches:
         S:"Parasite mob cap Multipliers":
           add:
             - 3,1.5
+      general.adaptation:
+        S:"Adaptation Second Reset Item": nuclearcraft:fuel_uranium:4
 
   - type: cfg_patch
     file: config/reskillable.cfg
