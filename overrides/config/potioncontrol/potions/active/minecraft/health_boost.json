@@ -1,0 +1,14 @@
+{
+  "id": "minecraft:health_boost",
+  "isGood": true,
+  "liquidColor": "#F87D23",
+  "attributeModifiers": [
+    {
+      "attribute": "generic.maxHealth",
+      "modifierName": "effect.healthBoost",
+      "amount": 0.15,
+      "operation": 1,
+      "uuid": "5d6f0ba2-1186-46ac-b896-c61c5cee99cc"
+    }
+  ]
+}

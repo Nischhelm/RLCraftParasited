@@ -1,0 +1,14 @@
+{
+  "id": "minecraft:strength",
+  "isGood": true,
+  "liquidColor": "#932423",
+  "attributeModifiers": [
+    {
+      "attribute": "generic.attackDamage",
+      "modifierName": "effect.damageBoost",
+      "amount": 2.0,
+      "operation": 0,
+      "uuid": "648d7064-6a60-4f59-8abe-c2c23a6dd7a9"
+    }
+  ]
+}
