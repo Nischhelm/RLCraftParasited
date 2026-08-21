@@ -2907,16 +2907,16 @@ patches:
             - iceandfire:icedragon=1000.0
             - iceandfire:lightningdragon=1000.0
         D:"Vertical Radiation Spread Gradient": 0.4
-      general.nuclearcraft options.radiating loot tables:
-        D:"dregora:ruins/nuclear": 0.02
-        D:"dregora:ruins/starter": 0.005
-      general.nuclearcraft options.radiating inventories:
-        B:backpack: true
-        B:enderChest: true
-        B:inventoryCrafting: true
-        B:itemEntity: true
-        B:mouseItem: true
-        B:toolbeltSlot: true
+      general.teleporter:
+        B:"Enable Teleporters": true
+        S:"Approximate Teleporter Positions":
+          - 0, -950, 80, -2228, -8247, 80, -12929
+          - 1, -2355, 80, -642, -15878, 80, -4301
+          - 2, -1987, 80, 1453, -13520, 80, 7636
+          - 3, -116, 80, 2455, -2607, 80, 16323
+          - 4, 2407, 80, -401, 13476, 80, -8398
+          - 5, 1171, 80, -2126, 7070, 80, -15844
+          - 6, 1831, 80, 1635, 5502, 80, 13754
 
   - type: cfg_patch
     file: config/reccomplex.cfg
