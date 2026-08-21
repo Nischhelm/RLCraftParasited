@@ -1,3 +1,43 @@
+--- Aug 21 2026 ---
+
+Mod changes
+    Updated LycaTweaks
+        lyca mob piercing shouldn't fuck you as much anymore, was bugged
+    Updated Socketed
+        fixed an issue that made various gems not work
+    Updated Trinkets
+    Updated jei
+    Updated fermiumbooter
+    removed betterconfig temporarily (until next version)
+
+Resource Packs
+    Added ShionBryan BetterRocks and updated their RLMushrooms
+
+Config changes
+    Nerfed strength to +2 per lvl
+    Buffed Health Boost to +15% (op1) HP per lvl (instead of +2 hearts per lvl)
+    Re-enabled Bless & Curse as they are used by bookwyrm meat
+    Allowed taurus ring to be reforged
+    Added default voicechat server cfg so thats automated
+    Temporarily disabled srpmixins voicechat plugin (parasites hear you) until i got that stupid bug figured out
+
+Scripts
+    Add saddle to leather knife recipe
+
+Dregora Parasited parity with normal Dregora
+    Re-enabled eaglemixins potions (contaminated etc)
+    Unregister FUR enchants AGAIN
+    Fixed dragon eye not finding dregora ores
+    Made structs with TNT not blow up on chunk gen
+    Fixed NPE spam in chat when close to abyssal rift (feel like i fixed that 4 times by now, surely this time right)
+    Made parasites ignore bookwyrms again
+    Disabled srpmixins armor+bow evolution, eaglemixins has its own
+    Re-fixed para biome sometimes just turning to gravel
+    switched adaptation reset recipe from script one to srpmixins one
+
+Config Packs
+    Made Unparasited LC biome gen normal again (no para biome!)
+
 --- Aug 14 2026 ---
 
 This is mostly a hotfix update, but theres some nice things in here as well, such as
