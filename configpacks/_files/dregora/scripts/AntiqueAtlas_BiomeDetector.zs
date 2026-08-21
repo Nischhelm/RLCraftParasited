@@ -3,9 +3,10 @@ import mods.antiqueatlasautomarker.BiomeDetectorEvent;
 //Show ravine as lava in Crystal Abyss and as Dead Blood in Abyssal Rift
 events.onBiomeDetector(function(event as BiomeDetectorEvent) {
     if(event.world.dimension != 0) return;
-	if(isNull(event.mainBiome)) return;
-    val biomeResourceLoc = event.mainBiome.id;
-	if(isNull(biomeResourceLoc)) return;
+    val biome = event.mainBiome;
+	if(isNull(biome)) return;
+    if(isNull(biome.native.getRegistryName())) return; // biome.id goes right through getRegistryName.toString
+    val biomeResourceLoc = biome.id;
     val chosenType = event.chosenType;
     if(chosenType == "ravine" && biomeResourceLoc == "openterraingenerator:overworld_crystal_abyss")
         event.chosenType = "lava";
