@@ -405,6 +405,10 @@ patches:
             - 3,1.5
       general.adaptation:
         S:"Adaptation Second Reset Item": nuclearcraft:fuel_uranium:4
+      general.deterrents and nexus:
+        B:"Disable Infestation Reversion": true
+      general.srp weapons:
+        B:"Sentient Armor+Bow Evolution": false
 
   - type: cfg_patch
     file: config/reskillable.cfg
@@ -4150,6 +4154,9 @@ patches:
     changes:
       parasite_properties:
         I:"Mob Cap Per Player": 120
+        S:"Mob Attacking blacklist":
+          add:
+            - defiledlands:book_wyrm
 
   - type: cfg_patch
     file: config/srparasites/SRParasitesSystems.cfg
