@@ -1414,7 +1414,7 @@ if(!Parasited.dregora.useDregoraRecipes) {
 } else {
     recipes.addShaped("rec138",<variedcommodities:holyhandgrenade>,
      [[<minecraft:gold_ingot>,<bountifulbaubles:ringiron>,<minecraft:gold_ingot>],
-      [<minecraft:quartz_block>,<mod_lavacow:holy_grenade>,<minecraft:quartz_block>],
+      [<minecraft:quartz_block>, itemUtils.getItem("mod_lavacow:holy_grenade"),<minecraft:quartz_block>],
       [<minecraft:gold_ingot>,<minecraft:quartz_block>,<minecraft:gold_ingot>]]);
 }
 
