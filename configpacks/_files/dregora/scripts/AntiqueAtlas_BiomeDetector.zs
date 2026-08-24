@@ -8,7 +8,7 @@ events.onBiomeDetector(function(event as BiomeDetectorEvent) {
     if(isNull(biome.native.getRegistryName())) return; // biome.id goes right through getRegistryName.toString
     val biomeResourceLoc = biome.id;
     val chosenType = event.chosenType;
-    if(chosenType == "ravine" && biomeResourceLoc == "openterraingenerator:overworld_crystal_abyss")
+    if(chosenType == "ravine" && (biomeResourceLoc == "openterraingenerator:overworld_crystal_abyss" || biomeResourceLoc == "openterraingenerator:overworld_abyssal_gate"))
         event.chosenType = "lava";
     else if(biomeResourceLoc == "openterraingenerator:overworld_abyssal_rift"){
         if(chosenType == "ravine")
