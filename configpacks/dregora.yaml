@@ -5176,6 +5176,18 @@ patches:
       value: "biomesoplenty:flower_1"
 
   - type: json_patch
+    file: config/lycanitesmobs/spawners/skyhighPara.json
+    description: "No para skyspawns in abyssal rift/brutal towers"
+    changes:
+      - op: add
+        path: /conditions/0/biomeIds
+        value:
+          - openterraingenerator:overworld_abyssal_rift
+      - op: add
+        path: /conditions/0/biomeIdListType
+        value: "blacklist"
+
+  - type: json_patch
     file: config/lycanitesmobs/dungeons/schematics/desertcrypts.json
     description: "TODO: Describe what changes in desertcrypts.json"
     changes:
