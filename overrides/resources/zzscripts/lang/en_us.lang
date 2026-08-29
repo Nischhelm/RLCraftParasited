@@ -50,7 +50,7 @@ tooltip.simpledifficulty:ice_boots=§3+2 Cooling
 tooltip.scripts.weapon.steelbonus=§6+2 damage against Nether mobs and Fire elementals
 tooltip.sereneseasons:greenhouse_glass=§aAllows crops up to 7 blocks directly beneath to grow in any season
 
-tooltip.srparasites:evolutionlure=§7A 7x7 cross using 5 same Lures creates a Carcass!
+tooltip.srparasites:evolutionlure=§7A 7x7 cross using 5 same Lures creates a Carcass! This can revert Evolution.
 tooltip.srparasites:evolutionlure.1=§eUsable from Phase 1 onwards
 tooltip.srparasites:evolutionlure.2=§eUsable from Phase 2 onwards
 tooltip.srparasites:evolutionlure.3=§eUsable from Phase 3 onwards
