@@ -5,9 +5,6 @@ ignore:
   - projectID: 348025
     reason: "SRParasites - not gonna update to 1.10.x anytime soon"
 
-  - projectID: 74246
-    reason: "DLDungeons got an update that makes it easier i guess? Dont need it"
-
   - projectID: 238891
     reason: "Idk why shiv doesnt update DynSurround but he prob got a reason"
 
