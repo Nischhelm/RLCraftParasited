@@ -338,6 +338,7 @@ furnace.addRecipe(<minecraft:gold_ingot> * 1, <qualitytools:emerald_ring>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <potionfingers:ring>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <charm:nether_gold_deposit>, 1);
 furnace.addRecipe(<minecraft:iron_ingot> * 1, <baubles:ring>, 0.7);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <minecraft:bucket>, 0.7);
 
 furnace.addRecipe(<minecraft:diamond> * 7, <iceandfire:diamond_hippogryph_armor:*>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 7, <iceandfire:gold_hippogryph_armor:*>, 1);
