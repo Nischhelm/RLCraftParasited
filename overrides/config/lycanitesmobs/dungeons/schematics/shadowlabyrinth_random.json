@@ -120,7 +120,7 @@
       "mobNameTag": "Precious",
       "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 4,
+      "mobLevel": 1,
       "spawnAsBoss": true,
       "dungeonLevelMin": "0",
       "dungeonLevelMax": 2,
@@ -137,32 +137,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
-    },
-    {
-      "mobId": "lycanitesmobs:shade",
-      "weight": 1,
-      "variant": 1,
-      "mobNameTag": "Chaos Serpent",
-      "mobSizeScale": 2,
-      "naturalDespawn": "false",
-      "mobLevel": 8,
-      "spawnAsBoss": true,
-      "dungeonLevelMin": 3,
-      "dungeonLevelMax": 4,
-      "dungeonBoss": true,
-      "mobDrops": [
-        {
-          "item": "minecraft:diamond",
-          "minAmount": 10,
-          "amountMultiplier": false
-        },
-        {
-          "item": "lycanitesmobs:soulstone_aberration",
-          "amountMultiplier": false,
-          "bonusAmount": false
-        }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
       "mobId": "lycanitesmobs:grue",
@@ -171,9 +147,10 @@
       "mobSizeScale": 1.5,
       "mobNameTag": "Night Shade",
       "naturalDespawn": "false",
-      "mobLevel": 10,
+      "mobLevel": 4,
       "spawnAsBoss": true,
-      "dungeonLevelMin": 5,
+      "dungeonLevelMin": 3,
+      "dungeonLevelMax": 4,
       "dungeonBoss": true,
       "mobDrops": [
         {
@@ -182,20 +159,36 @@
         },
         {
           "item": "minecraft:diamond",
+          "minAmount": 10,
+          "amountMultiplier": false
+        }
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
+    },
+    {
+      "mobId": "lycanitesmobs:shade",
+      "weight": 1,
+      "variant": 1,
+      "mobNameTag": "Chaos Serpent",
+      "mobSizeScale": 2,
+      "naturalDespawn": "false",
+      "mobLevel": 9,
+      "spawnAsBoss": true,
+      "dungeonLevelMin": 5,
+      "dungeonBoss": true,
+      "mobDrops": [
+        {
+          "item": "minecraft:diamond",
           "minAmount": 50,
           "amountMultiplier": false
         },
         {
-          "item": "lycanitesmobs:soulstone_undead",
-          "amountMultiplier": false,
-          "bonusAmount": false
-        },
-        {
-          "item": "lycanitesmobs:soulstone_arthropod",
+          "item": "lycanitesmobs:soulstone_aberration",
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.25d}}"
     }
   ]
 }

@@ -133,7 +133,7 @@
       "mobNameTag": "Pong Kong",
       "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 4,
+      "mobLevel": 1,
       "spawnAsBoss": true,
       "dungeonLevelMin": "0",
       "dungeonLevelMax": 2,
@@ -144,7 +144,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
       "mobId": "lycanitesmobs:jabberwock",
@@ -153,7 +154,7 @@
       "mobNameTag": "Princess",
       "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 8,
+      "mobLevel": 4,
       "spawnAsBoss": true,
       "dungeonLevelMin": 3,
       "dungeonLevelMax": 4,
@@ -169,7 +170,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
       "mobId": "lycanitesmobs:beholder",
@@ -178,7 +180,7 @@
       "mobSizeScale": 1.25,
       "mobNameTag": "Malevolent Observer",
       "naturalDespawn": "false",
-      "mobLevel": 10,
+      "mobLevel": 9,
       "spawnAsBoss": true,
       "dungeonLevelMin": 5,
       "dungeonBoss": true,
@@ -193,7 +195,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     }
   ]
 }
