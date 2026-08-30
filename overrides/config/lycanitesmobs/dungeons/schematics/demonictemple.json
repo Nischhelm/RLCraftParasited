@@ -100,13 +100,13 @@
       "dungeonLevelMin": 3
     },
     {
-      "mobId": "lycanitesmobs:behemoth",
+      "mobId": "lycanitesmobs:pinky",
       "weight": 1,
-      "variant": 0,
-      "mobNameTag": "Baron of Hell",
+      "variant": 2,
+      "mobNameTag": "Gluttony",
       "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 4,
+      "mobLevel": 1,
       "spawnAsBoss": true,
       "dungeonLevelMin": "0",
       "dungeonLevelMax": 2,
@@ -117,16 +117,17 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
-      "mobId": "lycanitesmobs:pinky",
+      "mobId": "lycanitesmobs:archvile",
       "weight": 1,
-      "variant": 2,
-      "mobNameTag": "Gluttony",
-      "mobSizeScale": 2,
+      "variant": 3,
+      "mobSizeScale": 1.25,
+      "mobNameTag": "Azazel",
       "naturalDespawn": "false",
-      "mobLevel": 8,
+      "mobLevel": 4,
       "spawnAsBoss": true,
       "dungeonLevelMin": 3,
       "dungeonLevelMax": 4,
@@ -136,13 +137,9 @@
           "item": "minecraft:diamond",
           "minAmount": 10,
           "amountMultiplier": false
-        },
-        {
-          "item": "lycanitesmobs:soulstone_demon",
-          "amountMultiplier": false,
-          "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
       "mobId": "lycanitesmobs:cacodemon",
@@ -151,7 +148,7 @@
       "mobSizeScale": 1.25,
       "mobNameTag": "Pain Elemental",
       "naturalDespawn": "false",
-      "mobLevel": 10,
+      "mobLevel": 9,
       "spawnAsBoss": true,
       "dungeonLevelMin": 5,
       "dungeonBoss": true,
@@ -160,22 +157,18 @@
           "item": "minecraft:diamond",
           "minAmount": 50,
           "amountMultiplier": false
-        },
-        {
-          "item": "lycanitesmobs:soulstone_demon",
-          "amountMultiplier": false,
-          "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
-      "mobId": "lycanitesmobs:archvile",
+      "mobId": "lycanitesmobs:behemoth",
       "weight": 1,
-      "variant": 3,
-      "mobSizeScale": 1.25,
-      "mobNameTag": "Azazel",
+      "variant": 0,
+      "mobNameTag": "Baron of Hell",
+      "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 10,
+      "mobLevel": 9,
       "spawnAsBoss": true,
       "dungeonLevelMin": 5,
       "dungeonBoss": true,
@@ -190,7 +183,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.25d}}"
     }
   ]
 }

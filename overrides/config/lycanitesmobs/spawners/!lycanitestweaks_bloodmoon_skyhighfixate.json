@@ -2,7 +2,7 @@
   "name": "bloodmoon_skyhighfixate",
   "type": "spawner",
   "enabled": true,
-  "loadDefault": false,
+  "loadDefault": true,
   "triggersRequired": 3,
   "multipleLocations": "combine",
   "mobCountMin": 1,
@@ -35,6 +35,8 @@
           "type": "lycanitestweaks:player",
           "blockLightLevelMax": 0,
           "surface": true,
+          "underground": false,
+          "yMin": 64,
           "creatureTypeToCheck": "MONSTER",
           "creatureTypeMobCap": 5,
           "creatureTypeCheckRange": 48

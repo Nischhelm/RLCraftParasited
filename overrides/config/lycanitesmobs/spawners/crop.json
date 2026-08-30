@@ -14,7 +14,16 @@
   "triggers": [
     {
       "type": "crop",
-      "chance": 0.001
+      "chance": 0.001,
+      "blocks": [
+        "srparasites:infestremain",
+        "srparasites:infestedbush",
+        "srparasites:parasitebush",
+        "srparasites:parasitetendril",
+        "srparasites:gore"
+      ],
+      "blocksListType": "blacklist",
+      "blockMaterialsListType": "blacklist"
     }
   ],
   "locations": [

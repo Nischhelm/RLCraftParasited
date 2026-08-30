@@ -145,7 +145,7 @@
       "mobNameTag": "Experiment 69R",
       "mobSizeScale": 6,
       "naturalDespawn": "false",
-      "mobLevel": 4,
+      "mobLevel": 1,
       "spawnAsBoss": true,
       "dungeonLevelMin": "0",
       "dungeonLevelMax": 2,
@@ -161,7 +161,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:1.0d}}"
     },
     {
       "mobId": "lycanitesmobs:astaroth",
@@ -169,7 +170,7 @@
       "mobNameTag": "Arachnotron",
       "mobSizeScale": 1.8,
       "naturalDespawn": "false",
-      "mobLevel": 6,
+      "mobLevel": 4,
       "spawnAsBoss": true,
       "dungeonLevelMin": 3,
       "dungeonLevelMax": 3,
@@ -189,7 +190,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
       "mobId": "lycanitesmobs:chupacabra",
@@ -198,33 +200,29 @@
       "mobNameTag": "Anarchical Hound",
       "mobSizeScale": 2,
       "naturalDespawn": "false",
-      "mobLevel": 8,
+      "mobLevel": 4,
       "spawnAsBoss": true,
       "dungeonLevelMin": 4,
       "dungeonLevelMax": 4,
       "dungeonBoss": true,
       "mobDrops": [
         {
-          "item": "lycanitesmobs:soulstone_beast",
-          "amountMultiplier": false,
-          "bonusAmount": false
-        },
-        {
           "item": "lycanitesmobs:chaosorbcharge",
           "amountMultiplier": false,
           "minAmount": 10,
           "maxAmount": 20
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
       "mobId": "lycanitesmobs:astaroth",
       "weight": 1,
       "subspecies": 1,
       "mobNameTag": "Asakku",
-      "mobSizeScale": 2.5,
+      "mobSizeScale": 2.4,
       "naturalDespawn": "false",
-      "mobLevel": 10,
+      "mobLevel": 9,
       "spawnAsBoss": true,
       "dungeonLevelMin": 5,
       "dungeonBoss": true,
@@ -243,7 +241,8 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     }
   ]
 }
