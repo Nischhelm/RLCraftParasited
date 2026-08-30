@@ -19,9 +19,3 @@ Necessary modifications on the **_Server_** :
 
     - Remove Optifine from /mods 
     if you downloaded it already
-    
-    - Remove Controllable from /mods 
-    (otherwise crash saying ClassNotFound IToast)
-    
-    - In /config/voicechat/voicechat-server.properties 
-    set "port" to -1 and "bind_address" to *
