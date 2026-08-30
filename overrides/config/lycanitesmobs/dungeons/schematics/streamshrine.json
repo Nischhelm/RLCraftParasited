@@ -131,7 +131,7 @@
       "mobNameTag": "Bruce",
       "mobSizeScale": 4,
       "naturalDespawn": "false",
-      "mobLevel": 4,
+      "mobLevel": 1,
       "spawnAsBoss": true,
       "dungeonLevelMin": "0",
       "dungeonLevelMax": 2,
@@ -142,16 +142,17 @@
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
     },
     {
-      "mobId": "lycanitesmobs:thresher",
+      "mobId": "lycanitesmobs:ioray",
       "weight": 1,
-      "variant": 1,
-      "mobNameTag": "The Loch Ness",
-      "mobSizeScale": 1,
+      "variant": 2,
+      "mobSizeScale": 5,
+      "mobNameTag": "Man Ray",
       "naturalDespawn": "false",
-      "mobLevel": 8,
+      "mobLevel": 4,
       "spawnAsBoss": true,
       "dungeonLevelMin": 3,
       "dungeonLevelMax": 4,
@@ -163,20 +164,21 @@
           "amountMultiplier": false
         },
         {
-          "item": "lycanitesmobs:soulstone_reptile",
+          "item": "lycanitesmobs:soulstone_aquatic",
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5}}"
     },
     {
-      "mobId": "lycanitesmobs:ioray",
+      "mobId": "lycanitesmobs:thresher",
       "weight": 1,
-      "variant": 2,
-      "mobSizeScale": 5,
-      "mobNameTag": "Man Ray",
+      "variant": 1,
+      "mobNameTag": "The Loch Ness",
+      "mobSizeScale": 1,
       "naturalDespawn": "false",
-      "mobLevel": 10,
+      "mobLevel": 9,
       "spawnAsBoss": true,
       "dungeonLevelMin": 5,
       "dungeonBoss": true,
@@ -187,11 +189,12 @@
           "amountMultiplier": false
         },
         {
-          "item": "lycanitesmobs:soulstone_aquatic",
+          "item": "lycanitesmobs:soulstone_reptile",
           "amountMultiplier": false,
           "bonusAmount": false
         }
-      ]
+      ],
+      "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.25d}}"
     }
   ]
 }
