@@ -170,11 +170,6 @@
           "item": "minecraft:diamond",
           "minAmount": 10,
           "amountMultiplier": false
-        },
-        {
-          "item": "lycanitesmobs:soulstone_undead",
-          "amountMultiplier": false,
-          "bonusAmount": false
         }
       ],
       "lycanitestweaks:setNBT": "{ExtraBehaviour:{MultiplierHealth:0.5d}}"
