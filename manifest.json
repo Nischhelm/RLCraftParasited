@@ -212,6 +212,7 @@
     {"projectID": 821595, "fileID": 8685591, "required": true, "fileName": "EagleMixins-1.3.0"},
     {"projectID": 830652, "fileID": 4409243, "required": true, "fileName": "JAPPA_RLCraftAdd-on_Nether"},
     {"projectID": 840576, "fileID": 7009970, "required": true, "fileName": "OceanicExpanse-1.2.2"},
+    {"projectID": 869891, "fileID": 4609368, "required": true, "fileName": "RL Dark Mode V0.6"},
     {"projectID": 879970, "fileID": 4609749, "required": true, "fileName": "RL SRP Better Visuals V0.1"},
     {"projectID": 898104, "fileID": 8411664, "required": true, "fileName": "CarbonConfig-1.12.2-2.0.2.1"},
     {"projectID": 900927, "fileID": 6751437, "required": true, "fileName": "spark-unforged-1.11.140-forge"},
