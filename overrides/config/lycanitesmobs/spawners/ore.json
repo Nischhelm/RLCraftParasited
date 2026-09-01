@@ -18,7 +18,16 @@
       "onHarvest": false,
       "ores": true,
       "gems": false,
-      "chance": 0.01
+      "chance": 0.01,
+      "blocks": [
+        "srparasites:infestremain",
+        "srparasites:infestedbush",
+        "srparasites:parasitebush",
+        "srparasites:parasitetendril",
+        "srparasites:gore"
+      ],
+      "blocksListType": "blacklist",
+      "blockMaterialsListType": "blacklist"
     }
   ],
   "locations": [
