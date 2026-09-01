@@ -11,7 +11,7 @@ import native.net.minecraftforge.event.AnvilUpdateEvent;
 zenClass ItemXPTomeMixin {
     static zenutils_GREATER_MAX_STORAGE as int = 47520; // 120 levels
 
-    static zenutils_isGreater = false;
+    static zenutils_constrId = 0;
 
     // Helper method: Check if this is the greater tome
     function zenutils_isGreaterTome() as bool {
@@ -30,10 +30,10 @@ zenClass ItemXPTomeMixin {
     #   at: {value: "TAIL"}
     #}
     function zenutils_onInit(ci as mixin.CallbackInfo) as void {
-        if(!ItemXPTomeMixin.zenutils_isGreater) {
+        if(ItemXPTomeMixin.zenutils_constrId == 1) {
             this0.func_77656_e(zenutils_GREATER_MAX_STORAGE); // setMaxDamage
-            ItemXPTomeMixin.zenutils_isGreater = true;
         }
+        ItemXPTomeMixin.zenutils_constrId = ItemXPTomeMixin.zenutils_constrId + 1;
     }
 
     #mixin ModifyConstant
