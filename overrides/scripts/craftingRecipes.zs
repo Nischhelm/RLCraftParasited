@@ -2090,8 +2090,8 @@ recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
     [<iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>]
 ]);
 
-recipes.addShaped(<xpbook:greater_xp_book>, [
+recipes.addShaped(<xpbook:greater_xp_book>.withDamage(Parasited.greaterXpTomeSize), [
     [null,<charm:ender_pearl_block> ,null],
-    [<charm:ender_pearl_block>, <xpbook:xp_book>, <charm:ender_pearl_block>],
+    [<charm:ender_pearl_block>, <xpbook:xp_book>.withDamage(1395), <charm:ender_pearl_block>],
     [null,<charm:ender_pearl_block> ,null]
 ]);
