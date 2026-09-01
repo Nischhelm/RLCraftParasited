@@ -41,7 +41,8 @@ ConfigUtils.named("parasited")
 .rangedInteger("netherBiomeSize", 1, 0, 10).sliding().displayName("Nether Biome Size").comment("Integer multiplier for biome patch size in the Nether. Default 3 = big biomes").add()
 .rangedInteger("musketLoadingTicks", 20, 0, 100).sliding().displayName("Musket Loading Ticks").comment("How long it takes to load the VC Musket. Default 60t = 3s.").add()
 .rangedInteger("maxPixieHeight", 110, 0, 256).sliding().displayName("Pixie Max Spawn Height").comment("Familiar Fauna Pixies wont spawn higher than this y value. Default 90").add()
-.stringValues("spellBlockBlacklist", 
+.lowerRangedInteger("greaterXpTomeSize", 47520, 0).displayName("Greater XP Tome Size").comment("How much XP the Greater XP Tome should hold. Default 47520 = 120 lvls.").add()
+.stringValues("spellBlockBlacklist",
         "minecraft:mob_spawner",
         "minecraft:chest"
 ).displayName("Spell Block Blacklist").comment("The EBWizardry spells Mine, Black Hole and Phase Step can't affect these blocks.").add()

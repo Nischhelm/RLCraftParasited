@@ -2089,3 +2089,9 @@ recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
     [<contenttweaker:sentient_core>, <iceandfire:dragonsteel_lightning_ingot>, <contenttweaker:sentient_core>],
     [<iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>]
 ]);
+
+recipes.addShaped(<xpbook:greater_xp_book>, [
+    [null,<charm:ender_pearl_block> ,null],
+    [<charm:ender_pearl_block>, <xpbook:xp_book>, <charm:ender_pearl_block>],
+    [null,<charm:ender_pearl_block> ,null]
+]);
