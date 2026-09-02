@@ -4,6 +4,7 @@ import native.net.minecraft.entity.player.EntityPlayer;
 import native.net.minecraft.entity.EntityLivingBase;
 import native.net.minecraft.init.PotionTypes;
 import native.net.minecraft.world.World;
+import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.item.Item;
 import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.block.BlockCrops;
@@ -337,7 +338,7 @@ zenClass BlockUtilsMixin {
     #   method: "isBlockUnbreakable",
     #   at: {value: "RETURN"}
     #}
-    function zenutils_addUnbreakableBlockList(original as bool, world as World, pos as native.net.minecraft.util.math.BlockPos) as bool {
+    function zenutils_addUnbreakableBlockList(original as bool, world as World, pos as BlockPos) as bool {
         if(original) return true;
         val blockLoc = world.func_180495_p(pos).func_177230_c().getRegistryName(); //getBlockState(pos).getBlock().getRegistryName()
         if(isNull(blockLoc)) return false;
