@@ -47,17 +47,6 @@ events.onPlayerRightClickBlock(function(event as crafttweaker.event.PlayerIntera
     }
 });
 
-events.onPlayerInteract(function(event as crafttweaker.event.PlayerInteractEvent){
-    val player = event.player;
-    if(isNull(player)) return;
-    if(isNull(event.item)) return;
-    if(isNull(event.item.definition)) return;
-    if(isNull(event.item.definition.id)) return;
-    if(event.item.definition.id != "grapplemod:launcheritem") return;
-    player.setCooldown(event.item, 60);
-    event.damageItem(1);
-});
-
 events.onEntityLivingAttacked(function(event as crafttweaker.event.EntityLivingAttackedEvent){
     if(isNull(event.damageSource)) return;
     if(event.damageSource.isDamageUnblockable()) return;
