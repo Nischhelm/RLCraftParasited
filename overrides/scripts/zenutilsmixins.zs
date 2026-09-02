@@ -494,3 +494,17 @@ zenClass WolfArmorLootHandlerMixin {
         return 0.0 as float; //replace 1-1 bonus rolls with 0-0 bonus rolls
     }
 }
+
+#mixin {targets: "com.yyon.grapplinghook.items.launcherItem"}
+zenClass LauncherItemMixin {
+    #mixin Inject
+    #{
+    #   method: "dorightclick",
+    #   at: {value: "HEAD"},
+    #   cancellable: true
+    #}
+    function zenutils_addCooldown(stack as ItemStack, world as World, player as EntityPlayer, ci as mixin.CallbackInfo) as void {
+        if (world.isRemote)
+            player.getCooldownTracker().setCooldown(this0, native.com.yyon.grapplinghook.GrappleConfig.getconf().ender_staff_recharge);
+    }
+}
