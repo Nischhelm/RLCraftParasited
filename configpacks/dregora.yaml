@@ -289,7 +289,7 @@ patches:
     file: options.txt
     description: "TODO: Describe what changes in options.txt"
     changes:
-      resourcePacks: "[\"RLHats.zip\",\"LycanitesMobs32X.zip\",\"Lum.1.12.2.zip\",\"AnimEmis_defiledlands.zip\",\"AnimEmis_srparasites.zip\",\"Emis_Rlcraft.zip\",\"RL SRP Better Visuals V0.1.zip\",\"TotallyNormalVindicators.zip\",\"boom.mp3.zip\",\"AnimEmis_ForgottenItems.zip\",\"DLD_Textures.zip\",\"FMB_Textures.zip\",\"IceAndFire_SoundFixes.zip\",\"RLD_Textures.zip\",\"§lRL_§lAnimated §8[§fv15§8].zip\",\"jappabp-1.2-mc1.12.zip\",\"JAPPA_RLCraftAdd-on_Nether.zip\",\"TotallyNormalVindicators.zip\",\"Anthrax101\u0027s Remastered Bedrock.zip\",\"RLDTooltips.zip\",\"Lycanites Redux 1.12.2-v8.2.1.zip\",\"AnimEmis_InF_SW_Blue_9.zip\",\"RLEnchantedBooks.zip\",\"§l3D_§lRLMushroomsV4.zip\",\"RLC_Nuclear.v1.0.1.zip\",\"§lBetter_§lRocksV3.zip\"]"
+      resourcePacks: "[\"RLHats.zip\",\"LycanitesMobs32X.zip\",\"Lum.1.12.2.zip\",\"AnimEmis_defiledlands.zip\",\"AnimEmis_srparasites.zip\",\"Emis_Rlcraft.zip\",\"RL SRP Better Visuals V0.1.zip\",\"TotallyNormalVindicators.zip\",\"boom.mp3.zip\",\"AnimEmis_ForgottenItems.zip\",\"DLD_Textures.zip\",\"FMB_Textures.zip\",\"IceAndFire_SoundFixes.zip\",\"RLD_Textures.zip\",\"§lRL_§lAnimated.zip\",\"jappabp-1.2-mc1.12.zip\",\"JAPPA_RLCraftAdd-on_Nether.zip\",\"TotallyNormalVindicators.zip\",\"Anthrax101\u0027s Remastered Bedrock.zip\",\"RLDTooltips.zip\",\"Lycanites Redux 1.12.2-v8.2.1.zip\",\"AnimEmis_InF_SW_Blue_9.zip\",\"RLEnchantedBooks.zip\",\"§l3D_§lRLMushrooms.zip\",\"RLC_Nuclear.v1.0.1.zip\",\"§lBetter_§lRocksV3.zip\"]"
       add:
         key_key.mod_lavacow.special: "34"
         key_key.otghud.desc: "0"
