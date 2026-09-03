@@ -1,3 +1,55 @@
+--- XXX XX 2026 ---
+
+Mod changes
+    Added Salutation (+library Carbon Config) for command autocompletion
+    Updated SME, fixes smelter not working with sand
+    Updated DLDungeons (no relevant change)
+    Updated Trinkets&Baubles (server side crash fix)
+    Removed controllable (no one uses it, shiv wont use it in 2.10, its annoying for server setup)
+    Readded betterconfig
+    Updated LycaTweaks, thanks cd!
+        changed dungeon boss order/balance
+        fixed crop+ore spawner working on srp blocks that arent crops/ores
+    Updated EnchantmentControl
+        fixes a small thing for loottables in dregora
+    Updated FermiumMixins
+        fixes (remote/integrated) server crash when respawning without a bed
+        fixes netherapi changing how respawning works when in other dimensions
+    Updated RLTweaker
+        adds a memory leak fix and might fix investigative AI to work better
+
+Config
+    fixed temperature in MP dimension (thanks crafty!)
+    fixed wrath pendant sometimes dropping twice from amal (thanks cd!)
+    hid lvl 7-10 lure blocks from jei
+    hid socketing tool from jei
+    no more banshees in magical biomes (parity with dregora, idk if we even have magical biomes)
+
+Scripts
+    Fixed CT complaint (mod_lavacow:holy_grenade) at world load in non-dregora
+    Added hoppergobrrew.zs, an adaptation of my second oldest mod that never got released
+        brewing barrels now have directional hopper support
+            up: new juice
+            side: old wine
+            back/front: glass bottles to catch freshly made new wine
+            down: all 3 output slots
+    smelt empty buckets to 1 iron ingot
+    added greater xp tome, holds 120 lvls
+    fixed ender staff cooldown handling
+
+Resourcepacks
+    added grippis RLDarkMode, default not enabled
+
+Localization + Tooltips
+    Added Localization to BetterQuesting quests - thanks to KameiB!
+    Made carcass tooltip slightly clearer
+
+Dregora-specifics
+    Made ravine around teleporter render as lava
+    No skyhighPara spawns in abyssal rift --> too annoying
+    Fixed brutal coin drops from lyca bosses being looting dependent (thanks cd!)
+    Reduced loot table radiation (bunkers) to eagle values
+
 --- Aug 21 2026 ---
 
 Mod changes
