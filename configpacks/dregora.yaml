@@ -4948,6 +4948,7 @@ patches:
           item: variedcommodities:ancient_coin
           maxAmount: 2
           minAmount: 2
+          bonusAmount: false
 
   - type: json_patch
     file: config/lycanitesmobs/creatures/asmodeus.json
@@ -4960,6 +4961,7 @@ patches:
           item: variedcommodities:ancient_coin
           maxAmount: 2
           minAmount: 2
+          bonusAmount: false
 
   - type: json_patch
     file: config/lycanitesmobs/creatures/amalgalich.json
@@ -4979,6 +4981,7 @@ patches:
         item: variedcommodities:ancient_coin
         maxAmount: 2
         minAmount: 2
+        bonusAmount: false
 
   - type: json_patch
     file: config/lycanitesmobs/creatures/treant.json
