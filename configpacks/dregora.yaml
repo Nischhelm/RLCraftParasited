@@ -3168,12 +3168,12 @@ patches:
             - variedcommodities:wooden_dagger
             - variedcommodities:wooden_dagger_reversed
 
-  - type: cfg_patch
-    file: config/mindpalaces.cfg
-    description: "Switch MP walls to barrier block"
-    changes:
-      general:
-        S:"Wall Block": minecraft:barrier
+#  - type: cfg_patch
+#    file: config/mindpalaces.cfg
+#    description: "Switch MP walls to barrier block"
+#    changes:
+#      general:
+#        S:"Wall Block": minecraft:barrier
 
   - type: cfg_patch
     file: config/enchantmentcontrol.cfg
