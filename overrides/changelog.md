@@ -1,3 +1,9 @@
+--- Sept 4 2026 #3 ---
+
+Hotfix again?!
+
+Reverted RLTweaker back to March version, was removing all mobs you hit from softcrash
+
 --- Sept 4 2026 #2 ---
 
 Hotfix
