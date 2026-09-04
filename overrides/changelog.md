@@ -17,6 +17,11 @@ Mod changes
         fixes netherapi changing how respawning works when in other dimensions
     Updated RLTweaker
         adds a memory leak fix and might fix investigative AI to work better
+    Updated Mind Palaces, no more mining the walls
+    Updated json paintings, prob irrelevant for us
+    Updated rlsocketed 
+        now sockets on bs weapons, spartan crossbows, defiled ranged weaps and tridents
+        i fixed this in april, i just failed to fix it correctly...
 
 Config
     fixed temperature in MP dimension (thanks crafty!)
@@ -36,9 +41,11 @@ Scripts
     smelt empty buckets to 1 iron ingot
     added greater xp tome, holds 120 lvls
     fixed ender staff cooldown handling
+    fixed ebwiz wizards dropping robes/wand with looting
 
 Resourcepacks
     added grippis RLDarkMode, default not enabled
+    updated shionbryans rlanimated and rlmushroom
 
 Localization + Tooltips
     Added Localization to BetterQuesting quests - thanks to KameiB!
