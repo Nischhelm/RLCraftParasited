@@ -509,3 +509,15 @@ zenClass LauncherItemMixin {
             player.getCooldownTracker().setCooldown(this0, native.com.yyon.grapplinghook.GrappleConfig.getconf().ender_staff_recharge);
     }
 }
+
+#mixin {targets: ["electroblob.wizardry.entity.living.EntityEvilWizard", "electroblob.wizardry.entity.living.EntityWizard"]}
+zenClass EntityEvilWizardMixin {
+    #mixin ModifyArg
+    #{
+    #   method: "func_180482_a",
+    #   at: {value: "INVOKE", target: "func_184642_a(Lnet/minecraft/inventory/EntityEquipmentSlot;F)V"}
+    #}
+    function zenutils_noArmorWandDroppies(chance as float) as float {
+        return -10000.0F as float;
+    }
+}
