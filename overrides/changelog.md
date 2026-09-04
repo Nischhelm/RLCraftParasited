@@ -1,4 +1,4 @@
---- XXX XX 2026 ---
+--- Sept 4 2026 ---
 
 Mod changes
     Added Salutation (+library Carbon Config) for command autocompletion
@@ -29,6 +29,7 @@ Config
     hid lvl 7-10 lure blocks from jei
     hid socketing tool from jei
     no more banshees in magical biomes (parity with dregora, idk if we even have magical biomes)
+    disabled tropical slimes entirely, were heavily overspawning in dregora jungles for some reason
 
 Scripts
     Fixed CT complaint (mod_lavacow:holy_grenade) at world load in non-dregora
