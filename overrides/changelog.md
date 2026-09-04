@@ -1,3 +1,11 @@
+--- Sept 4 2026 #2 ---
+
+Hotfix
+
+Updated EnchantmentControl to fix it crashing the game even more than before in dregora
+Temporarily set MP blocks back to bedrock from barrier in dregora
+Fixed Greater XP Tome display name
+
 --- Sept 4 2026 ---
 
 Mod changes
@@ -104,8 +112,6 @@ This is mostly a hotfix update, but theres some nice things in here as well, suc
     Trinkets and Baubles update
     High Lvl Lyca end Bosses drop Socket items (thanks ShyCraft team!)
     Dregora Lyca End Bosses also drop Brutal Coins
-
-### Full changelog:
 
 Mod changes
     Updated Trinkets to release version
