@@ -3,6 +3,7 @@
 
 import native.bl4ckscor3.mod.xptome.XPTome;
 import native.net.minecraft.item.Item;
+import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.util.ResourceLocation;
 import native.net.minecraftforge.client.event.ModelRegistryEvent;
 import native.net.minecraftforge.client.model.ModelLoader;
@@ -66,4 +67,47 @@ zenClass TooltipRendererConcurrencyFixMixin {
   function zenutils_copyBonuses(original as LinkedHashSet) as LinkedHashSet {
       return LinkedHashSet(original);
   }
+}
+
+// Fix race condition in InventoryTweaks autorefill with crates/shulkers in multiplayer
+// When placing (especially unstackable) items rapidly, autorefill executes before server confirms placement
+// This causes inventory desync and item drops
+#mixin {targets: "invtweaks.InvTweaksHandlerAutoRefill$1"}
+zenClass InvTweaksAutoRefillRaceConditionFixMixin {
+    #mixin Shadow
+    var containerMgr as native.invtweaks.container.ContainerSectionManager;
+
+    #mixin Shadow
+    var targetedSlot as int;
+
+    #mixin Shadow
+    var expectedItemId as string;
+
+    #mixin Shadow
+    var refillBeforeBreak as bool;
+
+    #mixin Inject
+    #{
+    #   method: "run",
+    #   at: {value: "INVOKE", target: "Linvtweaks/container/ContainerSectionManager;move(II)Z", ordinal: 0},
+    #   cancellable: true
+    #}
+    function zenutils_preventAutorefillRaceCondition(ci as mixin.CallbackInfo) as void {
+        // Check if target hotbar slot is unexpectedly filled
+        val targetStack as ItemStack = containerMgr.getItemStack(targetedSlot);
+
+        if (!targetStack.isEmpty() && !isNull(expectedItemId)) {
+            val targetItemId as string = targetStack.getItem().getRegistryName().toString();
+
+            // If target slot already has the same item we're trying to refill
+            if (targetItemId == expectedItemId) {
+                // For refillBeforeBreak: check if target is actually below durability threshold
+                if (refillBeforeBreak && targetStack.isItemDamaged())
+                    return; // Legitimate refillBeforeBreak - allow the swap
+
+                // Race condition: server already refilled or hasn't confirmed placement - abort
+                ci.cancel();
+            }
+        }
+    }
 }
