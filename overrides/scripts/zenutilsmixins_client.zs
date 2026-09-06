@@ -7,6 +7,7 @@ import native.net.minecraft.util.ResourceLocation;
 import native.net.minecraftforge.client.event.ModelRegistryEvent;
 import native.net.minecraftforge.client.model.ModelLoader;
 import native.net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import native.java.util.LinkedHashSet;
 
 #mixin {targets: "vazkii.arl.util.DropInHandler"}
 zenClass DropInHandlerMixin { //arl = autoreglib
@@ -43,3 +44,26 @@ zenClass ClientRegMixin {
     }
 }
 
+#mixin {targets: "com.fantasticsource.setbonus.client.TooltipRenderer"}
+zenClass TooltipRendererConcurrencyFixMixin {
+
+  #mixin Static
+  #mixin ModifyExpressionValue
+  #{
+  #   method: "tooltips",
+  #   at: {value: "FIELD", target: "Lcom/fantasticsource/setbonus/SetBonusData;sets:Ljava/util/LinkedHashSet;"}
+  #}
+  function zenutils_copySets(original as LinkedHashSet) as LinkedHashSet {
+      return LinkedHashSet(original);
+  }
+
+  #mixin Static
+  #mixin ModifyExpressionValue
+  #{
+  #   method: "tooltips",
+  #   at: {value: "FIELD", target: "Lcom/fantasticsource/setbonus/SetBonusData;bonuses:Ljava/util/LinkedHashSet;"}
+  #}
+  function zenutils_copyBonuses(original as LinkedHashSet) as LinkedHashSet {
+      return LinkedHashSet(original);
+  }
+}
