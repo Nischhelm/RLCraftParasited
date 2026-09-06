@@ -521,3 +521,15 @@ zenClass EntityEvilWizardMixin {
         return -10000.0F as float;
     }
 }
+
+#mixin {targets: "com.charles445.simpledifficulty.compat.mod.SereneSeasonsModifier"}
+zenClass SereneSeasonsModifierMixin {
+    #mixin WrapOperation
+    #{
+    #   method: "getWorldInfluence",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/world/WorldProvider;func_76569_d()Z"}
+    #}
+    function zenutils_fixMPTemperature(provider as native.net.minecraft.world.WorldProvider, original as mixin.Operation) as bool {
+        return (original.call(provider) as bool) && native.sereneseasons.config.SeasonsConfig.isDimensionWhitelisted(provider.getDimension());
+    }
+}
