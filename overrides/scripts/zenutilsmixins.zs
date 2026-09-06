@@ -533,3 +533,20 @@ zenClass SereneSeasonsModifierMixin {
         return (original.call(provider) as bool) && native.sereneseasons.config.SeasonsConfig.isDimensionWhitelisted(provider.getDimension());
     }
 }
+
+// Fix backpack dye changing modifier
+// Prevent generateModifier from being called if bauble already has a modifier
+#mixin {targets: "cursedflames.bountifulbaubles.baubleeffect.BaubleAttributeModifierHandler"}
+zenClass BaubleAttributeModifierHandlerMixin {
+
+    #mixin Static
+    #mixin WrapWithCondition
+    #{
+    #   method: "onPlayerCraft",
+    #   at: {value: "INVOKE", target: "Lcursedflames/bountifulbaubles/baubleeffect/EnumBaubleModifier;generateModifier(Lnet/minecraft/item/ItemStack;)V"}
+    #}
+    function zenutils_onlyGenerateModifierIfMissing(stack as ItemStack) as bool {
+        // Only generate a modifier if the item doesn't already have one
+        return !(stack.hasTagCompound() && stack.getTagCompound().hasKey("baubleModifier"));
+    }
+}
