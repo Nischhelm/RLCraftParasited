@@ -9,7 +9,7 @@ import native.net.minecraftforge.event.AnvilUpdateEvent;
 
 #mixin {targets: "bl4ckscor3.mod.xptome.ItemXPTome"}
 zenClass ItemXPTomeMixin {
-    static zenutils_GREATER_MAX_STORAGE as int = 47520; // 120 levels
+    static zenutils_GREATER_MAX_STORAGE as int = 30970; // 100 levels
 
     static zenutils_constrId = 0;
 
@@ -31,7 +31,7 @@ zenClass ItemXPTomeMixin {
     #}
     function zenutils_onInit(ci as mixin.CallbackInfo) as void {
         if(ItemXPTomeMixin.zenutils_constrId == 1) {
-            this0.func_77656_e(zenutils_GREATER_MAX_STORAGE); // setMaxDamage
+            this0.setMaxDamage(zenutils_GREATER_MAX_STORAGE);
         }
         ItemXPTomeMixin.zenutils_constrId = ItemXPTomeMixin.zenutils_constrId + 1;
     }
@@ -48,6 +48,16 @@ zenClass ItemXPTomeMixin {
 
 #mixin {targets: "bl4ckscor3.mod.xptome.XPTome"}
 zenClass XPTomeMixin {
+
+    #mixin Unique
+    static greaterTome as ItemXPTome;
+
+    #mixin Unique
+    #mixin Static
+    function zenutils_setMaxStorage(newMax as int) as void {
+        greaterTome.setMaxDamage(newMax);
+    }
+
     #mixin Static
     #mixin Inject
     #{
@@ -55,7 +65,7 @@ zenClass XPTomeMixin {
     #   at: {value: "TAIL"}
     #}
     function zenutils_addGreaterTome(event as RegistryEvent.Register, ci as mixin.CallbackInfo) as void {
-        val greaterTome = ItemXPTome();
+        greaterTome = ItemXPTome();
         greaterTome.setRegistryName(ResourceLocation(XPTome.MODID, "greater_xp_book"));
         greaterTome.setTranslationKey(XPTome.MODID + ":greater_xp_book");
         event.getRegistry().register(greaterTome);

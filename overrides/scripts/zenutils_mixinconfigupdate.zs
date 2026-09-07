@@ -12,6 +12,7 @@ function update() as void {
     native.familiarfauna.entities.EntityPixie.zenutils_cfg_val = Parasited.maxPixieHeight;
     native.electroblob.wizardry.util.BlockUtils.zenutils_block_blacklist = Parasited.spellBlockBlacklist;
     native.bl4ckscor3.mod.xptome.ItemXPTome.zenutils_GREATER_MAX_STORAGE = Parasited.greaterXpTomeSize;
+    native.bl4ckscor3.mod.xptome.XPTome.zenutils_setMaxStorage(Parasited.greaterXpTomeSize);
 }
 
 events.register(function(event as native.net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent) {
