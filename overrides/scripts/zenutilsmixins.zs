@@ -550,3 +550,41 @@ zenClass BaubleAttributeModifierHandlerMixin {
         return !(stack.hasTagCompound() && stack.getTagCompound().hasKey("baubleModifier"));
     }
 }
+
+#mixin {targets: "com.alcatrazescapee.notreepunching.common.items.ItemSaw"}
+zenClass ItemSawMixin {
+    #mixin WrapOperation
+    #{
+    #   method: "<init>",
+    #   at: {value: "INVOKE", target: "Lcom/alcatrazescapee/notreepunching/common/items/ItemSaw;setNoRepair()Lnet/minecraft/item/Item;"}
+    #}
+    function zenutils_makeRepairable(item as native.com.alcatrazescapee.notreepunching.common.items.ItemSaw, original as mixin.Operation) as Item {
+        return this0;
+    }
+}
+
+// Add configurable items to Golden Osmosis trait repairable list
+#mixin {targets: "codersafterdark.reskillable.skill.magic.TraitGoldenOsmosis"}
+zenClass TraitGoldenOsmosisMixin {
+    static zenutils_cfg_osmosisRepairableItems as string[] = [] as string[];
+
+    // Chains with fermiummixins (gold wyrm scales)
+    #mixin WrapOperation
+    #{
+    #   method: "tryRepair",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/item/Item;func_82789_a(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)Z"}
+    #}
+    function zenutils_moreOsmosisItems(item as Item, toRepair as ItemStack, repair as ItemStack, original as mixin.Operation) as bool {
+        val originalResult = original.call(item, toRepair, repair) as bool;
+        if (originalResult) return true;
+
+        if(isNull(item.getRegistryName())) return false;
+        val itemId = item.getRegistryName().toString();
+
+        //if cfg list contains
+        for itemPattern in zenutils_cfg_osmosisRepairableItems
+            if (itemId == itemPattern)
+                return true;
+        return false;
+    }
+}
