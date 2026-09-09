@@ -8,7 +8,6 @@ Mod changes
     Updated Wearable Backpacks, now no more carryon desync
     Updated lycatweaks - hotfix for a memleak and some other small issues
     Updated VCFix - Fixed common dregora worldgen crash "TileWhatever cannot be cast to TileWhateverelse"
-    Updated RLTweaker
     Updated voicechat
 
 Config changes
