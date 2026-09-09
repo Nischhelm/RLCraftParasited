@@ -1,3 +1,36 @@
+--- Sept 9 2026 ---
+
+Fixed Greater XP Tome, all old instances were bugged and now they will be even more bugged
+I suggest to just empty them and throw them away, make new ones.
+Sorry for that.
+
+Mod changes
+    Updated Wearable Backpacks, now no more carryon desync
+    Updated lycatweaks - hotfix for a memleak and some other small issues
+    Updated VCFix - Fixed common dregora worldgen crash "TileWhatever cannot be cast to TileWhateverelse"
+    Updated RLTweaker
+    Updated voicechat
+
+Config changes
+    Enabled thirst saturation meter
+    Fixed rain in the nether and in deserts (breh)
+
+Resourcepacks
+    Updated RL Enchanted Books by kamei & artsy, now includes trampling, sly strike and brute force
+
+Scripts
+    Saws are now repairable, golden saws, hasty pickaxe and obby harvester now get golden osmosis
+    Fixed sometimes throwing out an extra crate when placing+autorefilling them (especially with multiplayer lag)
+    Fixed MP Temperature, this time for real
+    Fixed rare crash in setbonus
+    Disabled Backpack redying changing bauble modifier
+    Fixed greater xp tome by reducing its capacity, was a short overflow (no max dura above 32767 allowed)
+
+Dregora specifics
+    Added UnHideFlags
+    Disabled MobArson fire block spread mechanic
+    Readd Barrier Block as MP wall
+
 --- Sept 4 2026 #3 ---
 
 Hotfix again?!
