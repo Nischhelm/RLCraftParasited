@@ -9,6 +9,7 @@ Mod changes
     Updated lycatweaks - hotfix for a memleak and some other small issues
     Updated VCFix - Fixed common dregora worldgen crash "TileWhatever cannot be cast to TileWhateverelse"
     Updated voicechat
+    Re-removed betterconfig, its crashing on servers, waiting for update soon
 
 Config changes
     Enabled thirst saturation meter
