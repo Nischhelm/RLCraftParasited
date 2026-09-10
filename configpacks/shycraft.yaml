@@ -34,12 +34,6 @@ patches:
       fileName: "Pinata Mobs-1.0.6"
 
 - type: keyvalue_patch
-  file: options.txt
-  description: "change direct connect server to ShyCraft"
-  changes:
-    lastServer: "ShyCraft.mcserver.us"
-
-- type: keyvalue_patch
   file: config/VariedCommodities.cfg
   description: "Increase weapon damage and reduce musket knockback"
   changes:
