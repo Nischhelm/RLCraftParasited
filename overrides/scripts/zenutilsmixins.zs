@@ -141,7 +141,7 @@ zenClass ItemArcaneTomeMixin {
     #   at: {value: "TAIL"}
     #}
     function zenutils_modifyMaxStackSize(ci as mixin.CallbackInfo) as void {
-        this0.func_77625_d(16); //setMaxStackSize 16
+        this0.setMaxStackSize(16);
     }
 }
 
@@ -340,7 +340,7 @@ zenClass BlockUtilsMixin {
     #}
     function zenutils_addUnbreakableBlockList(original as bool, world as World, pos as BlockPos) as bool {
         if(original) return true;
-        val blockLoc = world.func_180495_p(pos).func_177230_c().getRegistryName(); //getBlockState(pos).getBlock().getRegistryName()
+        val blockLoc = world.getBlockState(pos).getBlock().getRegistryName();
         if(isNull(blockLoc)) return false;
         return zenutils_block_blacklist has blockLoc.toString();
     }
@@ -412,7 +412,7 @@ zenClass TileEntityDodMixin { //func_73660_a = update
     #}
     #mixin Local
     function zenutils_addPivotNearby(ci as mixin.CallbackInfo, axisalignedbb as native.net.minecraft.util.math.AxisAlignedBB) as void {
-        for para in this0.field_145850_b.func_72872_a(EntityParasiteBase.class, axisalignedbb) {
+        for para in this0.world.getEntitiesWithinAABB(EntityParasiteBase.class, axisalignedbb) {
             SRPPotions.applyStackPotion(SRPPotions.PIVOT_E, para as EntityLivingBase, 6000, 0);
         }
     }
