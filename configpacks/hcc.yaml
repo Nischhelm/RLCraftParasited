@@ -9,13 +9,6 @@ patches:
     destination: readme.txt
     description: "readme"
 
-  - type: keyvalue_patch
-    file: options.txt
-    description: "hcc darkness and scaling health diff meter keybind N"
-    changes:
-      gamma: -0.25
-      key_key.scalinghealth.show_always: 49
-
   - type: cfg_patch
     file: config/RTG/rtg.cfg
     description: "default worldtype RTG"

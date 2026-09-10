@@ -99,8 +99,8 @@ key_key.pets:0
 key_key.summoning:0
 key_key.minions:0
 key_key.wearablebackpacks.open:48
-key_key.ebwizardry.next_spell:50
-key_key.ebwizardry.previous_spell:49
+key_key.ebwizardry.next_spell:0
+key_key.ebwizardry.previous_spell:0
 key_key.ebwizardry.spell_1:2:ALT
 key_key.ebwizardry.spell_2:3:ALT
 key_key.ebwizardry.spell_3:4:ALT
@@ -125,7 +125,7 @@ key_key.lycanitestweaks.toggleAllBaubles:0
 key_neat.keybind.toggle:0
 key_key.switchhud:0
 key_key.scalinghealth.difficulty_meter:0
-key_key.scalinghealth.show_always:0
+key_key.scalinghealth.show_always:49
 key_key.xat.trinket_gui.desc:0
 key_key.xat.trinket_target.desc:79
 key_key.xat.trinket_toggle_effect.desc:81
