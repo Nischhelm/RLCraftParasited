@@ -1,0 +1,42 @@
+name: "All mobs are blight infernal champions"
+version: "1.0.0"
+description: "What do you think it is"
+
+# Patches to apply
+patches:
+  - type: cfg_patch
+    file: config/scalinghealth/main.cfg
+    description: "Blight"
+    changes:
+      main.mob.blights:
+        B:"All Mobs Are Blights": true
+        B:"Blacklist All Passives": false
+        S:"XP Multiplier": 4
+        B:"Notify Players on Death": false
+
+  - type: cfg_patch
+    file: config/infernalmobs.cfg
+    description: "Infernal"
+    changes:
+      general:
+        I:eliteRarity: 1
+        S:droppedItemIDsElite: iron_shovel,iron_pickaxe,iron_axe,iron_sword,iron_hoe,chainmail_helmet,chainmail_chestplate,chainmail_leggings,chainmail_boots,iron_helmet,iron_chestplate,iron_leggings,iron_boots,cookie-0-6,spartanweaponry:dagger_bronze,spartanweaponry:longsword_bronze,spartanweaponry:katana_bronze,spartanweaponry:saber_bronze,spartanweaponry:rapier_bronze,spartanweaponry:greatsword_bronze,spartanweaponry:hammer_bronze,spartanweaponry:warhammer_bronze,spartanweaponry:spear_bronze,spartanweaponry:halberd_bronze,spartanweaponry:pike_bronze,spartanweaponry:lance_bronze,spartanweaponry:longbow_bronze,spartanweaponry:crossbow_bronze,spartanweaponry:throwing_knife_bronze,spartanweaponry:throwing_axe_bronze,spartanweaponry:javelin_bronze,spartanweaponry:boomerang_bronze,spartanweaponry:battleaxe_bronze,spartanweaponry:mace_bronze,spartanweaponry:scythe_bronze
+        I:ultraRarity: 20
+      permittedentities:
+        B:EntityKol: true
+        B:EntityKrake: true
+        B:EntityLodo: true
+        B:EntityMimic: true
+        B:EntityOroncoTen: true
+
+  - type: json_patch
+    file: config/champions/ranks.json
+    description: "Champion"
+    changes:
+      - op: replace
+        path: /0/chance
+        value: 0.2
+
+# Build configuration
+build:
+  output_name: "All Mobs are Blight Infernal Champions.zip"

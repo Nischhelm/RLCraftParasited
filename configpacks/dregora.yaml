@@ -10,6 +10,7 @@ build:
     - dregora_hcc
     - dregora_omega
     - dregora_unparasited
+    - allblightinfernalchampions
   configpacks_dest: "overrides"
   include:
     - manifest.json

@@ -10,6 +10,7 @@ build:
     - hcc
     - hcc_omega
     - unparasited
+    - allblightinfernalchampions
   configpacks_dest: "overrides"
   include:
     - manifest.json
