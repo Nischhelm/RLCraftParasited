@@ -74,9 +74,10 @@ jobs:
           Import the ZIP of your choice in CurseForge app or similar features in other launchers.
 
           ### Config Packs:
-          RLCraft Parasited and Dregora include three config packs (located in your profile folder). Extract them in place to apply:
+          RLCraft Parasited and Dregora include four config packs (located in your profile folder). Extract them in place to apply:
           - **HCC.zip** - Hardcore Config (if you like pain)
           - **OmegaHCC_Server.zip** - Hardcore Config Omega (lose all progression on death)
+          - **All Mobs are Blight Infernal Champions.zip** - what do you think it is? (incompat with hcc)
           - **Unparasited.zip** - Unparasited (put the parasites where they came from)
           
           EOFBODY
