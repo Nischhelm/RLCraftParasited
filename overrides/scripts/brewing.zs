@@ -95,7 +95,7 @@ addBrewRecipe2("minecraft:thick", <minecraft:skull>,
     "potioncore:archery", "potioncore:strong_archery", "potioncore:long_archery");
 
 addBrewRecipe2("minecraft:mundane", <minecraft:skull>,
-    "potioncore:potioncore:klutz", "potioncore:strong_klutz", "potioncore:long_klutz");
+    "potioncore:klutz", "potioncore:strong_klutz", "potioncore:long_klutz");
 
 addBrewRecipe2("minecraft:thick", <quark:crab_leg>,
     "potioncore:reach", "potioncore:strong_reach", "potioncore:long_reach");
