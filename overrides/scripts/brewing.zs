@@ -38,7 +38,8 @@ removePotion("xat:sparkling", <minecraft:snow>);
 brewing.addBrew(<minecraft:potion>.withTag({"Potion": "minecraft:awkward"}), <waystones:warp_scroll>, <bountifulbaubles:potionrecall>);
 brewing.addBrew(<bountifulbaubles:potionrecall>, <minecraft:ender_eye>, <bountifulbaubles:potionwormhole>);
 
-brewing.addBrew(<minecraft:potion>.withTag({"Potion": "minecraft:water"}), <betternether:bone_mushroom>, <minecraft:potion>.withTag({Potion: "minecraft:thick"}));
+addBrewRecipe2("minecraft:water", <betternether:bone_mushroom>,
+    "minecraft:thick", "potioncore:strong_health_boost", "potioncore:long_health_boost");
 
 addBrewRecipe2("minecraft:thick", <scalinghealth:heartcontainer>,
     "potioncore:health_boost", "potioncore:strong_health_boost", "potioncore:long_health_boost");
