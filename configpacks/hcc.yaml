@@ -68,7 +68,7 @@ patches:
     description: "reduced spawnradius to 1k (2k diameter, vanilla naming is wrong)"
     changes:
       gamerules:
-        S:spawnRadius: 2000.0
+        S:spawnRadius: 2000
 
   - type: cfg_patch
     file: config/tnt_utilities.cfg
