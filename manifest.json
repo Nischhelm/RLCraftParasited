@@ -266,7 +266,8 @@
     {"projectID": 1521061, "fileID": 7962881, "required": true, "fileName": "ReplayMod Lock Fix-1.0.0"},
     {"projectID": 1569549, "fileID": 8251137, "required": true, "fileName": "Save My Ankh Shield-1.0.0.1"},
     {"projectID": 1627433, "fileID": 8902677, "required": true, "fileName": "BetterConfig-1.12.2-1.2.0"},
-    {"projectID": 1642593, "fileID": 8728149, "required": true, "fileName": "§l3D_§lRLMushrooms"}
+    {"projectID": 1642593, "fileID": 8728149, "required": true, "fileName": "§l3D_§lRLMushrooms"},
+    {"projectID": 1696869, "fileID": 8922934, "required": true, "fileName": "Better Snow Villages-1.0.1"}
   ],
   "curr_unused": [
     {"projectID": 267035, "fileID": 7156865, "required": true, "fileName": "SoManyEnchantments-1.0.8-1.12.2"},
