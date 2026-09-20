@@ -588,3 +588,36 @@ zenClass TraitGoldenOsmosisMixin {
         return false;
     }
 }
+
+// If tome is Curse Break, remove all curses from item
+#mixin {targets: "com.charles445.rltweaker.handler.QuarkHandler$QKAncientTomeAnvilUpdate"}
+zenClass QuarkHandlerQKAncientTomeAnvilUpdateMixin {
+    #mixin ModifyVariable
+    #{
+    #   method: "onUseItem",
+    #   at: {value: "LOAD", ordinal: 0},
+    #   name: "matched"
+    #}
+    #mixin Local{parameter: 1, name: "tomeEnchants"}
+    #mixin Local{parameter: 2, name: "itemEnchants"}
+    function zenutils_applyCurseBreak(matched as bool, tomeEnchants as native.java.util.Map, itemEnchants as native.java.util.Map) as bool {
+        if (matched) return true;
+        if (tomeEnchants.size() != 1) return false;
+
+        val onlyEntry = tomeEnchants.entrySet().iterator().next() as native.java.util.Map.Entry;
+        val onlyEnchant = onlyEntry.getKey() as native.net.minecraft.enchantment.Enchantment;
+        if (isNull(onlyEnchant)) return false;
+
+        val loc = onlyEnchant.getRegistryName();
+        if (isNull(loc) || loc.toString() != "charm:curse_break") return false;
+
+        val iterator = itemEnchants.entrySet().iterator();
+        while (iterator.hasNext()) {
+            val entry = iterator.next() as native.java.util.Map.Entry;
+            val enchant = entry.getKey() as native.net.minecraft.enchantment.Enchantment;
+            if (!isNull(enchant) && enchant.isCurse()) iterator.remove();
+        }
+
+        return true;
+    }
+}
