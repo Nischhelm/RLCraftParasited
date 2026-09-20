@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import dynamic.zenutils.config.Parasited;
+import crafttweaker.recipes.ICraftingInfo;
 
 print("Script starting!");
 
@@ -569,7 +570,7 @@ recipes.addHiddenShaped("rec27b",<bountifulbaubles:trinketobsidianskull>,
  [[<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>],
   [(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes1"),<minecraft:skull:0>|<minecraft:skull:1>,(<minecraft:potion>|<minecraft:splash_potion>|<minecraft:lingering_potion>).marked("fireRes2")],
   [<minecraft:obsidian>,<minecraft:blaze_powder>,<minecraft:obsidian>]],
-  function(output as IItemStack, inputs as IItemStack[string], craftingInfo as crafttweaker.recipes.ICraftingInfo) as IItemStack{
+  function(output as IItemStack, inputs as IItemStack[string], craftingInfo as ICraftingInfo) as IItemStack{
     if(isNull(inputs.fireRes1.tag) || isNull(inputs.fireRes2.tag)) return null;
     val pottype1 as string = inputs.fireRes1.tag.memberGet("Potion").asString();
     if(!pottype1.endsWith("fire_resistance")) return null;
@@ -2090,8 +2091,14 @@ recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
     [<iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>]
 ]);
 
-recipes.addShaped(<xpbook:greater_xp_book>.withDamage(Parasited.greaterXpTomeSize), [
-    [null,<charm:ender_pearl_block> ,null],
-    [<charm:ender_pearl_block>, <xpbook:xp_book>.withDamage(1395), <charm:ender_pearl_block>],
-    [null,<charm:ender_pearl_block> ,null]
-]);
+recipes.addShaped(<xpbook:greater_xp_book>, [
+        [null,<charm:ender_pearl_block> ,null],
+        [<charm:ender_pearl_block>, <xpbook:xp_book>.anyDamage().marked("tome"), <charm:ender_pearl_block>],
+        [null,<charm:ender_pearl_block> ,null]
+    ],
+    function(output as IItemStack, inputs as IItemStack[string], craftingInfo as ICraftingInfo) as IItemStack{
+        val stored as int = inputs.tome.maxDamage - inputs.tome.damage;
+        if(stored > Parasited.greaterXpTomeSize) return null;
+        return output.withDamage(Parasited.greaterXpTomeSize - stored);
+    }
+);
