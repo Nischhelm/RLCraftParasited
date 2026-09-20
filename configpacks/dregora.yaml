@@ -3178,14 +3178,28 @@ patches:
 
   - type: cfg_patch
     file: config/enchantmentcontrol.cfg
-    description: "Unregister FUR enchants"
+    description: "Unregister FUR enchants and soft re-allow vitality"
     changes:
-      general.blacklists:
+      general.Blacklists:
         S:"Registered Enchantment Blacklist":
           add:
             - mod_lavacow:corrosive
             - mod_lavacow:lifesteal
             - mod_lavacow:poisonous
+          remove:
+            - mujmajnkraftsbettersurvival:vitality
+        S:"Level Enchantment Blacklist:
+          add:
+            - mujmajnkraftsbettersurvival:vitality
+        S:"Random Enchantment Blacklist:
+          add:
+            - mujmajnkraftsbettersurvival:vitality
+        S:"Enchanting Table Blacklist:
+          add:
+            - mujmajnkraftsbettersurvival:vitality
+        S:"Librarian Enchantment Blacklist:
+          add:
+            - mujmajnkraftsbettersurvival:vitality
 
   - type: cfg_patch
     file: config/potioncontrol.cfg
