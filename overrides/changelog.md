@@ -15,6 +15,7 @@ Mod
     Added Better Snow Villages by cdstk with suggested configs
     Updated Mind Palaces
         stay forever in MP if traveling to Waystone in MP
+        fixes being on fire when getting kicked from MP
     Updated voicechat shrug
     Updated DregoraRL
         various crashfixes and idk man lots of stuff eagle and meldexun did
