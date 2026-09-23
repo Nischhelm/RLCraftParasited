@@ -621,3 +621,27 @@ zenClass QuarkHandlerQKAncientTomeAnvilUpdateMixin {
         return true;
     }
 }
+
+// Let mobs load Spartan crossbows, so skeletons EagleMixins arms with one can fire it
+// Spartan Fire's HEAD inject on onItemUseFinish cancels for every entity, not just players,
+// so EagleMixins' mob loading at TAIL never runs. WrapMethod wraps the whole method, that cancel
+// included, and loads the crossbow afterwards the way EagleMixins would. Does nothing if already loaded.
+#mixin {targets: "com.oblivioussp.spartanweaponry.item.ItemCrossbow"}
+zenClass ItemCrossbowMixin {
+    #mixin WrapMethod
+    #{
+    #   method: "func_77654_b"
+    #}
+    function zenutils_loadCrossbowForMobs(stack as ItemStack, world as World, entity as EntityLivingBase, original as mixin.Operation) as ItemStack {
+        val result = original.call(stack, world, entity) as ItemStack;
+        if(!(entity instanceof native.net.minecraft.entity.EntityLiving) || result.isEmpty()) return result;
+        if(native.com.oblivioussp.spartanweaponry.util.NBTHelper.getBoolean(result, "isLoaded")) return result;
+
+        val spreadshot = native.net.minecraft.enchantment.EnchantmentHelper.getEnchantmentLevel(native.com.oblivioussp.spartanweaponry.init.EnchantmentRegistrySW.CROSSBOW_SPREADSHOT, result) > 0;
+        val ammo = ItemStack(native.com.oblivioussp.spartanweaponry.init.ItemRegistrySW.bolt, spreadshot ? 3 : 1);
+        native.com.oblivioussp.spartanweaponry.util.NBTHelper.setTagCompound(result, "ammoStack", ammo.writeToNBT(native.net.minecraft.nbt.NBTTagCompound()));
+        world.playSound(null, entity.posX, entity.posY, entity.posZ, native.com.oblivioussp.spartanweaponry.init.SoundRegistry.CROSSBOW_LOAD, native.net.minecraft.util.SoundCategory.NEUTRAL, 1.0F as float, (1.0F / (entity.getRNG().nextFloat() * 0.4F + 1.2F) * 0.5F) as float);
+        native.com.oblivioussp.spartanweaponry.util.NBTHelper.setBoolean(result, "isLoaded", true);
+        return result;
+    }
+}
