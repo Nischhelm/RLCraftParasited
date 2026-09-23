@@ -8,9 +8,11 @@ import native.net.minecraftforge.event.RegistryEvent;
 import native.net.minecraftforge.event.AnvilUpdateEvent;
 import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.nbt.NBTTagCompound;
+import native.net.minecraft.util.math.MathHelper;
 
 #mixin {targets: "bl4ckscor3.mod.xptome.ItemXPTome"}
-zenClass ItemXPTomeMixin {
+zenClass ItemXPTomeMixin extends Item {
+    static zenutils_STORED_KEY as string = "StoredXP";
     static zenutils_GREATER_MAX_STORAGE as int = 30970; // 100 levels
 
     static zenutils_constrId = 0;
@@ -38,27 +40,6 @@ zenClass ItemXPTomeMixin {
         ItemXPTomeMixin.zenutils_constrId = ItemXPTomeMixin.zenutils_constrId + 1;
     }
 
-    // ============================================================================================
-    // Experience in NBT rather than in the damage value.
-    //
-    // A damage value is serialised as a SHORT, in NBT and on the wire both, so the Greater Tome
-    // could never hold more than 32767 without wrapping negative. Moving the number into an NBT
-    // int lifts that ceiling and leaves the damage value carrying nothing at all.
-    //
-    // getXPStored and setStoredXP are the only two places in ItemXPTome that touch damage, and
-    // everything else in the class goes through them, so those two calls are the whole item.
-    //
-    // MIGRATION: a Tome that has never been written to has no tag, and its damage still IS its
-    // storage, so the getter leaves the original value alone and it reads as it always did. That
-    // keeps every Tome already in a world working, and keeps a freshly given one reading exactly
-    // as it does today. The first write moves it over for good.
-    //
-    // The plain Tome is untouched. It shares this class, so everything below hands back the
-    // original behaviour unless this is the Greater one.
-    // ============================================================================================
-
-    static zenutils_STORED_KEY as string = "StoredXP";
-
     #mixin ModifyExpressionValue
     #{
     #   method: "getXPStored",
@@ -69,8 +50,7 @@ zenClass ItemXPTomeMixin {
 
         val tag = stack.getTagCompound();
         if(!isNull(tag) && tag.hasKey(ItemXPTomeMixin.zenutils_STORED_KEY)) {
-            // The caller computes MAX_STORAGE minus this, so hand back the damage this many
-            // points WOULD have been.
+            // The caller computes MAX_STORAGE minus this, so we need to account for it
             return zenutils_getMaxStorage() - tag.getInteger(ItemXPTomeMixin.zenutils_STORED_KEY);
         }
         return original;
@@ -88,9 +68,7 @@ zenClass ItemXPTomeMixin {
         }
 
         val max = zenutils_getMaxStorage();
-        var stored = max - damage;
-        if(stored < 0) stored = 0;
-        if(stored > max) stored = max;
+        var stored = MathHelper.clamp(max - damage, 0, max);
 
         var tag = stack.getTagCompound();
         if(isNull(tag)) {
@@ -99,30 +77,8 @@ zenClass ItemXPTomeMixin {
         }
         tag.setInteger(ItemXPTomeMixin.zenutils_STORED_KEY, stored);
 
-        // Zeroed rather than left alone, so a migrated Tome carries no stale number for the
-        // getter's fallback to find if the tag ever went missing.
-        original.call(stack, 0);
-    }
-
-    // Added methods rather than injectors. ItemXPTome inherits both of these from Item and
-    // declares neither, so these become its overrides, and the bar stops being something the
-    // damage value has to be kept in step with.
-    //
-    // Both read through getXPStored, the item's own accessor, which is what makes them correct
-    // for a Tome that has not migrated yet as well as one that has.
-
-    function showDurabilityBar(stack as ItemStack) as bool {
-        if(!zenutils_isGreaterTome()) return stack.isItemDamaged();
-        return this0.getXPStored(stack) < zenutils_getMaxStorage();
-    }
-
-    function getDurabilityForDisplay(stack as ItemStack) as double {
-        if(!zenutils_isGreaterTome()) {
-            return (stack.getItemDamage() as double) / (stack.getMaxDamage() as double);
-        }
-        val max = zenutils_getMaxStorage();
-        if(max <= 0) return 0.0;
-        return 1.0 - ((this0.getXPStored(stack) as double) / (max as double));
+        // Delete old stored val by setting damage to maxdamage = 0 dura left = empty
+        original.call(stack, max);
     }
 
     #mixin ModifyConstant
@@ -132,6 +88,21 @@ zenClass ItemXPTomeMixin {
     #}
     function zenutils_modifyMaxStorage(original as int) as int {
         return zenutils_getMaxStorage();
+    }
+
+    // @Override <- not a good idea in java mixins bc incompatible with other mixins but here its fine cause we are "last"
+    function showDurabilityBar(stack as ItemStack) as bool {
+        if(!zenutils_isGreaterTome()) return super.showDurabilityBar(stack);
+        return this0.getXPStored(stack) < zenutils_getMaxStorage();
+    }
+
+    // @Override
+    function getDurabilityForDisplay(stack as ItemStack) as double {
+        if(!zenutils_isGreaterTome())
+            return super.getDurabilityForDisplay(stack);
+        val max = zenutils_getMaxStorage();
+        if(max <= 0) return 0.0;
+        return 1.0 - ((this0.getXPStored(stack) as double) / (max as double));
     }
 }
 
