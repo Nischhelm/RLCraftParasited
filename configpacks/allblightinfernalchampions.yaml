@@ -10,7 +10,6 @@ patches:
     changes:
       main.mob.blights:
         B:"All Mobs Are Blights": true
-        B:"Blacklist All Passives": false
         S:"XP Multiplier": 4
         B:"Notify Players on Death": false
 
