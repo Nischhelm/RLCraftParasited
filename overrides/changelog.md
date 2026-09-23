@@ -1,3 +1,58 @@
+--- Sept XX 2026 ---
+
+Mod
+    Update SME 
+        fixes CoP x Disarmament deleting items if inventory full
+        fixes Mortalitas making weapon animate weirdly
+    Updated PotionControl
+        now depends on betterconfig and removes more unused potiontypes
+    Updated EnchantmentControl
+        now depends on betterconfig, no game change
+    Updated EagleMixins
+        fixes cure being wineable+kept
+        makes some fog render better idk
+    Re-Re-Added BetterConfig again  
+    Added Better Snow Villages by cdstk with suggested configs
+    Updated Mind Palaces
+        stay forever in MP if traveling to Waystone in MP
+    Updated voicechat shrug
+    Updated DregoraRL
+        various crashfixes and idk man lots of stuff eagle and meldexun did
+    Remove ConfigAnytime clone jar
+    Added NischiTweaker
+        gives Champions a maximum added dmg cap per tier (+50 to +750)
+        replaces ConfigAnytime requirement in ZenUtils and Baubley Elytra with the copy that ZenUtils has internally
+
+Configs
+    Infernalmobs now finally also can drop scythes
+    Re-enabled a performance option in foamfix that having off might have contributed to quite some lag 
+    Removed carbonconfig hotkeys (dependency viewer on numpad 1 and some other)
+
+Scripts
+    Fix me breaking potion recipes in JEI, finally show correctly again
+    Allow to craft Greater XP Tome with any Tome, keeping XP (thanks Fresh-glitch)
+        also added more mixins to allow xp tome to be able to store even more xp if ppl change cfg
+    Made Curse Break ancient tomes actually work with offhand rightclick
+    Allow to smelt shears, iron bars, iron doors and iron trapdoors
+
+Dregora
+    Update UnHideFlags, now showing hidden tooltips in a more immersive way
+    Update EagleMixins, fixes teleporters when entering with teleportsickness (only works for fresh discovered teleporters)
+    Made some boss-like mobs not be able to pinata
+    Nerfed Mob Arson some more
+        no more burnign mob shoots flaming arrow
+        lower chance to ignite on collision with burning mob to 10% (from 30%)
+    Fix OTG OreGen crash
+    Hopefully fix OTG generating broken structures
+    Re-enabled Vitality for those two silly special items
+    Removed parasite phaselock in underneath (so preeminents can spawn)
+    Increased parasite stats to dregora original stats (2x armor, 1.5x hp and dmg) in the para-allowed biomes of default dregora
+
+Configpacks
+    Added "All Mobs are Blight Infernal Champions" pack, cant recommend
+    Fixed normal HCC spawnradius being 0 (thanks Fresh-glitch)
+    Omega will now also reset phase + phaselock on death (thanks Urkelbro!)
+
 --- Sept 9 2026 ---
 
 Fixed Greater XP Tome, all old instances were bugged and now they will be even more bugged
