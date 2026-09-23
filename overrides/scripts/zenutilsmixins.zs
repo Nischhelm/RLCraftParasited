@@ -158,14 +158,13 @@ zenClass ArcaneWorkbenchRecipeCategoryMixin {
     }
 
     #mixin Static
-    #mixin WrapOperation
+    #mixin WrapWithCondition
     #{
     #   method: "generateUpgradeRecipes",
     #   at: {value: "INVOKE", ordinal: 0, target: "Lnet/minecraft/item/Item;func_150895_a(Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/util/NonNullList;)V"}
     #}
-    function zenutils_dontRegisterArmorUpgradeJeiRecipes(item as Item, tab as native.net.minecraft.creativetab.CreativeTabs, items as native.net.minecraft.util.NonNullList, original as mixin.Operation) as void {
-        if(item instanceof native.electroblob.wizardry.item.ItemArmourUpgrade) return;
-        original.call(item, tab, items);
+    function zenutils_dontRegisterArmorUpgradeJeiRecipes(item as Item, tab as native.net.minecraft.creativetab.CreativeTabs, items as native.net.minecraft.util.NonNullList) as bool {
+        return !(item instanceof native.electroblob.wizardry.item.ItemArmourUpgrade);
     }
 }
 
