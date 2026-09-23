@@ -205,6 +205,8 @@ key_key.voice_chat_settings:0
 key_key.voice_chat_group:0
 key_key.voice_chat_toggle_recording:0
 key_key.voice_chat_adjust_volumes:0
+key_key.carbon_config.key:0
+key_key.carbon_config.dep:0
 key_Open Skill GUI:21
 key_key.switchbow.switchup:0
 key_key.switchbow.switchdown:0
