@@ -17,8 +17,6 @@ Mod
         stay forever in MP if traveling to Waystone in MP
         fixes being on fire when getting kicked from MP
     Updated voicechat shrug
-    Updated DregoraRL
-        various crashfixes and idk man lots of stuff eagle and meldexun did
     Remove ConfigAnytime clone jar
     Added NischiTweaker
         gives Champions a maximum added dmg cap per tier (+50 to +750)
@@ -37,6 +35,10 @@ Scripts
     Allow to smelt shears, iron bars, iron doors and iron trapdoors
 
 Dregora
+    Updated DregoraRL
+        fixes various crashy biomes
+        according to eagle this should make it less wasteland-ey
+        various crashfixes and idk man lots of stuff eagle and meldexun did
     Update UnHideFlags, now showing hidden tooltips in a more immersive way
     Update EagleMixins, fixes teleporters when entering with teleportsickness (only works for fresh discovered teleporters)
     Made some boss-like mobs not be able to pinata
@@ -53,6 +55,11 @@ Configpacks
     Added "All Mobs are Blight Infernal Champions" pack, cant recommend
     Fixed normal HCC spawnradius being 0 (thanks Fresh-glitch)
     Omega will now also reset phase + phaselock on death (thanks Urkelbro!)
+
+Servers
+    Added server_install.py and server_start.sh for ppl wanting to set up a server from scratch, 
+    And updated server_readme.md accordingly
+
 
 --- Sept 9 2026 ---
 
