@@ -1,21 +1,14 @@
-How to server pack of **RLCraft Parasited**
+How to install server for **RLCraft Parasited** and its variants
 
 ---
 
-Install client via curseforge app → import → from zip.
-Get a server pack/install of any RLCraft server and remove folders
+1. Install client via curseforge app → import → from zip → all files (or whatever launcher you use). 
+2. Extract-here whatever configpacks you want for your server.
+3. Copy/Move that entire profile folder to where you want your server (find it via rightclick profile → open folder)
+4. Run `install_server.py` using python3 to download and install the forge server from the official website
 
-    /config 
-    /mods 
-    /paintings
-    /scripts 
-    /structures
+Afterward you can run `start_server.sh` whenever you want to start the server.
 
-Replace them with the same folders from your RLCraft Parasited client instance.
+**Note**: Don't just unzip the installer zip, use the files of an installed **_Client_**!
 
-**Note**: Use the files of the installed **_Client_**, don't use the installer zip!
-
-Necessary modifications on the **_Server_** :
-
-    - Remove Optifine from /mods 
-    if you downloaded it already
+Important: Remove Optifine from /mods if you downloaded it already. Servers won't work with OptiFine.
