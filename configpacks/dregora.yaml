@@ -2908,12 +2908,11 @@ patches:
         B:"Zombie Berians (Vanilla)": true
       general.nuclearcraft options:
         D:"Radiation Particle Threshold": 0.001
-        S:RadiationResistanceList:
-          add:
-            - iceandfire:firedragon=1000.0
-            - iceandfire:icedragon=1000.0
-            - iceandfire:lightningdragon=1000.0
         D:"Vertical Radiation Spread Gradient": 0.4
+      general.nuclearcraft options.RadiationResistanceList:
+        D:"iceandfire:firedragon": 1000.0
+        D:"iceandfire:icedragon": 1000.0
+        D:"iceandfire:lightningdragon": 1000.0
       general.teleporter:
         B:"Enable Teleporters": true
         S:"Approximate Teleporter Positions":
