@@ -62,6 +62,10 @@ Configpacks
     Added "All Mobs are Blight Infernal Champions" pack, cant recommend
     Fixed normal HCC spawnradius being 0 (thanks Fresh-glitch)
     Omega will now also reset phase + phaselock on death (thanks Urkelbro!)
+    Fixed Dregora Unparasited parasite spawning conditions (and related configs) to hopefully work just like Dregora
+    Fixed Dregora Doomlike dungeon spawning conditions not being set correctly
+    Fixed Dregora missing parasite block breaking blacklists (dimstack, special concrete etc)
+    Set Dregora parasite mob caps back to 70 + 30 x playercount (iqury had it on 0 + 120 x playercount)
 
 Servers
     Added server_install.py and server_start.sh for ppl wanting to set up a server from scratch, 
