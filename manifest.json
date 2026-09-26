@@ -96,6 +96,7 @@
     {"projectID": 262886, "fileID": 3459390, "required": true, "fileName": "tschipplib-1.12.2-1.1.7"},
     {"projectID": 264756, "fileID": 2732994, "required": true, "fileName": "QualityTools-1.0.7_for_1.12.2"},
     {"projectID": 265642, "fileID": 8320066, "required": true, "fileName": "ElectroblobsWizardry-4.3.19"},
+    {"projectID": 267035, "fileID": 8980799, "required": true, "fileName": "SoManyEnchantments-1.0.9-1.12.2"},
     {"projectID": 267769, "fileID": 2613657, "required": true, "fileName": "Traverse-1.12.2-1.6.0-69"},
     {"projectID": 269024, "fileID": 2861574, "required": true, "fileName": "lostcities-1.12-2.0.22"},
     {"projectID": 271605, "fileID": 3176964, "required": true, "fileName": "corpsecomplex-1.12.2-1.0.12.0"},
@@ -270,7 +271,6 @@
     {"projectID": 1696869, "fileID": 8922934, "required": true, "fileName": "Better Snow Villages-1.0.1"}
   ],
   "curr_unused": [
-    {"projectID": 267035, "fileID": 7156865, "required": true, "fileName": "SoManyEnchantments-1.0.8-1.12.2"},
     {"projectID": 684624, "fileID": 8208155, "required": true, "fileName": "WearableBackpacks-RLCraft-1.12.2-3.2.8"},
     {"projectID": 711730, "fileID": 8151138, "required": true, "fileName": "RLMixins-1.4.7"},
     {"projectID": 734347, "fileID": 6518808, "required": true, "fileName": "RLTweaker-1.12.2-0.7.5"},
