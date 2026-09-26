@@ -385,6 +385,16 @@ patches:
     file: config/srpmixins.cfg
     description: "TODO: Describe what changes in srpmixins.cfg"
     changes:
+      general.various:
+        S:"Block Break Blacklist":
+          add:
+            - contentcreator:concrete_slab_reinforced, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
+            - contentcreator:concrete_stairs_reinforced, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
+            - contenttweaker:biohazard_block, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
+            - contenttweaker:radiation_block, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
+            - contenttweaker:reinforced_concrete, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
+            - contenttweaker:reinforced_concrete_danger, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
+            - contenttweaker:shelter_block, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
       general.dimension multipliers:
         S:"Parasite Armor Multipliers":
           add:
@@ -4171,6 +4181,9 @@ patches:
         S:"Mob Attacking blacklist":
           add:
             - defiledlands:book_wyrm
+        S:"Mobs with Griefing Task Blacklist":
+          add:
+            - dimstack
 
   - type: cfg_patch
     file: config/srparasites/SRParasitesSystems.cfg
