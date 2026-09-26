@@ -341,11 +341,8 @@ class ConfigpackMigrator:
 
                 # List value
                 if in_list:
-                    # Try to parse as int
-                    try:
-                        list_values.append(int(line))
-                    except ValueError:
-                        list_values.append(line)
+                    # Always treat as string to avoid type mixing issues
+                    list_values.append(line)
                     continue
 
                 # Key=value: S:"name with spaces"=value or S:name=value
