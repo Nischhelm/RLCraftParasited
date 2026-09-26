@@ -4177,7 +4177,8 @@ patches:
     description: "increase para mob cap"
     changes:
       parasite_properties:
-        I:"Mob Cap Per Player": 120
+        I:"Mob Cap": 70
+        I:"Mob Cap Per Player": 30
         S:"Mob Attacking blacklist":
           add:
             - defiledlands:book_wyrm
