@@ -1,9 +1,10 @@
---- Sept XX 2026 ---
+--- Sept 27 2026 ---
 
 Mod
-    Update SME 
+    Update SME to release version 1.0.9
         fixes CoP x Disarmament deleting items if inventory full
         fixes Mortalitas making weapon animate weirdly
+        fixes players being deconstructable (old SME didnt have that either)
     Updated PotionControl
         now depends on betterconfig and removes more unused potiontypes
     Updated EnchantmentControl
@@ -16,16 +17,21 @@ Mod
     Updated Mind Palaces
         stay forever in MP if traveling to Waystone in MP
         fixes being on fire when getting kicked from MP
-    Updated voicechat shrug
+    Updated voicechat and jei shrug
     Remove ConfigAnytime clone jar
     Added NischiTweaker
         gives Champions a maximum added dmg cap per tier (+50 to +750)
         replaces ConfigAnytime requirement in ZenUtils and Baubley Elytra with the copy that ZenUtils has internally
+    Updated AAAM
+        now depends on betterconfig, easier use of ingame config
+    Updated FermiumBooter, allows dependent mods to not require a coremod
+    Updated cdstks Better Snow Villages, fixes some generation issues
 
 Configs
     Infernalmobs now finally also can drop scythes
     Re-enabled a performance option in foamfix that having off might have contributed to quite some lag 
     Removed carbonconfig hotkeys (dependency viewer on numpad 1 and some other)
+    Fixed some images not being readable on linux (betterquesting and some antiqueatlas tiles), thanks Fresh-glitch!
 
 Scripts
     Fix me breaking potion recipes in JEI, finally show correctly again
@@ -41,12 +47,13 @@ Dregora
         various crashfixes and idk man lots of stuff eagle and meldexun did
     Update UnHideFlags, now showing hidden tooltips in a more immersive way
     Update EagleMixins, fixes teleporters when entering with teleportsickness (only works for fresh discovered teleporters)
-    Made some boss-like mobs not be able to pinata
     Nerfed Mob Arson some more
-        no more burnign mob shoots flaming arrow
+        no more "burning mob shoots flaming arrow"
         lower chance to ignite on collision with burning mob to 10% (from 30%)
-    Fix OTG OreGen crash
-    Hopefully fix OTG generating broken structures
+    Updated OTG
+        Fix OreGen crash
+        Hopefully fix generating broken structures
+    Made some boss-like mobs not be able to pinata
     Re-enabled Vitality for those two silly special items
     Removed parasite phaselock in underneath (so preeminents can spawn)
     Increased parasite stats to dregora original stats (2x armor, 1.5x hp and dmg) in the para-allowed biomes of default dregora
@@ -59,7 +66,6 @@ Configpacks
 Servers
     Added server_install.py and server_start.sh for ppl wanting to set up a server from scratch, 
     And updated server_readme.md accordingly
-
 
 --- Sept 9 2026 ---
 
