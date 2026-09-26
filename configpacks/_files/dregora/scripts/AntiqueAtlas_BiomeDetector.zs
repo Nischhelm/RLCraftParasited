@@ -4,8 +4,7 @@ import mods.antiqueatlasautomarker.BiomeDetectorEvent;
 events.onBiomeDetector(function(event as BiomeDetectorEvent) {
     if(event.world.dimension != 0) return;
     val biome = event.mainBiome;
-	if(isNull(biome)) return;
-    if(isNull(biome.native.getRegistryName())) return; // biome.id goes right through getRegistryName.toString
+	if(isNull(biome) || !biome.isRegistered()) return;
     val biomeResourceLoc = biome.id;
     val chosenType = event.chosenType;
     if(chosenType == "ravine" && (biomeResourceLoc == "openterraingenerator:overworld_crystal_abyss" || biomeResourceLoc == "openterraingenerator:overworld_abyssal_gate"))
