@@ -1,0 +1,160 @@
+[
+  {
+    "dimension": 3,
+    "minheight": 235,
+    "spawner": false,
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["srparasites:ada_arachnida","srparasites:ada_bolster","srparasites:ada_longarms","srparasites:ada_manducater","srparasites:ada_reeker","srparasites:ada_summoner","srparasites:ada_yelloweye","srparasites:anc_dreadnaut","srparasites:anc_dreadnaut_ten","srparasites:anc_overlord","srparasites:anc_pod","srparasites:ancientball","srparasites:antiinfestedblock","srparasites:architect","srparasites:ballball","srparasites:ballmall","srparasites:balltall","srparasites:beckon_si","srparasites:beckon_sii","srparasites:beckon_siii","srparasites:beckon_siv","srparasites:biomass","srparasites:biomassball","srparasites:bogle","srparasites:bomb","srparasites:bomber_heavy","srparasites:bomber_light","srparasites:buglin","srparasites:carrier_colony","srparasites:carrier_flying","srparasites:carrier_heavy","srparasites:carrier_light","srparasites:cloudtoxic","srparasites:crux","srparasites:dispatcher_si","srparasites:dispatcher_sii","srparasites:dispatcher_siii","srparasites:dispatcher_siv","srparasites:dispatcherten","srparasites:fer_bear","srparasites:fer_cow","srparasites:fer_enderman","srparasites:fer_horse","srparasites:fer_human","srparasites:fer_pig","srparasites:fer_sheep","srparasites:fer_villager","srparasites:fer_wolf","srparasites:gnat","srparasites:gore","srparasites:grunt","srparasites:haunter","srparasites:heed","srparasites:hi_blaze","srparasites:hi_golem","srparasites:hi_skeleton","srparasites:homming","srparasites:host","srparasites:hostii","srparasites:incompleteform_medium","srparasites:incompleteform_small","srparasites:kyphosis","srparasites:mangler","srparasites:marauder","srparasites:missile","srparasites:monarch","srparasites:movingflesh","srparasites:nade","srparasites:nadeball","srparasites:orb","srparasites:overseer","srparasites:pri_arachnida","srparasites:pri_bolster","srparasites:pri_devourer","srparasites:pri_longarms","srparasites:pri_manducater","srparasites:pri_reeker","srparasites:pri_summoner","srparasites:pri_tozoon","srparasites:pri_vermin","srparasites:pri_yelloweye","srparasites:pullingball","srparasites:remain","srparasites:rupter","srparasites:salivaball","srparasites:scent","srparasites:seeker","srparasites:seizer","srparasites:sentry","srparasites:sim_adventurer","srparasites:sim_adventurerhead","srparasites:sim_bear","srparasites:sim_bigspider","srparasites:sim_cow","srparasites:sim_cowhead","srparasites:sim_dragone","srparasites:sim_dragonehead","srparasites:sim_enderman","srparasites:sim_endermanhead","srparasites:sim_horse","srparasites:sim_horsehead","srparasites:sim_human","srparasites:sim_humanhead","srparasites:sim_pig","srparasites:sim_pighead","srparasites:sim_sheep","srparasites:sim_sheephead","srparasites:sim_squid","srparasites:sim_villager","srparasites:sim_villagerhead","srparasites:sim_wolf","srparasites:sim_wolfhead","srparasites:source","srparasites:spineball","srparasites:succor","srparasites:tendril","srparasites:thrall","srparasites:vigilante","srparasites:warden","srparasites:wave","srparasites:waveshock","srparasites:webball","srparasites:worker","srparasites:worm","srparasites:wraith"],
+    "spawner": true,
+    "biome": ["srparasites:biome_parasite", "openterraingenerator:overworld_abyssal_rift", "Parasite Biome", "Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight", "Steppe", "Wasteland", "biomesoplenty:steppe", "biomesoplenty:wasteland"],
+    "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mob": ["srparasites:ada_arachnida","srparasites:ada_bolster","srparasites:ada_longarms","srparasites:ada_manducater","srparasites:ada_reeker","srparasites:ada_summoner","srparasites:ada_yelloweye","srparasites:anc_dreadnaut","srparasites:anc_dreadnaut_ten","srparasites:anc_overlord","srparasites:anc_pod","srparasites:ancientball","srparasites:antiinfestedblock","srparasites:architect","srparasites:ballball","srparasites:ballmall","srparasites:balltall","srparasites:beckon_si","srparasites:beckon_sii","srparasites:beckon_siii","srparasites:beckon_siv","srparasites:biomass","srparasites:biomassball","srparasites:bogle","srparasites:bomb","srparasites:bomber_heavy","srparasites:bomber_light","srparasites:buglin","srparasites:carrier_colony","srparasites:carrier_flying","srparasites:carrier_heavy","srparasites:carrier_light","srparasites:cloudtoxic","srparasites:crux","srparasites:dispatcher_si","srparasites:dispatcher_sii","srparasites:dispatcher_siii","srparasites:dispatcher_siv","srparasites:dispatcherten","srparasites:fer_bear","srparasites:fer_cow","srparasites:fer_enderman","srparasites:fer_horse","srparasites:fer_human","srparasites:fer_pig","srparasites:fer_sheep","srparasites:fer_villager","srparasites:fer_wolf","srparasites:gnat","srparasites:gore","srparasites:grunt","srparasites:haunter","srparasites:heed","srparasites:hi_blaze","srparasites:hi_golem","srparasites:hi_skeleton","srparasites:homming","srparasites:host","srparasites:hostii","srparasites:incompleteform_medium","srparasites:incompleteform_small","srparasites:kyphosis","srparasites:mangler","srparasites:marauder","srparasites:missile","srparasites:monarch","srparasites:movingflesh","srparasites:nade","srparasites:nadeball","srparasites:orb","srparasites:overseer","srparasites:pri_arachnida","srparasites:pri_bolster","srparasites:pri_devourer","srparasites:pri_longarms","srparasites:pri_manducater","srparasites:pri_reeker","srparasites:pri_summoner","srparasites:pri_tozoon","srparasites:pri_vermin","srparasites:pri_yelloweye","srparasites:pullingball","srparasites:remain","srparasites:rupter","srparasites:salivaball","srparasites:scent","srparasites:seeker","srparasites:seizer","srparasites:sentry","srparasites:sim_adventurer","srparasites:sim_adventurerhead","srparasites:sim_bear","srparasites:sim_bigspider","srparasites:sim_cow","srparasites:sim_cowhead","srparasites:sim_dragone","srparasites:sim_dragonehead","srparasites:sim_enderman","srparasites:sim_endermanhead","srparasites:sim_horse","srparasites:sim_horsehead","srparasites:sim_human","srparasites:sim_humanhead","srparasites:sim_pig","srparasites:sim_pighead","srparasites:sim_sheep","srparasites:sim_sheephead","srparasites:sim_squid","srparasites:sim_villager","srparasites:sim_villagerhead","srparasites:sim_wolf","srparasites:sim_wolfhead","srparasites:source","srparasites:spineball","srparasites:succor","srparasites:tendril","srparasites:thrall","srparasites:vigilante","srparasites:warden","srparasites:wave","srparasites:waveshock","srparasites:webball","srparasites:worker","srparasites:worm","srparasites:wraith"],
+    "biome": ["Parasite Biome", "Grey Abyss", "openterraingenerator:overworld_grey_abyss", "srparasites:biome_parasite", "openterraingenerator:overworld_abyssal_rift","Abyssal Rift","Lair of the Thing", "Nuclear Ruins", "Ruins of Blight", "Steppe", "Wasteland", "biomesoplenty:steppe", "biomesoplenty:wasteland"],
+    "block": ["minecraft:stone_brick_slab","minecraft:stone_brick_stairs","minecraft:concrete","minecraft:stone_slab","contenttweaker:reinforced_concrete"],
+    "seesky": "false",
+    "minlight": 0,
+    "maxlight": 12,
+    "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mob": ["srparasites:ada_arachnida","srparasites:ada_bolster","srparasites:ada_longarms","srparasites:ada_manducater","srparasites:ada_reeker","srparasites:ada_summoner","srparasites:ada_yelloweye","srparasites:anc_dreadnaut","srparasites:anc_dreadnaut_ten","srparasites:anc_overlord","srparasites:anc_pod","srparasites:ancientball","srparasites:antiinfestedblock","srparasites:architect","srparasites:ballball","srparasites:ballmall","srparasites:balltall","srparasites:beckon_si","srparasites:beckon_sii","srparasites:beckon_siii","srparasites:beckon_siv","srparasites:biomass","srparasites:biomassball","srparasites:bogle","srparasites:bomb","srparasites:bomber_heavy","srparasites:bomber_light","srparasites:buglin","srparasites:carrier_colony","srparasites:carrier_flying","srparasites:carrier_heavy","srparasites:carrier_light","srparasites:cloudtoxic","srparasites:crux","srparasites:dispatcher_si","srparasites:dispatcher_sii","srparasites:dispatcher_siii","srparasites:dispatcher_siv","srparasites:dispatcherten","srparasites:fer_bear","srparasites:fer_cow","srparasites:fer_enderman","srparasites:fer_horse","srparasites:fer_human","srparasites:fer_pig","srparasites:fer_sheep","srparasites:fer_villager","srparasites:fer_wolf","srparasites:gnat","srparasites:gore","srparasites:grunt","srparasites:haunter","srparasites:heed","srparasites:hi_blaze","srparasites:hi_golem","srparasites:hi_skeleton","srparasites:homming","srparasites:host","srparasites:hostii","srparasites:incompleteform_medium","srparasites:incompleteform_small","srparasites:kyphosis","srparasites:mangler","srparasites:marauder","srparasites:missile","srparasites:monarch","srparasites:movingflesh","srparasites:nade","srparasites:nadeball","srparasites:orb","srparasites:overseer","srparasites:pri_arachnida","srparasites:pri_bolster","srparasites:pri_devourer","srparasites:pri_longarms","srparasites:pri_manducater","srparasites:pri_reeker","srparasites:pri_summoner","srparasites:pri_tozoon","srparasites:pri_vermin","srparasites:pri_yelloweye","srparasites:pullingball","srparasites:remain","srparasites:rupter","srparasites:salivaball","srparasites:scent","srparasites:seeker","srparasites:seizer","srparasites:sentry","srparasites:sim_adventurer","srparasites:sim_adventurerhead","srparasites:sim_bear","srparasites:sim_bigspider","srparasites:sim_cow","srparasites:sim_cowhead","srparasites:sim_dragone","srparasites:sim_dragonehead","srparasites:sim_enderman","srparasites:sim_endermanhead","srparasites:sim_horse","srparasites:sim_horsehead","srparasites:sim_human","srparasites:sim_humanhead","srparasites:sim_pig","srparasites:sim_pighead","srparasites:sim_sheep","srparasites:sim_sheephead","srparasites:sim_squid","srparasites:sim_villager","srparasites:sim_villagerhead","srparasites:sim_wolf","srparasites:sim_wolfhead","srparasites:source","srparasites:spineball","srparasites:succor","srparasites:tendril","srparasites:thrall","srparasites:vigilante","srparasites:warden","srparasites:wave","srparasites:waveshock","srparasites:webball","srparasites:worker","srparasites:worm","srparasites:wraith"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["lycanitesmobs:joust","lycanitesmobs:joustalpha"],
+    "biome": ["biomesoplenty:volcanic_island"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["lycanitesmobs:djinn"],
+    "biome": ["Abyssal Rift"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["lycanitesmobs:ent","lycanitesmobs:calpod","lycanitesmobs:zephyr","lycanitesmobs:triffid","lycanitesmobs:vapula","lycanitesmobs:gorgomite","lycanitesmobs:spriggan","lycanitesmobs:geonach","lycanitesmobs:treant"],
+    "biome": ["Abyssal Rift", "Abyssal Gate"],
+    "result": "deny"
+  },
+  {
+    "biome": ["Nuclear Wasteland"],
+    "mob": ["nuclearcraft:feral_ghoul","minecraft:skeleton","mod_lavacow:zombiemushroom","mod_lavacow:weta","mod_lavacow:foglet","mod_lavacow:boneworm"],
+    "block": ["minecraft:concrete","contenttweaker:reinforced_concrete","contentcreator:concrete_stairs_reinforced","contentcreator:concrete_slab_reinforced"],
+    "seesky": "false",
+    "result": "default"
+  },
+  {
+    "biome": ["Nuclear Wasteland"],
+    "mob": ["nuclearcraft:feral_ghoul","minecraft:skeleton","mod_lavacow:zombiemushroom","mod_lavacow:weta","mod_lavacow:foglet","mod_lavacow:boneworm"],
+    "random": 0.1,
+    "result": "default"
+  },
+  {
+    "biome": ["Nuclear Wasteland"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": "mod_lavacow:ghostray",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "biometype": ["MOUNTAIN"],
+    "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "biometype": ["HOT", "SANDY", "WET"],
+    "result": "deny"
+  },
+  {
+    "dimension": 111,
+    "mod": "lycanitesmobs",
+    "result": "deny"
+  },
+  {
+    "dimension": 3,
+    "mod": "lycanitesmobs",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["iceandfire:if_troll", "iceandfire:firedragon", "iceandfire:icedragon" ],
+    "biome": ["Crystal Abyss", "Dregora_TrenchDeep", "Dregora_TrenchDeepBridge", "Dregora_TrenchDeepRiver", "Dregora_TrenchDeepRiverBridge", "Dregora_TrenchInnerBorderFromImage", "Dregora_TrenchInnerBorderRandom", "Dregora_TrenchIslands", "Dregora_TrenchOutterBorderFromImage", "Dregora_TrenchOutterBorderRandom", "Dregora_TrenchOutterBorderSlope" ],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["iceandfire:firedragon", "iceandfire:icedragon", "iceandfire:amphithere"],
+    "biome": ["Nuclear Blight", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight"],
+    "result": "deny"
+  },
+  {
+    "mob": "minecraft:wolf",
+    "angry": true,
+    "random": 0.5,
+    "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mod": ["lycanitesmobs", "iceandfire", "quark", "battletowers", "minecraft", "defiledlands", "familiarfauna", "charm"],
+    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight", "Parasite Biome"],
+    "spawner": true,
+    "result": "default"
+  },
+  {
+    "mob": ["minecraft:wither_skeleton","minecraft:zombie","mod_lavacow:zombiemushroom","mod_lavacow:zombiefrozen","mod_lavacow:unburied","mod_lavacow:forsaken","minecraft:zombie_villager","minecraft:zombie_pigman","minecraft:husk","iceandfire:dread_thrall","defiledlands:host"],
+    "random": 0.2,
+    "helditem": ["minecraft:iron_pickaxe"],
+    "result": "default"
+  },
+  {
+    "dimension": 3,
+    "mob": "defiledlands:book_wyrm",
+    "biome": ["Defiled Caverns"],
+    "result": "default"
+  },
+  {
+    "dimension": 3,
+    "mod": "defiledlands",
+    "mincount": {
+      "amount": 50,
+      "passive": true,
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  {
+    "mob": "srparasites:hi_stray",
+    "biometype": ["COLD", "HILLS"],
+    "result": "default"
+  },
+  {
+    "mob": ["srparasites:sim_ocelot", "srparasites:sim_ocelothead", "srparasites:fer_ocelot"],
+    "biometype": "JUNGLE",
+    "result": "default"
+  },
+  {
+    "mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_vindicatorhead"],
+    "biometype": "SPOOKY",
+    "result": "default"
+  },
+  {
+    "mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_ocelot", "srparasites:fer_ocelot", "srparasites:hi_stray", "srparasites:sim_vindicatorhead", "srparasites:sim_ocelothead"],
+    "maxphase": 8,
+    "result": "deny"
+  }
+]

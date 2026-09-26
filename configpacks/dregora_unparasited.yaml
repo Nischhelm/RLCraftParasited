@@ -1,17 +1,91 @@
 name: "Dregora Unparasited Overrides"
 version: "1.0.0"
-description: "Dregora-specific overrides for Unparasited configpack"
+description: "Dregora-specific overrides for Unparasited configpack TODO this sucks"
 inherits: unparasited
 
 patches:
   - type: cfg_patch
     file: config/srparasites/SRParasites.cfg
-    description: "Also allow spawning paras in underneath"
+    description: "Also allow spawning paras in underneath and overworld"
     changes:
       configuration_general:
         I:"Mobs Blacklisted Dimensions":
           add:
+            - 0
             - 3
+      parasite_properties:
+        I:"Block Limit For Beckon Infestation": 750
+        I:"Block Limit For Beckon Infestation Cooldown": 5
+        I:"Block Limit For Biome Infestation": 350
+        I:"Block Limit For Biome Infestation Cooldown": 5
+
+  - type: cfg_patch
+    file: config/srparasites/SRParasitesSystems.cfg
+    description: "TODO: Describe what changes in SRParasitesSystems.cfg"
+    changes:
+      parasite_evolution_phases:
+        B:"Damage Deterrent RS": false
+        B:"Evolution Custom Spawner": true
+        B:"Evolution Phases": true
+        S:"Evolution Phases Dimension Starting Phase List":
+          remove:
+            - -1;-1;-100
+            - 0;0;0
+            - 111;7;599999999
+            - 1;3;1800
+          add:
+            - -1;-2;-20000
+            - 0;-2;0
+            - 111;11;1799999999
+            - 1;-2;-20000
+            - 3;8;500000000
+        I:"Evolution Phases Point Gain Blacklist":
+          add:
+            - -1
+            - 1
+            - 111
+        I:"Evolution Phases Point Loss Blacklist":
+          add:
+            - 3
+        I:"Phase Parasites Ignore Sunlight": 0
+        S:"Evolution Parasite Lock List":
+          remove:
+            - 0;4;pri_vermin
+            - 111;8;anc_dreadnaut
+            - 111;8;anc_overlord
+            - 111;8;beckon_sii
+            - 111;8;beckon_siii
+            - 111;8;beckon_siv
+            - 111;8;bogle
+            - 111;8;bomber_heavy
+            - 111;8;carrier_colony
+            - 111;8;dispatcher_sii
+            - 111;8;dispatcher_siii
+            - 111;8;dispatcher_siv
+            - 111;8;haunter
+            - 111;8;wraith
+      reinforcement_system:
+        I:"Reinforcement System Block Revert Stage": 3
+        S:"Reinforcement System Infestation Spawning Beckons": 0.0
+
+  - type: cfg_patch
+    file: config/srparasites/SRParasitesWorld.cfg
+    description: "Para biome spread only in special biomes"
+    changes:
+      world_biome:
+        S:"Biome Spread BlackList":
+          add:
+            - biomesoplenty:steppe
+            - biomesoplenty:wasteland
+            - openterraingenerator:overworld_lair_of_the_thing
+            - openterraingenerator:overworld_nuclear_ruins
+            - openterraingenerator:overworld_ruins_of_blight
+        B:"Biome Spread BlackList Inverted": true
+
+  - type: file_replace
+    source: dregora/config/incontrol/spawn.json
+    destination: config/incontrol/spawn.json
+    description: "Readded SRP spawn conditions (only from spawners or on certain blocks in low light)"
 
   - type: cfg_patch
     file: config/rltweaker.cfg
@@ -21,6 +95,194 @@ patches:
         I:"Parasites Dimension Blacklist" :
           remove:
             - 0
+
+  - type: cfg_patch
+    file: config/eaglemixins.cfg
+    description: "Restrict paras to their biomes"
+    changes:
+      general.srparasites options:
+        I:"Kill Beckon nearby range": 32
+        B:"Kill Parasites outside alllowed biomes": true
+        S:"SRParasites allowed biomes":
+          remove:
+            - minecraft:mutated_forest
+          add:
+            - biomesoplenty:steppe
+            - openterraingenerator:overworld_abyssal_rift
+            - openterraingenerator:overworld_lair_of_the_thing
+            - openterraingenerator:overworld_nuclear_ruins
+            - openterraingenerator:overworld_ruins_of_blight
+            - srparasites:biome_parasite
+        B:"SRParasites allowed biomes is whitelist": true
+
+  - type: cfg_patch
+    file: config/srpmixins.cfg
+    description: "Use Chunk Phases in overworld, phase 11 in LC"
+    changes:
+      general.chunk phases:
+        S:"Custom Biome Start Phases":
+          remove:
+            - minecraft:mutated_forest, -2
+          add:
+            - biomesoplenty:steppe, 4
+            - openterraingenerator:overworld_abyssal_rift, 4
+            - openterraingenerator:overworld_lair_of_the_thing, 4
+            - openterraingenerator:overworld_nuclear_ruins, 4
+            - openterraingenerator:overworld_ruins_of_blight, 4
+            - srparasites:biome_parasite, 4
+        I:"Dimension blacklist":
+          add:
+            - 3
+        B:"Use Chunk Phases": true
+      general.player phases:
+        B:"Use Player Phases": false
+      general.spawning:
+        I:"Min Blocklight Threshold": 12
+        S:"Parasite Spawning Biome Blacklist per dimension":
+          remove:
+            - 0, minecraft:mutated_forest
+          add:
+            - 0, biomesoplenty:steppe
+            - 0, openterraingenerator:overworld_abyssal_rift
+            - 0, openterraingenerator:overworld_lair_of_the_thing
+            - 0, openterraingenerator:overworld_nuclear_ruins
+            - 0, openterraingenerator:overworld_ruins_of_blight
+            - 0, srparasites:biome_parasite
+            - 111
+            - 3
+        B:"Parasite Spawning Biome Blacklist per dimension is whitelist": true
+      general.parasite biome:
+        B:"Fix Parasitic Biome spreading limit": true
+      general.more phases:
+        I:"Max Phase": 11
+        D:"Crop Grow Stunned":
+          add:
+            - 1.0
+        D:"Mobs Spawn With COTH Chance":
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+        S:"Nexus Grow Stun Chance":
+          add:
+            - 0.0; 0.0; 0.0
+        I:"Odds Residue Spawns Beckon":
+          add:
+            - 150
+        I:"Phase Delay":
+          add:
+            - 1200
+        D:"Phase Killcount Plus":
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.25
+          - 0.35
+          - 0.45
+          - 0.0
+          - 0.0
+        I:"Phase Points":
+          add:
+            - 1799999999
+        S:"Phase Warning Message":
+          add:
+            - ELEVEN - this shouldn't happen, report to nischi
+        D:"Reinforcement System Chance":
+          add:
+            - 0.2
+        I:"Scent Death Bonus":
+          add:
+            - 800
+        I:"Scent Reaction Bonus":
+          add:
+            - 2
+        I:"Sleep Penalty":
+          add:
+            - 0
+        I:"Spawning - Maximum Parasite Type ID":
+          add:
+            - 72
+        I:"Spawning - Minimum Parasite Type ID":
+          add:
+            - 40
+        S:"Spawning - Phase Spawn List":
+          add:
+            - "[11]; srparasites:ada_arachnida; 1; 3; 25"
+            - "[11]; srparasites:ada_bolster; 1; 3; 25"
+            - "[11]; srparasites:ada_longarms; 1; 3; 25"
+            - "[11]; srparasites:ada_manducater; 1; 3; 25"
+            - "[11]; srparasites:ada_reeker; 1; 3; 25"
+            - "[11]; srparasites:ada_summoner; 1; 3; 25"
+            - "[11]; srparasites:ada_yelloweye; 1; 3; 25"
+            - "[11]; srparasites:anc_dreadnaut; 1; 1; 1"
+            - "[11]; srparasites:anc_overlord; 1; 1; 1"
+            - "[11]; srparasites:bogle; 1; 2; 2"
+            - "[11]; srparasites:bomber_heavy; 1; 2; 2"
+            - "[11]; srparasites:bomber_light; 2; 2; 10"
+            - "[11]; srparasites:carrier_colony; 1; 2; 2"
+            - "[11]; srparasites:carrier_flying; 1; 2; 15"
+            - "[11]; srparasites:carrier_heavy; 1; 2; 10"
+            - "[11]; srparasites:carrier_light; 1; 2; 10"
+            - "[11]; srparasites:crux; 1; 1; 10"
+            - "[11]; srparasites:fer_bear; 3; 6; 15"
+            - "[11]; srparasites:fer_cow; 3; 6; 15"
+            - "[11]; srparasites:fer_enderman; 1; 2; 5"
+            - "[11]; srparasites:fer_horse; 3; 6; 15"
+            - "[11]; srparasites:fer_human; 3; 6; 15"
+            - "[11]; srparasites:fer_pig; 3; 6; 15"
+            - "[11]; srparasites:fer_sheep; 3; 6; 15"
+            - "[11]; srparasites:fer_villager; 3; 6; 15"
+            - "[11]; srparasites:grunt; 3; 6; 5"
+            - "[11]; srparasites:haunter; 1; 2; 2"
+            - "[11]; srparasites:heed; 1; 1; 10"
+            - "[11]; srparasites:host; 1; 1; 10"
+            - "[11]; srparasites:hostii; 1; 1; 15"
+            - "[11]; srparasites:incompleteform_medium; 2; 5; 10"
+            - "[11]; srparasites:incompleteform_small; 2; 5; 10"
+            - "[11]; srparasites:mangler; 1; 1; 20"
+            - "[11]; srparasites:marauder; 1; 1; 5"
+            - "[11]; srparasites:monarch; 1; 1; 5"
+            - "[11]; srparasites:overseer; 1; 1; 5"
+            - "[11]; srparasites:pri_arachnida; 1; 2; 15"
+            - "[11]; srparasites:pri_bolster; 1; 2; 15"
+            - "[11]; srparasites:pri_devourer; 1; 2; 15"
+            - "[11]; srparasites:pri_longarms; 1; 2; 15"
+            - "[11]; srparasites:pri_manducater; 1; 2; 15"
+            - "[11]; srparasites:pri_reeker; 1; 2; 15"
+            - "[11]; srparasites:pri_summoner; 1; 2; 15"
+            - "[11]; srparasites:pri_tozoon; 1; 2; 15"
+            - "[11]; srparasites:pri_vermin; 1; 2; 15"
+            - "[11]; srparasites:pri_yelloweye; 1; 2; 15"
+            - "[11]; srparasites:rupter; 3; 6; 5"
+            - "[11]; srparasites:sim_adventurer; 3; 6; 10"
+            - "[11]; srparasites:sim_bear; 1; 1; 10"
+            - "[11]; srparasites:sim_bigspider; 1; 1; 10"
+            - "[11]; srparasites:sim_cow; 1; 3; 10"
+            - "[11]; srparasites:sim_dragone; 1; 1; 1"
+            - "[11]; srparasites:sim_enderman; 1; 1; 5"
+            - "[11]; srparasites:sim_horse; 3; 6; 10"
+            - "[11]; srparasites:sim_human; 3; 5; 10"
+            - "[11]; srparasites:sim_pig; 3; 6; 10"
+            - "[11]; srparasites:sim_sheep; 1; 3; 10"
+            - "[11]; srparasites:sim_squid; 2; 3; 10"
+            - "[11]; srparasites:sim_villager; 3; 6; 10"
+            - "[11]; srparasites:sim_wolf; 3; 6; 10"
+            - "[11]; srparasites:thrall; 1; 1; 15"
+            - "[11]; srparasites:vigilante; 2; 2; 5"
+            - "[11]; srparasites:warden; 1; 1; 5"
+            - "[11]; srparasites:wraith; 1; 2; 2"
 
 build:
   output_name: "Dregora Parasited Unparasited.zip"
