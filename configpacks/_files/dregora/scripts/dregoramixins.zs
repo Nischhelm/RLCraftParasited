@@ -6,7 +6,8 @@ import native.com.dhanantry.scapeandrunparasites.world.SRPSaveData;
 #mixin {targets: "srpmixins.handlers.SpawnPotentialsHandler"}
 zenClass SpawnPotentialsHandlerMixin {
     #mixin Static
-    #mixin WrapOperation {
+    #mixin WrapOperation
+    #{
     #   method: "filterSpawnEntries",
     #   at: {value: "INVOKE", target: "Lcom/dhanantry/scapeandrunparasites/world/SRPSaveData;checkParasiteID(I)Z"}
     #}
