@@ -114,20 +114,44 @@ class KeyValuePatcher:
             Modified lines
         """
         result = []
+        applied_keys = set()
 
         for line in lines:
             # Check if this line has a key we want to change
             if separator in line:
-                key = line.split(separator, 1)[0]
+                # Extract key and strip whitespace for comparison
+                parts = line.split(separator, 1)
+                key_raw = parts[0]
+                key = key_raw.strip()
 
                 if key in changes:
-                    # Replace with new value
+                    # Preserve original whitespace pattern around separator
+                    # Detect spacing: "key = value" vs "key=value" vs "key: value"
+                    left_space = key_raw[len(key):]  # Whitespace after key
+
+                    # Detect right spacing from original value part
+                    if len(parts) > 1:
+                        value_part = parts[1]
+                        # Count leading spaces in original value
+                        right_space = len(value_part) - len(value_part.lstrip())
+                        right_space_str = ' ' * right_space
+                    else:
+                        right_space_str = ''
+
+                    # Replace with new value, preserving formatting
                     new_value = changes[key]
-                    result.append(f"{key}{separator}{new_value}")
+                    result.append(f"{key}{left_space}{separator}{right_space_str}{new_value}")
+                    applied_keys.add(key)
                     continue
 
             # No changes, keep original line
             result.append(line)
+
+        # Add any new keys that weren't in the original file
+        for key, value in changes.items():
+            if key not in applied_keys:
+                # Use separator with space after (common format)
+                result.append(f"{key} {separator}  {value}")
 
         return result
 
