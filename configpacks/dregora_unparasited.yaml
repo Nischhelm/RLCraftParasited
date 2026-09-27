@@ -83,7 +83,7 @@ patches:
         B:"Biome Spread BlackList Inverted": true
 
   - type: file_replace
-    source: dregora/config/incontrol/spawn.json
+    source: dregora_unparasited/config/incontrol/spawn.json
     destination: config/incontrol/spawn.json
     description: "Readded SRP spawn conditions (only from spawners or on certain blocks in low light)"
 
