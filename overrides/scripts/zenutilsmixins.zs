@@ -620,3 +620,68 @@ zenClass QuarkHandlerQKAncientTomeAnvilUpdateMixin {
         return true;
     }
 }
+
+/*
+    Start Configure Fermium Mixins Reskillable's Undershirt and Bountiful Baubles' Broken Heart Handlers
+    Remove "Random" why it didn't proc moments
+    Change 1000.0 Final Damage Limit
+    Change 4.0 Current Health on Body Part Requirement
+ */
+#mixin {targets: "fermiummixins.handlers.bountifulbaubles.BrokenHeartBaubleHandler"}
+zenClass BrokenHeartHandlerMixin {
+    static zenutils_cfg_brokenHeartMaxDamage as double = 1000.0;
+    static zenutils_cfg_brokenHeartMinHealth as int = 4; // Fermium Mixins uses an int instead of decimal value
+
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "onFirstAidLivingDamageLow",
+    #   constant: {floatValue = 1000.0}
+    #}
+    function zenutils_brokenHeartMaxDamage(constant as float) as float {
+        val maxDamage = zenutils_cfg_brokenHeartMaxDamage as float;
+        if(maxDamage < 0) return (1.0F / 0.0F) as float; // Positive Infinity
+        return maxDamage;
+    }
+
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "onFirstAidLivingDamageLow",
+    #   constant: {intValue = 4}
+    #}
+    function zenutils_brokenHeartMinHealth(constant as int) as int {
+        return zenutils_cfg_brokenHeartMinHealth;
+    }
+}
+
+#mixin {targets: "fermiummixins.handlers.reskillable.UndershirtHandler"}
+zenClass UndershirtHandlerMixin {
+    static zenutils_cfg_undershirtMaxDamage as double = 1000.0;
+    static zenutils_cfg_undershirtMinHealth as double = 4.0;
+
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "onFirstAidLivingDamageHigh",
+    #   constant: {floatValue = 1000.0}
+    #}
+    function zenutils_undershirtMaxDamage(constant as float) as float {
+        val maxDamage = zenutils_cfg_undershirtMaxDamage as float;
+        if(maxDamage < 0) return (1.0F / 0.0F) as float; // Positive Infinity
+        return maxDamage;
+    }
+
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "onFirstAidLivingDamageHigh",
+    #   constant: {doubleValue = 4.0}
+    #}
+    function zenutils_undershirtMinHealth(constant as double) as double {
+        return zenutils_cfg_undershirtMinHealth;
+    }
+}
+/*
+    End Configure Fermium Mixins Reskillable's Undershirt and Bountiful Baubles' Broken Heart Handlers
+ */
