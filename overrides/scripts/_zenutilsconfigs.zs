@@ -64,4 +64,10 @@ ConfigUtils.named("parasited")
         "somanyenchantments:ancientsealedcurses",
         "somanyenchantments:mortalitas"
       ).displayName("Champion *5 Enchant List").comment("5 Star Champions will always drop one enchanted book from this list").add()
+.category("fermiummixins")
+        .doubleValue("brokenHeartMaxDamage", 1000.0).displayName("Broken Heart Maximum Damage Protected").comment("The maximum FINAL DAMAGE TOTAL that will be protected against. Set to -1 for no limit. Fermium Mixins uses 1000.0 while Vanilla Bountiful Baubles uses no limit.").add()
+        .lowerRangedInteger("brokenHeartMinHealth", 4, 0).displayName("Broken Heart Minimum Health Required").comment("The minimum MAX HEALTH required on the body part being protected. Fermium Mixins uses 4.0 while Vanilla Bountiful Baubles uses no limit.").add()
+        .doubleValue("undershirtMaxDamage", 1000.0).displayName("Undershirt Maximum Damage Protected").comment("The maximum FINAL DAMAGE TOTAL that will be protected against. Set to -1 for no limit. Fermium Mixins uses 1000.0 while Vanilla Reskillable uses no limit.").add()
+        .lowerRangedDouble("undershirtMinHealth", 4.0, 0.0).displayName("Undershirt Minimum Health Required").comment("The minimum CURRENT HEALTH required on the body part being protected. Fermium Mixins uses 4.0 while Vanilla Reskillable uses 6.0.").add()
+.add()
 .register();

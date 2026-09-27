@@ -14,6 +14,10 @@ function update() as void {
     native.bl4ckscor3.mod.xptome.ItemXPTome.zenutils_GREATER_MAX_STORAGE = Parasited.greaterXpTomeSize;
     native.bl4ckscor3.mod.xptome.XPTome.zenutils_setMaxStorage(Parasited.greaterXpTomeSize);
     native.codersafterdark.reskillable.skill.magic.TraitGoldenOsmosis.zenutils_cfg_osmosisRepairableItems = Parasited.additionalOsmosisItems;
+    native.fermiummixins.handlers.bountifulbaubles.BrokenHeartBaubleHandler.zenutils_cfg_brokenHeartMaxDamage = Parasited.fermiummixins.brokenHeartMaxDamage;
+    native.fermiummixins.handlers.bountifulbaubles.BrokenHeartBaubleHandler.zenutils_cfg_brokenHeartMinHealth = Parasited.fermiummixins.brokenHeartMinHealth;
+    native.fermiummixins.handlers.reskillable.UndershirtHandler.zenutils_cfg_undershirtMaxDamage = Parasited.fermiummixins.undershirtMaxDamage;
+    native.fermiummixins.handlers.reskillable.UndershirtHandler.zenutils_cfg_undershirtMinHealth = Parasited.fermiummixins.undershirtMinHealth;
 }
 
 events.register(function(event as native.net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent) {
