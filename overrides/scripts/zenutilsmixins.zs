@@ -631,12 +631,13 @@ zenClass QuarkHandlerQKAncientTomeAnvilUpdateMixin {
 zenClass BrokenHeartHandlerMixin {
     static zenutils_cfg_brokenHeartMaxDamage as double = 1000.0;
     static zenutils_cfg_brokenHeartMinHealth as int = 4; // Fermium Mixins uses an int instead of decimal value
+    static zenutils_cfg_brokenHeartLenientCalc as bool = true; // Fermium Mixins uses an int instead of decimal value
 
     #mixin Static
     #mixin ModifyConstant
     #{
     #   method: "onFirstAidLivingDamageLow",
-    #   constant: {floatValue = 1000.0}
+    #   constant: {floatValue: 1000.0}
     #}
     function zenutils_brokenHeartMaxDamage(constant as float) as float {
         val maxDamage = zenutils_cfg_brokenHeartMaxDamage as float;
@@ -648,10 +649,30 @@ zenClass BrokenHeartHandlerMixin {
     #mixin ModifyConstant
     #{
     #   method: "onFirstAidLivingDamageLow",
-    #   constant: {intValue = 4}
+    #   constant: {intValue: 4}
     #}
     function zenutils_brokenHeartMinHealth(constant as int) as int {
         return zenutils_cfg_brokenHeartMinHealth;
+    }
+
+    #mixin Static
+    #mixin ModifyExpressionValue
+    #{
+    #   method: "onFirstAidLivingDamageLow",
+    #   at: {value: "INVOKE", target: "Lichttt/mods/firstaid/api/event/FirstAidLivingDamageEvent;getUndistributedDamage()F", ordinal: 1}
+    #}
+    function zenutils_brokenHeartNoLeftover(original as float) as float {
+        return 0.0F; //don't break my heart i mean dont reduce player health by leftover (undistributed) dmg leading to kill anyway
+    }
+
+    #mixin Static
+    #mixin ModifyExpressionValue
+    #{
+    #   method: "onFirstAidLivingDamageLow",
+    #   at: {value: "INVOKE", target: "Ljava/util/List;size()I"}
+    #}
+    function zenutils_brokenHeartNoPartsCount(original as int) as int {
+        return 1; // always remove 30% of health plus 1 heart. before it could be 30% + (1 OR 2 hearts depending on the situation)
     }
 }
 
@@ -664,7 +685,7 @@ zenClass UndershirtHandlerMixin {
     #mixin ModifyConstant
     #{
     #   method: "onFirstAidLivingDamageHigh",
-    #   constant: {floatValue = 1000.0}
+    #   constant: {floatValue: 1000.0}
     #}
     function zenutils_undershirtMaxDamage(constant as float) as float {
         val maxDamage = zenutils_cfg_undershirtMaxDamage as float;
@@ -676,7 +697,7 @@ zenClass UndershirtHandlerMixin {
     #mixin ModifyConstant
     #{
     #   method: "onFirstAidLivingDamageHigh",
-    #   constant: {doubleValue = 4.0}
+    #   constant: {doubleValue: 4.0}
     #}
     function zenutils_undershirtMinHealth(constant as double) as double {
         return zenutils_cfg_undershirtMinHealth;
