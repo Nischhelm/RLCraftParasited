@@ -1,6 +1,6 @@
 name: "Dregora Unparasited Overrides"
 version: "1.0.0"
-description: "Dregora-specific overrides for Unparasited configpack TODO this sucks"
+description: "Dregora-specific overrides for Unparasited configpack"
 inherits: unparasited
 
 patches:
