@@ -8,11 +8,11 @@ Mod
     Updated PotionControl
         now depends on betterconfig and removes more unused potiontypes
     Updated EnchantmentControl
-        now depends on betterconfig, no game change
+        now depends on betterconfig, no ingame change
     Updated EagleMixins
         fixes cure being wineable+kept
-        makes some fog render better idk
-    Re-Re-Added BetterConfig again  
+        makes some fog render better idk, thanks to Landon
+    Re-Re-Added BetterConfig again again
     Added Better Snow Villages by cdstk with suggested configs
     Updated Mind Palaces
         stay forever in MP if traveling to Waystone in MP
@@ -25,7 +25,6 @@ Mod
     Updated AAAM
         now depends on betterconfig, easier use of ingame config
     Updated FermiumBooter, allows dependent mods to not require a coremod
-    Updated cdstks Better Snow Villages, fixes some generation issues
 
 Configs
     Infernalmobs now finally also can drop scythes
@@ -39,6 +38,10 @@ Scripts
         also added more mixins to allow xp tome to be able to store even more xp if ppl change cfg
     Made Curse Break ancient tomes actually work with offhand rightclick
     Allow to smelt shears, iron bars, iron doors and iron trapdoors
+    Made undershirt and broken heart more lenient (thanks cdstk!): 
+        removed max 1k total dmg threshold 
+        and min 2 hearts per part requirement,
+        also guaranteed at least 2 broken heart procs even when getting hit insanely hard
 
 Dregora
     Updated DregoraRL
@@ -66,6 +69,7 @@ Configpacks
     Fixed Dregora Doomlike dungeon spawning conditions not being set correctly
     Fixed Dregora missing parasite block breaking blacklists (dimstack, special concrete etc)
     Set Dregora parasite mob caps back to 70 + 30 x playercount (iqury had it on 0 + 120 x playercount)
+    Fixed dregora configpacks losing some dregora specific changes (infernalmobs/scalinghealth)
 
 Servers
     Added server_install.py and server_start.sh for ppl wanting to set up a server from scratch, 
