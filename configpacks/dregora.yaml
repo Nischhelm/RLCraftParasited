@@ -6931,11 +6931,6 @@ patches:
     description: "TODO: Describe why this file is replaced"
 
   - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Central.rcst
-    destination: structures/active/RLCraft_NetherCity_Central.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
     source: dregora/structures/active/P_VillageInn.rcst
     destination: structures/active/P_VillageInn.rcst
     description: "TODO: Describe why this file is replaced"
@@ -6961,28 +6956,8 @@ patches:
     description: "TODO: Describe why this file is replaced"
 
   - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Balcony.rcst
-    destination: structures/active/RLCraft_NetherCity_Balcony.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Enchanting.rcst
-    destination: structures/active/RLCraft_NetherCity_Enchanting.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Tower2.rcst
-    destination: structures/active/RLCraft_NetherCity_Tower2.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
     source: dregora/structures/active/P_WitchDungeon.rcst
     destination: structures/active/P_WitchDungeon.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Library.rcst
-    destination: structures/active/RLCraft_NetherCity_Library.rcst
     description: "TODO: Describe why this file is replaced"
 
   - type: file_replace
@@ -6996,11 +6971,6 @@ patches:
     description: "TODO: Describe why this file is replaced"
 
   - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Park.rcst
-    destination: structures/active/RLCraft_NetherCity_Park.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
     source: dregora/structures/active/P_IslandCity.rcst
     destination: structures/active/P_IslandCity.rcst
     description: "TODO: Describe why this file is replaced"
@@ -7011,26 +6981,6 @@ patches:
     description: "TODO: Describe why this file is replaced"
 
   - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Church.rcst
-    destination: structures/active/RLCraft_NetherCity_Church.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Intersection.rcst
-    destination: structures/active/RLCraft_NetherCity_Intersection.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_End_MegaCity_Middle_Boss.rcst
-    destination: structures/active/RLCraft_End_MegaCity_Middle_Boss.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_Tower.rcst
-    destination: structures/active/RLCraft_NetherCity_Tower.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
     source: dregora/structures/active/RLCraft_SwampHut.rcst
     destination: structures/active/RLCraft_SwampHut.rcst
     description: "TODO: Describe why this file is replaced"
@@ -7038,16 +6988,6 @@ patches:
   - type: file_replace
     source: dregora/structures/active/P_Aeriveth.rcst
     destination: structures/active/P_Aeriveth.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_NetherCity_House.rcst
-    destination: structures/active/RLCraft_NetherCity_House.rcst
-    description: "TODO: Describe why this file is replaced"
-
-  - type: file_replace
-    source: dregora/structures/active/RLCraft_End_Fisher.rcst
-    destination: structures/active/RLCraft_End_Fisher.rcst
     description: "TODO: Describe why this file is replaced"
 
   - type: file_delete
