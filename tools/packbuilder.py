@@ -192,7 +192,7 @@ class PackBuilder:
         else:
             return self._build_as_configpack(pack, configpack_name, tag_version)
 
-    def _build_as_configpack(self, pack: ConfigPack, configpack_name: str, tag_version: Optional[str] = None):
+    def _build_as_configpack(self, pack: ConfigPack, configpack_name: str, tag_version: Optional[str] = None, base_overrides_dir: Optional[Path] = None):
         """
         Build as a configpack (only changed files).
 
@@ -200,6 +200,8 @@ class PackBuilder:
             pack: ConfigPack object
             configpack_name: Name of the configpack
             tag_version: Optional version tag
+            base_overrides_dir: Optional base directory to use instead of self.overrides_dir
+                               (used for building child configpacks that inherit from parent modpacks)
 
         Returns:
             Path to the generated ZIP file
@@ -216,7 +218,7 @@ class PackBuilder:
             # Apply patches (ONLY copy files that are being patched)
             print(f"  Processing {len(pack.patches)} patches...")
             for i, patch in enumerate(pack.patches, 1):
-                self._apply_patch_selective(temp_dir, patch, i, pack.version)
+                self._apply_patch_selective(temp_dir, patch, i, pack.version, base_overrides_dir)
 
             # Add configpack-specific files
             if pack.files:
@@ -341,8 +343,10 @@ class PackBuilder:
             try:
                 print(f"    Building {configpack_name}...")
 
-                # Build the configpack (this should build as configpack mode, not modpack mode)
-                zip_path = self._build_configpack_for_inclusion(configpack_name, tag_version)
+                # Build the configpack using the parent modpack's patched overrides as base
+                # This allows child configpacks to inherit parent modpack's patches
+                parent_overrides = temp_dir / "overrides"
+                zip_path = self._build_configpack_for_inclusion(configpack_name, tag_version, parent_overrides)
 
                 # Copy the ZIP to destination
                 dest_zip = full_dest / zip_path.name
@@ -354,7 +358,7 @@ class PackBuilder:
                 print(f"    ✗ Failed to build/include {configpack_name}: {e}")
                 raise
 
-    def _build_configpack_for_inclusion(self, configpack_name: str, tag_version: Optional[str] = None):
+    def _build_configpack_for_inclusion(self, configpack_name: str, tag_version: Optional[str] = None, base_overrides_dir: Optional[Path] = None):
         """
         Build a configpack specifically for inclusion in a modpack.
         Always builds as a configpack (mode: configpack), not as a modpack.
@@ -362,6 +366,8 @@ class PackBuilder:
         Args:
             configpack_name: Name of the configpack to build
             tag_version: Optional version tag
+            base_overrides_dir: Optional base directory to use instead of self.overrides_dir
+                               (used for building child configpacks that inherit from parent modpacks)
 
         Returns:
             Path to the generated ZIP file
@@ -370,7 +376,7 @@ class PackBuilder:
 
         # Force configpack mode for included configpacks
         # (we want the small ZIP with only changes, not a full modpack)
-        return self._build_as_configpack(pack, configpack_name, tag_version)
+        return self._build_as_configpack(pack, configpack_name, tag_version, base_overrides_dir)
 
     def build_all(self, tag_version: Optional[str] = None):
         """
@@ -455,7 +461,7 @@ class PackBuilder:
                     if isinstance(value, str):
                         changes['add'][key] = value.replace('{{version}}', version)
 
-    def _apply_patch_selective(self, target_dir: Path, patch: Dict[str, Any], patch_num: int, version: Optional[str] = None):
+    def _apply_patch_selective(self, target_dir: Path, patch: Dict[str, Any], patch_num: int, version: Optional[str] = None, base_overrides_dir: Optional[Path] = None):
         """
         Apply a patch by copying ONLY the targeted file, patching it, and saving to temp.
 
@@ -464,6 +470,8 @@ class PackBuilder:
             patch: Patch specification
             patch_num: Patch number (for logging)
             version: Optional version string for template replacement
+            base_overrides_dir: Optional base directory to use instead of self.overrides_dir
+                               (used for building child configpacks that inherit from parent modpacks)
         """
         patch_type = patch.get('type')
 
@@ -544,8 +552,11 @@ class PackBuilder:
 
                 # SEQUENTIAL PATCHING: Check if file already exists in temp_dir (from previous patch)
                 if not dest_file.exists():
-                    # File not yet in temp - copy from overrides/ as base
-                    source_file = self.overrides_dir / file_rel
+                    # File not yet in temp - copy from base overrides directory
+                    # Use custom base_overrides_dir if provided (for child configpacks inheriting from parent modpacks)
+                    # Otherwise use default self.overrides_dir
+                    base_dir = base_overrides_dir if base_overrides_dir else self.overrides_dir
+                    source_file = base_dir / file_rel
 
                     if source_file.exists():
                         shutil.copy2(source_file, dest_file)
