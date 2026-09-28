@@ -73,6 +73,11 @@ patches:
         S:"Max Value": 20.0
         S:"Min Value": 0.5
 
+  - type: folder_add
+    source: hcc_omega/scripts
+    destination: scripts
+    description: "Reset phase on death and possibly more in the future"
+
 # Build configuration
 build:
   output_name: "Parasited OmegaHCC_Server.zip"
