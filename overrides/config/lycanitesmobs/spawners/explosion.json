@@ -7,7 +7,7 @@
   "ignoreDimensions": true,
   "ignoreBiomes": true,
   "ignoreLightLevel": true,
-  "ignoreGroupLimit": true,
+  "ignoreGroupLimit": false,
   "conditions": [],
   "triggers": [
     {
