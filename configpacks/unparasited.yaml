@@ -57,6 +57,40 @@ patches:
       lostcity_rlcraft:
         S:allowedBiomeFactors: []
 
+  - type: json_patch
+    file: config/CustomMainMenu/mainmenu.json
+    encoding: latin-1
+    description: "Change the mainmenu images to the old 2.9.3 to avoid spoilers for LC"
+    changes:
+    - op: replace
+      path: /other/background/slideshow/images
+      value:
+        - "mainmenu:images/unparasited/0.jpg"
+        - "mainmenu:images/unparasited/1.jpg"
+        - "mainmenu:images/unparasited/1 new.jpg"
+        - "mainmenu:images/unparasited/2.jpg"
+        - "mainmenu:images/unparasited/2 new.jpg"
+        - "mainmenu:images/unparasited/3.jpg"
+        - "mainmenu:images/unparasited/4.jpg"
+        - "mainmenu:images/unparasited/4 new.jpg"
+        - "mainmenu:images/unparasited/5.jpg"
+        - "mainmenu:images/unparasited/6.jpg"
+        - "mainmenu:images/unparasited/6 new.jpg"
+        - "mainmenu:images/unparasited/6 newer.jpg"
+        - "mainmenu:images/unparasited/7.jpg"
+        - "mainmenu:images/unparasited/7 new.jpg"
+        - "mainmenu:images/unparasited/8.jpg"
+        - "mainmenu:images/unparasited/9.jpg"
+        - "mainmenu:images/unparasited/10.jpg"
+        - "mainmenu:images/unparasited/10 new.jpg"
+        - "mainmenu:images/unparasited/10 newer.jpg"
+        - "mainmenu:images/unparasited/10 newer off.jpg"
+        - "mainmenu:images/unparasited/11.jpg"
+        - "mainmenu:images/unparasited/12.jpg"
+        - "mainmenu:images/unparasited/13.jpg"
+        - "mainmenu:images/unparasited/14.jpg"
+        - "mainmenu:images/others/1.jpg"
+
 # Build configuration
 build:
   output_name: "Parasited Unparasited.zip"
