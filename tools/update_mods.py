@@ -246,13 +246,13 @@ class ModUpdater:
             value = manifest[key]
             is_last = (i == len(keys) - 1)
 
-            if key == 'files':
-                # Files array: one mod per line
-                output_lines.append('  "files": [')
-                files = value
-                for j, mod in enumerate(files):
-                    comma = ',' if j < len(files) - 1 else ''
-                    mod_json = json.dumps(mod, separators=(', ', ': '))
+            if key in ('files', 'curr_unused'):
+                # Files and curr_unused arrays: one mod per line, preserve § characters
+                output_lines.append(f'  "{key}": [')
+                items = value
+                for j, mod in enumerate(items):
+                    comma = ',' if j < len(items) - 1 else ''
+                    mod_json = json.dumps(mod, separators=(', ', ': '), ensure_ascii=False)
                     output_lines.append(f'    {mod_json}{comma}')
                 output_lines.append('  ]' + (',' if not is_last else ''))
             else:
