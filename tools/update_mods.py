@@ -100,7 +100,10 @@ def load_ignore_list(yaml_file: Path) -> List[int]:
 
 def filter_files_for_mc_1_12_2(files: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
-    Filter files for Minecraft 1.12.2 + Forge + available.
+    Filter files for Minecraft 1.12.2 + available.
+
+    Note: In 1.12.2, only Forge existed, so we don't check modLoaderType.
+    All 1.12.2 mods are implicitly Forge mods.
 
     Args:
         files: List of file metadata from CurseForge API
@@ -120,12 +123,10 @@ def filter_files_for_mc_1_12_2(files: List[Dict[str, Any]]) -> List[Dict[str, An
         if MINECRAFT_VERSION not in game_versions:
             continue
 
-        # Check mod loader type (2 = Forge)
-        if file.get('modLoaderType') != FORGE_LOADER_TYPE:
-            # Some files don't have modLoaderType set, but work with Forge
-            # If it's None, we'll accept it if it has 1.12.2
-            if file.get('modLoaderType') is not None:
-                continue
+        # For 1.12.2, we don't check modLoaderType because:
+        # - Forge was the only loader at that time
+        # - Many old mods don't have this field set on CurseForge
+        # - All 1.12.2 mods are Forge mods by definition
 
         compatible.append(file)
 
@@ -292,8 +293,14 @@ class ModUpdater:
 
         url = f"{API_BASE_URL}/mods/{project_id}/files"
 
+        # CRITICAL: Use gameVersion parameter to get old 1.12.2 files
+        # Without this, API only returns ~50 newest files (which are often for newer MC versions)
+        params = {
+            "gameVersion": MINECRAFT_VERSION
+        }
+
         try:
-            response = requests.get(url, headers=self.headers, timeout=10)
+            response = requests.get(url, headers=self.headers, params=params, timeout=10)
             response.raise_for_status()
 
             data = response.json()
