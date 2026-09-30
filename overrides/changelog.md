@@ -1,3 +1,29 @@
+--- Sept 30 2026 ---
+
+Mod
+    Added Enchanter Tools by SirSquidly
+        - adds pondering orb. stare into it (not too long!) to get xp, right click it to reroll enchants
+        - adds comprehension effect given by xp bottles, increases xp gain, unwineable
+        - adds currently unused enchanted inkwells, basically enchanted books with infinite uses
+    Updated AAAM, JEI Want That and Better Snow Villages which all interacted with my stupid AAAM update
+        - which made librarian markers not work anymore
+        - and some jeiwt things
+        - etc idk just update
+
+Configs
+    made anvils act the same in creative as in survival
+    made tremor spawning respect the mob cap (you can prob still farm them if you drain the mob cap)
+
+Dregora
+    Updated OTG
+        will now hopefully log what files are broken so we can fix them
+    Fixed vitality enchant appearing everywhere again...
+
+Configpacks
+    omega now correctly resets phase on death
+    unparasited now has normal rlcraft mainmenu +loading screens
+    unparasited now doesnt have skyHighPara spawner (adapted yelloweyes+overseers at high altitude at night)
+
 --- Sept 27 2026 ---
 
 Mod
