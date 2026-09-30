@@ -26,6 +26,19 @@ patches:
             - potioncore:flight
 
   - type: cfg_patch
+    file: config/trinkets/Trinkets_And_Baubles.cfg
+    description: "no race flight"
+    changes:
+      general.server settings.race configuration.fairy.abilities.creative flight:
+        B:"00. Enabled": false
+      general.server settings.race configuration.fairy.abilities.elytra flight:
+        B:"00. Enabled": false
+      general.server settings.race configuration.dragon.abilities.creative flight:
+        B:"00. Enabled": false
+      general.server settings.race configuration.dragon.abilities.elytra flight:
+        B:"00. Enabled": false
+
+  - type: cfg_patch
     file: config/ebwizardry/ebwizardry.cfg
     description: "blacklist flight+levitate spell"
     changes:
