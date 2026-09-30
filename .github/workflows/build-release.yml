@@ -28,22 +28,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tools/requirements.txt
 
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
       - name: Build RLCraft Parasited
-        run: python tools/packbuilder.py build rlcraft_parasited
+        run: python tools/packbuilder.py build rlcraft_parasited --version "${{ steps.version.outputs.VERSION }}"
 
       - name: Build Dregora Parasited
-        run: python tools/packbuilder.py build dregora
+        run: python tools/packbuilder.py build dregora --version "${{ steps.version.outputs.VERSION }}"
 
       - name: Build ShyCraftParasited
-        run: python tools/packbuilder.py build shycraft
+        run: python tools/packbuilder.py build shycraft --version "${{ steps.version.outputs.VERSION }}"
 
       - name: List built files
         run: |
           ls -lh build/
-
-      - name: Extract version from tag
-        id: version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
 
       - name: Extract latest changelog
         id: changelog

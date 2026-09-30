@@ -174,7 +174,7 @@ class PackBuilder:
 
         Args:
             configpack_name: Name of the configpack to build
-            tag_version: Optional version tag to include in output filename
+            tag_version: Optional version tag from Git to use for {{version}} replacements and filename
 
         Returns:
             Path to the generated ZIP file
@@ -183,6 +183,10 @@ class PackBuilder:
 
         # 1. Load configpack definition
         pack = self.load_configpack(configpack_name)
+
+        # Override pack version with tag_version if provided (Git tag takes precedence)
+        if tag_version:
+            pack.version = tag_version
 
         # Check build mode
         build_mode = pack.build_config.get('mode', 'configpack')
@@ -228,11 +232,6 @@ class PackBuilder:
 
             # Create ZIP
             output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
-
-            # Add version tag if provided
-            if tag_version:
-                base_name = output_name.replace('.zip', '')
-                output_name = f"{base_name}-{tag_version}.zip"
 
             output_zip = self.output_dir / output_name
 
@@ -297,11 +296,6 @@ class PackBuilder:
 
             # 4. Create ZIP
             output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
-
-            # Add version tag if provided
-            if tag_version:
-                base_name = output_name.replace('.zip', '')
-                output_name = f"{base_name}-{tag_version}.zip"
 
             output_zip = self.output_dir / output_name
 
@@ -938,15 +932,28 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: python packbuilder.py <command> [args]")
         print("Commands:")
-        print("  build <name>       - Build a configpack")
-        print("  build --all        - Build all configpacks")
-        print("  validate <name>    - Validate a configpack")
-        print("  list               - List available configpacks")
+        print("  build <name> [--version VERSION]  - Build a configpack")
+        print("  build --all [--version VERSION]   - Build all configpacks")
+        print("  validate <name>                   - Validate a configpack")
+        print("  list                              - List available configpacks")
         sys.exit(1)
 
     command = sys.argv[1]
     base_dir = Path(__file__).parent.parent
     output_dir = base_dir / "build"
+
+    # Parse --version flag
+    version_arg = None
+    args = sys.argv[2:]
+    if '--version' in args:
+        version_idx = args.index('--version')
+        if version_idx + 1 < len(args):
+            version_arg = args[version_idx + 1]
+            # Remove --version and its value from args
+            args = args[:version_idx] + args[version_idx + 2:]
+        else:
+            print("Error: --version requires a value")
+            sys.exit(1)
 
     builder = PackBuilder(base_dir, output_dir, verbose=True)
 
@@ -955,21 +962,21 @@ def main():
         print(f"Available configpacks: {', '.join(packs) if packs else 'none'}")
 
     elif command == "build":
-        if len(sys.argv) < 3:
-            print("Usage: python packbuilder.py build <name|--all>")
+        if len(args) < 1:
+            print("Usage: python packbuilder.py build <name|--all> [--version VERSION]")
             sys.exit(1)
 
-        if sys.argv[2] == "--all":
-            builder.build_all()
+        if args[0] == "--all":
+            builder.build_all(tag_version=version_arg)
         else:
-            builder.build(sys.argv[2])
+            builder.build(args[0], tag_version=version_arg)
 
     elif command == "validate":
-        if len(sys.argv) < 3:
+        if len(args) < 1:
             print("Usage: python packbuilder.py validate <name>")
             sys.exit(1)
 
-        success = builder.validate(sys.argv[2])
+        success = builder.validate(args[0])
         sys.exit(0 if success else 1)
 
     else:
