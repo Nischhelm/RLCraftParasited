@@ -1,5 +1,7 @@
 --- Sept 30 2026 ---
 
+Small maintenance update but also a nice little addition in enchantertools
+
 Mod
     Added Enchanter Tools by SirSquidly
         - adds pondering orb. stare into it (not too long!) to get xp, right click it to reroll enchants
@@ -9,6 +11,7 @@ Mod
         - which made librarian markers not work anymore
         - and some jeiwt things
         - etc idk just update
+    Updated NischiTweaker, nothing relevant for this pack
 
 Configs
     made anvils act the same in creative as in survival
@@ -23,6 +26,7 @@ Configpacks
     omega now correctly resets phase on death
     unparasited now has normal rlcraft mainmenu +loading screens
     unparasited now doesnt have skyHighPara spawner (adapted yelloweyes+overseers at high altitude at night)
+    allmobsblightetc now has 40% infernals 10% champions and 50% "only" blights (i think). want to have 80% infernal and 20% champ but need to spend more time on it 
 
 --- Sept 27 2026 ---
 
