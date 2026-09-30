@@ -9,7 +9,7 @@ import native.java.util.HashMap;
 import native.java.util.UUID;
 
 #mixin {targets: "com.sirsquidly.enchanter_tools.common.blocks.tileentity.TilePonderingOrb"}
-zenClass TilePonderingOrbFalloffMixin {
+zenClass TilePonderingOrbMixin {
 
     // usage counter per player/uuid
     static playerUsageCount as HashMap = HashMap();
@@ -28,12 +28,14 @@ zenClass TilePonderingOrbFalloffMixin {
         val count = 1 + playerUsageCount.getOrDefault(playerID, 0) as int;
         playerUsageCount.put(playerID, count);
 
+        print(""+count);
+
         if (this0.world.rand.nextInt(200) < count) {
             if (count > 200) player.addPotionEffect(PotionEffect(Potion.getPotionFromResourceLocation("lycanitesmobs:fear"), 400, 0));
 
             if (count > 100) player.addPotionEffect(PotionEffect(MobEffects.NAUSEA, 400, 2));
             else if (count > 50) player.addPotionEffect(PotionEffect(MobEffects.NAUSEA, 400, 1));
-            else player.addPotionEffect(PotionEffect(MobEffects.NAUSEA, 400, 0));
+            else if (count > 25) player.addPotionEffect(PotionEffect(MobEffects.NAUSEA, 400, 0));
             return false;
         }
 
@@ -54,5 +56,32 @@ zenClass TilePonderingOrbFalloffMixin {
                 playerUsageCount.put(uuid, Math.max(0,(playerUsageCount.get(uuid) as int) - 1));
             }
         }
+    }
+}
+
+#mixin {targets: "com.sirsquidly.enchanter_tools.common.blocks.BlockPonderingOrb"}
+zenClass BlockPonderingOrbMixin {
+
+    #mixin ModifyArg
+    #{
+    #   method: "func_180639_a",
+    #   at: {value: "INVOKE", target: "Lnet/minecraft/entity/player/EntityPlayer;func_192024_a(Lnet/minecraft/item/ItemStack;I)V"}
+    #}
+    #mixin Local
+    function zenutils_drainXPnotLevels(original as int, player as EntityPlayer) as int {
+        // Reduce xp
+        native.codersafterdark.reskillable.base.ExperienceHelper.drainPlayerXP(player, original);
+        // Don't reduce lvls
+        return 0;
+    }
+
+    #mixin ModifyExpressionValue
+    #{
+    #   method: "func_180639_a",
+    #   at: {value: "FIELD", target: "Lnet/minecraft/entity/player/EntityPlayer;field_71068_ca:I"}
+    #}
+    #mixin Local
+    function zenutils_checkXPnotLevels(original as int, player as EntityPlayer) as int {
+        return player.experienceTotal;
     }
 }
