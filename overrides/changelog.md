@@ -73,6 +73,9 @@ Scripts
         and min 2 hearts per part requirement,
         also guaranteed at least 2 broken heart procs even when getting hit insanely hard
 
+Resourcepacks
+    Updated RLEnchantedBooks, now finally got textures for ALL of the enchants pog! thanks to Artsy for making them and to KameiB for hooking them up!
+
 Structures
     copied over the modified nether city + new end city structures from dregora to base. this should fix end city golem, its blight spectres, apollyon boss etc     
 
