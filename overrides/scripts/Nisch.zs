@@ -61,3 +61,15 @@ events.onEntityLivingAttacked(function(event as crafttweaker.event.EntityLivingA
     if(player.world.getRandom().nextFloat() < Parasited.trinkets.fairyBlockChance)
     event.cancel();
 });
+
+events.onPlayerAnvilUpdate(function(event as crafttweaker.event.PlayerAnvilUpdateEvent){
+    val left = event.leftItem;
+    val right = event.rightItem;
+    if(isNull(left) || isNull(right)) return;
+
+    //Don't allow to add enchants to the inkwell
+    if(<enchanter_tools:enchanted_inkwell>.matches(left)) event.cancel();
+
+    // Don't allow to add enchants to already enchanted books using inkwell
+    if(<minecraft:enchanted_book>.matches(left) && <enchanter_tools:enchanted_inkwell>.matches(right)) event.cancel();
+});
