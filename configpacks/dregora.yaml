@@ -3197,16 +3197,16 @@ patches:
             - mod_lavacow:poisonous
           remove:
             - mujmajnkraftsbettersurvival:vitality
-        S:"Level Enchantment Blacklist:
+        S:"Level Enchantment Blacklist":
           add:
             - mujmajnkraftsbettersurvival:vitality
-        S:"Random Enchantment Blacklist:
+        S:"Random Enchantment Blacklist":
           add:
             - mujmajnkraftsbettersurvival:vitality
-        S:"Enchanting Table Blacklist:
+        S:"Enchanting Table Blacklist":
           add:
             - mujmajnkraftsbettersurvival:vitality
-        S:"Librarian Enchantment Blacklist:
+        S:"Librarian Enchantment Blacklist":
           add:
             - mujmajnkraftsbettersurvival:vitality
 
