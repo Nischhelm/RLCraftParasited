@@ -11,6 +11,7 @@ build:
     - dregora_omega
     - dregora_unparasited
     - allblightinfernalchampions
+    - noflyzone
   configpacks_dest: "overrides"
   include:
     - manifest.json

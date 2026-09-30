@@ -1,0 +1,34 @@
+name: "RLCraft Parasited NoFlyZone"
+version: "1.0.0"
+description: "You can't fly"
+
+build:
+  output_name: "NoFlyZone.zip"
+
+patches:
+  - type: file_add
+    source: noflyzone/readme.md
+    destination: readme.md
+    description: "Readme"
+
+  - type: file_add
+    source: noflyzone/scripts/NoFlyZone.zs
+    destination: scripts/NoFlyZone.zs
+    description: "mount blacklist and no elytra"
+
+  - type: cfg_patch
+    file: config/potioncontrol.cfg
+    description: "blacklist flight effect"
+    changes:
+      general.blacklists:
+        S:"Registered Potion Blacklist":
+          add:
+            - potioncore:flight
+
+  - type: cfg_patch
+    file: config/ebwizardry/ebwizardry.cfg
+    description: "blacklist flight+levitate spell"
+    changes:
+      spells:
+        B:"ebwizardry:flight": false
+        B:"ebwizardry:levitation": false

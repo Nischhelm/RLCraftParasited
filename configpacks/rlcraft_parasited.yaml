@@ -11,6 +11,7 @@ build:
     - hcc_omega
     - unparasited
     - allblightinfernalchampions
+    - noflyzone
   configpacks_dest: "overrides"
   include:
     - manifest.json
