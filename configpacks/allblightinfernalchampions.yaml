@@ -18,7 +18,7 @@ patches:
     description: "Infernal"
     changes:
       general:
-        I:eliteRarity: 1
+        I:eliteRarity: 2
         S:droppedItemIDsElite: iron_shovel,iron_pickaxe,iron_axe,iron_sword,iron_hoe,chainmail_helmet,chainmail_chestplate,chainmail_leggings,chainmail_boots,iron_helmet,iron_chestplate,iron_leggings,iron_boots,cookie-0-6,spartanweaponry:dagger_bronze,spartanweaponry:longsword_bronze,spartanweaponry:katana_bronze,spartanweaponry:saber_bronze,spartanweaponry:rapier_bronze,spartanweaponry:greatsword_bronze,spartanweaponry:hammer_bronze,spartanweaponry:warhammer_bronze,spartanweaponry:spear_bronze,spartanweaponry:halberd_bronze,spartanweaponry:pike_bronze,spartanweaponry:lance_bronze,spartanweaponry:longbow_bronze,spartanweaponry:crossbow_bronze,spartanweaponry:throwing_knife_bronze,spartanweaponry:throwing_axe_bronze,spartanweaponry:javelin_bronze,spartanweaponry:boomerang_bronze,spartanweaponry:battleaxe_bronze,spartanweaponry:mace_bronze,spartanweaponry:scythe_bronze
         I:ultraRarity: 20
       permittedentities:
