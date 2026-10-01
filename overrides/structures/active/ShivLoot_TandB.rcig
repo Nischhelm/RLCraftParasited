@@ -9,16 +9,7 @@
       "item": {
         "id": "xat:polarized_stone",
         "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quality": {
-              "nbtType": "compound",
-              "nbt": {}
-            }
-          }
-        }
+        "count": 1
       }
     },
     {
@@ -32,7 +23,7 @@
         "tag": {
           "nbtType": "compound",
           "nbt": {
-            "Quality": {
+            "Elements": {
               "nbtType": "compound",
               "nbt": {}
             }
@@ -47,101 +38,7 @@
       "item": {
         "id": "xat:ender_tiara",
         "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quality": {
-              "nbtType": "compound",
-              "nbt": {
-                "Slots": {
-                  "nbtType": "list",
-                  "nbt": [
-                    {
-                      "nbtType": "string",
-                      "nbt": "baubles_trinket"
-                    },
-                    {
-                      "nbtType": "string",
-                      "nbt": "offhand"
-                    }
-                  ]
-                },
-                "Color": {
-                  "nbtType": "string",
-                  "nbt": "aqua"
-                },
-                "AttributeModifiers": {
-                  "nbtType": "list",
-                  "nbt": [
-                    {
-                      "nbtType": "compound",
-                      "nbt": {
-                        "UUIDMost": {
-                          "nbtType": "long",
-                          "nbt": 7927741758841900562
-                        },
-                        "UUIDLeast": {
-                          "nbtType": "long",
-                          "nbt": -8561626430048829571
-                        },
-                        "Amount": {
-                          "nbtType": "double",
-                          "nbt": 0.029999999329447746
-                        },
-                        "AttributeName": {
-                          "nbtType": "string",
-                          "nbt": "potioncore.digSpeed"
-                        },
-                        "Operation": {
-                          "nbtType": "int",
-                          "nbt": 2
-                        },
-                        "Name": {
-                          "nbtType": "string",
-                          "nbt": "qualitytools"
-                        }
-                      }
-                    },
-                    {
-                      "nbtType": "compound",
-                      "nbt": {
-                        "UUIDMost": {
-                          "nbtType": "long",
-                          "nbt": 4476551888816721173
-                        },
-                        "UUIDLeast": {
-                          "nbtType": "long",
-                          "nbt": -5400474216003368783
-                        },
-                        "Amount": {
-                          "nbtType": "double",
-                          "nbt": 0.029999999329447746
-                        },
-                        "AttributeName": {
-                          "nbtType": "string",
-                          "nbt": "generic.attackSpeed"
-                        },
-                        "Operation": {
-                          "nbtType": "int",
-                          "nbt": 2
-                        },
-                        "Name": {
-                          "nbtType": "string",
-                          "nbt": "qualitytools"
-                        }
-                      }
-                    }
-                  ]
-                },
-                "Name": {
-                  "nbtType": "string",
-                  "nbt": "quality.graceful.name"
-                }
-              }
-            }
-          }
-        }
+        "count": 1
       }
     },
     {
@@ -151,16 +48,7 @@
       "item": {
         "id": "xat:wither_ring",
         "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quality": {
-              "nbtType": "compound",
-              "nbt": {}
-            }
-          }
-        }
+        "count": 1
       }
     },
     {
@@ -170,72 +58,7 @@
       "item": {
         "id": "xat:glow_ring",
         "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quality": {
-              "nbtType": "compound",
-              "nbt": {
-                "Slots": {
-                  "nbtType": "list",
-                  "nbt": [
-                    {
-                      "nbtType": "string",
-                      "nbt": "baubles_trinket"
-                    },
-                    {
-                      "nbtType": "string",
-                      "nbt": "offhand"
-                    }
-                  ]
-                },
-                "Color": {
-                  "nbtType": "string",
-                  "nbt": "blue"
-                },
-                "AttributeModifiers": {
-                  "nbtType": "list",
-                  "nbt": [
-                    {
-                      "nbtType": "compound",
-                      "nbt": {
-                        "UUIDMost": {
-                          "nbtType": "long",
-                          "nbt": -5223805302041722617
-                        },
-                        "UUIDLeast": {
-                          "nbtType": "long",
-                          "nbt": -9024707836602828522
-                        },
-                        "Amount": {
-                          "nbtType": "double",
-                          "nbt": 0.05000000074505806
-                        },
-                        "AttributeName": {
-                          "nbtType": "string",
-                          "nbt": "generic.movementSpeed"
-                        },
-                        "Operation": {
-                          "nbtType": "int",
-                          "nbt": 2
-                        },
-                        "Name": {
-                          "nbtType": "string",
-                          "nbt": "qualitytools"
-                        }
-                      }
-                    }
-                  ]
-                },
-                "Name": {
-                  "nbtType": "string",
-                  "nbt": "quality.speedy.name"
-                }
-              }
-            }
-          }
-        }
+        "count": 1
       }
     },
     {
@@ -245,16 +68,7 @@
       "item": {
         "id": "xat:poison_stone",
         "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quality": {
-              "nbtType": "compound",
-              "nbt": {}
-            }
-          }
-        }
+        "count": 1
       }
     }
   ],
