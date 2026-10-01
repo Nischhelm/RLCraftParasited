@@ -85,3 +85,16 @@ zenClass BlockPonderingOrbMixin {
         return player.experienceTotal;
     }
 }
+
+#mixin {targets: "com.sirsquidly.enchanter_tools.common.CommonEvents"}
+zenClass CommonEventsMixin {
+
+    #mixin WrapWithCondition
+    #{
+    #   method: "createEnchantedInkwell",
+    #   at: {value: "INVOKE", target: "Lcom/sirsquidly/enchanter_tools/common/CommonEvents;applyRandomSingleMaxEnchant(Ljava/util/Random;Lnet/minecraft/item/ItemStack;IIZ)V"}
+    #}
+    function zenutils_disableInkwellEnchant(rand as native.java.util.Random, stack as native.net.minecraft.item.ItemStack, minPower as int, maxPower as int, forceMaxLevel as bool) as bool {
+        return false; // don't enchant inkwells in lootpools
+    }
+}
