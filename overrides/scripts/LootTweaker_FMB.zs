@@ -24,6 +24,7 @@ rlcraftFishing.addItemEntry(<minecraft:saddle>, 5, 2, [], [], "treasure_7");//sa
 rlcraftFishing.addItemEntry(<minecraft:bow>, 5, 2, [Functions.setDamage(0.0, 0.9), Functions.enchantWithLevels(30, 30, true)], [], "treasure_8");//bow
 rlcraftFishing.addItemEntry(<minecraft:fishing_rod>, 5, 2, [Functions.setDamage(0.0, 0.25), Functions.enchantWithLevels(30, 30, true)], [], "treasure_9");//fishing rod enchanted
 rlcraftFishing.addItemEntry(<minecraft:book>, 5, 2, [Functions.enchantWithLevels(30, 30, true)], [], "treasure_10");//enchanted book
+rlcraftFishing.addItemEntry(<enchanter_tools:enchanted_inkwell>, 5, 2, [], [], "treasure_11");
 
 //Junk AquaCulture
 rlcraftFishing.addItemEntry(<minecraft:apple>, 10, -2, [], [], "junk_1");//apple

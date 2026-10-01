@@ -105,6 +105,7 @@ highPool.addItemEntry(<minecraft:cake>, 20, 1, [Functions.setCount(0, 1)], [], "
 highPool.addItemEntry(<minecraft:quartz_block>, 10, 1, [Functions.setCount(0, 16)], [], "10");
 highPool.addItemEntry(<minecraft:quartz>, 15, 1, [Functions.setCount(0, 16)], [], "11");
 highPool.addItemEntry(<minecraft:dye>, 15, 1, [Functions.setCount(0, 8), Functions.setMetadata(5, 5)], [], "12");
+highPool.addItemEntry(<enchanter_tools:enchanted_inkwell>, 3, 1, [], [], "13");
 
 
 //==== Builder Loot ====
