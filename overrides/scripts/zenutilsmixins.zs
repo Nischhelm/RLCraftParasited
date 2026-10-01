@@ -9,6 +9,7 @@ import native.net.minecraft.item.Item;
 import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.block.BlockCrops;
 import native.net.minecraft.block.Block;
+import native.net.minecraft.enchantment.Enchantment;
 import native.java.util.Collection;
 import native.srpmixins.util.customphasemechanics.SRPSaveDataInterface;
 import native.com.dhanantry.scapeandrunparasites.entity.ai.misc.EntityParasiteBase;
@@ -188,7 +189,7 @@ zenClass WizardryJEIPluginMixin {
     #   method: "register",
     #   at: {value: "INVOKE", target: "Lelectroblob/wizardry/integration/jei/WizardryJEIPlugin;addEnchantmentInfo(Lmezz/jei/api/IModRegistry;Lnet/minecraft/enchantment/Enchantment;)V"}
     #}
-    function zenutils_dontRegisterEnchantmentInfos(registry as native.mezz.jei.api.IModRegistry, enchantment as native.net.minecraft.enchantment.Enchantment) as bool {
+    function zenutils_dontRegisterEnchantmentInfos(registry as native.mezz.jei.api.IModRegistry, enchantment as Enchantment) as bool {
         return false;
     }
 }
@@ -604,7 +605,7 @@ zenClass QuarkHandlerQKAncientTomeAnvilUpdateMixin {
         if (tomeEnchants.size() != 1) return false;
 
         val onlyEntry = tomeEnchants.entrySet().iterator().next() as native.java.util.Map.Entry;
-        val onlyEnchant = onlyEntry.getKey() as native.net.minecraft.enchantment.Enchantment;
+        val onlyEnchant = onlyEntry.getKey() as Enchantment;
         if (isNull(onlyEnchant)) return false;
 
         val loc = onlyEnchant.getRegistryName();
@@ -613,7 +614,7 @@ zenClass QuarkHandlerQKAncientTomeAnvilUpdateMixin {
         val iterator = itemEnchants.entrySet().iterator();
         while (iterator.hasNext()) {
             val entry = iterator.next() as native.java.util.Map.Entry;
-            val enchant = entry.getKey() as native.net.minecraft.enchantment.Enchantment;
+            val enchant = entry.getKey() as Enchantment;
             if (!isNull(enchant) && enchant.isCurse()) iterator.remove();
         }
 
