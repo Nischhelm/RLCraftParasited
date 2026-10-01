@@ -7,6 +7,9 @@ furnace.remove(<minecraft:iron_nugget>);
 furnace.remove(<defiledlands:umbrium_nugget>);
 furnace.remove(<variedcommodities:ingot_steel>);
 
+furnace.remove(<betterendforge:ender_dust>);
+furnace.remove(<betterendforge:thallasium_ingot>);
+
 furnace.remove(<iceandfire:silver_ingot>);
 furnace.remove(<iceandfire:sapphire_gem>);
 
