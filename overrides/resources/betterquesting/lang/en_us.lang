@@ -747,3 +747,20 @@ betterquesting.task.location.204=Small Town (RLCraft_SmallTown)
 betterquesting.task.location.207=Friendly Outpost (RLCraft_FriendlyOutpost)
 betterquesting.task.location.208=Plains Camp (RLCraft_PlainsCamp)
 betterquesting.task.location.209=College of Evil (RLCraft_ForestStronghold)
+
+# Added by Hussarar
+betterquesting.quest.desc.349=A truly terrifying being... well, except when its asleep during the day.
+betterquesting.quest.desc.350=Do not wear these during a thunderstorm unless you want to become a human lightning rod.\n\n(Only one type is needed.)
+betterquesting.quest.desc.351=One billion joules of pure electrical energy. Try not to drop it in the bathtub.
+betterquesting.quest.desc.352=Prolonged holding might cause spontaneous hair standing up, mild tingling, and an urge to fight a cloud.
+betterquesting.quest.desc.355=Free food! Don't think about the dirt too hard.
+betterquesting.quest.desc.356=Do you think getting hit by these would hurt?
+betterquesting.quest.desc.357=While technically you can eat olives straight off a tree, you don't want to. Raw olives are extremely bitter and have very different textures then their cured counterparts.
+
+betterquesting.quest.name.349=Slayer of Lightning
+betterquesting.quest.name.350=Scales of Lightning
+betterquesting.quest.name.351=Bottle o' Storm
+betterquesting.quest.name.352=Thor's Toothpick
+betterquesting.quest.name.355=Wilderness Berries
+betterquesting.quest.name.356=Bullet Berries
+betterquesting.quest.name.357=Pitiful
