@@ -89,6 +89,7 @@ zenClass BlockPonderingOrbMixin {
 #mixin {targets: "com.sirsquidly.enchanter_tools.common.CommonEvents"}
 zenClass CommonEventsMixin {
 
+    #mixin Static
     #mixin WrapWithCondition
     #{
     #   method: "createEnchantedInkwell",

@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 import dynamic.zenutils.config.Parasited;
 import crafttweaker.recipes.ICraftingInfo;
+import mods.betterendforge.Alloying;
+import mods.betterendforge.Infusion;
 
 print("Script starting!");
 
