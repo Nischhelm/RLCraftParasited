@@ -3262,7 +3262,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         },
         "9:10": {
           "index:3": 9,
@@ -3279,7 +3279,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         },
         "10:10": {
           "index:3": 10,
@@ -3296,7 +3296,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         },
         "11:10": {
           "index:3": 11,
@@ -3313,7 +3313,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         }
       },
       "rewards:9": {},
@@ -27804,7 +27804,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         }
       },
       "rewards:9": {},
@@ -27917,7 +27917,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         }
       },
       "rewards:9": {},
@@ -27968,7 +27968,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         }
       },
       "rewards:9": {},
@@ -28070,7 +28070,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         }
       },
       "rewards:9": {},
