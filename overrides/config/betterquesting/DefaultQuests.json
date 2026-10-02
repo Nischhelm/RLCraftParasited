@@ -28019,7 +28019,7 @@
           "consume:1": 0,
           "autoConsume:1": 0,
           "taskID:8": "bq_standard:retrieval",
-          "ignoreNBT:1": 0
+          "ignoreNBT:1": 1
         }
       },
       "rewards:9": {},
