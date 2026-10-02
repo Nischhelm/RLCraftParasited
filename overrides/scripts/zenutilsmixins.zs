@@ -563,6 +563,33 @@ zenClass ItemSawMixin {
     }
 }
 
+// Post AnimalTameEvent when an Amphithere or Cockatrice is tamed, like vanilla and the Hippocampus do, so Tame quest tasks count them
+#mixin {targets: "com.github.alexthe666.iceandfire.entity.EntityAmphithere"}
+zenClass EntityAmphithereMixin {
+    #mixin WrapOperation
+    #{
+    #   method: "func_70636_d",
+    #   at: {value: "INVOKE", target: "Lcom/github/alexthe666/iceandfire/entity/EntityAmphithere;func_193101_c(Lnet/minecraft/entity/player/EntityPlayer;)V"}
+    #}
+    function zenutils_postTameEvent(amphithere as native.com.github.alexthe666.iceandfire.entity.EntityAmphithere, player as EntityPlayer, original as mixin.Operation) as void {
+        if(!native.net.minecraftforge.event.ForgeEventFactory.onAnimalTame(amphithere, player))
+            original.call(amphithere, player);
+    }
+}
+
+#mixin {targets: "com.github.alexthe666.iceandfire.entity.EntityCockatrice"}
+zenClass EntityCockatriceMixin {
+    #mixin WrapOperation
+    #{
+    #   method: "func_70636_d",
+    #   at: {value: "INVOKE", target: "Lcom/github/alexthe666/iceandfire/entity/EntityCockatrice;func_193101_c(Lnet/minecraft/entity/player/EntityPlayer;)V"}
+    #}
+    function zenutils_postTameEvent(cockatrice as native.com.github.alexthe666.iceandfire.entity.EntityCockatrice, player as EntityPlayer, original as mixin.Operation) as void {
+        if(!native.net.minecraftforge.event.ForgeEventFactory.onAnimalTame(cockatrice, player))
+            original.call(cockatrice, player);
+    }
+}
+
 // Add configurable items to Golden Osmosis trait repairable list
 #mixin {targets: "codersafterdark.reskillable.skill.magic.TraitGoldenOsmosis"}
 zenClass TraitGoldenOsmosisMixin {
