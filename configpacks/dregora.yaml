@@ -1,11 +1,11 @@
 name: "Dregora Parasited"
-version: "Dregora 1.1.2b - Aug 21 2026"
+version: "indev"
 description: "Dregora x Parasited"
 
 # Build configuration
 build:
   mode: modpack
-  output_name: "Dregora Parasited.zip"
+  output_name: "Dregora Parasited {{version}}.zip"
   build_configpacks:
     - dregora_hcc
     - dregora_omega

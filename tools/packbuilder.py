@@ -233,6 +233,10 @@ class PackBuilder:
             # Create ZIP
             output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
 
+            # Replace {{version}} in output_name if version is available
+            if pack.version:
+                output_name = output_name.replace('{{version}}', pack.version)
+
             output_zip = self.output_dir / output_name
 
             print(f"  Creating ZIP: {output_zip.name}")
@@ -296,6 +300,10 @@ class PackBuilder:
 
             # 4. Create ZIP
             output_name = pack.build_config.get('output_name', f'{configpack_name}.zip')
+
+            # Replace {{version}} in output_name if version is available
+            if pack.version:
+                output_name = output_name.replace('{{version}}', pack.version)
 
             output_zip = self.output_dir / output_name
 

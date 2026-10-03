@@ -1,11 +1,11 @@
 name: "RLCraft Parasited"
-version: "Aug 21 2026"
+version: "indev"
 description: "RLCraft Parasited"
 
 # Build configuration
 build:
   mode: modpack
-  output_name: "RLCraft Parasited.zip"
+  output_name: "RLCraft Parasited {{version}}.zip"
   build_configpacks:
     - hcc
     - hcc_omega

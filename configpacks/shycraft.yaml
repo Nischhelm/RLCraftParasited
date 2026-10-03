@@ -1,11 +1,11 @@
 name: "ShyCraft Parasited"
-version: "1.2.3 - Aug 21 2026"
+version: "indev"
 description: "A modification of Parasited"
 
 # Build configuration
 build:
   mode: modpack
-  output_name: "ShyCraft Parasited.zip"
+  output_name: "ShyCraft Parasited {{version}}.zip"
   include:
     - manifest.json
     - profileImage

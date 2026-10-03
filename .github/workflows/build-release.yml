@@ -94,9 +94,9 @@ jobs:
           name: ${{ steps.version.outputs.VERSION }}
           body_path: /tmp/release_body.md
           files: |
-            build/RLCraft Parasited.zip
-            build/Dregora Parasited.zip
-            build/ShyCraft Parasited.zip
+            build/RLCraft Parasited ${{ steps.version.outputs.VERSION }}.zip
+            build/Dregora Parasited ${{ steps.version.outputs.VERSION }}.zip
+            build/ShyCraft Parasited ${{ steps.version.outputs.VERSION }}.zip
           draft: false
           prerelease: false
         env:
