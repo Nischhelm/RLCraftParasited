@@ -1,6 +1,6 @@
---- Oct ? 2026 ---
+--- Oct 3 2026 ---
 
-Another maintenance update mainly for crashy Dregora biomes
+Another maintenance update, mainly this quick bc of crashy Dregora biomes
 
 Mods
     Updated Luckified, now shows rolled lvls
@@ -13,11 +13,11 @@ Config
     Removed all hardcoded qualities on reccomplex loottables (ever found that worthless stone axe?)
     Fixed Shivaxi Monument neutral dragon eye not working (hopefully)
     Added inkwells to various loot pools and to villager trades
-    Hid various items in jei
+    Hid various unused items in jei (thanks hussarar!)
 
 Scripts
-    Removed a lot of betterend items (thanks hussarar!)
-    fixed betterquesting hippo+amphi tame quests (thanks freshglitch!)
+    Removed a lot of BetterEnd items (thanks hussarar!)
+    fixed hippo+amphi not working on betterquesting tame quests (thanks fresh-Glitch!)
 
 Dregora
     Updated DregoraRL to fix more crashy areas
@@ -25,9 +25,9 @@ Dregora
 Configpacks
     Added NoFlyZone, pushed by hussarar
     HCC now also disallows stone+wooden scythes (ty hussarar)
-    Disabled LC phase lock in unparasited
+    Disabled LC phase lock in unparasited. apparently lots of things wrong with unparasited LC... is a todo
 
-Added build tag to released zips so its easier to see what is what
+Added version tag to released zips so its easier to see what is what. lets hope it works
 
 --- Sept 30 2026 ---
 
