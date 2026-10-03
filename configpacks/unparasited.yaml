@@ -57,6 +57,13 @@ patches:
       lostcity_rlcraft:
         S:allowedBiomeFactors: []
 
+  - type: cfg_patch
+    file: config/srpmixins.cfg
+    description: "Remove LC phase lock"
+    changes:
+      general.mod compats:
+        I:"LC Portal Phase Lock": -1
+
   - type: json_patch
     file: config/CustomMainMenu/mainmenu.json
     encoding: latin-1
