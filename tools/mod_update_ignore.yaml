@@ -40,3 +40,6 @@ ignore:
 
   - projectID: 1268838
     reason: "SRPDeepSeaDanger is on the latest compatible version already, newer versions crash or depend on SRP 1.10"
+
+  - projectID: 289397
+    reason: "Havent checked yet if new xp from harvest breaks anything"
