@@ -111,3 +111,26 @@ zenClass InvTweaksAutoRefillRaceConditionFixMixin {
         }
     }
 }
+
+#mixin {targets: "rlmixins.handlers.rlmixins.PlayerNauseaHandler"}
+zenClass PlayerNauseaHandlerMixin {
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "onInputUpdateEvent",
+    #   constant: {floatValue = 4.0F}
+    #}
+    function zenutils_reduceMovementMult(mult as float) as float  {
+        return 2.0F as float;
+    }
+
+    #mixin Static
+    #mixin ModifyConstant
+    #{
+    #   method: "onInputUpdateEvent",
+    #   constant: {floatValue = 2.0F}
+    #}
+    function zenutils_reduceMovementMultHalved(mult as float) as float  {
+        return 1.0F as float;
+    }
+}
