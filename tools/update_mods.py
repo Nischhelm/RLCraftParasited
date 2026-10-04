@@ -9,6 +9,8 @@ Usage:
     python tools/update_mods.py
     python tools/update_mods.py --verbose
     python tools/update_mods.py --delay 200
+    python tools/update_mods.py --mod enchantmentcontrol
+    python tools/update_mods.py --mod tinkers --verbose
 """
 
 from pathlib import Path
@@ -170,7 +172,8 @@ class ModUpdater:
         api_key: str,
         ignore_list: List[int],
         verbose: bool = False,
-        request_delay: float = 0.1
+        request_delay: float = 0.1,
+        mod_filter: Optional[str] = None
     ):
         """
         Initialize ModUpdater.
@@ -181,6 +184,7 @@ class ModUpdater:
             ignore_list: List of projectIDs to ignore
             verbose: Enable verbose logging
             request_delay: Delay between API requests in seconds (default 0.1 = 100ms)
+            mod_filter: Optional mod name filter (case-insensitive substring match)
         """
         self.base_dir = base_dir
         self.manifest_path = base_dir / "manifest.json"
@@ -188,6 +192,7 @@ class ModUpdater:
         self.ignore_list = set(ignore_list)
         self.verbose = verbose
         self.request_delay = request_delay
+        self.mod_filter = mod_filter.lower() if mod_filter else None
 
         # API configuration
         self.headers = {
@@ -444,17 +449,41 @@ class ModUpdater:
             sys.exit(1)
 
         files = manifest.get('files', [])
-        total = len(files)
+        total_mods = len(files)
 
-        print(f"Loaded {total} mods from manifest.json")
-        print(f"Ignored {len(self.ignore_list)} mods from ignore list")
-        print()
+        # Apply mod filter if specified
+        if self.mod_filter:
+            filtered_files = [
+                entry for entry in files
+                if self.mod_filter in entry.get('fileName', '').lower()
+            ]
+
+            print(f"Loaded {total_mods} mods from manifest.json")
+            print(f"Filter: --mod '{self.mod_filter}'")
+            print(f"Matched {len(filtered_files)} mod(s):")
+            for entry in filtered_files:
+                print(f"  • {entry.get('fileName', 'unknown')} ({entry['projectID']})")
+            print()
+
+            if not filtered_files:
+                print(f"No mods found matching '{self.mod_filter}'")
+                print("=" * 60)
+                sys.exit(0)
+
+            files_to_process = filtered_files
+        else:
+            print(f"Loaded {total_mods} mods from manifest.json")
+            print(f"Ignored {len(self.ignore_list)} mods from ignore list")
+            print()
+            files_to_process = files
+
+        total = len(files_to_process)
 
         if not self.verbose:
             print("Updating mods (use --verbose to see details)...")
 
         # Process each mod
-        for i, entry in enumerate(files, 1):
+        for i, entry in enumerate(files_to_process, 1):
             self.update_mod_entry(entry, i, total)
 
         # Save updated manifest
@@ -524,6 +553,11 @@ def main():
         default=100,
         help='Delay between API requests in milliseconds (default: 100)'
     )
+    parser.add_argument(
+        '--mod',
+        type=str,
+        help='Filter to only update mods matching this name (case-insensitive substring match)'
+    )
 
     args = parser.parse_args()
 
@@ -547,7 +581,8 @@ def main():
         api_key=api_key,
         ignore_list=ignore_list,
         verbose=args.verbose,
-        request_delay=args.delay / 1000.0  # Convert ms to seconds
+        request_delay=args.delay / 1000.0,  # Convert ms to seconds
+        mod_filter=args.mod
     )
 
     updater.update_all_mods()
