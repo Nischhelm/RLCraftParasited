@@ -17,7 +17,7 @@ Config
 
 Scripts
     Removed a lot of BetterEnd items (thanks hussarar!)
-    fixed hippo+amphi not working on betterquesting tame quests (thanks fresh-Glitch!)
+    fixed i&f cocka+amphi not working on betterquesting tame quests (thanks fresh-Glitch!)
 
 Dregora
     Updated DregoraRL to fix more crashy areas
