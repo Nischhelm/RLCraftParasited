@@ -58,7 +58,6 @@ zenClass BloodmoonHandlerMixin {
         if(players.length == 0) return; # no players in dim, shouldnt happen
     
         for player in players {
-            val player as EntityPlayer = players[0];
             val phase as int = SRPSaveDataInterface.get(world, player, null).getEvolutionPhase(world.provider.getDimension()) as int;
             if(phase >= zenutils_cfg_val) return; // anyone above phase 2: bloodmoons allowed
         }
