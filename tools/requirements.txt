@@ -4,3 +4,4 @@ jsonschema>=4.17.0
 click>=8.1.0
 colorama>=0.4.6
 requests>=2.31.0
+nbtlib>=2.0.0
