@@ -1,0 +1,12 @@
+{
+  "id": "potioncore:klutz",
+  "attributeModifiers": [
+    {
+      "attribute": "potioncore.projectileDamage",
+      "modifierName": "effect.klutz",
+      "amount": -0.45,
+      "operation": 2,
+      "uuid": "fd747754-0718-456c-8538-330c4ab65793"
+    }
+  ]
+}

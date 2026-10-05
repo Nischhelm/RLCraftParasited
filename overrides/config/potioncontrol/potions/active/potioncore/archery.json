@@ -1,0 +1,12 @@
+{
+  "id": "potioncore:archery",
+  "attributeModifiers": [
+    {
+      "attribute": "potioncore.projectileDamage",
+      "modifierName": "effect.archery",
+      "amount": 0.5,
+      "operation": 2,
+      "uuid": "ad83c3cc-e133-41f2-bd3c-c553902f7eca"
+    }
+  ]
+}
