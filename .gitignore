@@ -23,6 +23,7 @@ overrides/config/chattweaks.cfg
 overrides/config/chunkbase_villageinfo_ssp.cfg
 overrides/config/enchantmentcontrol/names.txt
 overrides/config/enchantmentcontrol/descriptions.txt
+/overrides/config/enchantmentcontrol/inferred-inactive
 /overrides/config/fantasticlib/reference
 overrides/config/fw.cfg
 overrides/config/potioncontrol/descriptions.txt
