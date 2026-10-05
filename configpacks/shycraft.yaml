@@ -211,7 +211,7 @@ patches:
         - Name:generic.reachDistance, Amount:0.1, Operation:1
         - Name:xat.flyspeed, Amount:0.35, Operation:2
         - Name:xat.jump, Amount:0.25, Operation:2
-        - Name:xat.stepheight, Amount:0.5, Operation:1
+        - Name:xat.stepheight, Amount:0.5, Operation:0
     general.server settings.race configuration.elf.abilities.skilled archer:
       D:"05. Damage Multiplier": 2.5
       D:"06. Minimum Damage Multiplier": 0.5
