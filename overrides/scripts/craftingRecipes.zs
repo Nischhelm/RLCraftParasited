@@ -990,7 +990,7 @@ recipes.addShaped("rec90e",<locks:diamond_lock_pick>,
 recipes.addShaped("rec90f",<locks:dragonbone_lock_pick>*4,
  [[null,<iceandfire:dragonbone>,<iceandfire:dragonbone>],
   [null,<iceandfire:dragonbone>,null],
-  [<iceandfire:dragonbone>,null,null]]);
+  [<iceandfire:witherbone>,null,null]]);
 
 recipes.addShaped("rec92",<variedcommodities:lamp>,
  [[<contenttweaker:steel_nugget>,<variedcommodities:ingot_steel>,<contenttweaker:steel_nugget>],
