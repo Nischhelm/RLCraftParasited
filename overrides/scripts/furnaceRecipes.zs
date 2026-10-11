@@ -346,15 +346,15 @@ furnace.addRecipe(<minecraft:diamond> * 7, <iceandfire:diamond_hippogryph_armor:
 furnace.addRecipe(<minecraft:gold_ingot> * 7, <iceandfire:gold_hippogryph_armor:*>, 1);
 furnace.addRecipe(<minecraft:iron_ingot> * 7, <iceandfire:iron_hippogryph_armor:*>, 0.7);
 
-furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <notreepunching:mattock/diamond>, 1);
-furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:knife/diamond>, 1);
-furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:saw/diamond>, 1);
-furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:mattock/gold>, 1);
-furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:saw/gold>, 1);
-furnace.addRecipe(<minecraft:gold_nugget> * 1, <notreepunching:knife/gold>, 1);
-furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:mattock/iron>, 0.7);
-furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:saw/iron>, 0.7);
-furnace.addRecipe(<minecraft:iron_nugget> * 1, <notreepunching:knife/iron>, 0.7);
+furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <notreepunching:mattock/diamond:*>, 1);
+furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:knife/diamond:*>, 1);
+furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:saw/diamond:*>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:mattock/gold:*>, 1);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:saw/gold:*>, 1);
+furnace.addRecipe(<minecraft:gold_nugget> * 1, <notreepunching:knife/gold:*>, 1);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:mattock/iron:*>, 0.7);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:saw/iron:*>, 0.7);
+furnace.addRecipe(<minecraft:iron_nugget> * 1, <notreepunching:knife/iron:*>, 0.7);
 
 furnace.addRecipe(<minecraft:diamond> * 1, <wornhorseshoes:horseshoes_diamond>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <wornhorseshoes:horseshoes_gold>, 1);
@@ -362,7 +362,7 @@ furnace.addRecipe(<minecraft:iron_ingot> * 1, <wornhorseshoes:horseshoes_iron>, 
 
 furnace.addRecipe(<minecraft:iron_ingot> * 2, <minecraft:compass>, 0.7);
 furnace.addRecipe(<minecraft:gold_ingot> * 2, <minecraft:clock>, 1);
-furnace.addRecipe(<minecraft:iron_nugget> * 6, <minecraft:shears>, 0.1);
+furnace.addRecipe(<minecraft:iron_nugget> * 6, <minecraft:shears:*>, 0.1);
 furnace.addRecipe(<minecraft:iron_nugget>, <minecraft:iron_bars>, 0.1);
 furnace.addRecipe(<minecraft:iron_ingot> * 1, <minecraft:bucket>, 0.7);
 furnace.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_trapdoor>, 0.7);
