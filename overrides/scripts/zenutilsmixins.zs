@@ -53,6 +53,7 @@ zenClass BloodmoonHandlerMixin {
     #   cancellable: true
     #}
     function zenutils_disableBloodmoon(event as native.net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent, ci as mixin.CallbackInfo) as void {
+        if(!native.com.dhanantry.scapeandrunparasites.util.config.SRPConfigSystems.useEvolution) return; // for unparasited
         val world as World = event.world;
         val players as [EntityPlayer] = world.playerEntities;
         if(players.length == 0) return; # no players in dim, shouldnt happen
