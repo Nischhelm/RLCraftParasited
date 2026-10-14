@@ -10,14 +10,7 @@ ConfigUtils.named("parasited")
 .category("dregora")
         .booleanValue("useDregoraRecipes", false).displayName("Use Dregora Recipes").comment("Some recipes will only be removed, as they are added differently by Dregora").add()
 .add()
-.category("locks")
-        .rangedDouble("lockpickPitchMulti", 0.5, 0.1, 2.5).sliding().displayName("Lockpick Pitch Multi").comment("By how much to multiply the pitch of the lock pick fail sound to indicate you are right next to it. Default 1.25").add()
-        .rangedDouble("dragonboneLockpickStrength", 0.97, 0, 2.0).sliding().displayName("Dragonbone Lockpick Strength").comment("Under normal conditions this is the chance to keep the lockpick on failure").requiresMcRestart().add()
-.add()
 .category("srp")
-        .rangedInteger("minPhaseBloodMoon", 3, 0, 10).sliding().displayName("Min Phase Blood Moon").comment("There can be no bloodmoon if everyone in overworld is below this phase").add()
-        .rangedDouble("infernalIncreaseOnHighPhase", 0.5, 0.0, 20.0).sliding().displayName("Phase 9+10 Infernal Increase").comment("0.5=+50%, is active at both phase 9+10. Only works approximately as we work with the integer weights of infernalmobs cfg").add()
-        .rangedDouble("championIncreaseOnHighPhase", 0.5, 0.0, 20.0).sliding().displayName("Phase 9+10 Champion Increase").comment("0.5=+50%, is active at both phase 9+10").add()
         .rangedDouble("fireCOTHRemovalChance", 0.2, 0.0, 1.0).sliding().displayName("Fire removes COTH Chance").comment("0.2=20%").add()
 .add()
 .category("trinkets")
@@ -36,17 +29,8 @@ ConfigUtils.named("parasited")
         } as string[][string]).displayName("Race Weapon Affinities").comment("Which (spartan/BS) weapon type each trinkets race has an affinity for and gets +25% dmg").add()
         .rangedDouble("fairyBlockChance", 0.2, 0.0, 1.0).sliding().displayName("Fairy Block Chance").comment("Chance to fully ignore attacks. 0.2=20%").add()
 .add()
-.stringValues("additionalOsmosisItems", ["forgottenitems:hasty_pickaxe", "forgottenitems:obsidian_harvester"] as string[]).displayName("Osmosis Additional Items").comment(["List of additional item registry names that can be repaired by the Golden Osmosis trait."] as [string]).add()
 .booleanValue("useShyCraftDragonGemRecipe", false).displayName("Use ShyCraft Dragon Gem Recipe").comment("ShyCraft uses a more difficult crafting recipe for dragon gems, which can be enabled here.").add()
 .booleanValue("useShyCraftSwapRings", false).displayName("Use ShyCraft Ring Distribution Rules").comment("ShyCraft moves the titan ring to dragon(+taurus) chests, replacing it with a dwarf ring.").add()
-.rangedInteger("netherBiomeSize", 1, 0, 10).sliding().displayName("Nether Biome Size").comment("Integer multiplier for biome patch size in the Nether. Default 3 = big biomes").add()
-.rangedInteger("musketLoadingTicks", 20, 0, 100).sliding().displayName("Musket Loading Ticks").comment("How long it takes to load the VC Musket. Default 60t = 3s.").add()
-.rangedInteger("maxPixieHeight", 110, 0, 256).sliding().displayName("Pixie Max Spawn Height").comment("Familiar Fauna Pixies wont spawn higher than this y value. Default 90").add()
-.lowerRangedInteger("greaterXpTomeSize", 30970, 0).displayName("Greater XP Tome Size").comment("How much XP the Greater XP Tome should hold. Default 30970 = 100 lvls.").add()
-.stringValues("spellBlockBlacklist",
-        "minecraft:mob_spawner",
-        "minecraft:chest"
-).displayName("Spell Block Blacklist").comment("The EBWizardry spells Mine, Black Hole and Phase Step can't affect these blocks.").add()
 .stringValues("championFiveBooks", 
         "somanyenchantments:supremesharpness",
         "somanyenchantments:supremesmite",
@@ -64,11 +48,4 @@ ConfigUtils.named("parasited")
         "somanyenchantments:ancientsealedcurses",
         "somanyenchantments:mortalitas"
       ).displayName("Champion *5 Enchant List").comment("5 Star Champions will always drop one enchanted book from this list").add()
-.category("fermiummixins")
-        .doubleValue("brokenHeartMaxDamage", 1000.0).displayName("Broken Heart Maximum Damage Protected").comment("The maximum FINAL DAMAGE TOTAL that will be protected against. Set to -1 for no limit. FermiumMixins uses 1000 while Vanilla Bountiful Baubles uses no limit.").add()
-        .lowerRangedInteger("brokenHeartMinHealth", 4, 0).displayName("Broken Heart Minimum Health Required").comment("The minimum MAX HEALTH required on the body part being protected. FermiumMixins uses 4.0 while Vanilla Bountiful Baubles uses no limit.").add()
-        .booleanValue("brokenHeartLenientCalc", true).displayName("Broken Heart Lenient Calc").comment("Makes broken heart always remove 30% of original health + 1 heart, removing the original additional leftover dmg and using either 1 or 2 hearts depending if heart AND body got broken or just one of them.").add()
-        .doubleValue("undershirtMaxDamage", 1000.0).displayName("Undershirt Maximum Damage Protected").comment("The maximum FINAL DAMAGE TOTAL that will be protected against. Set to -1 for no limit. FermiumMixins uses 1000 while Vanilla Reskillable uses no limit.").add()
-        .lowerRangedDouble("undershirtMinHealth", 4.0, 0.0).displayName("Undershirt Minimum Health Required").comment("The minimum CURRENT HEALTH required on the body part being protected. FermiumMixins uses 4.0 while Vanilla Reskillable uses 6.0.").add()
-.add()
 .register();

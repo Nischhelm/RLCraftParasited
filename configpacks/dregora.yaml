@@ -3456,9 +3456,13 @@ patches:
       general.antique atlas overhaul.biome to tile config:
         B:"Use Colorised BOP Tiles": true
 
-  - type: file_delete
-    file: scripts/zenutilsmixins_rtg.zs
-    description: "Remove RTG x CherryOn compat mixin"
+  - type: cfg_patch
+    file: config/nischitweaker.cfg
+    description: "Disable RTG mixins"
+    changes:
+      general.Cherry On 1.12.2:
+        B:"Fix Clientside call (MixinToggle)": true
+        B:"Fix RTG Biome Registration (MixinToggle)": true
 
   - type: cfg_patch
     file: config/sereneseasons/seasons.cfg

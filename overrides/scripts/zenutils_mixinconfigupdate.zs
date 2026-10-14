@@ -2,23 +2,6 @@ import dynamic.zenutils.config.Parasited;
 import mods.zenutils.EventPriority;
 
 function update() as void {
-    native.git.jbredwards.nether_api.mod.common.world.biome.BiomeProviderNether.zenutils_cfg_val = Parasited.netherBiomeSize;
-    native.lumien.bloodmoon.server.BloodmoonHandler.zenutils_cfg_val = Parasited.srp.minPhaseBloodMoon;
-    native.noppes.vc.items.ItemMusket.zenutils_cfg_val = Parasited.musketLoadingTicks;
-    native.melonslise.locks.common.container.LockPickingContainer.zenutils_cfg_val = Parasited.locks.lockpickPitchMulti;
-    native.melonslise.locks.common.init.LocksItems.zenutils_cfg_val = Parasited.locks.dragonboneLockpickStrength;
-    native.atomicstryker.infernalmobs.common.InfernalMobsCore.zenutils_cfg_val = Parasited.srp.infernalIncreaseOnHighPhase;
-    native.c4.champions.common.util.ChampionHelper.zenutils_cfg_val = Parasited.srp.championIncreaseOnHighPhase;
-    native.familiarfauna.entities.EntityPixie.zenutils_cfg_val = Parasited.maxPixieHeight;
-    native.electroblob.wizardry.util.BlockUtils.zenutils_block_blacklist = Parasited.spellBlockBlacklist;
-    native.bl4ckscor3.mod.xptome.ItemXPTome.zenutils_GREATER_MAX_STORAGE = Parasited.greaterXpTomeSize;
-    native.bl4ckscor3.mod.xptome.XPTome.zenutils_setMaxStorage(Parasited.greaterXpTomeSize);
-    native.codersafterdark.reskillable.skill.magic.TraitGoldenOsmosis.zenutils_cfg_osmosisRepairableItems = Parasited.additionalOsmosisItems;
-    native.fermiummixins.handlers.bountifulbaubles.BrokenHeartBaubleHandler.zenutils_cfg_brokenHeartMaxDamage = Parasited.fermiummixins.brokenHeartMaxDamage;
-    native.fermiummixins.handlers.bountifulbaubles.BrokenHeartBaubleHandler.zenutils_cfg_brokenHeartMinHealth = Parasited.fermiummixins.brokenHeartMinHealth;
-    native.fermiummixins.handlers.bountifulbaubles.BrokenHeartBaubleHandler.zenutils_cfg_brokenHeartLenientCalc = Parasited.fermiummixins.brokenHeartLenientCalc;
-    native.fermiummixins.handlers.reskillable.UndershirtHandler.zenutils_cfg_undershirtMaxDamage = Parasited.fermiummixins.undershirtMaxDamage;
-    native.fermiummixins.handlers.reskillable.UndershirtHandler.zenutils_cfg_undershirtMinHealth = Parasited.fermiummixins.undershirtMinHealth;
 }
 
 events.register(function(event as native.net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent) {
