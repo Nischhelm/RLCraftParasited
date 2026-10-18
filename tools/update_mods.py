@@ -252,8 +252,8 @@ class ModUpdater:
             value = manifest[key]
             is_last = (i == len(keys) - 1)
 
-            if key in ('files', 'curr_unused'):
-                # Files and curr_unused arrays: one mod per line, preserve § characters
+            if key in ('files', 'indev'):
+                # Files and indev arrays: one mod per line, preserve § characters
                 output_lines.append(f'  "{key}": [')
                 items = value
                 for j, mod in enumerate(items):
