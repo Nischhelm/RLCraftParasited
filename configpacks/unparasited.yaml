@@ -49,6 +49,7 @@ patches:
       parasite_evolution_phases:
         B:"Evolution Custom Spawner": false
         B:"Evolution Phases": false
+        S:"Evolution Parasite Lock List": []
 
   - type: cfg_patch
     file: config/lostcities/profile_rlcraft.cfg
