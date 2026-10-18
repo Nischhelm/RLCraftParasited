@@ -2095,17 +2095,6 @@ recipes.addShaped(<enchantmentcontrol:blood_anvil>, [
     [<iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>, <iceandfire:dragonsteel_lightning_ingot>]
 ]);
 
-recipes.addShaped(<xpbook:greater_xp_book>.withTag({StoredXP: 0}), [
-        [null,<charm:ender_pearl_block> ,null],
-        [<charm:ender_pearl_block>, <xpbook:xp_book>.anyDamage().marked("tome"), <charm:ender_pearl_block>],
-        [null,<charm:ender_pearl_block> ,null]
-    ],
-    function(output as IItemStack, inputs as IItemStack[string], craftingInfo as ICraftingInfo) as IItemStack{
-        val stored as int = inputs.tome.maxDamage - inputs.tome.damage;
-        if(stored > Parasited.greaterXpTomeSize) return null;
-        return output.withTag({StoredXP: stored});
-    }
-);
 //=================================
 // Better End Stuffies
 //=================================
