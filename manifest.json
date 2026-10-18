@@ -274,7 +274,7 @@
     {"projectID": 1642593, "fileID": 8728149, "required": true, "fileName": "§l3D_§lRLMushrooms"},
     {"projectID": 1696869, "fileID": 9007091, "required": true, "fileName": "Better Snow Villages-1.0.2.2"},
     {"projectID": 1736079, "fileID": 9234227, "required": true, "fileName": "Silly Armor Render-1.1.0"},
-    {"projectID": 1746065, "fileID": 9242455, "required": true, "fileName": "NischiTweaker-1.1.1"}
+    {"projectID": 1746065, "fileID": 9247159, "required": true, "fileName": "NischiTweaker-1.1.2"}
   ],
   "indev": [
     {"projectID": 684624, "fileID": 8208155, "required": true, "fileName": "WearableBackpacks-RLCraft-1.12.2-3.2.8"},
