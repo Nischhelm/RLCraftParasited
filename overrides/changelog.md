@@ -1,3 +1,55 @@
+--- Oct XX 2026 ---
+
+Biggest update is probably all the new quests by Hussarar and Iqurys Broken Armor rendering
+Ppl will also like the reduced effect of nausea/blindness/inebriated on movement 
+
+Mods
+    Updated EnchantmentControl
+        fixed some lycanites equipment enchantments
+        fixed upgraded potentials allowing to re-enchant
+    Updated NischiTweaker, now on curseforge
+        only 15% chance to get comprehension
+        fixed comprehension scaling on higher potion lvls
+        fixed L menu stealth damage checking weirdly for not being seen
+        added all the mixins from zenutils mixins
+        increased frost walker radius by x1.75
+    Updated UnHideFlags
+        fixes cobalt shield and some other item tooltips rendering weird
+    Updated Ice and Fire
+        fixes myrmex hive gen wrecking servers in skyblock-esque worlds
+    Updated Wearable Backpacks, now prioritises carryon over placing the backpack
+    Switched InControl to fonnys InControl Continuation
+    Added Iqurys Silly Armor Render, shows armor being destroyed visually
+    Added cdstks Big XP Orb for high lvl bosses
+    Updated PotionControl, slightly more performant
+    Whatever: Updated JEI, bisecthosting menu, gibbed, fermiumbooter, rlfoliage, AAAM
+
+Config
+    Allowed Diamonds Everywhere on Lyca pickaxe tools
+    buffed trueshot/klutz. now +50% projectile dmg per lvl (-45% for klutz)
+    Hussarar added A LOT of new betterquests
+    pondering orb now gives 1 xp every 5 staring seconds (was 20)
+
+Scripts
+    reduced player nausea/blindness/inebriated movement by 2x
+    fixed bloodmoon phase lock accidentally only checking the first player that logged in in multiplayer
+    moved all zenutils mixins to nischitweaker
+    fixed new smelting recipes to accept any durability for items
+    changed dragonbone lockpick recipe to require 1 witherbone and 3 dragonbones
+
+Structures
+    fixed some structures generating overstacked inkwells and reduced the general chance a bit
+
+ResourcePacks
+    Added Diegetic GUIs for RLCraft by ShionBryan (disabled by default)
+
+Dregora
+
+Configpacks
+    Fixed preems & ancients not spawning in unparasited
+    uh i guess i changed step height on shycraft elfs so its not as buggy
+    fixed dregora unparasited not spawning parasites in underneath/LC...
+
 --- Oct 3 2026 ---
 
 Another maintenance update, mainly this quick bc of crashy Dregora biomes
