@@ -1,7 +1,7 @@
 --- Oct XX 2026 ---
 
-Biggest update is probably all the new quests by Hussarar and Iqurys Broken Armor rendering
-Ppl will also like the reduced effect of nausea/blindness/inebriated on movement 
+Biggest change is probably all the new quests by Hussarar and Iqurys Broken Armor rendering
+Ppl will also like the 2x reduced swerve of nausea/blindness/inebriated 
 
 Mods
     Updated EnchantmentControl
@@ -23,7 +23,9 @@ Mods
     Added cdstks Big XP Orb for high lvl bosses
     Updated PotionControl, slightly more performant
     Updated Amphimod, from what ive seen it adds better amphi animations and streamlined behavior
+    Updated EagleMixin, fixes crossbow skellies (thanks fresh-Glitch!)
     Whatever: Updated JEI, BisectHosting Menu, Gibbed, FermiumBooter, RLFoliage, AAAM, RLCombat, XPFromHarvest
+    Switched to RLMixins from curseforge, there was no reason to use indev
 
 Config
     Allowed Diamonds Everywhere on Lyca pickaxe tools
@@ -48,6 +50,7 @@ Dregora
 
 Configpacks
     Fixed preems & ancients not spawning in unparasited
+        !!! existing worlds need to delete saves/myworld/data/srparasites_global_data_someUUID.dat !!!
     uh i guess i changed step height on shycraft elfs so its not as buggy
     fixed dregora unparasited not spawning parasites in underneath/LC...
 
