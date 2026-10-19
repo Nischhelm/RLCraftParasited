@@ -119,7 +119,7 @@
     {"projectID": 286382, "fileID": 2815686, "required": true, "fileName": "Reskillable-1.12.2-1.13.0"},
     {"projectID": 289043, "fileID": 2983385, "required": true, "fileName": "notreepunching-2.0.21"},
     {"projectID": 289347, "fileID": 2644656, "required": true, "fileName": "FamiliarFauna-1.12.2-1.0.11"},
-    {"projectID": 289397, "fileID": 2960301, "required": true, "fileName": "XPFromHarvest-1.12.2-1.2.0"},
+    {"projectID": 289397, "fileID": 8880606, "required": true, "fileName": "XPFromHarvest-1.12.2-1.3.0"},
     {"projectID": 290541, "fileID": 2815688, "required": true, "fileName": "CompatSkills-1.12.2-1.17.0"},
     {"projectID": 291874, "fileID": 2799213, "required": true, "fileName": "SereneSeasons-1.12.2-1.2.18-universal"},
     {"projectID": 303541, "fileID": 2636803, "required": true, "fileName": "Advanced-Fishing-1.12.2-1.3.3"},
