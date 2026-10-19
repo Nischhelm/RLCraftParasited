@@ -22,7 +22,8 @@ Mods
     Added Iqurys Silly Armor Render, shows armor being destroyed visually
     Added cdstks Big XP Orb for high lvl bosses
     Updated PotionControl, slightly more performant
-    Whatever: Updated JEI, bisecthosting menu, gibbed, fermiumbooter, rlfoliage, AAAM
+    Updated Amphimod, from what ive seen it adds better amphi animations and streamlined behavior
+    Whatever: Updated JEI, BisectHosting Menu, Gibbed, FermiumBooter, RLFoliage, AAAM, RLCombat, XPFromHarvest
 
 Config
     Allowed Diamonds Everywhere on Lyca pickaxe tools
