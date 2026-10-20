@@ -1,7 +1,8 @@
---- Oct XX 2026 ---
+--- Oct 21 2026 ---
 
 Biggest change is probably all the new quests by Hussarar and Iqurys Broken Armor rendering
-Ppl will also like the 2x reduced swerve of nausea/blindness/inebriated 
+Ppl will also like the 2x reduced swerve of nausea/blindness/inebriated
+Also added the new configpack 'Starter Races.zip', made from the remnants of ShyCraft
 
 Mods
     Updated EnchantmentControl
@@ -19,12 +20,22 @@ Mods
         fixes myrmex hive gen wrecking servers in skyblock-esque worlds
     Updated Wearable Backpacks, now prioritises carryon over placing the backpack
     Switched InControl to fonnys InControl Continuation
-    Added Iqurys Silly Armor Render, shows armor being destroyed visually
+    Added Iqurys Silly Armor Render, shows armor being destroyed visually and some other silly easter eggs
     Added cdstks Big XP Orb for high lvl bosses
+    Added cdstks Scaling Health Issues, im not sure yet what it does, we will see :3
     Updated PotionControl, slightly more performant
     Updated Amphimod, from what ive seen it adds better amphi animations and streamlined behavior
     Updated EagleMixin, fixes crossbow skellies (thanks fresh-Glitch!)
-    Whatever: Updated JEI, BisectHosting Menu, Gibbed, FermiumBooter, RLFoliage, AAAM, RLCombat, XPFromHarvest
+    Updated Nether-API, unsure if its gonna break anything
+    Updated FermiumMixins with various fixes by fresh-Glitch, thanks!
+        fixes large packets kicking players
+        fixes rightclick pickup not working if theres no block behind the item
+        fixes dshuds rendering light levels through blocks (F7+F3+A abuse)
+        fixes first aid health sometimes being desynced (on logins etc)
+    Updated FermiumBooter
+        faster startup time
+        huge backbone change that won't affect any current mods but all future mods
+    Whatever: Updated JEI, Gibbed, FermiumBooter, RLFoliage, AAAM, RLCombat, XPFromHarvest
     Switched to RLMixins from curseforge, there was no reason to use indev
 
 Config
@@ -32,6 +43,15 @@ Config
     buffed trueshot/klutz. now +50% projectile dmg per lvl (-45% for klutz)
     Hussarar added A LOT of new betterquests
     pondering orb now gives 1 xp every 5 staring seconds (was 20)
+    nerfed lyca equipment meta, changes by cdstk that were already present in shycraft (warg, xaphan, vespid, raidra)
+    made snow villages 2x more rare, prob could be even more rare
+    made evasion not bad by removing its random hop mechanic, taken from shycraft
+    copied over some shycraft T&B cfgs
+        increased dmg of taurus stampede, dragon breaths and elf power shot
+        allow elf to use any bow for charged shots
+        dwarf immune to inebriated
+        more barehanded items for faelis
+        reduced xp for dwarf mining
 
 Scripts
     reduced player nausea/blindness/inebriated movement by 2x
@@ -47,8 +67,11 @@ ResourcePacks
     Added Diegetic GUIs for RLCraft by ShionBryan (disabled by default)
 
 Dregora
+    fixed lycas having almost infinite lvls if wearing secret gear with Vitality enchant (not Str Vit)
 
 Configpacks
+    deprecated ShyCraft as a separate modpack 
+        is now a configpack called "Starter Races.zip" allowing to start with a hopefully somewhat balanced starting race
     Fixed preems & ancients not spawning in unparasited
         !!! existing worlds need to delete saves/myworld/data/srparasites_global_data_someUUID.dat !!!
     uh i guess i changed step height on shycraft elfs so its not as buggy
