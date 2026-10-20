@@ -12,6 +12,7 @@ build:
     - dregora_unparasited
     - allblightinfernalchampions
     - noflyzone
+    - startingraces
   configpacks_dest: "overrides"
   include:
     - manifest.json

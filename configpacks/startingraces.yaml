@@ -1,0 +1,219 @@
+name: "Starting Races"
+version: "indev"
+description: "Formerly ShyCraft Parasited"
+
+build:
+  output_name: "Starter Races.zip"
+
+patches:
+- type: cfg_patch
+  file: config/trinkets/Trinkets_And_Baubles.cfg
+  description: "uh... read for yourself"
+  changes:
+    general.server settings.race configuration:
+      B:"00. Race Selection Menu": true
+      S:"01. Blacklisted Races":
+        add:
+        - Fairy
+        - Titan
+
+    general.server settings.race configuration.elf:
+      S:"06. Potion Resistances":
+        add:
+        - potioncore:perplexity
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:-0.25, Operation:1
+        add:
+        - Name:forge.swimSpeed, Amount:0.15, Operation:1
+        - Name:generic.attackSpeed, Amount:0.25, Operation:1
+        - Name:generic.movementSpeed, Amount:0.15, Operation:1
+        - Name:xat.jump, Amount:0.25, Operation:2
+        - Name:xat.stepheight, Amount:0.5, Operation:0
+    general.server settings.race configuration.elf.size:
+      I:"01. Width": 90
+
+
+    general.server settings.race configuration.dwarf:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackSpeed, Amount:-0.25, Operation:2
+        - Name:generic.maxHealth, Amount:-0.25, Operation:2
+        - Name:generic.reachDistance, Amount:-0.25, Operation:2
+        add:
+        - Name:generic.attackDamage, Amount:0.25, Operation:1
+        - Name:generic.reachDistance, Amount:-0.05, Operation:1
+    general.server settings.race configuration.dwarf.size:
+      I:"00. Height": 85
+      I:"01. Width": 95
+
+
+    general.server settings.race configuration.fairy:
+      S:"05. Potion Effects":
+        add:
+        - potioncore:cure
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armor, Amount:-0.5, Operation:2
+        - Name:generic.armorToughness, Amount:-0.25, Operation:2
+        - Name:generic.attackDamage, Amount:-0.75, Operation:2
+        - Name:generic.maxHealth, Amount:-0.75, Operation:1
+        - Name:generic.movementSpeed, Amount:-0.25, Operation:1
+        - Name:xat.flyspeed, Amount:-0.4, Operation:2
+        add:
+        - Name:generic.armor, Amount:-0.75, Operation:2
+        - Name:generic.armorToughness, Amount:-0.75, Operation:2
+        - Name:generic.attackDamage, Amount:-0.35, Operation:2
+        - Name:generic.maxHealth, Amount:-0.35, Operation:1
+        - Name:generic.movementSpeed, Amount:0.15, Operation:1
+        - Name:xat.flyspeed, Amount:0.3, Operation:2
+    general.server settings.race configuration.fairy.abilities.climbing:
+      S:"02. Climbable Blocks":
+        remove:
+        - minecraft:*cobblestone*
+        - minecraft:*planks*
+        - minecraft:glass
+        - minecraft:obsidian
+        - minecraft:sand
+        - minecraft:stonebrick
+
+
+    general.server settings.race configuration.faelis:
+      D:"02. Bare Handed Bonus": 3.0
+      S:"07. Milk Effects":
+        remove:
+        - minecraft:jump_boost:1200:3
+        add:
+        - minecraft:jump_boost:1200:0
+      S:"90. Attributes":
+        remove:
+        - Name:forge.swimSpeed, Amount:0.5, Operation:1
+        - Name:generic.attackSpeed, Amount:0.5, Operation:2
+        add:
+        - Name:forge.swimSpeed, Amount:0.25, Operation:1
+        - Name:generic.armorToughness, Amount:-0.25, Operation:2
+        - Name:generic.attackSpeed, Amount:0.35, Operation:2
+    general.server settings.race configuration.faelis.abilities.climbing:
+      S:"02. Climbable Blocks":
+        remove:
+        - minecraft:glass
+        - minecraft:obsidian
+        - minecraft:sand
+        - minecraft:sandstone
+        - minecraft:stonebrick
+    general.server settings.race configuration.faelis.abilities.night vision:
+      B:"00. Enabled": true
+      D:"01. Mana Cost": 2.0
+    general.server settings.race configuration.faelis.size:
+      I:"00. Height": 65
+      I:"01. Width": 60
+
+
+    general.server settings.race configuration.goblin:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:-0.25, Operation:1
+        - Name:generic.maxHealth, Amount:-0.5, Operation:1
+        add:
+        - Name:generic.armor, Amount:-0.25, Operation:1
+        - Name:generic.attackDamage, Amount:0.15, Operation:1
+        - Name:generic.maxHealth, Amount:-0.15, Operation:1
+        - Name:generic.reachDistance, Amount:-0.15, Operation:1
+    general.server settings.race configuration.goblin.abilities.climbing:
+      S:"02. Climbable Blocks":
+        remove:
+        - minecraft:glass
+        - minecraft:obsidian
+        - minecraft:sand
+        - minecraft:sandstone
+        - minecraft:stonebrick
+
+
+    general.server settings.race configuration.titan:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.attackDamage, Amount:1, Operation:2
+        - Name:generic.knockbackResistance, Amount:0.75, Operation:0
+        - Name:generic.movementSpeed, Amount:0.25, Operation:1
+        - Name:generic.reachDistance, Amount:0.5, Operation:1
+        - Name:xat.jump, Amount:0.75, Operation:2
+        - Name:xat.stepheight, Amount:1.4, Operation:0
+        add:
+        - Name:forge.swimSpeed, Amount:-0.5, Operation:2
+        - Name:generic.armor, Amount:0.5, Operation:2
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.attackDamage, Amount:0.75, Operation:2
+        - Name:generic.knockbackResistance, Amount:1, Operation:1
+        - Name:generic.movementSpeed, Amount:-0.3, Operation:1
+        - Name:generic.reachDistance, Amount:0.75, Operation:1
+        - Name:xat.flyspeed, Amount:-0.4, Operation:2
+        - Name:xat.jump, Amount:0.4, Operation:2
+        - Name:xat.stepheight, Amount:0.5, Operation:0
+    general.server settings.race configuration.titan.size:
+      I:"00. Height": 175
+      I:"01. Width": 170
+
+
+    general.server settings.race configuration.taurus:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armor, Amount:0.2, Operation:1
+        - Name:generic.attackDamage, Amount:0.2, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.5, Operation:0
+        add:
+        - Name:generic.armor, Amount:0.3, Operation:1
+        - Name:generic.attackDamage, Amount:0.5, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.75, Operation:1
+        - Name:generic.luck, Amount:1, Operation:0
+        - Name:generic.reachDistance, Amount:0.5, Operation:1
+        - Name:xat.flyspeed, Amount:-0.2, Operation:2
+
+
+    general.server settings.race configuration.dragon:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:generic.armor, Amount:0.25, Operation:1
+        - Name:generic.armorToughness, Amount:0.25, Operation:2
+        - Name:generic.knockbackResistance, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.4, Operation:2
+    general.server settings.race configuration.dragon.elements.fire:
+      S:"90. Attributes":
+        remove:
+        - Name:forge.swimSpeed, Amount:-0.25, Operation:2
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.attackDamage, Amount:0.25, Operation:1
+        - Name:generic.maxHealth, Amount:0.25, Operation:1
+        add:
+        - Name:forge.swimSpeed, Amount:-0.5, Operation:2
+        - Name:generic.armorToughness, Amount:0.35, Operation:2
+        - Name:generic.attackDamage, Amount:0.75, Operation:1
+        - Name:generic.knockbackResistance, Amount:0.25, Operation:1
+    general.server settings.race configuration.dragon.elements.ice:
+      S:"90. Attributes":
+        remove:
+        - Name:forge.swimSpeed, Amount:-0.25, Operation:2
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.maxHealth, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:forge.swimSpeed, Amount:0.75, Operation:2
+        - Name:generic.armor, Amount:0.25, Operation:1
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.knockbackResistance, Amount:0.5, Operation:1
+        - Name:generic.maxHealth, Amount:0.5, Operation:1
+        - Name:xat.flyspeed, Amount:0.5, Operation:2
+    general.server settings.race configuration.dragon.elements.lightning:
+      S:"90. Attributes":
+        remove:
+        - Name:generic.armorToughness, Amount:0.5, Operation:2
+        - Name:generic.attackDamage, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.6, Operation:2
+        add:
+        - Name:generic.attackSpeed, Amount:0.5, Operation:1
+        - Name:generic.movementSpeed, Amount:0.25, Operation:1
+        - Name:xat.flyspeed, Amount:0.75, Operation:2
+    general.server settings.race configuration.dragon.size:
+      I:"01. Width": 115

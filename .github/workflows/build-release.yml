@@ -78,6 +78,7 @@ jobs:
           ### Further tweaks:
           - **All Mobs are Blight Infernal Champions.zip** - what do you think it is? (incompat with hcc)
           - **NoFlyZone.zip** - Removes ALL abilities to fly
+          - **Starter Races.zip** (formerly ShyCraft) - Choose a balanced Trinkets & Baubles race to start with (incompat with noflyzone and omega) 
           
           EOFBODY
           # Expand environment variables
