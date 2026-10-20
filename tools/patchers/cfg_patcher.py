@@ -40,6 +40,11 @@ class CfgPatcher:
         # Write back
         file_path.write_text('\n'.join(modified_lines) + '\n')
 
+    @staticmethod
+    def _indent(line: str) -> str:
+        """Return the leading whitespace of a line."""
+        return line[:len(line) - len(line.lstrip())]
+
     def _apply_changes(self, lines: list, changes: Dict[str, Dict[str, Any]]) -> list:
         """
         Apply changes to config lines.
@@ -58,13 +63,14 @@ class CfgPatcher:
         in_list = False
         list_key = None
         applied_keys = {}  # Track which keys have been applied per section
+        seen_sections = set()  # Track which sections exist in the file
         i = 0
 
         while i < len(lines):
             line = lines[i]
 
             # Check if entering a section: name { or "name with spaces" {
-            section_match = re.match(r'^(\s*)(\"[^\"]+\"|[a-z_][a-z0-9_ ]*)\s*{', line, re.IGNORECASE)
+            section_match = re.match(r'^(\s*)(\"[^\"]+\"|[a-z0-9_][a-z0-9_.\- ]*)\s*{', line, re.IGNORECASE)
             if section_match:
                 section_name = section_match.group(2).strip()
                 # Remove quotes if present
@@ -73,6 +79,7 @@ class CfgPatcher:
 
                 # Push onto stack
                 section_stack.append(section_name)
+                seen_sections.add('.'.join(section_stack))
                 result.append(line)
                 i += 1
                 continue
@@ -90,6 +97,9 @@ class CfgPatcher:
                         # Find unapplied keys
                         unapplied = all_keys - applied
 
+                        # Indent new keys one level deeper than the closing brace
+                        key_indent = self._indent(line) + '    '
+
                         # Add unapplied keys (skip list-format keys with add/remove/replace operations)
                         for key in sorted(unapplied):
                             value = changes[current_section][key]
@@ -99,16 +109,16 @@ class CfgPatcher:
                             # Skip list values (those that should be in list format)
                             if isinstance(value, list):
                                 # For new lists, use key format from YAML as-is
-                                result.append(f'    {key} <')
+                                result.append(f'{key_indent}{key} <')
                                 for item in value:
-                                    result.append(f"        {item}")
-                                result.append("     >")
+                                    result.append(f"{key_indent}    {item}")
+                                result.append(f"{key_indent} >")
                             else:
                                 # Simple key=value
                                 # Convert Python bool to lowercase string
                                 if isinstance(value, bool):
                                     value = str(value).lower()
-                                result.append(f"    {key}={value}")
+                                result.append(f"{key_indent}{key}={value}")
 
                     section_stack.pop()
                 result.append(line)
@@ -138,10 +148,13 @@ class CfgPatcher:
                         # Add the list header
                         result.append(line)
 
-                        # Read old list values
+                        # Read old list values (keep the indent of the existing items)
                         old_values = []
+                        item_indent = self._indent(line) + '    '
                         i += 1
                         while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
+                            if not old_values:
+                                item_indent = self._indent(lines[i])
                             old_values.append(lines[i].strip())
                             i += 1
 
@@ -172,7 +185,7 @@ class CfgPatcher:
 
                         # Write final list
                         for value in final_values:
-                            result.append(f"        {value}")
+                            result.append(f"{item_indent}{value}")
 
                         # Add the closing >
                         if i < len(lines):
@@ -187,14 +200,17 @@ class CfgPatcher:
                         # Add the list header
                         result.append(line)
 
-                        # Skip old list content until we find the closing >
+                        # Skip old list content until we find the closing > (keep the indent of the existing items)
+                        item_indent = self._indent(line) + '    '
                         i += 1
+                        if i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
+                            item_indent = self._indent(lines[i])
                         while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
                             i += 1
 
                         # Add new list values
                         for value in new_values:
-                            result.append(f"        {value}")
+                            result.append(f"{item_indent}{value}")
 
                         # Add the closing >
                         if i < len(lines):
@@ -217,13 +233,26 @@ class CfgPatcher:
                         # Convert Python bool to lowercase string
                         if isinstance(new_value, bool):
                             new_value = str(new_value).lower()
-                        result.append(f"    {full_key}={new_value}")
+                        result.append(f"{self._indent(line)}{full_key}={new_value}")
                         i += 1
                         continue
 
             # No changes, keep original line
             result.append(line)
             i += 1
+
+        # Fail loudly instead of silently skipping changes that matched nothing
+        errors = []
+        for section, keys in changes.items():
+            if section not in seen_sections:
+                errors.append(f"Section not found: {section}")
+                continue
+            for key, value in keys.items():
+                is_list_op = isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace'])
+                if is_list_op and key not in applied_keys.get(section, set()):
+                    errors.append(f"List not found: [{section}] {key}")
+        if errors:
+            raise ValueError("; ".join(errors))
 
         return result
 
