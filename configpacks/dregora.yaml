@@ -1711,7 +1711,7 @@ patches:
     file: config/trinkets/Trinkets_And_Baubles.cfg
     description: "Dragon Ore Sight, climbable blocks and faelis heavy armor"
     changes:
-      general.server settings.item.dragons eye.abilities.greedy eyes:
+      general.server settings.items.dragons eye.abilities.greedy eyes:
         S:"04. Treasure":
           add:
             - oreBoron;5263440
@@ -3361,8 +3361,8 @@ patches:
     file: config/antiqueatlasautomarker.cfg
     description: "TODO: Describe what changes in antiqueatlasautomarker.cfg"
     changes:
-      general.custom positions:
-        S:"Custom Position Markers":
+      general.auto marking.custom positions:
+        C:"Custom Position Markers":
           add:
             - 0; -1074; -8584; -8247; -12929; Green Isle; antiqueatlas:google
             - 0; -1084; 16284; -2607; 16323; Rainy Peaks; antiqueatlas:google
@@ -3451,9 +3451,9 @@ patches:
             - 0; 7714; -5761; 2407; -401; Decaying Isle; antiqueatlas:google
             - 0; 8779; 48; 2407; -401; Desert Isle; antiqueatlas:google
             - 0; 9799; 12431; 5502; 13754; Eastern Glaciers; antiqueatlas:cave
-      general.ruins:
+      general.auto marking.ruins:
         B:"Ruins Enabled": false
-      general.antique atlas overhaul.biome to tile config:
+      general.antique atlas tiles:
         B:"Use Colorised BOP Tiles": true
 
   - type: cfg_patch
