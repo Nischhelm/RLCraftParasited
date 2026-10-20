@@ -74,7 +74,6 @@ Configpacks
         is now a configpack called "Starter Races.zip" allowing to start with a hopefully somewhat balanced starting race
     Fixed preems & ancients not spawning in unparasited
         !!! existing worlds need to delete saves/myworld/data/srparasites_global_data_someUUID.dat !!!
-    uh i guess i changed step height on shycraft elfs so its not as buggy
     fixed dregora unparasited not spawning parasites in underneath/LC...
 
 --- Oct 3 2026 ---
