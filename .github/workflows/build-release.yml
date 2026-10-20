@@ -38,9 +38,6 @@ jobs:
       - name: Build Dregora Parasited
         run: python tools/packbuilder.py build dregora --version "${{ steps.version.outputs.VERSION }}"
 
-      - name: Build ShyCraftParasited
-        run: python tools/packbuilder.py build shycraft --version "${{ steps.version.outputs.VERSION }}"
-
       - name: List built files
         run: |
           ls -lh build/
@@ -59,7 +56,7 @@ jobs:
           CHANGELOG: ${{ steps.changelog.outputs.CHANGELOG }}
         run: |
           cat > /tmp/release_body.md << 'EOFBODY'
-          ## RLCraft, Dregora & ShyCraft **Parasited** ${VERSION}
+          ## RLCraft & Dregora **Parasited** ${VERSION}
 
           ${CHANGELOG}
 
@@ -68,8 +65,7 @@ jobs:
           ### Modpacks:
           - **RLCraft Parasited.zip** - Main pack, building on RLCraft 2.10 betas
           - **Dregora Parasited.zip** - Main pack ported to Dregora 1.1.2b
-          - **ShyCraft Parasited.zip** - Some changes by the ShyCraft team for their Server. This is not an official release!
-
+          
           ### Installation:
           Import the ZIP of your choice in CurseForge app or similar features in other launchers.
 
@@ -96,7 +92,6 @@ jobs:
           files: |
             build/RLCraft Parasited ${{ steps.version.outputs.VERSION }}.zip
             build/Dregora Parasited ${{ steps.version.outputs.VERSION }}.zip
-            build/ShyCraft Parasited ${{ steps.version.outputs.VERSION }}.zip
           draft: false
           prerelease: false
         env:
