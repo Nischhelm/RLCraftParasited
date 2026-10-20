@@ -42,6 +42,15 @@
       "effectTarget": "target",
       "effectDuration": 60,
       "effectStrength": 3
+    },
+    {
+      "damageAmount": 0,
+      "damageCooldown": 1,
+      "damageKnockback": 0,
+      "damageRange": -0.9,
+      "damageSweep": 0,
+      "featureType": "damage",
+      "levelMin": 1
     }
   ]
 }
