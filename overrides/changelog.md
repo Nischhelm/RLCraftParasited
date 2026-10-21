@@ -1,5 +1,8 @@
 --- Oct 21 2026 ---
 
+#2: Just updated FermiumBooter bc it lead to crashes on servers. 
+No need to reinstall if you have Oct21 already, just click the Update button on fermiumbooter in curseforge app 
+
 Biggest change is probably all the new quests by Hussarar and Iqurys Broken Armor rendering
 Ppl will also like the 2x reduced swerve of nausea/blindness/inebriated
 Also added the new configpack 'Starter Races.zip', made from the remnants of ShyCraft
