@@ -231,7 +231,7 @@
     {"projectID": 1055882, "fileID": 6008005, "required": true, "fileName": "DLD_Textures"},
     {"projectID": 1085254, "fileID": 8940412, "required": true, "fileName": "RLEnchantedBooks"},
     {"projectID": 1105213, "fileID": 9046002, "required": true, "fileName": "RLCraftLuckified-1.1.3.3"},
-    {"projectID": 1119777, "fileID": 8543546, "required": true, "fileName": "SRPMixins-2.9.6.4"},
+    {"projectID": 1119777, "fileID": 9289109, "required": true, "fileName": "SRPMixins-2.9.6.5"},
     {"projectID": 1122982, "fileID": 7760834, "required": true, "fileName": "Cherry_on-1.12.2-1.3.35"},
     {"projectID": 1140227, "fileID": 7038827, "required": true, "fileName": "SRPExtra-0.6.2"},
     {"projectID": 1153744, "fileID": 7522969, "required": true, "fileName": "NoiseThreader-1.1.3"},
@@ -277,7 +277,7 @@
     {"projectID": 1696869, "fileID": 9284685, "required": true, "fileName": "Better Snow Villages-1.0.3"},
     {"projectID": 1731368, "fileID": 9152991, "required": true, "fileName": "Scaling Health Issues-1.0.1"},
     {"projectID": 1736079, "fileID": 9234227, "required": true, "fileName": "Silly Armor Render-1.1.0"},
-    {"projectID": 1746065, "fileID": 9272194, "required": true, "fileName": "NischiTweaker-1.1.2.1"}
+    {"projectID": 1746065, "fileID": 9287562, "required": true, "fileName": "NischiTweaker-1.1.2.2"}
   ],
   "indev": [
     {"projectID": 684624, "fileID": 8208155, "required": true, "fileName": "WearableBackpacks-RLCraft-1.12.2-3.2.8"},
