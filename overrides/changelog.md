@@ -1,3 +1,20 @@
+--- Oct 22 2026 ---
+
+Hotfix mainly
+
+Mods
+    Added Morpheus, not just in multiplayer, so setting respawn works in daytime
+    Updated EagleMixins, fixes world load crash reports due to radiation resistance
+    Updated FermiumBooter, fixes server startup crashes due to clientside mods
+    Updated Diegetic GUI, still default disabled
+    Updated Nether-API i assume inconsequential
+    Updated PotionControl, inconsequential
+    Updated BetterSnowVillages, inconsequential as far as i can see
+    Updated SRPMixins
+        less armor shredding from sentries etc (now only if attack succeeds)
+        makes biome fog smoother (thanks landon!)
+        fixes adaptation reset recipe in dregora
+
 --- Oct 21 2026 ---
 
 #2: Just updated FermiumBooter bc it lead to crashes on servers. 
