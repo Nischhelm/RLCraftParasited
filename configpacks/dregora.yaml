@@ -2869,7 +2869,6 @@ patches:
             - potioncore:launch
             - potioncore:launch
       general.srparasites options:
-        I:"Kill Beckon nearby range": 0
         B:"Modify Parasite Loot": true
         S:"Parasite full loot-drop enabler":
           add:

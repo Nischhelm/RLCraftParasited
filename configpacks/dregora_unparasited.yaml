@@ -101,7 +101,6 @@ patches:
     description: "Restrict paras to their biomes"
     changes:
       general.srparasites options:
-        I:"Kill Beckon nearby range": 32
         B:"Kill Parasites outside alllowed biomes": true
         S:"SRParasites allowed biomes":
           remove:
