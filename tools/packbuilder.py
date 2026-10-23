@@ -22,7 +22,7 @@ import sys
 # Add tools directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from patchers import CfgPatcher, JsonPatcher, ScriptPatcher, KeyValuePatcher
+from patchers import CfgPatcher, JsonPatcher, ScriptPatcher, KeyValuePatcher, BqQuestPatcher
 
 
 @dataclass
@@ -76,6 +76,7 @@ class PackBuilder:
         self.json_patcher = JsonPatcher(configpacks_dir=self.configpacks_dir)
         self.script_patcher = ScriptPatcher()
         self.keyvalue_patcher = KeyValuePatcher()
+        self.bq_patcher = BqQuestPatcher(configpacks_dir=self.configpacks_dir, repo_dir=self.base_dir)
 
     def log(self, message: str):
         """Log message if verbose mode is enabled."""
@@ -542,7 +543,7 @@ class PackBuilder:
                     # File doesn't exist - that's fine, idempotent operation
                     print(f"  Skipped (not found): {file_rel}")
 
-            elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch']:
+            elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch', 'bq_quest_merge']:
                 # For patches: Copy original file, apply patch, save to temp
                 file_rel = patch.get('file')
                 if not file_rel:
@@ -579,6 +580,8 @@ class PackBuilder:
                     self.script_patcher.apply(target_dir, patch)
                 elif patch_type == 'keyvalue_patch':
                     self.keyvalue_patcher.apply(target_dir, patch)
+                elif patch_type == 'bq_quest_merge':
+                    self.bq_patcher.apply(target_dir, patch)
 
             else:
                 raise ValueError(f"Unknown patch type: {patch_type}")
@@ -718,7 +721,7 @@ class PackBuilder:
                 else:
                     print(f"  Skipped (not found): {file_rel}")
 
-            elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch']:
+            elif patch_type in ['cfg_patch', 'json_patch', 'json_append_all', 'script_patch', 'keyvalue_patch', 'bq_quest_merge']:
                 # Apply patch to files
                 file_rel = patch.get('file')
                 if not file_rel:
@@ -747,6 +750,8 @@ class PackBuilder:
                         self.script_patcher.apply(overrides_dir, patch)
                     elif patch_type == 'keyvalue_patch':
                         self.keyvalue_patcher.apply(overrides_dir, patch)
+                    elif patch_type == 'bq_quest_merge':
+                        self.bq_patcher.apply(overrides_dir, patch)
 
             else:
                 raise ValueError(f"Unknown patch type: {patch_type}")
@@ -892,8 +897,8 @@ class PackBuilder:
                     print(f"  ✗ Patch {i} missing 'file' field")
                     return False
 
-                # Check if source files exist for json_append_all
-                if patch['type'] == 'json_append_all':
+                # Check if source files exist for json_append_all / bq_quest_merge
+                if patch['type'] in ['json_append_all', 'bq_quest_merge']:
                     source = self.configpacks_dir / "_files" / patch.get('source', '')
                     if not source.exists():
                         print(f"  ✗ Patch {i}: Source JSON not found: {source}")

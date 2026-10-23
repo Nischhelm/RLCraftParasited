@@ -1,0 +1,4064 @@
+{
+  "id_offset": 100000,
+  "new_id_start": 10000,
+  "quests": [
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "CHAIN",
+          "icon:10": {
+            "id:8": "biomesoplenty:earth",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.349",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.349",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        349,
+        352,
+        351
+      ],
+      "questID:3": 348
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "UNLOCKED",
+          "icon:10": {
+            "id:8": "srparasites:parasitecanister",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 1,
+          "name:8": "betterquesting.dregora.quest.name.350",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.350",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 0,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "Underneath",
+          "index:3": 0,
+          "dimension:3": 3,
+          "biome:8": ""
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 349
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:radiation_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "Nuclear Blight",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.351"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 1,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "Nuclear Blight",
+          "index:3": 0,
+          "dimension:3": 0,
+          "biome:8": "nuclearcraft:nuclear_wasteland"
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 350
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "charm:rune_portal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 1,
+          "name:8": "betterquesting.dregora.quest.name.352",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.352",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "onInteract:1": 1,
+          "block:10": {
+            "blockID:8": "lycanitesmobs:ashenstonepillar",
+            "meta:3": -1,
+            "nbt:10": {},
+            "amount:3": 1,
+            "oreDict:8": ""
+          },
+          "allowOffHand:1": 1,
+          "ignoreNbt:1": 0,
+          "requiredUses:3": 1,
+          "item:10": {
+            "id:8": "minecraft:flint_and_steel",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "partialMatch:1": 1,
+          "index:3": 2,
+          "taskID:8": "bq_standard:interact_item",
+          "allowMainHand:1": 1,
+          "onHit:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        349
+      ],
+      "questID:3": 351
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "minecraft:flint_and_steel",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 1,
+          "name:8": "betterquesting.dregora.quest.name.353",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.353",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:flint_and_steel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        349
+      ],
+      "questID:3": 352
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ore",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 1,
+          "name:8": "betterquesting.dregora.quest.name.355",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.355",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:deepslate_lithium_ore",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        349
+      ],
+      "questID:3": 353
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:shelter_special_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 1,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.356",
+          "autoclaim:1": 1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.356"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        350
+      ],
+      "questID:3": 354
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:shelter_special_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 1,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.357",
+          "autoclaim:1": 1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.357"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        350
+      ],
+      "questID:3": 355
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ingot",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.358",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.358"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:part",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        355
+      ],
+      "questID:3": 356
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:helm_hazmat",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.359",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.359"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:helm_hazmat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:chest_hazmat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:legs_hazmat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:boots_hazmat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 357
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:itemmobspawner_host",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.360",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.360"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "srparasites:biomepurifier",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        355
+      ],
+      "questID:3": 358
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "COMPLETED",
+          "icon:10": {
+            "id:8": "contenttweaker:shelter_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 1,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.361",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.361"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 359
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:radaway",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.362",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.362"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:radaway",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        355
+      ],
+      "questID:3": 360
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:alloy",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.363",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.363"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:alloy",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 0,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354
+      ],
+      "questID:3": 361
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ingot",
+            "Count:3": 1,
+            "Damage:2": 9,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.364",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.364"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 0,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354
+      ],
+      "questID:3": 362
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:gem_dust",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.365",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.365"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:gem_dust",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 0,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354
+      ],
+      "questID:3": 363
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:alloy",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.366",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.366"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:alloy",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354
+      ],
+      "questID:3": 364
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ingot",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.367",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.367"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354
+      ],
+      "questID:3": 365
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:fuel_uranium",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.368",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.368"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:fuel_uranium",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 0,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354
+      ],
+      "questID:3": 366
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:rad_shielding",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.369",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.369"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:rad_shielding",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        368
+      ],
+      "questID:3": 367
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:rad_shielding",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.370",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.370"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:rad_shielding",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        369
+      ],
+      "questID:3": 368
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:rad_shielding",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.371",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.371"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:rad_shielding",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 369
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:rebar",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.372",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.372"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "contenttweaker:rebar",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        359
+      ],
+      "questID:3": 370
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:reinforced_concrete",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.373",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.373"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "contenttweaker:reinforced_concrete",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        370
+      ],
+      "questID:3": 371
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:resource_crate",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.374",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.374"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:resource_crate",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 372
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:fission_controller_new_idle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "OR",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.375",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.375"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:fission_block",
+              "Count:3": 41,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:reactor_casing_transparent",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:reactor_door_item",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:reactor_trapdoor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "nuclearcraft:fission_controller_new_fixed",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "nuclearcraft:cell_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "nuclearcraft:water_source",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "nuclearcraft:active_cooler",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "nuclearcraft:buffer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "9:10": {
+              "id:8": "nuclearcraft:fuel_uranium",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        354,
+        355
+      ],
+      "questID:3": 373
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:itemmobspawner_pod",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.376",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.376"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        358
+      ],
+      "questID:3": 374
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ore",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.377",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.377",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "nuclearcraft:ore",
+              "meta:3": 2,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        },
+        "1:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:deepslate_lead_ore",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 375
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ore",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.378",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.378",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "nuclearcraft:ore",
+              "meta:3": 4,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        },
+        "1:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:deepslate_uranium_ore",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 376
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ore",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.379",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.379",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "nuclearcraft:ore",
+              "meta:3": 3,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        },
+        "1:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:deepslate_thorium_ore",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 377
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ore",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.380",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.380",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "nuclearcraft:ore",
+              "meta:3": 5,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        },
+        "1:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:deepslate_boron_ore",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 378
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:ore",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "OR",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.381",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.381",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "nuclearcraft:ore",
+              "meta:3": 6,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        },
+        "1:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "contenttweaker:deepslate_lithium_ore",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 379
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:shelter_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.382",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.382",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        367,
+        366,
+        371,
+        374,
+        373,
+        357,
+        372,
+        361,
+        364,
+        365,
+        363,
+        362,
+        381
+      ],
+      "questID:3": 380
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "nuclearcraft:nuclear_furnace_active",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.383",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.383",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "nuclearcraft:ingot",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 0,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 1,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        376,
+        377,
+        375,
+        379,
+        378
+      ],
+      "questID:3": 381
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:itemmobspawner_vesta",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.385",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.385"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 0,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "betterquesting.dregora.quest.name.384",
+          "index:3": 0,
+          "dimension:3": 0,
+          "biome:8": "openterraingenerator:overworld_ruins_of_blight"
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 382
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "HIDDEN",
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "lockedprogress:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "autoclaim:1": 0,
+          "name:8": "betterquesting.dregora.quest.name.386",
+          "repeattime:3": -1,
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "desc:8": "betterquesting.dregora.quest.desc.386",
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "globalshare:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "target:8": "srparasites:sim_dragone",
+          "index:3": 0,
+          "required:3": 1,
+          "subtypes:1": 1,
+          "damageType:8": "",
+          "taskID:8": "bq_standard:hunt",
+          "targetNBT:10": {
+            "CustomName:8": "§4☢ §5§l§2§lBlighted Shivaxi§r§r§4 §4☢"
+          },
+          "ignoreNBT:1": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 383
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:itemmobspawner_jinjo",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.388",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.388"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 0,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "betterquesting.dregora.quest.name.387",
+          "index:3": 0,
+          "dimension:3": 0,
+          "biome:8": "openterraingenerator:overworld_lair_of_the_thing"
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 385
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:itemmobspawner_pheon",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.390",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.390"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 0,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "betterquesting.dregora.quest.name.389",
+          "index:3": 0,
+          "dimension:3": 0,
+          "biome:8": "openterraingenerator:overworld_nuclear_ruins"
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 386
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:evclock",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.391",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.391"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        386,
+        382,
+        385
+      ],
+      "questID:3": 387
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:itemmobspawner_pod",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "OR",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.392",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.393"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "target:8": "srparasites:sim_villager",
+          "index:3": 0,
+          "required:3": 25,
+          "subtypes:1": 1,
+          "damageType:8": "",
+          "taskID:8": "bq_standard:hunt",
+          "targetNBT:10": {
+            "DeathTime:2": 0,
+            "Leashed:1": 0,
+            "LeftHanded:1": 0,
+            "srpinvblocksname:9": {},
+            "UUIDLeast:4": -7233882523480926662,
+            "parasitedespawn:1": 1,
+            "OnGround:1": 0,
+            "AbsorptionAmount:5": 0.0,
+            "Attributes:9": {
+              "0:10": {
+                "Name:8": "potioncore.projectileDamage",
+                "Base:6": 1.0
+              },
+              "1:10": {
+                "Name:8": "potioncore.magicDamage",
+                "Base:6": 1.0
+              },
+              "2:10": {
+                "Name:8": "potioncore.jumpHeight",
+                "Base:6": 1.0
+              },
+              "3:10": {
+                "Name:8": "potioncore.damageResistance",
+                "Base:6": 1.0
+              },
+              "4:10": {
+                "Name:8": "potioncore.magicShielding",
+                "Base:6": 0.0
+              },
+              "5:10": {
+                "Name:8": "xat.entityRace",
+                "Base:6": 1.0
+              },
+              "6:10": {
+                "Name:8": "xat.jump",
+                "Base:6": 0.41999998688697815
+              },
+              "7:10": {
+                "Name:8": "xat.stepheight",
+                "Base:6": 0.6000000238418579
+              },
+              "8:10": {
+                "Name:8": "xat.entityMagic.maxMana",
+                "Base:6": 100.0
+              },
+              "9:10": {
+                "Name:8": "xat.entityMagic.regen",
+                "Base:6": 1.0
+              },
+              "10:10": {
+                "Name:8": "xat.entityMagic.regen.cooldown",
+                "Base:6": 1.0
+              },
+              "11:10": {
+                "Name:8": "xat.entityMagic.affinity",
+                "Base:6": 0.0
+              },
+              "12:10": {
+                "Name:8": "generic.maxHealth",
+                "Base:6": 16.0
+              },
+              "13:10": {
+                "Name:8": "generic.knockbackResistance",
+                "Base:6": 0.2
+              },
+              "14:10": {
+                "Name:8": "generic.movementSpeed",
+                "Base:6": 0.230000004172325
+              },
+              "15:10": {
+                "Name:8": "generic.armor",
+                "Base:6": 5.0
+              },
+              "16:10": {
+                "Name:8": "generic.armorToughness",
+                "Base:6": 0.0
+              },
+              "17:10": {
+                "Name:8": "forge.swimSpeed",
+                "Base:6": 1.0
+              },
+              "18:10": {
+                "Name:8": "generic.followRange",
+                "Base:6": 16.0
+              },
+              "19:10": {
+                "Name:8": "generic.attackDamage",
+                "Base:6": 10.0
+              }
+            },
+            "Invulnerable:1": 0,
+            "srpinvblocksnumber:9": {},
+            "Dimension:3": 0,
+            "ForgeCaps:10": {
+              "llibrary:extendedentitydatacapability:10": {},
+              "epicsiegemod:modified_handler:10": {
+                "modified:1": 0,
+                "data:10": {}
+              },
+              "dsurround:speech:10": {},
+              "dsurround:entityfx:10": {},
+              "mujmajnkraftsbettersurvival:spearsin:9": {},
+              "nuclearcraft:capability_entity_rads:10": {
+                "setFromMaxHealth:1": 1,
+                "radiationImmunityTime:6": 0.0,
+                "radawayBuffer:6": 0.0,
+                "radXCooldown:6": 0.0,
+                "radawayBufferSlow:6": 0.0,
+                "radawayCooldown:6": 0.0,
+                "shouldWarn:1": 0,
+                "recentPoisonAddition:6": 0.0,
+                "recentRadawayAddition:6": 0.0,
+                "poisonBuffer:6": 0.0,
+                "recentRadXAddition:6": 0.0,
+                "totalRads:6": 0.0,
+                "radiationImmunityStage:1": 0,
+                "radXWoreOff:1": 0,
+                "radXUsed:1": 0,
+                "internalRadiationResistance:6": 0.0,
+                "maxRads:6": 800.0,
+                "radiationLevel:6": 0.0,
+                "externalRadiationResistance:6": 0.0,
+                "consumed:1": 0
+              },
+              "iceandfire:entity_effect:10": {
+                "effectId:8": "NONE",
+                "effectTime:3": 0,
+                "effectAdditionalData:3": 0
+              },
+              "lycanitesmobs:iextendedentity:10": {},
+              "champions:championship:10": {},
+              "mujmajnkraftsbettersurvival:nunchakucombo:10": {
+                "Power:5": 0.0,
+                "Time:3": 0
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "xat:statushandler:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "UUIDMost:4": -4456555844201200720,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "Rotation:9": {
+              "0:5": 2.9384522,
+              "1:5": 0.0
+            },
+            "HurtByTimestamp:3": 0,
+            "SurgeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.9500000476837158,
+              "5:6": 0.30000001192092896
+            },
+            "UpdateBlocked:1": 0,
+            "phasecreat:1": 0,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "parasitekills:5": 0.0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "Air:2": 300,
+            "parasitecoldl:1": 0,
+            "Fire:2": -1,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Health:5": 16.0,
+            "FallDistance:5": 0.0,
+            "id:8": "srparasites:sim_villager",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "parasitecolob:1": 0,
+            "parasitetype:3": 0,
+            "CanPickUpLoot:1": 0,
+            "parasitehost:3": 0,
+            "HurtTime:2": 0,
+            "FallFlying:1": 0,
+            "PersistenceRequired:1": 0,
+            "PortalCooldown:3": 0
+          },
+          "ignoreNBT:1": 1
+        },
+        "1:10": {
+          "target:8": "srparasites:ada_arachnida",
+          "index:3": 1,
+          "required:3": 5,
+          "subtypes:1": 1,
+          "damageType:8": "",
+          "taskID:8": "bq_standard:hunt",
+          "targetNBT:10": {
+            "DeathTime:2": 0,
+            "Leashed:1": 0,
+            "LeftHanded:1": 0,
+            "damagetypecap:3": 8,
+            "srpinvblocksname:9": {},
+            "UUIDLeast:4": -5399675499739205664,
+            "parasitedespawn:1": 1,
+            "OnGround:1": 0,
+            "AbsorptionAmount:5": 0.0,
+            "Attributes:9": {
+              "0:10": {
+                "Name:8": "potioncore.projectileDamage",
+                "Base:6": 1.0
+              },
+              "1:10": {
+                "Name:8": "potioncore.magicDamage",
+                "Base:6": 1.0
+              },
+              "2:10": {
+                "Name:8": "potioncore.jumpHeight",
+                "Base:6": 1.0
+              },
+              "3:10": {
+                "Name:8": "potioncore.damageResistance",
+                "Base:6": 1.0
+              },
+              "4:10": {
+                "Name:8": "potioncore.magicShielding",
+                "Base:6": 0.0
+              },
+              "5:10": {
+                "Name:8": "xat.entityRace",
+                "Base:6": 1.0
+              },
+              "6:10": {
+                "Name:8": "xat.jump",
+                "Base:6": 0.41999998688697815
+              },
+              "7:10": {
+                "Name:8": "xat.stepheight",
+                "Base:6": 0.6000000238418579
+              },
+              "8:10": {
+                "Name:8": "xat.entityMagic.maxMana",
+                "Base:6": 100.0
+              },
+              "9:10": {
+                "Name:8": "xat.entityMagic.regen",
+                "Base:6": 1.0
+              },
+              "10:10": {
+                "Name:8": "xat.entityMagic.regen.cooldown",
+                "Base:6": 1.0
+              },
+              "11:10": {
+                "Name:8": "xat.entityMagic.affinity",
+                "Base:6": 0.0
+              },
+              "12:10": {
+                "Name:8": "generic.maxHealth",
+                "Base:6": 80.0
+              },
+              "13:10": {
+                "Name:8": "generic.knockbackResistance",
+                "Base:6": 1.0000000029802323
+              },
+              "14:10": {
+                "Name:8": "generic.movementSpeed",
+                "Base:6": 0.33
+              },
+              "15:10": {
+                "Name:8": "generic.armor",
+                "Base:6": 14.0
+              },
+              "16:10": {
+                "Name:8": "generic.armorToughness",
+                "Base:6": 0.0
+              },
+              "17:10": {
+                "Name:8": "forge.swimSpeed",
+                "Base:6": 1.0
+              },
+              "18:10": {
+                "Name:8": "generic.followRange",
+                "Base:6": 32.0
+              },
+              "19:10": {
+                "Name:8": "generic.attackDamage",
+                "Base:6": 30.0
+              }
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "Invulnerable:1": 0,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "srpinvblocksnumber:9": {},
+            "Dimension:3": 0,
+            "ForgeCaps:10": {
+              "llibrary:extendedentitydatacapability:10": {},
+              "epicsiegemod:modified_handler:10": {
+                "modified:1": 0,
+                "data:10": {}
+              },
+              "dsurround:speech:10": {},
+              "dsurround:entityfx:10": {},
+              "mujmajnkraftsbettersurvival:spearsin:9": {},
+              "nuclearcraft:capability_entity_rads:10": {
+                "setFromMaxHealth:1": 1,
+                "radiationImmunityTime:6": 0.0,
+                "radawayBuffer:6": 0.0,
+                "radXCooldown:6": 0.0,
+                "radawayBufferSlow:6": 0.0,
+                "radawayCooldown:6": 0.0,
+                "shouldWarn:1": 0,
+                "recentPoisonAddition:6": 0.0,
+                "recentRadawayAddition:6": 0.0,
+                "poisonBuffer:6": 0.0,
+                "recentRadXAddition:6": 0.0,
+                "totalRads:6": 0.0,
+                "radiationImmunityStage:1": 0,
+                "radXWoreOff:1": 0,
+                "radXUsed:1": 0,
+                "internalRadiationResistance:6": 0.0,
+                "maxRads:6": 4000.0,
+                "radiationLevel:6": 0.0,
+                "externalRadiationResistance:6": 0.0,
+                "consumed:1": 0
+              },
+              "iceandfire:entity_effect:10": {
+                "effectId:8": "NONE",
+                "effectTime:3": 0,
+                "effectAdditionalData:3": 0
+              },
+              "lycanitesmobs:iextendedentity:10": {},
+              "champions:championship:10": {},
+              "mujmajnkraftsbettersurvival:nunchakucombo:10": {
+                "Power:5": 0.0,
+                "Time:3": 0
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "xat:statushandler:10": {}
+            },
+            "sprresistancei:9": {},
+            "UUIDMost:4": -3591517974390750099,
+            "sprresistances:9": {},
+            "Rotation:9": {
+              "0:5": 4.830698,
+              "1:5": 0.0
+            },
+            "HurtByTimestamp:3": 0,
+            "SurgeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 1.6010000109672546,
+              "4:6": 2.8499999046325684,
+              "5:6": 1.6010000109672546
+            },
+            "UpdateBlocked:1": 0,
+            "phasecreat:1": 0,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "parasitekills:5": 0.0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "Air:2": 300,
+            "parasitecoldl:1": 0,
+            "Fire:2": -1,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "FallDistance:5": 0.0,
+            "id:8": "srparasites:ada_arachnida",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "parasitecolob:1": 0,
+            "parasitetype:3": 0,
+            "CanPickUpLoot:1": 0,
+            "Health:5": 80.0,
+            "HurtTime:2": 0,
+            "FallFlying:1": 0,
+            "PersistenceRequired:1": 0,
+            "PortalCooldown:3": 0,
+            "paracolony:1": 0
+          },
+          "ignoreNBT:1": 1
+        },
+        "2:10": {
+          "target:8": "srparasites:beckon_si",
+          "index:3": 2,
+          "required:3": 5,
+          "subtypes:1": 1,
+          "damageType:8": "",
+          "taskID:8": "bq_standard:hunt",
+          "targetNBT:10": {
+            "neededtime:3": 283,
+            "Leashed:1": 0,
+            "damagetypecap:3": 5,
+            "LeftHanded:1": 0,
+            "AbsorptionAmount:5": 0.0,
+            "cangrowto:1": 1,
+            "Invulnerable:1": 0,
+            "ForgeCaps:10": {
+              "llibrary:extendedentitydatacapability:10": {},
+              "epicsiegemod:modified_handler:10": {
+                "modified:1": 0,
+                "data:10": {}
+              },
+              "dsurround:speech:10": {},
+              "dsurround:entityfx:10": {},
+              "mujmajnkraftsbettersurvival:spearsin:9": {},
+              "nuclearcraft:capability_entity_rads:10": {
+                "setFromMaxHealth:1": 1,
+                "radiationImmunityTime:6": 0.0,
+                "radawayBuffer:6": 0.0,
+                "radXCooldown:6": 0.0,
+                "radawayBufferSlow:6": 0.0,
+                "radawayCooldown:6": 0.0,
+                "shouldWarn:1": 0,
+                "recentPoisonAddition:6": 0.0,
+                "recentRadawayAddition:6": 0.0,
+                "poisonBuffer:6": 0.0,
+                "recentRadXAddition:6": 0.0,
+                "totalRads:6": 0.0,
+                "radiationImmunityStage:1": 0,
+                "radXWoreOff:1": 0,
+                "radXUsed:1": 0,
+                "internalRadiationResistance:6": 0.0,
+                "maxRads:6": 1250.0,
+                "radiationLevel:6": 0.0,
+                "externalRadiationResistance:6": 0.0,
+                "consumed:1": 0
+              },
+              "iceandfire:entity_effect:10": {
+                "effectId:8": "NONE",
+                "effectTime:3": 0,
+                "effectAdditionalData:3": 0
+              },
+              "lycanitesmobs:iextendedentity:10": {},
+              "champions:championship:10": {},
+              "mujmajnkraftsbettersurvival:nunchakucombo:10": {
+                "Power:5": 0.0,
+                "Time:3": 0
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "xat:statushandler:10": {}
+            },
+            "srpinvblocksnumber:9": {},
+            "sprresistancei:9": {},
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "UpdateBlocked:1": 0,
+            "SurgeAABB:9": {
+              "0:6": -0.25,
+              "1:6": 0.0,
+              "2:6": -0.25,
+              "3:6": 0.25,
+              "4:6": 1.5,
+              "5:6": 0.25
+            },
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "parasitekills:5": -10.0,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "parasitetype:3": 0,
+            "CanPickUpLoot:1": 0,
+            "PersistenceRequired:1": 0,
+            "Fire:2": -1,
+            "parasiteuppp:1": 0,
+            "DeathTime:2": 0,
+            "parasitedespawn:1": 0,
+            "UUIDLeast:4": -5149708273838662117,
+            "srpinvblocksname:9": {},
+            "OnGround:1": 0,
+            "Attributes:9": {
+              "0:10": {
+                "Name:8": "potioncore.projectileDamage",
+                "Base:6": 1.0
+              },
+              "1:10": {
+                "Name:8": "potioncore.magicDamage",
+                "Base:6": 1.0
+              },
+              "2:10": {
+                "Name:8": "potioncore.jumpHeight",
+                "Base:6": 1.0
+              },
+              "3:10": {
+                "Name:8": "potioncore.damageResistance",
+                "Base:6": 1.0
+              },
+              "4:10": {
+                "Name:8": "potioncore.magicShielding",
+                "Base:6": 0.0
+              },
+              "5:10": {
+                "Name:8": "xat.entityRace",
+                "Base:6": 1.0
+              },
+              "6:10": {
+                "Name:8": "xat.jump",
+                "Base:6": 0.41999998688697815
+              },
+              "7:10": {
+                "Name:8": "xat.stepheight",
+                "Base:6": 0.6000000238418579
+              },
+              "8:10": {
+                "Name:8": "xat.entityMagic.maxMana",
+                "Base:6": 100.0
+              },
+              "9:10": {
+                "Name:8": "xat.entityMagic.regen",
+                "Base:6": 1.0
+              },
+              "10:10": {
+                "Name:8": "xat.entityMagic.regen.cooldown",
+                "Base:6": 1.0
+              },
+              "11:10": {
+                "Name:8": "xat.entityMagic.affinity",
+                "Base:6": 0.0
+              },
+              "12:10": {
+                "Name:8": "generic.maxHealth",
+                "Base:6": 25.0
+              },
+              "13:10": {
+                "Name:8": "generic.knockbackResistance",
+                "Base:6": 1.0
+              },
+              "14:10": {
+                "Name:8": "generic.movementSpeed",
+                "Base:6": 0.0
+              },
+              "15:10": {
+                "Name:8": "generic.armor",
+                "Base:6": 4.0
+              },
+              "16:10": {
+                "Name:8": "generic.armorToughness",
+                "Base:6": 0.0
+              },
+              "17:10": {
+                "Name:8": "forge.swimSpeed",
+                "Base:6": 1.0
+              },
+              "18:10": {
+                "Name:8": "generic.followRange",
+                "Base:6": 16.0
+              },
+              "19:10": {
+                "Name:8": "generic.attackDamage",
+                "Base:6": 2.5
+              }
+            },
+            "Dimension:3": 0,
+            "UUIDMost:4": 786626512846013722,
+            "sprresistances:9": {},
+            "Rotation:9": {
+              "0:5": 0.64185613,
+              "1:5": 0.0
+            },
+            "HurtByTimestamp:3": 0,
+            "phasecreat:1": 0,
+            "tickse:3": 0,
+            "Air:2": 300,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "parasitecoldl:1": 0,
+            "FallDistance:5": 0.0,
+            "FallFlying:1": 0,
+            "id:8": "srparasites:beckon_si",
+            "parasitedepeek:1": 0,
+            "belongtors:1": 0,
+            "parasitecolob:1": 0,
+            "HurtTime:2": 0,
+            "Health:5": 25.0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "PortalCooldown:3": 0,
+            "paracolony:1": 0
+          },
+          "ignoreNBT:1": 1
+        },
+        "3:10": {
+          "target:8": "srparasites:ada_longarms",
+          "index:3": 3,
+          "required:3": 1,
+          "subtypes:1": 1,
+          "damageType:8": "",
+          "taskID:8": "bq_standard:hunt",
+          "targetNBT:10": {
+            "DeathTime:2": 0,
+            "Leashed:1": 0,
+            "LeftHanded:1": 0,
+            "damagetypecap:3": 8,
+            "srpinvblocksname:9": {},
+            "UUIDLeast:4": -5986836041805065949,
+            "parasitedespawn:1": 1,
+            "OnGround:1": 0,
+            "AbsorptionAmount:5": 0.0,
+            "parasiteleftTendril:5": 47.5,
+            "Attributes:9": {
+              "0:10": {
+                "Name:8": "potioncore.projectileDamage",
+                "Base:6": 1.0
+              },
+              "1:10": {
+                "Name:8": "potioncore.magicDamage",
+                "Base:6": 1.0
+              },
+              "2:10": {
+                "Name:8": "potioncore.jumpHeight",
+                "Base:6": 1.0
+              },
+              "3:10": {
+                "Name:8": "potioncore.damageResistance",
+                "Base:6": 1.0
+              },
+              "4:10": {
+                "Name:8": "potioncore.magicShielding",
+                "Base:6": 0.0
+              },
+              "5:10": {
+                "Name:8": "xat.entityRace",
+                "Base:6": 1.0
+              },
+              "6:10": {
+                "Name:8": "xat.jump",
+                "Base:6": 0.41999998688697815
+              },
+              "7:10": {
+                "Name:8": "xat.stepheight",
+                "Base:6": 0.6000000238418579
+              },
+              "8:10": {
+                "Name:8": "xat.entityMagic.maxMana",
+                "Base:6": 100.0
+              },
+              "9:10": {
+                "Name:8": "xat.entityMagic.regen",
+                "Base:6": 1.0
+              },
+              "10:10": {
+                "Name:8": "xat.entityMagic.regen.cooldown",
+                "Base:6": 1.0
+              },
+              "11:10": {
+                "Name:8": "xat.entityMagic.affinity",
+                "Base:6": 0.0
+              },
+              "12:10": {
+                "Name:8": "generic.maxHealth",
+                "Base:6": 95.0
+              },
+              "13:10": {
+                "Name:8": "generic.knockbackResistance",
+                "Base:6": 1.000000011920929
+              },
+              "14:10": {
+                "Name:8": "generic.movementSpeed",
+                "Base:6": 0.3
+              },
+              "15:10": {
+                "Name:8": "generic.armor",
+                "Base:6": 16.0
+              },
+              "16:10": {
+                "Name:8": "generic.armorToughness",
+                "Base:6": 0.0
+              },
+              "17:10": {
+                "Name:8": "forge.swimSpeed",
+                "Base:6": 1.0
+              },
+              "18:10": {
+                "Name:8": "generic.followRange",
+                "Base:6": 32.0
+              },
+              "19:10": {
+                "Name:8": "generic.attackDamage",
+                "Base:6": 27.0
+              }
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "Invulnerable:1": 0,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "srpinvblocksnumber:9": {},
+            "Dimension:3": 0,
+            "ForgeCaps:10": {
+              "llibrary:extendedentitydatacapability:10": {},
+              "epicsiegemod:modified_handler:10": {
+                "modified:1": 0,
+                "data:10": {}
+              },
+              "dsurround:speech:10": {},
+              "dsurround:entityfx:10": {},
+              "mujmajnkraftsbettersurvival:spearsin:9": {},
+              "nuclearcraft:capability_entity_rads:10": {
+                "setFromMaxHealth:1": 1,
+                "radiationImmunityTime:6": 0.0,
+                "radawayBuffer:6": 0.0,
+                "radXCooldown:6": 0.0,
+                "radawayBufferSlow:6": 0.0,
+                "radawayCooldown:6": 0.0,
+                "shouldWarn:1": 0,
+                "recentPoisonAddition:6": 0.0,
+                "recentRadawayAddition:6": 0.0,
+                "poisonBuffer:6": 0.0,
+                "recentRadXAddition:6": 0.0,
+                "totalRads:6": 0.0,
+                "radiationImmunityStage:1": 0,
+                "radXWoreOff:1": 0,
+                "radXUsed:1": 0,
+                "internalRadiationResistance:6": 0.0,
+                "maxRads:6": 4750.0,
+                "radiationLevel:6": 0.0,
+                "externalRadiationResistance:6": 0.0,
+                "consumed:1": 0
+              },
+              "iceandfire:entity_effect:10": {
+                "effectId:8": "NONE",
+                "effectTime:3": 0,
+                "effectAdditionalData:3": 0
+              },
+              "lycanitesmobs:iextendedentity:10": {},
+              "champions:championship:10": {},
+              "mujmajnkraftsbettersurvival:nunchakucombo:10": {
+                "Power:5": 0.0,
+                "Time:3": 0
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "xat:statushandler:10": {}
+            },
+            "sprresistancei:9": {},
+            "UUIDMost:4": 8419063410021056806,
+            "sprresistances:9": {},
+            "Rotation:9": {
+              "0:5": 0.69424367,
+              "1:5": 0.0
+            },
+            "HurtByTimestamp:3": 0,
+            "SurgeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.6010000109672546,
+              "4:6": 3.5,
+              "5:6": 0.6010000109672546
+            },
+            "UpdateBlocked:1": 0,
+            "phasecreat:1": 0,
+            "parasiterightTendril:5": 47.5,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "parasitekills:5": 0.0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "Air:2": 300,
+            "parasitecoldl:1": 0,
+            "Fire:2": -1,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "FallDistance:5": 0.0,
+            "id:8": "srparasites:ada_longarms",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "parasitecolob:1": 0,
+            "parasitetype:3": 0,
+            "CanPickUpLoot:1": 0,
+            "Health:5": 95.0,
+            "HurtTime:2": 0,
+            "FallFlying:1": 0,
+            "PersistenceRequired:1": 0,
+            "PortalCooldown:3": 0,
+            "paracolony:1": 0
+          },
+          "ignoreNBT:1": 1
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        387
+      ],
+      "questID:3": 388
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:artifact",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.394",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.394"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 0,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "betterquesting.dregora.quest.name.393",
+          "index:3": 0,
+          "dimension:3": 0,
+          "biome:8": "openterraingenerator:overworld_abyssal_rift"
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [],
+      "questID:3": 389
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "contenttweaker:shelter_special_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.395",
+          "autoclaim:1": 1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.395"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        380
+      ],
+      "questID:3": 390
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:ancient_coin",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.396",
+          "autoclaim:1": 1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.396"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        397,
+        394
+      ],
+      "questID:3": 391
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:parasitecanister",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.397",
+          "autoclaim:1": 1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.397"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        348
+      ],
+      "questID:3": 392
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:skull",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.398",
+          "autoclaim:1": 1,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.398"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        388
+      ],
+      "questID:3": 393
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "dimstack:bedrock",
+            "Count:3": 1,
+            "Damage:2": 7,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.399",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.399"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "dimstack:bedrock",
+              "meta:3": 7,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        400
+      ],
+      "questID:3": 394
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:ancient_coin",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.400",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.400"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "variedcommodities:ancient_coin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "allowCraft:1": 1,
+          "partialMatch:1": 1,
+          "allowAnvil:1": 0,
+          "allowSmelt:1": 0,
+          "taskID:8": "bq_standard:crafting",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        396
+      ],
+      "questID:3": 395
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:coin_stone",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.401",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.401"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "variedcommodities:coin_stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        389
+      ],
+      "questID:3": 396
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "dimstack:bedrock",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.402",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.402"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "dimstack:bedrock",
+              "meta:3": 6,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        399
+      ],
+      "questID:3": 397
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "minecraft:obsidian",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.403",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.403"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "minecraft:obsidian",
+              "meta:3": -1,
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:block_break",
+          "index:3": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        396
+      ],
+      "questID:3": 398
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:pendant",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.404",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.404"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "variedcommodities:pendant",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        398
+      ],
+      "questID:3": 399
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:artifact",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.405",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.405"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "variedcommodities:artifact",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        395
+      ],
+      "questID:3": 400
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "variedcommodities:ancient_coin",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.406",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.406"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "groupDetect:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "variedcommodities:ancient_coin",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "partialMatch:1": 1,
+          "consume:1": 0,
+          "autoConsume:1": 0,
+          "taskID:8": "bq_standard:retrieval",
+          "ignoreNBT:1": 0
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        389
+      ],
+      "questID:3": 401
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "forge:bucketfilled",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "tag:10": {
+              "Amount:3": 1000,
+              "FluidName:8": "deadblood"
+            },
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.408",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.408"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "taxiCabDist:1": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "invert:1": 0,
+          "visible:1": 0,
+          "posZ:3": 0,
+          "range:3": -1,
+          "taskID:8": "bq_standard:location",
+          "posY:3": 0,
+          "posX:3": 0,
+          "name:8": "betterquesting.dregora.quest.name.407",
+          "index:3": 0,
+          "dimension:3": 3,
+          "biome:8": ""
+        }
+      },
+      "rewards:9": {},
+      "preRequisites:11": [
+        389
+      ],
+      "questID:3": 403
+    },
+    {
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "icon:10": {
+            "id:8": "srparasites:parasitecanister",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "questlogic:8": "AND",
+          "lockedprogress:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "issilent:1": 0,
+          "repeattime:3": -1,
+          "name:8": "betterquesting.dregora.quest.name.409",
+          "autoclaim:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "tasklogic:8": "AND",
+          "desc:8": "betterquesting.dregora.quest.desc.409"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {},
+      "preRequisites:11": [
+        391,
+        403,
+        401,
+        383
+      ],
+      "questID:3": 405
+    }
+  ],
+  "lines": [
+    {
+      "after": 2,
+      "line": {
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "betterquesting.dregora.quest.name.413",
+            "desc:8": "betterquesting.dregora.quest.desc.413",
+            "visibility:8": "NORMAL",
+            "bg_size:3": 256,
+            "icon:10": {
+              "id:8": "srparasites:itemmobspawner_hiskeleton",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "bg_image:8": ""
+          }
+        },
+        "quests:9": {
+          "0:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -120,
+            "id:3": 382
+          },
+          "1:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -144,
+            "y:3": -120,
+            "id:3": 385
+          },
+          "2:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -216,
+            "y:3": -120,
+            "id:3": 386
+          },
+          "3:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -72,
+            "id:3": 387
+          },
+          "4:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -36,
+            "id:3": 388
+          },
+          "5:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": 0,
+            "id:3": 393
+          }
+        },
+        "lineID:3": 19
+      }
+    },
+    {
+      "after": 23,
+      "line": {
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "betterquesting.dregora.quest.name.411",
+            "desc:8": "betterquesting.dregora.quest.desc.411",
+            "visibility:8": "NORMAL",
+            "bg_size:3": 256,
+            "icon:10": {
+              "id:8": "contenttweaker:shelter_item",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "bg_image:8": ""
+          }
+        },
+        "quests:9": {
+          "0:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -84,
+            "y:3": -216,
+            "id:3": 350
+          },
+          "1:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -48,
+            "y:3": -216,
+            "id:3": 354
+          },
+          "2:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -84,
+            "y:3": -180,
+            "id:3": 355
+          },
+          "3:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -84,
+            "y:3": -144,
+            "id:3": 356
+          },
+          "4:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -48,
+            "y:3": -144,
+            "id:3": 357
+          },
+          "5:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -84,
+            "y:3": -72,
+            "id:3": 358
+          },
+          "6:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 132,
+            "y:3": -108,
+            "id:3": 359
+          },
+          "7:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -84,
+            "y:3": -108,
+            "id:3": 360
+          },
+          "8:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 132,
+            "y:3": -216,
+            "id:3": 361
+          },
+          "9:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -12,
+            "y:3": -216,
+            "id:3": 362
+          },
+          "10:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 24,
+            "y:3": -216,
+            "id:3": 363
+          },
+          "11:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 96,
+            "y:3": -216,
+            "id:3": 364
+          },
+          "12:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 60,
+            "y:3": -216,
+            "id:3": 365
+          },
+          "13:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 168,
+            "y:3": -216,
+            "id:3": 366
+          },
+          "14:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 60,
+            "y:3": -72,
+            "id:3": 367
+          },
+          "15:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 24,
+            "y:3": -72,
+            "id:3": 368
+          },
+          "16:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -12,
+            "y:3": -72,
+            "id:3": 369
+          },
+          "17:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 132,
+            "y:3": -144,
+            "id:3": 370
+          },
+          "18:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 132,
+            "y:3": -180,
+            "id:3": 371
+          },
+          "19:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -48,
+            "y:3": -108,
+            "id:3": 372
+          },
+          "20:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -48,
+            "y:3": -180,
+            "id:3": 373
+          },
+          "21:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -48,
+            "y:3": -72,
+            "id:3": 374
+          },
+          "22:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 168,
+            "y:3": -180,
+            "id:3": 375
+          },
+          "23:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 168,
+            "y:3": -108,
+            "id:3": 376
+          },
+          "24:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 168,
+            "y:3": -144,
+            "id:3": 377
+          },
+          "25:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 96,
+            "y:3": -72,
+            "id:3": 378
+          },
+          "26:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 132,
+            "y:3": -72,
+            "id:3": 379
+          },
+          "27:10": {
+            "sizeX:3": 60,
+            "sizeY:3": 60,
+            "x:3": 24,
+            "y:3": -180,
+            "id:3": 380
+          },
+          "28:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": 168,
+            "y:3": -72,
+            "id:3": 381
+          },
+          "29:10": {
+            "sizeX:3": 36,
+            "sizeY:3": 24,
+            "x:3": 36,
+            "y:3": -108,
+            "id:3": 390
+          }
+        },
+        "lineID:3": 17
+      }
+    },
+    {
+      "after": 17,
+      "line": {
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "betterquesting.dregora.quest.name.410",
+            "desc:8": "betterquesting.dregora.quest.desc.410",
+            "visibility:8": "NORMAL",
+            "bg_image:8": "",
+            "icon:10": {
+              "id:8": "srparasites:parasitecanister",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "bg_size:3": 256
+          }
+        },
+        "quests:9": {
+          "0:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -144,
+            "y:3": -48,
+            "id:3": 348
+          },
+          "1:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -144,
+            "y:3": -96,
+            "id:3": 349
+          },
+          "2:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -72,
+            "id:3": 351
+          },
+          "3:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -108,
+            "y:3": -72,
+            "id:3": 352
+          },
+          "4:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -144,
+            "y:3": -144,
+            "id:3": 353
+          },
+          "5:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -144,
+            "y:3": 0,
+            "id:3": 392
+          }
+        },
+        "lineID:3": 14
+      }
+    },
+    {
+      "after": 16,
+      "line": {
+        "properties:10": {
+          "betterquesting:10": {
+            "name:8": "betterquesting.dregora.quest.name.412",
+            "desc:8": "betterquesting.dregora.quest.desc.412",
+            "visibility:8": "NORMAL",
+            "bg_size:3": 256,
+            "icon:10": {
+              "id:8": "variedcommodities:ancient_coin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "bg_image:8": ""
+          }
+        },
+        "quests:9": {
+          "0:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -156,
+            "id:3": 383
+          },
+          "1:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -192,
+            "id:3": 389
+          },
+          "2:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -84,
+            "id:3": 391
+          },
+          "3:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -240,
+            "y:3": -96,
+            "id:3": 394
+          },
+          "4:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -240,
+            "y:3": -216,
+            "id:3": 395
+          },
+          "5:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -228,
+            "id:3": 396
+          },
+          "6:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -120,
+            "y:3": -96,
+            "id:3": 397
+          },
+          "7:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -120,
+            "y:3": -216,
+            "id:3": 398
+          },
+          "8:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -108,
+            "y:3": -156,
+            "id:3": 399
+          },
+          "9:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -252,
+            "y:3": -156,
+            "id:3": 400
+          },
+          "10:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -216,
+            "y:3": -156,
+            "id:3": 401
+          },
+          "11:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -144,
+            "y:3": -156,
+            "id:3": 403
+          },
+          "12:10": {
+            "sizeX:3": 24,
+            "sizeY:3": 24,
+            "x:3": -180,
+            "y:3": -120,
+            "id:3": 405
+          }
+        },
+        "lineID:3": 18
+      }
+    }
+  ],
+  "removed_quests": [],
+  "removed_lines": [],
+  "quest_changes": {
+    "209": [
+      {
+        "path": [
+          "preRequisites:11"
+        ],
+        "add": [
+          390,
+          391,
+          392,
+          393
+        ],
+        "remove": []
+      }
+    ]
+  },
+  "line_changes": {},
+  "settings_changes": [
+    {
+      "path": [
+        "betterquesting:10",
+        "pack_name:8"
+      ],
+      "old": "RLCraft",
+      "new": "RLCraft Dregora"
+    }
+  ]
+}
