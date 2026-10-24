@@ -204,7 +204,7 @@
     {"projectID": 679116, "fileID": 4178657, "required": true, "fileName": "MaterialTweaker-1.1.1"},
     {"projectID": 688489, "fileID": 8727444, "required": true, "fileName": "JSON-Paintings-v1.5.0-mc1.12.2"},
     {"projectID": 709188, "fileID": 4102778, "required": true, "fileName": "framevoidpatch-1.0.0"},
-    {"projectID": 711714, "fileID": 9250981, "required": true, "fileName": "RLCombat-1.12.2-2.2.5"},
+    {"projectID": 711714, "fileID": 5940474, "required": true, "fileName": "RLCombat-1.12.2-2.2.4"},
     {"projectID": 711730, "fileID": 8151138, "required": true, "fileName": "RLMixins-1.4.7"},
     {"projectID": 739808, "fileID": 4183001, "required": true, "fileName": "PhosphorCrashFix-1.12.2-1.0.0"},
     {"projectID": 813247, "fileID": 4375806, "required": true, "fileName": "RLTooltips"},
