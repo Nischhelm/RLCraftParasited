@@ -82,6 +82,13 @@ patches:
             - openterraingenerator:overworld_ruins_of_blight
         B:"Biome Spread BlackList Inverted": true
 
+  - type: script_patch
+    file: scripts/increased_para_stats_by_biome.zs
+    description: "Disable Dregora para biome stat buffs (configpack is extracted over Dregora, so blank the script instead of deleting it)"
+    mode: replace
+    content: |
+      // Disabled in Dregora Unparasited
+
   - type: file_replace
     source: dregora_unparasited/config/incontrol/spawn.json
     destination: config/incontrol/spawn.json
