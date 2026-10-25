@@ -109,9 +109,13 @@ patches:
     destination: resources/mainmenu/images/unparasited
     description: "Add old 2.9.3 mainmenu to avoid spoilers for LC"
 
-  - type: file_delete
+  - type: json_patch
     file: config/lycanitesmobs/spawners/skyhighPara.json
-    description: "Dont spawn paras in unparasited at sky limit"
+    description: "Dont spawn paras in unparasited at sky limit (disabled instead of deleted, configpack is extracted over the base pack)"
+    changes:
+      - op: replace
+        path: /enabled
+        value: false
 
 # Build configuration
 build:

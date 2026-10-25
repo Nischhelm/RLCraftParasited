@@ -532,6 +532,10 @@ class PackBuilder:
                 if not file_rel:
                     raise ValueError("file_delete requires 'file' field")
 
+                # Configpack ZIPs are extracted over an existing install, so they can't remove files
+                print(f"  ⚠ WARNING: file_delete has no effect in a configpack ({file_rel})")
+                print(f"    The file stays in the user's installation. Disable it via a patch instead (e.g. blank it or set enabled=false).")
+
                 # Path in the temp directory
                 dest_file = target_dir / file_rel
 
