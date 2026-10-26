@@ -28,6 +28,7 @@ overrides/config/enchantmentcontrol/descriptions.txt
 overrides/config/fw.cfg
 overrides/config/potioncontrol/descriptions.txt
 overrides/config/potioncontrol/names.txt
+/overrides/config/potioncontrol/potiontypes/names.txt
 /overrides/config/potioncontrol/potions/inferred-inactive
 /overrides/config/potioncontrol/potiontypes/inferred-inactive
 overrides/mods/memory_repo/net/ilexiconn/llibrary-core/1.0.11-1.12.2/llibrary-core-1.0.11-1.12.2.jar.meta
