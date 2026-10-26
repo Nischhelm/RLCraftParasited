@@ -1,5 +1,9 @@
 --- Oct 26 2026 ---
 
+This is a small one, mainly bc ppl complained about not being able to hit the lycanite bosses
+But it also got some nice stuff like the QT reforging material JEI Plugin, 
+or the lycatweaks+scalinghealthissues update. 
+
 Mods
     Updated Scaling Health Issues (cdstks writeup [here](https://github.com/Nischhelm/RLCraftParasited/pull/32))
     Updated LycanitesTweaks (cdstks writeup [here](https://github.com/Nischhelm/RLCraftParasited/pull/33))
