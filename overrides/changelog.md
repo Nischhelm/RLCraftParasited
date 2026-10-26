@@ -1,3 +1,33 @@
+--- Oct XX 2026 ---
+
+Mods
+    Updated Scaling Health Issues (cdstks writeup [here](https://github.com/Nischhelm/RLCraftParasited/pull/32))
+    Updated LycanitesTweaks (cdstks writeup [here](https://github.com/Nischhelm/RLCraftParasited/pull/33))
+    Updated RLCombat to fix some boss reach issues (thanks cdstk and fonny!)
+    Updated NischiTweaker
+        Fixed Global GameRule moment forever
+        Allows to modify all locks+lockpicks, adds dragonbone lock (currently unused), 
+        changes steel+dragonbone lock/pick textures (thanks hussarar for the locks stuff)
+        protects level.dat better from corruption and rerolling through quark (smh)
+        finally adds qualitytools reforging table jei plugin so we see which gear needs what reforge material
+    Updated FermiumBooter, JEI, voicechat, bhmenu
+
+Config
+    Fix some end fountain portal issues (losing potions health etc, thanks XXMA16!)
+    Fix losing health on login (thanks XXMA16!)
+    Made Snow Villages actually rarer (thanks cdstk!)
+
+Resourcepacks
+    Updated RLAnimated
+
+Dregora
+    Added Hussarars new BetterQuests
+
+Configpacks
+    Fixed still having skyhighpara spawns in unparasited...
+    Removed increased stats in dregora unparasited para biomes, they already got that through srpmixins
+    Added NoFlyZone lostcities preset for next monthly server
+
 --- Oct 22 2026 ---
 
 Hotfix mainly
