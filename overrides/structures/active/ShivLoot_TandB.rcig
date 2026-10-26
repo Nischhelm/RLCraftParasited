@@ -26,8 +26,10 @@
             "Elements": {
               "nbtType": "compound",
               "nbt": {
-                "nbtType": "string",
-                "primary": "xat:neutral"
+                "primary": {
+                  "nbtType": "string",
+                  "nbt": "xat:neutral"
+                }
               }
             }
           }
