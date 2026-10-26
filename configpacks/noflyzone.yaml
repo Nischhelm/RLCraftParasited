@@ -45,3 +45,12 @@ patches:
       spells:
         B:"ebwizardry:flight": false
         B:"ebwizardry:levitation": false
+
+  - type: cfg_patch
+    file: config/lostcities/general.cfg
+    description: "add noflyzone profile"
+    changes:
+      general:
+        S:profiles:
+          add:
+          - noflyzone
