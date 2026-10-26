@@ -1,4 +1,4 @@
---- Oct XX 2026 ---
+--- Oct 26 2026 ---
 
 Mods
     Updated Scaling Health Issues (cdstks writeup [here](https://github.com/Nischhelm/RLCraftParasited/pull/32))
@@ -9,7 +9,7 @@ Mods
         Allows to modify all locks+lockpicks, adds dragonbone lock (currently unused), 
         changes steel+dragonbone lock/pick textures (thanks hussarar for the locks stuff)
         protects level.dat better from corruption and rerolling through quark (smh)
-        finally adds qualitytools reforging table jei plugin so we see which gear needs what reforge material
+        finally adds my 1.5 years old qualitytools reforging table jei plugin so we see which gear needs what reforge material
     Updated FermiumBooter, JEI, voicechat, bhmenu
 
 Config
@@ -21,7 +21,7 @@ Resourcepacks
     Updated RLAnimated
 
 Dregora
-    Added Hussarars new BetterQuests
+    Added Hussarars new BetterQuests to dregora as well
 
 Configpacks
     Fixed still having skyhighpara spawns in unparasited...
