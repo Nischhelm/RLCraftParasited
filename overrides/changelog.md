@@ -25,7 +25,6 @@ Dregora
 
 Configpacks
     Fixed still having skyhighpara spawns in unparasited...
-    Removed increased stats in dregora unparasited para biomes, they already got that through srpmixins
     Added NoFlyZone lostcities preset for next monthly server
 
 --- Oct 22 2026 ---
