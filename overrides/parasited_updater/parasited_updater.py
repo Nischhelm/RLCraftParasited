@@ -2,21 +2,23 @@
 """
 RLCraft Parasited / Dregora Parasited updater - for server owners AND clients.
 
-Run it inside the folder you want to (re)install into:
-  - server: your server folder
-  - client: your CurseForge instance folder (right click profile -> open folder)
+It ships in <folder>/parasited_updater/ and installs into <folder>, i.e. the folder above it:
+  - server: your server folder (first time: create parasited_updater/ in an empty folder and put this script in)
+  - client: your instance folder (right click profile -> open folder)
 
+Start it with update_onWindows.bat (Windows, double click) or update_onLinux.sh, or directly:
     python3 parasited_updater.py                 # install / update to the latest release
     python3 parasited_updater.py --tag Oct26-2026
     python3 parasited_updater.py --yes           # don't ask for confirmation at each step
     python3 parasited_updater.py --reconfigure   # redo the first-run questions
     python3 parasited_updater.py --dir /path/to/folder
 
-Everything this script keeps lives in <folder>/parasited_updater/:
+Each update also replaces this script with the release's version.
+Everything else in <folder>/parasited_updater/ is yours and kept:
     config.yaml     what you want installed (pack, configpacks, ...) - edit freely
     cf_api_key.txt  your optional CurseForge API key
     custom/*.yaml   your own config changes, same format as the configpacks in
-                    https://github.com/Nischhelm/RLCraftParasited/tree/master/configpacks
+                    https://github.com/Nischhelm/RLCraftParasited/tree/main/configpacks
                     (put files for file_add/folder_add into custom/_files/)
 """
 
@@ -48,6 +50,10 @@ DEFAULT_KEEP = {
     "client": ["options.txt", "optionsof.txt", "servers.dat"],
     "server": ["server.properties"],
 }
+# Server scripts (parasited_server/), not extracted on clients.
+SERVER_ONLY_DIRS = ("parasited_server",)
+# Client-only mods (CurseForge project IDs) never downloaded on a server. Ships next to this script.
+SERVER_IGNORELIST = "mod_ignorelist_server.json"
 # Can never run on a dedicated server.
 ALWAYS_REMOVE_ON_SERVER = ("optifine",)
 
@@ -143,26 +149,28 @@ def safe_relative(path_str):
 
 # ---------------------------------------------------------------- dependencies
 
-def ensure_dependencies(data_dir: Path):
-    """PyYAML (+ jsonpatch for the patchers) are not in the standard library.
-    Offers to create a private venv inside parasited_updater/ instead of touching your system Python."""
+def ensure_dependencies(data_dir: Path, need_jsonpatch=False):
+    """PyYAML (+ jsonpatch, only for custom changes) are not in the standard library.
+    Offers to create a private venv inside parasited_updater/ instead of touching your system Python,
+    and restarts the script in it. Called before anything gets deleted, so the restart is harmless."""
     try:
         import yaml  # noqa: F401
-        import jsonpatch  # noqa: F401
+        if need_jsonpatch:
+            import jsonpatch  # noqa: F401
         return
     except ImportError:
         pass
     if os.environ.get(VENV_ENV_MARKER):
-        sys.exit("Dependencies are still missing inside the venv - delete parasited_updater/venv and retry.")
-
-    print("This script needs the Python packages 'pyyaml' and 'jsonpatch'.")
-    if not confirm(f"Create a private virtual environment in {data_dir / 'venv'} and install them there?"):
-        sys.exit("Cannot continue without them. Install manually: pip install pyyaml jsonpatch")
+        sys.exit(f"Dependencies are still missing inside the venv - delete {data_dir / 'venv'} and retry.")
 
     venv_dir = data_dir / "venv"
-    subprocess.run([sys.executable, "-m", "venv", str(venv_dir)], check=True)
     python = venv_dir / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
-    subprocess.run([str(python), "-m", "pip", "install", "--quiet", "pyyaml", "jsonpatch"], check=True)
+    if not python.exists():
+        print("This script needs the Python packages 'pyyaml' and 'jsonpatch'.")
+        if not confirm(f"Create a private virtual environment in {venv_dir} and install them there?"):
+            sys.exit("Cannot continue without them. Install manually: pip install pyyaml jsonpatch")
+        subprocess.run([sys.executable, "-m", "venv", str(venv_dir)], check=True)
+        subprocess.run([str(python), "-m", "pip", "install", "--quiet", "pyyaml", "jsonpatch"], check=True)
     result = subprocess.run([str(python), *sys.argv], env={**os.environ, VENV_ENV_MARKER: "1"})
     sys.exit(result.returncode)
 
@@ -248,7 +256,8 @@ custom:{lst(cfg['custom'])}
 # Extra files/folders (relative to this folder) that survive an update if they exist.
 # Defaults for your mode (options.txt etc.) are always kept.
 keep:{lst(cfg['keep'])}
-# CurseForge project IDs that are never downloaded (e.g. client-only mods on a server).
+# CurseForge project IDs that are never downloaded. On a server, the client-only mods
+# in mod_ignorelist_server.json (next to this file, updated with every release) are skipped too.
 mod_ignore:{lst(cfg['mod_ignore'])}
 # Delete/skip any mod whose file name contains one of these (lower case). OptiFine is always skipped on servers.
 remove_mods:{lst(cfg['remove_mods'])}""")
@@ -307,7 +316,7 @@ def extract_base(zip_path: Path, extract_dir: Path, target: Path, mode, keep):
     for entry in overrides.iterdir():
         if entry.is_file() and entry.suffix.lower() == ".zip":
             continue  # configpack
-        if mode == "server" and entry.name in CLIENT_ONLY_DIRS:
+        if entry.name in (CLIENT_ONLY_DIRS if mode == "server" else SERVER_ONLY_DIRS):
             continue
         dest = target / entry.name
         if entry.is_dir():
@@ -350,7 +359,7 @@ def install_one(item, target: Path, mode, cf_key, ignored, removed):
     """Returns (status, name). status: ok | skipped | failed"""
     project_id, file_id = item["projectID"], item["fileID"]
     if project_id in ignored:
-        return "skipped", f"project {project_id} (ignored)"
+        return "skipped", f"{ignored[project_id] or f'project {project_id}'} (ignored)"
 
     name = item.get("fileName") or str(file_id)
     api_url = None
@@ -404,9 +413,21 @@ def install_one(item, target: Path, mode, cf_key, ignored, removed):
     return "failed", f"{name} (projectID={project_id} fileID={file_id})"
 
 
-def install_mods(target: Path, mode, cf_key, cfg):
+def load_server_ignorelist(data_dir: Path):
+    """{projectID: name} from mod_ignorelist_server.json - same format as server panels export/import it."""
+    path = data_dir / SERVER_IGNORELIST
+    if not path.exists():
+        print(f"  WARNING: {path} not found, client-only mods will be downloaded too")
+        return {}
+    return {int(e["projectID"]): e.get("projectName", "") for e in json.loads(path.read_text())}
+
+
+def install_mods(target: Path, data_dir: Path, mode, cf_key, cfg):
     files = json.loads((target / "manifest.json").read_text()).get("files", [])
-    ignored = {int(i) for i in cfg["mod_ignore"] if str(i).isdigit()}
+    ignored = load_server_ignorelist(data_dir) if mode == "server" else {}
+    for i in cfg["mod_ignore"]:
+        if str(i).isdigit():
+            ignored.setdefault(int(i), "")
     removed = [str(r).lower() for r in cfg["remove_mods"]]
     print(f"  manifest lists {len(files)} files" + ("" if cf_key else " (no API key: using unofficial mirrors)"))
     failed = []
@@ -513,10 +534,17 @@ def apply_custom(custom_dir: Path, target: Path, names, patchers_root: Path):
 
 # ---------------------------------------------------------------- main
 
+def default_target():
+    """The folder above parasited_updater/ when run from there (shipped location, double click),
+    otherwise the current folder."""
+    here = Path(__file__).resolve().parent
+    return here.parent if here.name == DATA_DIR_NAME else Path.cwd()
+
+
 def main():
     global AUTO_YES
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--dir", default=".", help="folder to install into (default: current folder)")
+    parser.add_argument("--dir", help="folder to install into (default: the folder above parasited_updater/)")
     parser.add_argument("--tag", help="release tag to install (default: latest)")
     parser.add_argument("--yes", action="store_true", help="answer yes to every confirmation")
     parser.add_argument("--reconfigure", action="store_true", help="redo the first-run questions")
@@ -524,7 +552,7 @@ def main():
     AUTO_YES = args.yes
 
     print(SECURITY_NOTICE)
-    target = Path(args.dir).resolve()
+    target = Path(args.dir or default_target()).resolve()
     if target in (Path.home(), Path(target.anchor)):
         sys.exit(f"Refusing to install into {target} - run this inside your server/instance folder.")
     data_dir = target / DATA_DIR_NAME
@@ -548,6 +576,8 @@ def main():
         cfg, release, _ = first_run_wizard(cfg_path, args.tag)
     else:
         cfg = load_config(cfg_path)
+        if cfg["custom"]:
+            ensure_dependencies(data_dir, need_jsonpatch=True)
     mode = cfg["mode"]
     release = release or release_info(args.tag)
     tag = release["tag_name"]
@@ -594,7 +624,7 @@ def main():
     # 3. mods
     what = "mods" if mode == "server" else "mods and resourcepacks"
     if confirm(f"\n[3/5] Downloading {what} from CurseForge, OK?"):
-        install_mods(target, mode, cf_key, cfg)
+        install_mods(target, data_dir, mode, cf_key, cfg)
 
     # 4. configpacks
     if cfg["configpacks"]:
@@ -615,7 +645,7 @@ def main():
     tag_file.write_text(tag)
     print(f"\nDone: {tag} installed." + (f" {errors} custom change(s) failed, see above." if errors else ""))
     if mode == "server" and not list(target.glob("forge-*.jar")):
-        print("No Forge server jar found yet: run server_install.py once (comes with the release), then server_start.sh.")
+        print("No Forge server jar found yet: run parasited_server/server_install.py once, then parasited_server/server_start.sh.")
     print(f"Release zips are cached in {cache_dir} - delete it to free space.")
 
 

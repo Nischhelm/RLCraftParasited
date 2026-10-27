@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-# Starts the server jar produced by server_install.py. Adjust -Xms/-Xmx to
+# Starts the server jar produced by server_install.py (works from any folder). Adjust -Xms/-Xmx to
 # whatever RAM you actually want to give it. Default 6 GB
 # the other flags are optional and for performance (called Aikar's Flags https://docs.papermc.io/paper/aikars-flags/)
 set -e
+
+# the server runs in the parent folder (where mods/, config/ and the forge jar are)
+cd "$(dirname "$0")/.."
 
 FORGE_VERSION="1.12.2-14.23.5.2860"
 
