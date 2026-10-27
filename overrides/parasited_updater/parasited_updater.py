@@ -615,7 +615,6 @@ def main():
     print(f"\n[2/5] Deleting the current setup ({', '.join(wiped)}) and installing the release's base files.")
     print("      Your worlds stay untouched.")
     print(f"      Kept if present: {', '.join(keep)}")
-    print("      (Keep your options.txt if you made changes to your keybinds or resourcepacks - it is on that list.)")
     if not confirm("      OK?"):
         sys.exit("Aborted. Nothing was deleted.")
     wipe_setup(target, mode)
@@ -630,6 +629,8 @@ def main():
     if cfg["configpacks"]:
         if confirm(f"\n[4/5] Extracting configpacks ({', '.join(cfg['configpacks'])}) over the install, OK?"):
             apply_configpacks(overrides, target, cfg["configpacks"])
+    else:
+        print("\n[4/5] Skipped: no configpacks selected (see 'configpacks' in config.yaml).")
 
     # 5. custom
     errors = 0
@@ -640,6 +641,8 @@ def main():
             except Exception as exc:
                 print(f"  ERROR: could not load the patchers: {exc}")
                 errors = 1
+    else:
+        print("\n[5/5] Skipped: no custom changes (see 'custom' in config.yaml).")
 
     shutil.rmtree(cache_dir / "extract", ignore_errors=True)
     tag_file.write_text(tag)
