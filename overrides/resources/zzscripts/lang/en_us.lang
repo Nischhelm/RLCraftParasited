@@ -71,3 +71,8 @@ tooltip.srparasites:lurecomponent.5=§eLvl 5 - Pure
 tooltip.srparasites:lurecomponent.6=§eLvl 6 - Biome
 
 tooltip.magikarp=§a+10 Luck!
+
+##################################################################
+# Nisch.zs
+##################################################################
+message.scripts.cannotdohere=You cannot do that here

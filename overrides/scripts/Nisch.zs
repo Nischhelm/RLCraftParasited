@@ -47,6 +47,15 @@ events.onPlayerRightClickBlock(function(event as crafttweaker.event.PlayerIntera
     }
 });
 
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
+    if(event.dimension != 44) return; # only Mind Palace
+    if(isNull(event.item)) return;
+    val itemId = event.item.definition.id as string;
+    if(itemId != "lycanitesmobs:halloweentreat" && itemId != "lycanitesmobs:wintergift" && itemId != "lycanitesmobs:wintergiftlarge") return;
+    event.cancel(); # both sides, so client doesn't desync the stack
+    if(!event.player.world.remote) event.player.sendRichTextStatusMessage(crafttweaker.text.ITextComponent.fromTranslation("message.scripts.cannotdohere"));
+});
+
 events.onEntityLivingAttacked(function(event as crafttweaker.event.EntityLivingAttackedEvent){
     if(isNull(event.damageSource)) return;
     if(event.damageSource.isDamageUnblockable()) return;
