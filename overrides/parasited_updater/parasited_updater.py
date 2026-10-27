@@ -68,6 +68,17 @@ SECURITY_NOTICE = """\
 ==============================================================================
 """
 
+CUSTOM_STARTER = """\
+# Your own changes, re-applied after every update.
+# All patch types + examples: ../readme_customchanges.md
+# To use the example, remove the # in front of its lines. Add your own below it the same way.
+
+patches:
+#  - type: file_delete
+#    description: "Don't download OptiFine"
+#    file: config/mod-director/optifine.url.json
+"""
+
 CF_KEY_NOTICE = """\
 CurseForge API key (optional)
   With a key, mod downloads go through the official CurseForge API (reliable).
@@ -261,13 +272,16 @@ mod_ignore:{lst(cfg['mod_ignore'])}
 remove_mods:{lst(cfg['remove_mods'])}""")
 
 
-def first_run_wizard(cfg_path: Path, tag):
+def first_run_wizard(cfg_path: Path, custom_dir: Path, tag):
     import yaml
     print("\nFirst run - a few questions. You can change all of this later in " + str(cfg_path) + "\n")
     mode = choose("Is this a server or a client folder?", ["server", "client"])
     release = release_info(tag)
     pack = choose("Which pack?", pack_choices(release))
-    cfg = {"mode": mode, "pack": pack, "configpacks": [], "custom": [], "keep": [], "mod_ignore": [], "remove_mods": []}
+    starter = custom_dir / "custom.yaml"
+    if not starter.exists():
+        starter.write_text(CUSTOM_STARTER)
+    cfg = {"mode": mode, "pack": pack, "configpacks": [], "custom": ["custom"], "keep": [], "mod_ignore": [], "remove_mods": []}
     write_config(cfg_path, cfg)  # so a Ctrl+C below doesn't lose the answers
     return cfg, release, yaml
 
@@ -476,6 +490,23 @@ def load_custom_pack(custom_dir: Path, name, chain=()):
     return patches
 
 
+def yaml_name(name):
+    name = str(name)
+    return name if name.endswith((".yaml", ".yml")) else name + ".yaml"
+
+
+def has_custom_patches(custom_dir: Path, names):
+    """False if all listed files are empty (like the custom.yaml created on the first run).
+    Broken or missing files count as True, so apply_custom reports them."""
+    for name in names:
+        try:
+            if load_custom_pack(custom_dir, yaml_name(name)):
+                return True
+        except Exception:
+            return True
+    return False
+
+
 def apply_custom(custom_dir: Path, target: Path, names, patchers_root: Path):
     sys.path.insert(0, str(patchers_root))
     from patchers import CfgPatcher, JsonPatcher, ScriptPatcher, KeyValuePatcher, BqQuestPatcher
@@ -486,7 +517,7 @@ def apply_custom(custom_dir: Path, target: Path, names, patchers_root: Path):
     errors = 0
 
     for name in names:
-        name = name if name.endswith((".yaml", ".yml")) else name + ".yaml"
+        name = yaml_name(name)
         print(f"  {name}")
         try:
             patches = load_custom_pack(custom_dir, name)
@@ -573,10 +604,10 @@ def main():
     release = None
     fresh = args.reconfigure or not cfg_path.exists()
     if fresh:
-        cfg, release, _ = first_run_wizard(cfg_path, args.tag)
+        cfg, release, _ = first_run_wizard(cfg_path, custom_dir, args.tag)
     else:
         cfg = load_config(cfg_path)
-        if cfg["custom"]:
+        if has_custom_patches(custom_dir, cfg["custom"]):
             ensure_dependencies(data_dir, need_jsonpatch=True)
     mode = cfg["mode"]
     release = release or release_info(args.tag)
@@ -634,7 +665,7 @@ def main():
 
     # 5. custom
     errors = 0
-    if cfg["custom"]:
+    if has_custom_patches(custom_dir, cfg["custom"]):
         if confirm(f"\n[5/5] Applying your custom changes ({', '.join(cfg['custom'])}), OK?"):
             try:
                 errors = apply_custom(custom_dir, target, cfg["custom"], fetch_patchers(tag, cache_dir))
@@ -642,7 +673,7 @@ def main():
                 print(f"  ERROR: could not load the patchers: {exc}")
                 errors = 1
     else:
-        print("\n[5/5] Skipped: no custom changes (see 'custom' in config.yaml).")
+        print("\n[5/5] Skipped: no custom changes yet (see parasited_updater/custom/custom.yaml).")
 
     shutil.rmtree(cache_dir / "extract", ignore_errors=True)
     tag_file.write_text(tag)

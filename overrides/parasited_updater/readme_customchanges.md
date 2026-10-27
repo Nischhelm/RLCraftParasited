@@ -3,13 +3,10 @@
 Every update replaces `config/`, `mods/`, `scripts/` etc., so your own changes would be lost.
 Instead, write them down once as a `.yaml` file in `custom/` and the updater re-applies them after every update.
 
-1. Create e.g. `custom/my_changes.yaml` (see examples below)
-2. Add it to `config.yaml`:
-   ```yaml
-   custom:
-     - my_changes
-   ```
-3. Run the updater. Each change prints `ok` or `FAILED` with the reason.
+1. Add your changes to `custom/custom.yaml` (created on the first run, see examples below)
+2. Run the updater. Each change prints `ok` or `FAILED` with the reason.
+
+More files: create them in `custom/` and add them to `custom:` in `config.yaml` (applied in that order).
 
 ## File format
 
