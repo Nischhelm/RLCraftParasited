@@ -20,6 +20,8 @@ recipes.removeByRecipeName("quark:purple_shulker_box");
 
 recipes.removeByRecipeName("realistictorches:matchbox_repair");
 
+recipes.remove(<ebwizardry:arcane_workbench>);
+
 recipes.remove(<variedcommodities:diamond_gun>);
 recipes.remove(<variedcommodities:emerald_gun>);
 recipes.remove(<variedcommodities:iron_gun>);
