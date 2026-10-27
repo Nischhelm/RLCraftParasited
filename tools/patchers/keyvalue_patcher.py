@@ -139,7 +139,7 @@ class KeyValuePatcher:
                         right_space_str = ''
 
                     # Replace with new value, preserving formatting
-                    new_value = changes[key]
+                    new_value = self._format_value(changes[key])
                     result.append(f"{key}{left_space}{separator}{right_space_str}{new_value}")
                     applied_keys.add(key)
                     continue
@@ -151,9 +151,16 @@ class KeyValuePatcher:
         for key, value in changes.items():
             if key not in applied_keys:
                 # Use separator with space after (common format)
-                result.append(f"{key} {separator}  {value}")
+                result.append(f"{key} {separator}  {self._format_value(value)}")
 
         return result
+
+    @staticmethod
+    def _format_value(value) -> str:
+        """YAML booleans as true/false (Python would write True/False)."""
+        if isinstance(value, bool):
+            return "true" if value else "false"
+        return str(value)
 
     def _is_extended_format(self, changes: Dict[str, Any]) -> bool:
         """
@@ -210,13 +217,13 @@ class KeyValuePatcher:
         for key, value in changes.items():
             if key not in ['add', 'remove', 'replace']:
                 if key in kv_dict:
-                    kv_dict[key] = str(value)
+                    kv_dict[key] = self._format_value(value)
 
         # 4. Add operations (append at end)
         if 'add' in changes and changes['add'] is not None:
             for key, value in changes['add'].items():
                 if key not in kv_dict:  # Avoid duplicates
-                    kv_dict[key] = str(value)
+                    kv_dict[key] = self._format_value(value)
 
         # 5. Rebuild lines
         return self._rebuild_lines(kv_dict, structure, separator)

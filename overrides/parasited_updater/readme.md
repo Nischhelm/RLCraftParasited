@@ -12,7 +12,7 @@ It installs into the folder **above** this one (your profile folder). The first 
 (client/server, which pack, which configpacks). Run it again to update.
 
 Your worlds are never touched. `config/`, `mods/`, `scripts/` etc. are replaced on every update,
-so don't put your own changes there - use `custom/` instead (see `config.yaml` for how).
+so don't put your own changes there - use `custom/` instead (see `readme_customchanges.md`).
 Keybinds (`options.txt`) and `server.properties` are kept.
 
 Your answers are saved in `config.yaml` in this folder (created on the first run).

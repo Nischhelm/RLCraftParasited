@@ -17,9 +17,7 @@ Each update also replaces this script with the release's version.
 Everything else in <folder>/parasited_updater/ is yours and kept:
     config.yaml     what you want installed (pack, configpacks, ...) - edit freely
     cf_api_key.txt  your optional CurseForge API key
-    custom/*.yaml   your own config changes, same format as the configpacks in
-                    https://github.com/Nischhelm/RLCraftParasited/tree/main/configpacks
-                    (put files for file_add/folder_add into custom/_files/)
+    custom/*.yaml   your own config changes, see readme_customchanges.md
 """
 
 import argparse
@@ -251,7 +249,7 @@ pack: {cfg['pack']}   # which release zip: e.g. RLCraft.Parasited or Dregora.Par
 configpacks:{lst(cfg['configpacks'])}
 # Your own changes: yaml files in parasited_updater/custom/, applied last, in this order.
 # Same format as the configpacks (cfg_patch, json_patch, script_patch, keyvalue_patch,
-# file_add, folder_add, file_delete, ...); files for file_add/folder_add go in custom/_files/.
+# file_add, folder_add, file_delete, ...), see readme_customchanges.md.
 custom:{lst(cfg['custom'])}
 # Extra files/folders (relative to this folder) that survive an update if they exist.
 # Defaults for your mode (options.txt etc.) are always kept.
@@ -501,7 +499,9 @@ def apply_custom(custom_dir: Path, target: Path, names, patchers_root: Path):
             label = patch.get("description") or patch.get("file") or patch.get("destination") or "?"
             try:
                 if kind in ("file_add", "file_replace", "folder_add"):
-                    src = files_dir / safe_relative(patch["source"])
+                    # absolute: anywhere on your PC, relative: inside custom/_files/
+                    src = Path(patch["source"]).expanduser()
+                    src = src if src.is_absolute() else files_dir / safe_relative(patch["source"])
                     dest = target / safe_relative(patch["destination"])
                     if not src.exists():
                         raise FileNotFoundError(f"{src} not found")
