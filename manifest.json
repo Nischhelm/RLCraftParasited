@@ -202,6 +202,7 @@
     {"projectID": 676392, "fileID": 6774250, "required": true, "fileName": "spartanfire_rlcraft-1.4.0"},
     {"projectID": 678889, "fileID": 6990414, "required": true, "fileName": "Emis_Rlcraft"},
     {"projectID": 679116, "fileID": 4178657, "required": true, "fileName": "MaterialTweaker-1.1.1"},
+    {"projectID": 684624, "fileID": 9366158, "required": true, "fileName": "WearableBackpacks-RLCraft-1.12.2-3.2.8"},
     {"projectID": 688489, "fileID": 8727444, "required": true, "fileName": "JSON-Paintings-v1.5.0-mc1.12.2"},
     {"projectID": 709188, "fileID": 4102778, "required": true, "fileName": "framevoidpatch-1.0.0"},
     {"projectID": 711714, "fileID": 9326025, "required": true, "fileName": "RLCombat-1.12.2-2.2.6"},
@@ -282,7 +283,6 @@
     {"projectID": 1769278, "fileID": 9345304, "required": true, "fileName": "ArrowAccuracy-1.0.0"}
   ],
   "indev": [
-    {"projectID": 684624, "fileID": 8208155, "required": true, "fileName": "WearableBackpacks-RLCraft-1.12.2-3.2.8"},
     {"projectID": 734347, "fileID": 6518808, "required": true, "fileName": "RLTweaker-1.12.2-0.7.5"},
     {"projectID": 821595, "fileID": 8685591, "required": true, "fileName": "EagleMixins-1.3.0"},
     {"projectID": 888556, "fileID": 8350620, "required": true, "fileName": "Ice and Fire-2.2.9"},
