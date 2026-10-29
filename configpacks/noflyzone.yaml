@@ -16,6 +16,11 @@ patches:
     destination: scripts/NoFlyZone.zs
     description: "mount blacklist and no elytra"
 
+  - type: file_add
+    source: noflyzone/config/lostcities/profile_noflyzone.cfg
+    destination: config/lostcities/profile_noflyzone.cfg
+    description: "Lost Cities noflyzone profile"
+
   - type: cfg_patch
     file: config/potioncontrol.cfg
     description: "blacklist flight effect"
