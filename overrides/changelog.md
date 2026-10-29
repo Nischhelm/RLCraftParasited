@@ -1,3 +1,35 @@
+--- Oct 29 2026 ---
+
+This is mainly a hotfix for shipping new worlds with NORMAL difficulty instead of hard...
+And because i need the new lostcities profile for next monthly server in 3 days.
+
+This also now includes an instance updater python script. 
+Follow readme in /parasited_updater or just doubleclick the .bat (or run the .sh on Linux).
+Running it will automatically update your instance to latest release. 
+You can specify what you're playing (modpack, configpack, custom changes).
+Works for servers and clients.
+
+Mods
+    Added BucketDesyncFix by DanielHacker, supposed to fix ghost buckets
+    Added ArrowAccuracy by fonny (hes back!), renders arrows accurately in entities
+    Updated FermiumMixins, ships a small performance boost for anything blockstate related (so widespread), by fonny!
+    Updated NischiTweaker, ships various exploit fixes against nasty hackers (should be unnoticeable for normal gameplay)
+    Updated AAAM, fixes some configs not doing anything (ALL enchantments, iceandfire, ruins, otg and mapgenstructs automarkers)
+    Inconsequential: updated crafttweaker and voicechat
+
+Config
+    Fixed having world difficulty for new worlds set to NORMAL bruh wth -.-
+
+Scripts
+    removed arcane workbench crafting recipe. Didn't even know it was craftable, shouldn't be
+    disabled all lycanite treat bags in MP. you guys are evil cheaters for doing that! and you should feel very ashamed.
+
+Structures
+    Fixed my n-th attempt at fixing the Shivaxi Monument Dragon Eye loot pool, surely now its correct
+
+Configpacks
+    Actually added the NoFlyZone lostcities profile, kinda forgot to ship it last time
+
 --- Oct 26 2026 ---
 
 This is a small one, mainly bc ppl complained about not being able to hit the lycanite bosses
