@@ -3,6 +3,10 @@ import loottweaker.LootTweaker;
 val vanillaItems = ["sword","pickaxe","axe","shovel","hoe"] as string[];
 val vanillaArmor = ["helmet","chestplate","leggings","boots"] as string[];
 val bsItems = ["hammer","battleaxe","dagger","nunchaku"] as string[];
+val arsenalItems = [
+    "morning_star","scimitar","claws","flail",
+    "battering_ram","ball_and_chain","double_bladed_scimitar"
+] as string[];
 val spartanItems = [
     "dagger","longsword","katana","scythe","saber",
     "rapier","greatsword","hammer","warhammer","spear",
@@ -32,6 +36,13 @@ for item in bsItems
     for type in ["desert", "jungle"]
         for stinger in ["chitin", "stinger"]
                 myrmex_weap_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:item"+type+stinger+item), 1);
+for item in arsenalItems
+    for type in ["desert", "jungle"]
+        for variant in ["myrmex", "venom"]
+            myrmex_weap_pool.addItemEntry(itemUtils.getItem("nanonaitors_arsenal:"+item+"_"+type+"_"+variant), 1);
+for type in ["desert", "jungle"]
+    for variant in ["myrmex", "venom"]
+        myrmex_weap_pool.addItemEntry(itemUtils.getItem("defenders:defender_"+type+"_"+variant), 1);
 
 //Add to myrmex loot + trash pools
 LootTweaker.getTable("iceandfire:myrmex_loot_chest").getPool("myrmex_loot_chest").addLootTableEntry("loottweaker:myrmex_gear", 50, 50);
@@ -50,6 +61,9 @@ for item in spartanItems
     dragonbone_pool.addItemEntry(itemUtils.getItem("spartanfire:"+item+"_dragonbone"), 1);
 for item in bsItems
     dragonbone_pool.addItemEntry(itemUtils.getItem("mujmajnkraftsbettersurvival:itemdragonbone"+item), 1);
+for item in arsenalItems
+    dragonbone_pool.addItemEntry(itemUtils.getItem("nanonaitors_arsenal:"+item+"_dragonbone"), 1);
+dragonbone_pool.addItemEntry(itemUtils.getItem("defenders:defender_dragonbone"), 1);
 
 //Dragon Ring Chests in LC
 LootTweaker.getTable("loottweaker:lostcityrare").getPool("rare").addLootTableEntry("loottweaker:dragonbone_gear", 5);
