@@ -73,6 +73,56 @@ tooltip.srparasites:lurecomponent.6=§eLvl 6 - Biome
 tooltip.magikarp=§a+10 Luck!
 
 ##################################################################
+# Arsenal_Defenders_JEI.zs
+##################################################################
+jei.arsenal.morning_star.title=§6§lMorning Star
+jei.arsenal.morning_star.1=§7Hold attack to charge a stronger sweeping hit.
+jei.arsenal.morning_star.2=§eEach charge quarter adds +10% damage.
+jei.arsenal.morning_star.3=§4Full charge inflicts Armor Fracture and may Stun.
+
+jei.arsenal.scimitar.title=§6§lScimitar
+jei.arsenal.scimitar.1=§7Fast one-handed weapon. Dual wield matching Scimitars to alternate attacks.
+jei.arsenal.scimitar.2=§bHold use while paired to cross-guard; attack while guarding to shield bash.
+
+jei.arsenal.claws.title=§6§lClaws
+jei.arsenal.claws.1=§7Equip matching Claws to unlock paired combat.
+jei.arsenal.claws.2=§bHold left/right click to auto-attack with the corresponding hand.
+jei.arsenal.claws.3=§8Fully charged paired hits can pierce ordinary invulnerability frames.
+
+jei.arsenal.flail.title=§6§lFlail
+jei.arsenal.flail.1=§bHold attack to swing continuously.
+jei.arsenal.flail.2=§7Hits visible enemies around the wielder; reach and attack-speed modifiers apply.
+
+jei.arsenal.battering_ram.title=§6§lBattering Ram
+jei.arsenal.battering_ram.1=§bHold use with an empty offhand to charge forward.
+jei.arsenal.battering_ram.2=§7Normal attacks deal extra knockback. Charging can break configured blocks.
+jei.arsenal.battering_ram.3=§cTwo-Handed
+
+jei.arsenal.ball_and_chain.title=§6§lBall and Chain
+jei.arsenal.ball_and_chain.1=§bHold attack to wind up; release to throw.
+jei.arsenal.ball_and_chain.2=§7Higher rotations increase throw reach and damage.
+jei.arsenal.ball_and_chain.3=§8An empty offhand permits guarding.
+
+jei.arsenal.blade_staff.title=§6§lBlade Staff
+jei.arsenal.blade_staff.1=§7Melee hits sweep nearby enemies.
+jei.arsenal.blade_staff.2=§bRight click to reflect incoming damage for 1 second.
+jei.arsenal.blade_staff.3=§8Reflection strength and durability cost depend on material tier.
+
+jei.defenders.defender.title=§6§lDefender
+jei.defenders.defender.1=§7An offensive offhand guard that adds melee damage and attack speed.
+jei.defenders.defender.2=§bHold use to parry, then continue holding for guarded damage reduction.
+jei.defenders.defender.3=§ePerfect parries knock enemies back and apply Slowness and Vulnerable.
+
+jei.arsenal.tartsy_shield.title=§6§lTartsy Shield
+jei.arsenal.tartsy_shield.1=§bNegates one hit, then enters a short recovery cooldown.
+jei.arsenal.tartsy_shield.2=§7Attack while guarding to dash, gain brief immunity and Stun a confirmed target.
+
+jei.arsenal.sun_war_bulwark.title=§6§lSun-War Bulwark
+jei.arsenal.sun_war_bulwark.1=§bBlocks attacks from every direction and grants passive damage reduction while ready.
+jei.arsenal.sun_war_bulwark.2=§7Guard and attack for an armor-scaled area bash.
+jei.arsenal.sun_war_bulwark.3=§cRequires both hands free to guard.
+
+##################################################################
 # Nisch.zs
 ##################################################################
 message.scripts.cannotdohere=You cannot do that here
