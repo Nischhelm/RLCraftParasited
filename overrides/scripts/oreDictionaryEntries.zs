@@ -97,7 +97,7 @@ for element in ["healing", "fire", "lightning", "ice", "necromancy", "sorcery", 
 val oreFoliageGrass = <ore:grassFoliage>; // For short grass/tall grass, not blocks
 oreFoliageGrass.add(<minecraft:tallgrass:1>); // Short Grass, Tall Grass drops as this
 
-if (loadedMods in "biomesoplenty") {
+if (loadedMods has "biomesoplenty") {
 	val bopFoliageGrasses = [
         itemUtils.getItem("biomesoplenty:plant_0", 0),  // Short Grass
         itemUtils.getItem("biomesoplenty:plant_0", 1),  // Medium Grass
