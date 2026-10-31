@@ -1,3 +1,6 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+
 <ore:toolAxe>.add(<iceandfire:silver_axe:*>);
 <ore:toolAxe>.add(<iceandfire:copper_axe:*>);
 <ore:toolAxe>.add(<iceandfire:dragonbone_axe:*>);
@@ -87,5 +90,24 @@
 for element in ["healing", "fire", "lightning", "ice", "necromancy", "sorcery", "earth"] {
     for tier in ["novice", "apprentice", "advanced", "master"] {
         <ore:ebwizWands>.addItems(itemUtils.getItem("ebwizardry:".concat(tier).concat("_").concat(element).concat("_wand")).anyDamage().itemArray);
+    }
+}
+
+// Foliage Grass Ore Dictionary
+val oreFoliageGrass = <ore:grassFoliage>; // For short grass/tall grass, not blocks
+oreFoliageGrass.add(<minecraft:tallgrass:1>); // Short Grass, Tall Grass drops as this
+
+if (loadedMods in "biomesoplenty") {
+	val bopFoliageGrasses = [
+        itemUtils.getItem("biomesoplenty:plant_0", 0),  // Short Grass
+        itemUtils.getItem("biomesoplenty:plant_0", 1),  // Medium Grass
+		itemUtils.getItem("biomesoplenty:plant_0", 7),  // Wheat Grass
+        itemUtils.getItem("biomesoplenty:plant_0", 8),  // Damp Grass
+        itemUtils.getItem("biomesoplenty:plant_0", 14),  // Desert Grass
+		itemUtils.getItem("biomesoplenty:plant_1", 0)  // Dune Grass
+    ] as IItemStack[];
+
+    for item in bopFoliageGrasses {
+        if (!isNull(item)) { oreFoliageGrass.add(item); }
     }
 }
