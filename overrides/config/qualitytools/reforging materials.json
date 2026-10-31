@@ -2646,5 +2646,1221 @@
     "material": {
       "item": "minecraft:emerald"
     }
+  },
+{
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_wood"
+    },
+    "material": {
+      "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_stone"
+    },
+    "material": {
+      "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_gold"
+    },
+    "material": {
+      "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_iron"
+    },
+    "material": {
+      "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_diamond"
+    },
+    "material": {
+      "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_silver"
+    },
+    "material": {
+      "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_bronze"
+    },
+    "material": {
+      "ore_dict": "ingotBronze"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_steel"
+    },
+    "material": {
+      "ore_dict": "ingotSteel"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_umbrium"
+    },
+    "material": {
+      "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_flamed_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_iced_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_electric_dragonbone"
+    },
+    "material": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_desert_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_jungle_myrmex"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_desert_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_jungle_venom"
+    },
+    "material": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_living"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:morning_star_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:scimitar_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:claws_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:flail_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:battering_ram_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:ball_and_chain_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "nanonaitors_arsenal:double_bladed_scimitar_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
+  },
+  {
+    "tool": {
+      "item": "defenders:defender_sentient"
+    },
+    "material": {
+      "item": "srparasites:infectious_blade_fragment"
+    }
   }
 ]
