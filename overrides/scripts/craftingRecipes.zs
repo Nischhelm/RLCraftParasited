@@ -507,6 +507,10 @@ recipes.addShaped("rec16desertmyrmexdagger",<mujmajnkraftsbettersurvival:itemdes
  [[null,<iceandfire:myrmex_desert_chitin>],
   [<iceandfire:witherbone>]]);
 
+recipes.addShaped("rec16coppa",<mujmajnkraftsbettersurvival:itemcopperdagger>,
+ [[null,<iceandfire:copper_ingot>],
+  [<minecraft:stick>]]);
+
 recipes.addShaped("rec17",<mujmajnkraftsbettersurvival:itemstonespear>*4,
  [[null,null,<ore:cobblestone>],
   [null,<minecraft:stick>,null],
