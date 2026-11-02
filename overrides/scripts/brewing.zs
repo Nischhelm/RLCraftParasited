@@ -38,8 +38,8 @@ removePotion("xat:sparkling", <minecraft:snow>);
 brewing.addBrew(<minecraft:potion>.withTag({"Potion": "minecraft:awkward"}), <waystones:warp_scroll>, <bountifulbaubles:potionrecall>);
 brewing.addBrew(<bountifulbaubles:potionrecall>, <minecraft:ender_eye>, <bountifulbaubles:potionwormhole>);
 
-addBrewRecipe2("minecraft:water", <betternether:bone_mushroom>,
-    "minecraft:thick", "potioncore:strong_health_boost", "potioncore:long_health_boost");
+addBrewRecipe("minecraft:water", <betternether:bone_mushroom>,
+    "minecraft:thick");
 
 addBrewRecipe2("minecraft:thick", <scalinghealth:heartcontainer>,
     "potioncore:health_boost", "potioncore:strong_health_boost", "potioncore:long_health_boost");
@@ -65,7 +65,7 @@ addBrewRecipe2("minecraft:thick", <spartanweaponry:dynamite>,
 addBrewRecipe("minecraft:thick", <aquaculture:fish:21>,
     "potioncore:lightning");
 
-addBrewRecipe2("minecraft:thick", <lycanitesmobs:embercharge>,
+addBrewRecipe2("minecraft:mundane", <lycanitesmobs:embercharge>,
     "potioncore:fire", "potioncore:strong_fire");
 
 addBrewRecipe2("minecraft:thick", <iceandfire:fire_dragon_flesh>|<iceandfire:ice_dragon_flesh>|<iceandfire:lightning_dragon_flesh>,
@@ -89,7 +89,7 @@ addBrewRecipe2("minecraft:thick", <advanced-fishing:fish:8>,
 addBrewRecipe("minecraft:thick", <lycanitesmobs:immunizer>,
     "potioncore:cure");
 
-addBrewRecipe2("minecraft:mundane", <defiledlands:blastem_fruit>,
+addBrewRecipe2("minecraft:awkward", <defiledlands:blastem_fruit>,
     "potioncore:burst", "potioncore:strong_burst");
 
 addBrewRecipe2("minecraft:thick", <minecraft:skull>,
