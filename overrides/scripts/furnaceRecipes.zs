@@ -158,6 +158,7 @@ furnace.addRecipe(<variedcommodities:ingot_steel> * 1, <spartanweaponry:glaive_s
 furnace.addRecipe(<contenttweaker:steel_nugget> * 4, <spartanweaponry:staff_steel:*>, 0.1);
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <spartandefiled:longsword_umbrium:*>, 0.7);
 furnace.addRecipe(<defiledlands:umbrium_nugget> * 4, <spartandefiled:katana_umbrium:*>, 0.1);
+furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <spartandefiled:scythe_umbrium:*>, 0.7);
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <spartandefiled:saber_umbrium:*>, 0.7);
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <spartandefiled:rapier_umbrium:*>, 0.7);
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 2, <spartandefiled:greatsword_umbrium:*>, 0.7);
@@ -275,6 +276,11 @@ furnace.addRecipe(<contenttweaker:steel_nugget> * 1, <spartanweaponry:spear_stee
 furnace.addRecipe(<contenttweaker:steel_nugget> * 1, <spartanweaponry:pike_steel:*>, 0.1);
 furnace.addRecipe(<contenttweaker:steel_nugget> * 1, <spartanweaponry:lance_steel:*>, 0.1);
 
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:dagger_copper:*>, 0.1);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:spear_copper:*>, 0.1);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:pike_copper:*>, 0.1);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:lance_copper:*>, 0.1);
+
 furnace.addRecipe(<defiledlands:umbrium_nugget> * 4, <defiledlands:umbrium_sword:*>, 0.1);
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <defiledlands:umbrium_axe:*>, 0.7);
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <defiledlands:umbrium_pickaxe:*>, 0.7);
@@ -346,15 +352,15 @@ furnace.addRecipe(<minecraft:diamond> * 7, <iceandfire:diamond_hippogryph_armor:
 furnace.addRecipe(<minecraft:gold_ingot> * 7, <iceandfire:gold_hippogryph_armor:*>, 1);
 furnace.addRecipe(<minecraft:iron_ingot> * 7, <iceandfire:iron_hippogryph_armor:*>, 0.7);
 
-furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <notreepunching:mattock/diamond:*>, 1);
-furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:knife/diamond:*>, 1);
+furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:mattock/diamond:*>, 1);
 furnace.addRecipe(<minecraft:diamond> * 1, <notreepunching:saw/diamond:*>, 1);
+furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <notreepunching:knife/diamond:*>, 0.1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:mattock/gold:*>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <notreepunching:saw/gold:*>, 1);
-furnace.addRecipe(<minecraft:gold_nugget> * 1, <notreepunching:knife/gold:*>, 1);
+furnace.addRecipe(<minecraft:gold_nugget> * 1, <notreepunching:knife/gold:*>, 0.1);
 furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:mattock/iron:*>, 0.7);
 furnace.addRecipe(<minecraft:iron_ingot> * 1, <notreepunching:saw/iron:*>, 0.7);
-furnace.addRecipe(<minecraft:iron_nugget> * 1, <notreepunching:knife/iron:*>, 0.7);
+furnace.addRecipe(<minecraft:iron_nugget> * 1, <notreepunching:knife/iron:*>, 0.1);
 
 furnace.addRecipe(<minecraft:diamond> * 1, <wornhorseshoes:horseshoes_diamond>, 1);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <wornhorseshoes:horseshoes_gold>, 1);
