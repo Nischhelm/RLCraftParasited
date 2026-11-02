@@ -14,6 +14,12 @@ knifeRecipes.add(<minecraft:saddle>,<minecraft:leather>*1);
 knifeRecipes.add(<toolbelt:pouch>,<minecraft:leather>*2);
 knifeRecipes.add(<toolbelt:belt>,<minecraft:leather>*3);
 knifeRecipes.add(<switchbow:quiver>,<minecraft:leather>*3);
+knifeRecipes.add(<spartanweaponry:quiver_arrow>,<minecraft:leather>*2);
+knifeRecipes.add(<spartanweaponry:quiver_arrow_moderate>,<minecraft:leather>*2);
+knifeRecipes.add(<spartanweaponry:quiver_arrow_heavy>,<minecraft:leather>*2);
+knifeRecipes.add(<spartanweaponry:quiver_bolt>,<minecraft:leather>*2);
+knifeRecipes.add(<spartanweaponry:quiver_bolt_moderate>,<minecraft:leather>*2);
+knifeRecipes.add(<spartanweaponry:quiver_bolt_heavy>,<minecraft:leather>*2);
 knifeRecipes.add(<wearablebackpacks:backpack>,<minecraft:leather>*5);
 knifeRecipes.add(<quark:quilted_wool:*>,<minecraft:string>*4);
 
