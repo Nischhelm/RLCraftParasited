@@ -17,16 +17,16 @@ ConfigUtils.named("parasited")
         .doubleValue("raceWeaponMulti", 1.25).displayName("Race Weapon Dmg Multi").comment("Dmg multiplier applied when a trinkets race wields a weapon of their affinity").add()
         .doubleValue("raceWeaponAddMin", 3).displayName("Race Weapon Dmg Add Min").comment("Minimum amount of extra (added) dmg applied when a trinkets race wields a weapon of their affinity").add()
         .stringArrayMap("raceWeaponAffinities", {
-                "Faelis": [],
-                "Dragon": ["katana", "longsword", "warhammer"],
-                "Taurus": ["scythe", "halberd", "glaive"],
-                "Titan":  ["greatsword", "mace"],
-                "Dwarf":  ["hammer", "battleaxe"],
-                "Elf":    ["saber", "lance", "staff"],
-                "Goblin": ["dagger", "rapier"],
-                "Fairy":  ["spear", "pike"],
+                "Faelis": ["claws"],
+                "Dragon": ["katana", "longsword", "warhammer", "sun_war_bulwark"],
+                "Taurus": ["scythe", "halberd", "glaive", "battering_ram"],
+                "Titan":  ["greatsword", "mace", "ball_and_chain"],
+                "Dwarf":  ["hammer", "battleaxe", "morning_star"],
+                "Elf":    ["saber", "lance", "staff", "blade_staff"],
+                "Goblin": ["dagger", "rapier", "flail"],
+                "Fairy":  ["spear", "pike", "scimitar"],
                 "Unused": ["nunchaku"]
-        } as string[][string]).displayName("Race Weapon Affinities").comment("Which (spartan/BS) weapon type each trinkets race has an affinity for and gets +25% dmg").add()
+        } as string[][string]).displayName("Race Weapon Affinities").comment("Which weapon types each trinkets race has an affinity for").add()
         .rangedDouble("fairyBlockChance", 0.2, 0.0, 1.0).sliding().displayName("Fairy Block Chance").comment("Chance to fully ignore attacks. 0.2=20%").add()
 .add()
 .stringValues("championFiveBooks",

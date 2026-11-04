@@ -241,6 +241,15 @@ furnace.addRecipe(<variedcommodities:ingot_bronze> * 1, <spartanweaponry:mace_br
 furnace.addRecipe(<variedcommodities:ingot_bronze> * 1, <spartanweaponry:glaive_bronze:*>, 0.7);
 furnace.addRecipe(<variedcommodities:coin_bronze> * 4, <spartanweaponry:staff_bronze:*>, 0.1);
 
+// Defenders use the same one-ingot salvage return as comparable shields.
+furnace.addRecipe(<minecraft:diamond> * 1, <defenders:defender_diamond:*>, 1);
+furnace.addRecipe(<variedcommodities:ingot_steel> * 1, <defenders:defender_steel:*>, 1);
+furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <defenders:defender_umbrium:*>, 0.7);
+furnace.addRecipe(<minecraft:iron_ingot> * 1, <defenders:defender_iron:*>, 0.7);
+furnace.addRecipe(<minecraft:gold_ingot> * 1, <defenders:defender_gold:*>, 1);
+furnace.addRecipe(<iceandfire:silver_ingot> * 1, <defenders:defender_silver:*>, 1);
+furnace.addRecipe(<variedcommodities:ingot_bronze> * 1, <defenders:defender_bronze:*>, 0.7);
+
 furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <spartanweaponry:dagger_diamond:*>, 0.1);
 furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <spartanweaponry:spear_diamond:*>, 0.1);
 furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <spartanweaponry:pike_diamond:*>, 0.1);
