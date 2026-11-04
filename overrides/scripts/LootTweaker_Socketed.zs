@@ -4,8 +4,7 @@ val vanillaItems = ["sword","pickaxe","axe","shovel","hoe"] as string[];
 val vanillaArmor = ["helmet","chestplate","leggings","boots"] as string[];
 val bsItems = ["hammer","battleaxe","dagger","nunchaku"] as string[];
 val arsenalItems = [
-    "morning_star","scimitar","claws","flail",
-    "battering_ram","ball_and_chain","double_bladed_scimitar"
+    "morning_star","claws","flail","blade_staff"
 ] as string[];
 val spartanItems = [
     "dagger","longsword","katana","scythe","saber",
