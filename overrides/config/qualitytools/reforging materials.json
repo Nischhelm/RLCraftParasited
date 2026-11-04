@@ -2697,7 +2697,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_wood"
+      "item": "nanonaitors_arsenal:blade_staff_wood"
     },
     "material": {
       "ore_dict": "plankWood"
@@ -2761,7 +2761,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_stone"
+      "item": "nanonaitors_arsenal:blade_staff_stone"
     },
     "material": {
       "ore_dict": "cobblestone"
@@ -2825,7 +2825,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_gold"
+      "item": "nanonaitors_arsenal:blade_staff_gold"
     },
     "material": {
       "ore_dict": "ingotGold"
@@ -2889,7 +2889,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_iron"
+      "item": "nanonaitors_arsenal:blade_staff_iron"
     },
     "material": {
       "ore_dict": "ingotIron"
@@ -2953,7 +2953,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_diamond"
+      "item": "nanonaitors_arsenal:blade_staff_diamond"
     },
     "material": {
       "ore_dict": "gemDiamond"
@@ -3017,7 +3017,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_silver"
+      "item": "nanonaitors_arsenal:blade_staff_silver"
     },
     "material": {
       "ore_dict": "ingotSilver"
@@ -3081,7 +3081,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_bronze"
+      "item": "nanonaitors_arsenal:blade_staff_bronze"
     },
     "material": {
       "ore_dict": "ingotBronze"
@@ -3145,7 +3145,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_steel"
+      "item": "nanonaitors_arsenal:blade_staff_steel"
     },
     "material": {
       "ore_dict": "ingotSteel"
@@ -3209,7 +3209,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_umbrium"
+      "item": "nanonaitors_arsenal:blade_staff_umbrium"
     },
     "material": {
       "item": "defiledlands:umbrium_ingot"
@@ -3273,7 +3273,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_dragonbone"
+      "item": "nanonaitors_arsenal:blade_staff_dragonbone"
     },
     "material": {
       "item": "iceandfire:dragonbone"
@@ -3337,7 +3337,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_flamed_dragonbone"
+      "item": "nanonaitors_arsenal:blade_staff_flamed_dragonbone"
     },
     "material": {
       "item": "iceandfire:dragonbone"
@@ -3401,7 +3401,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_iced_dragonbone"
+      "item": "nanonaitors_arsenal:blade_staff_iced_dragonbone"
     },
     "material": {
       "item": "iceandfire:dragonbone"
@@ -3465,7 +3465,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_electric_dragonbone"
+      "item": "nanonaitors_arsenal:blade_staff_electric_dragonbone"
     },
     "material": {
       "item": "iceandfire:dragonbone"
@@ -3529,7 +3529,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_desert_myrmex"
+      "item": "nanonaitors_arsenal:blade_staff_desert_myrmex"
     },
     "material": {
       "item": "iceandfire:myrmex_desert_chitin"
@@ -3593,7 +3593,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_jungle_myrmex"
+      "item": "nanonaitors_arsenal:blade_staff_jungle_myrmex"
     },
     "material": {
       "item": "iceandfire:myrmex_jungle_chitin"
@@ -3657,7 +3657,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_desert_venom"
+      "item": "nanonaitors_arsenal:blade_staff_desert_venom"
     },
     "material": {
       "item": "iceandfire:myrmex_desert_chitin"
@@ -3721,7 +3721,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_jungle_venom"
+      "item": "nanonaitors_arsenal:blade_staff_jungle_venom"
     },
     "material": {
       "item": "iceandfire:myrmex_jungle_chitin"
@@ -3785,7 +3785,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_living"
+      "item": "nanonaitors_arsenal:blade_staff_living"
     },
     "material": {
       "item": "srparasites:infectious_blade_fragment"
@@ -3849,7 +3849,7 @@
   },
   {
     "tool": {
-      "item": "nanonaitors_arsenal:double_bladed_scimitar_sentient"
+      "item": "nanonaitors_arsenal:blade_staff_sentient"
     },
     "material": {
       "item": "srparasites:infectious_blade_fragment"
