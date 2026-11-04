@@ -76,14 +76,14 @@ val ballsAndChains = [
 ] as IItemStack[];
 
 val bladeStaffs = [
-    <nanonaitors_arsenal:double_bladed_scimitar_wood>, <nanonaitors_arsenal:double_bladed_scimitar_stone>, <nanonaitors_arsenal:double_bladed_scimitar_gold>,
-    <nanonaitors_arsenal:double_bladed_scimitar_iron>, <nanonaitors_arsenal:double_bladed_scimitar_diamond>, <nanonaitors_arsenal:double_bladed_scimitar_silver>,
-    <nanonaitors_arsenal:double_bladed_scimitar_bronze>, <nanonaitors_arsenal:double_bladed_scimitar_steel>, <nanonaitors_arsenal:double_bladed_scimitar_umbrium>,
-    <nanonaitors_arsenal:double_bladed_scimitar_dragonbone>, <nanonaitors_arsenal:double_bladed_scimitar_flamed_dragonbone>,
-    <nanonaitors_arsenal:double_bladed_scimitar_iced_dragonbone>, <nanonaitors_arsenal:double_bladed_scimitar_electric_dragonbone>,
-    <nanonaitors_arsenal:double_bladed_scimitar_desert_myrmex>, <nanonaitors_arsenal:double_bladed_scimitar_jungle_myrmex>,
-    <nanonaitors_arsenal:double_bladed_scimitar_desert_venom>, <nanonaitors_arsenal:double_bladed_scimitar_jungle_venom>,
-    <nanonaitors_arsenal:double_bladed_scimitar_living>, <nanonaitors_arsenal:double_bladed_scimitar_sentient>
+    <nanonaitors_arsenal:blade_staff_wood>, <nanonaitors_arsenal:blade_staff_stone>, <nanonaitors_arsenal:blade_staff_gold>,
+    <nanonaitors_arsenal:blade_staff_iron>, <nanonaitors_arsenal:blade_staff_diamond>, <nanonaitors_arsenal:blade_staff_silver>,
+    <nanonaitors_arsenal:blade_staff_bronze>, <nanonaitors_arsenal:blade_staff_steel>, <nanonaitors_arsenal:blade_staff_umbrium>,
+    <nanonaitors_arsenal:blade_staff_dragonbone>, <nanonaitors_arsenal:blade_staff_flamed_dragonbone>,
+    <nanonaitors_arsenal:blade_staff_iced_dragonbone>, <nanonaitors_arsenal:blade_staff_electric_dragonbone>,
+    <nanonaitors_arsenal:blade_staff_desert_myrmex>, <nanonaitors_arsenal:blade_staff_jungle_myrmex>,
+    <nanonaitors_arsenal:blade_staff_desert_venom>, <nanonaitors_arsenal:blade_staff_jungle_venom>,
+    <nanonaitors_arsenal:blade_staff_living>, <nanonaitors_arsenal:blade_staff_sentient>
 ] as IItemStack[];
 
 val defenders = [
