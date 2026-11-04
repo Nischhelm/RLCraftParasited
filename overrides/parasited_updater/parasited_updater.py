@@ -145,8 +145,10 @@ def http_json(url, headers=None):
 def download_file(url, dest: Path):
     dest.parent.mkdir(parents=True, exist_ok=True)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=60) as resp, open(dest, "wb") as f:
+    part = dest.with_name(dest.name + ".part")  # an interrupted download must not look finished
+    with urllib.request.urlopen(req, timeout=60) as resp, open(part, "wb") as f:
         shutil.copyfileobj(resp, f)
+    part.replace(dest)
 
 
 def safe_relative(path_str):
@@ -307,21 +309,31 @@ def wipe_setup(target: Path, mode):
             shutil.rmtree(path)
 
 
-def extract_base(zip_path: Path, extract_dir: Path, target: Path, mode, keep):
+def stash_kept(target: Path, keep, stash_dir: Path):
+    """Copies the 'keep' files and folders aside before wipe_setup, adding to a stash an interrupted run left."""
+    for rel in keep:
+        src, dest = target / safe_relative(rel), stash_dir / rel
+        if src.is_dir():
+            shutil.copytree(src, dest, dirs_exist_ok=True)
+        elif src.is_file():
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dest)
+
+
+def restore_kept(target: Path, stash_dir: Path):
+    """Puts the 'keep' files back over the release's ones."""
+    if stash_dir.is_dir():
+        shutil.copytree(stash_dir, target, dirs_exist_ok=True)
+        shutil.rmtree(stash_dir)
+
+
+def extract_base(zip_path: Path, extract_dir: Path, target: Path, mode):
     """Unpacks the release, copies manifest.json + overrides/ into target (not the configpack zips,
-    those are applied later). Existing 'keep' files are restored afterwards."""
+    those are applied later)."""
     if extract_dir.exists():
         shutil.rmtree(extract_dir)
     with zipfile.ZipFile(zip_path) as zf:
         zf.extractall(extract_dir)
-
-    kept = {}
-    for rel in keep:
-        p = target / safe_relative(rel)
-        if p.is_file():
-            kept[rel] = p.read_bytes()
-        elif p.is_dir():
-            kept[rel] = None  # directories are simply not touched below
 
     shutil.copy2(extract_dir / "manifest.json", target / "manifest.json")
     overrides = extract_dir / "overrides"
@@ -335,10 +347,6 @@ def extract_base(zip_path: Path, extract_dir: Path, target: Path, mode, keep):
             shutil.copytree(entry, dest, dirs_exist_ok=True)
         else:
             shutil.copy2(entry, dest)
-
-    for rel, data in kept.items():
-        if data is not None:
-            (target / rel).write_bytes(data)
     return overrides
 
 
@@ -648,8 +656,10 @@ def main():
     print(f"      Kept if present: {', '.join(keep)}")
     if not confirm("      OK?"):
         sys.exit("Aborted. Nothing was deleted.")
+    stash_kept(target, keep, data_dir / "kept")
     wipe_setup(target, mode)
-    overrides = extract_base(zip_path, cache_dir / "extract", target, mode, keep)
+    overrides = extract_base(zip_path, cache_dir / "extract", target, mode)
+    restore_kept(target, data_dir / "kept")
 
     # 3. mods
     what = "mods" if mode == "server" else "mods and resourcepacks"
