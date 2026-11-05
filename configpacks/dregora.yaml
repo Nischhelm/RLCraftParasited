@@ -3359,98 +3359,620 @@ patches:
 
   - type: cfg_patch
     file: config/antiqueatlasautomarker.cfg
-    description: "TODO: Describe what changes in antiqueatlasautomarker.cfg"
+    description: "Dregora custom position markers (OTG regions, teleporters, landmarks)"
     changes:
       general.auto marking.custom positions:
         C:"Custom Position Markers":
-          add:
-            - 0; -1074; -8584; -8247; -12929; Green Isle; antiqueatlas:google
-            - 0; -1084; 16284; -2607; 16323; Rainy Peaks; antiqueatlas:google
-            - 0; -11103; 6289; -13520; 7636; Padded Desert Region; antiqueatlas:google
-            - 0; -1123; -12446; 1171; -2126; Green Beach Isle; antiqueatlas:google
-            - 0; -116; 2455; 0; 0; Southern Green Teleporter; antiqueatlas:tower
-            - 0; -11718; -566; -15878; -4301; Mushroom Isle; antiqueatlas:google
-            - 0; -11948; -9257; -15878; -4301; Mines; antiqueatlas:pickaxe
-            - 0; -12558; -14248; -8247; -12929; Dead Dunes Region; antiqueatlas:skull
-            - 0; -13002; -8310; -15878; -4301; Mines; antiqueatlas:pickaxe
-            - 0; -13037; 12099; -13520; 7636; Grand Canyon Region; antiqueatlas:google
-            - 0; -13520; 7636; -1987; 1453; Valley of Sulfur Region; antiqueatlas:google
-            - 0; -14252; -7841; -15878; -4301; Mines; antiqueatlas:pickaxe
-            - 0; -14526; 4282; -15878; -4301; Shipwreck Oceans; antiqueatlas:ship
-            - 0; -14902; -3798; -15878; -4301; City of Daeroc; antiqueatlas:village
-            - 0; -15351; 16367; -13520; 7636; Endless Desert Region; antiqueatlas:google
-            - 0; -15859; -4853; -15878; -4301; Mines; antiqueatlas:pickaxe
-            - 0; -15878; -4301; -2355; -642; The Highlands Region; antiqueatlas:google
-            - 0; -15922; -3520; -15878; -4301; Farms of Daeroc; antiqueatlas:farm
-            - 0; -15957; 1987; -15878; -4301; Southern Highlands Region; antiqueatlas:google
-            - 0; -16064; -17822; -8247; -12929; Nuclear Dead Region; antiqueatlas:skull
-            - 0; -16298; -5859; -5859; -4301; Mines; antiqueatlas:pickaxe
-            - 0; -17021; 2705; -15878; -4301; Church of the Cult; antiqueatlas:ruins
-            - 0; -17075; 5112; -15878; -4301; City of Origins; antiqueatlas:village
-            - 0; -17187; 3847; -15878; -4301; Mines; antiqueatlas:pickaxe
-            - 0; -17304; -11738; -15878; -4301; High Swamps Region; antiqueatlas:google
-            - 0; -17753; 8769; -13520; 7636; Sea of Decay Region; antiqueatlas:google
-            - 0; -1987; 1453; 0; 0; Valley of Sulfur Teleporter; antiqueatlas:tower
-            - 0; -2133; 14326; -2607; 16323; Green Cliffs; antiqueatlas:ship
-            - 0; -2255; 4218; -2607; 16323; Jungle Isle; antiqueatlas:google
-            - 0; -2355; -642; 0; 0; The Highlands Teleporter; antiqueatlas:tower
-            - 0; -2377; 15551; -2607; 16323; Cliff Dwellers; antiqueatlas:village
-            - 0; -2607; 16323; -116; 2455; Southern Green Region; antiqueatlas:google
-            - 0; -2753; -14492; -8247; -12929; Four Peaks Region; antiqueatlas:google
-            - 0; -3911; 16127; -2607; 16323; Purple Fire; antiqueatlas:google
-            - 0; -3994; -10976; -8247; -12929; Mushroom Isle; antiqueatlas:google
-            - 0; -3994; -3203; -8247; -12929; Cult Isle; antiqueatlas:ruins
-            - 0; -4179; 9462; -13520; 7636; Desert Isle; antiqueatlas:google
-            - 0; -5781; 12890; -2607; 16323; Mushroom Isle; antiqueatlas:google
-            - 0; -6523; 5888; -13520; 7636; Desert Isle; antiqueatlas:google
-            - 0; -6865; -12045; -8247; -12929; Cavernous Plains; antiqueatlas:cave
-            - 0; -7080; -17558; -8247; -12929; Northern Greens Region; antiqueatlas:google
-            - 0; -73; 15371; -2607; 16323; Archipelago of Pirates; antiqueatlas:ship
-            - 0; -7959; 11074; -13520; 7636; Molten Sand Region; antiqueatlas:google
-            - 0; -8144; -7695; -8247; -12929; Stone Forest Isle; antiqueatlas:google
-            - 0; -8247; -12929; -950; -2228; Frozen Greens Region; antiqueatlas:google
-            - 0; -8447; 1484; -13520; 7636; Desert Isle; antiqueatlas:google
-            - 0; -8691; 15058; -13520; 7636; Sea of Decay Region; antiqueatlas:google
-            - 0; -8945; -4082; -15878; -4301; Green Isle; antiqueatlas:google
-            - 0; -950; -2228; 0; 0; Frozen Greens Teleporter; antiqueatlas:tower
-            - 0; 10004; 3867; 5502; 13754; Frozen Archipelago Region; antiqueatlas:google
-            - 0; 11640; 18227; 5502; 13754; Mines; antiqueatlas:pickaxe
-            - 0; 1171; -2126; 0; 0; Green Desert Teleporter; antiqueatlas:tower
-            - 0; 11909; 1909; 2407; -401; Mushroom Isle; antiqueatlas:google
-            - 0; 12031; -2753; 2407; -401; Sea of Decay Region; antiqueatlas:google
-            - 0; 12045; -11284; 2407; -401; Mushroom isle; antiqueatlas:google
-            - 0; 12070; -6626; 2407; -401; Northern Nuclear Ruins; antiqueatlas:ruins
-            - 0; 13476; -8398; 2407; -401; Sea of Decay Region; antiqueatlas:google
-            - 0; 13745; 18139; 5502; 13754; Farmlands; antiqueatlas:farm
-            - 0; 13999; 17006; 5502; 13754; Mines; antiqueatlas:pickaxe
-            - 0; 15097; 5156; 5502; 13754; Meteor Impact Region; antiqueatlas:google
-            - 0; 15488; -322; 2407; -401; Red Canyon Region; antiqueatlas:google
-            - 0; 15581; 14550; 5502; 13754; Mines; antiqueatlas:pickaxe
-            - 0; 15708; -6953; 2407; -401; Southern Decay; antiqueatlas:google
-            - 0; 16030; 17783; 5502; 13754; Mines; antiqueatlas:pickaxe
-            - 0; 16230; 16992; 5502; 13754; Southern Highlands Region; antiqueatlas:google
-            - 0; 16240; -4960; 2407; -401; Southern Nuclear Ruins; antiqueatlas:ruins
-            - 0; 16914; 9843; 5502; 13754; Frozen Archipelago Region; antiqueatlas:google
-            - 0; 17470; -17304; 1171; -2126; Nuclear City Region; antiqueatlas:ruins
-            - 0; 17490; -12314; 1171; -2126; Dead Desert Eye Region; antiqueatlas:skull
-            - 0; 18051; 17710; 5502; 13754; Mines; antiqueatlas:pickaxe
-            - 0; 1831; 1635; 0; 0; Permafrost Teleporter; antiqueatlas:tower
-            - 0; 2407; -401; 0; 0; Sea of Decay Teleporter; antiqueatlas:tower
-            - 0; 3515; -4111; 1171; -2126; Volcanic Isle; antiqueatlas:google
-            - 0; 3554; 17412; 5502; 13754; Mushroom Isle; antiqueatlas:google
-            - 0; 3613; 17412; -2607; 16323; Mushroom isle; antiqueatlas:google
-            - 0; 4121; 78; 2407; -401; Decaying Isle; antiqueatlas:google
-            - 0; 4238; 7168; 5502; 13754; Frozen Isle; antiqueatlas:google
-            - 0; 4853; -8935; 1171; -2126; Green Isle; antiqueatlas:google
-            - 0; 4863; 2836; 5502; 13754; Frozen Isle; antiqueatlas:google
-            - 0; 5122; 13681; 5502; 13754; Western Glaciers; antiqueatlas:cave
-            - 0; 5502; 13754; 1831; 1635; Permafrost Region; antiqueatlas:google
-            - 0; 7070; -15844; 1171; -2126; Green Desert Region; antiqueatlas:google
-            - 0; 7133; -15241; 1171; -2126; Green Desert Canyons; antiqueatlas:google
-            - 0; 752; 9882; -2607; 16323; Jungle Isle; antiqueatlas:google
-            - 0; 7714; -5761; 2407; -401; Decaying Isle; antiqueatlas:google
-            - 0; 8779; 48; 2407; -401; Desert Isle; antiqueatlas:google
-            - 0; 9799; 12431; 5502; 13754; Eastern Glaciers; antiqueatlas:cave
+          # One object per marker, copied from the Dregora instance config
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'Frozen Greens Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': -950
+            'I:zMarker': -2228
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'The Highlands Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': -2355
+            'I:zMarker': -642
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'Valley of Sulfur Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': -1987
+            'I:zMarker': 1453
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'Southern Green Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': -116
+            'I:zMarker': 2455
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'Sea of Decay Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': 2407
+            'I:zMarker': -401
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'Green Desert Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': 1171
+            'I:zMarker': -2126
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:tower'
+            'S:"Marker Label"': 'Permafrost Teleporter'
+            'I:Dimension': 0
+            'I:xMarker': 1831
+            'I:zMarker': 1635
+            'I:xDiscover': 0
+            'I:zDiscover': 0
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Frozen Greens Region'
+            'I:Dimension': 0
+            'I:xMarker': -8247
+            'I:zMarker': -12929
+            'I:xDiscover': -950
+            'I:zDiscover': -2228
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'The Highlands Region'
+            'I:Dimension': 0
+            'I:xMarker': -15878
+            'I:zMarker': -4301
+            'I:xDiscover': -2355
+            'I:zDiscover': -642
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Valley of Sulfur Region'
+            'I:Dimension': 0
+            'I:xMarker': -13520
+            'I:zMarker': 7636
+            'I:xDiscover': -1987
+            'I:zDiscover': 1453
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Southern Green Region'
+            'I:Dimension': 0
+            'I:xMarker': -2607
+            'I:zMarker': 16323
+            'I:xDiscover': -116
+            'I:zDiscover': 2455
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Sea of Decay Region'
+            'I:Dimension': 0
+            'I:xMarker': 13476
+            'I:zMarker': -8398
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Green Desert Region'
+            'I:Dimension': 0
+            'I:xMarker': 7070
+            'I:zMarker': -15844
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Permafrost Region'
+            'I:Dimension': 0
+            'I:xMarker': 5502
+            'I:zMarker': 13754
+            'I:xDiscover': 1831
+            'I:zDiscover': 1635
+          - 'S:"Marker Type"': 'antiqueatlas:cave'
+            'S:"Marker Label"': 'Cavernous Plains'
+            'I:Dimension': 0
+            'I:xMarker': -6865
+            'I:zMarker': -12045
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Northern Greens Region'
+            'I:Dimension': 0
+            'I:xMarker': -7080
+            'I:zMarker': -17558
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:skull'
+            'S:"Marker Label"': 'Nuclear Dead Region'
+            'I:Dimension': 0
+            'I:xMarker': -16064
+            'I:zMarker': -17822
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:skull'
+            'S:"Marker Label"': 'Dead Dunes Region'
+            'I:Dimension': 0
+            'I:xMarker': -12558
+            'I:zMarker': -14248
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Four Peaks Region'
+            'I:Dimension': 0
+            'I:xMarker': -2753
+            'I:zMarker': -14492
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom Isle'
+            'I:Dimension': 0
+            'I:xMarker': -3994
+            'I:zMarker': -10976
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Stone Forest Isle'
+            'I:Dimension': 0
+            'I:xMarker': -8144
+            'I:zMarker': -7695
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Green Isle'
+            'I:Dimension': 0
+            'I:xMarker': -1074
+            'I:zMarker': -8584
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:ruins'
+            'S:"Marker Label"': 'Cult Isle'
+            'I:Dimension': 0
+            'I:xMarker': -3994
+            'I:zMarker': -3203
+            'I:xDiscover': -8247
+            'I:zDiscover': -12929
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'High Swamps Region'
+            'I:Dimension': 0
+            'I:xMarker': -17304
+            'I:zMarker': -11738
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Southern Highlands Region'
+            'I:Dimension': 0
+            'I:xMarker': -15957
+            'I:zMarker': 1987
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom Isle'
+            'I:Dimension': 0
+            'I:xMarker': -11718
+            'I:zMarker': -566
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Green Isle'
+            'I:Dimension': 0
+            'I:xMarker': -8945
+            'I:zMarker': -4082
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:ruins'
+            'S:"Marker Label"': 'Church of the Cult'
+            'I:Dimension': 0
+            'I:xMarker': -17021
+            'I:zMarker': 2705
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': -17187
+            'I:zMarker': 3847
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': -11948
+            'I:zMarker': -9257
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': -13002
+            'I:zMarker': -8310
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': -14252
+            'I:zMarker': -7841
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': -16298
+            'I:zMarker': -5859
+            'I:xDiscover': -5859
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': -15859
+            'I:zMarker': -4853
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:village'
+            'S:"Marker Label"': 'City of Origins'
+            'I:Dimension': 0
+            'I:xMarker': -17075
+            'I:zMarker': 5112
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:village'
+            'S:"Marker Label"': 'City of Daeroc'
+            'I:Dimension': 0
+            'I:xMarker': -14902
+            'I:zMarker': -3798
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:farm'
+            'S:"Marker Label"': 'Farms of Daeroc'
+            'I:Dimension': 0
+            'I:xMarker': -15922
+            'I:zMarker': -3520
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:ship'
+            'S:"Marker Label"': 'Shipwreck Oceans'
+            'I:Dimension': 0
+            'I:xMarker': -14526
+            'I:zMarker': 4282
+            'I:xDiscover': -15878
+            'I:zDiscover': -4301
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Desert Isle'
+            'I:Dimension': 0
+            'I:xMarker': -8447
+            'I:zMarker': 1484
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Desert Isle'
+            'I:Dimension': 0
+            'I:xMarker': -6523
+            'I:zMarker': 5888
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Desert Isle'
+            'I:Dimension': 0
+            'I:xMarker': -4179
+            'I:zMarker': 9462
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Padded Desert Region'
+            'I:Dimension': 0
+            'I:xMarker': -11103
+            'I:zMarker': 6289
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Grand Canyon Region'
+            'I:Dimension': 0
+            'I:xMarker': -13037
+            'I:zMarker': 12099
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Molten Sand Region'
+            'I:Dimension': 0
+            'I:xMarker': -7959
+            'I:zMarker': 11074
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Sea of Decay Region'
+            'I:Dimension': 0
+            'I:xMarker': -17753
+            'I:zMarker': 8769
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Sea of Decay Region'
+            'I:Dimension': 0
+            'I:xMarker': -8691
+            'I:zMarker': 15058
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Endless Desert Region'
+            'I:Dimension': 0
+            'I:xMarker': -15351
+            'I:zMarker': 16367
+            'I:xDiscover': -13520
+            'I:zDiscover': 7636
+          - 'S:"Marker Type"': 'antiqueatlas:ship'
+            'S:"Marker Label"': 'Green Cliffs'
+            'I:Dimension': 0
+            'I:xMarker': -2133
+            'I:zMarker': 14326
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Jungle Isle'
+            'I:Dimension': 0
+            'I:xMarker': -2255
+            'I:zMarker': 4218
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Jungle Isle'
+            'I:Dimension': 0
+            'I:xMarker': 752
+            'I:zMarker': 9882
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom isle'
+            'I:Dimension': 0
+            'I:xMarker': 3613
+            'I:zMarker': 17412
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom Isle'
+            'I:Dimension': 0
+            'I:xMarker': -5781
+            'I:zMarker': 12890
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Purple Fire'
+            'I:Dimension': 0
+            'I:xMarker': -3911
+            'I:zMarker': 16127
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:ship'
+            'S:"Marker Label"': 'Archipelago of Pirates'
+            'I:Dimension': 0
+            'I:xMarker': -73
+            'I:zMarker': 15371
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Rainy Peaks'
+            'I:Dimension': 0
+            'I:xMarker': -1084
+            'I:zMarker': 16284
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:village'
+            'S:"Marker Label"': 'Cliff Dwellers'
+            'I:Dimension': 0
+            'I:xMarker': -2377
+            'I:zMarker': 15551
+            'I:xDiscover': -2607
+            'I:zDiscover': 16323
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom isle'
+            'I:Dimension': 0
+            'I:xMarker': 12045
+            'I:zMarker': -11284
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Southern Decay'
+            'I:Dimension': 0
+            'I:xMarker': 15708
+            'I:zMarker': -6953
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:ruins'
+            'S:"Marker Label"': 'Northern Nuclear Ruins'
+            'I:Dimension': 0
+            'I:xMarker': 12070
+            'I:zMarker': -6626
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:ruins'
+            'S:"Marker Label"': 'Southern Nuclear Ruins'
+            'I:Dimension': 0
+            'I:xMarker': 16240
+            'I:zMarker': -4960
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Decaying Isle'
+            'I:Dimension': 0
+            'I:xMarker': 7714
+            'I:zMarker': -5761
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Sea of Decay Region'
+            'I:Dimension': 0
+            'I:xMarker': 12031
+            'I:zMarker': -2753
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Decaying Isle'
+            'I:Dimension': 0
+            'I:xMarker': 4121
+            'I:zMarker': 78
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Desert Isle'
+            'I:Dimension': 0
+            'I:xMarker': 8779
+            'I:zMarker': 48
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Red Canyon Region'
+            'I:Dimension': 0
+            'I:xMarker': 15488
+            'I:zMarker': -322
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom Isle'
+            'I:Dimension': 0
+            'I:xMarker': 11909
+            'I:zMarker': 1909
+            'I:xDiscover': 2407
+            'I:zDiscover': -401
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Green Beach Isle'
+            'I:Dimension': 0
+            'I:xMarker': -1123
+            'I:zMarker': -12446
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Green Desert Canyons'
+            'I:Dimension': 0
+            'I:xMarker': 7133
+            'I:zMarker': -15241
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:ruins'
+            'S:"Marker Label"': 'Nuclear City Region'
+            'I:Dimension': 0
+            'I:xMarker': 17470
+            'I:zMarker': -17304
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:skull'
+            'S:"Marker Label"': 'Dead Desert Eye Region'
+            'I:Dimension': 0
+            'I:xMarker': 17490
+            'I:zMarker': -12314
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Green Isle'
+            'I:Dimension': 0
+            'I:xMarker': 4853
+            'I:zMarker': -8935
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Volcanic Isle'
+            'I:Dimension': 0
+            'I:xMarker': 3515
+            'I:zMarker': -4111
+            'I:xDiscover': 1171
+            'I:zDiscover': -2126
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Frozen Isle'
+            'I:Dimension': 0
+            'I:xMarker': 4863
+            'I:zMarker': 2836
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Frozen Archipelago Region'
+            'I:Dimension': 0
+            'I:xMarker': 10004
+            'I:zMarker': 3867
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Frozen Archipelago Region'
+            'I:Dimension': 0
+            'I:xMarker': 16914
+            'I:zMarker': 9843
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Frozen Isle'
+            'I:Dimension': 0
+            'I:xMarker': 4238
+            'I:zMarker': 7168
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Meteor Impact Region'
+            'I:Dimension': 0
+            'I:xMarker': 15097
+            'I:zMarker': 5156
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Southern Highlands Region'
+            'I:Dimension': 0
+            'I:xMarker': 16230
+            'I:zMarker': 16992
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:farm'
+            'S:"Marker Label"': 'Farmlands'
+            'I:Dimension': 0
+            'I:xMarker': 13745
+            'I:zMarker': 18139
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': 18051
+            'I:zMarker': 17710
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': 16030
+            'I:zMarker': 17783
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': 15581
+            'I:zMarker': 14550
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': 13999
+            'I:zMarker': 17006
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:pickaxe'
+            'S:"Marker Label"': 'Mines'
+            'I:Dimension': 0
+            'I:xMarker': 11640
+            'I:zMarker': 18227
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:google'
+            'S:"Marker Label"': 'Mushroom Isle'
+            'I:Dimension': 0
+            'I:xMarker': 3554
+            'I:zMarker': 17412
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:cave'
+            'S:"Marker Label"': 'Western Glaciers'
+            'I:Dimension': 0
+            'I:xMarker': 5122
+            'I:zMarker': 13681
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
+          - 'S:"Marker Type"': 'antiqueatlas:cave'
+            'S:"Marker Label"': 'Eastern Glaciers'
+            'I:Dimension': 0
+            'I:xMarker': 9799
+            'I:zMarker': 12431
+            'I:xDiscover': 5502
+            'I:zDiscover': 13754
       general.auto marking.ruins:
         B:"Ruins Enabled": false
       general.antique atlas tiles:

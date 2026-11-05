@@ -69,6 +69,22 @@ class CfgPatcher:
         while i < len(lines):
             line = lines[i]
 
+            # Copy lists we don't patch verbatim: object lists (C:"Key" < { ... } >)
+            # contain bare braces that must not be read as section boundaries
+            if line.strip().endswith('<'):
+                list_key = line.split('<')[0].strip()
+                current_section = '.'.join(section_stack)
+                if not (section_stack and list_key in changes.get(current_section, {})):
+                    result.append(line)
+                    i += 1
+                    while i < len(lines) and lines[i].strip() != '>':
+                        result.append(lines[i])
+                        i += 1
+                    if i < len(lines):
+                        result.append(lines[i])
+                        i += 1
+                    continue
+
             # Check if entering a section: name { or "name with spaces" {
             section_match = re.match(r'^(\s*)(\"[^\"]+\"|[a-z0-9_][a-z0-9_.\- ]*)\s*{', line, re.IGNORECASE)
             if section_match:
@@ -208,9 +224,17 @@ class CfgPatcher:
                         while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
                             i += 1
 
-                        # Add new list values
+                        # Add new list values (dict items become { key=value } objects)
                         for value in new_values:
-                            result.append(f"{item_indent}{value}")
+                            if isinstance(value, dict):
+                                result.append(f"{item_indent}{{")
+                                for obj_key, obj_value in value.items():
+                                    if isinstance(obj_value, bool):
+                                        obj_value = str(obj_value).lower()
+                                    result.append(f"{item_indent}    {obj_key}={obj_value}")
+                                result.append(f"{item_indent}}}")
+                            else:
+                                result.append(f"{item_indent}{value}")
 
                         # Add the closing >
                         if i < len(lines):
