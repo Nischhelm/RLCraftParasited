@@ -2,12 +2,20 @@
   "name": "temple",
   "type": "spawner",
   "enabled": true,
-  "loadDefault": true,
+  "loadDefault": false,
   "mobCountMin": 8,
   "ignoreBiomes": true,
   "ignoreLightLevel": true,
   "groupLimitRange": 64,
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "world",
+      "dimensionIds": [
+        0
+      ],
+      "dimensionListType": "whitelist"
+    }
+  ],
   "triggers": [
     {
       "type": "world",
