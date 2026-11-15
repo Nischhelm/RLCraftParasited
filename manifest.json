@@ -281,7 +281,7 @@
     {"projectID": 1733580, "fileID": 9146978, "required": true, "fileName": "BucketDesyncFix-1.12.2-1.0.1"},
     {"projectID": 1736079, "fileID": 9234227, "required": true, "fileName": "Silly Armor Render-1.1.0"},
     {"projectID": 1746065, "fileID": 9529155, "required": true, "fileName": "NischiTweaker-1.1.7"},
-    {"projectID": 1769278, "fileID": 9345304, "required": true, "fileName": "ArrowAccuracy-1.0.0"},
+    {"projectID": 1769278, "fileID": 9522785, "required": true, "fileName": "ArrowAccuracy-1.0.1"},
     {"projectID": 1796272, "fileID": 9635653, "required": true, "fileName": "ServerResourceLoader-1.1.0"}
   ],
   "indev": [
