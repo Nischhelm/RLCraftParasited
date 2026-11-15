@@ -211,7 +211,7 @@
     {"projectID": 815314, "fileID": 4358088, "required": true, "fileName": "Wilhelm"},
     {"projectID": 819886, "fileID": 4475428, "required": true, "fileName": "RLArtifacts-1.1.2"},
     {"projectID": 830652, "fileID": 4409243, "required": true, "fileName": "JAPPA_RLCraftAdd-on_Nether"},
-    {"projectID": 840576, "fileID": 7009970, "required": true, "fileName": "OceanicExpanse-1.2.2"},
+    {"projectID": 840576, "fileID": 9534566, "required": true, "fileName": "OceanicExpanse-1.2.3"},
     {"projectID": 869891, "fileID": 4609368, "required": true, "fileName": "RL Dark Mode V0.6"},
     {"projectID": 879970, "fileID": 4609749, "required": true, "fileName": "RL SRP Better Visuals V0.1"},
     {"projectID": 898104, "fileID": 8411664, "required": true, "fileName": "CarbonConfig-1.12.2-2.0.2.1"},
