@@ -10,6 +10,7 @@ furnace.remove(<variedcommodities:ingot_steel>);
 furnace.remove(<betterendforge:ender_dust>);
 furnace.remove(<betterendforge:thallasium_ingot>);
 
+furnace.remove(<iceandfire:silver_nugget>);
 furnace.remove(<iceandfire:silver_ingot>);
 furnace.remove(<iceandfire:sapphire_gem>);
 
