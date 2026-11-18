@@ -1,0 +1,12 @@
+{
+  "id": "potioncore:iron_skin",
+  "attributeModifiers": [
+    {
+      "attribute": "generic.armor",
+      "modifierName": "effect.iron_skin",
+      "amount": 3.0,
+      "operation": 0,
+      "uuid": "f9c58d75-afcf-43ce-956e-4fb794356ec2"
+    }
+  ]
+}

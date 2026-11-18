@@ -1,0 +1,26 @@
+{
+  "id": "rustic:ironskin",
+  "attributeModifiers": [
+    {
+      "attribute": "generic.armorToughness",
+      "modifierName": "effect.ironskin",
+      "amount": 2.0,
+      "operation": 0,
+      "uuid": "d774e354-e3ab-42c4-9716-d2280cd7d988"
+    },
+    {
+      "attribute": "generic.armor",
+      "modifierName": "effect.ironskin",
+      "amount": 3.0,
+      "operation": 0,
+      "uuid": "d666c8fd-8ac4-451d-9a06-777947832156"
+    },
+    {
+      "attribute": "generic.movementSpeed",
+      "modifierName": "effect.ironskin",
+      "amount": -0.1,
+      "operation": 1,
+      "uuid": "d666c8fd-8ac4-451d-9a06-777947832156"
+    }
+  ]
+}
