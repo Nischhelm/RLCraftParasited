@@ -1,6 +1,6 @@
 {
-  "id_offset": 100000,
-  "new_id_start": 10000,
+  "id_offset": 2000,
+  "new_id_start": 1000,
   "quests": [
     {
       "properties:10": {

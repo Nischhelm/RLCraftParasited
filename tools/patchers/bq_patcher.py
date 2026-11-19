@@ -7,8 +7,8 @@ addressing everything by questID/lineID instead of list position.
 
 Fragment format (JSON, all IDs in the variant's numbering):
 {
-  "id_offset": 100000,          # base IDs colliding with variant IDs move to id + offset
-  "new_id_start": 10000,        # first ID for newly extracted variant quests/lines
+  "id_offset": 2000,            # base IDs colliding with variant IDs move to id + offset
+  "new_id_start": 1000,         # first ID for newly extracted variant quests/lines
   "quests": [ {<BQ quest incl. questID:3>}, ... ],
   "lines": [ {"after": <lineID|null>, "line": {<BQ quest line incl. lineID:3>}}, ... ],
   "removed_quests": [id, ...],
@@ -45,8 +45,8 @@ PREREQS = 'preRequisites:11'
 MARKER_KEY = 'packbuilder:10'
 MARKER_COMMIT = 'base_commit:8'
 
-DEFAULT_ID_OFFSET = 100000
-DEFAULT_NEW_ID_START = 10000
+DEFAULT_ID_OFFSET = 2000
+DEFAULT_NEW_ID_START = 1000
 
 _MISSING = object()
 
