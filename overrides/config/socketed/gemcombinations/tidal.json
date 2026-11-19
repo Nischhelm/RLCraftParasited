@@ -1,0 +1,67 @@
+{
+  "Display Name": "socketed.tooltip.default.tidal",
+  "Text Color": "AQUA",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "prismarine_crystals",
+    "sponge"
+  ],
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Potion Name": "minecraft:haste",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:night_vision",
+          "Amplifier": 0,
+          "Duration": 300,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive",
+        "Condition": {
+          "State": "IN_WATER",
+          "Check For Player": true,
+          "Condition Type": "Entity State"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.tidal.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "HEAD"
+    }
+  ]
+}

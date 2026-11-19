@@ -1,0 +1,37 @@
+{
+  "Display Name": "socketed.tooltip.default.packed_ice",
+  "Gem Tier": 1,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:speed",
+      "Amplifier": 2,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Biome Type": "SNOWY",
+          "Condition Type": "Biome Type"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.packed_ice.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:packed_ice",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

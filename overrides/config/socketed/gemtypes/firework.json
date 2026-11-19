@@ -1,0 +1,35 @@
+{
+  "Display Name": "socketed.tooltip.default.firework",
+  "Gem Tier": 1,
+  "Text Color": "RED",
+  "Effects": [
+    {
+      "Strength": 0.3,
+      "Activator": {
+        "Activator Type": "Jump",
+        "Condition": {
+          "State": "SPRINTING",
+          "Check For Player": true,
+          "Condition Type": "Entity State"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.firework.desc",
+      "Effect Type": "Launch",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:fireworks",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

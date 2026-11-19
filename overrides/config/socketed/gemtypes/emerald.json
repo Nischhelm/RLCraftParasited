@@ -5,15 +5,32 @@
   "Effects": [
     {
       "Amount": 1.0,
+      "Operation": "ADD",
       "Damage Type": "ddd_poison",
-      "Directly Activated": true,
+      "Activator": {
+        "Activator Type": "DDD Attacking",
+        "Directly Activated": true
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
       "Effect Type": "DDD Damage",
       "Equipment Slot Type": "HAND"
     },
 	{
       "Amount": 0.1,
       "Damage Type": "ddd_poison",
-      "Directly Activated": true,
+      "Activator": {
+        "Activator Type": "DDD Attacked",
+        "Directly Activated": true
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
       "Effect Type": "DDD Resistance",
       "Equipment Slot Type": "BODY"
     }
@@ -24,5 +41,6 @@
       "Strict Metadata": false,
       "Filter Type": "Ore Dictionary"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

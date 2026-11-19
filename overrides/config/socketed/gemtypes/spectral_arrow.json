@@ -1,0 +1,40 @@
+{
+  "Display Name": "socketed.tooltip.default.spectral_arrow",
+  "Gem Tier": 1,
+  "Text Color": "YELLOW",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:glowing",
+      "Amplifier": 0,
+      "Duration": 200,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Require Melee": false,
+          "Require Ranged": true,
+          "Required Damage Type": "",
+          "Condition Type": "Damage Source"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.spectral_arrow.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:spectral_arrow",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

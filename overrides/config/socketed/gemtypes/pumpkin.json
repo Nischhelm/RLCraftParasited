@@ -1,0 +1,33 @@
+{
+  "Display Name": "socketed.tooltip.default.pumpkin",
+  "Gem Tier": 1,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Activator": {
+        "Activator Type": "Targeted",
+        "Condition": {
+          "Entity": "minecraft:enderman",
+          "Condition Type": "Entity"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.pumpkin.desc",
+      "Effect Type": "Lose Target",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:pumpkin",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

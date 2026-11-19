@@ -1,67 +1,56 @@
 {
-  "Display Name": "socketed.tooltip.default.combination2",
-  "Text Color": "GREEN",
+  "Display Name": "socketed.tooltip.default.ender",
+  "Text Color": "DARK_AQUA",
   "Strict Order": false,
   "Strict Count": false,
   "Allows Wrapping": false,
-  "Replaces Original Effects": true,
+  "Replaces Original Effects": false,
   "Gem Types": [
-    "sealantern",
-    "witherskull",
-    "pufferfish"
+    "ender_pearl",
+    "chorus_fruit"
   ],
   "Effects": [
     {
       "Sub-Effects": [
         {
-          "Potion Name": "minecraft:poison",
-          "Amplifier": 1,
-          "Duration": 200,
           "Activator": {
             "Activator Type": "Multi Effect"
           },
           "Targets": [
             {
-              "Block Range": 4,
-              "Target Type": "Self AOE"
+              "Target Type": "Self"
             }
           ],
           "Tooltip Key": "",
-          "Effect Type": "Potion",
+          "Effect Type": "Cancel Event",
           "Equipment Slot Type": "ALL"
         },
         {
-          "Potion Name": "minecraft:wither",
-          "Amplifier": 1,
-          "Duration": 200,
+          "Range": 24,
           "Activator": {
             "Activator Type": "Multi Effect"
           },
           "Targets": [
             {
-              "Block Range": 4,
-              "Target Type": "Self AOE"
+              "Target Type": "Self"
             }
           ],
           "Tooltip Key": "",
-          "Effect Type": "Potion",
+          "Effect Type": "Random Teleport",
           "Equipment Slot Type": "ALL"
         },
         {
-          "Potion Name": "minecraft:blindness",
-          "Amplifier": 0,
-          "Duration": 200,
+          "Tick Amount": 20,
           "Activator": {
             "Activator Type": "Multi Effect"
           },
           "Targets": [
             {
-              "Block Range": 4,
-              "Target Type": "Self AOE"
+              "Target Type": "Self"
             }
           ],
           "Tooltip Key": "",
-          "Effect Type": "Potion",
+          "Effect Type": "Extra IFrame",
           "Equipment Slot Type": "ALL"
         }
       ],
@@ -70,10 +59,20 @@
         "Event Type": "HURT",
         "Activator Type": "Attacked",
         "Condition": {
-          "Health Percent": 0.75,
-          "Comparison Type": "LESS_EQUAL",
-          "Check For Player": true,
-          "Condition Type": "Health Percent"
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Health Percent": 0.25,
+              "Comparison Type": "LESS_EQUAL",
+              "Check For Player": true,
+              "Condition Type": "Health Percent"
+            },
+            {
+              "Chance": 0.35,
+              "Condition Type": "Chance"
+            }
+          ],
+          "Condition Type": "Multi"
         }
       },
       "Targets": [
@@ -81,9 +80,9 @@
           "Target Type": "Self"
         }
       ],
-      "Tooltip Key": "socketed.tooltip.default.combination2.desc",
+      "Tooltip Key": "socketed.tooltip.default.ender.desc",
       "Effect Type": "Multi Effect",
-      "Equipment Slot Type": "BODY"
+      "Equipment Slot Type": "CHEST"
     }
   ]
 }

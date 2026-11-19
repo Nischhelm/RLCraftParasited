@@ -1,6 +1,6 @@
 {
   "Display Name": "socketed.tooltip.default.endcrystal",
-  "Gem Tier": 3,
+  "Gem Tier": 2,
   "Text Color": "LIGHT_PURPLE",
   "Effects": [
     {
@@ -68,5 +68,6 @@
       "Strict Metadata": false,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

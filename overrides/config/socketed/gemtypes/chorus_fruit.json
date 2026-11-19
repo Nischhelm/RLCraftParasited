@@ -1,0 +1,48 @@
+{
+  "Display Name": "socketed.tooltip.default.chorus_fruit",
+  "Gem Tier": 2,
+  "Text Color": "LIGHT_PURPLE",
+  "Effects": [
+    {
+      "Range": 16,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Health Percent": 0.3,
+              "Comparison Type": "LESS_EQUAL",
+              "Check For Player": true,
+              "Condition Type": "Health Percent"
+            },
+            {
+              "Chance": 0.2,
+              "Condition Type": "Chance"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.chorus_fruit.desc",
+      "Effect Type": "Random Teleport",
+      "Equipment Slot Type": "CHEST"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:chorus_fruit",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

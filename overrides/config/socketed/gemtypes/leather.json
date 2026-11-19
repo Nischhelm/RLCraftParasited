@@ -1,0 +1,36 @@
+{
+  "Display Name": "socketed.tooltip.default.leather",
+  "Gem Tier": 0,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Tick Amount": 3,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Chance": 0.1,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.leather.desc",
+      "Effect Type": "Extra IFrame",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:leather",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

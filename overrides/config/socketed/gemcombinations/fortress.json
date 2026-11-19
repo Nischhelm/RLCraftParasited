@@ -1,0 +1,35 @@
+{
+  "Display Name": "socketed.tooltip.default.fortress",
+  "Text Color": "DARK_RED",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "nether_brick",
+    "magma_cream"
+  ],
+  "Effects": [
+    {
+      "Potion Name": "minecraft:fire_resistance",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Dimension Id": -1,
+          "Condition Type": "Dimension"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.fortress.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "BODY"
+    }
+  ]
+}

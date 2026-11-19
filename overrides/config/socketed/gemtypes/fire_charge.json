@@ -1,0 +1,40 @@
+{
+  "Display Name": "socketed.tooltip.default.fire_charge",
+  "Gem Tier": 2,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Amount": 1.3,
+      "Operation": "MULTIPLY",
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Condition": {
+            "Distance": 16.0,
+            "Condition Type": "Distance"
+          },
+          "Condition Type": "Inverted"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.fire_charge.desc",
+      "Effect Type": "Damage Modifier",
+      "Equipment Slot Type": "MAINHAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:fire_charge",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

@@ -1,0 +1,63 @@
+{
+  "Display Name": "socketed.tooltip.default.alchemist",
+  "Text Color": "LIGHT_PURPLE",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "glistering_melon",
+    "magma_cream",
+    "milk_bucket"
+  ],
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Amount": 4.0,
+          "Damage Percent": 0.0,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Heal",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Cleanse Type": "HARMFUL",
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Cleanse",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Activator Type": "Kill",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.alchemist.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "BODY"
+    }
+  ]
+}

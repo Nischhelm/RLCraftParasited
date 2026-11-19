@@ -1,0 +1,64 @@
+{
+  "Display Name": "socketed.tooltip.default.vampiric",
+  "Text Color": "DARK_RED",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "nether_wart",
+    "fermented_spider_eye"
+  ],
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Amount": 0.0,
+          "Damage Percent": 0.1,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Heal",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Cleanse Type": "BENEFICIAL",
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Other"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Cleanse",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Attack Cooldown": 0.9,
+          "Condition Type": "Attack Cooldown"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.vampiric.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "HAND"
+    }
+  ]
+}

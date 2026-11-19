@@ -1,6 +1,6 @@
 {
   "Display Name": "socketed.tooltip.default.totem",
-  "Gem Tier": 3,
+  "Gem Tier": 2,
   "Text Color": "YELLOW",
   "Effects": [
     {
@@ -54,5 +54,6 @@
       "Strict Metadata": false,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

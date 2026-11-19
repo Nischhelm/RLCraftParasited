@@ -1,0 +1,46 @@
+{
+  "Display Name": "socketed.tooltip.default.prismarine_crystals",
+  "Gem Tier": 1,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Activator": {
+        "Event Type": "ATTACK",
+        "Activator Type": "Environmental Damage",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Require Melee": false,
+              "Require Ranged": false,
+              "Required Damage Type": "drown",
+              "Condition Type": "Damage Source"
+            },
+            {
+              "Chance": 0.5,
+              "Condition Type": "Chance"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.prismarine_crystals.desc",
+      "Effect Type": "Cancel Event",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:prismarine_crystals",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

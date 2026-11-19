@@ -6,7 +6,7 @@
     {
       "Potion Name": "minecraft:night_vision",
       "Amplifier": 0,
-      "Duration": 40,
+      "Duration": 300,
       "Activator": {
         "Activation Rate": 40,
         "Activator Type": "Passive",
@@ -46,5 +46,6 @@
       "Strict Metadata": false,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

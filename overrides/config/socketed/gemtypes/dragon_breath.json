@@ -1,0 +1,46 @@
+{
+  "Display Name": "socketed.tooltip.default.dragon_breath",
+  "Gem Tier": 2,
+  "Text Color": "LIGHT_PURPLE",
+  "Effects": [
+    {
+      "Amount": 4.0,
+      "Damage Type": "magic",
+      "Bypass Armor": true,
+      "Bypass IFrames": false,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Health Percent": 0.5,
+          "Comparison Type": "LESS_EQUAL",
+          "Check For Player": true,
+          "Condition Type": "Health Percent"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        },
+        {
+          "Block Range": 4,
+          "Max Targets": -1,
+          "Target Type": "Self AOE"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.dragon_breath.desc",
+      "Effect Type": "Damage",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:dragon_breath",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

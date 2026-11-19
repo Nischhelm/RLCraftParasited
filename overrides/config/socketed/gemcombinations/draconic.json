@@ -1,0 +1,58 @@
+{
+  "Display Name": "socketed.tooltip.default.draconic",
+  "Text Color": "DARK_PURPLE",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "skulldragon",
+    "dragon_breath"
+  ],
+  "Effects": [
+    {
+      "Potion Name": "minecraft:regeneration",
+      "Amplifier": 0,
+      "Duration": 51,
+      "Activator": {
+        "Activation Rate": 50,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Dimension Id": 1,
+          "Condition Type": "Dimension"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.draconic.desc.1",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HEAD"
+    },
+    {
+      "Amount": 2.0,
+      "Damage Type": "magic",
+      "Bypass Armor": true,
+      "Bypass IFrames": true,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Dimension Id": 1,
+          "Condition Type": "Dimension"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.draconic.desc.2",
+      "Effect Type": "Damage",
+      "Equipment Slot Type": "HEAD"
+    }
+  ]
+}

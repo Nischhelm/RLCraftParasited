@@ -1,0 +1,31 @@
+{
+  "Display Name": "socketed.tooltip.default.glistering_melon",
+  "Gem Tier": 1,
+  "Text Color": "RED",
+  "Effects": [
+    {
+      "Amount": 2.0,
+      "Damage Percent": 0.0,
+      "Activator": {
+        "Activator Type": "Kill"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.glistering_melon.desc",
+      "Effect Type": "Heal",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:speckled_melon",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

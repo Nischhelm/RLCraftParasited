@@ -1,0 +1,75 @@
+{
+  "Display Name": "socketed.tooltip.default.lapis_block",
+  "Gem Tier": 2,
+  "Text Color": "BLUE",
+  "Effects": [
+    {
+      "Rolls": 1,
+      "Activator": {
+        "Directly Activated": true,
+        "Activator Type": "Block Break",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Block Filters": [
+                {
+                  "Ore Dictionary Name": "oreCoal",
+                  "Strict Metadata": false,
+                  "Filter Type": "Ore Dictionary"
+                },
+                {
+                  "Ore Dictionary Name": "oreLapis",
+                  "Strict Metadata": false,
+                  "Filter Type": "Ore Dictionary"
+                },
+                {
+                  "Ore Dictionary Name": "oreRedstone",
+                  "Strict Metadata": false,
+                  "Filter Type": "Ore Dictionary"
+                },
+                {
+                  "Ore Dictionary Name": "oreDiamond",
+                  "Strict Metadata": false,
+                  "Filter Type": "Ore Dictionary"
+                },
+                {
+                  "Ore Dictionary Name": "oreEmerald",
+                  "Strict Metadata": false,
+                  "Filter Type": "Ore Dictionary"
+                },
+                {
+                  "Ore Dictionary Name": "oreQuartz",
+                  "Strict Metadata": false,
+                  "Filter Type": "Ore Dictionary"
+                }
+              ],
+              "Condition Type": "Block"
+            },
+            {
+              "Chance": 0.1,
+              "Condition Type": "Chance"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.lapis_block.desc",
+      "Effect Type": "Bonus Drops",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "blockLapis",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ],
+  "Max Per Item": 1
+}

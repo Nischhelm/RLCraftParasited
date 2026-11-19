@@ -1,0 +1,75 @@
+{
+  "Display Name": "socketed.tooltip.default.ender_pearl",
+  "Gem Tier": 2,
+  "Text Color": "DARK_AQUA",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Cancel Event",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Range": 8,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Random Teleport",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Require Melee": false,
+              "Require Ranged": true,
+              "Required Damage Type": "",
+              "Condition Type": "Damage Source"
+            },
+            {
+              "Chance": 0.3,
+              "Condition Type": "Chance"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.ender_pearl.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "CHEST"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "enderpearl",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ],
+  "Max Per Item": 1
+}

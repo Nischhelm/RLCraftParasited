@@ -1,0 +1,66 @@
+{
+  "Display Name": "socketed.tooltip.default.slime_block",
+  "Gem Tier": 2,
+  "Text Color": "GREEN",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Cancel Event",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Strength": 0.5,
+          "Activator": {
+            "Activator Type": "Multi Effect",
+            "Condition": {
+              "Condition": {
+                "State": "SNEAKING",
+                "Check For Player": true,
+                "Condition Type": "Entity State"
+              },
+              "Condition Type": "Inverted"
+            }
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Launch",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Minimum Distance": 3.0,
+        "Activator Type": "Fall"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.slime_block.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "blockSlime",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ],
+  "Max Per Item": 1
+}

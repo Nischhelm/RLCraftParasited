@@ -1,0 +1,31 @@
+{
+  "Display Name": "socketed.tooltip.default.milk_bucket",
+  "Gem Tier": 1,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Cleanse Type": "ALL",
+      "Activator": {
+        "Activation Rate": 200,
+        "Activator Type": "Passive"
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.milk_bucket.desc",
+      "Effect Type": "Cleanse",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:milk_bucket",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

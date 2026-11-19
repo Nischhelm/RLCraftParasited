@@ -1,0 +1,38 @@
+{
+  "Display Name": "socketed.tooltip.default.ink_sac",
+  "Gem Tier": 0,
+  "Text Color": "DARK_BLUE",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:blindness",
+      "Amplifier": 0,
+      "Duration": 60,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.ink_sac.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "CHEST"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:dye",
+      "Item Metadata": 0,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

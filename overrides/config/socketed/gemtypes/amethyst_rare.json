@@ -5,15 +5,32 @@
   "Effects": [
     {
       "Amount": 2.0,
+      "Operation": "ADD",
       "Damage Type": "ddd_lightning",
-      "Directly Activated": true,
+      "Activator": {
+        "Activator Type": "DDD Attacking",
+        "Directly Activated": true
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
       "Effect Type": "DDD Damage",
       "Equipment Slot Type": "HAND"
     },
 	{
       "Amount": 0.2,
       "Damage Type": "ddd_lightning",
-      "Directly Activated": true,
+      "Activator": {
+        "Activator Type": "DDD Attacked",
+        "Directly Activated": true
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
       "Effect Type": "DDD Resistance",
       "Equipment Slot Type": "BODY"
     }
@@ -25,5 +42,6 @@
       "Strict Metadata": false,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

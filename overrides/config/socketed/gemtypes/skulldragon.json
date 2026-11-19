@@ -1,0 +1,68 @@
+{
+  "Display Name": "socketed.tooltip.default.skulldragon",
+  "Gem Tier": 2,
+  "Text Color": "DARK_PURPLE",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Potion Name": "minecraft:strength",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:resistance",
+          "Amplifier": 0,
+          "Duration": 40,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Activation Rate": 39,
+        "Activator Type": "Passive",
+        "Condition": {
+          "Dimension Id": 1,
+          "Condition Type": "Dimension"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.skulldragon.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "HEAD"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:skull",
+      "Item Metadata": 5,
+      "Strict Metadata": true,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

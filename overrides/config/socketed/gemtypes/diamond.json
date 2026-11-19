@@ -24,5 +24,6 @@
       "Strict Metadata": false,
       "Filter Type": "Ore Dictionary"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

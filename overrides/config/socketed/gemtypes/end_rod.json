@@ -1,0 +1,50 @@
+{
+  "Display Name": "socketed.tooltip.default.end_rod",
+  "Gem Tier": 2,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Damage": 5.0,
+      "Sets Fire": false,
+      "Natural Strike": false,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Weather": "RAIN",
+              "Require Exposed": true,
+              "Check For Player": false,
+              "Condition Type": "Weather"
+            },
+            {
+              "Chance": 0.25,
+              "Condition Type": "Chance"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.end_rod.desc",
+      "Effect Type": "Lightning",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:end_rod",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

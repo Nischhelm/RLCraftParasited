@@ -1,6 +1,6 @@
 {
   "Display Name": "socketed.tooltip.default.skullskeleton",
-  "Gem Tier": 3,
+  "Gem Tier": 2,
   "Text Color": "WHITE",
   "Effects": [
     {
@@ -28,5 +28,6 @@
       "Strict Metadata": true,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

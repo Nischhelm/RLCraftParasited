@@ -20,7 +20,11 @@
       },
       "Targets": [
         {
+          "Target Type": "Other"
+        },
+        {
           "Block Range": 4,
+          "Max Targets": -1,
           "Target Type": "Self AOE"
         }
       ],
@@ -36,5 +40,6 @@
       "Strict Metadata": true,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

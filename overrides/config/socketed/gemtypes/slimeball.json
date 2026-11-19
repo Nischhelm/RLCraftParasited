@@ -17,6 +17,7 @@
         },
         {
           "Block Range": 4,
+          "Max Targets": -1,
           "Target Type": "Self AOE"
         }
       ],
@@ -31,5 +32,6 @@
       "Strict Metadata": false,
       "Filter Type": "Ore Dictionary"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

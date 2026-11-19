@@ -5,6 +5,7 @@
   "Effects": [
     {
       "Strength": 1.0,
+      "Causes Fire": false,
       "Damages Terrain": false,
       "Activator": {
         "Directly Activated": true,
@@ -31,5 +32,6 @@
       "Strict Metadata": false,
       "Filter Type": "Ore Dictionary"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

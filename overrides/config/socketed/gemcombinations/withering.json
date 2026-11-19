@@ -1,0 +1,33 @@
+{
+  "Display Name": "socketed.tooltip.default.withering",
+  "Text Color": "DARK_GRAY",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "soul_sand",
+    "nether_wart",
+    "blazerod"
+  ],
+  "Effects": [
+    {
+      "Potion Name": "minecraft:wither",
+      "Amplifier": 1,
+      "Duration": 60,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking"
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.withering.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HAND"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "Display Name": "socketed.tooltip.default.ghasttear",
-  "Gem Tier": 3,
+  "Gem Tier": 2,
   "Text Color": "WHITE",
   "Effects": [
     {
@@ -8,7 +8,7 @@
         {
           "Potion Name": "minecraft:regeneration",
           "Amplifier": 0,
-          "Duration": 40,
+          "Duration": 50,
           "Activator": {
             "Activator Type": "Multi Effect"
           },
@@ -24,7 +24,7 @@
         {
           "Potion Name": "minecraft:health_boost",
           "Amplifier": 0,
-          "Duration": 40,
+          "Duration": 50,
           "Activator": {
             "Activator Type": "Multi Effect"
           },
@@ -39,7 +39,7 @@
         }
       ],
       "Activator": {
-        "Activation Rate": 39,
+        "Activation Rate": 51,
         "Activator Type": "Passive"
       },
       "Targets": [
@@ -58,5 +58,6 @@
       "Strict Metadata": false,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

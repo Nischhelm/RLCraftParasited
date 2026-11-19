@@ -1,0 +1,38 @@
+{
+  "Display Name": "socketed.tooltip.default.snowball",
+  "Gem Tier": 0,
+  "Text Color": "AQUA",
+  "Effects": [
+    {
+      "Potion Name": "minecraft:slowness",
+      "Amplifier": 0,
+      "Duration": 40,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 0.25,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.snowball.desc",
+      "Effect Type": "Potion",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:snowball",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

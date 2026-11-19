@@ -1,0 +1,41 @@
+{
+  "Display Name": "socketed.tooltip.default.cactus",
+  "Gem Tier": 0,
+  "Text Color": "DARK_GREEN",
+  "Effects": [
+    {
+      "Amount": 1.0,
+      "Damage Type": "thorns",
+      "Bypass Armor": false,
+      "Bypass IFrames": false,
+      "Activator": {
+        "Directly Activated": false,
+        "Event Type": "HURT",
+        "Activator Type": "Attacked",
+        "Condition": {
+          "Require Melee": true,
+          "Require Ranged": false,
+          "Required Damage Type": "",
+          "Condition Type": "Damage Source"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.cactus.desc",
+      "Effect Type": "Damage",
+      "Equipment Slot Type": "CHEST"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:cactus",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

@@ -1,0 +1,38 @@
+{
+  "Display Name": "socketed.tooltip.default.prismarine_shard",
+  "Gem Tier": 1,
+  "Text Color": "DARK_AQUA",
+  "Effects": [
+    {
+      "Amount": 1.25,
+      "Operation": "MULTIPLY",
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "State": "IN_WATER",
+          "Check For Player": false,
+          "Condition Type": "Entity State"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.prismarine_shard.desc",
+      "Effect Type": "Damage Modifier",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:prismarine_shard",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

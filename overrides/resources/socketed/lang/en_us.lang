@@ -16,3 +16,4 @@ socketed.tooltip.default.wind_gem.desc2=Grants Slowfall upon dodging
 socketed.tooltip.default.wind_gem.desc3=Throws targets on hit
 socketed.tooltip.default.ruby_gem=Ruby Gem
 socketed.tooltip.default.sapphire_gem=Sapphire Gem
+socketed.tooltip.netherstar.hand.desc=Apply Wither II on hit targets

@@ -1,0 +1,36 @@
+{
+  "Display Name": "socketed.tooltip.default.nether_wart",
+  "Gem Tier": 2,
+  "Text Color": "DARK_RED",
+  "Effects": [
+    {
+      "Amount": 0.0,
+      "Damage Percent": 0.1,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Attack Cooldown": 0.9,
+          "Condition Type": "Attack Cooldown"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.nether_wart.desc",
+      "Effect Type": "Heal",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "cropNetherWart",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ],
+  "Max Per Item": 1
+}

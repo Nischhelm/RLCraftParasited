@@ -19,6 +19,26 @@
       "Tooltip Key": "socketed.tooltip.default.anvil.desc",
       "Effect Type": "Knockback",
       "Equipment Slot Type": "CHEST"
+    },
+    {
+      "Duration": 100,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "ATTACK",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Chance": 0.25,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.anvil.desc.2",
+      "Effect Type": "Disable Shield",
+      "Equipment Slot Type": "HAND"
     }
   ],
   "Filters": [
@@ -28,5 +48,6 @@
       "Strict Metadata": true,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

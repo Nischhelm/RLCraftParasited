@@ -1,0 +1,33 @@
+{
+  "Display Name": "socketed.tooltip.default.springloaded",
+  "Text Color": "GREEN",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "slime_block",
+    "firework"
+  ],
+  "Effects": [
+    {
+      "Strength": 0.8,
+      "Activator": {
+        "Activator Type": "Jump",
+        "Condition": {
+          "State": "SNEAKING",
+          "Check For Player": true,
+          "Condition Type": "Entity State"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.springloaded.desc",
+      "Effect Type": "Launch",
+      "Equipment Slot Type": "FEET"
+    }
+  ]
+}

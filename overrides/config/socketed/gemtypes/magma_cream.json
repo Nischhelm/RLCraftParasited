@@ -1,0 +1,87 @@
+{
+  "Display Name": "socketed.tooltip.default.magma_cream",
+  "Gem Tier": 1,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Sub-Effects": [
+        {
+          "Amount": 0.5,
+          "Operation": "MULTIPLY",
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Damage Modifier",
+          "Equipment Slot Type": "ALL"
+        },
+        {
+          "Potion Name": "minecraft:fire_resistance",
+          "Amplifier": 0,
+          "Duration": 60,
+          "Activator": {
+            "Activator Type": "Multi Effect"
+          },
+          "Targets": [
+            {
+              "Target Type": "Self"
+            }
+          ],
+          "Tooltip Key": "",
+          "Effect Type": "Potion",
+          "Equipment Slot Type": "ALL"
+        }
+      ],
+      "Activator": {
+        "Event Type": "HURT",
+        "Activator Type": "Environmental Damage",
+        "Condition": {
+          "Logic Type": "OR",
+          "Sub-Conditions": [
+            {
+              "Require Melee": false,
+              "Require Ranged": false,
+              "Required Damage Type": "lava",
+              "Condition Type": "Damage Source"
+            },
+            {
+              "Require Melee": false,
+              "Require Ranged": false,
+              "Required Damage Type": "inFire",
+              "Condition Type": "Damage Source"
+            },
+            {
+              "Require Melee": false,
+              "Require Ranged": false,
+              "Required Damage Type": "onFire",
+              "Condition Type": "Damage Source"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.magma_cream.desc",
+      "Effect Type": "Multi Effect",
+      "Equipment Slot Type": "BODY"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:magma_cream",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

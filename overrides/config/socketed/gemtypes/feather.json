@@ -1,0 +1,34 @@
+{
+  "Display Name": "socketed.tooltip.default.feather",
+  "Gem Tier": 0,
+  "Text Color": "WHITE",
+  "Effects": [
+    {
+      "Activator": {
+        "Minimum Distance": 4.0,
+        "Activator Type": "Fall",
+        "Condition": {
+          "Chance": 0.2,
+          "Condition Type": "Chance"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Self"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.feather.desc",
+      "Effect Type": "Cancel Event",
+      "Equipment Slot Type": "FEET"
+    }
+  ],
+  "Filters": [
+    {
+      "Item Name": "minecraft:feather",
+      "Item Metadata": 0,
+      "Strict Metadata": false,
+      "Filter Type": "Item"
+    }
+  ],
+  "Max Per Item": 1
+}

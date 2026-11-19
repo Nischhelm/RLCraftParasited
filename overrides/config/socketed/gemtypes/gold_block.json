@@ -1,0 +1,45 @@
+{
+  "Display Name": "socketed.tooltip.default.gold_block",
+  "Gem Tier": 2,
+  "Text Color": "GOLD",
+  "Effects": [
+    {
+      "Rolls": 1,
+      "Activator": {
+        "Activator Type": "Kill",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Chance": 0.15,
+              "Condition Type": "Chance"
+            },
+            {
+              "Condition": {
+                "Condition Type": "Is Boss"
+              },
+              "Condition Type": "Inverted"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.gold_block.desc",
+      "Effect Type": "Bonus Drops",
+      "Equipment Slot Type": "HAND"
+    }
+  ],
+  "Filters": [
+    {
+      "Ore Dictionary Name": "blockGold",
+      "Strict Metadata": false,
+      "Filter Type": "Ore Dictionary"
+    }
+  ],
+  "Max Per Item": 1
+}

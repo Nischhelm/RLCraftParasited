@@ -32,5 +32,6 @@
       "Strict Metadata": true,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

@@ -5,7 +5,7 @@
   "Effects": [
     {
       "Attribute Name": "generic.luck",
-      "Modifier Amount": 1.0,
+      "Modifier Amount": 0.2,
       "Modifier Operation": 0,
       "Effect Type": "Attribute",
       "Equipment Slot Type": "FEET"
@@ -35,5 +35,6 @@
       "Strict Metadata": false,
       "Filter Type": "Item"
     }
-  ]
+  ],
+  "Max Per Item": 1
 }

@@ -1,0 +1,51 @@
+{
+  "Display Name": "socketed.tooltip.default.tempest",
+  "Text Color": "WHITE",
+  "Strict Order": false,
+  "Strict Count": false,
+  "Allows Wrapping": false,
+  "Replaces Original Effects": false,
+  "Gem Types": [
+    "end_rod",
+    "fire_charge",
+    "spectral_arrow"
+  ],
+  "Effects": [
+    {
+      "Damage": 4.0,
+      "Sets Fire": false,
+      "Natural Strike": false,
+      "Activator": {
+        "Directly Activated": true,
+        "Event Type": "HURT",
+        "Activator Type": "Attacking",
+        "Condition": {
+          "Logic Type": "AND",
+          "Sub-Conditions": [
+            {
+              "Require Melee": false,
+              "Require Ranged": true,
+              "Required Damage Type": "",
+              "Condition Type": "Damage Source"
+            },
+            {
+              "Weather": "RAIN",
+              "Require Exposed": true,
+              "Check For Player": false,
+              "Condition Type": "Weather"
+            }
+          ],
+          "Condition Type": "Multi"
+        }
+      },
+      "Targets": [
+        {
+          "Target Type": "Other"
+        }
+      ],
+      "Tooltip Key": "socketed.tooltip.default.tempest.desc",
+      "Effect Type": "Lightning",
+      "Equipment Slot Type": "HAND"
+    }
+  ]
+}
