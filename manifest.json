@@ -287,7 +287,8 @@
     {"projectID": 1796272, "fileID": 9635653, "required": true, "fileName": "ServerResourceLoader-1.1.0"},
     {"projectID": 1814582, "fileID": 9683656, "required": true, "fileName": "RLSocketed-1.0.0"},
     {"projectID": 1814589, "fileID": 9686377, "required": true, "fileName": "Distinct Socket Descriptions-1.0.0"},
-    {"projectID": 1815124, "fileID": 9691960, "required": true, "fileName": "DansBridges-1.0.0"}
+    {"projectID": 1815124, "fileID": 9691960, "required": true, "fileName": "DansBridges-1.0.0"},
+    {"projectID": 1818378, "fileID": 9712771, "required": true, "fileName": "jappaZVillFix"}
   ],
   "indev": [
     {"projectID": 734347, "fileID": 6518808, "required": true, "fileName": "RLTweaker-1.12.2-0.7.5"},
