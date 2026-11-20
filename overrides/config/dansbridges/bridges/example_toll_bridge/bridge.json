@@ -1,0 +1,14 @@
+{
+  "weight": 100,
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:mutated_plains",
+    "minecraft:savanna",
+    "minecraft:forest",
+    "minecraft:taiga"
+  ],
+  "min_river": 6,
+  "max_river": 20,
+  "biome_wood": true,
+  "can_break": false
+}
