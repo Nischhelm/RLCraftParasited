@@ -18,6 +18,15 @@
 		"mob": ["srparasites:sim_vindicator", "srparasites:sim_evoker", "srparasites:sim_ocelot", "srparasites:fer_ocelot", "srparasites:hi_stray", "srparasites:sim_vindicatorhead", "srparasites:sim_ocelothead"],
 		"maxphase": 8,
 		"result": "deny"
+	},
+	{
+		"dimension": 254,
+		"result": "deny"
+	},
+	{
+		"dimension": 254,
+		"mod": "srparasites",
+		"result": "default"
 	}
 ]
 

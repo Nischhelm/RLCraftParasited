@@ -17,6 +17,7 @@
     {
       "type": "world",
       "dimensionIds": [
+        254,
         111,
         44
       ],
