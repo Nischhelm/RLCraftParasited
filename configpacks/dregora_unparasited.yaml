@@ -122,170 +122,390 @@ patches:
     file: config/srpmixins.cfg
     description: "Use Chunk Phases in overworld, phase 11 in LC"
     changes:
-      general.chunk phases:
-        S:"Custom Biome Start Phases":
-          remove:
-            - minecraft:mutated_forest, -2
-          add:
-            - biomesoplenty:steppe, 4
-            - openterraingenerator:overworld_abyssal_rift, 4
-            - openterraingenerator:overworld_lair_of_the_thing, 4
-            - openterraingenerator:overworld_nuclear_ruins, 4
-            - openterraingenerator:overworld_ruins_of_blight, 4
-            - srparasites:biome_parasite, 4
-        I:"Dimension blacklist":
-          add:
-            - 3
+      general.Tweaks.Phases.Custom Phases:
         B:"Use Chunk Phases": true
-      general.player phases:
         B:"Use Player Phases": false
-      general.spawning:
-        I:"Min Blocklight Threshold": 12
-        S:"Parasite Spawning Biome Blacklist per dimension":
-          remove:
-            - 0, minecraft:mutated_forest
+        I:"Chunk Phases Dimension Blacklist":
           add:
-            - 0, biomesoplenty:steppe
-            - 0, openterraingenerator:overworld_abyssal_rift
-            - 0, openterraingenerator:overworld_lair_of_the_thing
-            - 0, openterraingenerator:overworld_nuclear_ruins
-            - 0, openterraingenerator:overworld_ruins_of_blight
-            - 0, srparasites:biome_parasite
-            - 111
             - 3
+      general.Tweaks.Phases.Custom Phases.Chunk Biome Start Phases:
+        I:"minecraft:mutated_forest": null
+        I:"biomesoplenty:steppe": 4
+        I:"openterraingenerator:overworld_abyssal_rift": 4
+        I:"openterraingenerator:overworld_lair_of_the_thing": 4
+        I:"openterraingenerator:overworld_nuclear_ruins": 4
+        I:"openterraingenerator:overworld_ruins_of_blight": 4
+        I:"srparasites:biome_parasite": 4
+      general.Tweaks.Spawning:
+        I:"Min Blocklight Threshold": 12
         B:"Parasite Spawning Biome Blacklist per dimension is whitelist": true
-      general.parasite biome:
+        I:"Parasite Spawning Biome Blacklist - Max Phase": 11
+      general.Tweaks.Spawning.Parasite Spawning Biome Blacklist per dimension:
+        S:0:
+          remove:
+            - minecraft:mutated_forest
+          add:
+            - biomesoplenty:steppe
+            - openterraingenerator:overworld_abyssal_rift
+            - openterraingenerator:overworld_lair_of_the_thing
+            - openterraingenerator:overworld_nuclear_ruins
+            - openterraingenerator:overworld_ruins_of_blight
+            - srparasites:biome_parasite
+        S:111: []
+        S:3: []
+      general.Fixes.Parasite Biome:
         B:"Fix Parasitic Biome spreading limit": true
-      general.more phases:
+      general.Tweaks.Phases.More Phases:
         I:"Max Phase": 11
-        D:"Crop Grow Stunned":
+        C:Phases:
+          modify:
+            3: {D:"Killcount Plus": 0.0}
+            4: {D:"Killcount Plus": 0.0}
+            5: {D:"Killcount Plus": 0.0}
+            6: {D:"Killcount Plus": 0.0, D:"Mobs Spawn With COTH Chance": 0.0}
+            7: {D:"Killcount Plus": 0.25, D:"Mobs Spawn With COTH Chance": 0.0}
+            8: {D:"Killcount Plus": 0.35, D:"Mobs Spawn With COTH Chance": 0.0}
+            9: {D:"Killcount Plus": 0.45, D:"Mobs Spawn With COTH Chance": 0.0}
+            10: {D:"Killcount Plus": 0.0, D:"Mobs Spawn With COTH Chance": 0.0}
           add:
-            - 1.0
-        D:"Mobs Spawn With COTH Chance":
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-        S:"Nexus Grow Stun Chance":
+            - I:Points: 1799999999
+              D:"Killcount Plus": 0.0
+              S:"Warning Message": "ELEVEN - this shouldn't happen, report to nischi"
+              I:Delay: 1200
+              I:"Sleep Penalty": 0
+              I:"Minimum Parasite Type ID": 40
+              I:"Maximum Parasite Type ID": 72
+              D:"Reinforcement System Chance": 0.2
+              D:"Nexus Grow Stun Chance - Stage I": 0.0
+              D:"Nexus Grow Stun Chance - Stage II": 0.0
+              D:"Nexus Grow Stun Chance - Stage III": 0.0
+              I:"Odds Residue Spawns Beckon": 150
+              I:"Scent Death Bonus": 800
+              I:"Scent Reaction Bonus": 2
+              D:"Mobs Spawn With COTH Chance": 0.0
+              D:"Crop Grow Stunned": 1.0
+        C:"Phase Spawn List":
           add:
-            - 0.0; 0.0; 0.0
-        I:"Odds Residue Spawns Beckon":
-          add:
-            - 150
-        I:"Phase Delay":
-          add:
-            - 1200
-        D:"Phase Killcount Plus":
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.0
-          - 0.25
-          - 0.35
-          - 0.45
-          - 0.0
-          - 0.0
-        I:"Phase Points":
-          add:
-            - 1799999999
-        S:"Phase Warning Message":
-          add:
-            - ELEVEN - this shouldn't happen, report to nischi
-        D:"Reinforcement System Chance":
-          add:
-            - 0.2
-        I:"Scent Death Bonus":
-          add:
-            - 800
-        I:"Scent Reaction Bonus":
-          add:
-            - 2
-        I:"Sleep Penalty":
-          add:
-            - 0
-        I:"Spawning - Maximum Parasite Type ID":
-          add:
-            - 72
-        I:"Spawning - Minimum Parasite Type ID":
-          add:
-            - 40
-        S:"Spawning - Phase Spawn List":
-          add:
-            - "[11]; srparasites:ada_arachnida; 1; 3; 25"
-            - "[11]; srparasites:ada_bolster; 1; 3; 25"
-            - "[11]; srparasites:ada_longarms; 1; 3; 25"
-            - "[11]; srparasites:ada_manducater; 1; 3; 25"
-            - "[11]; srparasites:ada_reeker; 1; 3; 25"
-            - "[11]; srparasites:ada_summoner; 1; 3; 25"
-            - "[11]; srparasites:ada_yelloweye; 1; 3; 25"
-            - "[11]; srparasites:anc_dreadnaut; 1; 1; 1"
-            - "[11]; srparasites:anc_overlord; 1; 1; 1"
-            - "[11]; srparasites:bogle; 1; 2; 2"
-            - "[11]; srparasites:bomber_heavy; 1; 2; 2"
-            - "[11]; srparasites:bomber_light; 2; 2; 10"
-            - "[11]; srparasites:carrier_colony; 1; 2; 2"
-            - "[11]; srparasites:carrier_flying; 1; 2; 15"
-            - "[11]; srparasites:carrier_heavy; 1; 2; 10"
-            - "[11]; srparasites:carrier_light; 1; 2; 10"
-            - "[11]; srparasites:crux; 1; 1; 10"
-            - "[11]; srparasites:fer_bear; 3; 6; 15"
-            - "[11]; srparasites:fer_cow; 3; 6; 15"
-            - "[11]; srparasites:fer_enderman; 1; 2; 5"
-            - "[11]; srparasites:fer_horse; 3; 6; 15"
-            - "[11]; srparasites:fer_human; 3; 6; 15"
-            - "[11]; srparasites:fer_pig; 3; 6; 15"
-            - "[11]; srparasites:fer_sheep; 3; 6; 15"
-            - "[11]; srparasites:fer_villager; 3; 6; 15"
-            - "[11]; srparasites:grunt; 3; 6; 5"
-            - "[11]; srparasites:haunter; 1; 2; 2"
-            - "[11]; srparasites:heed; 1; 1; 10"
-            - "[11]; srparasites:host; 1; 1; 10"
-            - "[11]; srparasites:hostii; 1; 1; 15"
-            - "[11]; srparasites:incompleteform_medium; 2; 5; 10"
-            - "[11]; srparasites:incompleteform_small; 2; 5; 10"
-            - "[11]; srparasites:mangler; 1; 1; 20"
-            - "[11]; srparasites:marauder; 1; 1; 5"
-            - "[11]; srparasites:monarch; 1; 1; 5"
-            - "[11]; srparasites:overseer; 1; 1; 5"
-            - "[11]; srparasites:pri_arachnida; 1; 2; 15"
-            - "[11]; srparasites:pri_bolster; 1; 2; 15"
-            - "[11]; srparasites:pri_devourer; 1; 2; 15"
-            - "[11]; srparasites:pri_longarms; 1; 2; 15"
-            - "[11]; srparasites:pri_manducater; 1; 2; 15"
-            - "[11]; srparasites:pri_reeker; 1; 2; 15"
-            - "[11]; srparasites:pri_summoner; 1; 2; 15"
-            - "[11]; srparasites:pri_tozoon; 1; 2; 15"
-            - "[11]; srparasites:pri_vermin; 1; 2; 15"
-            - "[11]; srparasites:pri_yelloweye; 1; 2; 15"
-            - "[11]; srparasites:rupter; 3; 6; 5"
-            - "[11]; srparasites:sim_adventurer; 3; 6; 10"
-            - "[11]; srparasites:sim_bear; 1; 1; 10"
-            - "[11]; srparasites:sim_bigspider; 1; 1; 10"
-            - "[11]; srparasites:sim_cow; 1; 3; 10"
-            - "[11]; srparasites:sim_dragone; 1; 1; 1"
-            - "[11]; srparasites:sim_enderman; 1; 1; 5"
-            - "[11]; srparasites:sim_horse; 3; 6; 10"
-            - "[11]; srparasites:sim_human; 3; 5; 10"
-            - "[11]; srparasites:sim_pig; 3; 6; 10"
-            - "[11]; srparasites:sim_sheep; 1; 3; 10"
-            - "[11]; srparasites:sim_squid; 2; 3; 10"
-            - "[11]; srparasites:sim_villager; 3; 6; 10"
-            - "[11]; srparasites:sim_wolf; 3; 6; 10"
-            - "[11]; srparasites:thrall; 1; 1; 15"
-            - "[11]; srparasites:vigilante; 2; 2; 5"
-            - "[11]; srparasites:warden; 1; 1; 5"
-            - "[11]; srparasites:wraith; 1; 2; 2"
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_arachnida
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_bolster
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_longarms
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_manducater
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_reeker
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_summoner
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:ada_yelloweye
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 25
+            - S:Phases: "11"
+              S:Mob: srparasites:anc_dreadnaut
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 1
+            - S:Phases: "11"
+              S:Mob: srparasites:anc_overlord
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 1
+            - S:Phases: "11"
+              S:Mob: srparasites:bogle
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 2
+            - S:Phases: "11"
+              S:Mob: srparasites:bomber_heavy
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 2
+            - S:Phases: "11"
+              S:Mob: srparasites:bomber_light
+              I:"Min Group Count": 2
+              I:"Max Group Count": 2
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:carrier_colony
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 2
+            - S:Phases: "11"
+              S:Mob: srparasites:carrier_flying
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:carrier_heavy
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:carrier_light
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:crux
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_bear
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_cow
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_enderman
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_horse
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_human
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_pig
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_sheep
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:fer_villager
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:grunt
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:haunter
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 2
+            - S:Phases: "11"
+              S:Mob: srparasites:heed
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:host
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:hostii
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:incompleteform_medium
+              I:"Min Group Count": 2
+              I:"Max Group Count": 5
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:incompleteform_small
+              I:"Min Group Count": 2
+              I:"Max Group Count": 5
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:mangler
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 20
+            - S:Phases: "11"
+              S:Mob: srparasites:marauder
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:monarch
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:overseer
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_arachnida
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_bolster
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_devourer
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_longarms
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_manducater
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_reeker
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_summoner
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_tozoon
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_vermin
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:pri_yelloweye
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:rupter
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_adventurer
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_bear
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_bigspider
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_cow
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_dragone
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 1
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_enderman
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_horse
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_human
+              I:"Min Group Count": 3
+              I:"Max Group Count": 5
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_pig
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_sheep
+              I:"Min Group Count": 1
+              I:"Max Group Count": 3
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_squid
+              I:"Min Group Count": 2
+              I:"Max Group Count": 3
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_villager
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:sim_wolf
+              I:"Min Group Count": 3
+              I:"Max Group Count": 6
+              I:Weight: 10
+            - S:Phases: "11"
+              S:Mob: srparasites:thrall
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 15
+            - S:Phases: "11"
+              S:Mob: srparasites:vigilante
+              I:"Min Group Count": 2
+              I:"Max Group Count": 2
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:warden
+              I:"Min Group Count": 1
+              I:"Max Group Count": 1
+              I:Weight: 5
+            - S:Phases: "11"
+              S:Mob: srparasites:wraith
+              I:"Min Group Count": 1
+              I:"Max Group Count": 2
+              I:Weight: 2
 
 build:
   output_name: "Dregora Parasited Unparasited.zip"

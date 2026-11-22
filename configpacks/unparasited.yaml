@@ -59,11 +59,11 @@ patches:
         S:allowedBiomeFactors: []
 
   - type: cfg_patch
-    file: config/srpmixins.cfg
+    file: config/nischitweaker.cfg
     description: "Remove LC phase lock"
     changes:
-      general.mod compats:
-        I:"LC Portal Phase Lock": -1
+      general.The Lost Cities:
+        I:"Portal Phase Lock (Mixin Toggle)": -1
 
   - type: json_patch
     file: config/CustomMainMenu/mainmenu.json

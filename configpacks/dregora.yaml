@@ -385,42 +385,29 @@ patches:
 
   - type: cfg_patch
     file: config/srpmixins.cfg
-    description: "TODO: Describe what changes in srpmixins.cfg"
+    description: "Dregora blocks, underneath stats, uranium adaptation reset"
     changes:
-      general.various:
-        S:"Block Break Blacklist":
+      general.Tweaks.Items and Blocks.Block Break Blacklist:
+        S:"contentcreator:concrete_slab_reinforced": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+        S:"contentcreator:concrete_stairs_reinforced": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+        S:"contenttweaker:biohazard_block": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+        S:"contenttweaker:radiation_block": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+        S:"contenttweaker:reinforced_concrete": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+        S:"contenttweaker:reinforced_concrete_danger": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+        S:"contenttweaker:shelter_block": [PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE]
+      general.Tweaks.Mobs:
+        S:"Stat Increase Rules":
           add:
-            - contentcreator:concrete_slab_reinforced, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-            - contentcreator:concrete_stairs_reinforced, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-            - contenttweaker:biohazard_block, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-            - contenttweaker:radiation_block, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-            - contenttweaker:reinforced_concrete, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-            - contenttweaker:reinforced_concrete_danger, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-            - contenttweaker:shelter_block, PRIMITIVE, ADAPTED, DETERRENT, ASSIMILATED, FERAL, INBORN, HIJACKED, CRUDE, PURE
-      general.dimension multipliers:
-        S:"Parasite Armor Multipliers":
+            - "[dim = 3] [HP = 3] [ATK = 3] [ARMOR = 2]"
+      general.Tweaks.Spawning.Mob Caps:
+        S:"Parasite Mob Cap Rules":
           add:
-            - 3,2
-        S:"Parasite Dmg Multipliers":
-          add:
-            - 3,3
-        S:"Parasite Drop chance Multipliers":
-          add:
-            - 3,1
-        S:"Parasite Health Multipliers":
-          add:
-            - 3,3
-        S:"Parasite KBRes Multipliers":
-          add:
-            - 3,1
-        S:"Parasite mob cap Multipliers":
-          add:
-            - 3,1.5
-      general.adaptation:
+            - "[dim = 3] 1.5"
+      general.Tweaks.Adaptation:
         S:"Adaptation Second Reset Item": nuclearcraft:fuel_uranium:4
-      general.deterrents and nexus:
+      general.Tweaks.Infestation and Deterrents:
         B:"Disable Infestation Reversion": true
-      general.srp weapons:
+      general.Tweaks.Weapons and Armor:
         B:"Sentient Armor+Bow Evolution": false
 
   - type: cfg_patch

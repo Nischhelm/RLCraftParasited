@@ -40,10 +40,83 @@ class CfgPatcher:
         # Write back
         file_path.write_text('\n'.join(modified_lines) + '\n')
 
+    LIST_OPS = ('add', 'remove', 'replace', 'modify')
+
     @staticmethod
     def _indent(line: str) -> str:
         """Return the leading whitespace of a line."""
         return line[:len(line) - len(line.lstrip())]
+
+    @classmethod
+    def _is_list_op(cls, value) -> bool:
+        return isinstance(value, dict) and any(k in value for k in cls.LIST_OPS)
+
+    @staticmethod
+    def _format_value(value) -> str:
+        return str(value).lower() if isinstance(value, bool) else str(value)
+
+    @classmethod
+    def _format_object(cls, obj: Dict[str, Any], indent: str) -> list:
+        """Format a dict as an object list entry ({ key=value })."""
+        lines = [f"{indent}{{"]
+        for key, value in obj.items():
+            lines.append(f"{indent}    {key}={cls._format_value(value)}")
+        lines.append(f"{indent}}}")
+        return lines
+
+    @staticmethod
+    def _split_objects(lines: list) -> list:
+        """Split the content lines of an object list into one list of lines per object."""
+        objects = []
+        depth = 0
+        for line in lines:
+            stripped = line.strip()
+            if depth == 0:
+                if stripped == '{':
+                    objects.append([line])
+                    depth = 1
+                continue
+            objects[-1].append(line)
+            if stripped.endswith('{') or stripped.endswith('<'):
+                depth += 1
+            elif stripped in ('}', '>'):
+                depth -= 1
+        return objects
+
+    @classmethod
+    def _modify_object(cls, obj_lines: list, changes: Dict[str, Any]) -> list:
+        """Set keys of a single object list entry, adding the ones it doesn't have yet."""
+        result = []
+        unapplied = dict(changes)
+        for line in obj_lines[:-1]:
+            if '=' in line and not line.strip().startswith('#'):
+                key = line.split('=')[0].strip()
+                if key in unapplied:
+                    result.append(f"{cls._indent(line)}{key}={cls._format_value(unapplied.pop(key))}")
+                    continue
+            result.append(line)
+        key_indent = cls._indent(obj_lines[-1]) + '    '
+        for key, value in unapplied.items():
+            result.append(f"{key_indent}{key}={cls._format_value(value)}")
+        result.append(obj_lines[-1])
+        return result
+
+    def _apply_object_list_ops(self, old_lines: list, ops: Dict[str, Any], item_indent: str) -> list:
+        """add (dicts) and modify ({index: {key: value}}) for object lists (C:"Key" < { ... } >)."""
+        if 'remove' in ops or 'replace' in ops:
+            raise ValueError("remove/replace are not supported for object lists, use modify")
+        objects = self._split_objects(old_lines)
+        for index, obj_changes in (ops.get('modify') or {}).items():
+            index = int(index)
+            if not 0 <= index < len(objects):
+                raise ValueError(f"Object list index out of range: {index} (size {len(objects)})")
+            objects[index] = self._modify_object(objects[index], obj_changes)
+        result = [line for obj in objects for line in obj]
+        for item in ops.get('add') or []:
+            if not isinstance(item, dict):
+                raise ValueError(f"Object lists can only add objects, got: {item}")
+            result.extend(self._format_object(item, item_indent))
+        return result
 
     def _apply_changes(self, lines: list, changes: Dict[str, Dict[str, Any]]) -> list:
         """
@@ -116,11 +189,10 @@ class CfgPatcher:
                         # Indent new keys one level deeper than the closing brace
                         key_indent = self._indent(line) + '    '
 
-                        # Add unapplied keys (skip list-format keys with add/remove/replace operations)
+                        # Add unapplied keys (skip list operations and removals)
                         for key in sorted(unapplied):
                             value = changes[current_section][key]
-                            # Skip list operations (those with add/remove/replace dict)
-                            if isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace']):
+                            if value is None or self._is_list_op(value):
                                 continue  # Can't add new lists, only modify existing ones
                             # Skip list values (those that should be in list format)
                             if isinstance(value, list):
@@ -159,7 +231,7 @@ class CfgPatcher:
                     applied_keys[current_section].add(full_key)
 
                     # Check if this is the new add/remove/replace format
-                    if isinstance(new_values, dict) and any(k in new_values for k in ['add', 'remove', 'replace']):
+                    if self._is_list_op(new_values):
                         # New format - apply operations to existing list
                         # Add the list header
                         result.append(line)
@@ -168,11 +240,22 @@ class CfgPatcher:
                         old_values = []
                         item_indent = self._indent(line) + '    '
                         i += 1
+                        old_lines = []
                         while i < len(lines) and not re.match(r'^\s*>\s*$', lines[i].strip()):
                             if not old_values:
                                 item_indent = self._indent(lines[i])
+                            old_lines.append(lines[i])
                             old_values.append(lines[i].strip())
                             i += 1
+
+                        if full_key.startswith('C:') or (old_values and old_values[0] == '{'):
+                            result.extend(self._apply_object_list_ops(old_lines, new_values, item_indent))
+                            if i < len(lines):
+                                result.append(lines[i])
+                            i += 1
+                            continue
+                        if 'modify' in new_values:
+                            raise ValueError(f"modify is only supported for object lists: {full_key}")
 
                         # Apply operations
                         final_values = old_values.copy()
@@ -227,12 +310,7 @@ class CfgPatcher:
                         # Add new list values (dict items become { key=value } objects)
                         for value in new_values:
                             if isinstance(value, dict):
-                                result.append(f"{item_indent}{{")
-                                for obj_key, obj_value in value.items():
-                                    if isinstance(obj_value, bool):
-                                        obj_value = str(obj_value).lower()
-                                    result.append(f"{item_indent}    {obj_key}={obj_value}")
-                                result.append(f"{item_indent}}}")
+                                result.extend(self._format_object(value, item_indent))
                             else:
                                 result.append(f"{item_indent}{value}")
 
@@ -254,6 +332,10 @@ class CfgPatcher:
                         if current_section not in applied_keys:
                             applied_keys[current_section] = set()
                         applied_keys[current_section].add(full_key)
+                        # None removes the entry (e.g. from a map)
+                        if new_value is None:
+                            i += 1
+                            continue
                         # Convert Python bool to lowercase string
                         if isinstance(new_value, bool):
                             new_value = str(new_value).lower()
@@ -272,9 +354,10 @@ class CfgPatcher:
                 errors.append(f"Section not found: {section}")
                 continue
             for key, value in keys.items():
-                is_list_op = isinstance(value, dict) and any(k in value for k in ['add', 'remove', 'replace'])
-                if is_list_op and key not in applied_keys.get(section, set()):
+                if self._is_list_op(value) and key not in applied_keys.get(section, set()):
                     errors.append(f"List not found: [{section}] {key}")
+                elif value is None and key not in applied_keys.get(section, set()):
+                    errors.append(f"Key to remove not found: [{section}] {key}")
         if errors:
             raise ValueError("; ".join(errors))
 
