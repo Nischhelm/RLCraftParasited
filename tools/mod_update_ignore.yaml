@@ -26,9 +26,6 @@ ignore:
   - projectID: 344787
     reason: "XPTome got a big update changing the entire mod, we dont use it"
 
-  - projectID: 401178
-    reason: "ZenUtils 1.28+ depends on MixinBooter 11.x which isnt compatible with the current Mix2Fermbooter we use"
-
   - projectID: 580404
     reason: "OverLast updated to SRP 1.10.x, we don't"
 
