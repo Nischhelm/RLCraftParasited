@@ -1,3 +1,96 @@
+--- 1.0.0 / Nov 2X 2026 ---
+
+This is the first release i will upload to curseforge. However, it still is and will stay unofficial.
+
+It's a pretty big update, a lot of new mechanics and content, like 
+    the Bookwyrm in a Bucket, 
+    the Anti-Lures, 
+    the Infested Bed portal in the End Flipped Castle struct
+    the entire Source dimension
+    so many more socket gems & combinations
+    the removal of the skyhighPara spawner allowing sky bases (but nerfing spawnbased farms)
+    more gear from nanonaitor
+    dans bridges
+
+Mods
+    Added Bubble Columns Backport
+    Added updated Socketed, Socketed Standard Expansion, RLSocketed and Distinct Socket Descriptions from curseforge
+    Added Nanonaitors Arsenal and Defenders
+    Added Dan's Bridges
+    Added ServerResourceLoader
+        fixes end city chests sometimes generating broken
+    Updated NischiTweaker
+        added anti-lures
+        added infested beds (in end flipped castles)
+        added bookwyrm in a bucket
+        made despawning work by horizontal distance only. fixes skybases being safe from evolution progression
+        made BS arrow recovery return the arrow type that was used
+        fixed boat break on fall
+        fixed sprinting in boats
+        fixed creeper confetti, now not desynced and only when targeting players
+        fixed ender staff not taking durability dmg
+        fixed enchantertools jei info pages not showing anymore
+        fixed brewing stand shiftclick
+        allowed inkwells to hold more than one enchant, even upgraded potentials
+    Updated SRPMixins
+        added Source Dimension
+        registered adaptation reset recipe in JEI
+        fixed tyrant and other variants getting double stat increase
+        show point change directly in overlast HUD (might remove if everyone hates it)
+    Updated Gibbed
+        flesh texture on cut body parts
+    Updated PotionControl
+        fire resistance fully protects from burning, good for living/sentient armor
+    Updated EnchantmentControl
+        dont need arrow in inv anymore with infinity even on normal bows
+        sum duplicate lvls (only for dregora notkotlin money)
+        fixed some ReEnchanting edge cases
+    Updated JEI, ZenUtils, MB2FB, AtlasLib, OceanicExpanse, FermiumBooter, AAAM, LycanitesTweaks, VCFix, BetterSnowVillages, ScalingHealthIssues, SillyArmorRender, ArrowAccuracy
+    Use official Wearable Backpacks from curseforge again
+    Removed voicechat, server owners can add it themselves
+    Removed LoginHPFix, superseded by RLMixins+FermiumMixins
+
+Config
+    Added lots of new gem effects and gem combinations for socketed and balanced the existing ones a bit.
+    Battletower loot can now have sockets too
+    Each socketed item can only have one of each gem from now on
+    Buffed iron_skin (potioncore, +3 armor per lvl), nerfed ironskin (rustic, +2 armor, +3 toughness, -10% speed per lvl)
+    Buffed instant health pot (now +3 hearts instead of +2)
+    Nerfed dragonbone lockpicks (91% instead of 97% survival chance)
+    Added dragonbone locks (9 pins), reduced pincount of diamond (8 pins), thanks hussarar!
+    Reduced MP teleport in-bed-wait-time, so it's easier to get there in multiplayer
+    Removed skyhighPara spawner, no more skybase punishment
+    Nerfed Iron Golem DDD stats to smth more reasonable
+    Fixed BetterQuest #351 not working (thanks hussarar!)
+    Fixed some startup log complaints (thanks flankRat!)
+    Reduced Min/Max days per phase by about 0.67x, as i realised it doesnt count actual days but 20 minutes playtime.
+        now max 12 days for phase 0, min 4 days for phases 1,2,3 
+
+Structures
+    Removed hardcoded careers+trades from various villagers, only kept the profession (dont worry, i kept the mending and silk touch guys)
+
+Scripts
+    Generalised lyca block crafting recipes (thanks cdstk!)
+    Fixed some barely relevant smelting recipes
+    Fixed some barely relevant brewing recipes
+    Added even more bauble knife snipping recipes (quivers)
+
+Shaders
+    (Hopefully?) Fixed Nvidia RTX 50 series crash with RLCraft complementary shaders (by disabling PROJECTED_CAUSTICS)
+
+Resourcepacks
+    Added jappaZVillFix by hussarar
+
+Dregora-specifics
+    Disabled all OTG markers by default
+
+Configpacks
+    No additional changes
+
+Tools
+    Fixed some edge cases in parasited updater (thanks freshGlitch!)
+
+
 --- Oct 29 2026 ---
 
 This is mainly a hotfix for shipping new worlds with NORMAL difficulty instead of hard...
