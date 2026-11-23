@@ -21,12 +21,12 @@
 	},
 	{
 		"dimension": 254,
-		"result": "deny"
+		"mod": "srparasites",
+		"result": "default"
 	},
 	{
 		"dimension": 254,
-		"mod": "srparasites",
-		"result": "default"
+		"result": "deny"
 	}
 ]
 
