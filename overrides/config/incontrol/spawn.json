@@ -20,12 +20,12 @@
 		"result": "deny"
 	},
 	{
-		"dimension": 254,
+		"dimension": 66,
 		"mod": "srparasites",
 		"result": "default"
 	},
 	{
-		"dimension": 254,
+		"dimension": 66,
 		"result": "deny"
 	}
 ]
