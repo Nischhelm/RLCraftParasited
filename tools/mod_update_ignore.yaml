@@ -37,3 +37,12 @@ ignore:
 
   - projectID: 1268838
     reason: "SRPDeepSeaDanger is on the latest compatible version already, newer versions crash or depend on SRP 1.10"
+
+  - projectID: 321139
+    reason: "Dregora doesn't update FUR rn"
+
+  - projectID: 229449
+    reason: "Dregora doesn't update EpicSiegeMod rn"
+
+  - projectID: 252042
+    reason: "PaintingSelGUI runs under the same projectid as a newer mod that is not the same (morepaintings)"
