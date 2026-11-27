@@ -18482,7 +18482,7 @@
             "0:10": {
               "id:8": "xat:dragon_ring",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 32767,
               "ForgeCaps:10": {
                 "Parent:10": {
                   "slot:3": -1,
@@ -18515,7 +18515,7 @@
                   "variant:3": 0
                 }
               },
-              "OreDict:8": "dregRing"
+              "OreDict:8": ""
             }
           },
           "partialMatch:1": 1,
