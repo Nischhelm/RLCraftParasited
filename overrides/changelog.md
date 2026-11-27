@@ -1,8 +1,6 @@
---- 1.0.0 / Nov 2X 2026 ---
+--- Nov 2X 2026 ---
 
-This is the first release i will upload to curseforge. However, it still is and will stay unofficial.
-
-It's a pretty big update, a lot of new mechanics and content, like 
+This is a pretty big update, a lot of new mechanics and content, like 
     the Bookwyrm in a Bucket, 
     the Anti-Lures, 
     the Infested Bed portal in the End Flipped Castle struct
@@ -45,7 +43,13 @@ Mods
         dont need arrow in inv anymore with infinity even on normal bows
         sum duplicate lvls (only for dregora notkotlin money)
         fixed some ReEnchanting edge cases
-    Updated JEI, ZenUtils, MB2FB, AtlasLib, OceanicExpanse, FermiumBooter, AAAM, LycanitesTweaks, VCFix, BetterSnowVillages, ScalingHealthIssues, SillyArmorRender, ArrowAccuracy
+    Updated EverythingNunchaku (allows to keep attacking after hitting a block)
+    Updated LycanitesTweaks
+        fixed trueshot/klutz interaction with lyca projectiles
+        enabled weapon enchantment interaction with lyca projectiles+attacks (for your pets with weapons i guess...)
+        repulsion disables champions vortex (thats for you tawsi ig)
+        fixed lyca fluid interactions with vanilla fluids
+    Updated JEI, ZenUtils, MB2FB, AtlasLib, OceanicExpanse, FermiumBooter, AAAM, VCFix, BetterSnowVillages, ScalingHealthIssues, SillyArmorRender, ArrowAccuracy
     Use official Wearable Backpacks from curseforge again
     Removed voicechat, server owners can add it themselves
     Removed LoginHPFix, superseded by RLMixins+FermiumMixins
@@ -61,10 +65,11 @@ Config
     Reduced MP teleport in-bed-wait-time, so it's easier to get there in multiplayer
     Removed skyhighPara spawner, no more skybase punishment
     Nerfed Iron Golem DDD stats to smth more reasonable
-    Fixed BetterQuest #351 not working (thanks hussarar!)
+    Fixed BetterQuest #351 and #189 not working (thanks hussarar!)
     Fixed some startup log complaints (thanks flankRat!)
     Reduced Min/Max days per phase by about 0.67x, as i realised it doesnt count actual days but 20 minutes playtime.
-        now max 12 days for phase 0, min 4 days for phases 1,2,3 
+        now max 12 days for phase 0, min 4 days for phases 1,2,3
+    Disabled SillyArmorRender cosmical rendering cause it stopped mobs from going through end fountain
 
 Structures
     Removed hardcoded careers+trades from various villagers, only kept the profession (dont worry, i kept the mending and silk touch guys)
@@ -83,6 +88,9 @@ Resourcepacks
 
 Dregora-specifics
     Disabled all OTG markers by default
+    Updated pinatamobs (infernals and champions cant be pinata now)
+    Updated UnHideFlags (it had stopped working woopsie)
+    Updated NuclearCraft (whatever)
 
 Configpacks
     No additional changes
