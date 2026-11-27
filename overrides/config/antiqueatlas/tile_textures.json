@@ -1,9 +1,9 @@
 {
   "version": 1,
   "data": {
-    "GOLRITH_BOP_CHERRY": "GOLRITH_BOP_CHERRY",
     "BE_ICE_STARFIELD_VOID": "BE_ICE_STARFIELD_VOID",
     "CAVE_WALLS": "CAVE_WALLS",
+    "GOLRITH_BOP_CHERRY": "GOLRITH_BOP_CHERRY",
     "bloodyRiver": "BLOODY_RIVER",
     "bridge_coveredxTile": "bridge_coveredx",
     "bridge_coveredxoccludedTile": "bridge_coveredxoccluded",
@@ -70,6 +70,8 @@
     "ruinfloor3occludedTile": "ruinfloor3occluded",
     "ruinfloor4Tile": "ruinfloor4",
     "ruinfloor4occludedTile": "ruinfloor4occluded",
+    "ruintallTile": "ruintall",
+    "ruintalloccludedTile": "ruintalloccluded",
     "streetTile": "street",
     "streetoccludedTile": "streetoccluded",
     "trainrampleftTile": "trainrampleft",

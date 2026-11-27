@@ -90,7 +90,6 @@ Configpacks
 Tools
     Fixed some edge cases in parasited updater (thanks freshGlitch!)
 
-
 --- Oct 29 2026 ---
 
 This is mainly a hotfix for shipping new worlds with NORMAL difficulty instead of hard...

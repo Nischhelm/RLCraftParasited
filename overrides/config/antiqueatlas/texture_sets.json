@@ -1,57 +1,155 @@
 {
   "version": 1,
   "data": {
-    "GOLRITH_BOP_CHERRY": [
-      "antiqueatlas:textures/gui/tiles/golrith/bop_cherry.png"
+    "BE_AMBER_LAND": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/amber_land.png"
+    ],
+    "BE_BLOSSOMING_SPIRES": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/blossoming_spires.png"
+    ],
+    "BE_CHORUS_FOREST": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/chorusforest.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/chorusforest2.png"
+    ],
+    "BE_CRYSTAL_MOUNTAINS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/holy_crystal_mountains.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/holy_crystal_mountains2.png"
+    ],
+    "BE_DRAGON_GRAVEYARD": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dragon_graveyard.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dragon_graveyard2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dragon_graveyard2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dragon_graveyard2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dragon_graveyard3.png"
+    ],
+    "BE_DRY_SHRUBLAND": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dry_shrublandpng.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dry_shrublandpng1.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dry_shrublandpng2.png"
+    ],
+    "BE_DUST_WASTELANDS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dust_wastelands.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/dust_wastelands2.png"
+    ],
+    "BE_FOGGY_MUSHROOMLAND": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/foggy_mushroomland.png"
+    ],
+    "BE_GLOWING_GRASSLANDS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/glowing_grasslands.png"
+    ],
+    "BE_ICE_STARFIELD": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/ice_starfield.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/ice_starfield2.png"
     ],
     "BE_ICE_STARFIELD_VOID": [
       "antiqueatlas:textures/gui/tiles/artsy/betterend/ice_starfield_void.png",
-      "antiqueatlas:textures/gui/tiles/end_void.png"
+      "antiqueatlas:textures/gui/tiles/nischhelm/end/end_void_purple.png"
+    ],
+    "BE_LANTERN_WOODS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/lantern_woods.png"
+    ],
+    "BE_MEGALAKE": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/megalake.png"
+    ],
+    "BE_MEGALAKE_GROVE": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/megalake_grove.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/megalake_grove.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/megalake_grove2.png"
+    ],
+    "BE_NEON_OASIS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/neon_oasis.png"
+    ],
+    "BE_PAINTED_MOUNTAINS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/painted_mountains.png"
+    ],
+    "BE_SHADOW_FOREST": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/shadowforest.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/shadowforest.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/shadowforest2.png"
+    ],
+    "BE_SULPHUR_SPRINGS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/sulpher_springs.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/sulpher_springs2.png"
+    ],
+    "BE_UMBRA_VALLEY": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/umbra_valley.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/umbra_valley2.png"
+    ],
+    "BE_UMBRELLA_JUNGLE": [
+      "antiqueatlas:textures/gui/tiles/artsy/betterend/umbrellajungle.png"
     ],
     "BLOODY_RIVER": [
       "antiqueatlas:textures/gui/tiles/bloody_river.png",
       "antiqueatlas:textures/gui/tiles/bloody_river2.png"
     ],
+    "BN_BONE_REEF": [
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/bone_reef.png"
+    ],
+    "BN_GRASSLANDS": [
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/shore/nether_grasslands.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/shore2/nether_grasslands.png"
+    ],
+    "BN_GRAVEL_DESERT": [
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/shore/gravel_desert.png",
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/shore2/gravel_desert.png"
+    ],
+    "BN_JUNGLE": [
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/nether_jungle.png"
+    ],
+    "BN_MUSHROOM_FOREST": [
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/nether_mushroom_forest.png"
+    ],
+    "BN_WART_FOREST": [
+      "antiqueatlas:textures/gui/tiles/artsy/betternether/netherwart_forest.png"
+    ],
+    "CUSTOM_HELL": [
+      "antiqueatlas:textures/gui/tiles/artsy/hell_shore.png",
+      "antiqueatlas:textures/gui/tiles/artsy/hell_shore2.png"
+    ],
     "DL_DESERT": [
-      "antiqueatlas:textures/gui/tiles/dl_sand.png",
-      "antiqueatlas:textures/gui/tiles/dl_sand2.png",
-      "antiqueatlas:textures/gui/tiles/dl_sand3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_sand.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_sand2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_sand3.png"
     ],
     "DL_HILLS": [
-      "antiqueatlas:textures/gui/tiles/dl_forest_hills.png",
-      "antiqueatlas:textures/gui/tiles/dl_forest_hills2.png",
-      "antiqueatlas:textures/gui/tiles/dl_forest_hills3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_forest_hills.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_forest_hills2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_forest_hills3.png"
     ],
     "DL_ICE": [
-      "antiqueatlas:textures/gui/tiles/dl_snow1.png",
-      "antiqueatlas:textures/gui/tiles/dl_snow2.png",
-      "antiqueatlas:textures/gui/tiles/dl_snow3.png",
-      "antiqueatlas:textures/gui/tiles/dl_snow4.png",
-      "antiqueatlas:textures/gui/tiles/dl_snow5.png",
-      "antiqueatlas:textures/gui/tiles/dl_snow6.png"
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow1.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow3.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow4.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow5.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_snow6.png"
     ],
     "DL_PLAINS": [
-      "antiqueatlas:textures/gui/tiles/dl_grass.png",
-      "antiqueatlas:textures/gui/tiles/dl_grass2.png",
-      "antiqueatlas:textures/gui/tiles/dl_grass3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_grass.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_grass2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_grass3.png"
     ],
     "DL_SWAMP": [
-      "antiqueatlas:textures/gui/tiles/dl_swamp.png",
-      "antiqueatlas:textures/gui/tiles/dl_swamp2.png",
-      "antiqueatlas:textures/gui/tiles/dl_swamp3.png",
-      "antiqueatlas:textures/gui/tiles/dl_swamp4.png",
-      "antiqueatlas:textures/gui/tiles/dl_swamp5.png",
-      "antiqueatlas:textures/gui/tiles/dl_swamp6.png"
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_swamp.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_swamp2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_swamp3.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_swamp4.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_swamp5.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_swamp6.png"
     ],
     "DL_TENEBRA": [
-      "antiqueatlas:textures/gui/tiles/dl_forest.png",
-      "antiqueatlas:textures/gui/tiles/dl_forest2.png",
-      "antiqueatlas:textures/gui/tiles/dl_forest3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_forest.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_forest2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/defiledlands/dl_forest3.png"
     ],
     "DL_VILESPINE": [
       "antiqueatlas:textures/gui/tiles/dl_forest.png",
       "antiqueatlas:textures/gui/tiles/dl_forest2.png",
       "antiqueatlas:textures/gui/tiles/dl_forest3.png"
+    ],
+    "GOLRITH_BOP_CHERRY": [
+      "antiqueatlas:textures/gui/tiles/golrith/bop_cherry.png"
     ],
     "PARASITE_BIOME": [
       "antiqueatlas:textures/gui/tiles/parasite_empty.png",
@@ -66,37 +164,37 @@
       "antiqueatlas:textures/gui/tiles/test.png"
     ],
     "T_AUTUMN": [
-      "antiqueatlas:textures/gui/tiles/t_autumn_forest.png",
-      "antiqueatlas:textures/gui/tiles/t_autumn_forest2.png",
-      "antiqueatlas:textures/gui/tiles/t_autumn_forest3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_autumn_forest.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_autumn_forest2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_autumn_forest3.png"
     ],
     "T_AUTUMN_HILLS": [
-      "antiqueatlas:textures/gui/tiles/t_autumn_forest_hills.png",
-      "antiqueatlas:textures/gui/tiles/t_autumn_forest_hills2.png",
-      "antiqueatlas:textures/gui/tiles/t_autumn_forest_hills3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_autumn_forest_hills.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_autumn_forest_hills2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_autumn_forest_hills3.png"
     ],
     "T_CANYON": [
-      "antiqueatlas:textures/gui/tiles/t_canyon.png",
-      "antiqueatlas:textures/gui/tiles/t_canyon2.png",
-      "antiqueatlas:textures/gui/tiles/t_canyon3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_canyon.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_canyon2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_canyon3.png"
     ],
     "T_CRAG": [
-      "antiqueatlas:textures/gui/tiles/t_crag_mountains.png",
-      "antiqueatlas:textures/gui/tiles/t_crag_mountains2.png",
-      "antiqueatlas:textures/gui/tiles/t_crag_mountains3.png",
-      "antiqueatlas:textures/gui/tiles/t_crag_mountains4.png"
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_crag_mountains.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_crag_mountains2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_crag_mountains3.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_crag_mountains4.png"
     ],
     "T_RED_DESERT": [
-      "antiqueatlas:textures/gui/tiles/t_red_sand.png",
-      "antiqueatlas:textures/gui/tiles/t_red_sand2.png",
-      "antiqueatlas:textures/gui/tiles/t_red_sand3.png"
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_red_sand.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_red_sand2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/traverse/t_red_sand3.png"
     ],
     "T_ROCKY_PLATEAU": [
-      "antiqueatlas:textures/gui/tiles/plateau_grass.png",
-      "antiqueatlas:textures/gui/tiles/plateau_grass2.png",
-      "antiqueatlas:textures/gui/tiles/plateau_grass3.png",
-      "antiqueatlas:textures/gui/tiles/plateau_trees.png",
-      "antiqueatlas:textures/gui/tiles/plateau_trees_low.png"
+      "antiqueatlas:textures/gui/tiles/artsy/vanilla/plateau_grass.png",
+      "antiqueatlas:textures/gui/tiles/artsy/vanilla/plateau_grass2.png",
+      "antiqueatlas:textures/gui/tiles/artsy/vanilla/plateau_grass3.png",
+      "antiqueatlas:textures/gui/tiles/artsy/vanilla/plateau_trees.png",
+      "antiqueatlas:textures/gui/tiles/artsy/vanilla/plateau_trees_low.png"
     ],
     "bridge_coveredx": [
       "antiquecities:textures/gui/tiles/bridge_coveredx.png"
@@ -208,6 +306,12 @@
     ],
     "ruinfloor4occluded": [
       "antiquecities:textures/gui/tiles/ruinfloor4occluded.png"
+    ],
+    "ruintall": [
+      "antiquecities:textures/gui/tiles/ruintall.png"
+    ],
+    "ruintalloccluded": [
+      "antiquecities:textures/gui/tiles/ruintalloccluded.png"
     ],
     "street": [
       "antiquecities:textures/gui/tiles/street.png"
