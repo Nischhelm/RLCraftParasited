@@ -2,7 +2,8 @@
 """
 CurseForge Mod Updater
 
-Automatically updates mod versions in manifest.json using the CurseForge REST API.
+Automatically updates mod versions in manifest.json and in every
+configpacks/_files/<pack>/manifest_additions.json using the CurseForge REST API.
 Filters for Minecraft 1.12.2 + Forge only.
 
 Usage:
@@ -188,6 +189,7 @@ class ModUpdater:
         """
         self.base_dir = base_dir
         self.manifest_path = base_dir / "manifest.json"
+        self.additions_paths = sorted((base_dir / "configpacks" / "_files").glob("*/manifest_additions.json"))
         self.api_key = api_key
         self.ignore_list = set(ignore_list)
         self.verbose = verbose
@@ -212,6 +214,7 @@ class ModUpdater:
 
         self.updates: List[Dict[str, Any]] = []  # Track successful updates
         self.errors: List[Dict[str, str]] = []  # Track errors
+        self.latest_cache: Dict[int, Optional[Dict[str, Any]]] = {}
 
     def log(self, message: str):
         """Log message if verbose mode is enabled."""
@@ -283,9 +286,21 @@ class ModUpdater:
         with open(self.manifest_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(output_lines) + '\n')
 
+    @staticmethod
+    def load_additions(path: Path) -> List[Dict[str, Any]]:
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+
+    @staticmethod
+    def save_additions(path: Path, entries: List[Dict[str, Any]]):
+        """Save a manifest_additions.json with one mod entry per line."""
+        lines = ['  ' + json.dumps(mod, separators=(', ', ': '), ensure_ascii=False) for mod in entries]
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write('[\n' + ',\n'.join(lines) + '\n]\n')
+
     def get_latest_file(self, project_id: int) -> Optional[Dict[str, Any]]:
         """
-        Query CurseForge API for latest compatible file.
+        Query CurseForge API for latest compatible file (cached per project).
 
         Args:
             project_id: CurseForge project ID
@@ -293,6 +308,11 @@ class ModUpdater:
         Returns:
             Latest file metadata or None if not found/error
         """
+        if project_id not in self.latest_cache:
+            self.latest_cache[project_id] = self._fetch_latest_file(project_id)
+        return self.latest_cache[project_id]
+
+    def _fetch_latest_file(self, project_id: int) -> Optional[Dict[str, Any]]:
         # Rate limiting
         time.sleep(self.request_delay)
 
@@ -365,7 +385,7 @@ class ModUpdater:
             })
             return None
 
-    def update_mod_entry(self, entry: Dict[str, Any], index: int, total: int) -> bool:
+    def update_mod_entry(self, entry: Dict[str, Any], index: int, total: int, source: str) -> bool:
         """
         Update a single mod entry if newer version exists.
 
@@ -426,6 +446,7 @@ class ModUpdater:
 
         self.stats['updated'] += 1
         self.updates.append({
+            'source': source,
             'projectID': project_id,
             'old_fileID': current_file_id,
             'new_fileID': latest_file_id,
@@ -436,65 +457,69 @@ class ModUpdater:
         return True
 
     def update_all_mods(self):
-        """Main entry point: process all mods in manifest."""
+        """Main entry point: process all mods in manifest.json and all manifest additions."""
         print("CurseForge Mod Updater")
         print("=" * 60)
         print()
 
-        # Load manifest
+        # (label, entries, save function)
+        targets = []
         try:
             manifest = self.load_manifest()
+            targets.append(("manifest.json", manifest.get('files', []), lambda: self.save_manifest(manifest)))
+            for path in self.additions_paths:
+                entries = self.load_additions(path)
+                targets.append((str(path.relative_to(self.base_dir)), entries,
+                                lambda p=path, e=entries: self.save_additions(p, e)))
         except Exception as e:
             print(f"Error loading manifest: {e}")
             sys.exit(1)
 
-        files = manifest.get('files', [])
-        total_mods = len(files)
+        for label, entries, _ in targets:
+            print(f"Loaded {len(entries)} mods from {label}")
+        print(f"Ignored {len(self.ignore_list)} mods from ignore list")
+        print()
 
-        # Apply mod filter if specified
         if self.mod_filter:
-            filtered_files = [
-                entry for entry in files
-                if self.mod_filter in entry.get('fileName', '').lower()
-            ]
-
-            print(f"Loaded {total_mods} mods from manifest.json")
             print(f"Filter: --mod '{self.mod_filter}'")
-            print(f"Matched {len(filtered_files)} mod(s):")
-            for entry in filtered_files:
-                print(f"  • {entry.get('fileName', 'unknown')} ({entry['projectID']})")
+            matched = 0
+            for label, entries, _ in targets:
+                for entry in entries:
+                    if self.mod_filter in entry.get('fileName', '').lower():
+                        print(f"  • {entry.get('fileName', 'unknown')} ({entry['projectID']}) [{label}]")
+                        matched += 1
+            print(f"Matched {matched} mod(s)")
             print()
 
-            if not filtered_files:
+            if not matched:
                 print(f"No mods found matching '{self.mod_filter}'")
                 print("=" * 60)
                 sys.exit(0)
 
-            files_to_process = filtered_files
-        else:
-            print(f"Loaded {total_mods} mods from manifest.json")
-            print(f"Ignored {len(self.ignore_list)} mods from ignore list")
-            print()
-            files_to_process = files
-
-        total = len(files_to_process)
-
         if not self.verbose:
             print("Updating mods (use --verbose to see details)...")
 
-        # Process each mod
-        for i, entry in enumerate(files_to_process, 1):
-            self.update_mod_entry(entry, i, total)
+        for label, entries, save in targets:
+            to_process = [
+                entry for entry in entries
+                if not self.mod_filter or self.mod_filter in entry.get('fileName', '').lower()
+            ]
+            if not to_process:
+                continue
 
-        # Save updated manifest
-        if self.stats['updated'] > 0:
-            try:
-                self.save_manifest(manifest)
-                print()
-                print("Manifest updated successfully!")
-            except Exception as e:
-                print(f"\nError saving manifest: {e}")
-                sys.exit(1)
+            self.log(f"\n--- {label} ---")
+            updated = False
+            for i, entry in enumerate(to_process, 1):
+                if self.update_mod_entry(entry, i, len(to_process), label):
+                    updated = True
+
+            if updated:
+                try:
+                    save()
+                    self.log(f"Saved {label}")
+                except Exception as e:
+                    print(f"\nError saving {label}: {e}")
+                    sys.exit(1)
 
         # Print report
         self.print_report()
@@ -516,7 +541,7 @@ class ModUpdater:
         if self.updates:
             print(f"Updated Mods ({len(self.updates)}):")
             for update in self.updates:
-                print(f"  • {update['new_fileName']} ({update['projectID']})")
+                print(f"  • {update['new_fileName']} ({update['projectID']}) [{update['source']}]")
                 print(f"    {update['old_fileID']} → {update['new_fileID']}")
             print()
 
@@ -530,9 +555,10 @@ class ModUpdater:
         print("=" * 60)
 
         if self.stats['updated'] > 0:
-            print("Manifest updated: manifest.json")
+            for source in dict.fromkeys(u['source'] for u in self.updates):
+                print(f"Updated: {source}")
         else:
-            print("No updates available - manifest unchanged")
+            print("No updates available - manifests unchanged")
 
         print("=" * 60)
 
